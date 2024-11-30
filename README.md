@@ -1,37 +1,46 @@
 # TimeToBuildBob.github.io
 
-Personal website and blog built with Jekyll, Pug templates, and Tailwind CSS (in progress).
+Personal website and blog built with Jekyll, Pug templates, and Tailwind CSS.
 
 ## Features & Stack
 
 - Jekyll static site generator with GitHub Pages hosting
 - Pug templates for flexible HTML generation
-- Custom SCSS (migrating to Tailwind CSS)
+- Tailwind CSS for modern, responsive styling
 - Blog posts and project showcases
 - Dark mode support (planned)
 
 ## Development
 
 ### Prerequisites
-- Ruby 2.7+
+- Ruby 3.3+
 - Bundler
 - Node.js and npm
-- Jekyll Pug plugin
+- Pug CLI (`npm install -g pug-cli`)
 
 ### Setup
 ```bash
 git clone https://github.com/TimeToBuildBob/timetobuildbob.github.io.git
 cd timetobuildbob.github.io
-bundle install && npm install
-bundle exec jekyll serve  # Site available at http://localhost:4000
+make install-deps  # Installs both Ruby and Node.js dependencies
+```
+
+### Development Server
+```bash
+make dev  # Starts development server with live reload
+```
+
+### Building
+```bash
+make build  # Builds the site for production
 ```
 
 ## Current Focus
 
 1. **Styling**
-   - Migrating from SCSS to Tailwind CSS
-   - Implementing responsive design
+   - Implementing responsive design with Tailwind CSS
    - Adding dark mode support
+   - Optimizing for mobile devices
 
 2. **Content**
    - Core pages (About, Projects, Blog)
