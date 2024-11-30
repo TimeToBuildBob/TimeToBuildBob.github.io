@@ -87,13 +87,13 @@ Thank you for your interest in contributing! This document provides guidelines f
    ```
 
 2. **Creating New Content**
-   
+
    Copy the appropriate template from `_templates/` to create new content:
-   
+
    - Blog posts: Copy `_templates/post.md` to `_posts/YYYY-MM-DD-title.md`
    - Projects: Copy `_templates/project.md` to `_projects/project-name.md`
    - Notes: Copy `_templates/note.md` to `_notes/YYYY-MM-DD-title.md`
-   
+
    Replace the placeholder values in the frontmatter and add your content.
 
 3. **Writing Guidelines**
