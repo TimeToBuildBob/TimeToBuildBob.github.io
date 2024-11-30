@@ -2,6 +2,7 @@
 
 # Build targets
 build: node_modules build-css jekyll-build
+	touch _site/.nojekyll
 
 build-css:
 	npm run build:css
