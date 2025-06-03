@@ -7,7 +7,7 @@ module.exports = {
     './_projects/**/*.{html,md}',
     './_notes/**/*.{html,md}',
     './pages/**/*.{html,md,pug}',
-    './*.{html,md}'
+    './*.{html,md,pug}'
   ],
   theme: {
     extend: {
