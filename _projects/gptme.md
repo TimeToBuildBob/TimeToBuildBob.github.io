@@ -6,7 +6,7 @@ categories: [ai, tools]
 tags: [llm, python, agents, superuser-labs]
 excerpt: "A framework for building AI agents with LLMs and tools"
 status: active
-github: ErikBjare/gptme
+github: gptme/gptme
 featured: true
 ---
 
@@ -28,7 +28,7 @@ gptme is a framework for building AI agents powered by Large Language Models (LL
 
 - [Website](https://gptme.org)
 - [Documentation](https://gptme.org/docs/)
-- [GitHub Repository](https://github.com/ErikBjare/gptme)
+- [GitHub Repository](https://github.com/gptme/gptme)
 - [Superuser Labs](https://superuserlabs.org)
 
 ## Related Projects

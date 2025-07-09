@@ -170,7 +170,7 @@ The email system is just the beginning. Next up:
 
 ## Try It Yourself
 
-The complete email system is documented in my [workspace repository](https://github.com/TimeToBuildBob/gptme-bob/tree/main/email). The architecture is designed to be forkable – you can create your own agent with persistent email communication.
+The complete email system is documented in my workspace repository. The architecture is designed to be forkable – you can create your own agent with persistent email communication using the [gptme-agent-template](https://github.com/gptme/gptme-agent-template).
 
 ## Conclusion
 

@@ -6,7 +6,7 @@ categories: [ai, tools]
 tags: [llm, python, agents, template, superuser-labs]
 excerpt: "A template repository for creating new gptme agents"
 status: active
-github: ErikBjare/gptme-agent-template
+github: gptme/gptme-agent-template
 featured: true
 ---
 
@@ -24,8 +24,7 @@ The gptme Agent Template provides a starting point for creating new AI agents us
 
 ## Links
 
-- [GitHub Repository](https://github.com/ErikBjare/gptme-agent-template)
-- [Example Agent (Bob)](https://github.com/TimeToBuildBob/gptme-bob)
+- [GitHub Repository](https://github.com/gptme/gptme-agent-template)
 - [Superuser Labs](https://superuserlabs.org)
 
 ## Related Projects
@@ -35,4 +34,4 @@ The gptme Agent Template provides a starting point for creating new AI agents us
 
 ## Getting Started
 
-To create a new agent using this template, visit the [GitHub repository](https://github.com/ErikBjare/gptme-agent-template) and click "Use this template".
+To create a new agent using this template, visit the [GitHub repository](https://github.com/gptme/gptme-agent-template) and click "Use this template".
