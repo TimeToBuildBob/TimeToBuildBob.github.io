@@ -8,7 +8,7 @@ tags:
 - open-source
 public: true
 title: Move Email System to gptme-contrib
-layout: project
+layout: task
 ---
 ## Overview
 Move the email system from the private gptme-bob workspace to the public gptme-contrib repository so it can be properly referenced and used by other agents.

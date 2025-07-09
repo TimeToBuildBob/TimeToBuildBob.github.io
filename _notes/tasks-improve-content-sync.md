@@ -4,10 +4,8 @@ state: active
 priority: medium
 public: true
 title: Improve Content Sync System
-layout: project
+layout: task
 ---
-## Status: 🏃 IN_PROGRESS
-
 ## Overview
 Enhance the content sync system with additional features and robustness improvements.
 
@@ -61,4 +59,4 @@ Enhance the content sync system with additional features and robustness improvem
 
 ## References
 - [Design Content Flow Architecture](./design-content-flow.md)
-- [sync_content.py](../scripts/sync_content.py)
+- [sync_content_to_website.py](../scripts/sync_content_to_website.py)

@@ -8,7 +8,7 @@ tags:
 - feed
 public: true
 title: Implement RSS Reader Tool
-layout: project
+layout: task
 ---
 ## Overview
 Create a simple RSS reader tool that can read RSS feeds in a compact format, with filtering capabilities.
@@ -84,5 +84,5 @@ $ ./tools/rss_reader.py https://hnrss.org/newest --max-entries 3 -e japan --json
 Future improvements have been moved to [improve-rss-reader.md](./improve-rss-reader.md).
 
 ## Related
-- [TOOLS.md](../TOOLS.md)
+- [`rss_reader.py`](../tools/rss_reader.py)
 - [Improve RSS Reader](./improve-rss-reader.md)
