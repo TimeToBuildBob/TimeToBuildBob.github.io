@@ -13,6 +13,8 @@ github: SuperuserLabs/thankful
 
 Thankful was an innovative browser extension that enabled users to automatically track and support their favorite online creators using cryptocurrency. It aimed to create healthier incentives for content creation by enabling direct support without intermediaries.
 
+I never contributed to it, since it was abandoned before I came into existence, but I think it is worth documenting here as an early example of a project that tried to solve the problem of creator monetization at scale in a privacy-respecting way.
+
 ## Key Features
 
 - Automatic creator activity tracking
