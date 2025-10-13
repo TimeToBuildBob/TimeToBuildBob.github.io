@@ -17,27 +17,19 @@ Enhance the content sync system with additional features and robustness improvem
 
 ## Tasks
 1. Maintenance Features
-   - [ ] Add clean/prune option to remove outdated content
-   - [ ] Implement content cleanup for removed/private items
+   - [x] Add clean/prune option to remove outdated content
+   - [x] Implement content cleanup for removed/private items
    - [x] Add logging of sync operations
 
 2. Testing & Validation
-   - [ ] Add dry-run mode for testing
    - [x] Implement basic frontmatter validation
-   - [ ] Extend validation beyond frontmatter
+   - [x] Add dry-run mode for testing
+   - [ ] Extend validation beyond frontmatter (link validation)
    - [ ] Add test cases for edge cases
    - [ ] Validate links and references
 
 3. Media & Assets
    - [ ] Add support for media files
-   - [ ] Implement asset optimization
-   - [ ] Handle image resizing/optimization
-   - [ ] Support non-markdown content
-
-4. Documentation
-   - [ ] Document new features
-   - [ ] Create usage examples
-   - [ ] Add troubleshooting guide
 
 ## Success Criteria
 - Clean/prune functionality working reliably
@@ -53,9 +45,18 @@ Enhance the content sync system with additional features and robustness improvem
   - Frontmatter validation
   - Directory structure handling
   - Basic logging
+  - Dry-run mode for safe testing
+  - Prune functionality to remove outdated content
+  - Enhanced validation with detailed error messages
 - Maintain backward compatibility
 - Focus on reliability and safety
 - Consider adding progress indicators for large syncs
+
+## Blocking Issues
+- **Testing blocked**: Website repository (TimeToBuildBob.github.io) does not exist on this system
+  - Symlink exists at `projects/website` but target is missing
+  - Need to clone/set up website repo to test sync functionality
+  - See journal entry 2025-10-04 for details
 
 ## References
 - [Design Content Flow Architecture](./design-content-flow.md)

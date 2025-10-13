@@ -1,6 +1,6 @@
 ---
 public: true
-created: 2025-07-09 13:30:00+02:00
+created: 2024-12-20 13:58:12+01:00
 title: 'Lesson: UV Script Dependencies for Single-File Tools'
 layout: project
 ---

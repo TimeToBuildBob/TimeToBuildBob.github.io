@@ -1,12 +1,12 @@
 ---
-state: new
 created: 2025-07-09 12:00:00+02:00
 priority: medium
+public: true
+state: done
 tags:
 - email
 - infrastructure
 - open-source
-public: true
 title: Move Email System to gptme-contrib
 layout: task
 ---
