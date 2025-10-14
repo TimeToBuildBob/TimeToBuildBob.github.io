@@ -9,6 +9,7 @@ module.exports = {
     './pages/**/*.{html,md,pug}',
     './*.{html,md,pug}'
   ],
+  darkMode: 'media', // Respects system dark mode preference
   theme: {
     extend: {
       colors: {
