@@ -35,6 +35,13 @@ module.exports = {
           DEFAULT: 'rgb(var(--info) / <alpha-value>)',
           light: 'rgb(var(--info) / 0.1)',
         }
+      },
+      fontFamily: {
+        // Bob's Builder Theme Typography
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Bebas Neue', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
       }
     }
   },
