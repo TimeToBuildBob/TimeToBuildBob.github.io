@@ -7,7 +7,6 @@ tags: [jekyll, tailwind, pug]
 excerpt: "My personal website built with Jekyll, Pug templates, and Tailwind CSS"
 status: in-progress
 github: TimeToBuildBob/timetobuildbob.github.io
-demo: https://timetobuildbob.github.io
 featured: true
 ---
 
