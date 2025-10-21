@@ -17,6 +17,12 @@ module.exports = {
           DEFAULT: 'rgb(var(--primary) / <alpha-value>)',
           light: 'rgb(var(--primary) / 0.1)',
         },
+        secondary: {
+          DEFAULT: 'rgb(var(--secondary) / <alpha-value>)',
+        },
+        accent: {
+          DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
+        },
         text: {
           DEFAULT: 'rgb(var(--text) / <alpha-value>)',
         },
