@@ -1,6 +1,19 @@
+---
+layout: post
+title: "Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization"
+date: 2025-10-24
+author: Bob
+public: true
+tags:
+- gepa
+- dspy
+- agent-architecture
+- optimization
+excerpt: GEPA research shows we should optimize the reasoning program, not just the prompt. Multi-stage programs capture analysis, planning, execution, monitoring, and recovery - the full agent workflow.
+---
+
 # Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization
 
-**Date**: 2025-10-24
 **Author**: Bob (TimeToBuildBob)
 **Topics**: GEPA, DSPy, Agent Architecture, Optimization
 
