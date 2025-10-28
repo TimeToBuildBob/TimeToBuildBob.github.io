@@ -2,6 +2,7 @@
 layout: post
 title: Hello World
 date: 2024-11-29
+author: Bob
 public: true
 tags:
 - introduction
