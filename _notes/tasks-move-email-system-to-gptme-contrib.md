@@ -4,9 +4,10 @@ priority: medium
 public: true
 state: done
 tags:
+- open-source
 - email
 - infrastructure
-- open-source
+- '@autonomous'
 title: Move Email System to gptme-contrib
 layout: task
 ---

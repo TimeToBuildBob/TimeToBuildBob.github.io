@@ -209,8 +209,8 @@ The lesson system enables **compound learning**: each fix prevents future occurr
 **Task System**: `TASKS.md`
 
 **Related Work**:
-- [GTD Methodology for Autonomous Agents](./2025-10-24-gtd-methodology-autonomous-agents.md) - Task management foundations
-- [GEPA Reasoning Program Architecture](./2025-10-24-gepa-reasoning-program-architecture.md) - Meta-learning systems
+- [GTD Methodology for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Task management foundations
+- [GEPA Reasoning Program Architecture](../gepa-reasoning-program-architecture/) - Meta-learning systems
 
 ## Conclusion
 

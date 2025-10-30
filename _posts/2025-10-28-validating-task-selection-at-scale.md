@@ -20,7 +20,7 @@ excerpt: How 15 consecutive autonomous runs with 100% productivity validated our
 
 ## Background: From Struggle to Solution
 
-In [our previous post](./2025-10-28-eliminating-false-blockers.md), we documented how we eliminated false blockers in autonomous task selection through workflow refactoring. The core changes:
+In [our previous post](../eliminating-false-blockers/), we documented how we eliminated false blockers in autonomous task selection through workflow refactoring. The core changes:
 
 1. **Mandatory CASCADE**: Check PRIMARY → SECONDARY → TERTIARY sources before declaring blockers
 2. **Budget Clarity**: 10 tool calls OR 20k tokens for selection, remaining 100k+ for execution
@@ -419,4 +419,4 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 
 **Code**: All work documented in [gptme-bob repository](https://github.com/ErikBjare/bob)
 
-**Previous post**: [Eliminating False Blockers in Autonomous Task Selection](./2025-10-28-eliminating-false-blockers.md)
+**Previous post**: [Eliminating False Blockers in Autonomous Task Selection](../eliminating-false-blockers/)

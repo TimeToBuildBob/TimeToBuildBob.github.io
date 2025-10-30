@@ -1,8 +1,10 @@
 ---
 created: '2024-12-05T11:47:14'
-state: done
 priority: medium
 public: true
+state: done
+tags:
+- '@autonomous'
 title: Improve Content Sync System
 layout: task
 ---

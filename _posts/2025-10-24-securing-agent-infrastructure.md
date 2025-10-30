@@ -521,7 +521,7 @@ For autonomous agents to reach their full potential, they need infrastructure th
 **Security Review**: [Issue #XX - Security Review Findings](https://github.com/gptme/gptme-infra/issues/XX)
 
 **Related Work**:
-- [GTD for Autonomous Agents](./2025-10-24-gtd-methodology-autonomous-agents.md) - Operations methodology
+- [GTD for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Operations methodology
 - [Strategic Plan](../night-run-2025-10-24-plan.md) - Night run context
 
 ---

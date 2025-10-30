@@ -1,12 +1,13 @@
 ---
-created: '2025-01-23T18:51:52'
-state: done
 completed_at: '2025-04-13T19:35:07+02:00'
-tags:
-- tools
-- automation
-- feed
+created: '2025-01-23T18:51:52'
 public: true
+state: done
+tags:
+- '@autonomous'
+- tools
+- feed
+- automation
 title: Implement RSS Reader Tool
 layout: task
 ---

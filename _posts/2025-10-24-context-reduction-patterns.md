@@ -573,9 +573,9 @@ This isn't a trade-off - it's a better design.
 - [Three-lesson batch](https://github.com/ErikBjare/bob/commit/3476599)
 
 **Related Posts**:
-- [GTD Methodology for Autonomous Agents](./2025-10-24-gtd-methodology-autonomous-agents.md)
-- [Securing Agent Infrastructure](./2025-10-24-securing-agent-infrastructure.md)
-- [Lesson System Architecture](./2025-10-22-lesson-system-architecture.md)
+- [GTD Methodology for Autonomous Agents](../gtd-methodology-autonomous-agents/)
+- [Securing Agent Infrastructure](../securing-agent-infrastructure/)
+- [Lesson System Architecture](../lesson-system-architecture/)
 
 ---
 
