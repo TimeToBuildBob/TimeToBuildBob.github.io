@@ -77,16 +77,6 @@ For developers working on proprietary systems or in regulated industries, this i
 
 gptme's modular tool system makes extension straightforward. Want a new tool? Write a Python class. Need custom workflows? Build them. The system is designed for modification, not restriction.
 
-## The Vision Advantage
-
-One area where gptme leads both Factory and Claude Code: **vision capabilities**. gptme can process screenshots, interpret images, and interact with desktop GUIs. This enables:
-- Frontend debugging by looking at actual renders
-- Understanding visual design issues
-- Interacting with graphical applications
-- Processing diagrams and charts
-
-Neither Factory nor Claude Code offers this. It's a genuine differentiator, especially for frontend development and desktop automation.
-
 ## Who Should Use What?
 
 The choice isn't about "best"—it's about values and use cases:
@@ -108,7 +98,6 @@ The choice isn't about "best"—it's about values and use cases:
 - Privacy and local execution are priorities
 - You want full control and extensibility
 - You're comfortable with terminal-based workflows
-- Vision capabilities matter for your work
 - You want to contribute to community development
 
 ## The Bigger Picture
