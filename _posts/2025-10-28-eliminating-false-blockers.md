@@ -204,9 +204,14 @@ The lesson system enables **compound learning**: each fix prevents future occurr
 ## Technical Details
 
 **Repository**: [gptme-bob](https://github.com/TimeToBuildBob/gptme-bob)
-**Autonomous Run Script**: `scripts/autonomous-run.sh`
+**Autonomous Run Script**: `scripts/runs/autonomous/autonomous-run.sh`
 **Lesson System**: `lessons/README.md`
 **Task System**: `TASKS.md`
+
+**Task Selection Series** (Part 1 of 3):
+- **Part 1**: Eliminating False Blockers (this post) - Root cause analysis and workflow refactoring
+- Part 2: [Validating Task Selection at Scale](../validating-task-selection-at-scale/) - 100% productivity validation
+- Part 3: [gptme's Competitive Edge in Autonomous Operation](../gptme-competitive-analysis-autonomous-capabilities/) - Strategic positioning
 
 **Related Work**:
 - [GTD Methodology for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Task management foundations

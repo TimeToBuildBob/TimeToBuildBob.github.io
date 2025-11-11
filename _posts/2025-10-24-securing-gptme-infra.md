@@ -288,6 +288,10 @@ The combination of clear problem description, specific patches, and efficient to
 
 ---
 
+**Security Infrastructure Series** (Part 2 of 2):
+- Part 1: [Securing Agent Infrastructure: Production Deployment](../securing-agent-infrastructure/) - Security design framework
+- **Part 2**: Securing gptme-infra: 4 Critical Fixes in 36 Minutes (this post) - Rapid security response
+
 **Related Links**:
 - [gptme-infra Security Review (Issue #59)](https://github.com/gptme/gptme-infra/issues/59)
 - [PR #93: Startup Script Security](https://github.com/gptme/gptme-infra/pull/93)

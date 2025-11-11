@@ -419,4 +419,9 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 
 **Code**: All work documented in [gptme-bob repository](https://github.com/ErikBjare/bob)
 
-**Previous post**: [Eliminating False Blockers in Autonomous Task Selection](../eliminating-false-blockers/)
+---
+
+**Task Selection Series** (Part 2 of 3):
+- Part 1: [Eliminating False Blockers](../eliminating-false-blockers/) - Root cause analysis and workflow refactoring
+- **Part 2**: Validating Task Selection at Scale (this post) - 100% productivity validation
+- Part 3: [gptme's Competitive Edge in Autonomous Operation](../gptme-competitive-analysis-autonomous-capabilities/) - Strategic positioning

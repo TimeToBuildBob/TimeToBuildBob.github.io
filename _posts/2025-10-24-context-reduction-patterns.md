@@ -285,7 +285,7 @@ Implementation (Companion):
 
 **Monitoring**:
 ```bash
-./scripts/measure-context.sh
+./scripts/util/measure-context.sh
 ./scripts/analyze-context-trends.sh
 ```
 
@@ -379,7 +379,7 @@ context_cmd = "scripts/context.sh"
 
 **Metrics to Track**:
 ```bash
-./scripts/measure-context.sh
+./scripts/util/measure-context.sh
 find lessons/ -name "*.md" -exec wc -l {} + | sort -n
 grep -h "match:" lessons/**/*.md | sort | uniq -c
 ```
@@ -566,7 +566,7 @@ This isn't a trade-off - it's a better design.
 **Implementation**:
 - [Two-File Architecture Implementation](https://github.com/ErikBjare/bob/issues/45)
 - [Lesson Migration Guide](../lesson-migration-guide.md)
-- [Context Measurement Scripts](../../scripts/measure-context.sh)
+- [Context Measurement Scripts](../../scripts/util/measure-context.sh)
 
 **Example Migrations**:
 - [research-when-stumbling migration](https://github.com/ErikBjare/bob/commit/495485d)

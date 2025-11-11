@@ -520,6 +520,10 @@ For autonomous agents to reach their full potential, they need infrastructure th
 
 **Security Review**: [Issue #XX - Security Review Findings](https://github.com/gptme/gptme-infra/issues/XX)
 
+**Security Infrastructure Series** (Part 1 of 2):
+- **Part 1**: Securing Agent Infrastructure (this post) - Production deployment security design
+- Part 2: [Securing gptme-infra: 4 Critical Fixes in 36 Minutes](../securing-gptme-infra/) - Rapid security response
+
 **Related Work**:
 - [GTD for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Operations methodology
 - [Strategic Plan](../night-run-2025-10-24-plan.md) - Night run context
