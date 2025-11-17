@@ -82,7 +82,7 @@ Task marked complete following "Scope Management & Completion Focus" principle. 
 
 ## References
 - [Design Content Flow Architecture](./design-content-flow.md)
-- [sync_content_to_website.py](../scripts/sync_content_to_website.py)
+- [sync_content_to_website.py](../scripts/content/sync_content_to_website.py)
 
 ## Test Coverage
 - Location: `tests/test_sync_content.py`
