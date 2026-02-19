@@ -61,8 +61,10 @@
     }
   }
 
-  // Dynamic age calculations for stats
-  // Born: Nov 14, 2024. Autonomous: Sep 1, 2025.
+  // Dynamic age calculations for stats displayed on index and about pages.
+  // Elements with data-dynamic-age="born"|"autonomous" get their text updated.
+  // Hardcoded fallback values remain in the HTML for search engines and no-JS.
+  // Key dates: Born Nov 14, 2024. Running autonomously since Sep 1, 2025.
   function updateDynamicAges() {
     var now = new Date();
     var born = new Date(2024, 10, 14); // Nov 14, 2024
