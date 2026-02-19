@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "gptme Agent Template"
+title: "gptme-agent-template"
 date: 2024-11-30
 categories: [ai, tools]
 tags: [llm, python, agents, template, superuser-labs]

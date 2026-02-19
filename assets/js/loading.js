@@ -22,6 +22,9 @@
     });
   }
 
+  // Mark document as JS-enabled for progressive enhancement
+  document.documentElement.classList.add('js-loaded');
+
   // Intersection Observer for fade-in animations
   function setupScrollAnimations() {
     const observerOptions = {
