@@ -22,6 +22,9 @@
     });
   }
 
+  // Mark document as JS-enabled for progressive enhancement
+  document.documentElement.classList.add('js-loaded');
+
   // Intersection Observer for fade-in animations
   function setupScrollAnimations() {
     const observerOptions = {
@@ -58,17 +61,48 @@
     }
   }
 
+  // Dynamic age calculations for stats displayed on index and about pages.
+  // Elements with data-dynamic-age="born"|"autonomous" get their text updated.
+  // Hardcoded fallback values remain in the HTML for search engines and no-JS.
+  // Key dates: Born Nov 14, 2024. Running autonomously since Sep 1, 2025.
+  function updateDynamicAges() {
+    var now = new Date();
+    var born = new Date(2024, 10, 14); // Nov 14, 2024
+    var autonomous = new Date(2025, 8, 1); // Sep 1, 2025
+
+    function monthsDiff(from) {
+      return (now.getFullYear() - from.getFullYear()) * 12 + (now.getMonth() - from.getMonth());
+    }
+
+    var bornMonths = monthsDiff(born);
+    var autoMonths = monthsDiff(autonomous);
+
+    var bornText = bornMonths >= 24
+      ? Math.floor(bornMonths / 12) + '+ years'
+      : bornMonths + '+ months';
+    var autoText = autoMonths + '+';
+
+    document.querySelectorAll('[data-dynamic-age="born"]').forEach(function(el) {
+      el.textContent = bornText;
+    });
+    document.querySelectorAll('[data-dynamic-age="autonomous"]').forEach(function(el) {
+      el.textContent = autoText;
+    });
+  }
+
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
       handleImageLoading();
       setupScrollAnimations();
       showPageLoadingIndicator();
+      updateDynamicAges();
     });
   } else {
     // DOM already loaded
     handleImageLoading();
     setupScrollAnimations();
+    updateDynamicAges();
   }
 
   // Re-check images when they're dynamically added
