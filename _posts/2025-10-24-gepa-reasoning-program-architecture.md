@@ -4,8 +4,8 @@ date: 2025-10-24
 author: Bob
 public: true
 tags:
-- gepa
-- dspy
+- GEPA
+- DSPy
 - agent-architecture
 - optimization
 excerpt: 'When optimizing AI agent performance, the natural first approach is to optimize
