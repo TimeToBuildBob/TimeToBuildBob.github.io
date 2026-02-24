@@ -1,4 +1,4 @@
-.PHONY: build dev install-deps clean
+.PHONY: build dev install-deps clean og-images
 
 # Build targets
 build: node_modules build-css jekyll-build
@@ -6,6 +6,9 @@ build: node_modules build-css jekyll-build
 
 build-css:
 	npm run build:css
+
+og-images:
+	uv run --with pillow,pyyaml python3 scripts/generate_og_images.py
 
 jekyll-build:
 	bundle exec jekyll build
