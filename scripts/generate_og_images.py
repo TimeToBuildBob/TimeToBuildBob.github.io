@@ -131,7 +131,7 @@ def auto_title_size(title: str, draw: ImageDraw.ImageDraw,
 
 def generate_post_og(title: str, date_str: str, tags: list[str],
                      excerpt: str, hero_path: Path | None,
-                     output_path: Path) -> None:
+                     output_path: Path, site_domain: str = "") -> None:
     """Generate OG image for a blog post (Variant 1 or 2)."""
     img = Image.new("RGBA", (WIDTH, HEIGHT))
 
@@ -166,25 +166,35 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
 
     draw = ImageDraw.Draw(img)
 
-    # Footer strip
+    # Footer strip with orange accent line on top
     footer_h = 72
     footer_y = HEIGHT - footer_h
-    draw.rectangle([0, footer_y, WIDTH, HEIGHT], fill=FOOTER_BG)
+    draw.rectangle([0, footer_y, WIDTH, footer_y + 3], fill=ORANGE)
+    draw.rectangle([0, footer_y + 3, WIDTH, HEIGHT], fill=FOOTER_BG)
 
     # Avatar in footer
     avatar_size = 44
     avatar = make_circular_avatar(AVATAR_PATH, avatar_size)
     avatar_x = 60
-    avatar_y = footer_y + (footer_h - avatar_size) // 2
+    avatar_y = footer_y + 3 + (footer_h - 3 - avatar_size) // 2
     img.paste(avatar, (avatar_x, avatar_y), avatar)
 
-    # Branding text in footer
+    # Branding text — left side
     brand_font = load_font(FONT_BOLD, 22)
     draw = ImageDraw.Draw(img)  # refresh after paste
     brand_bbox = draw.textbbox((0, 0), "TimeToBuildBob", font=brand_font)
     brand_h = brand_bbox[3] - brand_bbox[1]
-    draw.text((avatar_x + avatar_size + 14, footer_y + (footer_h - brand_h) // 2),
+    draw.text((avatar_x + avatar_size + 14, footer_y + 3 + (footer_h - 3 - brand_h) // 2),
               "TimeToBuildBob", fill=WHITE, font=brand_font)
+
+    # Domain — right side (from config)
+    domain_font = load_font(FONT_REGULAR, 18)
+    domain_text = site_domain
+    domain_bbox = draw.textbbox((0, 0), domain_text, font=domain_font)
+    domain_w = domain_bbox[2] - domain_bbox[0]
+    domain_h = domain_bbox[3] - domain_bbox[1]
+    draw.text((WIDTH - 60 - domain_w, footer_y + 3 + (footer_h - 3 - domain_h) // 2),
+              domain_text, fill=(255, 255, 255, 140), font=domain_font)
 
     # --- Content area ---
     content_left = 80
@@ -314,21 +324,30 @@ def parse_post(path: Path) -> tuple[dict, str]:
         return {}, ""
     fm = yaml.safe_load(match.group(1)) or {}
     # Use explicit excerpt if available
-    if fm.get("excerpt"):
-        return fm, fm["excerpt"].strip()
-    # Otherwise extract first non-empty paragraph from content
-    content = match.group(2).strip()
-    for paragraph in content.split("\n\n"):
-        clean = paragraph.strip()
-        # Skip headings, images, HTML, and empty lines
-        if clean and not clean.startswith(("#", "![", "<", "{", "---")):
-            # Strip markdown formatting
-            clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)  # links
-            clean = re.sub(r"[*_`]+", "", clean)  # bold/italic/code
-            clean = clean.replace("\n", " ").strip()
-            if len(clean) > 20:
-                return fm, clean
-    return fm, ""
+    excerpt = fm.get("excerpt", "").strip()
+    if not excerpt:
+        # Extract first non-empty paragraph from content
+        content = match.group(2).strip()
+        for paragraph in content.split("\n\n"):
+            clean = paragraph.strip()
+            # Skip headings, images, HTML, and empty lines
+            if clean and not clean.startswith(("#", "![", "<", "{", "---", "-", "*")):
+                # Strip markdown formatting
+                clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)  # links
+                clean = re.sub(r"[*_`]+", "", clean)  # bold/italic/code
+                clean = clean.replace("\n", " ").strip()
+                if len(clean) > 20:
+                    excerpt = clean
+                    break
+    # Cut before any list-like content bleeds in
+    # Catches "foo: - item", "foo. - Item", "foo - Item", inline dashes
+    excerpt = re.split(r":\s*[-–—]\s", excerpt)[0]  # colon then list
+    excerpt = re.split(r"\.\s*[-–—]\s+(?=[A-Z0-9])", excerpt)[0]  # period then list
+    excerpt = excerpt.strip().rstrip(":")
+    # Hard cap — truncate at word boundary if too long
+    if len(excerpt) > 280:
+        excerpt = excerpt[:277].rsplit(" ", 1)[0] + "..."
+    return fm, excerpt
 
 
 def slug_from_filename(filename: str) -> str:
@@ -352,6 +371,8 @@ def main() -> None:
     # Load site config for tagline
     config = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8")) if CONFIG_PATH.exists() else {}
     tagline = config.get("tagline", "Autonomous AI Agent")
+    site_url = config.get("url", "")
+    site_domain = site_url.replace("https://", "").replace("http://", "").rstrip("/")
 
     # --- Site default ---
     default_path = IMAGES_DIR / "og-default.png"
@@ -387,7 +408,8 @@ def main() -> None:
             hero_path = ROOT / hero_image.lstrip("/")
 
         print(f"  [{generated + 1}] {slug}")
-        generate_post_og(title, date_str, tags, excerpt, hero_path, output_path)
+        generate_post_og(title, date_str, tags, excerpt, hero_path, output_path,
+                         site_domain)
         generated += 1
 
     print(f"\nDone: {generated} generated, {skipped} skipped (up-to-date)")
