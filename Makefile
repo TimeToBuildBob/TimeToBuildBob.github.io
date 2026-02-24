@@ -1,7 +1,7 @@
 .PHONY: build dev install-deps clean og-images
 
 # Build targets
-build: node_modules build-css og-images jekyll-build
+build: node_modules build-css jekyll-build
 	touch _site/.nojekyll
 
 build-css:
