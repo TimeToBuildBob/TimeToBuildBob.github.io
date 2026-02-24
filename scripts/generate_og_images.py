@@ -25,9 +25,9 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 # ---------------------------------------------------------------------------
 
 WIDTH, HEIGHT = 1200, 630
-PRIMARY = (81, 81, 245)       # #5151f5
-DARK_BG = (26, 26, 58)       # #1a1a3a
-MID_BG = (42, 42, 143)       # #2a2a8f
+PRIMARY = (88, 70, 246)       # #5846f6 — brighter violet top-left
+DARK_BG = (16, 14, 48)       # #100e30 — near-black for site default
+MID_BG = (22, 20, 72)        # #161448 — dark indigo bottom-right
 ORANGE = (249, 115, 22)      # #f97316
 WHITE = (255, 255, 255)
 FOOTER_BG = (18, 18, 40)     # dark strip
@@ -227,8 +227,8 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
 
     # Excerpt text — fills the gap between metadata and footer
     if excerpt:
-        excerpt_font = load_font(FONT_REGULAR, 20)
-        excerpt_top = accent_bottom + 20
+        excerpt_font = load_font(FONT_REGULAR, 24)
+        excerpt_top = accent_bottom + 24
         excerpt_max_w = content_max_w
         # Available space between excerpt area and footer
         available_h = footer_y - excerpt_top - 16
