@@ -172,28 +172,35 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
     draw.rectangle([0, footer_y, WIDTH, footer_y + 3], fill=ORANGE)
     draw.rectangle([0, footer_y + 3, WIDTH, HEIGHT], fill=FOOTER_BG)
 
+    # Footer content area (below the accent line)
+    ft_top = footer_y + 3
+    ft_h = footer_h - 3
+    # Nudge content up slightly — text bbox includes descender space,
+    # making visual center sit too low
+    nudge = -3
+
     # Avatar in footer
     avatar_size = 44
     avatar = make_circular_avatar(AVATAR_PATH, avatar_size)
     avatar_x = 60
-    avatar_y = footer_y + 3 + (footer_h - 3 - avatar_size) // 2
+    avatar_y = ft_top + (ft_h - avatar_size) // 2 + nudge
     img.paste(avatar, (avatar_x, avatar_y), avatar)
 
     # Branding text — left side
-    brand_font = load_font(FONT_BOLD, 22)
+    brand_font = load_font(FONT_BOLD, 24)
     draw = ImageDraw.Draw(img)  # refresh after paste
     brand_bbox = draw.textbbox((0, 0), "TimeToBuildBob", font=brand_font)
     brand_h = brand_bbox[3] - brand_bbox[1]
-    draw.text((avatar_x + avatar_size + 14, footer_y + 3 + (footer_h - 3 - brand_h) // 2),
+    draw.text((avatar_x + avatar_size + 14, ft_top + (ft_h - brand_h) // 2 + nudge),
               "TimeToBuildBob", fill=WHITE, font=brand_font)
 
     # Domain — right side (from config)
-    domain_font = load_font(FONT_REGULAR, 18)
+    domain_font = load_font(FONT_REGULAR, 20)
     domain_text = site_domain
     domain_bbox = draw.textbbox((0, 0), domain_text, font=domain_font)
     domain_w = domain_bbox[2] - domain_bbox[0]
     domain_h = domain_bbox[3] - domain_bbox[1]
-    draw.text((WIDTH - 60 - domain_w, footer_y + 3 + (footer_h - 3 - domain_h) // 2),
+    draw.text((WIDTH - 60 - domain_w, ft_top + (ft_h - domain_h) // 2 + nudge),
               domain_text, fill=(255, 255, 255, 140), font=domain_font)
 
     # --- Content area ---
@@ -292,9 +299,10 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
     draw.text((cx - tw // 2, avatar_y + avatar_size + 30),
               title_text, fill=WHITE, font=title_font)
 
-    # Orange accent line
+    # Orange accent line — generous spacing from title and tagline
     accent_w = 80
-    accent_y = avatar_y + avatar_size + 30 + (bbox[3] - bbox[1]) + 14
+    title_bottom = avatar_y + avatar_size + 30 + (bbox[3] - bbox[1])
+    accent_y = title_bottom + 24
     draw.rectangle([cx - accent_w // 2, accent_y,
                     cx + accent_w // 2, accent_y + 4], fill=ORANGE)
 
@@ -302,7 +310,7 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
     tagline_font = load_font(FONT_REGULAR, 28)
     bbox2 = draw.textbbox((0, 0), tagline, font=tagline_font)
     tw2 = bbox2[2] - bbox2[0]
-    draw.text((cx - tw2 // 2, accent_y + 18),
+    draw.text((cx - tw2 // 2, accent_y + 26),
               tagline, fill=(255, 255, 255, 200), font=tagline_font)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
