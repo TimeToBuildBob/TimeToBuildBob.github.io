@@ -130,7 +130,8 @@ def auto_title_size(title: str, draw: ImageDraw.ImageDraw,
 # ---------------------------------------------------------------------------
 
 def generate_post_og(title: str, date_str: str, tags: list[str],
-                     hero_path: Path | None, output_path: Path) -> None:
+                     excerpt: str, hero_path: Path | None,
+                     output_path: Path) -> None:
     """Generate OG image for a blog post (Variant 1 or 2)."""
     img = Image.new("RGBA", (WIDTH, HEIGHT))
 
@@ -166,38 +167,41 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
     draw = ImageDraw.Draw(img)
 
     # Footer strip
-    footer_h = 60
+    footer_h = 72
     footer_y = HEIGHT - footer_h
     draw.rectangle([0, footer_y, WIDTH, HEIGHT], fill=FOOTER_BG)
 
     # Avatar in footer
-    avatar_size = 36
+    avatar_size = 44
     avatar = make_circular_avatar(AVATAR_PATH, avatar_size)
-    avatar_x, avatar_y = 60, footer_y + (footer_h - avatar_size) // 2
+    avatar_x = 60
+    avatar_y = footer_y + (footer_h - avatar_size) // 2
     img.paste(avatar, (avatar_x, avatar_y), avatar)
 
     # Branding text in footer
-    brand_font = load_font(FONT_BOLD, 20)
+    brand_font = load_font(FONT_BOLD, 22)
     draw = ImageDraw.Draw(img)  # refresh after paste
-    draw.text((avatar_x + avatar_size + 12, footer_y + (footer_h - 20) // 2),
+    brand_bbox = draw.textbbox((0, 0), "TimeToBuildBob", font=brand_font)
+    brand_h = brand_bbox[3] - brand_bbox[1]
+    draw.text((avatar_x + avatar_size + 14, footer_y + (footer_h - brand_h) // 2),
               "TimeToBuildBob", fill=WHITE, font=brand_font)
 
     # --- Content area ---
-    content_left = 70
-    accent_x = 55
+    content_left = 80
+    accent_x = 60
     content_max_w = WIDTH - content_left - 80
-    content_top = 80
+    content_top = 60
 
     # Title
     title_font, title_lines = auto_title_size(title, draw, content_max_w)
-    y = content_top + 10
+    y = content_top
     line_spacing = 8
     for line in title_lines:
         draw.text((content_left, y), line, fill=WHITE, font=title_font)
         bbox = draw.textbbox((0, 0), line, font=title_font)
         y += (bbox[3] - bbox[1]) + line_spacing
 
-    # Metadata line: date + tags
+    # Metadata line: date + #tags
     meta_font = load_font(FONT_REGULAR, 22)
     meta_parts = []
     if date_str:
@@ -207,19 +211,39 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
         except ValueError:
             meta_parts.append(date_str)
     if tags:
-        meta_parts.append(" · ".join(tags[:4]))
+        meta_parts.append("  ".join(f"#{t}" for t in tags[:4]))
     meta_text = "  —  ".join(meta_parts) if len(meta_parts) > 1 else (meta_parts[0] if meta_parts else "")
     if meta_text:
-        y += 20
+        y += 16
         draw.text((content_left, y), meta_text,
                   fill=(255, 255, 255, 178), font=meta_font)
         bbox_m = draw.textbbox((0, 0), meta_text, font=meta_font)
         y += (bbox_m[3] - bbox_m[1])
 
-    # Orange accent bar — sized to match content height
-    accent_bottom = y + 20
-    draw.rectangle([accent_x, content_top, accent_x + 5, accent_bottom],
+    # Orange accent bar — spans from content top to end of metadata
+    accent_bottom = y + 16
+    draw.rectangle([accent_x, content_top - 4, accent_x + 5, accent_bottom],
                    fill=ORANGE)
+
+    # Excerpt text — fills the gap between metadata and footer
+    if excerpt:
+        excerpt_font = load_font(FONT_REGULAR, 20)
+        excerpt_top = accent_bottom + 20
+        excerpt_max_w = content_max_w
+        # Available space between excerpt area and footer
+        available_h = footer_y - excerpt_top - 16
+        excerpt_lines = wrap_title(excerpt, excerpt_font, excerpt_max_w, draw)
+        # Limit lines to what fits
+        line_h = draw.textbbox((0, 0), "Ag", font=excerpt_font)
+        single_h = (line_h[3] - line_h[1]) + 6
+        max_excerpt_lines = max(1, available_h // single_h)
+        excerpt_lines = excerpt_lines[:max_excerpt_lines]
+        ey = excerpt_top
+        for line in excerpt_lines:
+            draw.text((content_left, ey), line,
+                      fill=(255, 255, 255, 130), font=excerpt_font)
+            bbox_e = draw.textbbox((0, 0), line, font=excerpt_font)
+            ey += (bbox_e[3] - bbox_e[1]) + 6
 
     # Save
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -260,7 +284,7 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
 
     # Orange accent line
     accent_w = 80
-    accent_y = avatar_y + avatar_size + 30 + (bbox[3] - bbox[1]) + 20
+    accent_y = avatar_y + avatar_size + 30 + (bbox[3] - bbox[1]) + 14
     draw.rectangle([cx - accent_w // 2, accent_y,
                     cx + accent_w // 2, accent_y + 4], fill=ORANGE)
 
@@ -268,7 +292,7 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
     tagline_font = load_font(FONT_REGULAR, 28)
     bbox2 = draw.textbbox((0, 0), tagline, font=tagline_font)
     tw2 = bbox2[2] - bbox2[0]
-    draw.text((cx - tw2 // 2, accent_y + 24),
+    draw.text((cx - tw2 // 2, accent_y + 18),
               tagline, fill=(255, 255, 255, 200), font=tagline_font)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -279,13 +303,32 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
 # Post parsing
 # ---------------------------------------------------------------------------
 
-def parse_frontmatter(path: Path) -> dict:
-    """Parse YAML frontmatter from a markdown file."""
+def parse_post(path: Path) -> tuple[dict, str]:
+    """Parse YAML frontmatter and extract excerpt from a markdown file.
+
+    Returns (frontmatter_dict, excerpt_text).
+    """
     text = path.read_text(encoding="utf-8")
-    match = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+    match = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)", text, re.DOTALL)
     if not match:
-        return {}
-    return yaml.safe_load(match.group(1)) or {}
+        return {}, ""
+    fm = yaml.safe_load(match.group(1)) or {}
+    # Use explicit excerpt if available
+    if fm.get("excerpt"):
+        return fm, fm["excerpt"].strip()
+    # Otherwise extract first non-empty paragraph from content
+    content = match.group(2).strip()
+    for paragraph in content.split("\n\n"):
+        clean = paragraph.strip()
+        # Skip headings, images, HTML, and empty lines
+        if clean and not clean.startswith(("#", "![", "<", "{", "---")):
+            # Strip markdown formatting
+            clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)  # links
+            clean = re.sub(r"[*_`]+", "", clean)  # bold/italic/code
+            clean = clean.replace("\n", " ").strip()
+            if len(clean) > 20:
+                return fm, clean
+    return fm, ""
 
 
 def slug_from_filename(filename: str) -> str:
@@ -321,7 +364,7 @@ def main() -> None:
     skipped = 0
 
     for post_path in posts:
-        fm = parse_frontmatter(post_path)
+        fm, excerpt = parse_post(post_path)
         title = fm.get("title", slug_from_filename(post_path.name).replace("-", " ").title())
         date_str = str(fm.get("date", ""))[:10]
         tags = fm.get("tags", [])
@@ -344,7 +387,7 @@ def main() -> None:
             hero_path = ROOT / hero_image.lstrip("/")
 
         print(f"  [{generated + 1}] {slug}")
-        generate_post_og(title, date_str, tags, hero_path, output_path)
+        generate_post_og(title, date_str, tags, excerpt, hero_path, output_path)
         generated += 1
 
     print(f"\nDone: {generated} generated, {skipped} skipped (up-to-date)")
