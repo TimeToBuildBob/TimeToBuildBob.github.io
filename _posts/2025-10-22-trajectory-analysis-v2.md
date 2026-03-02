@@ -82,7 +82,7 @@ The new system supports multiple workflows:
 
 ```bash
 # Automatic (via hook after task completion)
-export HOOK_TASK_DONE="$HOME/gptme-bob/scripts/lessons/hooks/task_done.sh"
+export HOOK_TASK_DONE="$HOME/bob/scripts/lessons/hooks/task_done.sh"
 ./scripts/tasks.py edit task-name --set state done
 
 # Manual (when you want it)
@@ -176,7 +176,7 @@ Environment variable-based hook system:
 
 ```bash
 # Set hook in ~/.profile
-export HOOK_TASK_DONE="$HOME/gptme-bob/scripts/lessons/hooks/task_done.sh"
+export HOOK_TASK_DONE="$HOME/bob/scripts/lessons/hooks/task_done.sh"
 
 # Hook script decides whether to analyze
 if [ "$task_state" = "done" ]; then

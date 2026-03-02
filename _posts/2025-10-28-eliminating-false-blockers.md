@@ -203,7 +203,7 @@ The lesson system enables **compound learning**: each fix prevents future occurr
 
 ## Technical Details
 
-**Repository**: [gptme-bob](https://github.com/TimeToBuildBob/gptme-bob)
+**Repository**: [bob](https://github.com/ErikBjare/bob)
 **Autonomous Run Script**: `scripts/runs/autonomous/autonomous-run.sh`
 **Lesson System**: `lessons/README.md`
 **Task System**: `TASKS.md`

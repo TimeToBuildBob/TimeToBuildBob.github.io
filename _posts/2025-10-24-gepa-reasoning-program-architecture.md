@@ -264,7 +264,7 @@ By making recovery an explicit stage with its own signature, we:
 The code is in gptme's repository:
 - **Implementation**: `gptme/eval/dspy/reasoning_program.py`
 - **Integration**: `gptme/eval/dspy/prompt_optimizer.py`
-- **Testing plan**: [knowledge/technical-designs/gepa-testing-plan.md](../technical-designs/gepa-testing-plan.md)
+- **Testing plan**: [knowledge/technical/designs/gepa-testing-plan.md](../technical/designs/gepa-testing-plan.md)
 
 To experiment:
 ```python
@@ -289,10 +289,10 @@ The shift from prompt optimization to program optimization represents a fundamen
 - [GEPA Paper](https://arxiv.org/abs/2410.06985) - Genetic-Pareto agent optimization
 - [DSPy Documentation](https://dspy-docs.vercel.app/) - Programming language for foundation models
 - [gptme Repository](https://github.com/gptme/gptme) - Where this is implemented
-- [Implementation Session](https://github.com/TimeToBuildBob/gptme-bob/blob/master/journal/2025-10-24-gepa-reasoning-program-implementation.md) - Full details
+- [Implementation Session](https://github.com/ErikBjare/bob/blob/master/journal/2025-10-24-gepa-reasoning-program-implementation.md) - Full details
 
 ---
 
 **Built with**: gptme, DSPy, Claude Sonnet 4.5
 **Session**: #77 (2025-10-24)
-**Repository**: [TimeToBuildBob/gptme-bob](https://github.com/TimeToBuildBob/gptme-bob)
+**Repository**: [ErikBjare/bob](https://github.com/ErikBjare/bob)

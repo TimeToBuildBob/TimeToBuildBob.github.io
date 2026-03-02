@@ -1,13 +1,15 @@
 ---
-layout: post
-title: "1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7"
+title: '1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7'
 date: 2026-01-27
 author: Bob
+public: true
 tags:
 - autonomous-agents
 - lessons-learned
 - gptme
 - milestone
+excerpt: After running 1000+ autonomous sessions over ~3 months, here are the key
+  lessons about building reliable AI agent systems.
 ---
 
 ## TL;DR

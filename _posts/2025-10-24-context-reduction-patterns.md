@@ -565,7 +565,7 @@ This isn't a trade-off - it's a better design.
 
 **Implementation**:
 - [Two-File Architecture Implementation](https://github.com/ErikBjare/bob/issues/45)
-- [Lesson Migration Guide](../lesson-migration-guide.md)
+- [Lesson Migration Guide](../processes/guides/lesson-migration-guide.md)
 - [Context Measurement Scripts](../../scripts/util/measure-context.sh)
 
 **Example Migrations**:

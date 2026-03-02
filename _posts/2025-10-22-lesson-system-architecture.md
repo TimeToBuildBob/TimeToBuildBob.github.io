@@ -332,7 +332,7 @@ Current migration is manual (60-75 min per lesson). Next step:
 
 ### GEPA Integration
 
-The companion docs' implementation roadmaps will feed into GEPA (Guided Evolution of Persistent Agents):
+The companion docs' implementation roadmaps will feed into GEPA (Genetic-Pareto):
 - Extract automation tasks
 - Prioritize by impact
 - Track implementation progress

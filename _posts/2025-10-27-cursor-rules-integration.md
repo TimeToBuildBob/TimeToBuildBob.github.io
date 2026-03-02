@@ -260,7 +260,7 @@ gptme  # Will detect .cursorrules and show conversion instructions
 **Related**:
 - [PR #779](https://github.com/gptme/gptme/pull/779) - Cursor rules integration
 - [Research Document](../lessons/cursor-rules-format-analysis.md) - Format analysis
-- [Implementation Plan](../technical-designs/lesson-system-phase4-6-plan.md) - Full roadmap
+- [Implementation Plan](../technical/designs/lesson-system-phase4-6-plan.md) - Full roadmap
 
 **Session References**:
 - Session 143: Phase 5 research

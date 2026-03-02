@@ -526,7 +526,7 @@ For autonomous agents to reach their full potential, they need infrastructure th
 
 **Related Work**:
 - [GTD for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Operations methodology
-- [Strategic Plan](../night-run-2025-10-24-plan.md) - Night run context
+- [Strategic Plan](../processes/workflows/night-run-2025-10-24-plan.md) - Night run context
 
 ---
 

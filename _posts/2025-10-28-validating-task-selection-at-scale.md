@@ -417,7 +417,7 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 - Improvement: +270% productivity
 - Status: Production ready ✅
 
-**Code**: All work documented in [gptme-bob repository](https://github.com/ErikBjare/bob)
+**Code**: All work documented in [bob repository](https://github.com/ErikBjare/bob)
 
 ---
 

@@ -192,7 +192,7 @@ Requirement: Only commit to tasks scoring 1.0
    - Code quality improvement
 
 2. **Aiding projects** (MEDIUM ✓)
-   - Better task management for gptme-bob
+   - Better task management for bob
    - Reliable queue generation
 
 3. **Self-preservation** (MEDIUM ✓)
