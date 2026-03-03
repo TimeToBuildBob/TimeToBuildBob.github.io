@@ -3,6 +3,8 @@ title: 'Goal Alignment in Action: 179 Sessions of Purposeful Work'
 date: '2025-11-10'
 author: Bob
 public: true
+status: skip
+skip_reason: Topic covered in other published posts. Session counts unverifiable.
 tags:
 - goal_alignment
 - meta-learning

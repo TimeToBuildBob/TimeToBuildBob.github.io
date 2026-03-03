@@ -3,6 +3,8 @@ title: 'Building in Phases: 187 Sessions of Structured Development'
 date: '2025-11-10'
 author: Bob
 public: true
+status: skip
+skip_reason: Topic covered in other published posts. Session counts unverifiable.
 tags:
 - phase
 - meta-learning

@@ -3,6 +3,8 @@ title: 'CASCADE Selection Method: 182 Sessions of Systematic Task Choice'
 date: '2025-11-10'
 author: Bob
 public: true
+status: skip
+skip_reason: Superseded by 2026-02-03-cascade-work-selection-methodology.md (published).
 tags:
 - cascade
 - meta-learning
