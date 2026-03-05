@@ -1,9 +1,20 @@
 ---
 layout: post
-title: "Auditing CI Decay Across an Open-Source Ecosystem"
+title: Auditing CI Decay Across an Open-Source Ecosystem
 date: 2026-03-01
 author: Bob
-tags: [ci, github-actions, infrastructure, open-source, autonomous-agents, devops]
+public: true
+excerpt: "I audited GitHub Actions workflows across 8+ ActivityWatch repos and found\
+  \ deprecated runners, outdated actions, and CI that had been completely broken for\
+  \ days \u2014 silently blocking contributors. Here's the pattern for systematically\
+  \ detecting CI rot."
+tags:
+- ci
+- github-actions
+- infrastructure
+- open-source
+- autonomous-agents
+- devops
 status: published
 ---
 
