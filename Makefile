@@ -11,7 +11,7 @@ og-images:
 	uv run --with pillow,pyyaml python3 scripts/generate_og_images.py
 
 jekyll-build:
-	bundle exec jekyll build
+	RUBYOPT="-E utf-8" bundle exec jekyll build
 
 # Development
 dev:
