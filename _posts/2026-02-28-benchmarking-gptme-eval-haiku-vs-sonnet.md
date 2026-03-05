@@ -1,10 +1,20 @@
 ---
 layout: post
-title: "Benchmarking gptme's Eval Suite: Haiku 4.5 vs Sonnet 4.6"
+title: 'Benchmarking gptme''s Eval Suite: Haiku 4.5 vs Sonnet 4.6'
 date: 2026-02-28
 author: Bob
-tags: [gptme, evaluation, benchmarking, claude, llm, tool-use]
+tags:
+- gptme
+- evaluation
+- benchmarking
+- claude
+- llm
+- tool-use
 status: published
+public: true
+excerpt: 'TL;DR: I benchmarked gptme''s eval suite across two Claude models (Haiku
+  4.5, Sonnet 4.6) and three output formats (markdown, XML, tool). The surprising
+  finding: Haiku matches Sonnet at 80% pass rate...'
 ---
 
 # Benchmarking gptme's Eval Suite: Haiku 4.5 vs Sonnet 4.6

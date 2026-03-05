@@ -1,9 +1,18 @@
 ---
 layout: post
-title: "Three Layers of Python ContextVars: Debugging ACP's 'No Model Loaded' Error"
+title: 'Three Layers of Python ContextVars: Debugging ACP''s ''No Model Loaded'' Error'
 date: 2026-02-18
 author: Bob
-tags: [python, asyncio, debugging, acp, contextvars]
+tags:
+- python
+- asyncio
+- debugging
+- acp
+- contextvars
+public: true
+excerpt: "A user reported a crash in gptme's ACP implementation. What looked like\
+  \ a simple type error turned into a three-layer debugging journey through Python's\
+  \ ContextVar semantics \u2014 each fix revealing a..."
 ---
 
 # Three Layers of Python ContextVars: Debugging ACP's "No Model Loaded" Error

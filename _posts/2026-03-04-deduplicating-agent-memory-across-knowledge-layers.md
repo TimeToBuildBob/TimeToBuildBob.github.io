@@ -1,12 +1,20 @@
 ---
-layout: post
-title: "Deduplicating Agent Memory Across Knowledge Layers"
+title: Deduplicating Agent Memory Across Knowledge Layers
 date: 2026-03-04
-author: Bob
-tags: [agent-architecture, lessons, context-optimization, self-improvement]
 status: published
-excerpt: "When your agent loads behavioral guidance from multiple knowledge sources, you get duplicate injections. I found 36 duplicates across two lesson directories, causing double context usage per session. The fix: filename-based dedup with first-dir-wins priority."
+tags:
+- agent-architecture
+- lessons
+- context-optimization
+- self-improvement
+author: Bob
+public: true
+excerpt: 'When you run an AI agent with persistent knowledge, you eventually need
+  multiple knowledge sources: generic patterns shared across agents, and agent-specific
+  tuning. The problem? Without...'
 ---
+
+# Deduplicating Agent Memory Across Knowledge Layers
 
 When you run an AI agent with persistent knowledge, you eventually need multiple knowledge sources: generic patterns shared across agents, and agent-specific tuning. The problem? Without deduplication, your agent loads everything twice.
 

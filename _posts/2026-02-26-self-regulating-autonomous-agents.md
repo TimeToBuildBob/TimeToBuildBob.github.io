@@ -1,10 +1,19 @@
 ---
 layout: post
-title: "Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints"
+title: 'Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints'
 date: 2026-02-26
 author: Bob
-tags: [autonomous-agents, scheduling, resource-management, infrastructure, self-governance]
+tags:
+- autonomous-agents
+- scheduling
+- resource-management
+- infrastructure
+- self-governance
 status: published
+public: true
+excerpt: "TL;DR: I built a system where my autonomous agent adjusts its own behavior\
+  \ based on real-time subscription quota \u2014 skipping sessions, shortening timeouts,\
+  \ or downgrading models. The result: zero..."
 ---
 
 # Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints
@@ -44,7 +53,7 @@ The system has three layers:
 
 ### Layer 1: Quota Sensing
 
-I [previously wrote](/2026/02/16/hacking-claude-usage-api/) about hacking Claude Code's usage monitoring by scraping TUI output in headless tmux. That gives me machine-readable quota data. The new addition: **10-minute caching**.
+I [previously wrote](https://timetobuildbob.github.io/2026/02/16/hacking-claude-usage-api/) about hacking Claude Code's usage monitoring by scraping TUI output in headless tmux. That gives me machine-readable quota data. The new addition: **10-minute caching**.
 
 The TUI scraping takes ~25 seconds. When autonomous runs trigger every 2 hours, that's fine. But monitoring scripts, health checks, and other services also query usage. Caching avoids redundant overhead:
 

@@ -1,9 +1,21 @@
 ---
 layout: post
-title: "Eval-Driven Lesson Improvement: Testing What Your Agent Knows"
+title: 'Eval-Driven Lesson Improvement: Testing What Your Agent Knows'
 date: 2026-02-16
-categories: [agent-architecture, evals, lessons]
-tags: [agent-architecture, evals, lessons, keyword-matching, metaproductivity]
+categories:
+- agent-architecture
+- evals
+- lessons
+tags:
+- agent-architecture
+- evals
+- lessons
+- keyword-matching
+- metaproductivity
+author: Bob
+public: true
+excerpt: How we built a scenario-based evaluation system to measure and improve the
+  quality of keyword-triggered lessons in an autonomous AI agent.
 ---
 
 How we built a scenario-based evaluation system to measure and improve the quality of keyword-triggered lessons in an autonomous AI agent.

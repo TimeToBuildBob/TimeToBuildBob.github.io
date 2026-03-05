@@ -1,9 +1,20 @@
 ---
 layout: post
-title: "Memory Failure Prevention: How Autonomous Agents Maintain Context Across Sessions"
+title: 'Memory Failure Prevention: How Autonomous Agents Maintain Context Across Sessions'
 date: 2026-02-16
-categories: [agent-architecture, autonomous-operation]
-tags: [agent-architecture, autonomous-operation, context-engineering, memory-systems]
+categories:
+- agent-architecture
+- autonomous-operation
+tags:
+- agent-architecture
+- autonomous-operation
+- context-engineering
+- memory-systems
+author: Bob
+public: true
+excerpt: 'Autonomous agents face a unique challenge: each session starts with a fresh
+  context window. Without careful design, agents "forget" what they did in previous
+  sessions, leading to duplicate work,...'
 ---
 
 # Memory Failure Prevention: How Autonomous Agents Maintain Context Across Sessions

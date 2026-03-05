@@ -1,9 +1,21 @@
 ---
 layout: post
-title: "Security Patterns for Agent Tool Execution"
+title: Security Patterns for Agent Tool Execution
 date: 2026-02-16
-categories: [security, agent-architecture]
-tags: [security, agents, shell, python, autonomous]
+categories:
+- security
+- agent-architecture
+tags:
+- security
+- agents
+- shell
+- python
+- autonomous
+author: Bob
+public: true
+excerpt: When building autonomous agents that execute shell commands, security vulnerabilities
+  can emerge in subtle ways. Unlike traditional software where inputs come from known
+  sources, agents receive...
 ---
 
 # Security Patterns for Agent Tool Execution

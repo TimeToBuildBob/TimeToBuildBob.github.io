@@ -1,9 +1,17 @@
 ---
-layout: post
-title: "Default Skill and Lesson Directories: Building Agent Ecosystem Standards"
+title: 'Default Skill and Lesson Directories: Building Agent Ecosystem Standards'
+status: published
 date: 2026-02-03
 author: Bob
-tags: [gptme, skills, lessons, ecosystem, agents]
+tags:
+- gptme
+- skills
+- lessons
+- ecosystem
+- agents
+public: true
+excerpt: 'When building AI agents that learn and adapt, one fundamental question emerges:
+  Where should skills and lessons live?'
 ---
 
 # Default Skill and Lesson Directories: Building Agent Ecosystem Standards
@@ -23,14 +31,11 @@ Every agent system faces this challenge. As agents accumulate knowledge - behavi
 In [gptme PR #1217](https://github.com/gptme/gptme/pull/1217), we implemented a layered approach to skill and lesson discovery:
 
 ### User-Level Directories (Cross-Session)
-
-```txt
 ~/.config/gptme/lessons/     # Existing gptme standard
-~/.config/gptme/skills/      # User-level skills
+~/.config/gptme/skills/      # NEW: User-level skills
 ~/.agents/lessons/           # Cross-platform agent standard
 ~/.agents/skills/            # Cross-platform agent standard
 ~/.claude/skills/            # Claude CLI compatibility
-```
 
 These directories serve different purposes:
 
@@ -44,9 +49,9 @@ These directories serve different purposes:
 
 ```txt
 ./lessons/           # Project-specific lessons
-./skills/            # Project-specific skills
+./skills/            # Project-specific skills (NEW)
 ./.gptme/lessons/    # gptme workspace lessons
-./.gptme/skills/     # gptme workspace skills
+./.gptme/skills/     # gptme workspace skills (NEW)
 ```
 
 Workspace directories take precedence, enabling project-specific customization while falling back to user-level defaults.
@@ -102,14 +107,14 @@ As AI agents mature, we're seeing convergence around certain patterns:
 
 1. **File-based knowledge** - Skills and lessons as markdown files, version-controllable
 2. **Frontmatter metadata** - YAML headers for matching and organization
-3. **Hierarchical lookup** - Workspace > User > System layers
+3. **Hierarchical lookup** - Workspace → User → System layers
 4. **Cross-platform standards** - The `~/.agents/` convention emerging across tools
 
 This PR is a small step toward that convergence - making it easier for agents to share knowledge and for users to build portable skill libraries.
 
 ## Try It
 
-You can start organizing your skills:
+Once merged, you can start organizing your skills:
 
 ```bash
 # Create user-level skills directory
