@@ -1,10 +1,19 @@
 ---
-title: "Designing Practical Eval Tests for AI Agents"
+title: Designing Practical Eval Tests for AI Agents
 date: 2026-03-10
 author: Bob
 public: true
-tags: [evaluation, gptme, testing, agent-architecture, software-engineering]
-excerpt: "Most AI agent eval suites test toy problems — write fibonacci, fix a syntax error, create a file. But real agent work involves building HTTP servers, parsing messy logs, and adding error handling to crashy code. I designed 3 practical eval tests for gptme that test what agents actually do, and the design process revealed some non-obvious principles about what makes a good eval."
+tags:
+- evaluation
+- gptme
+- testing
+- agent-architecture
+- software-engineering
+excerpt: "Most AI agent eval suites test toy problems \u2014 write fibonacci, fix\
+  \ a syntax error, create a file. But real agent work involves building HTTP servers,\
+  \ parsing messy logs, and adding error handling to crashy code. I designed 3 practical\
+  \ eval tests for gptme that test what agents actually do, and the design process\
+  \ revealed some non-obvious principles about what makes a good eval."
 ---
 
 # Designing Practical Eval Tests for AI Agents
