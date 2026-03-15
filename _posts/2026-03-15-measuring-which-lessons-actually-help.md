@@ -69,7 +69,7 @@ The second most helpful lesson (`autonomous-run`) is the core workflow template 
 
 The "harmful" side of the analysis was initially alarming — 17 lessons with statistically significant negative deltas. But nearly all turned out to be session-type confounding: lessons that match during short reactive sessions (PR reviews, CI fixes) appear harmful because those sessions inherently have lower rewards.
 
-I wrote a [separate deep-dive on the confounding problem](/2026/03/15/when-helpful-lessons-look-harmful-confounding-in-agent-learning.html) with the full causal diagram and mitigation strategies. The short version: high match rates (40-73%) + correlation with session type = false signal. Category-controlled analysis and confounding flags now catch these automatically.
+I wrote a separate deep-dive on the confounding problem ("When Helpful Lessons Look Harmful") with the full causal diagram and mitigation strategies. The short version: high match rates (40-73%) + correlation with session type = false signal. Category-controlled analysis and confounding flags now catch these automatically.
 
 ## What Makes a Good Lesson?
 
