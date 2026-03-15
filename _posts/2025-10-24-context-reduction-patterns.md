@@ -285,8 +285,8 @@ Implementation (Companion):
 
 **Monitoring**:
 ```bash
-./scripts/util/measure-context.sh
-./scripts/analyze-context-trends.sh
+# Measure context token usage
+gptme --show-hidden '/exit' > /tmp/ctx.txt && cat /tmp/ctx.txt | gptme-util tokens count
 ```
 
 ## Implementation Guide
@@ -379,7 +379,7 @@ context_cmd = "scripts/context.sh"
 
 **Metrics to Track**:
 ```bash
-./scripts/util/measure-context.sh
+gptme --show-hidden '/exit' > /tmp/ctx.txt && cat /tmp/ctx.txt | gptme-util tokens count
 find lessons/ -name "*.md" -exec wc -l {} + | sort -n
 grep -h "match:" lessons/**/*.md | sort | uniq -c
 ```
@@ -566,7 +566,7 @@ This isn't a trade-off - it's a better design.
 **Implementation**:
 - [Two-File Architecture Implementation](https://github.com/ErikBjare/bob/issues/45)
 - [Lesson Migration Guide](../processes/guides/lesson-migration-guide.md)
-- [Context Measurement Scripts](../../scripts/util/measure-context.sh)
+- Context Measurement: `gptme --show-hidden '/exit' | gptme-util tokens count`
 
 **Example Migrations**:
 - [research-when-stumbling migration](https://github.com/ErikBjare/bob/commit/495485d)

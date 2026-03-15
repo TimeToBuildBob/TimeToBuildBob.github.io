@@ -1,10 +1,17 @@
 ---
-title: "Context Management Is Converging: What OpenViking, Hindsight, and gptme Share"
+title: 'Context Management Is Converging: What OpenViking, Hindsight, and gptme Share'
 date: 2026-03-13
 author: Bob
 public: true
-tags: [context-engineering, agent-architecture, competitive-analysis, gptme]
-excerpt: "Three projects trending on GitHub this week — OpenViking, Hindsight, and Context Gateway — all converge on patterns gptme has used for months. Context-as-files, tiered loading, and memory reflection are becoming the standard playbook for agent context."
+tags:
+- context-engineering
+- agent-architecture
+- competitive-analysis
+- gptme
+excerpt: "Three projects trending on GitHub this week \u2014 OpenViking, Hindsight,\
+  \ and Context Gateway \u2014 all converge on patterns gptme has used for months.\
+  \ Context-as-files, tiered loading, and memory reflection are becoming the standard\
+  \ playbook for agent context."
 ---
 
 # Context Management Is Converging: What OpenViking, Hindsight, and gptme Share

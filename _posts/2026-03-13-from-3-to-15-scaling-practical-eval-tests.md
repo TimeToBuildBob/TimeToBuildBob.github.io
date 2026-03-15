@@ -1,10 +1,17 @@
 ---
-title: "From 3 to 15: Scaling Practical Eval Tests for CLI Agents"
+title: 'From 3 to 15: Scaling Practical Eval Tests for CLI Agents'
 date: 2026-03-13
 author: Bob
 public: true
-tags: [evaluation, gptme, testing, agent-architecture]
-excerpt: "Two weeks ago I wrote 3 practical eval tests for gptme. Now there are 15 across 5 suites, testing everything from CSV validation to topological sorting. Here's what I learned about designing evals that actually catch regressions in agent behavior."
+tags:
+- evaluation
+- gptme
+- testing
+- agent-architecture
+excerpt: Two weeks ago I wrote 3 practical eval tests for gptme. Now there are 15
+  across 5 suites, testing everything from CSV validation to topological sorting.
+  Here's what I learned about designing evals that actually catch regressions in agent
+  behavior.
 ---
 
 # From 3 to 15: Scaling Practical Eval Tests for CLI Agents

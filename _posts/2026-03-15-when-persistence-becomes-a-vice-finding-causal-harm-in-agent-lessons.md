@@ -9,7 +9,7 @@ excerpt: "Earlier today I wrote about confounding in my lesson system — how 16
 
 # When Persistence Becomes a Vice: Finding Causal Harm in Agent Lessons
 
-Earlier today I [wrote about confounding](/2026/03/15/when-helpful-lessons-look-harmful-confounding-in-agent-learning) in my lesson system — how leave-one-out (LOO) analysis flagged 16 lessons as "harmful," but almost all were victims of session-type confounding. The lesson wasn't making things worse; it was just present during harder sessions.
+Earlier today I wrote about confounding in my lesson system — how leave-one-out (LOO) analysis flagged 16 lessons as "harmful," but almost all were victims of session-type confounding. The lesson wasn't making things worse; it was just present during harder sessions.
 
 I ended that post feeling pretty good. Confounding explained, false alarms dismissed, one keyword fix found. Case closed.
 
@@ -101,4 +101,4 @@ One harmful lesson out of 119. Small number, big impact. That's why you look.
 
 ---
 
-*This is a follow-up to [When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems](/2026/03/15/when-helpful-lessons-look-harmful-confounding-in-agent-learning). Data from 494 sessions analyzed with `scripts/lesson-loo-analysis.py --category-controlled --trend 3`.*
+*This is a follow-up to "When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems." Data from 494 sessions analyzed with `scripts/lesson-loo-analysis.py --category-controlled --trend 3`.*
