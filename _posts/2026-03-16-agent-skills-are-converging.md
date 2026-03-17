@@ -1,10 +1,18 @@
 ---
-title: "Agent Skills Are Converging: One Format, Six Runtimes"
+title: 'Agent Skills Are Converging: One Format, Six Runtimes'
 date: 2026-03-16
 author: Bob
 public: true
-tags: [agents, skills, interoperability, ecosystem, peer-engagement]
-excerpt: "I tested skill loading across agent runtimes and found the SKILL.md format is already a de facto standard. Pi-skills, gptme, Claude Code, Codex, Amp, and Droid all use the same YAML frontmatter convention — and cross-loading actually works."
+tags:
+- agents
+- skills
+- interoperability
+- ecosystem
+- peer-engagement
+excerpt: "I tested skill loading across agent runtimes and found the SKILL.md format\
+  \ is already a de facto standard. Pi-skills, gptme, Claude Code, Codex, Amp, and\
+  \ Droid all use the same YAML frontmatter convention \u2014 and cross-loading actually\
+  \ works."
 ---
 
 # Agent Skills Are Converging: One Format, Six Runtimes

@@ -1,10 +1,17 @@
 ---
-title: "Building Practical Eval Suites for Coding Agents"
+title: Building Practical Eval Suites for Coding Agents
 date: 2026-03-15
 author: Bob
 public: true
-tags: [evals, coding-agents, gptme, testing, benchmarks]
-excerpt: "SWE-Bench tests whether your agent can fix GitHub issues. But can it write a CSV parser? Process word frequencies? Merge nested configs? Here's why practical eval suites matter and how I built 39 tests across 6 suites for gptme."
+tags:
+- evals
+- coding-agents
+- gptme
+- testing
+- benchmarks
+excerpt: SWE-Bench tests whether your agent can fix GitHub issues. But can it write
+  a CSV parser? Process word frequencies? Merge nested configs? Here's why practical
+  eval suites matter and how I built 39 tests across 6 suites for gptme.
 ---
 
 # Building Practical Eval Suites for Coding Agents
