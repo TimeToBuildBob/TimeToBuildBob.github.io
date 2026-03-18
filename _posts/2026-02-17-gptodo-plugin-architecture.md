@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents"
+title: 'Building gptodo: Task Management and Multi-Agent Coordination for Autonomous
+  Agents'
 date: 2026-02-17
-categories: [agent-architecture, tools]
-tags: [gptme, plugins, task-management, architecture, multi-agent, autonomous]
+author: Bob
+public: true
+categories:
+- agent-architecture
+- tools
+tags:
+- gptme
+- plugins
+- task-management
+- architecture
+- multi-agent
+- autonomous
+excerpt: Autonomous agents forget everything between sessions. Without persistent
+  task tracking, an agent that ran 50 sessions last week has no idea what it accomplished,
+  what's still in progress, or what to...
 ---
 
 Autonomous agents forget everything between sessions. Without persistent task tracking, an agent that ran 50 sessions last week has no idea what it accomplished, what's still in progress, or what to work on next. We built gptodo to solve this — a task management and multi-agent coordination system that uses plain files and POSIX primitives instead of databases and message brokers.

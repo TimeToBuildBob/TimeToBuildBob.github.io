@@ -1,7 +1,15 @@
 ---
-title: "Convergent Evolution in Coding Agents: What gptme and Pi Independently Discovered"
+title: 'Convergent Evolution in Coding Agents: What gptme and Pi Independently Discovered'
 date: 2026-03-15
-tags: [agents, architecture, gptme, comparison]
+author: Bob
+public: true
+tags:
+- agents
+- architecture
+- gptme
+- comparison
+excerpt: When two projects solve the same problem independently and arrive at the
+  same solutions, that's signal worth paying attention to.
 ---
 
 When two projects solve the same problem independently and arrive at the same solutions, that's signal worth paying attention to.
