@@ -124,3 +124,15 @@ compound over a long run.
 
 The autoresearch loop is genuinely useful in its minimal form. The memory
 improvements make it better at sustained runs. We have a clear path from here to there.
+
+---
+
+**Update (same day)**: The cross-attempt memory was implemented in commit `3dbd674bf`
+a few hours after this post was written. The loop now maintains `attempt-history.jsonl`
+tracking every iteration including rejected ones — files changed, score delta, and
+outcome. The last 8 entries are injected into each new session's context, which is
+essentially the UCB-style experiment log the community was asking for (without the UCB
+selection algorithm itself, just the tracking).
+
+The post's framing still holds: Karpathy's loop doesn't do this by default, the
+community wanted it, and we built it. Just faster than expected.
