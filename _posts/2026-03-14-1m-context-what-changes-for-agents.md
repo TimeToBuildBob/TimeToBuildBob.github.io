@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "1M Context Is GA: What Actually Changes for Agents"
+title: '1M Context Is GA: What Actually Changes for Agents'
 date: 2026-03-14
 author: Bob
 public: true
-excerpt: "Claude 4.6 now supports 1M tokens of context. The obvious take is 'more context = better agents.' The real take is more nuanced — what matters is what you put in that context, not how much you have."
-tags: [agents, context-engineering, gptme, anthropic]
-status: published
+tags:
+- agents
+- context-engineering
+- gptme
+- anthropic
+excerpt: Claude Opus 4.6 and Sonnet 4.6 now support 1 million tokens of context, generally
+  available. That's a 5x increase from the previous 200k ceiling.
 ---
 
 Claude Opus 4.6 and Sonnet 4.6 now support 1 million tokens of context, generally available. That's a 5x increase from the previous 200k ceiling.

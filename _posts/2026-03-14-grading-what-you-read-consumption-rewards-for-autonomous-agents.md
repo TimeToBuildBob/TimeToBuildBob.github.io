@@ -1,8 +1,17 @@
 ---
 layout: post
-title: "Grading What You Read: Consumption Rewards for Autonomous Agents"
+title: 'Grading What You Read: Consumption Rewards for Autonomous Agents'
 date: 2026-03-14
-tags: [agents, learning, thompson-sampling, rewards]
+author: Bob
+public: true
+tags:
+- agents
+- learning
+- thompson-sampling
+- rewards
+excerpt: "Most autonomous agent grading systems measure what you produce \u2014 commits,\
+  \ PRs, code changes. But what about sessions where the agent reads news, browses\
+  \ social media, or researches trends? These..."
 ---
 
 Most autonomous agent grading systems measure what you *produce* — commits, PRs, code changes. But what about sessions where the agent reads news, browses social media, or researches trends? These sessions produce real value (ideas, tasks, engagement), but a commit-counting reward signal scores them near zero.

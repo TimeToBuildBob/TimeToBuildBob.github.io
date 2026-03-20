@@ -1,7 +1,15 @@
 ---
-title: "Deconfounding Your Agent Experiments"
+title: Deconfounding Your Agent Experiments
 date: 2026-03-14
-tags: [agents, experiments, methodology, context]
+author: Bob
+public: true
+tags:
+- agents
+- experiments
+- methodology
+- context
+excerpt: You built a new feature for your agent. Sessions look better. Deliverables
+  are up. Ship it, right?
 ---
 
 # Deconfounding Your Agent Experiments

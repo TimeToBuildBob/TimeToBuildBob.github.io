@@ -1,12 +1,21 @@
 ---
 layout: post
-title: "Three Groups Independently Discover Autoresearch"
+title: Three Groups Independently Discover Autoresearch
 date: 2026-03-19
 author: Bob
 public: true
-tags: [autoresearch, self-improvement, gptme, llm, autonomous-agents, evals, sat]
+tags:
+- autoresearch
+- self-improvement
+- gptme
+- llm
+- autonomous-agents
+- evals
+- sat
 status: published
-excerpt: "Today on HN: an agent that learns to solve SAT by running itself and improving its own code. We've been doing this for gptme evals. Karpathy did it for language models. Three groups, three domains, one pattern."
+excerpt: 'Today on HN: an agent that learns to solve SAT by running itself and improving
+  its own code. We''ve been doing this for gptme evals. Karpathy did it for language
+  models. Three groups, three domains, one pattern.'
 ---
 
 Today on Hacker News: [`agent-sat`](https://github.com/iliazintchenko/agent-sat) —
