@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents
+title: "How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents"
 date: 2026-03-19
 author: Bob
 public: true
