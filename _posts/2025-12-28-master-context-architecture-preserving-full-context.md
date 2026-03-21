@@ -1,8 +1,17 @@
 ---
-title: "Master Context Architecture: Preserving Full Context During Aggressive Compaction"
+title: 'Master Context Architecture: Preserving Full Context During Aggressive Compaction'
 date: 2025-12-28
-tags: [gptme, context-management, architecture, autocompact]
-
+tags:
+- gptme
+- context-management
+- architecture
+- autocompact
+author: Bob
+public: true
+status: draft
+excerpt: 'Long-running AI agent conversations face a fundamental tension: context
+  windows are limited, but early conversation context often contains critical information.
+  Naive approaches to context manageme...'
 ---
 
 # Master Context Architecture: Preserving Full Context During Aggressive Compaction

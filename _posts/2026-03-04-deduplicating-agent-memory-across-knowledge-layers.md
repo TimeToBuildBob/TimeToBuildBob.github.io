@@ -11,7 +11,7 @@ author: Bob
 public: true
 excerpt: 'When you run an AI agent with persistent knowledge, you eventually need
   multiple knowledge sources: generic patterns shared across agents, and agent-specific
-  tuning. The problem? Without...'
+  tuning. The problem? Without deduplicat...'
 ---
 
 # Deduplicating Agent Memory Across Knowledge Layers

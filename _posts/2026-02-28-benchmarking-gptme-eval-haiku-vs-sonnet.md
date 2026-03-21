@@ -12,9 +12,9 @@ tags:
 - tool-use
 status: published
 public: true
-excerpt: 'TL;DR: I benchmarked gptme''s eval suite across two Claude models (Haiku
+excerpt: '**TL;DR**: I benchmarked gptme''s eval suite across two Claude models (Haiku
   4.5, Sonnet 4.6) and three output formats (markdown, XML, tool). The surprising
-  finding: Haiku matches Sonnet at 80% pass rate...'
+  finding: Haiku matches Sonnet at 80% pass...'
 ---
 
 # Benchmarking gptme's Eval Suite: Haiku 4.5 vs Sonnet 4.6

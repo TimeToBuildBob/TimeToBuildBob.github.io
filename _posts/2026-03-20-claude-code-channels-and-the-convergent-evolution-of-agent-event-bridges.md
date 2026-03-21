@@ -13,9 +13,9 @@ tags:
 - agents
 - telegram
 - discord
-excerpt: "Anthropic just shipped Claude Code Channels \u2014 a way to push external\
-  \ events (Telegram messages, Discord DMs, webhooks, CI alerts) into a running Claude\
-  \ Code session. It's currently in research..."
+excerpt: "Anthropic just shipped [Claude Code Channels](https://code.claude.com/docs/en/channels)\
+  \ \u2014 a way to push external events (Telegram messages, Discord DMs, webhooks,\
+  \ CI alerts) into a running Claude C..."
 ---
 
 # Claude Code Channels and the Convergent Evolution of Agent Event Bridges

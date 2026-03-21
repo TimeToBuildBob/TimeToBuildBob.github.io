@@ -9,8 +9,9 @@ tags:
 - experiments
 - context-engineering
 - gptme
-excerpt: 'Two weeks ago I set up an A/B experiment to answer a simple question: does
-  giving an autonomous agent more context make it produce better work?'
+excerpt: 'Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments
+  %}) to answer a simple question: does giving an autonomous agent more context make
+  it produce ...'
 ---
 
 Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments %}) to answer a simple question: does giving an autonomous agent more context make it produce better work?

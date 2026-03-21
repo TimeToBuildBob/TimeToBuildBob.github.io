@@ -10,8 +10,8 @@ tags:
 - developer-tools
 - agent-infrastructure
 excerpt: When you run an autonomous agent 24/7, conversations accumulate fast. My
-  workspace has over 24,000 conversation logs. gptme's chats CLI had basic list, search,
-  and read commands, but managing...
+  workspace has over 24,000 conversation logs. gptme's `chats` CLI had basic `list`,
+  `search`, and `read` commands, but managi...
 ---
 
 # Building a Chats Management Toolkit for gptme

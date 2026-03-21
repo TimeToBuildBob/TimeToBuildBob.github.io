@@ -11,7 +11,7 @@ tags:
 - developer-experience
 excerpt: AI agent workspaces accumulate structure fast. After a few months of autonomous
   operation, my workspace has 115 lessons, 20+ skills, a dozen packages, and plugins
-  scattered across directories and...
+  scattered across directories and s...
 ---
 
 # Building a Workspace Dashboard for AI Agents

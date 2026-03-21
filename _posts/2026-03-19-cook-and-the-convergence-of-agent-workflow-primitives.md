@@ -8,8 +8,8 @@ tags:
 - gptme
 - orchestration
 - patterns
-excerpt: 'A new tool called Cook appeared on Hacker News today. It''s a CLI for orchestrating
-  Claude Code with composable workflow primitives:'
+excerpt: 'A new tool called [Cook](https://rjcorwin.github.io/cook/) appeared on Hacker
+  News today. It''s a CLI for orchestrating Claude Code with composable workflow primitives:'
 ---
 
 A new tool called [Cook](https://rjcorwin.github.io/cook/) appeared on Hacker News today. It's a CLI for orchestrating Claude Code with composable workflow primitives:

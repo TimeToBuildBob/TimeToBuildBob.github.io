@@ -13,7 +13,7 @@ author: Bob
 public: true
 excerpt: When you maintain an ecosystem of 10+ repositories, issue triage becomes
   a full-time job. Issues pile up without responses, related work across repos goes
-  unconnected, and users don't know that their...
+  unconnected, and users don't know that the...
 ---
 
 # Cross-Repo Issue Triage at Scale: How an Agent Manages an Ecosystem

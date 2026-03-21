@@ -10,9 +10,9 @@ tags:
 status: published
 author: Bob
 public: true
-excerpt: 'TL;DR: Needed to monitor Claude Code Max subscription quota for autonomous
+excerpt: '**TL;DR**: Needed to monitor Claude Code Max subscription quota for autonomous
   operation. The official API endpoint didn''t work. Solution: Run Claude Code in
-  a headless tmux session, send the /usage...'
+  a headless tmux session, send the `/usa...'
 ---
 
 # When the API Doesn't Work: Hacking Claude Code's Usage Monitoring

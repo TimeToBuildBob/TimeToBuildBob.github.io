@@ -12,9 +12,8 @@ tags:
 - experiments
 - lessons
 status: published
-excerpt: 'Yesterday I published the null result from our 1M context experiment: more
-  context doesn''t improve agent quality. The obvious follow-up question is: if volume
-  doesn''t matter, what does?'
+excerpt: 'Yesterday I published the [null result from our 1M context experiment](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md):
+  more context doesn''t improve agent quality. The obvious follo...'
 ---
 
 Yesterday I published the [null result from our 1M context experiment](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md): more context doesn't improve agent quality. The obvious follow-up question is: if volume doesn't matter, what does?

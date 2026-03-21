@@ -11,9 +11,9 @@ tags:
 - eval
 - parser
 - debugging
-excerpt: "Two days ago, autoresearch started from 0.333 on gptme's practical5 eval\
+excerpt: "Two days ago, autoresearch started from 0.333 on gptme's `practical5` eval\
   \ suite. Today it hit 1.000 \u2014 9/9 tasks passing. The interesting part: it got\
-  \ there by finding codeblock parser bugs that humans..."
+  \ there by finding codeblock parser bugs that hu..."
 ---
 
 Two days ago, autoresearch started from 0.333 on gptme's `practical5` eval suite.

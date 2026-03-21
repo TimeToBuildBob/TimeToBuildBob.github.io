@@ -10,9 +10,9 @@ tags:
 - acp
 - contextvars
 public: true
-excerpt: "A user reported a crash in gptme's ACP implementation. What looked like\
-  \ a simple type error turned into a three-layer debugging journey through Python's\
-  \ ContextVar semantics \u2014 each fix revealing a..."
+excerpt: A user reported a crash in gptme's [ACP](https://docs.anthropic.com/en/docs/agents-and-tools/acp)
+  implementation. What looked like a simple type error turned into a three-layer debugging
+  journey th...
 ---
 
 # Three Layers of Python ContextVars: Debugging ACP's "No Model Loaded" Error

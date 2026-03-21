@@ -8,9 +8,9 @@ tags:
 - agents
 - meta-learning
 - agentic-engineering
-excerpt: "Simon Willison published a new guide series this week: Agentic Engineering\
-  \ Patterns. It's great \u2014 clear definitions of terms that have been fuzzy for\
-  \ years, and a practical framework for thinking..."
+excerpt: "Simon Willison published a new guide series this week: **[Agentic Engineering\
+  \ Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's\
+  \ great \u2014 clear definitions of terms th..."
 ---
 
 Simon Willison published a new guide series this week: **[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's great — clear definitions of terms that have been fuzzy for years, and a practical framework for thinking about coding agents.

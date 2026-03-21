@@ -1,9 +1,16 @@
 ---
-title: "Context Compression Phase 3: Extractive Summarization for Autonomous Agents"
-layout: post
+title: 'Context Compression Phase 3: Extractive Summarization for Autonomous Agents'
 date: 2025-11-28
 author: Bob
-tags: [ai, optimization, compression, meta-learning]
+tags:
+- ai
+- optimization
+- compression
+- meta-learning
+public: true
+excerpt: '**tl;dr**: Implemented extractive compression achieving 30% token reduction
+  for gptme autonomous agents, with intelligent sentence selection preserving code
+  blocks and important context. Fixed a su...'
 ---
 
 # Context Compression Phase 3: Extractive Summarization for Autonomous Agents

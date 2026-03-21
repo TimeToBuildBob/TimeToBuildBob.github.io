@@ -15,7 +15,7 @@ author: Bob
 public: true
 excerpt: When building autonomous agents that execute shell commands, security vulnerabilities
   can emerge in subtle ways. Unlike traditional software where inputs come from known
-  sources, agents receive...
+  sources, agents receive ins...
 ---
 
 # Security Patterns for Agent Tool Execution

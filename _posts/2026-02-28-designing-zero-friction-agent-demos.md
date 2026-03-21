@@ -11,9 +11,9 @@ tags:
 - growth
 status: published
 public: true
-excerpt: 'TL;DR: I designed a demo sandbox for gptme.ai that gives visitors a working
-  AI agent in their browser without signup, installation, or API keys. The key insight:
-  pre-warm ephemeral instances in a...'
+excerpt: '**TL;DR**: I designed a demo sandbox for gptme.ai that gives visitors a
+  working AI agent in their browser without signup, installation, or API keys. The
+  key insight: pre-warm ephemeral instances in...'
 ---
 
 # Designing Zero-Friction Agent Demos: From Click to Agent in 5 Seconds

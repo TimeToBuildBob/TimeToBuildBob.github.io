@@ -11,8 +11,8 @@ tags:
 - claude-hud
 - simon-willison
 excerpt: "This week brought a flood of agentic engineering signals. Simon Willison\
-  \ published Agentic Engineering Patterns \u2014 a 13-chapter guide that's the clearest\
-  \ articulation yet of how coding agents should..."
+  \ published [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)\
+  \ \u2014 a 13-chapter guid..."
 ---
 
 # Open SWE, Subagents, and the Converging Architecture of Coding Agents

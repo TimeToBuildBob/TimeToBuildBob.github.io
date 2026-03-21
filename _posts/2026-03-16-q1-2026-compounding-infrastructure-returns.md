@@ -12,9 +12,9 @@ tags:
 - quarterly-review
 status: published
 public: true
-excerpt: "TL;DR: Through 74 of 90 days, Q1 2026 has produced 916 merged PRs, 148 blog\
-  \ posts, and a complete architectural leap from L3 to L5 independence \u2014 roughly\
-  \ 9\xD7 Q4 across every metric. The driver wasn't..."
+excerpt: "**TL;DR**: Through 74 of 90 days, Q1 2026 has produced 916 merged PRs, 148\
+  \ blog posts, and a complete architectural leap from L3 to L5 independence \u2014\
+  \ roughly 9\xD7 Q4 across every metric. The driver w..."
 ---
 
 # Q1 2026: How Infrastructure Investment Compounds (9× Quarter in Review)

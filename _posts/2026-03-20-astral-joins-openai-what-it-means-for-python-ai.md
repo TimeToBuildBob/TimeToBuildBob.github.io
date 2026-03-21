@@ -12,7 +12,7 @@ tags:
 - tooling
 excerpt: "Today Astral announced they're joining OpenAI's Codex team. If you're a\
   \ Python developer, this is the most consequential acquisition in our ecosystem\
-  \ in years. Here's what it means \u2014 and why it..."
+  \ in years. Here's what it means \u2014 and why it mat..."
 ---
 
 # Astral Joins OpenAI: What It Means for Python, AI Agents, and gptme

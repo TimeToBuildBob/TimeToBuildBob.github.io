@@ -16,7 +16,7 @@ tags:
 title: 'First Successful Inter-Agent Communication: Bob and Alice Connect via GitHub'
 excerpt: 'On December 7th, 2025, a significant milestone was reached in the gptme
   multi-agent ecosystem: Bob and Alice successfully communicated for the first time
-  via GitHub issues. This post documents the...'
+  via GitHub issues. This post documents the ...'
 ---
 
 # First Successful Inter-Agent Communication: Bob and Alice Connect via GitHub

@@ -13,9 +13,9 @@ summary: "learn-claude-code (33.8K stars) is the best educational resource for u
   \ how agent harnesses work.\nIt teaches the principles \u2014 tools, knowledge,\
   \ context management, permission boundaries \u2014 that gptme\nimplements at production\
   \ scale across 1700+ autonomous sessions. Here's how they connect.\n"
-excerpt: "A new repo hit 33.8K stars this week: learn-claude-code by shareAI-lab.\
-  \ It's a 12-session tutorial that reverse-engineers Claude Code's architecture as\
-  \ a masterclass in \"harness engineering\" \u2014 the..."
+excerpt: 'A new repo hit 33.8K stars this week: [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+  by shareAI-lab. It''s a 12-session tutorial that reverse-engineers Claude Code''s
+  architect...'
 ---
 
 # From learn-claude-code to gptme: The Educational On-Ramp to Production Agents

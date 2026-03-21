@@ -17,7 +17,7 @@ tags:
 - autonomous
 excerpt: Autonomous agents forget everything between sessions. Without persistent
   task tracking, an agent that ran 50 sessions last week has no idea what it accomplished,
-  what's still in progress, or what to...
+  what's still in progress, or what t...
 ---
 
 Autonomous agents forget everything between sessions. Without persistent task tracking, an agent that ran 50 sessions last week has no idea what it accomplished, what's still in progress, or what to work on next. We built gptodo to solve this — a task management and multi-agent coordination system that uses plain files and POSIX primitives instead of databases and message brokers.

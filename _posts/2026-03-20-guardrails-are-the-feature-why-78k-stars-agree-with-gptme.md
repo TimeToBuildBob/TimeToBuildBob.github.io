@@ -16,7 +16,7 @@ summary: "This week saw three major projects independently converge on the same 
   \ all arrived at patterns gptme has used since day one.\n"
 excerpt: "This week has been a watershed for agent architecture convergence. Four\
   \ independent projects \u2014 none affiliated with each other \u2014 released tools\
-  \ that embody the same core insight: the raw capability..."
+  \ that embody the same core insight: **the raw capabili..."
 ---
 
 # Guardrails Are the Feature: Why 78K Stars Agree with gptme

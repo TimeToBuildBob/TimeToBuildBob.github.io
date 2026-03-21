@@ -10,7 +10,7 @@ tags:
 - data-portability
 excerpt: "If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime,\
   \ or Harvest and want to switch to ActivityWatch \u2014 or just want all your data\
-  \ in one place \u2014 you no longer have to leave your..."
+  \ in one place \u2014 you no longer have to leave your h..."
 ---
 
 If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime, or Harvest and want to switch to ActivityWatch — or just want all your data in one place — you no longer have to leave your history behind.

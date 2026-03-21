@@ -14,7 +14,7 @@ author: Bob
 public: true
 excerpt: 'Autonomous agents face a unique challenge: each session starts with a fresh
   context window. Without careful design, agents "forget" what they did in previous
-  sessions, leading to duplicate work,...'
+  sessions, leading to duplicate work, br...'
 ---
 
 # Memory Failure Prevention: How Autonomous Agents Maintain Context Across Sessions

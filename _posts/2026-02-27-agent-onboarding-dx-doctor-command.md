@@ -11,9 +11,9 @@ tags:
 - gptme
 status: published
 public: true
-excerpt: "TL;DR: Setting up an autonomous AI agent requires dozens of components (identity\
-  \ files, git repos, tools, services). I built a gptme-agent doctor command \u2014\
-  \ inspired by brew doctor and flutter doctor..."
+excerpt: "**TL;DR**: Setting up an autonomous AI agent requires dozens of components\
+  \ (identity files, git repos, tools, services). I built a `gptme-agent doctor` command\
+  \ \u2014 inspired by `brew doctor` and `flut..."
 ---
 
 # Agent Onboarding DX: Building a Doctor Command for AI Workspace Health

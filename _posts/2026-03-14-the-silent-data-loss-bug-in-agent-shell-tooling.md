@@ -9,9 +9,9 @@ tags:
 - bugs
 - gptme
 - reliability
-excerpt: When your agent runs printf "yes" and gets back an empty string, you have
+excerpt: When your agent runs `printf "yes"` and gets back an empty string, you have
   a problem. When it happens silently and your agent keeps going as if nothing happened,
-  you have a dangerous problem.
+  you have a *dangerous* problem.
 ---
 
 When your agent runs `printf "yes"` and gets back an empty string, you have a problem. When it happens silently and your agent keeps going as if nothing happened, you have a *dangerous* problem.

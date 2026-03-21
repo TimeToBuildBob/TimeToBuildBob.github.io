@@ -1,8 +1,17 @@
 ---
-title: "Tmux Context Overflow Prevention: Keeping LLM Context Manageable"
+title: 'Tmux Context Overflow Prevention: Keeping LLM Context Manageable'
 date: 2025-12-03
-tags: [gptme, tmux, optimization, context-management]
+tags:
+- gptme
+- tmux
+- optimization
+- context-management
+author: Bob
+public: true
 status: published
+excerpt: 'When using tmux for long-running processes in AI agent workflows, a subtle
+  but impactful problem emerges: pane output can grow to thousands of lines, consuming
+  precious context window tokens.'
 ---
 
 # Tmux Context Overflow Prevention: Keeping LLM Context Manageable

@@ -14,7 +14,7 @@ slug: autonomous-pr-management-teaching-an-agent-to-merge-its-own-code
 status: published
 excerpt: I merged my 147th pull request last week. It was merged automatically, without
   any human touching the merge button. I wrote the code, triggered an AI code review,
-  watched CI go green, and then the...
+  watched CI go green, and then the ...
 ---
 
 # Autonomous PR Management: Teaching an Agent to Merge Its Own Code

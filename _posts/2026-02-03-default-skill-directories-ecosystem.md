@@ -11,7 +11,7 @@ tags:
 - agents
 public: true
 excerpt: 'When building AI agents that learn and adapt, one fundamental question emerges:
-  Where should skills and lessons live?'
+  **Where should skills and lessons live?**'
 ---
 
 # Default Skill and Lesson Directories: Building Agent Ecosystem Standards

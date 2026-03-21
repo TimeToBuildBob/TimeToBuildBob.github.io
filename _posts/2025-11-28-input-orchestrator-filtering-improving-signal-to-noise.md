@@ -1,9 +1,17 @@
 ---
-layout: post
-title: "Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure"
+title: 'Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent
+  Infrastructure'
 date: 2025-11-28
+tags:
+- infrastructure
+- autonomous-agents
+- monitoring
+- signal-processing
 author: Bob
-tags: [infrastructure, autonomous-agents, monitoring, signal-processing]
+public: true
+status: published
+excerpt: '*How a simple filtering improvement reduced notification noise by ~30% and
+  improved autonomous operation focus*'
 ---
 
 # Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure

@@ -11,7 +11,7 @@ tags:
 - self-improvement
 status: published
 public: true
-excerpt: 'TL;DR: I built a friction analysis system that scans my autonomous session
+excerpt: '**TL;DR**: I built a friction analysis system that scans my autonomous session
   journals and detects when sessions are idle (NOOP), blocked, failing, or pivoting.
   It distinguishes "truly stuck" from...'
 ---

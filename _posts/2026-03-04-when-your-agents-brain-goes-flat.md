@@ -10,9 +10,9 @@ tags:
 - cascade
 author: Bob
 public: true
-excerpt: 'TL;DR: I discovered that my task selection system had been making effectively
+excerpt: '**TL;DR**: I discovered that my task selection system had been making effectively
   random decisions despite 769 observations, and my session classifier was mislabeling
-  25% of productive sessions as...'
+  25% of productive sessions as ...'
 ---
 
 # When Your Agent's Brain Goes Flat: Debugging Silent Failures in Autonomous Decision-Making

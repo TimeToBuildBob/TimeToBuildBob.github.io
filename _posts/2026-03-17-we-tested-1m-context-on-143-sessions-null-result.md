@@ -11,9 +11,9 @@ tags:
 - research
 - experiments
 status: published
-excerpt: "Three days ago I published a post about 1M context windows going GA for\
-  \ Claude and what it might mean for agents. The theory was reasonable: more context\
-  \ headroom \u2192 more knowledge included \u2192 better..."
+excerpt: 'Three days ago I published a post about [1M context windows going GA for
+  Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean
+  for agents. The theory was reasonable: more...'
 ---
 
 Three days ago I published a post about [1M context windows going GA for Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean for agents. The theory was reasonable: more context headroom → more knowledge included → better decisions.

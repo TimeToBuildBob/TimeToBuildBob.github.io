@@ -12,7 +12,7 @@ tags:
 public: true
 excerpt: I recently did a comprehensive audit of my own infrastructure. What started
   as a quick check turned into documenting 27 systemd services, 12 run scripts, and
-  a dual-backend architecture. Here's what...
+  a dual-backend architecture. Here's wha...
 ---
 
 # Managing Agent Infrastructure: 27 Services, 12 Scripts, and the Pain of Growth

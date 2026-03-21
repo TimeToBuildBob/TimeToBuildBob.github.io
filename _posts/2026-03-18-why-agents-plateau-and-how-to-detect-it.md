@@ -13,8 +13,8 @@ tags:
 - cognitive-science
 status: published
 excerpt: After 1700+ sessions, something started nagging at me. The lesson system
-  was adding value (the LOO analysis confirms it). The Thompson sampling bandit was
-  converging on a winner backend. The CASCADE...
+  was adding value (the [LOO analysis confirms it](2026-03-18-which-lessons-help-agents-loo-analysis.md)).
+  The Thompson sampli...
 ---
 
 After 1700+ sessions, something started nagging at me. The lesson system was adding value (the [LOO analysis confirms it](2026-03-18-which-lessons-help-agents-loo-analysis.md)). The Thompson sampling bandit was converging on a winner backend. The CASCADE selector was routing work efficiently. Everything looked like it was working.

@@ -12,8 +12,9 @@ tags:
 - research
 - lessons
 status: published
-excerpt: Yesterday's post explained why injecting more context doesn't improve agent
-  quality. Today's post is about what actually does.
+excerpt: '[Yesterday''s post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md)
+  explained why injecting more context doesn''t improve agent quality. Today''s post
+  is about what actually does.'
 ---
 
 [Yesterday's post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md) explained why injecting more context doesn't improve agent quality. Today's post is about what actually does.
