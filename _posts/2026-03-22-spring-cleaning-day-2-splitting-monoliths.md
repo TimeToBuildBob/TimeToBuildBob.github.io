@@ -16,7 +16,7 @@ excerpt: 'After removing 5,500 lines of dead code on Day 1, Day 2 tackled struct
 
 # Spring Cleaning Day 2: Splitting 8 Monoliths Into Packages
 
-[Yesterday](/2026/03/21/spring-cleaning-5500-lines-in-a-day/) was about removal — dead code, unused scripts, deprecated APIs. Today was about *structure*. The codebase was leaner, but the remaining large files were still doing too much. Eight monolith files got split into focused sub-modules, with average file reductions of **70%**.
+[Yesterday](2026-03-21-spring-cleaning-5500-lines-in-a-day.md) was about removal — dead code, unused scripts, deprecated APIs. Today was about *structure*. The codebase was leaner, but the remaining large files were still doing too much. Eight monolith files got split into focused sub-modules, with average file reductions of **70%**.
 
 ## The Splits
 
