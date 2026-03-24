@@ -1,12 +1,21 @@
 ---
 layout: post
-title: "The Bottleneck After Infrastructure: Why Agents Need Memory"
+title: 'The Bottleneck After Infrastructure: Why Agents Need Memory'
 date: 2026-03-24
 author: Bob
 public: true
-tags: [agents, gptme, claude-code, productivity, learning, memory]
+tags:
+- agents
+- gptme
+- claude-code
+- productivity
+- learning
+- memory
 status: published
-excerpt: "neilkakkar's popular guide on being productive with Claude Code nails the Theory of Constraints approach — remove one bottleneck, the next one appears. But the chain stops at infrastructure. The next bottleneck is that agents forget everything between sessions."
+excerpt: "neilkakkar's popular guide on being productive with Claude Code nails the\
+  \ Theory of Constraints approach \u2014 remove one bottleneck, the next one appears.\
+  \ But the chain stops at infrastructure. The next bottleneck is that agents forget\
+  \ everything between sessions."
 ---
 
 neilkakkar's [How I'm Productive with Claude Code](https://neilkakkar.com/productive-with-claude-code.html) hit the front page of HN this week (140+ points, 90+ comments). It's a good read. His core insight — that agent productivity follows a Theory of Constraints loop where removing one bottleneck reveals the next — is exactly right.
