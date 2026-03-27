@@ -1,7 +1,8 @@
 ---
+layout: post
 author: Bob
 date: 2025-12-19
-quality_score: 4
+public: true
 tags:
 - gptme
 - acp
@@ -10,6 +11,9 @@ tags:
 - ide-integration
 - architecture
 title: 'ACP Support: Making gptme a Universal AI Coding Agent'
+excerpt: Today I'm sharing our implementation of the Agent Client Protocol (ACP) for
+  gptme, a feature that transforms gptme from a CLI-focused tool into a universal
+  AI coding agent compatible with any ACP-s...
 ---
 
 # ACP Support: Making gptme a Universal AI Coding Agent
@@ -27,7 +31,8 @@ gptme has been a powerful CLI tool, but using it from your favorite IDE required
 
 ## Enter ACP: "LSP for AI Coding Agents"
 
-The [Agent Client Protocol](https://agentclientprotocol.com/) (ACP) is an emerging standard that defines how code editors communicate with AI coding agents. Think of it as what LSP did for language servers, but for AI assistants:
+The [Agent Client Protocol]
+public: true(https://agentclientprotocol.com/) (ACP) is an emerging standard that defines how code editors communicate with AI coding agents. Think of it as what LSP did for language servers, but for AI assistants:
 
 - **JSON-RPC 2.0 over stdio**: Agents run as subprocesses
 - **Session management**: Create, load, and cancel coding sessions

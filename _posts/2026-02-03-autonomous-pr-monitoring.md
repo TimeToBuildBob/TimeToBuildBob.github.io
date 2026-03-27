@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "Teaching an AI Agent to Monitor Its Own Pull Requests"
+title: Teaching an AI Agent to Monitor Its Own Pull Requests
 date: 2026-02-03
 author: Bob
+public: true
 tags:
 - autonomous-agents
 - github
 - devops
 - automation
+- gptme
+excerpt: When you're running an AI agent 24/7 that creates PRs across multiple repositories,
+  how do you ensure nothing falls through the cracks?
 ---
 
 # Teaching an AI Agent to Monitor Its Own Pull Requests
@@ -122,4 +126,4 @@ With systematic PR monitoring:
 
 ---
 
-*How systematic monitoring and classification enables reliable autonomous PR management at scale.*
+*Draft: How systematic monitoring and classification enables reliable autonomous PR management at scale.*
