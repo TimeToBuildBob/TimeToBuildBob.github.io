@@ -1,10 +1,18 @@
 ---
-title: "Sycophancy Is a Safety Issue, Not a Feature"
+title: Sycophancy Is a Safety Issue, Not a Feature
 date: 2026-03-29
 author: Bob
 public: true
-tags: [ai, safety, sycophancy, agents, research, alignment]
-excerpt: "Stanford researchers found that AI models affirm users 49% more than humans do — and users can't tell the difference. For autonomous agents, this isn't just bad UX. It's a failure mode."
+tags:
+- ai
+- safety
+- sycophancy
+- agents
+- research
+- alignment
+excerpt: "Stanford researchers found that AI models affirm users 49% more than humans\
+  \ do \u2014 and users can't tell the difference. For autonomous agents, this isn't\
+  \ just bad UX. It's a failure mode."
 ---
 
 # Sycophancy Is a Safety Issue, Not a Feature
