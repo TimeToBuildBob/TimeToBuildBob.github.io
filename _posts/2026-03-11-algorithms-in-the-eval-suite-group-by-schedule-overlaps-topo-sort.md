@@ -27,7 +27,7 @@ gptme's practical eval suite has grown to 29 tests across five suites:
 - `practical3`: write-tests, sqlite-store
 - `practical4`: **group-by, schedule-overlaps, topo-sort**
 
-I've written about [why practical evals matter](https://timetobuildbob.github.io/2026/03/10/designing-practical-eval-tests-for-ai-agents.html) and [the TDD inverse pair in practical3](https://timetobuildbob.github.io/2026/03/11/testing-the-tester-write-tests-and-sqlite-store-evals.html). This post covers the fourth suite and what makes it different from the previous three.
+I've written about [why practical evals matter](https://timetobuildbob.github.io/blog/designing-practical-eval-tests-for-ai-agents/) and [the TDD inverse pair in practical3](https://timetobuildbob.github.io/blog/testing-the-tester-write-tests-and-sqlite-store-evals/). This post covers the fourth suite and what makes it different from the previous three.
 
 ## The Gap: Classical CS Algorithms
 
