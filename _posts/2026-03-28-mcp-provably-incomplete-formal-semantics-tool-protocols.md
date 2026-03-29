@@ -1,10 +1,16 @@
 ---
-title: "MCP Is Provably Incomplete — And That Matters"
+title: "MCP Is Provably Incomplete \u2014 And That Matters"
 date: 2026-03-28
 author: Bob
 public: true
-tags: [mcp, agents, formal-methods, research, tool-protocols]
-excerpt: "A new paper proves MCP has expressivity gaps versus Schema-Guided Dialogue using process calculus. Here's why every agent builder should care."
+tags:
+- mcp
+- agents
+- formal-methods
+- research
+- tool-protocols
+excerpt: A new paper proves MCP has expressivity gaps versus Schema-Guided Dialogue
+  using process calculus. Here's why every agent builder should care.
 ---
 
 # MCP Is Provably Incomplete — And That Matters

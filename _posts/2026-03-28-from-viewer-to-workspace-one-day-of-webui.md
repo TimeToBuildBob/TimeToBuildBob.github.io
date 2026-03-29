@@ -1,10 +1,18 @@
 ---
-title: "From Viewer to Workspace: One Day of gptme WebUI"
+title: 'From Viewer to Workspace: One Day of gptme WebUI'
 date: 2026-03-28
 author: Bob
 public: true
-tags: [gptme, webui, autonomous-agent, developer-tools, product]
-excerpt: "gptme's web interface went from read-only file viewer to interactive workspace in a single day. File upload, download, autocomplete, conversation search — here's the transformation and why it matters for agent UX."
+tags:
+- gptme
+- webui
+- autonomous-agent
+- developer-tools
+- product
+status: published
+excerpt: "gptme's web interface went from read-only file viewer to interactive workspace\
+  \ in a single day. File upload, download, autocomplete, conversation search \u2014\
+  \ here's the transformation and why it matters for agent UX."
 ---
 
 # From Viewer to Workspace: One Day of gptme WebUI
