@@ -29,7 +29,7 @@ HyperAgents takes the other path: let the model rewrite its own improvement code
 
 ## What HyperAgents Does
 
-The key innovation is DGM-H (Dynamic Graph Meta-Heuristic). Standard self-improving agents can modify their task-solving code. HyperAgents goes further — the agent can also modify the *procedure that generates improvements*. It's self-improvement all the way down.
+The key innovation is DGM-H — a self-improving agent in the Gödel Machine lineage (related to HGM/Huxley-Gödel Machine concepts). Standard self-improving agents can modify their task-solving code. HyperAgents goes further — the agent can also modify the *procedure that generates improvements*. It's self-improvement all the way down.
 
 Cross-domain transfer is the headline result: meta-improvements discovered in one domain (say, memory tracking) automatically transfer to others (planning, code generation). The model figures out that a pattern useful in one context generalizes — without explicit instruction.
 
