@@ -121,7 +121,7 @@ curr_remote=$(git rev-parse origin/master)
 
 if [[ -n "$prev_remote" ]] && ! git merge-base --is-ancestor "$prev_remote" "$curr_remote"; then
     echo "ERROR: origin/master was force-reset (non-fast-forward reflog transition)"
-    echo "  Was: $prev_remote"
+    echo "  Was: $prev_remote"  
     echo "  Now: $curr_remote"
     echo "Push blocked — your local master likely has commits that were deliberately removed."
     echo "To align with remote:  git reset --hard origin/master"
