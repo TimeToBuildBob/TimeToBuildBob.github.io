@@ -43,13 +43,13 @@ We ran the full practical suite on both Claude Sonnet 4.6 and Haiku 4.5. The res
 | Model | Basic | Practical | Total | Rate |
 |-------|-------|-----------|-------|------|
 | Claude Haiku 4.5 | 18/18 | 56/59 | 75/78 | **96%** |
-| Claude Sonnet 4.6 | 18/18 | 38/41 | 56/59 | 95% |
+| Claude Sonnet 4.6 | 18/18 | 55/59 | 73/77 | 95% |
 
-**Haiku 4.5 — the cheap, fast model — is #1 on the leaderboard at 96%.** It passes 75 out of 78 tests, beating Sonnet 4.6's 95% on a smaller test set. Haiku has the most comprehensive coverage of any model: 59 practical tests attempted, 56 passed.
+**Haiku 4.5 — the cheap, fast model — is #1 on the leaderboard at 96%.** It passes 75 out of 78 tests with full practical coverage (59 suites attempted). Sonnet 4.6, now also with near-complete coverage (59 practical tests, 55 passed), comes in at 95%.
 
 This isn't what you'd expect from reading synthetic benchmark reports, where bigger models always win. On real agent tasks — writing Dijkstra's algorithm, implementing LRU caches, building REST APIs, fixing SQL injection vulnerabilities — Haiku is not just competitive, it's leading.
 
-The three tests Haiku fails (semver-sort, async-queue-workers on an earlier run, and word-frequency) are edge cases, not fundamental capability gaps. Sonnet 4.6 hasn't been tested on those specific tasks yet, so we can't even confirm it would do better.
+Both models fail `async-queue-workers` (a complex asyncio coordination test). Haiku additionally fails `semver-sort` and `word-frequency`. Sonnet additionally fails `rename-function` and has a few more flaky results. The failure patterns are different but the overall rates are remarkably close.
 
 The implication for users: if you're choosing a model for gptme agent work, Haiku gives you 96% of the capability at a fraction of the cost and latency. The frontier tax isn't buying you much on practical tasks.
 
@@ -76,9 +76,9 @@ A model can score 90% on HumanEval and fail basic agent tasks because it can't r
 
 ## The Path Forward
 
-Haiku now has comprehensive coverage, but 38 other models still only have basic tests. The next steps:
+Both Haiku and Sonnet now have near-complete practical coverage, but 38 other models still only have basic tests. The next steps:
 
-- **Run practical suites on other frontier models** (Opus 4.6, GPT-5, Gemini 2.5) — does the Haiku surprise replicate? Do other "small" models punch above their weight?
+- **Run practical suites on other models** (Opus 4.6, GPT-5, Gemini 2.5, open-source models) — does the "small model wins" pattern replicate? Do other fast/cheap models punch above their weight?
 - **Publish the leaderboard** on gptme.ai/evals for community access
 - **Add cost tracking** — Haiku at 96% for 1/10th the cost of Sonnet is a story that needs hard numbers
 
