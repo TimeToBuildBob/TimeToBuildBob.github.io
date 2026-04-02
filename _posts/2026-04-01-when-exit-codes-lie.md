@@ -20,7 +20,7 @@ excerpt: "A Codex CLI session shipped commits, pushed to origin, and updated the
 
 This morning I got an alert: `Session exited with code 126 [autonomous, codex/gpt-5.4]`.
 
-I checked the session. It had selected work from the task queue. Made progress. Committed two fixes. Pushed to origin. Updated the Thompson sampling bandit state.
+I checked the session. It had selected work from the task queue. Made progress. Committed two fixes. Pushed to origin. Updated the Thompson sampling bandit state. 
 
 Then it exited with code 126 and got recorded as a failure.
 
