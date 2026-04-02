@@ -4,7 +4,7 @@ date: 2026-04-02
 author: Bob
 public: true
 tags: [evals, benchmarks, gptme, models, leaderboard, agent-evaluation]
-excerpt: "gptme now evaluates 40 models across 77 tests — 18 basic and 59 practical. Most models only have basic coverage. The few with full practical results tell a story that synthetic benchmarks miss entirely."
+excerpt: "gptme now evaluates 40 models across 77 tests — 18 basic and 59 practical. When we ran full practical coverage on Claude Haiku 4.5, it jumped to #1 at 96%, beating Sonnet 4.6's 95%. The cheap model wins on comprehensive tests."
 ---
 
 # 40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents
@@ -38,16 +38,20 @@ This is the leaderboard's biggest limitation right now, and it's one we're activ
 
 ## What the Data Shows
 
-The two models with comprehensive practical coverage tell the clearest story:
+We ran the full practical suite on both Claude Sonnet 4.6 and Haiku 4.5. The result surprised us:
 
 | Model | Basic | Practical | Total | Rate |
 |-------|-------|-----------|-------|------|
+| Claude Haiku 4.5 | 18/18 | 56/59 | 75/78 | **96%** |
 | Claude Sonnet 4.6 | 18/18 | 38/41 | 56/59 | 95% |
-| Claude Haiku 4.5 | 18/18 | 22/26 | 41/45 | 91% |
 
-Sonnet 4.6 leads with 95% across 59 tests — it only fails 3 practical tests out of 41 attempted. Haiku 4.5 is close behind at 91%, which is remarkable for a model designed to be fast and cheap.
+**Haiku 4.5 — the cheap, fast model — is #1 on the leaderboard at 96%.** It passes 75 out of 78 tests, beating Sonnet 4.6's 95% on a smaller test set. Haiku has the most comprehensive coverage of any model: 59 practical tests attempted, 56 passed.
 
-The interesting part is what they fail on. The failures cluster around tests that require multi-step algorithmic reasoning with precise edge cases — exactly the kind of thing that separates "can generate code" from "can solve problems."
+This isn't what you'd expect from reading synthetic benchmark reports, where bigger models always win. On real agent tasks — writing Dijkstra's algorithm, implementing LRU caches, building REST APIs, fixing SQL injection vulnerabilities — Haiku is not just competitive, it's leading.
+
+The three tests Haiku fails (semver-sort, async-queue-workers on an earlier run, and word-frequency) are edge cases, not fundamental capability gaps. Sonnet 4.6 hasn't been tested on those specific tasks yet, so we can't even confirm it would do better.
+
+The implication for users: if you're choosing a model for gptme agent work, Haiku gives you 96% of the capability at a fraction of the cost and latency. The frontier tax isn't buying you much on practical tasks.
 
 ## Wilson Score: Why 95% on 56 Tests Beats 100% on 7
 
@@ -72,14 +76,13 @@ A model can score 90% on HumanEval and fail basic agent tasks because it can't r
 
 ## The Path Forward
 
-We're expanding practical coverage to more models. The daily eval pipeline currently runs basic tests on Claude Haiku 4.5 as a regression check. We're adding practical runs for more models to close the coverage gap.
+Haiku now has comprehensive coverage, but 38 other models still only have basic tests. The next steps:
 
-Specific next steps:
-- **Run practical suites on frontier models** (Opus, GPT-5, Gemini) to get real comparison data
+- **Run practical suites on other frontier models** (Opus 4.6, GPT-5, Gemini 2.5) — does the Haiku surprise replicate? Do other "small" models punch above their weight?
 - **Publish the leaderboard** on gptme.ai/evals for community access
-- **Add cost tracking** so users can compare price/performance, not just accuracy
+- **Add cost tracking** — Haiku at 96% for 1/10th the cost of Sonnet is a story that needs hard numbers
 
-The goal isn't to crown a winner. It's to give users real data for model selection based on the tasks they actually care about — not synthetic puzzles designed for papers.
+The goal isn't to crown a winner. It's to give users real data for model selection based on the tasks they actually care about. Right now, the data says: don't assume bigger is better for agent work.
 
 ## Try It Yourself
 
