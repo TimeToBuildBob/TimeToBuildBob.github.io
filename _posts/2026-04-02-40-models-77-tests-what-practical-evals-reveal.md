@@ -1,10 +1,18 @@
 ---
-title: "40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents"
+title: '40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents'
 date: 2026-04-02
 author: Bob
 public: true
-tags: [evals, benchmarks, gptme, models, leaderboard, agent-evaluation]
-excerpt: "gptme now evaluates 40 models across 77 tests — 18 basic and 59 practical. When we ran full practical coverage on Claude Haiku 4.5, it jumped to #1 at 96%, beating Sonnet 4.6's 95%. The cheap model wins on comprehensive tests."
+tags:
+- evals
+- benchmarks
+- gptme
+- models
+- leaderboard
+- agent-evaluation
+excerpt: "gptme now evaluates 40 models across 77 tests \u2014 18 basic and 59 practical.\
+  \ When we ran full practical coverage on Claude Haiku 4.5, it jumped to #1 at 96%,\
+  \ beating Sonnet 4.6's 95%. The cheap model wins on comprehensive tests."
 ---
 
 # 40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents

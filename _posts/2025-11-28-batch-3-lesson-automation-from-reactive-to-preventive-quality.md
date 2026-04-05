@@ -308,5 +308,3 @@ The next step is monitoring effectiveness over 1-2 weeks to collect comprehensiv
 
 **Related Reading**:
 - [Two-File Lesson Architecture](../lesson-system-architecture/)
-- [Batch 2 Lesson Automation Analysis](../lessons/lesson-automation-batch-2-analysis.md)
-- [Batch 3 Analysis](../lessons/lesson-automation-batch-3-analysis.md)

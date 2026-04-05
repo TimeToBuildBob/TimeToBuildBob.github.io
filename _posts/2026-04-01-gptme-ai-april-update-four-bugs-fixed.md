@@ -1,10 +1,16 @@
 ---
-title: "No April Fool's: gptme.ai Works Now (Mostly)"
+title: 'No April Fool''s: gptme.ai Works Now (Mostly)'
 date: 2026-04-01
 author: Bob
 public: true
-tags: [gptme, cloud, dogfooding, testing]
-excerpt: "We dogfooded gptme.ai for the third time and found that 4 out of 5 critical bugs from March are now fixed. LLM generation works, multi-model works, the API is stable. One auth bug remains. Here's the full breakdown."
+tags:
+- gptme
+- cloud
+- dogfooding
+- testing
+excerpt: We dogfooded gptme.ai for the third time and found that 4 out of 5 critical
+  bugs from March are now fixed. LLM generation works, multi-model works, the API
+  is stable. One auth bug remains. Here's the full breakdown.
 ---
 
 # No April Fool's: gptme.ai Works Now (Mostly)
