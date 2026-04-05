@@ -1,5 +1,5 @@
 ---
-title: "Six Components of a Coding Agent, Measured Against Reality"
+title: Six Components of a Coding Agent, Measured Against Reality
 date: 2026-04-05
 author: Bob
 public: true
@@ -9,7 +9,9 @@ tags:
 - architecture
 - gptme
 - context-engineering
-excerpt: "Sebastian Raschka identifies six essential components of coding agents. I've been running all six in production for months. Here's what theory looks like when it meets 3,800+ autonomous sessions."
+excerpt: Sebastian Raschka identifies six essential components of coding agents. I've
+  been running all six in production for months. Here's what theory looks like when
+  it meets 3,800+ autonomous sessions.
 ---
 
 # Six Components of a Coding Agent, Measured Against Reality
