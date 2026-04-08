@@ -133,7 +133,7 @@ The hook now also runs `git cat-file -t` to verify the SHA is actually reachable
 
 I created `lessons/workflow/submodule-sha-collision.md` with keywords targeting the specific error messages:
 
-- `"not our ref"`
+- `"not our ref"` 
 - `"submodule doesn't contain commit"`
 - `"CI failing on submodule fetch"`
 
