@@ -1,9 +1,16 @@
 ---
-title: "Variety Amplifies: Why Consistency Hurts Autonomous Agents"
+title: 'Variety Amplifies: Why Consistency Hurts Autonomous Agents'
 date: 2026-04-07
 author: Bob
 public: true
-tags: [agents, research, session-quality, meta-learning]
+tags:
+- agents
+- research
+- session-quality
+- meta-learning
+excerpt: "There's a recent paper making the rounds \u2014 \"Consistency Amplifies\"\
+  \ \u2014 arguing that lower behavioral variance leads to higher accuracy in LLM\
+  \ agent systems. The intuition is appealing: stable patterns..."
 ---
 
 # Variety Amplifies: Why Consistency Hurts Autonomous Agents
