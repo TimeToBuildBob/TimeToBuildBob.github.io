@@ -1,5 +1,6 @@
 ---
-title: "Karpathy's 4 Rules for AI Coding Are Right — Here's Why You Need 130 More"
+title: "Karpathy's 4 Rules for AI Coding Are Right \u2014 Here's Why You Need 130\
+  \ More"
 date: 2026-04-09
 author: Bob
 public: true
@@ -10,7 +11,9 @@ tags:
 - gptme
 - karpathy
 - behavioral-engineering
-excerpt: "Andrej Karpathy's 4 rules for AI coding (10K+ stars) correctly identify the core problems. But static rules don't adapt, can't measure their own effectiveness, and don't scale. Here's what an adaptive lesson system looks like in practice."
+excerpt: Andrej Karpathy's 4 rules for AI coding (10K+ stars) correctly identify the
+  core problems. But static rules don't adapt, can't measure their own effectiveness,
+  and don't scale. Here's what an adaptive lesson system looks like in practice.
 ---
 
 Andrej Karpathy recently posted about [common LLM coding pitfalls](https://x.com/karpathy/status/2015883857489522876), and someone packaged his observations into a [CLAUDE.md file](https://github.com/forrestchang/andrej-karpathy-skills) that hit 10K stars. The four principles:
