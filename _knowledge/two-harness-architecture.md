@@ -1,0 +1,126 @@
+---
+title: "Two-Harness Agent Architecture: gptme + Claude Code"
+description: Why running an AI agent on two different LLM clients simultaneously is more than redundancy — it's a design pattern
+date: 2026-04-13
+tags: [architecture, gptme, claude-code, agents, resilience]
+---
+
+# Two-Harness Agent Architecture: gptme + Claude Code
+
+Bob runs on two LLM clients simultaneously: [gptme](https://gptme.org) (open-source terminal assistant) and Claude Code (Anthropic's CLI). This isn't a fallback or a migration — it's a deliberate architectural choice that provides resilience, capability diversity, and a natural A/B testing framework.
+
+## Why Two Harnesses?
+
+### 1. No Single Point of Failure
+
+If Claude Code hits a quota limit, gptme sessions continue. If gptme has a bug in a tool, Claude Code isn't affected. The agent's uptime becomes the *union* of both harnesses' uptime rather than the intersection.
+
+In practice, this matters more than it sounds. Quota limits on Claude Max subscriptions are real constraints for intensive autonomous operation. By distributing sessions across harnesses (which may use different backends), the agent maximizes productive time.
+
+### 2. Different Strengths
+
+Each harness has distinct capabilities:
+
+| Capability | gptme | Claude Code |
+|-----------|-------|-------------|
+| **Model flexibility** | Any provider (Claude, GPT, Gemini, DeepSeek, local) | Claude models only |
+| **Tool system** | Python REPL, shell, browser, tmux, subagents, vision | Shell, file ops, web search, notebook |
+| **Lesson injection** | Automatic (keyword-matched at session start) | Manual (read from CLAUDE.md, hook-injected) |
+| **Context management** | Append-only master log with compaction | Auto-compact with conversation compression |
+| **Extension model** | Plugins (Python packages) | MCP servers, skills |
+| **Session persistence** | conversation.jsonl | Built-in session management |
+
+gptme excels at multi-model experimentation and has richer tool integration. Claude Code excels at large-codebase navigation and has tighter Anthropic model integration. Using both means the agent gets the best of each.
+
+### 3. Natural A/B Testing
+
+Running parallel harnesses creates an organic A/B testing environment. When both harnesses work on similar tasks, the session grading system can compare outcomes:
+
+- Does gptme+Opus produce better infrastructure work than Claude Code+Opus?
+- Does lesson injection (automatic in gptme) produce better sessions than hook-based injection (Claude Code)?
+- Which harness handles multi-repo operations more gracefully?
+
+Thompson sampling bandits track harness effectiveness per session category, learning over time which harness to prefer for which type of work.
+
+## The Shared Workspace
+
+The critical design decision: **both harnesses operate on the same git repository**. The workspace — not the harness — is the source of truth.
+
+```txt
+                    ┌──────────┐
+                    │ gptme    │
+                    │ (open    │
+                    │  source) │
+                    └────┬─────┘
+                         │
+ ┌───────────────────────▼───────────────────────┐
+ │             Bob's Brain (git repo)            │
+ │                                               │
+ │  ABOUT.md  tasks/  lessons/  journal/  state/ │
+ │                                               │
+ └───────────────────────▲───────────────────────┘
+                         │
+                    ┌────┴─────┐
+                    │ Claude   │
+                    │ Code     │
+                    │(Anthropic│
+                    │  CLI)    │
+                    └──────────┘
+```
+
+Both harnesses:
+- Read the same `ABOUT.md` for personality
+- Execute from the same `tasks/` queue
+- Write to the same `journal/` (with session-specific filenames)
+- Commit to the same git history
+- Share `state/` for bandit state, session records, and locks
+
+### Coordination
+
+Concurrent sessions need coordination to avoid conflicts:
+
+- **File locking**: `bin/git-safe-commit` serializes commits via `flock` to prevent pre-commit stash/restore races
+- **Session locking**: Lock files in `locks/` prevent simultaneous autonomous sessions
+- **Work claiming**: The CASCADE selector checks active locks before assigning tasks
+- **State convergence**: Thompson sampling state is a shared JSON file — both harnesses update the same bandits
+
+## The Orchestration Layer
+
+A unified systemd service (`bob-operator-loop.service`) orchestrates both harnesses:
+
+1. **Check schedule**: Is it time for a session?
+2. **Select harness**: Thompson sampling between gptme and Claude Code, weighted by recent performance
+3. **Select model**: For gptme, also select between available backends (Claude, GPT, Gemini)
+4. **Launch session**: Run with full context injection
+5. **Grade session**: LLM-as-judge scores the outcome
+6. **Update bandits**: Feed grades back to harness/model selection bandits
+
+This means the agent is continuously learning which harness+model combination works best for each type of work, and shifting allocation accordingly.
+
+## Practical Considerations
+
+### Identity Consistency
+
+Both harnesses load the same identity files. Bob sounds the same whether he's running on gptme or Claude Code — because his personality is defined in `ABOUT.md`, not in any client-specific configuration.
+
+### Context Differences
+
+gptme auto-includes files listed in `gptme.toml` and runs `context_cmd` for dynamic context. Claude Code only auto-loads `CLAUDE.md`. To bridge the gap, Claude Code sessions run the same `scripts/context.sh` at the start and use hooks for lesson injection.
+
+This asymmetry is a feature, not a bug — it tests whether lessons and context are robust across different injection mechanisms.
+
+### Journal Delineation
+
+Each session gets a unique journal filename: `autonomous-session-{hash}.md`. The hash is generated at run start, so there's no collision even if both harnesses run near-simultaneously. The journal entry records which harness was used, enabling post-hoc analysis.
+
+## For Agent Builders
+
+The key insight: **don't couple your agent to one LLM client**. The workspace model — where identity, state, and history live in files, not in any client's database — makes multi-harness operation trivial.
+
+If you're building on the gptme-agent-template:
+1. Keep all identity in Markdown files (ABOUT.md, gptme.toml)
+2. Keep all state in git-tracked files (tasks/, state/, journal/)
+3. Make context generation a script, not a built-in feature
+4. Use file-based coordination (locks, leases) not client-specific mechanisms
+
+Then any LLM client that can read files, run commands, and make git commits becomes a valid harness.
