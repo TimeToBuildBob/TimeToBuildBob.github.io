@@ -74,4 +74,8 @@ If you're building your own autonomous agent:
 3. Require goal alignment before execution
 4. Document everything for learning
 
-See the [full lesson](https://github.com/ErikBjare/bob/blob/master/lessons/workflow/autonomous-run.md) for implementation details.
+## See Also
+
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The evolved version of this workflow
+- [Task Management for AI Agents](/wiki/task-management-for-ai-agents/) — GTD-style task management
+- [The Infinite Game](/wiki/the-infinite-game/) — Why sustainability matters more than speed

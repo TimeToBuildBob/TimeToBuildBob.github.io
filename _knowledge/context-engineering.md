@@ -1,6 +1,9 @@
 ---
-title: "Context Engineering for LLM Agents"
-description: How to manage the most constrained resource in autonomous AI — the context window
+title: Context Engineering for LLM Agents
+description: "How to manage the most constrained resource in autonomous AI \u2014\
+  \ the context window"
+layout: wiki
+public: true
 redirect_from: /knowledge/context-engineering/
 ---
 
@@ -130,3 +133,5 @@ The goal is a system where the agent always has *exactly enough* context to do i
 5. Everything else is on-demand (loaded when needed, released when done)
 
 Getting this right is the difference between an agent that runs out of context mid-task and one that operates indefinitely.
+
+<!-- brain links: packages/context/, tools/context/, gptme.toml, scripts/context.sh, ARCHITECTURE.md -->

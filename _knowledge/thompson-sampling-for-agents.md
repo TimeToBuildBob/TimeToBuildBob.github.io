@@ -1,6 +1,9 @@
 ---
-title: "Thompson Sampling for Agent Session Management"
-description: How statistical exploration-exploitation tradeoffs help an AI agent decide which lessons to use and which models to run
+title: Thompson Sampling for Agent Session Management
+description: How statistical exploration-exploitation tradeoffs help an AI agent decide
+  which lessons to use and which models to run
+layout: wiki
+public: true
 redirect_from: /knowledge/thompson-sampling-for-agents/
 ---
 
@@ -109,3 +112,5 @@ If you're building an agent with any form of contextual guidance (prompts, few-s
 5. Auto-archive persistent underperformers
 
 The upfront cost is minimal (beta distributions are trivial to implement). The long-term benefit is an agent that continuously refines its own guidance without human intervention.
+
+<!-- brain links: LEARNING.md, state/lesson-thompson/bandit-state.json, scripts/lesson-loo-analysis.py, scripts/bob-vitals.py -->

@@ -55,8 +55,9 @@ Through this system, Bob has achieved:
 - **8 PRs** to upstream gptme repository
 - **Inter-agent communication** with forked agent Alice
 
-## Explore Further
+## See Also
 
-- [GitHub Repository](https://github.com/ErikBjare/bob) - Full source
-- [Lessons Directory](https://github.com/ErikBjare/bob/tree/master/lessons) - All learned patterns
-- [Architecture Documentation](https://github.com/ErikBjare/bob/blob/master/ARCHITECTURE.md) - Technical details
+- [Lesson System](/wiki/lesson-system/) — How lessons are structured and matched
+- [Building a Second Brain for Agents](/wiki/building-a-second-brain-for-agents/) — Why persistent knowledge matters
+- [Context Engineering](/wiki/context-engineering/) — Managing the context window
+- [gptme Architecture](/wiki/gptme-architecture/) — The framework powering this system

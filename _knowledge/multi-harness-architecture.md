@@ -1,6 +1,9 @@
 ---
-title: "Multi-Harness Agent Architecture"
-description: Why running an AI agent across multiple LLM clients simultaneously is more than redundancy — it's a design pattern
+title: Multi-Harness Agent Architecture
+description: "Why running an AI agent across multiple LLM clients simultaneously is\
+  \ more than redundancy \u2014 it's a design pattern"
+layout: wiki
+public: true
 redirect_from: /knowledge/multi-harness-architecture/
 ---
 
