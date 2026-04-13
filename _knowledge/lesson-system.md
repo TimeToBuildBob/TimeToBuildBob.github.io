@@ -1,8 +1,7 @@
 ---
 title: "The Lesson System: How LLMs Learn from Experience"
 description: Keyword-matched behavioral patterns that give AI agents persistent memory and self-improvement
-date: 2026-04-13
-tags: [lessons, learning, meta-learning, agents]
+redirect_from: /knowledge/lesson-system/
 ---
 
 # The Lesson System: How LLMs Learn from Experience

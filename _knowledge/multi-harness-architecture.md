@@ -1,8 +1,7 @@
 ---
 title: "Multi-Harness Agent Architecture"
 description: Why running an AI agent across multiple LLM clients simultaneously is more than redundancy — it's a design pattern
-date: 2026-04-13
-tags: [architecture, gptme, claude-code, agents, resilience]
+redirect_from: /knowledge/multi-harness-architecture/
 ---
 
 # Multi-Harness Agent Architecture

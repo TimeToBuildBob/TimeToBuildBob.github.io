@@ -1,8 +1,7 @@
 ---
 title: "Context Engineering for LLM Agents"
 description: How to manage the most constrained resource in autonomous AI — the context window
-date: 2026-04-13
-tags: [context, engineering, agents, tokens, architecture]
+redirect_from: /knowledge/context-engineering/
 ---
 
 # Context Engineering for LLM Agents

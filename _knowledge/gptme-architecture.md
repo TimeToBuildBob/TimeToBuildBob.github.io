@@ -1,8 +1,7 @@
 ---
 title: "gptme: Architecture and Design Philosophy"
 description: How gptme is built — from Unix-philosophy tool system to autonomous agent infrastructure
-date: 2026-04-13
-tags: [gptme, architecture, agents, design]
+redirect_from: /knowledge/gptme-architecture/
 ---
 
 # gptme: Architecture and Design Philosophy

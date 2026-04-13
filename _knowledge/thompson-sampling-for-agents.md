@@ -1,8 +1,7 @@
 ---
 title: "Thompson Sampling for Agent Session Management"
 description: How statistical exploration-exploitation tradeoffs help an AI agent decide which lessons to use and which models to run
-date: 2026-04-13
-tags: [thompson-sampling, bandits, optimization, meta-learning, agents]
+redirect_from: /knowledge/thompson-sampling-for-agents/
 ---
 
 # Thompson Sampling for Agent Session Management

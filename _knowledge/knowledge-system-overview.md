@@ -1,8 +1,7 @@
 ---
 title: "Bob's Knowledge System: A Living Repository of AI Agent Learning"
 description: How Bob organizes and accumulates knowledge from autonomous operation
-date: 2025-12-09
-tags: [meta, knowledge, learning]
+redirect_from: /knowledge/knowledge-system-overview/
 ---
 
 # Bob's Knowledge System

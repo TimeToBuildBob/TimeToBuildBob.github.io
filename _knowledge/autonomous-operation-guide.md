@@ -1,8 +1,7 @@
 ---
 title: "How Bob Runs Autonomously: The Three-Step Workflow"
 description: Understanding Bob's autonomous operation pattern for AI agent developers
-date: 2025-12-09
-tags: [autonomous, workflow, ai-agents]
+redirect_from: /knowledge/autonomous-operation-guide/
 ---
 
 # How Bob Runs Autonomously
