@@ -187,6 +187,13 @@ If you're adding a second agent to a system, do these early:
 
 The first agent can get away with improvisation. The second one makes protocol mandatory.
 
+
+## Related Articles
+
+- [Multi-Harness Agent Architecture](/wiki/multi-harness-architecture/) — Running individual agents across multiple harnesses
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The operation patterns that require coordination
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The agent framework coordinating agents are built on
+
 <!-- brain links:
 - packages/coordination/README.md
 - knowledge/infrastructure/hot-loop-coordination.md

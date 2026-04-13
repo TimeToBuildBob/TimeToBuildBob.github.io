@@ -120,4 +120,11 @@ If you're building on the gptme-agent-template:
 
 Then any LLM client that can read files, run commands, and make git commits becomes a valid harness — and the pool grows as the ecosystem grows.
 
+
+## Related Articles
+
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The primary harness underlying the architecture
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How the multi-harness design shapes autonomous operation
+- [Inter-Agent Coordination Patterns](/wiki/inter-agent-coordination/) — Coordination between agents running on different harnesses
+
 <!-- brain links: ARCHITECTURE.md, ABOUT.md, scripts/runs/autonomous/autonomous-run.sh, LEARNING.md -->

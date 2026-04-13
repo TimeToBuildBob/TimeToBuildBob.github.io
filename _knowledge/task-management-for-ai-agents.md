@@ -193,6 +193,13 @@ If you're building task management for an agent, start with this:
 
 That gets you most of the value without building a whole SaaS product around your queue.
 
+
+## Related Articles
+
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Tasks in context of the broader operation loop
+- [Autonomous Operation Guide](/wiki/autonomous-operation-guide/) — How tasks drive the autonomous session workflow
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The tool system tasks are tracked and executed in
+
 <!-- brain links:
 - TASKS.md
 - knowledge/processes/guides/task-gtd-reference.md

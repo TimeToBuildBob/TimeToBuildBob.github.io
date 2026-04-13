@@ -160,4 +160,11 @@ As of Q1 2026, the reference implementation (Bob) has:
 
 The architecture has been validated through Alice (Bob's collaborator agent), Gordon (financial agent), and Sven (calendar/WhatsApp agent) — all running on variants of the same workspace model.
 
+
+## Related Articles
+
+- [Multi-Harness Agent Architecture](/wiki/multi-harness-architecture/) — Running the agent across multiple LLM clients
+- [The Lesson System: How LLMs Learn from Experience](/wiki/lesson-system/) — How gptme's behavioral learning system works
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The operational patterns built on top of gptme
+
 <!-- brain links: ARCHITECTURE.md, ABOUT.md, lessons/README.md, LEARNING.md -->

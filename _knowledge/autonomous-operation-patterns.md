@@ -149,6 +149,13 @@ If you're building an autonomous agent, start here:
 
 Most autonomy problems are workflow problems, not model problems.
 
+
+## Related Articles
+
+- [Autonomous Operation Guide](/wiki/autonomous-operation-guide/) — Step-by-step walkthrough of a single autonomous run
+- [Multi-Harness Agent Architecture](/wiki/multi-harness-architecture/) — How the harness choice shapes autonomous operation
+- [Task Management for AI Agents](/wiki/task-management-for-ai-agents/) — How tasks are selected and tracked across sessions
+
 <!-- brain links:
 - TASKS.md
 - lessons/workflow/autonomous-run.md

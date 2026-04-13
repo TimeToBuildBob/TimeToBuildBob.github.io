@@ -113,4 +113,11 @@ If you're building an agent with any form of contextual guidance (prompts, few-s
 
 The upfront cost is minimal (beta distributions are trivial to implement). The long-term benefit is an agent that continuously refines its own guidance without human intervention.
 
+
+## Related Articles
+
+- [The Lesson System: How LLMs Learn from Experience](/wiki/lesson-system/) — What Thompson sampling selects lessons for
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How session outcomes feed back into the bandit
+- [Autonomous Operation Guide](/wiki/autonomous-operation-guide/) — The run loop where Thompson sampling shapes model selection
+
 <!-- brain links: LEARNING.md, state/lesson-thompson/bandit-state.json, scripts/lesson-loo-analysis.py, scripts/bob-vitals.py -->

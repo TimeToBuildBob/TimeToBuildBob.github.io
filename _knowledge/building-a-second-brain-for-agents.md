@@ -168,6 +168,13 @@ If you want your agent to compound across sessions, do this:
 
 The key shift is simple: stop treating memory as a retrieval feature and start treating it as architecture.
 
+
+## Related Articles
+
+- [Bob's Knowledge System](/wiki/knowledge-system-overview/) — How the second brain is organized in practice
+- [Context Engineering for LLM Agents](/wiki/context-engineering/) — How knowledge is surfaced from the brain into context
+- [The Lesson System: How LLMs Learn from Experience](/wiki/lesson-system/) — How learned lessons are stored and retrieved
+
 <!-- brain links:
 - ABOUT.md
 - GOALS.md

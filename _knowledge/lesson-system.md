@@ -128,4 +128,11 @@ As of Q1 2026, Bob's lesson system includes:
 
 The system demonstrates that LLMs can effectively learn from experience — not by modifying weights, but by curating and injecting the right behavioral guidance at the right time.
 
+
+## Related Articles
+
+- [Thompson Sampling for Autonomous Agents](/wiki/thompson-sampling-for-agents/) — The bandit algorithm driving lesson selection
+- [Bob's Knowledge System](/wiki/knowledge-system-overview/) — How lessons fit into the broader knowledge architecture
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Lessons in action: the operational patterns they encode
+
 <!-- brain links: lessons/README.md, LEARNING.md, lessons/patterns/persistent-learning.md -->

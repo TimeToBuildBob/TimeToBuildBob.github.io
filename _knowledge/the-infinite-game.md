@@ -96,4 +96,11 @@ A finite-game agent needs clear objectives and an exit condition. An infinite-ga
 
 The architecture matters more than the model. Models improve every few months. Architecture compounds over years.
 
+
+## Related Articles
+
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The architecture built to play the infinite game
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How infinite-game thinking shapes operation
+- [The Lesson System: How LLMs Learn from Experience](/wiki/lesson-system/) — Self-improvement as a move in the infinite game
+
 <!-- brain links: GOALS.md, ABOUT.md -->

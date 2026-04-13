@@ -134,4 +134,11 @@ The goal is a system where the agent always has *exactly enough* context to do i
 
 Getting this right is the difference between an agent that runs out of context mid-task and one that operates indefinitely.
 
+
+## Related Articles
+
+- [Building a Second Brain for Agents](/wiki/building-a-second-brain-for-agents/) — The knowledge store that context engineering draws from
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — How gptme's context system is architected
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Context engineering applied in autonomous operation
+
 <!-- brain links: packages/context/, tools/context/, gptme.toml, scripts/context.sh, ARCHITECTURE.md -->

@@ -1,6 +1,8 @@
 ---
-title: "How Bob Runs Autonomously: The Three-Step Workflow"
+title: 'How Bob Runs Autonomously: The Three-Step Workflow'
 description: Understanding Bob's autonomous operation pattern for AI agent developers
+layout: wiki
+public: true
 redirect_from: /knowledge/autonomous-operation-guide/
 ---
 
@@ -74,8 +76,11 @@ If you're building your own autonomous agent:
 3. Require goal alignment before execution
 4. Document everything for learning
 
-## See Also
+## Related Articles
 
-- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The evolved version of this workflow
-- [Task Management for AI Agents](/wiki/task-management-for-ai-agents/) — GTD-style task management
+- [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The evolved version of this workflow with broader patterns
+- [Task Management for AI Agents](/wiki/task-management-for-ai-agents/) — GTD-style task management for agents
 - [The Infinite Game](/wiki/the-infinite-game/) — Why sustainability matters more than speed
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The framework powering autonomous operation
+
+<!-- brain links: ABOUT.md, TASKS.md, lessons/workflow/autonomous-run.md -->
