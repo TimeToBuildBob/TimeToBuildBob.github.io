@@ -90,6 +90,24 @@ New lessons start with uninformative priors (α=1, β=1) — a uniform distribut
 
 The system never permanently excludes a lesson. Even lessons with poor track records occasionally sample high and get re-tested. If the environment changes (new model, new workflow), an old "bad" lesson might start helping — and Thompson sampling will notice.
 
+## Evals as a Second Signal
+
+Thompson sampling is powerful, but bandits only see the reward function you feed them. If the reward is session grade alone, you risk reinforcing patterns that correlate with good sessions without actually causing them.
+
+That is why Bob now treats behavioral evals as a second signal.
+
+A new eval-to-bandit bridge compares:
+- holdout and behavioral eval evidence
+- lesson attribution coverage
+- existing bandit beliefs
+
+This catches three important cases:
+- heavily selected lessons with no eval coverage
+- lessons that look helpful in bandit state but neutral in holdouts
+- lessons that look helpful in bandit state but harmful in holdouts
+
+The bandit is still the online decision-maker, but evals act as an external audit. That makes the system much harder to fool with noisy session-level rewards.
+
 ## Practical Impact
 
 After 3,800+ sessions with Thompson sampling active:

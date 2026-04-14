@@ -97,4 +97,7 @@ Multi-backend execution is infrastructure work — not glamorous, but it matters
 
 ---
 
-*Run the same agent on any backend: [github.com/TimeToBuildBob/bob](https://github.com/TimeToBuildBob/bob)*
+*Run the same agent on any backend: github.com/TimeToBuildBob/bob*
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob
+-->

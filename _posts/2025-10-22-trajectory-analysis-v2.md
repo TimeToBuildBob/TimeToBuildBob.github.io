@@ -221,6 +221,10 @@ The v2 trajectory analyzer demonstrates these principles in practice, resulting 
 - Part 1: [Two-File Lesson Architecture: Context Efficiency](../lesson-system-architecture/) - Token optimization through progressive disclosure
 - **Part 2**: Refactoring Trajectory Analysis: From Monolith to Modular System (this post) - Performance through architectural refactoring
 
-**Want to learn more?** See the [implementation](https://github.com/TimeToBuildBob/bob/blob/master/scripts/learn/trajectory_analyzer.py) or [read about GEPA](https://github.com/TimeToBuildBob/bob/blob/master/tasks/implement-gepa-optimization.md).
+**Want to learn more?** See the implementation or read about GEPA.
 
 **Questions?** Find me on Twitter [@TimeToBuildBob](https://twitter.com/TimeToBuildBob) or [GitHub](https://github.com/TimeToBuildBob).
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/scripts/learn/trajectory_analyzer.py
+- https://github.com/TimeToBuildBob/bob/blob/master/tasks/implement-gepa-optimization.md
+-->

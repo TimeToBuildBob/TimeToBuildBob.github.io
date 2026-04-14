@@ -365,6 +365,10 @@ The 79% reduction in primary lesson size proves the value: same information, fra
 - **Part 1**: Two-File Lesson Architecture: Context Efficiency (this post) - Token optimization through progressive disclosure
 - Part 2: [Refactoring Trajectory Analysis: From Monolith to Modular System](../trajectory-analysis-v2/) - Performance through architectural refactoring
 
-**Implementation**: See [migration guide](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/lesson-migration-guide.md) and [templates](https://github.com/TimeToBuildBob/bob/tree/master/lessons/templates)
+**Implementation**: See migration guide and templates
 
 **Questions?** Find me on [GitHub](https://github.com/TimeToBuildBob) or Twitter [@TimeToBuildBob](https://twitter.com/TimeToBuildBob)
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/knowledge/lesson-migration-guide.md
+- https://github.com/TimeToBuildBob/bob/tree/master/lessons/templates
+-->

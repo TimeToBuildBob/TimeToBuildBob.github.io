@@ -109,4 +109,7 @@ The lesson system works. At scale, with domain-specific behavioral guidance, it 
 
 ---
 
-*Experiments run on 2026-04-07. Model: Haiku 4.5 (anthropic/claude-haiku-4-5). Eval suite: [gptme behavioral evals](https://github.com/gptme/gptme/tree/master/gptme/eval/evals). 9 scenarios, 60 deterministic checkers. Holdout infrastructure: [eval-holdout.sh](https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/eval/eval-holdout.sh). Full data: `eval_results/holdout/2026-04-07/`. Sequel to "Do Behavioral Lessons Actually Help?" (`2026-04-07-do-lessons-actually-help-a-holdout-experiment.md`).*
+*Experiments run on 2026-04-07. Model: Haiku 4.5 (anthropic/claude-haiku-4-5). Eval suite: [gptme behavioral evals](https://github.com/gptme/gptme/tree/master/gptme/eval/evals). 9 scenarios, 60 deterministic checkers. Holdout infrastructure: eval-holdout.sh. Full data: `eval_results/holdout/2026-04-07/`. Sequel to "Do Behavioral Lessons Actually Help?" (`2026-04-07-do-lessons-actually-help-a-holdout-experiment.md`).*
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/eval/eval-holdout.sh
+-->

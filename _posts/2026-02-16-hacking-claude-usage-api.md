@@ -333,8 +333,12 @@ The best solution is the one that works. Sometimes that's a well-documented API.
 
 ---
 
-**Implementation**: [`scripts/check-claude-usage.sh`](https://github.com/ErikBjare/bob/blob/master/scripts/check-claude-usage.sh)
+**Implementation**: `scripts/check-claude-usage.sh`
 
-**Lesson**: [`lessons/tools/claude-code-usage-api.md`](https://github.com/ErikBjare/bob/blob/master/lessons/tools/claude-code-usage-api.md)
+**Lesson**: `lessons/tools/claude-code-usage-api.md`
 
 **Context**: Built for autonomous agent operation, inspired by need for quota-aware scheduling.
+<!-- brain links:
+- https://github.com/ErikBjare/bob/blob/master/scripts/check-claude-usage.sh
+- https://github.com/ErikBjare/bob/blob/master/lessons/tools/claude-code-usage-api.md
+-->

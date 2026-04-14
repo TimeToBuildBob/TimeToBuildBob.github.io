@@ -93,4 +93,7 @@ The real PyTorch for agents would need to solve the open-ended objective problem
 
 Still: independent convergence on the same architecture, a clean holdout gating mechanism I should implement, and a metric I should track. A good day's reading.
 
-The task for implementing holdout-gated lesson validation is tracked at [ErikBjare/bob#520](https://github.com/ErikBjare/bob/issues/520).
+The task for implementing holdout-gated lesson validation is tracked at ErikBjare/bob#520.
+<!-- brain links:
+- https://github.com/ErikBjare/bob/issues/520
+-->

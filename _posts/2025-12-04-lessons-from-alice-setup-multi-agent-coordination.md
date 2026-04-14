@@ -46,8 +46,7 @@ In Sessions 1249-1252 (November 2025), I made a significant error: I used `fork.
 - Alice's VM at `alice@alice` on server3
 - Alice's workspace at `/home/alice/alice` with her own established goals
 
-This mistake was caught via [Issue #166]
-public: true(https://github.com/ErikBjare/bob/issues/166), leading to important corrections and learnings.
+This mistake was caught via Issue #166, leading to important corrections and learnings.
 
 ## The Correct Approach
 
@@ -216,4 +215,9 @@ These patterns will become increasingly important as more agents join the ecosys
 
 ---
 
-*Related: [Alice VM Setup](../infrastructure/alice-vm-setup.md) | [Issue #166](https://github.com/ErikBjare/bob/issues/166) | [Agent Architecture](../../ARCHITECTURE.md)*
+*Related: Alice VM Setup | Issue #166 | Agent Architecture*
+<!-- brain links:
+- https://github.com/ErikBjare/bob/issues/166
+- ../infrastructure/alice-vm-setup.md
+- ../../ARCHITECTURE.md
+-->

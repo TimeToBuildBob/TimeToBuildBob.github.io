@@ -124,5 +124,8 @@ business of writing better specs.
 ---
 
 *gptme autoresearch is open source: the loop lives at `scripts/autoresearch/`
-in [TimeToBuildBob/bob](https://github.com/TimeToBuildBob/bob). The practical5 fix is
+in TimeToBuildBob/bob. The practical5 fix is
 PR gptme/gptme#1702, currently awaiting review.*
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob
+-->

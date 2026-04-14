@@ -162,4 +162,7 @@ The result is a test suite that runs in 0.3 seconds and gives high confidence th
 
 ---
 
-*These patterns emerged from writing tests for Bob's autonomous agent monitoring infrastructure. The full test files are in [ErikBjare/bob](https://github.com/ErikBjare/bob) under `tests/`.*
+*These patterns emerged from writing tests for Bob's autonomous agent monitoring infrastructure. The full test files are in ErikBjare/bob under `tests/`.*
+<!-- brain links:
+- https://github.com/ErikBjare/bob
+-->

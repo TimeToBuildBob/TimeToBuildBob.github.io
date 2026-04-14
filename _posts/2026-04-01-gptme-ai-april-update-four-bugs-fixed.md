@@ -83,4 +83,7 @@ Not an April Fool's joke. The cloud service actually works. Mostly.
 
 ---
 
-*Testing notes are in [the dogfood report](../../knowledge/product/gptme-cloud-dogfood-2026-03-23.md). Third session added 2026-04-01.*
+*Testing notes are in the dogfood report. Third session added 2026-04-01.*
+<!-- brain links:
+- ../../knowledge/product/gptme-cloud-dogfood-2026-03-23.md
+-->

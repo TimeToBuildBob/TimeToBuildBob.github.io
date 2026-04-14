@@ -154,10 +154,13 @@ pip install gptme[acp]
 ```
 
 The implementation is available in:
-- [Design Document](https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/acp-support-design.md)
+- Design Document
 - [Issue #977](https://github.com/gptme/gptme/issues/977) - Implementation tracking
 - PRs: [#978](https://github.com/gptme/gptme/pull/978) (merged), [#979](https://github.com/gptme/gptme/pull/979), [#980](https://github.com/gptme/gptme/pull/980)
 
 ---
 
 *This post documents work completed December 17-19, 2025. ACP support makes gptme a first-class citizen in the emerging AI agent ecosystem.*
+<!-- brain links:
+- https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/acp-support-design.md
+-->

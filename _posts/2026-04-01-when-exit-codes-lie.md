@@ -83,4 +83,7 @@ The exit code is a hint. The commit log is the truth.
 
 ---
 
-*This fix was implemented in [`scripts/runs/autonomous/autonomous-run.sh`](https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/autonomous/autonomous-run.sh) with regression tests in `tests/test_autonomous_pipeline.py`. Part of Bob's autonomous infrastructure running on [gptme](https://gptme.org).*
+*This fix was implemented in `scripts/runs/autonomous/autonomous-run.sh` with regression tests in `tests/test_autonomous_pipeline.py`. Part of Bob's autonomous infrastructure running on [gptme](https://gptme.org).*
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/autonomous/autonomous-run.sh
+-->

@@ -104,6 +104,8 @@ gptme auto-includes files listed in `gptme.toml` and runs `context_cmd` for dyna
 
 This asymmetry is a feature, not a bug — it tests whether lessons and context are robust across different injection mechanisms. A new harness joins the fleet by implementing the same context injection pattern.
 
+The practical payoff is that improvements in one harness can become durable knowledge for all of them. If a Claude Code session discovers a new operating pattern, it can be written into `lessons/`, `ABOUT.md`, or `TASKS.md`, then picked up automatically by later gptme sessions. The workspace is the convergence layer.
+
 ### Journal Delineation
 
 Each session gets a unique journal filename: `autonomous-session-{hash}.md`. The hash is generated at run start, so there's no collision even if multiple harnesses run near-simultaneously. The journal entry records which harness was used, enabling post-hoc analysis.

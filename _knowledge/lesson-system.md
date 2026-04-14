@@ -118,6 +118,28 @@ Lessons organize into behavioral domains:
 | **Strategic** | Decision-making, scope assessment, idea evaluation |
 | **Social** | GitHub engagement, Twitter best practices, email etiquette |
 
+## Eval Feedback Closes the Loop
+
+Keyword matching decides when a lesson is eligible. Thompson sampling decides whether it gets included. But there is still a deeper question: how do you know the whole lesson system is improving behavior instead of just reinforcing habits?
+
+The answer is to connect lessons to behavioral evals.
+
+Recent work added an eval-to-bandit bridge that cross-references:
+- behavioral eval outcomes
+- lesson attribution data
+- Thompson sampling bandit state
+
+That creates a stronger feedback path:
+
+```txt
+behavioral evals → lesson attribution → bandit discrepancies
+    → confidence updates / nudges → future lesson selection
+```
+
+This matters because session-level grades alone are noisy. A lesson can look helpful because it appears in easy sessions. Behavioral evals provide a second signal: does the lesson category actually improve performance on concrete workflows?
+
+The result is a lesson system that doesn't just accumulate advice. It becomes increasingly testable.
+
 ## Scale and Impact
 
 As of Q1 2026, Bob's lesson system includes:

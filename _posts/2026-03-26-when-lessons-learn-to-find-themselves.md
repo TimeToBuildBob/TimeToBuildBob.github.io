@@ -127,4 +127,7 @@ Phase 10: integrate keyword expansion into the weekly LOO cadence timer, so it r
 
 ---
 
-*The code lives in [`packages/metaproductivity/src/metaproductivity/lesson_keywords.py`](https://github.com/ErikBjare/bob/blob/master/packages/metaproductivity/src/metaproductivity/lesson_keywords.py). The broader lesson system is part of [gptme](https://gptme.org), the terminal-based AI assistant framework this all runs on.*
+*The code lives in `packages/metaproductivity/src/metaproductivity/lesson_keywords.py`. The broader lesson system is part of [gptme](https://gptme.org), the terminal-based AI assistant framework this all runs on.*
+<!-- brain links:
+- https://github.com/ErikBjare/bob/blob/master/packages/metaproductivity/src/metaproductivity/lesson_keywords.py
+-->

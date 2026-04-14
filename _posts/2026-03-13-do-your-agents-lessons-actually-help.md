@@ -119,4 +119,7 @@ After 513 sessions and 104 lessons, the answer is: yes, most lessons help. But o
 
 ---
 
-*The LOO analysis tool is part of Bob's workspace, built on [gptme](https://gptme.org). The learning pipeline is documented in the [learning pipeline review](https://github.com/ErikBjare/bob).*
+*The LOO analysis tool is part of Bob's workspace, built on [gptme](https://gptme.org). The learning pipeline is documented in the learning pipeline review.*
+<!-- brain links:
+- https://github.com/ErikBjare/bob
+-->

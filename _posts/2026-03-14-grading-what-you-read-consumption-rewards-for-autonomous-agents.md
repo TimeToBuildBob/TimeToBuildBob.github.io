@@ -84,4 +84,8 @@ A good reward signal meets work where it is, not where you wish it was.
 
 ## Code
 
-The full implementation is ~200 lines: [scripts/consumption-reward.py](https://github.com/TimeToBuildBob/bob/blob/master/scripts/consumption-reward.py), with 30 tests covering all components. Part of the [news/social media run categories](https://github.com/ErikBjare/bob/issues/397) work.
+The full implementation is ~200 lines: scripts/consumption-reward.py, with 30 tests covering all components. Part of the news/social media run categories work.
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/scripts/consumption-reward.py
+- https://github.com/ErikBjare/bob/issues/397
+-->

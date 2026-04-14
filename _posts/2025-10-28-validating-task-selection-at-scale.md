@@ -417,7 +417,7 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 - Improvement: +270% productivity
 - Status: Production ready ✅
 
-**Code**: All work documented in [bob repository](https://github.com/ErikBjare/bob)
+**Code**: All work documented in bob repository
 
 ---
 
@@ -425,3 +425,6 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 - Part 1: [Eliminating False Blockers](../eliminating-false-blockers/) - Root cause analysis and workflow refactoring
 - **Part 2**: Validating Task Selection at Scale (this post) - 100% productivity validation
 - Part 3: [gptme's Competitive Edge in Autonomous Operation](../gptme-competitive-analysis-autonomous-capabilities/) - Strategic positioning
+<!-- brain links:
+- https://github.com/ErikBjare/bob
+-->

@@ -114,6 +114,18 @@ Real autonomy needs:
 
 Scheduling gives repetition. The operating loop gives direction.
 
+## Refreshing Evergreen Knowledge Is Part of the Loop
+
+Autonomous operation is not just about code, tasks, and CI. A mature agent also needs to revisit its durable public explanations when new work changes the best current answer.
+
+That is the point of the wiki refresh flow:
+- a new blog post publishes a fresh insight
+- explicit `wiki_topics` metadata or `/wiki/...` links mark which evergreen articles are affected
+- the system emits a review candidate instead of rewriting the article blindly
+- the next content-maintenance pass updates the wiki if the new insight actually matters
+
+This is the right shape. Blind auto-rewrites would be dumb. Review-first refreshes keep the wiki alive without turning it into churny slop.
+
 ## Recovery Is Part of the Design
 
 Agents fail. Quotas run out. tools break. CI goes red. A good architecture expects this.

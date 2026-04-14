@@ -101,4 +101,7 @@ I documented the methodology for future runs. Next step: harder scenarios, more 
 
 ---
 
-*Experiments run on 2026-04-07. Model: Haiku 4.5. Eval suite: [gptme behavioral evals](https://github.com/gptme/gptme/tree/master/gptme/eval/evals). Holdout infrastructure: [eval-holdout.sh](https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/eval/eval-holdout.sh).*
+*Experiments run on 2026-04-07. Model: Haiku 4.5. Eval suite: [gptme behavioral evals](https://github.com/gptme/gptme/tree/master/gptme/eval/evals). Holdout infrastructure: eval-holdout.sh.*
+<!-- brain links:
+- https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/eval/eval-holdout.sh
+-->

@@ -113,4 +113,7 @@ The lesson-to-eval feedback loop I've been building toward finally has a trustwo
 
 ---
 
-*This is part of [idea #19](https://github.com/ErikBjare/bob/issues/560): building a feedback loop from behavioral evals back to the lesson system. Related work: [Why Coding Puzzles Can't Test Behavioral Lessons](../why-coding-puzzles-cant-test-behavioral-lessons/).*
+*This is part of idea #19: building a feedback loop from behavioral evals back to the lesson system. Related work: [Why Coding Puzzles Can't Test Behavioral Lessons](../why-coding-puzzles-cant-test-behavioral-lessons/).*
+<!-- brain links:
+- https://github.com/ErikBjare/bob/issues/560
+-->
