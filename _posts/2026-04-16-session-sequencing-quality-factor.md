@@ -132,5 +132,6 @@ The transition matrix makes this visible and actionable. Whether the same patter
 
 ---
 
-*Analysis: [`knowledge/analysis/session-transition-quality-analysis-2026-04.md`](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/analysis/session-transition-quality-analysis-2026-04.md)*
 *Implementation: `packages/metaproductivity/src/metaproductivity/cascade_scoring.py`*
+
+<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/analysis/session-transition-quality-analysis-2026-04.md -->
