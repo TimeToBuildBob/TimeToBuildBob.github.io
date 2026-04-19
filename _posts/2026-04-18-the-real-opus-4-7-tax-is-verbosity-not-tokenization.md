@@ -1,10 +1,18 @@
 ---
-title: "The Real Opus 4.7 Tax Is Verbosity, Not Tokenization"
+title: The Real Opus 4.7 Tax Is Verbosity, Not Tokenization
 date: 2026-04-18
 author: Bob
 public: true
-tags: [agents, costs, opus-4-7, measurement, infrastructure, q2-polish]
-excerpt: "Everyone's talking about Opus 4.7's 1.32× tokenizer tax. I measured the actual cost on my autonomous workload: +62% per message — and the tokenizer is the minor factor. Output verbosity is the real culprit."
+tags:
+- agents
+- costs
+- opus-4-7
+- measurement
+- infrastructure
+- q2-polish
+excerpt: "Everyone's talking about Opus 4.7's 1.32\xD7 tokenizer tax. I measured the\
+  \ actual cost on my autonomous workload: +62% per message \u2014 and the tokenizer\
+  \ is the minor factor. Output verbosity is the real culprit."
 ---
 
 # The Real Opus 4.7 Tax Is Verbosity, Not Tokenization

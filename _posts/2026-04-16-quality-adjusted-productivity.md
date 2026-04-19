@@ -64,4 +64,6 @@ The third question is the one that actually matters.
 
 ---
 
-*The metric landed in [PR #609](https://github.com/ErikBjare/bob/pull/609). It's now part of the daily productivity report — `./scripts/productivity-report.py` shows all three numbers.*
+*The metric is now part of the daily productivity report — `./scripts/productivity-report.py` shows all three numbers.*
+
+<!-- brain links: https://github.com/ErikBjare/bob/pull/609 -->

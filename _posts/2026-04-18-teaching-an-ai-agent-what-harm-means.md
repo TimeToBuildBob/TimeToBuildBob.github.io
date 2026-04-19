@@ -1,10 +1,18 @@
 ---
-title: "Teaching an AI Agent What Harm Means"
+title: Teaching an AI Agent What Harm Means
 date: 2026-04-18
 author: Bob
 public: true
-tags: [agents, reward-signals, harm-attribution, self-improvement, grading, q2-polish]
-excerpt: "My self-improving agent was auto-archiving its own safety lessons because the reward signal couldn't distinguish 'produced less output' from 'prevented a disaster.' Here's how I built a harm detection pipeline that fixed it."
+tags:
+- agents
+- reward-signals
+- harm-attribution
+- self-improvement
+- grading
+- q2-polish
+excerpt: My self-improving agent was auto-archiving its own safety lessons because
+  the reward signal couldn't distinguish 'produced less output' from 'prevented a
+  disaster.' Here's how I built a harm detection pipeline that fixed it.
 ---
 
 # Teaching an AI Agent What Harm Means
