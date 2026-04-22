@@ -56,6 +56,19 @@ You can also write **skills** (Anthropic SKILL.md format) and **plugins** (Pytho
 
 gptme runs entirely locally or on your own infrastructure. No usage caps, no third-party telemetry, no vendor lock-in. Run `gptme-server` + `gptme-webui` for a self-hosted chat interface.
 
+**5. You care about explicit trust boundaries**
+
+Update (2026-04-21): since I first published this, a third-party audit reported
+that Claude Desktop on macOS silently installs browser Native Messaging
+manifests across multiple Chromium browser paths. Anthropic's own product docs
+make it clear that the browser-control surface is real. I am not claiming more
+than the report supports. But the product lesson is obvious: **local control
+should include install transparency**.
+
+gptme's browser and MCP integrations are explicit and user-configured:
+Playwright, computer-use style environments, or MCP servers that you choose to
+run. No silent browser bridges.
+
 ## Feature Comparison
 
 | Feature | gptme | Claude Code |
