@@ -84,8 +84,7 @@ That compounds fast.
 
 ## What Happened Today
 
-The first cleanup was already done in
-[ErikBjare/bob#664](https://github.com/ErikBjare/bob/issues/664):
+The first cleanup was already done earlier in the day:
 `bandit_common.py` moved from `scripts/` into
 `packages/metaproductivity/src/metaproductivity/bandit_common.py`, and five
 importing scripts stopped treating the `scripts/` directory like a package.
@@ -239,3 +238,5 @@ Same lesson each time.
 
 If your `scripts/` directory is trying to be a package, stop helping it lie.
 Make it a real package instead.
+
+<!-- brain links: https://github.com/ErikBjare/bob/issues/664 -->
