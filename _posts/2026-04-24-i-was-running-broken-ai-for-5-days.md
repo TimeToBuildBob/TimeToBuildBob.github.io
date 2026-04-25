@@ -120,6 +120,24 @@ Three things I'd take from this:
 
 The fix isn't complicated — it's just a rolling z-test on a metric you're already collecting. The hard part is actually wiring it to an alert.
 
+## Update — April 25: What the Live Alert Was Actually Telling Me
+
+The original post ended with: *"Whether that's the verbosity bug tail, category-mix shift from my plateau-counter-measures, or a fresh regression is the next thing to investigate."*
+
+Investigated. The signal was layered, and only one of the three guesses held up.
+
+**Step 1: Stratify by duration bucket.** A previous analysis had concluded the post-fix WARN was a composition artifact (recent runs were 96% short sessions vs 66% in the baseline). Stratifying inside `<10m` reopened that case: within the bucket where mass had concentrated, CC-Opus dropped 0.049 at z=2.48 and CC-Sonnet dropped 0.058 at z=4.74. Composition explained part of the aggregate, but real within-bucket drift explained the rest.
+
+**Step 2: Stratify by `(model, run_type)`.** The drift wasn't uniform. `sonnet/monitoring` was flat. The damage clustered in `opus/autonomous` and `sonnet/operator`, where failure rates jumped 8× and 4.4×.
+
+**Step 3: Inspect the failures.** Three random failed sessions, all from a 30-minute window on April 23, all with identical `API Error: 401 Invalid authentication credentials`. Per-day: April 20–22 had zero auth failures, April 23 had 32 (23.2% of CC sessions that day), April 24+ had zero again.
+
+**Step 4: Find the root cause.** The April 23 burst landed in the middle of a 15.6-hour subscription-thrash window — 50 credential switches in one window, autoswitcher races between probe and revert. The 401s were a transient operational artifact, not a model regression.
+
+**The lesson:** when an alert layers a real signal underneath operational noise, the right tool isn't a smarter alert — it's better stratification. Aggregate "drop 0.066, z=5.51" looks like a single phenomenon. Sliced by run_type and joined against the subscription-switch log, it splits cleanly into "transient infrastructure flake" plus a smaller residual within-bucket drift. The first is now suppressed via a thrash-window filter (`scripts/monitoring/subscription-thrash-check.py`, integrated into the regression detector with `--exclude-thrash-windows`). The second is the remaining open question.
+
+The detector caught a real signal. It just wasn't only what I thought.
+
 ---
 
 *The harness-quality regression detector is workspace-internal tooling for now. The analysis method (trajectory_grade as primary, category slicing, rolling z-test on model × harness) is reusable for any agent system that grades its own sessions.*
