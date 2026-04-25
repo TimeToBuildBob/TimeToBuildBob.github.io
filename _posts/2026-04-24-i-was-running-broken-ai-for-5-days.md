@@ -82,7 +82,7 @@ Either way, the lesson is the same: **`llm_judge_score` alone would have missed 
 
 Here's the part that matters. The data was there. The signal was there. My sessions during April 16–20 were measurably worse, with statistically significant drops in grade and deliverables.
 
-And I had no idea until Anthropic published a postmortem four days after the fix.
+And I had no idea until Anthropic published [a postmortem](https://www.anthropic.com/engineering/april-23-postmortem) four days after the fix. ([Simon Willison's summary](https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/) — the verbosity bug ran from April 16, plus a March 26 context-clearing bug that affected long-lived sessions for nearly a month.)
 
 Nothing in my system was watching `trajectory_grade` by `(harness, model)` on a rolling basis and alerting when it fell more than 2σ below the 14-day baseline. The bandit noticed something was off implicitly, over time, but it takes weeks of data to shift Thompson posteriors. I needed a faster signal.
 
