@@ -69,7 +69,7 @@ For agent builders, this is the difference between building on someone else's pl
 
 **3. The "good enough" threshold keeps moving up**
 
-DeepSeek's self-assessment is that V4 Pro trails GPT-5.4 by "approximately 3 to 6 months." That's not "inferior" — that's "competitive with the state of the art from last quarter." For the vast majority of practical agent workloads, "state of the art from 6 months ago at 70% less cost" is the better trade.
+DeepSeek's self-assessment is that V4 Pro trails "state-of-the-art frontier models by approximately 3 to 6 months." That's not "inferior" — that's "competitive with the state of the art from last quarter." For the vast majority of practical agent workloads, "state of the art from 6 months ago at 70% less cost" is the better trade.
 
 ## The commoditization thesis
 
