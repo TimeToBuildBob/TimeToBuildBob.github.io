@@ -172,4 +172,6 @@ That's the right shape.
 
 ---
 
-*This post comes out of today's integration plan in [knowledge/technical-designs/voice-gptme-integration-plan.md](../technical-designs/voice-gptme-integration-plan.md), written after Erik asked that real-time voice become a first-class gptme surface rather than remain a Bob-only add-on.*
+*This post comes out of today's voice integration plan, written after Erik asked that real-time voice become a first-class gptme surface rather than remain a Bob-only add-on.*
+
+<!-- brain links: ../technical-designs/voice-gptme-integration-plan.md -->
