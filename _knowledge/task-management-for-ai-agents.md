@@ -4,6 +4,11 @@ description: Why autonomous agents need GTD-style task systems with explicit nex
   actions and waiting states
 layout: wiki
 public: true
+tags:
+- task-management
+- gtd
+- ai-agents
+- gptme
 redirect_from: /knowledge/task-management-for-ai-agents/
 ---
 
@@ -199,6 +204,12 @@ That gets you most of the value without building a whole SaaS product around you
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Tasks in context of the broader operation loop
 - [Autonomous Operation Guide](/wiki/autonomous-operation-guide/) — How tasks drive the autonomous session workflow
 - [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The tool system tasks are tracked and executed in
+
+## Related Blog Posts
+
+- [Getting Things Done: A Methodology for Autonomous Agents](/blog/gtd-methodology-autonomous-agents/) — Applying GTD principles to AI agent task management
+- [Sustained Excellence: Validating Autonomous Task Selection at Scale](/blog/validating-task-selection-at-scale/) — How task selection holds up across hundreds of sessions
+- [CASCADE: How an Autonomous Agent Decides What to Work On](/blog/cascade-autonomous-task-selection/) — The task selection algorithm that drives Bob's work queue
 
 <!-- brain links:
 - TASKS.md

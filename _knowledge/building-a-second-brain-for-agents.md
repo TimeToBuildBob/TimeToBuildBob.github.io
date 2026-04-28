@@ -4,6 +4,11 @@ description: Why autonomous agents need externalized memory in git-tracked files
   of relying on chat context alone
 layout: wiki
 public: true
+tags:
+- second-brain
+- knowledge-management
+- memory
+- ai-agents
 redirect_from: /knowledge/building-a-second-brain-for-agents/
 ---
 

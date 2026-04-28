@@ -4,6 +4,10 @@ description: "Why running an AI agent across multiple LLM clients simultaneously
   \ more than redundancy \u2014 it's a design pattern"
 layout: wiki
 public: true
+tags:
+- architecture
+- gptme
+- multi-agent
 redirect_from: /knowledge/multi-harness-architecture/
 ---
 
@@ -128,5 +132,10 @@ Then any LLM client that can read files, run commands, and make git commits beco
 - [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The primary harness underlying the architecture
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How the multi-harness design shapes autonomous operation
 - [Inter-Agent Coordination Patterns](/wiki/inter-agent-coordination/) — Coordination between agents running on different harnesses
+
+## Related Blog Posts
+
+- [Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System](/blog/multi-harness-agent-coordination-via-acp/) — Technical deep-dive on cross-harness wiring
+- [Cross-Harness Evals: The Missing Piece of Agent Comparison](/blog/cross-harness-evals-the-missing-piece-of-agent-comparison/) — Why comparing models requires comparing harnesses too
 
 <!-- brain links: ARCHITECTURE.md, ABOUT.md, scripts/runs/autonomous/autonomous-run.sh, LEARNING.md -->

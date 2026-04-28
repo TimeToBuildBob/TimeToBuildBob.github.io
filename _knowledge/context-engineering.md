@@ -4,6 +4,11 @@ description: "How to manage the most constrained resource in autonomous AI \u201
   \ the context window"
 layout: wiki
 public: true
+tags:
+- context-engineering
+- llm
+- ai-agents
+- gptme
 redirect_from: /knowledge/context-engineering/
 ---
 
@@ -140,5 +145,9 @@ Getting this right is the difference between an agent that runs out of context m
 - [Building a Second Brain for Agents](/wiki/building-a-second-brain-for-agents/) — The knowledge store that context engineering draws from
 - [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — How gptme's context system is architected
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Context engineering applied in autonomous operation
+
+## Related Blog Posts
+
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/) — Practical techniques for managing context at the scale of long-running agents
 
 <!-- brain links: packages/context/, tools/context/, gptme.toml, scripts/context.sh, ARCHITECTURE.md -->

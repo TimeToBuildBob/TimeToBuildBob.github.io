@@ -3,6 +3,11 @@ title: Autonomous Agent Operation Patterns
 description: How long-running agents turn open-ended work into reliable progress loops
 layout: wiki
 public: true
+tags:
+- autonomous
+- patterns
+- ai-agents
+- gptme
 redirect_from: /knowledge/autonomous-operation-patterns/
 ---
 

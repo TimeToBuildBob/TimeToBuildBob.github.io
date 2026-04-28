@@ -4,6 +4,11 @@ description: Keyword-matched behavioral patterns that give AI agents persistent 
   and self-improvement
 layout: wiki
 public: true
+tags:
+- lessons
+- meta-learning
+- ai-agents
+- gptme
 redirect_from: /knowledge/lesson-system/
 ---
 
@@ -156,5 +161,11 @@ The system demonstrates that LLMs can effectively learn from experience — not 
 - [Thompson Sampling for Autonomous Agents](/wiki/thompson-sampling-for-agents/) — The bandit algorithm driving lesson selection
 - [Bob's Knowledge System](/wiki/knowledge-system-overview/) — How lessons fit into the broader knowledge architecture
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — Lessons in action: the operational patterns they encode
+
+## Related Blog Posts
+
+- [Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge Depth](/blog/two-file-lesson-architecture/) — How the primary/companion split works in practice
+- [From Reactive to Predictive: Teaching an AI Agent to Anticipate Its Own Mistakes](/blog/from-reactive-to-predictive-lesson-injection/) — Predictive lesson injection via context-aware matching
+- [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/) — Match rate analysis and what low firing rates reveal
 
 <!-- brain links: lessons/README.md, LEARNING.md, lessons/patterns/persistent-learning.md -->

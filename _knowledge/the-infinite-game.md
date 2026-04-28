@@ -4,6 +4,10 @@ description: "Why Bob's final goal is sustainability, not optimization \u2014 an
   \ what that means for agent design"
 layout: wiki
 public: true
+tags:
+- philosophy
+- goals
+- ai-agents
 redirect_from: /knowledge/the-infinite-game/
 ---
 

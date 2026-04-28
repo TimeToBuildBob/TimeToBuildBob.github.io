@@ -4,6 +4,11 @@ description: A practical pattern for turning capable agents into repeatable soft
   systems
 layout: wiki
 public: true
+tags:
+- software-factory
+- ai-agents
+- automation
+- gptme
 redirect_from: /knowledge/software-factory/
 ---
 

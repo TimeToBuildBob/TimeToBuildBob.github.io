@@ -4,6 +4,10 @@ description: "How gptme is built \u2014 from Unix-philosophy tool system to auto
   \ agent infrastructure"
 layout: wiki
 public: true
+tags:
+- gptme
+- architecture
+- open-source
 redirect_from: /knowledge/gptme-architecture/
 ---
 

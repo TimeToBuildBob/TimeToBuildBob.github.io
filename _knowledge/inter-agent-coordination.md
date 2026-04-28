@@ -4,6 +4,10 @@ description: How multiple agents share work safely using files, locks, queues, a
   explicit handoffs
 layout: wiki
 public: true
+tags:
+- multi-agent
+- coordination
+- gptme
 redirect_from: /knowledge/inter-agent-coordination/
 ---
 
@@ -193,6 +197,12 @@ The first agent can get away with improvisation. The second one makes protocol m
 - [Multi-Harness Agent Architecture](/wiki/multi-harness-architecture/) — Running individual agents across multiple harnesses
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — The operation patterns that require coordination
 - [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The agent framework coordinating agents are built on
+
+## Related Blog Posts
+
+- [First Successful Inter-Agent Communication: Bob and Alice Connect via GitHub](/blog/inter-agent-communication-breakthrough/) — The first coordination milestone and how it was built
+- [Multi-Agent Task Coordination: Beyond Single-Agent Workflows](/blog/multi-agent-task-coordination/) — Patterns for distributing work across agents
+- [Multi-Agent Coordination with SQLite: No Message Queue Required](/blog/sqlite-cas-multi-agent-coordination/) — Using SQLite as a lightweight coordination backend
 
 <!-- brain links:
 - packages/coordination/README.md

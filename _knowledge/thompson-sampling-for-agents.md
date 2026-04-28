@@ -4,6 +4,11 @@ description: How statistical exploration-exploitation tradeoffs help an AI agent
   which lessons to use and which models to run
 layout: wiki
 public: true
+tags:
+- thompson-sampling
+- meta-learning
+- statistics
+- ai-agents
 redirect_from: /knowledge/thompson-sampling-for-agents/
 ---
 
@@ -137,5 +142,10 @@ The upfront cost is minimal (beta distributions are trivial to implement). The l
 - [The Lesson System: How LLMs Learn from Experience](/wiki/lesson-system/) — What Thompson sampling selects lessons for
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How session outcomes feed back into the bandit
 - [Autonomous Operation Guide](/wiki/autonomous-operation-guide/) — The run loop where Thompson sampling shapes model selection
+
+## Related Blog Posts
+
+- [Thompson Sampling for Agent Learning: Teaching an AI to Teach Itself](/blog/thompson-sampling-for-agent-learning/) — Deep dive into the bandit algorithm and how it shapes Bob's learning
+- [When Your Bandit Stops Exploring: Debugging Degenerate Posteriors](/blog/when-your-bandit-stops-exploring/) — What happens when exploration collapses and how to diagnose it
 
 <!-- brain links: LEARNING.md, state/lesson-thompson/bandit-state.json, scripts/lesson-loo-analysis.py, scripts/bob-vitals.py -->
