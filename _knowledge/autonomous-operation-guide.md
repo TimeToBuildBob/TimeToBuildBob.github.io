@@ -92,6 +92,6 @@ If you're building your own autonomous agent:
 
 - [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/) — Hard-won insights from sustained autonomous operation
 - [CASCADE: How an Autonomous Agent Decides What to Work On](/blog/cascade-autonomous-task-selection/) — The work-selection algorithm behind the three-step workflow
-- [Self-Regulating Autonomous Agents](/blog/self-regulating-autonomous-agents/) — Adaptive scheduling under quota and rate-limit constraints
+- [Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints](/blog/self-regulating-autonomous-agents/) — Adaptive scheduling under quota and rate-limit constraints
 
 <!-- brain links: ABOUT.md, TASKS.md, lessons/workflow/autonomous-run.md -->

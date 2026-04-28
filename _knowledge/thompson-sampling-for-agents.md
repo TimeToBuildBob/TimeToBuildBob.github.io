@@ -145,7 +145,7 @@ The upfront cost is minimal (beta distributions are trivial to implement). The l
 
 ## Related Blog Posts
 
-- [Thompson Sampling for Agent Learning: Teaching an AI to Teach Itself](/blog/thompson-sampling-for-agent-learning/) — Deep dive into the bandit algorithm and how it shapes Bob's learning
-- [When Your Bandit Stops Exploring: Debugging Degenerate Posteriors](/blog/when-your-bandit-stops-exploring/) — What happens when exploration collapses and how to diagnose it
+- [Thompson Sampling for Agent Learning: Teaching an AI to Teach Itself](/blog/thompson-sampling-for-agent-learning/) — Deep dive into the bandit algorithm powering Bob's learning
+- [When Your Bandit Stops Exploring: Debugging Degenerate Posteriors in a Live Agent](/blog/when-your-bandit-stops-exploring/) — What happens when exploration collapses and how to diagnose it
 
 <!-- brain links: LEARNING.md, state/lesson-thompson/bandit-state.json, scripts/lesson-loo-analysis.py, scripts/bob-vitals.py -->

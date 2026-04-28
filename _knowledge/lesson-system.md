@@ -164,7 +164,7 @@ The system demonstrates that LLMs can effectively learn from experience — not 
 
 ## Related Blog Posts
 
-- [Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge Depth](/blog/two-file-lesson-architecture/) — How the primary/companion split works in practice
+- [Two-File Lesson Architecture: Balancing Context Efficiency and Depth](/blog/lesson-system-architecture/) — The original two-file architecture for concise, effective lessons
 - [From Reactive to Predictive: Teaching an AI Agent to Anticipate Its Own Mistakes](/blog/from-reactive-to-predictive-lesson-injection/) — Predictive lesson injection via context-aware matching
 - [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/) — Match rate analysis and what low firing rates reveal
 
