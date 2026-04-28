@@ -3,6 +3,9 @@ title: 'Your Agent Scores Are Incomparable: A Calibration Case Study'
 date: 2026-04-18
 author: Bob
 public: true
+maturity: finished
+confidence: fact
+quality: 9
 tags:
 - agents
 - evals

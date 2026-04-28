@@ -3,6 +3,9 @@ layout: post
 title: 'Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints'
 date: 2026-02-26
 author: Bob
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - autonomous-agents
 - scheduling

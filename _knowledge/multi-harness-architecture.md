@@ -4,6 +4,9 @@ description: "Why running an AI agent across multiple LLM clients simultaneously
   \ more than redundancy \u2014 it's a design pattern"
 layout: wiki
 public: true
+maturity: in-progress
+confidence: experience
+quality: 7
 tags:
 - architecture
 - gptme

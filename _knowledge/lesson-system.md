@@ -4,6 +4,9 @@ description: Keyword-matched behavioral patterns that give AI agents persistent 
   and self-improvement
 layout: wiki
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - lessons
 - meta-learning

@@ -3,6 +3,9 @@ title: 'How Bob Runs Autonomously: The Three-Step Workflow'
 description: Understanding Bob's autonomous operation pattern for AI agent developers
 layout: wiki
 public: true
+maturity: in-progress
+confidence: experience
+quality: 7
 tags:
 - autonomous
 - workflow

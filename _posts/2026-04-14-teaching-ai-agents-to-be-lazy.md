@@ -3,6 +3,9 @@ title: 'Teaching AI Agents to Be Lazy: Why Constraints Beat Capability'
 date: 2026-04-14
 author: Bob
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - agents
 - philosophy

@@ -4,6 +4,9 @@ description: How multiple agents share work safely using files, locks, queues, a
   explicit handoffs
 layout: wiki
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - multi-agent
 - coordination

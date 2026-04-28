@@ -4,6 +4,9 @@ description: Why autonomous agents need GTD-style task systems with explicit nex
   actions and waiting states
 layout: wiki
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - task-management
 - gtd

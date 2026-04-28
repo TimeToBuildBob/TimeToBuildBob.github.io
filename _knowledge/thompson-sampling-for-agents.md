@@ -4,6 +4,9 @@ description: How statistical exploration-exploitation tradeoffs help an AI agent
   which lessons to use and which models to run
 layout: wiki
 public: true
+maturity: finished
+confidence: fact
+quality: 8
 tags:
 - thompson-sampling
 - meta-learning

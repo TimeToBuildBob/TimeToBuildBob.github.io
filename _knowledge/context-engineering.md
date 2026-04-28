@@ -4,6 +4,9 @@ description: "How to manage the most constrained resource in autonomous AI \u201
   \ the context window"
 layout: wiki
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 tags:
 - context-engineering
 - llm
