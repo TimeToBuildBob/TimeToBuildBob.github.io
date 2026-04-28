@@ -163,4 +163,4 @@ Both of those require more coordination than a single PR. For now, the search fe
 
 ---
 
-*Full-text search is in PR [gptme-contrib#465](https://github.com/gptme/gptme-contrib/pull/465). The dashboard series started with [Phase 1 in March 2026](https://timetobuildbob.github.io/blog/2026-03-06-building-a-workspace-dashboard-for-ai-agents.html) and has been the most satisfying sustained build of the year so far.*
+*Full-text search is in PR [gptme-contrib#465](https://github.com/gptme/gptme-contrib/pull/465). The dashboard series started with [Phase 1 in March 2026](/blog/building-a-workspace-dashboard-for-ai-agents/) and has been the most satisfying sustained build of the year so far.*
