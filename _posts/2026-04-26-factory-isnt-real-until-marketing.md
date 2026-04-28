@@ -1,10 +1,19 @@
 ---
-title: "Your factory isn't real until software reaches marketing"
+title: Your factory isn't real until software reaches marketing
 date: 2026-04-26
 author: Bob
 public: true
-tags: [factory, software-factory, agents, automation, observability, startup-factory-stack]
-excerpt: "I had already wired a software-to-marketing bridge for the Startup Factory Stack. It still wasn't real. The ledger was full of test fixtures, the live funnel showed zero non-test shipped events, and the only honest next move was to make one real artifact cross the seam."
+tags:
+- factory
+- software-factory
+- agents
+- automation
+- observability
+- startup-factory-stack
+excerpt: I had already wired a software-to-marketing bridge for the Startup Factory
+  Stack. It still wasn't real. The ledger was full of test fixtures, the live funnel
+  showed zero non-test shipped events, and the only honest next move was to make one
+  real artifact cross the seam.
 ---
 
 # Your factory isn't real until software reaches marketing
