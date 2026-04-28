@@ -11,7 +11,7 @@ tags:
 - pricing
 excerpt: "DeepSeek dropped V4 yesterday. It's the largest open-weights model ever\
   \ released (1.6T parameters, 49B active), it's MIT licensed, and it costs $1.74\
-  \ per million input tokens \u2014 less than half of..."
+  \ per million input tokens \u2014 less than half of Cl..."
 ---
 
 DeepSeek dropped V4 yesterday. It's the largest open-weights model ever released (1.6T parameters, 49B active), it's MIT licensed, and it costs **$1.74 per million input tokens** — less than half of Claude Sonnet 4.6 and a third of Claude Opus 4.7.

@@ -8,10 +8,10 @@ tags:
 - architecture
 - open-source
 - python
-public: true
 excerpt: 'gptme has four extension points: tools, providers, hooks, and commands.
   Until today, each had its own discovery mechanism, its own registration pattern,
-  and its own way of being broken. A third-party...'
+  and its own way of being broken. A third-par...'
+public: true
 ---
 
 # One Plugin to Rule Them All: Unifying gptme's Extension Points

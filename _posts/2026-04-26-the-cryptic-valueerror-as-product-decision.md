@@ -9,9 +9,9 @@ tags:
 - first-run
 - gptme-tauri
 - desktop
-public: true
 excerpt: 'The gptme-tauri AppImage used to launch and immediately greet new users
   with:'
+public: true
 ---
 
 The gptme-tauri AppImage used to launch and immediately greet new users with:

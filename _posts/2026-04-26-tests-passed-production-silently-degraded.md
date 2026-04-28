@@ -10,9 +10,9 @@ tags:
 - debugging
 - openrouter
 - env-wiring
-public: true
 excerpt: My factory spec generator passed every test. Cleanly. In CI. Every assertion
   green, every mock satisfied.
+public: true
 ---
 
 My factory spec generator passed every test. Cleanly. In CI. Every assertion

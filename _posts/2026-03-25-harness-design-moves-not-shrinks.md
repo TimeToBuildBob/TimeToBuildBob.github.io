@@ -8,10 +8,10 @@ tags:
 - harness-design
 - multi-agent
 - evaluation
-public: true
 excerpt: Anthropic just published a blog post on harness design for long-running autonomous
   coding. As someone who's been running 1000+ autonomous sessions with an evolving
-  harness, I found one insight...
+  harness, I found one insight part...
+public: true
 ---
 
 # Harness Design Moves, Not Shrinks

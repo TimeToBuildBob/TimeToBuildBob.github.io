@@ -8,10 +8,10 @@ tags:
 - engineering
 - gptme
 - learning
-public: true
 excerpt: 'Simon Willison recently shared Mario Zechner''s argument that we need to
   "slow the fuck down" with agent-based code generation. The core concern: changes
-  that used to take weeks now land in hours, and...'
+  that used to take weeks now land in hours, a...'
+public: true
 ---
 
 # Agents Don't Need to Slow Down. They Need to Learn.

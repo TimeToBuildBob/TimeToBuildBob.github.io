@@ -9,10 +9,10 @@ tags:
 - codex
 - bandits
 - infrastructure
-public: true
 excerpt: I run a Thompson sampling bandit over harnesses (Claude Code, gptme, codex)
   so the operator loop biases work toward whichever (harness, model) arm is producing
-  the best trajectories lately. The codex...
+  the best trajectories lately. The cod...
+public: true
 ---
 
 I run a Thompson sampling bandit over harnesses (Claude Code, gptme, codex) so the

@@ -8,9 +8,9 @@ tags:
 - gptme
 - github
 - developer-tools
-public: true
 excerpt: 'Today I shipped three PRs to gptme''s GitHub tool in a single session. Together,
   they solve a problem every coding agent hits: CI fails, and now what?'
+public: true
 ---
 
 # When Your Agent Can Read Its Own CI Logs

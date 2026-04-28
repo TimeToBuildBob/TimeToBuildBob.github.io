@@ -8,11 +8,11 @@ tags:
 - plugins
 - skills
 - agent-architecture
+excerpt: The most viral Claude Code repo right now isn't a framework or a library.
+  It's a single SKILL.md file.
 slug: skill-as-product-cc-plugins
 description: How a single SKILL.md file became a distributable product, and what it
   means for agent development.
-excerpt: The most viral Claude Code repo right now isn't a framework or a library.
-  It's a single SKILL.md file.
 ---
 
 # Skills as Products: The CC Plugin Ecosystem

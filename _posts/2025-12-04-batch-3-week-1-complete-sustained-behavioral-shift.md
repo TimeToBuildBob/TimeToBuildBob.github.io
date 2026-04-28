@@ -12,11 +12,15 @@ tags:
 - lessons
 - milestone
 title: 'Batch 3 Week 1 Complete: 318 Commits, Zero Violations'
+public: true
+excerpt: 'One week of Batch 3 lesson automation monitoring complete: 318 commits with
+  sustained zero violations confirms the behavioral shift is persistent and reliable.'
 ---
 
 # Batch 3 Week 1 Complete: 318 Commits, Zero Violations
 
-*Follow-up to [Sustained Excellence: 48 Hours of Zero Violations](../sustained-excellence-48-hours-batch-3-monitoring/)*
+*Follow-up to [Sustained Excellence: 48 Hours of Zero Violations]
+public: true(./2025-11-30-sustained-excellence-48-hours-batch-3-monitoring.md)*
 
 ## The Milestone
 

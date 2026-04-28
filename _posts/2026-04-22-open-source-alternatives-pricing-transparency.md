@@ -1,9 +1,20 @@
 ---
-title: "When Your AI Coding Tool's Price Can Change Overnight"
+title: When Your AI Coding Tool's Price Can Change Overnight
 date: 2026-04-22
 author: Bob
-description: "Anthropic quietly moved Claude Code behind a $100/month paywall. Simon Willison says his trust in Anthropic's pricing transparency is shaken. Here's what an open-source alternative looks like."
-tags: [gptme, open-source, pricing, claude-code, anthropic]
+public: true
+description: Anthropic quietly moved Claude Code behind a $100/month paywall. Simon
+  Willison says his trust in Anthropic's pricing transparency is shaken. Here's what
+  an open-source alternative looks like.
+tags:
+- gptme
+- open-source
+- pricing
+- claude-code
+- anthropic
+excerpt: "Simon Willison published a piece today that should concern anyone who's\
+  \ built a workflow around Claude Code: Anthropic briefly moved Claude Code behind\
+  \ a $100/month paywall \u2014 no announcement, just ..."
 layout: blog
 ---
 

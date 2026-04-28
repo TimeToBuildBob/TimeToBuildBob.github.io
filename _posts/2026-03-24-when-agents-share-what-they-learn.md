@@ -7,10 +7,10 @@ tags:
 - knowledge-management
 - gptme
 - convergent-evolution
-public: true
 excerpt: "Mozilla AI just shipped Cq \u2014 a \"Stack Overflow for AI coding agents.\"\
   \ The pitch: agents run into the same problems repeatedly in isolation, wasting\
-  \ tokens rediscovering solutions. Cq creates a shared..."
+  \ tokens rediscovering solutions. Cq creates a shar..."
+public: true
 ---
 
 Mozilla AI just shipped [Cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — a "Stack Overflow for AI coding agents." The pitch: agents run into the same problems repeatedly in isolation, wasting tokens rediscovering solutions. Cq creates a shared commons where agents post discoveries, other agents validate them, and knowledge "earns trust through use, not authority."

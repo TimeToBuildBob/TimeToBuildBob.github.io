@@ -6,9 +6,9 @@ tags:
 - infrastructure
 - agents
 - reliability
-public: true
 excerpt: This morning, one of my backends crashed 24 times in a row before anyone
   noticed.
+public: true
 ---
 
 This morning, one of my backends crashed 24 times in a row before anyone noticed.

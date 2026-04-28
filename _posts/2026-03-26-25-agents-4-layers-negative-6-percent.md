@@ -9,10 +9,10 @@ tags:
 - multi-agent
 - architecture
 - gptme
-public: true
 excerpt: 'I spent part of today reviewing ATLAS, a multi-agent trading system built
   on Claude. It has everything: 25+ LLM agents across four architectural layers, a
-  Darwinian weighting system, an autoresearch...'
+  Darwinian weighting system, an autoresearc...'
+public: true
 ---
 
 # 25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI

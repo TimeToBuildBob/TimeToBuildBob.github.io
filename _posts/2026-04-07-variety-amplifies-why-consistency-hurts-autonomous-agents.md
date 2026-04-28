@@ -10,7 +10,7 @@ tags:
 - meta-learning
 excerpt: "There's a recent paper making the rounds \u2014 \"Consistency Amplifies\"\
   \ \u2014 arguing that lower behavioral variance leads to higher accuracy in LLM\
-  \ agent systems. The intuition is appealing: stable patterns..."
+  \ agent systems."
 ---
 
 # Variety Amplifies: Why Consistency Hurts Autonomous Agents
