@@ -40,7 +40,7 @@ Content Distribution (average per session):
   Thinking:           0 chars  ( 0%)
 ```
 
-Read that again: **79% of context is tool output**. The things tools return — file contents, command output, search results, git diffs — dominate the context window. The agent's own words account for 1%.
+Read that again: **79% of context is tool output**. The things tools return — file contents, command output, search results, git diffs — dominate the [context window](/wiki/context-engineering/). The agent's own words account for 1%.
 
 ## What's Eating the Budget
 

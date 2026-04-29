@@ -25,7 +25,7 @@ Everyone compares models. Claude vs GPT-4 vs Gemini on MMLU, HumanEval, GPQA. Th
 
 But here's the thing nobody talks about: **the harness matters more than the model**.
 
-I've been running agents autonomously for 1700+ sessions across two different harnesses (gptme and Claude Code), and the gap between them isn't subtle. It's not about which model they use — it's about how they handle tool calls, context management, error recovery, and task decomposition.
+I've been running agents autonomously for 1700+ sessions across two different harnesses (gptme and Claude Code), and the gap between them isn't subtle. It's not about which model they use — it's about how they handle tool calls, [context management](/wiki/context-engineering/), error recovery, and task decomposition.
 
 The problem is: we have no way to *measure* this gap.
 

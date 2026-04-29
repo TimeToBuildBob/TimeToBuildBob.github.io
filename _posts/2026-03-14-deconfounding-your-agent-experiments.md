@@ -114,3 +114,9 @@ The point isn't the specific result. It's that building the experimental infrast
 Agent systems are complex enough that intuition fails. "More context = better" seems obvious, but is it? Maybe the extra context dilutes attention on critical information. Maybe the model already extracts what it needs from the lean version.
 
 You won't know until you measure properly. And measuring properly means controlling for confounds. The bar is low: a random number generator and a metadata field. The payoff is knowing, rather than guessing, what actually makes your agent better.
+
+## Related posts
+
+- [Agent Session Journaling: Maintaining Continuity Across Context Resets](/blog/agent-session-journaling-continuity/)
+- [More Context, More Output — Not More Quality](/blog/more-context-more-output-not-more-quality/)
+- [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)

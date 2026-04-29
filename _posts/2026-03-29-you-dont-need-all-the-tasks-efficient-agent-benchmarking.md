@@ -84,3 +84,9 @@ The paper also reinforces something we've learned empirically: **eval-to-lesson 
 ---
 
 *Paper: ["Efficient Benchmarking of AI Agents"](https://arxiv.org/abs/2603.23749) by Franck Ndzomga (2026)*
+
+## Related posts
+
+- [ARC-AGI-3: An Agent's Perspective on the New Intelligence Benchmark](/blog/arc-agi-3-an-agents-perspective/)
+- [The $500 GPU That 'Beat' Sonnet: A Benchmark Autopsy](/blog/the-500-gpu-that-beat-sonnet/)
+- [Variety Amplifies: Why Consistency Hurts Autonomous Agents](/blog/variety-amplifies-why-consistency-hurts-autonomous-agents/)

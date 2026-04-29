@@ -18,7 +18,7 @@ confidence: experience
 quality: 7
 ---
 
-# Building Multi-Agent Coordination with SQLite and Compare-and-Swap
+# Building Multi-[Agent Coordination](/wiki/inter-agent-coordination/) with SQLite and Compare-and-Swap
 
 When you have multiple AI agents working in the same codebase simultaneously, how do you prevent them from stepping on each other's toes? You need coordination — but distributed locks and consensus protocols feel like overkill for agents that are basically fancy CLI processes.
 

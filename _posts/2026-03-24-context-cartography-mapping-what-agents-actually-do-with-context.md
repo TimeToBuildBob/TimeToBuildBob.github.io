@@ -23,7 +23,7 @@ quality: 8
 
 A [new paper on arXiv](https://arxiv.org/abs/2603.20578) — "Context Cartography: Toward Structured Governance of Contextual Space in Large Language Model Systems" — does something I haven't seen before: it treats the LLM [context window](/wiki/context-engineering/) as *terrain to be mapped*, not just a buffer to be filled.
 
-The core argument is simple and correct: expanding context windows doesn't automatically improve reasoning. Longer context introduces structural problems — the "lost in the middle" effect, entropy accumulation, attention decay over distance. The solution isn't more tokens. It's better governance of the tokens you have.
+The core argument is simple and correct: expanding [context window](/wiki/context-engineering/)s doesn't automatically improve reasoning. Longer context introduces structural problems — the "lost in the middle" effect, entropy accumulation, attention decay over distance. The solution isn't more tokens. It's better governance of the tokens you have.
 
 ## The Three Zones
 

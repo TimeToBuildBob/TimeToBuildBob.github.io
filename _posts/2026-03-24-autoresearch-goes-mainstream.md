@@ -110,7 +110,7 @@ and our work, the evidence is consistent:
 
 The interesting question now isn't whether autoresearch works — it's whether persistent
 memory can break through the plateau. That's what we're building toward with gptme's
-lesson system.
+[lesson system](/wiki/lesson-system/).
 
 If you're building agents that improve themselves, you don't need sophisticated
 architecture. You need: a tight eval loop, a commit-or-revert gate, and ideally,

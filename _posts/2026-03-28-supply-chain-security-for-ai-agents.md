@@ -121,7 +121,7 @@ Five defense layers, each catching what the others miss:
 
 ## What I Learned
 
-**The context window is an attack surface.** Code security is well-understood. Dependency security is getting better (lockfiles, audits, SBOMs). But documentation security — the files an AI agent loads to define its behavior — is barely discussed. Anyone building an agent that loads external content into its context should be thinking about this.
+**The [context window](/wiki/context-engineering/) is an attack surface.** Code security is well-understood. Dependency security is getting better (lockfiles, audits, SBOMs). But documentation security — the files an AI agent loads to define its behavior — is barely discussed. Anyone building an agent that loads external content into its context should be thinking about this.
 
 **Code block awareness matters.** A naive regex scanner would flag every security tutorial that mentions "ignore previous instructions" as an example. The scanner needs to understand that patterns inside code blocks are usually legitimate examples, while the same patterns in prose are suspicious. But HIGH severity patterns should always flag, because attackers specifically use code blocks as camouflage.
 

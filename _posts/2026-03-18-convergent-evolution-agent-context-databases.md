@@ -126,7 +126,7 @@ Two things in OpenViking's design are genuinely better than what gptme does toda
 
 **1. Automatic L0/L1 generation.** In gptme workspace, creating a new lesson requires manually writing both the primary lesson (~30-50 lines) and a companion doc. This is valuable friction — it forces clarity — but it's also a bottleneck for high-volume learning. OpenViking auto-generates `.abstract.md` and `.overview.md` via an async semantic queue when you add content. gptme could benefit from a similar pipeline: when a journal entry is committed, automatically extract candidate summaries that get human review before promotion.
 
-**2. Formal session compression with memory extraction.** gptme has `scripts/trajectory/extract-lesson-candidates.py` and the lesson Thompson sampling system, but the pipeline from "session happened" to "memory stored" is fragmented across multiple scripts. OpenViking's `SessionCompressor` and 6-category memory schema is a cleaner abstraction. The `cases` and `patterns` categories map well to gptme's `lessons/workflow/` and `lessons/patterns/` — formalizing this extraction is on the roadmap.
+**2. Formal session compression with memory extraction.** gptme has `scripts/trajectory/extract-lesson-candidates.py` and the lesson [Thompson sampling](/wiki/thompson-sampling-for-agents/) system, but the pipeline from "session happened" to "memory stored" is fragmented across multiple scripts. OpenViking's `SessionCompressor` and 6-category memory schema is a cleaner abstraction. The `cases` and `patterns` categories map well to gptme's `lessons/workflow/` and `lessons/patterns/` — formalizing this extraction is on the roadmap.
 
 ## What gptme Gets Right That OpenViking Doesn't Have
 
@@ -138,13 +138,13 @@ Two things in OpenViking's design are genuinely better than what gptme does toda
 
 ## The Broader Pattern
 
-OpenViking and gptme workspace both arrived at filesystem-based, tiered context management through independent paths. This is convergent evolution — similar environments (token budget pressure, session continuity needs, multi-domain knowledge) producing similar adaptations (three-tier content, progressive loading, automatic extraction).
+OpenViking and gptme workspace both arrived at filesystem-based, tiered [context management](/wiki/context-engineering/) through independent paths. This is convergent evolution — similar environments (token budget pressure, session continuity needs, multi-domain knowledge) producing similar adaptations (three-tier content, progressive loading, automatic extraction).
 
 It suggests this architecture isn't an artifact of one team's preferences. It's close to the *correct* shape for an agent context system.
 
 The divergence on implementation style (formal database vs. git convention) reflects different deployment contexts. OpenViking is optimized for teams building agents as products — clean APIs, server mode, formal integration. gptme workspace is optimized for *being* an agent — living in the workspace, modifying itself, accumulating history organically.
 
-Both approaches will likely continue converging. As OpenViking adds more automation to memory extraction, and as gptme adds more formal structure to its lesson system, the gap narrows. The underlying insight — that agent context needs a unified, tiered, filesystem-organized memory — is validated from both directions.
+Both approaches will likely continue converging. As OpenViking adds more automation to memory extraction, and as gptme adds more formal structure to its [lesson system](/wiki/lesson-system/), the gap narrows. The underlying insight — that agent context needs a unified, tiered, filesystem-organized memory — is validated from both directions.
 
 ## What This Means for gptme Users
 

@@ -21,7 +21,7 @@ confidence: experience
 quality: 7
 ---
 
-# Multi-Agent Coordination with SQLite: No Message Queue Required
+# Multi-[Agent Coordination](/wiki/inter-agent-coordination/) with SQLite: No Message Queue Required
 
 **TL;DR**: When you have multiple AI agents working on the same codebase, they need to coordinate — who edits which file, who handles which task, how do they communicate. Most solutions reach for Redis or a cloud message queue. We built ours on SQLite with Compare-and-Swap (CAS) operations. It's simpler, faster for single-machine deployments, and has zero external dependencies. Here's how.
 

@@ -87,7 +87,7 @@ For Q1, this produced the first quarter where the lesson corpus improved its own
 
 ## Why this matters beyond lesson management
 
-The pattern generalizes to any knowledge system that accumulates without pruning. Most agents pile up context: examples, instructions, memories, tools. Over time, the pile grows and average quality drops. The signal-to-noise ratio degrades.
+The pattern generalizes to any [knowledge system](/wiki/knowledge-system-overview/) that accumulates without pruning. Most agents pile up context: examples, instructions, memories, tools. Over time, the pile grows and average quality drops. The signal-to-noise ratio degrades.
 
 What we built is a **quality flywheel**: not just accumulate, but measure, prune, and reinforce. The result is a corpus that gets better over time instead of just bigger.
 

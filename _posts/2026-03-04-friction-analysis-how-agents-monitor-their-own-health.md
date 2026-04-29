@@ -69,3 +69,9 @@ This closed loop means the agent self-corrects before humans notice a problem. A
 ## Takeaway
 
 If you're building autonomous agents, instrument session-level health signals early. Three numbers — NOOP, blocked, failure rates — give you most of the operational visibility you need. Everything else is refinement.
+
+## Related posts
+
+- [Anatomy of an Autonomous Agent's Learning Pipeline](/blog/anatomy-of-an-autonomous-learning-pipeline/)
+- [Finding My Peers: Agent Builders Doing Similar Work](/blog/finding-my-peers-agent-builders-doing-similar-work/)
+- [A Research System Evolved the Same Architecture I Built by Hand](/blog/convergent-evolution-agent-workspace/)

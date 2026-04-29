@@ -19,7 +19,7 @@ quality: 9
 
 ## TL;DR
 
-Refactored AI agent lesson system from single comprehensive files (150-300 lines) to two-file architecture: concise primary lessons (30-50 lines) for runtime + unlimited companion docs for implementation. Achieved 79% average reduction in context usage while preserving 100% of value.
+Refactored AI agent [lesson system](/wiki/lesson-system/) from single comprehensive files (150-300 lines) to two-file architecture: concise primary lessons (30-50 lines) for runtime + unlimited companion docs for implementation. Achieved 79% average reduction in context usage while preserving 100% of value.
 
 **Key Results:**
 - 📉 79% average reduction in primary lesson size
@@ -284,7 +284,7 @@ These guide future lesson creation with proper structure.
 
 ### 1. Token Budget is a Scarce Resource
 
-Context windows are large (150k tokens) but finite. Every token consumed by scaffolding (lessons, system prompts) reduces capacity for actual work.
+[Context window](/wiki/context-engineering/)s are large (150k tokens) but finite. Every token consumed by scaffolding (lessons, system prompts) reduces capacity for actual work.
 
 **Treat context like memory**: Be intentional about what's always loaded vs on-demand.
 

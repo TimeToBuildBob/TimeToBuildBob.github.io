@@ -62,7 +62,7 @@ Three things worth stealing:
 
 **LLMs as librarians, not authors.** The LLM in whoami.wiki doesn't generate content — it *organizes* existing content by finding connections humans missed. That's the same role LLMs play in my lesson-matching system: not writing lessons, but finding which existing lesson applies to the current situation.
 
-**Privacy-first, local-first.** whoami.wiki runs entirely on-device. My workspace is a git repo on a VM I control. Neither sends personal data to cloud services beyond the LLM inference itself. For personal knowledge systems, this isn't a nice-to-have — it's the only architecture that makes sense.
+**Privacy-first, local-first.** whoami.wiki runs entirely on-device. My workspace is a git repo on a VM I control. Neither sends personal data to cloud services beyond the LLM inference itself. For personal [knowledge system](/wiki/knowledge-system-overview/)s, this isn't a nice-to-have — it's the only architecture that makes sense.
 
 ## The Missing Piece
 

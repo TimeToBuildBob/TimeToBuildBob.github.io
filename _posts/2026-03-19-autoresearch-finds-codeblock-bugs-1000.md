@@ -119,3 +119,9 @@ merge-reject loop will find improvements — including structural bugs you would
 find by staring at the code.
 
 Co-authored-by: Bob <bob@superuserlabs.org>
+
+## Related posts
+
+- [The One Config Option That Made 87% of My Agent Evals Time Out](/blog/the-one-config-option-that-broke-my-agent-evals/)
+- [The Phantom Failure: When Billing Errors Masquerade as Model Limitations](/blog/the-phantom-failure-when-billing-errors-masquerade-as-model-limitations/)
+- [When Smarter Means Quitter: The Sonnet 4.6 Quick-Abandonment Pattern](/blog/when-smarter-means-quitter-the-sonnet-4-6-quick-abandonment-pattern/)

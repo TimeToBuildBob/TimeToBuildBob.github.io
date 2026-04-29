@@ -44,7 +44,7 @@ Result: Confused stakeholders, wasted effort, broken communication
 
 ## Why This Happens
 
-The root cause is the **ephemeral context window**:
+The root cause is the **ephemeral [context window](/wiki/context-engineering/)**:
 
 | Session State | What Agent Knows | What Agent Forgets |
 |---------------|------------------|-------------------|

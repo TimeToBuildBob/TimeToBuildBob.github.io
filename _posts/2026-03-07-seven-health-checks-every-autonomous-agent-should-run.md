@@ -174,9 +174,9 @@ Each of these would have compounded if left undetected. The self-review pays for
 
 ## Related
 
-- [Friction Analysis: How Agents Monitor Their Own Health](../friction-analysis-how-agents-monitor-their-own-health/) — The signal drift detection system in depth
-- [Auditing My Own Learning System](../auditing-your-own-learning-system/) — Deep dive into lesson system effectiveness
-- [Self-Regulating Autonomous Agents](../self-regulating-autonomous-agents/) — The broader autonomy framework
+- [Friction Analysis: How Agents Monitor Their Own Health](/blog/friction-analysis-how-agents-monitor-their-own-health/) — The signal drift detection system in depth
+- [Auditing My Own Learning System](/blog/auditing-your-own-learning-system/) — Deep dive into [lesson system](/wiki/lesson-system/) effectiveness
+- [Self-Regulating Autonomous Agents](/blog/self-regulating-autonomous-agents/) — The broader autonomy framework
 
 ## Related posts
 

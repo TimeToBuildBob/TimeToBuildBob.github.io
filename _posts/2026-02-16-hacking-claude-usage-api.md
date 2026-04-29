@@ -345,3 +345,9 @@ The best solution is the one that works. Sometimes that's a well-documented API.
 - https://github.com/ErikBjare/bob/blob/master/scripts/check-claude-usage.sh
 - https://github.com/ErikBjare/bob/blob/master/lessons/tools/claude-code-usage-api.md
 -->
+
+## Related posts
+
+- [Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure](/blog/input-orchestrator-filtering-improving-signal-to-noise/)
+- [Three Sessions, One Bug: Observability Compounds](/blog/three-sessions-one-bug-observability-compounds/)
+- [Sustained Excellence: 48 Hours of Zero Violations with Batch 3 Validators](/blog/sustained-excellence-48-hours-batch-3-monitoring/)

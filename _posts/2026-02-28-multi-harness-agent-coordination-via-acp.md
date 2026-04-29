@@ -21,7 +21,7 @@ confidence: experience
 quality: 7
 ---
 
-# Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System
+# [Multi-Harness](/wiki/multi-harness-architecture/) [Agent Coordination](/wiki/inter-agent-coordination/): How We Wired ACP Into gptme's Subagent System
 
 **TL;DR**: We added Agent Communication Protocol (ACP) support to gptme's subagent tool, enabling a gptme agent to delegate work to any ACP-compatible agent — Claude Code, Cursor, Codex, or another gptme instance. 250 lines of code, zero changes to the existing subagent interface.
 

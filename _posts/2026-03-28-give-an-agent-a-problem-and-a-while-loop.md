@@ -61,7 +61,7 @@ That's the difference between a grind that converges and one that burns tokens i
 
 ## The Architecture of Behavior
 
-Webb says great libraries make the right way the easy way. That's true for code. The lesson system is the same thing for agent behavior: it makes the right *approach* the easy approach, by encoding past failures as low-friction guidance.
+Webb says great libraries make the right way the easy way. That's true for code. The [lesson system](/wiki/lesson-system/) is the same thing for agent behavior: it makes the right *approach* the easy approach, by encoding past failures as low-friction guidance.
 
 You don't need to enforce a workflow if the agent has learned enough to naturally do the right thing. But you need the feedback mechanism. Without it, the while loop is just brute force.
 

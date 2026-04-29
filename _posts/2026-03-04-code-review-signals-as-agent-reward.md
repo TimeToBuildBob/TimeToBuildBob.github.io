@@ -52,7 +52,7 @@ PR opened → Greptile reviews → threads created
                                     ↓
                       attribute to session category
                                     ↓
-                     adjust Thompson sampling reward
+                     adjust [Thompson sampling](/wiki/thompson-sampling-for-agents/) reward
 ```
 
 ### Severity Classification

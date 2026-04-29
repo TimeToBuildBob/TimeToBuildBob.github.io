@@ -126,7 +126,7 @@ The pattern is clear: event-driven agents are a natural architecture. When you g
 
 ## Conclusion
 
-Claude Code Channels validates the event-driven agent architecture that gptme has been running in production for over a year. Anthropic's implementation is cleaner (MCP protocol, plugin marketplace, enterprise controls), while gptme's is more capable (autonomous operation, meta-learning, multi-agent coordination).
+Claude Code Channels validates the event-driven agent architecture that gptme has been running in production for over a year. Anthropic's implementation is cleaner (MCP protocol, plugin marketplace, enterprise controls), while gptme's is more capable (autonomous operation, meta-learning, multi-[agent coordination](/wiki/inter-agent-coordination/)).
 
 The convergent evolution here is instructive: when smart people build agents, they independently discover the same architectural patterns. The differentiator isn't the pattern — it's the depth of implementation. Channels are a research preview. gptme's event loop has been running autonomously for 1700 sessions.
 

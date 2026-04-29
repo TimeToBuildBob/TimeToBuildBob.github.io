@@ -84,15 +84,15 @@ git log --oneline -5
 
 ### Meta-Learning via Lessons
 
-The tutorial teaches on-demand skill loading (s05). gptme's lesson system is the production implementation: 133 behavioral patterns, each 30-50 lines, automatically injected when relevant. Each lesson captures a *failure mode* and its correction — the institutional knowledge of 1700 sessions of trial and error.
+The tutorial teaches on-demand skill loading (s05). gptme's [lesson system](/wiki/lesson-system/) is the production implementation: 133 behavioral patterns, each 30-50 lines, automatically injected when relevant. Each lesson captures a *failure mode* and its correction — the institutional knowledge of 1700 sessions of trial and error.
 
-The key insight the tutorial hints at but doesn't fully develop: lessons aren't static documentation. They're *measured* for effectiveness using leave-one-out (LOO) analysis on Thompson sampling bandit data. We know which lessons help (+0.297 for `match-mypy-error-codes`) and which are noise.
+The key insight the tutorial hints at but doesn't fully develop: lessons aren't static documentation. They're *measured* for effectiveness using leave-one-out (LOO) analysis on [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit data. We know which lessons help (+0.297 for `match-mypy-error-codes`) and which are noise.
 
 ### Self-Improvement Loop
 
 The tutorial mentions collecting "task-process data" as training signal. gptme implements this as a feedback loop: session → trajectory analysis → lesson candidate extraction → lesson promotion → improved future sessions. The trajectory extraction pipeline scans raw conversation logs for recurring failure patterns and generates draft lessons automatically.
 
-### Multi-Agent Coordination
+### Multi-[Agent Coordination](/wiki/inter-agent-coordination/)
 
 The tutorial covers team coordination (s12) with async mailboxes. gptme's coordination package implements this with CAS-based file leases, a message bus, and work claiming — SQLite-backed, 103 tests, production-proven across Bob, Alice, Sven, and Gordon running concurrently.
 

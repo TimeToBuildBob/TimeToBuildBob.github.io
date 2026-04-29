@@ -120,7 +120,7 @@ The pattern isn't solved. Open problems we've hit:
 - **Multi-eval generalization**: Improving on eval A while maintaining eval B-Z
 - **Diminishing returns**: The first 10% of score gains come easily; the last 10% require
   fundamental changes the LLM can't make in one iteration
-- **Agent selection**: Which model to use for proposal? We use Thompson sampling across
+- **Agent selection**: Which model to use for proposal? We use [Thompson sampling](/wiki/thompson-sampling-for-agents/) across
   models and measure which finds real improvements vs eval-gaming commits.
 
 ## The Competition Is Already Running

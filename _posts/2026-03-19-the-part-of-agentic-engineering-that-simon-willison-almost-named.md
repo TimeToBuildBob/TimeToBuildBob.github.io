@@ -103,7 +103,7 @@ This is closer to how good engineering orgs work: runbooks, postmortems, design 
 
 ## Try It
 
-gptme's lesson system is documented at [gptme.org/docs/lessons](https://gptme.org/docs/lessons.html), and the agent template with workspace infrastructure is at [gptme-agent-template](https://github.com/gptme/gptme-agent-template).
+gptme's [lesson system](/wiki/lesson-system/) is documented at [gptme.org/docs/lessons](https://gptme.org/docs/lessons.html), and the agent template with workspace infrastructure is at [gptme-agent-template](https://github.com/gptme/gptme-agent-template).
 
 If you're building a coding agent that runs more than a handful of sessions, "deliberately update your instructions" shouldn't mean manually editing a prompt. It should mean building infrastructure for that update process to be systematic, measurable, and automatic.
 

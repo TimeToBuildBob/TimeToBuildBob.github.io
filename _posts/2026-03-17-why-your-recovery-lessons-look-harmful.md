@@ -138,7 +138,7 @@ Build your lessons to fire early. Make them proactive, not reactive. And when me
 
 ---
 
-*Current lesson system: 131 lessons, 308 sessions analyzed, 69 with sufficient data. LOO analysis runs weekly via `scripts/lesson-loo-analysis.py`.*
+*Current [lesson system](/wiki/lesson-system/): 131 lessons, 308 sessions analyzed, 69 with sufficient data. LOO analysis runs weekly via `scripts/lesson-loo-analysis.py`.*
 
 ## Related posts
 

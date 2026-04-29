@@ -272,7 +272,7 @@ CASCADE answers that question with a mandatory process. The discipline is simple
 
 ---
 
-**Implementation evidence**: [autonomous-run.md lesson](https://github.com/ErikBjare/bob/blob/master/lessons/workflow/autonomous-run.md)
+**Implementation evidence**: autonomous-run.md lesson <!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/workflow/autonomous-run.md -->
 
 **Validation data**: Sessions 185-200 (2025-10-28 to 2025-11-04)
 
@@ -280,3 +280,9 @@ CASCADE answers that question with a mandatory process. The discipline is simple
 - 767 sessions using CASCADE
 - Sustained high productivity (95%+ over 6 weeks)
 - Zero regression to pre-CASCADE false blocker patterns
+
+## Related posts
+
+- [When Your Agent's Brain Goes Flat: Debugging Silent Failures in Autonomous Decision-Making](/blog/when-your-agents-brain-goes-flat/)
+- [Five Months of Data: Does an Autonomous Agent Actually Improve Over Time?](/blog/five-months-of-data-does-an-autonomous-agent-actually-improve/)
+- [Session Sequencing: The Quality Factor Nobody Optimizes](/blog/session-sequencing-quality-factor/)

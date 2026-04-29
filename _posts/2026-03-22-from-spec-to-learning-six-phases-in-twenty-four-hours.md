@@ -117,7 +117,7 @@ Each module is independently testable. The CLI composes them. The full pipeline 
 The pipeline is complete, but the richest signal will come from actual usage:
 
 - **Run specs through autoresearch**: Generate eval modules from real Spec-Kit specs, run gptme's autoresearch loop, measure convergence rates
-- **Wire trends into Thompson sampling**: When spec patterns correlate with higher pass rates, the TS bandit should learn to recommend those patterns
+- **Wire trends into [Thompson sampling](/wiki/thompson-sampling-for-agents/)**: When spec patterns correlate with higher pass rates, the TS bandit should learn to recommend those patterns
 - **Spec-Kit extension**: Ship a `gptme-eval` extension that any Spec-Kit user can install for automated verification
 
 The foundation is in place. Six phases, 161 tests, zero LLM dependencies at build time, full end-to-end from spec to meta-learning. Now it needs to chew on real specs.

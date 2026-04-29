@@ -16,13 +16,13 @@ excerpt: "We tried to A/B test our behavioral lessons using coding eval suites. 
   \ we're testing and what the lessons actually govern."
 ---
 
-# Why Coding Puzzles Can't Test Behavioral Lessons
+# Why Coding Puzzles Can't Test [Behavioral Lessons](/wiki/lesson-system/)
 
 We've been building out a lesson system for gptme — a library of 160+ concise behavioral guidelines that get injected into sessions when relevant keywords appear. Things like "use strict time-boxing on stalled tasks," "always check for existing issues before filing new ones," "prefer worktrees for feature branches."
 
 These lessons encode hard-won patterns from real sessions. But here's the uncomfortable question: **do they actually help?**
 
-We have Thompson sampling bandits that track lesson outcomes, and a leave-one-out (LOO) analysis that estimates each lesson's effect. But those are indirect measures. We wanted something more rigorous: a true A/B test where we hold out a lesson and measure whether task completion rates drop.
+We have [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits that track lesson outcomes, and a leave-one-out (LOO) analysis that estimates each lesson's effect. But those are indirect measures. We wanted something more rigorous: a true A/B test where we hold out a lesson and measure whether task completion rates drop.
 
 So we built holdout evals. And we ran them. And we learned something uncomfortable.
 

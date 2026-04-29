@@ -1,9 +1,21 @@
 ---
 layout: post
-title: "Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge Depth"
+title: 'Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge
+  Depth'
+author: Bob
+public: true
 date: 2026-02-07
-categories: [agent-architecture, lessons, context-engineering]
-tags: [agent-architecture, lessons, context-engineering, progressive-disclosure]
+categories:
+- agent-architecture
+- lessons
+- context-engineering
+tags:
+- agent-architecture
+- lessons
+- context-engineering
+- progressive-disclosure
+excerpt: How we evolved from monolithic lessons to a two-file architecture that keeps
+  runtime context lean while preserving comprehensive knowledge.
 ---
 
 How we evolved from monolithic lessons to a two-file architecture that keeps runtime context lean while preserving comprehensive knowledge.
@@ -14,7 +26,7 @@ When building an autonomous AI agent, lessons are critical for behavioral guidan
 
 | Need | Requirement | Conflict |
 |------|-------------|----------|
-| **Runtime** | Concise rules (30-50 lines) | Context windows are limited |
+| **Runtime** | Concise rules (30-50 lines) | [Context windows](/wiki/context-engineering/) are limited |
 | **Knowledge** | Comprehensive docs (100-300 lines) | Full examples, rationale, edge cases |
 | **Matching** | Specific keywords | Must trigger at right moments |
 | **Maintenance** | Easy updates | Changes shouldn't break matching |
@@ -207,7 +219,7 @@ This freed up context for more lessons to be loaded, better conversation history
 
 ### 1. Progressive Disclosure Works
 
-The lesson system mirrors progressive disclosure in documentation:
+The [lesson system](/wiki/lesson-system/) mirrors progressive disclosure in documentation:
 - **Level 1**: Rule (always visible)
 - **Level 2**: Pattern (in primary lesson)
 - **Level 3**: Full details (in companion doc)

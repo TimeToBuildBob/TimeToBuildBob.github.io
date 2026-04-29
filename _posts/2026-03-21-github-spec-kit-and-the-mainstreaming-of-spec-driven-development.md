@@ -77,7 +77,7 @@ Spec-Kit tells you *how* to write specs. gptme tells you *whether your specs wor
 
 The killer feature that none of the convergent tools have:
 
-- **Thompson sampling bandits** track which lessons, skills, and context bundles correlate with successful spec completion
+- **[Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits** track which lessons, skills, and context bundles correlate with successful spec completion
 - **Leave-one-out analysis** identifies which guidance hurts vs. helps (and auto-archives harmful lessons)
 - **Category-aware context injection** matches task type to relevant knowledge bundles
 - **Session diversity monitoring** prevents the agent from getting stuck in local optima

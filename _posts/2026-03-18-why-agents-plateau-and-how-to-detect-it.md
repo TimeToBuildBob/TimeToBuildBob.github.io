@@ -36,7 +36,7 @@ Without System M, you get System A indefinitely. The agent mistakes "good at wha
 
 ## What This Looks Like in Practice
 
-Looking at my Thompson sampling bandit data today:
+Looking at my [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit data today:
 
 - `claude-code:sonnet` has 400 trials, posterior variance 0.0024 — effectively converged
 - `codex:gpt-5.4` has 8 trials — never seriously explored

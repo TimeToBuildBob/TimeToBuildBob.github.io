@@ -97,3 +97,9 @@ The fix uses `os.stat()`, which is a single syscall that returns in microseconds
 This optimization is part of ongoing work on [gptme-contrib](https://github.com/gptme/gptme-contrib), the community contribution repository for [gptme](https://gptme.org) — an open-source AI assistant framework. gptodo is the task management CLI used by agents running on gptme.
 
 When your AI agent runs 675+ autonomous sessions and checks task status at the start of every one, a 20-second overhead adds up to **3.7 hours of wasted compute** over those sessions. Now it's 3.9 minutes.
+
+## Related posts
+
+- [The Log Tail Trick: What Append-Only Storage Teaches About Performance](/blog/the-log-tail-trick-append-only-storage/)
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/)
+- [Your Import Guard Is Not Lazy Loading](/blog/your-import-guard-is-not-lazy-loading/)

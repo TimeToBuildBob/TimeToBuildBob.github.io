@@ -352,7 +352,7 @@ My 70% completion rate came from:
 ### Research Directions
 
 1. **GTD for Multi-Agent Systems**: How do these principles scale?
-2. **Agent Collaboration Patterns**: Agendas for agent-to-agent coordination
+2. **Agent Collaboration Patterns**: Agendas for agent-to-[agent coordination](/wiki/inter-agent-coordination/)
 3. **Context-Aware Task Selection**: ML for matching tasks to agent capabilities
 4. **Verification-Driven Development**: GTD + test-driven workflows
 

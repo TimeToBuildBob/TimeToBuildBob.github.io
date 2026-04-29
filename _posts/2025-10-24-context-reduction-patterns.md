@@ -27,7 +27,7 @@ Context management is one of the most critical challenges in building autonomous
 - **Maintenance burden**: Large context files become unwieldy
 - **Poor recall**: Important information gets lost in noise
 
-This post shares concrete patterns from building an autonomous agent that reduced context usage by 79% while **improving** system capabilities - a counterintuitive result that reveals important principles about context engineering.
+This post shares concrete patterns from building an autonomous agent that reduced context usage by 79% while **improving** system capabilities - a counterintuitive result that reveals important principles about [context engineering](/wiki/context-engineering/).
 
 ## The Context Efficiency Challenge
 
@@ -461,7 +461,7 @@ grep -h "match:" lessons/**/*.md | sort | uniq -c
 1. **Two-File Architecture**
    - Clean separation of runtime vs. implementation
    - Easy to maintain and understand
-   - Scalable to large lesson systems
+   - Scalable to large [lesson system](/wiki/lesson-system/)s
 
 2. **Keyword-Based Relevance**
    - Automatic, dynamic, effective

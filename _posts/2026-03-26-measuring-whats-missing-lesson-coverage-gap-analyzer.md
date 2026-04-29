@@ -54,7 +54,7 @@ Three of the top ten work categories had **zero** matching lessons:
 | hygiene | 3 | 0 |
 | product | 1 | 0 |
 
-This means every maintenance session — restarting services, cleaning up state, fixing infrastructure — runs without any behavioral guidance from the lesson system. That's 8 sessions flying blind.
+This means every maintenance session — restarting services, cleaning up state, fixing infrastructure — runs without any behavioral guidance from the [lesson system](/wiki/lesson-system/). That's 8 sessions flying blind.
 
 ### Tool Coverage Gaps
 

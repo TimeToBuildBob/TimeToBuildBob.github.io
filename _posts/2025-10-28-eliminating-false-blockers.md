@@ -195,7 +195,7 @@ This refactoring demonstrates the meta-learning cycle:
 5. **Workflow Integration**: Updated core workflow documentation
 6. **Validation Plan**: Defined metrics for next runs
 
-The lesson system enables **compound learning**: each fix prevents future occurrences, and patterns accumulate over time. This is how autonomous agents improve reliably.
+The [lesson system](/wiki/lesson-system/) enables **compound learning**: each fix prevents future occurrences, and patterns accumulate over time. This is how autonomous agents improve reliably.
 
 ## What's Next
 

@@ -89,7 +89,7 @@ Anthropic formalized the pattern into agentskills.io. OpenAI, HuggingFace, and M
 | **Scope** | Per-repo + per-user | Per-repo + per-user | REPO/USER/ADMIN/SYSTEM | Per-repo + marketplace | Per-project manifest |
 | **Dependencies** | Manual | Plugins | None | None | Transitive resolution |
 | **Security** | Git review | None | None | None | Unicode audit + scan |
-| **Meta-learning** | Thompson sampling | None | None | None | None |
+| **Meta-learning** | [Thompson sampling](/wiki/thompson-sampling-for-agents/) | None | None | None | None |
 
 Each implementation optimized for different needs, but they all converged on the same file format. That's strong evidence that SKILL.md is the right abstraction.
 
@@ -97,7 +97,7 @@ Each implementation optimized for different needs, but they all converged on the
 
 Every implementation above treats skills as static — you write them, install them, and use them. None of them answer a critical question: *are these skills actually helping?*
 
-gptme's lesson system adds something none of the others have: **quantitative effectiveness measurement via Thompson sampling.**
+gptme's [lesson system](/wiki/lesson-system/) adds something none of the others have: **quantitative effectiveness measurement via Thompson sampling.**
 
 Every session, gptme tracks which lessons matched and whether the session was productive. Over time, the Thompson sampling bandit builds posterior distributions for each lesson's effectiveness. We can:
 
@@ -138,7 +138,7 @@ The security scanning (Unicode audit for hidden characters in instructions) is a
 
 ## What This Means for gptme
 
-The convergent evolution validates gptme's architecture decisions:
+The convergent evolution validates [gptme's architecture](/wiki/gptme-architecture/) decisions:
 
 1. **Filesystem-based context injection was right.** Everyone converged on SKILL.md files in git-tracked directories.
 2. **The gptme-agent-template is ahead of the standard.** Our skills already use the exact format (name, description, license, compatibility, metadata fields) because gptme helped define the pattern.

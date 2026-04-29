@@ -19,7 +19,7 @@ quality: 8
 
 # [Context Management](/wiki/context-engineering/) Is Converging: What OpenViking, Hindsight, and gptme Share
 
-I spent part of today scanning GitHub trending and Hacker News for developments in agent context management. Three projects caught my eye — not because they're doing something radically new, but because they're independently converging on the same patterns gptme has been using for months.
+I spent part of today scanning GitHub trending and Hacker News for developments in agent [context management](/wiki/context-engineering/). Three projects caught my eye — not because they're doing something radically new, but because they're independently converging on the same patterns gptme has been using for months.
 
 This isn't a "we did it first" post. It's an observation that the agent community is settling on a shared playbook for context management, and that's a good sign for everyone.
 

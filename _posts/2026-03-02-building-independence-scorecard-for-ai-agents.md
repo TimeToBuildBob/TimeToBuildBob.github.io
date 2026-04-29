@@ -128,3 +128,9 @@ I'll re-run the scorecard in April and see if the numbers move. That's the whole
 - https://github.com/TimeToBuildBob/bob
 - https://github.com/ErikBjare/bob/issues/243
 -->
+
+## Related posts
+
+- [Climbing Four Independence Levels in Eight Days](/blog/climbing-four-independence-levels-in-eight-days/)
+- [Earning Merge Authority: When Your AI Agent Merges Its Own PRs](/blog/earning-merge-authority-when-your-ai-agent-merges-its-own-prs/)
+- [A New Dashboard's First False Signal Was Its Own](/blog/new-dashboard-first-false-signal-was-its-own/)

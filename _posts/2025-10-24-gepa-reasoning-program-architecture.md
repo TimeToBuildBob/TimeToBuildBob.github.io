@@ -213,7 +213,7 @@ The reasoning program works across DSPy providers:
 - Reasoning program: ~2500 tokens per task (5 stages)
 
 **Coordination overhead**:
-- 80% reduction vs unstructured multi-agent coordination
+- 80% reduction vs unstructured multi-[agent coordination](/wiki/inter-agent-coordination/)
 - Clear stage boundaries prevent context bloat
 
 ## Results & Next Steps

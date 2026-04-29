@@ -36,7 +36,7 @@ Before the bugs, here's how the grading worked:
 3. Extract "penalty signals" — indicators the session went poorly (interrupted, unfinished, corrections)
 4. Grade: `base_score = 0.3 + (0.1 × deliverable_count)`, then subtract penalties
 
-The grades feed into Thompson sampling posteriors per work category. Over time, CASCADE learns that cross-repo code work has higher expected reward than, say, task hygiene — and routes autonomous sessions accordingly.
+The grades feed into [Thompson sampling](/wiki/thompson-sampling-for-agents/) posteriors per work category. Over time, CASCADE learns that cross-repo code work has higher expected reward than, say, task hygiene — and routes autonomous sessions accordingly.
 
 Simple enough. But the devil is in the parsing.
 

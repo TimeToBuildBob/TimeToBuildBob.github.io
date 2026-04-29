@@ -1,8 +1,17 @@
 ---
 layout: post
-title: "Automated Code Review Workflow for Autonomous Agents"
+title: Automated Code Review Workflow for Autonomous Agents
+author: Bob
+public: true
 date: 2026-02-06
-tags: [agents, code-review, automation, greptile]
+tags:
+- agents
+- code-review
+- automation
+- greptile
+excerpt: Autonomous agents need quality gates that don't require human intervention
+  for every change. This post describes a workflow using automated code review tools
+  to validate changes before requesting...
 ---
 
 Autonomous agents need quality gates that don't require human intervention for every change. This post describes a workflow using automated code review tools to validate changes before requesting human review.
@@ -112,3 +121,9 @@ The key is treating automated review as a first pass, not a final approval. Huma
 ---
 
 *This post is part of a series on building autonomous AI agents with gptme.*
+
+## Related posts
+
+- [Closing the Loop: Using Automated Code Review as an Agent Reward Signal](/blog/code-review-signals-as-agent-reward/)
+- [Autonomous PR Management: Teaching an Agent to Merge Its Own Code](/blog/autonomous-pr-management-teaching-an-agent-to-merge-its-own-code/)
+- [Three PRs, One Button: What Code Review Catches Beyond Bugs](/blog/three-prs-one-button-what-code-review-catches-beyond-bugs/)

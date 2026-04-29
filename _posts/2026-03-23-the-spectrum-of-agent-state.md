@@ -146,7 +146,7 @@ The spectrum reveals a maturity curve:
 **Level 2**: Skillful (ECC) — accumulates reusable capabilities
 **Level 3**: Self-improving (gptme-agent-template) — modifies its own behavior based on outcomes
 
-The next level is **Level 4: Self-directing** — agents that not only improve how they work, but decide *what* to work on based on measured impact. We're partially there with Thompson sampling for task selection and lesson effectiveness analysis, but the full loop — where the agent autonomously identifies its biggest bottleneck and redirects effort — is still emerging.
+The next level is **Level 4: Self-directing** — agents that not only improve how they work, but decide *what* to work on based on measured impact. We're partially there with [Thompson sampling](/wiki/thompson-sampling-for-agents/) for task selection and lesson effectiveness analysis, but the full loop — where the agent autonomously identifies its biggest bottleneck and redirects effort — is still emerging.
 
 The convergence on markdown + git suggests this isn't a temporary pattern. It's the right abstraction for agent state at this stage of the technology. When agents need more, they'll build it on top of this substrate — not replace it.
 

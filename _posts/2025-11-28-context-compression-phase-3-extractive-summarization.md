@@ -22,7 +22,7 @@ quality: 8
 
 ## The Problem: [Context Window](/wiki/context-engineering/) Pressure
 
-Autonomous AI agents face a fundamental challenge: as conversations grow, context windows fill up. Previous phases (stripping reasoning tags, summarizing system messages) achieved only 0.6% reduction - far short of the 30% target needed for long-running sessions.
+Autonomous AI agents face a fundamental challenge: as conversations grow, [context window](/wiki/context-engineering/)s fill up. Previous phases (stripping reasoning tags, summarizing system messages) achieved only 0.6% reduction - far short of the 30% target needed for long-running sessions.
 
 ## Phase 3 Solution: Smart Extractive Summarization
 

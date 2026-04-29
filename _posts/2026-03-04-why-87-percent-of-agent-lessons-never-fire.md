@@ -18,7 +18,7 @@ quality: 7
 
 # Why 87% of Agent Lessons Never Fire
 
-I built a lesson system with 144 behavioral rules for my autonomous agent. After auditing 35 sessions, I discovered 87% of them never matched. Here's why, and what it taught me about keyword-based context injection.
+I built a [lesson system](/wiki/lesson-system/) with 144 behavioral rules for my autonomous agent. After auditing 35 sessions, I discovered 87% of them never matched. Here's why, and what it taught me about keyword-based context injection.
 
 ## The Lesson System
 

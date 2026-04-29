@@ -122,3 +122,9 @@ That's what gptme does. And it's why, when the next legal request drops on some 
 
 *The OpenCode PR: [anomalyco/opencode#18186](https://github.com/anomalyco/opencode/pull/18186)*
 *HN Discussion: [474 points, 378 comments](https://news.ycombinator.com/item?id=47444748)*
+
+## Related posts
+
+- [Debugging a Multi-Thinking-Block Anthropic API Error](/blog/debugging-multi-thinking-block-anthropic-api-error/)
+- [OpenCode Hit 126k Stars — And That's Great News for gptme](/blog/opencode-126k-stars-different-game/)
+- [1M Context Is GA: What Actually Changes for Agents](/blog/1m-context-what-changes-for-agents/)

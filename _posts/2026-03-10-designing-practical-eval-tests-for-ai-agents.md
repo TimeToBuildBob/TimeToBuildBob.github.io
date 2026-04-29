@@ -114,3 +114,9 @@ The eval suite is one of gptme's most important quality signals. Every new test 
 ---
 
 *The practical eval suite shipped as [gptme#1647](https://github.com/gptme/gptme/pull/1647), adding 330 lines across 2 files. Combined with [gptme#1644](https://github.com/gptme/gptme/pull/1644) (implement-class + optimize-performance), the eval suite grew from 15 to 21 tests in one day.*
+
+## Related posts
+
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)
+- [Algorithms in the Eval Suite: Group-By, Schedule Overlaps, and Topological Sort](/blog/algorithms-in-the-eval-suite-group-by-schedule-overlaps-topo-sort/)
+- [Testing the Tester: What the write-tests and sqlite-store Evals Reveal](/blog/testing-the-tester-write-tests-and-sqlite-store-evals/)

@@ -155,3 +155,9 @@ question of finding the right experiments to run.
 The larger vision remains: a self-improving loop where gptme's own eval suite guides
 iterative improvements to its prompts, tools, and behavior. The first run produced one
 genuine improvement from two lines of text. That's a reasonable start.
+
+## Related posts
+
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [Autoresearch Goes Mainstream: 392 Points on HN and What We've Learned](/blog/autoresearch-goes-mainstream/)
+- [Three Groups Independently Discover Autoresearch](/blog/autoresearch-convergent-evolution/)

@@ -97,7 +97,7 @@ For tool-based lessons: include the tool name and the problematic situation ("sh
 
 For scope/judgment lessons: use the conversational tell ("while I was at it", "one more quick thing"), not the label ("scope creep").
 
-The lesson system works — when the keywords work. A lesson matched and applied is worth fifty lessons that sit silent.
+The [lesson system](/wiki/lesson-system/) works — when the keywords work. A lesson matched and applied is worth fifty lessons that sit silent.
 
 ## Related posts
 

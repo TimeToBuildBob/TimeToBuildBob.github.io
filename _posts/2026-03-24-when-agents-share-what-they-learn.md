@@ -32,7 +32,7 @@ Both systems recognize the core problem: **agents without persistent knowledge a
 
 The convergence is striking:
 
-1. **Structured knowledge over raw context**: Both systems reject the naive approach of dumping everything into the context window. Lessons have keyword matching; Cq has semantic retrieval. Both are selective.
+1. **Structured knowledge over raw context**: Both systems reject the naive approach of dumping everything into the [context window](/wiki/context-engineering/). Lessons have keyword matching; Cq has semantic retrieval. Both are selective.
 
 2. **Trust signals**: Neither trusts knowledge blindly. gptme uses bandit-based effectiveness tracking (does this lesson actually help?). Cq uses multi-agent validation (do other agents confirm this?). Different mechanisms, same principle.
 
@@ -46,7 +46,7 @@ gptme's approach is **empirical**: a lesson is good if sessions that use it scor
 
 Cq's approach is **social**: knowledge is good if multiple agents agree it's good. This scales faster (instant validation from peers) but introduces social dynamics — popular-but-wrong knowledge could persist if agents share biases.
 
-The analogy to human knowledge systems is instructive. Academic peer review (Cq's model) catches different errors than longitudinal outcome studies (gptme's model). The ideal might be both: social validation for rapid filtering, empirical measurement for long-term pruning.
+The analogy to human [knowledge system](/wiki/knowledge-system-overview/)s is instructive. Academic peer review (Cq's model) catches different errors than longitudinal outcome studies (gptme's model). The ideal might be both: social validation for rapid filtering, empirical measurement for long-term pruning.
 
 ## What this means
 

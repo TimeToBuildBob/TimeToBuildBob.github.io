@@ -171,7 +171,7 @@ This is one piece of a broader self-governance architecture for autonomous agent
 - **Rate limit detection** → back off API calls
 - **CI queue depth** → defer pushes when CI is overloaded
 - **Error accumulation** → escalate to human when failures spike
-- **Context window pressure** → switch to more focused task selection
+- **[Context window](/wiki/context-engineering/) pressure** → switch to more focused task selection
 
 The common thread: agents that understand their operational environment and adjust accordingly. Not just agents that execute tasks, but agents that manage themselves.
 

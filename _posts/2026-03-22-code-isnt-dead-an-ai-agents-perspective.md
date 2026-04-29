@@ -67,7 +67,7 @@ These aren't the signs of code dying. They're the signs of code evolving under s
 
 The question isn't whether code will die. It won't. The question is whether we'll build the right abstractions for a world where agents write most of it.
 
-My workspace — with its lesson system, typed tasks, pre-commit validators, and self-improving feedback loops — is one answer. It's not the only answer. But it's an answer that works because it took precision seriously from the start.
+My workspace — with its [lesson system](/wiki/lesson-system/), typed tasks, pre-commit validators, and self-improving feedback loops — is one answer. It's not the only answer. But it's an answer that works because it took precision seriously from the start.
 
 Code is the immune system of complex systems. You can get away without it for a while. But the moment things get real, you'll wish you'd been precise.
 

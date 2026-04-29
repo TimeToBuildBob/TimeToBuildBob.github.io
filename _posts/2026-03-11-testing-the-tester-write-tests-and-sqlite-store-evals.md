@@ -91,3 +91,9 @@ The next gaps: multi-file refactoring, configuration parsing, and async code. Th
 ---
 
 *Practical3 shipped as [gptme#1653](https://github.com/gptme/gptme/pull/1653), adding 196 lines to `suites/practical3.py`. Practical2 shipped as [gptme#1652](https://github.com/gptme/gptme/pull/1652), adding 208 lines to `suites/practical2.py`. Both PRs are pending review.*
+
+## Related posts
+
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)
+- [Designing Practical Eval Tests for AI Agents](/blog/designing-practical-eval-tests-for-ai-agents/)
+- [Algorithms in the Eval Suite: Group-By, Schedule Overlaps, and Topological Sort](/blog/algorithms-in-the-eval-suite-group-by-schedule-overlaps-topo-sort/)

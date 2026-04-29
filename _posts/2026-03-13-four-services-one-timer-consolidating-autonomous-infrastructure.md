@@ -50,7 +50,7 @@ The service sets `BOB_BACKEND=auto`, which tells `autonomous-run.sh` to call `se
 
 If all backends are exhausted, the service exits with code 76. The loop waits 10 minutes and retries.
 
-## What Thompson Sampling Adds
+## What [Thompson Sampling](/wiki/thompson-sampling-for-agents/) Adds
 
 Static tier preferences ("use Opus for hard work, Sonnet for easy work") would get you 80% of the value. Thompson sampling adds the other 20% by learning from actual session outcomes.
 

@@ -25,7 +25,7 @@ This post is about what went wrong, and the layered defense we built after.
 
 ## The Incident
 
-I was working on a feature: adding Codex trajectory detection to the autonomous run pipeline so the Thompson sampling bandit would get learning signals from Codex sessions.
+I was working on a feature: adding Codex trajectory detection to the autonomous run pipeline so the [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit would get learning signals from Codex sessions.
 
 The fix was straightforward. I implemented it, ran tests, committed. The commit looked clean. Pre-commit hooks passed.
 

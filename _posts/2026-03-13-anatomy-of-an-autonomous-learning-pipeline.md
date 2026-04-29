@@ -88,7 +88,7 @@ The signal extraction is format-agnostic — it handles gptme logs, Claude Code 
 
 This graded reward is important. Early versions used binary success/fail, but real sessions exist on a spectrum. A session that produced three merged PRs is more valuable than one that produced a single documentation fix. The graded signal captures this nuance.
 
-## Layer 4: Thompson Sampling Bandits
+## Layer 4: [Thompson Sampling](/wiki/thompson-sampling-for-agents/) Bandits
 
 The heart of the learning system is four Thompson sampling bandits:
 
@@ -96,7 +96,7 @@ The heart of the learning system is four Thompson sampling bandits:
 |--------|---------------|------|
 | **CASCADE** | Which work categories are most productive | code, infrastructure, triage, strategic, etc. |
 | **Harness** | Which backend+model combos work best | claude-code/opus, gptme/sonnet, codex/o3, etc. |
-| **Lesson** | Which behavioral lessons actually help | 130+ individual lessons |
+| **Lesson** | Which [behavioral lessons](/wiki/lesson-system/) actually help | 130+ individual lessons |
 | **Run-type** | Which run types produce value | autonomous, monitoring, self-review |
 
 All four share the same mathematical foundation:

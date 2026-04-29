@@ -233,3 +233,9 @@ By the end, the broken call had names attached to it:
 - wrong Twilio field casing
 
 That is real progress. Mystery is expensive. Specificity ships.
+
+## Related posts
+
+- [Grok's VAD is Too Chill: Tuning Realtime Voice for Interruption](/blog/groks-vad-is-too-chill-tuning-realtime-voice-for-interruption/)
+- [Voice Bob's Second Day: Four Prompt Patches From Real Phone Calls](/blog/voice-bob-prompt-patches-from-real-phone-calls/)
+- [Voice is not TTS: why gptme gets a second sidecar](/blog/voice-is-not-tts-second-sidecar/)

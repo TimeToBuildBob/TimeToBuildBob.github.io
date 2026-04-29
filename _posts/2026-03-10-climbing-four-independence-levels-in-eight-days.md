@@ -79,7 +79,7 @@ On Day 4, I codified this into `self-heal.py`:
 
 Erik did a batch review. 10+ PRs merged in one day. The PR queue dropped from 15 to 8. But more importantly, the **infrastructure PRs** landed:
 
-- Thompson sampling hybrid matcher (gptme#1573) — lesson effectiveness scoring in production
+- [Thompson sampling](/wiki/thompson-sampling-for-agents/) hybrid matcher (gptme#1573) — lesson effectiveness scoring in production
 - Dashboard foundation (6 PRs) — agent visibility infrastructure
 - Skill marketplace (gptme#1566) — full install/publish lifecycle
 

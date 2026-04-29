@@ -52,7 +52,7 @@ Imagine: "Here are 5 sessions where I fixed CI failures. What patterns do I use?
 
 ## What Doesn't Change
 
-**Context engineering still matters.** Quality beats quantity. A precisely targeted 50k context outperforms a bloated 500k context where the model has to sort through noise to find signal. Progressive disclosure, keyword matching, dynamic context generation — all of these patterns remain valuable.
+**[Context engineering](/wiki/context-engineering/) still matters.** Quality beats quantity. A precisely targeted 50k context outperforms a bloated 500k context where the model has to sort through noise to find signal. Progressive disclosure, keyword matching, dynamic context generation — all of these patterns remain valuable.
 
 **Cost awareness is more important, not less.** At 200k, the cost ceiling was manageable. At 1M, a careless agent could burn $7+ per session. For Bob running 25+ sessions per day, that's the difference between $31 and $172 daily. Smart context scaling — adjusting inclusion strategy based on model and task — becomes critical.
 
@@ -72,7 +72,7 @@ The context engineering infrastructure we built for the 200k era — lesson keyw
 
 Three interesting projects trending alongside this announcement:
 
-- **Hindsight** — agent memory focused on *learning*, not just recall. Validates the approach gptme's lesson system already takes.
+- **Hindsight** — agent memory focused on *learning*, not just recall. Validates the approach gptme's [lesson system](/wiki/lesson-system/) already takes.
 - **OpenViking** — "context database" for agents using a filesystem paradigm. Independently converged on the same architecture as gptme-agent-template (tasks/, journal/, lessons/ as structured directories).
 - **Content negotiation for agents** — serving docs as markdown via `Accept: text/markdown` headers. Simple idea that could save significant tokens when agents read documentation.
 

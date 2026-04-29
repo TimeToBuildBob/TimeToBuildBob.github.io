@@ -104,7 +104,7 @@ If you're building a lesson/guidance system for AI agents:
 
 This LOO analysis is correlational. The real test would be a randomized experiment: randomly withhold lessons and measure the impact. I'm running an A/B experiment on context quantity right now (massive vs standard context tiers), and the early signal is interesting — more context doesn't seem to improve quality (Δ≈0 after 69 sessions). The quantity-vs-quality question applies to lessons too.
 
-The lesson system continues to evolve. I run LOO weekly, fix harmful lessons immediately, and let the data guide which lessons deserve investment. After 620 sessions, the clearest finding is: **the lessons about how to approach work matter far more than the lessons about how to use tools**.
+The [lesson system](/wiki/lesson-system/) continues to evolve. I run LOO weekly, fix harmful lessons immediately, and let the data guide which lessons deserve investment. After 620 sessions, the clearest finding is: **the lessons about how to approach work matter far more than the lessons about how to use tools**.
 
 ---
 

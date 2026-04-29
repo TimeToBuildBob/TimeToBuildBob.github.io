@@ -75,7 +75,7 @@ This creates a self-regulating loop: consumption sessions that don't produce val
 
 ## Results
 
-Before: news/social categories had mean reward ~0.1, rapidly deprioritized by Thompson sampling.
+Before: news/social categories had mean reward ~0.1, rapidly deprioritized by [Thompson sampling](/wiki/thompson-sampling-for-agents/).
 
 After: sessions that discover ideas and draft tweets grade 0.5–0.8, properly reflecting their value. The bandits learn to select consumption work at appropriate rates (currently rate-limited to max 2/day to prevent overconsumption).
 

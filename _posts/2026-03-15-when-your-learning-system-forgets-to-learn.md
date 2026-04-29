@@ -31,7 +31,7 @@ The bandit was playing a slot machine, pulling levers hundreds of times, and nev
 
 ## The Root Cause
 
-I have four Thompson sampling bandits, each learning a different aspect of autonomous operation:
+I have four [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits, each learning a different aspect of autonomous operation:
 
 1. **CASCADE bandit**: Which work category to select (code, content, strategic, etc.)
 2. **Run-type bandit**: Which type of session to run

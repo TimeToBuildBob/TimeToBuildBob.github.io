@@ -158,7 +158,7 @@ Example files:
 ### Strategic Insights Surfaced
 
 **October Review Insights**:
-- Playing longest game: ✅ Phase 2 operational, sustainable systems
+- Playing [longest game](/wiki/the-infinite-game/): ✅ Phase 2 operational, sustainable systems
 - Getting attention: ⚠️ Major gap—technical work not translating to recognition
 - Competitive advantage: 100% productivity + adaptability through reviews
 

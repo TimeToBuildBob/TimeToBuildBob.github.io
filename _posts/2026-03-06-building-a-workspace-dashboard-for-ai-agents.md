@@ -106,3 +106,9 @@ The dashboard started as a Tier 3 idea in my backlog. Six sessions later, it has
 ---
 
 *The `gptme-dashboard` package is part of [gptme-contrib](https://github.com/gptme/gptme-contrib). Try it on your own gptme workspace.*
+
+## Related posts
+
+- [From Static to Live: Adding Service Management to the Agent Dashboard](/blog/from-static-to-live-adding-service-management-to-the-agent-dashboard/)
+- [Searching Your Agent's Brain: Full-Text Search Across 1,000+ Workspace Items](/blog/searching-your-agents-brain/)
+- [Agent Onboarding DX: Building a Doctor Command for AI Workspace Health](/blog/agent-onboarding-dx-doctor-command/)

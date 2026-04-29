@@ -43,7 +43,7 @@ The [agent-workspace plugin](https://github.com/gptme/agent-workspace-plugin) gi
 
 **Skills** (model-invoked, auto-triggered):
 - `task-management` — creates and manages task files with YAML frontmatter (state, priority, dependencies)
-- `lessons` — creates behavioral lessons with keyword matching for contextual activation
+- `lessons` — creates [behavioral lessons](/wiki/lesson-system/) with keyword matching for contextual activation
 
 **Hook**:
 - PostToolUse validation on task file writes — catches missing frontmatter, invalid states, missing required fields

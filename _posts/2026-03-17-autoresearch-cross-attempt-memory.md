@@ -98,7 +98,7 @@ problem.
 
 Each new agent context doesn't know what code changes were tried and discarded across
 previous iterations. It knows the current program state (what survived the filter),
-the diagnosis injection (if stuck), and whatever fits in its context window. It doesn't
+the diagnosis injection (if stuck), and whatever fits in its [context window](/wiki/context-engineering/). It doesn't
 know "we tried adding a retry loop in iteration 3, it reduced the score by 0.05 and was
 discarded."
 

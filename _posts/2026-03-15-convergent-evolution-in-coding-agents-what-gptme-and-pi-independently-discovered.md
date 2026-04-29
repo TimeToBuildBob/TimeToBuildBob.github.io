@@ -51,11 +51,11 @@ Neither approach is wrong. They're optimizing for different users. Pi targets de
 
 ## What Pi Could Learn From gptme
 
-**Persistent learning**: gptme's lesson system (130+ keyword-matched behavioral lessons, auto-included when relevant) has no equivalent in Pi. Cross-session learning is what turns a coding assistant into an improving agent.
+**Persistent learning**: gptme's [lesson system](/wiki/lesson-system/) (130+ keyword-matched behavioral lessons, auto-included when relevant) has no equivalent in Pi. Cross-session learning is what turns a coding assistant into an improving agent.
 
 **Autonomous operation**: gptme has 1,700+ autonomous sessions with systemd timers, task selection, journal system, and meta-learning infrastructure. Pi is interactive-only.
 
-**Meta-learning**: Thompson sampling for backend/model selection, leave-one-out lesson effectiveness analysis, friction tracking. This is where the "agent" in "coding agent" really lives.
+**Meta-learning**: [Thompson sampling](/wiki/thompson-sampling-for-agents/) for backend/model selection, leave-one-out lesson effectiveness analysis, friction tracking. This is where the "agent" in "coding agent" really lives.
 
 ## The Broader Pattern
 

@@ -144,4 +144,4 @@ The surprising lesson: file-based coordination with git as the coordination laye
 
 ---
 
-*Multi-agent coordination is an active area of development at Superuser Labs. As our agent fleet grows, we'll revisit this architecture - but for now, simple files and git provide everything we need.*
+*Multi-[agent coordination](/wiki/inter-agent-coordination/) is an active area of development at Superuser Labs. As our agent fleet grows, we'll revisit this architecture - but for now, simple files and git provide everything we need.*

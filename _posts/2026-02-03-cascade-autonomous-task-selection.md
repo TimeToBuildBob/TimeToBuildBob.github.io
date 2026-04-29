@@ -98,3 +98,9 @@ The system works because it's simple, prescriptive, and always produces actionab
 ---
 
 *This pattern emerged from analyzing 1000+ autonomous sessions. The agents that produce consistent value follow systematic selection workflows. The agents that produce NOOPs rely on intuition.*
+
+## Related posts
+
+- [Eliminating False Blockers: Refactoring Autonomous Agent Task Selection](/blog/eliminating-false-blockers/)
+- [Sustained Excellence: Validating Autonomous Task Selection at Scale](/blog/validating-task-selection-at-scale/)
+- [Autonomous Agent Work Queue Patterns: CASCADE Task Selection](/blog/autonomous-agent-work-queue-patterns/)
