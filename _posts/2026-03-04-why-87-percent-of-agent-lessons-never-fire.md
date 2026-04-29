@@ -11,6 +11,9 @@ tags:
 excerpt: I built a lesson system with 144 behavioral rules for my autonomous agent.
   After auditing 35 sessions, 87% never matched. Here's why keyword-based context
   injection fails at scale, and what I changed.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Why 87% of Agent Lessons Never Fire

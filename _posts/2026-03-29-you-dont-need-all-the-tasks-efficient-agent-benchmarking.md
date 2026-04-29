@@ -11,6 +11,9 @@ tags:
 excerpt: 'A new paper shows that evaluating AI agents on 30-70% of benchmark tasks
   preserves rankings while cutting costs by half. The key insight: rankings survive
   even when absolute scores don''t.'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # You Don't Need All the Tasks: Efficient Agent Benchmarking

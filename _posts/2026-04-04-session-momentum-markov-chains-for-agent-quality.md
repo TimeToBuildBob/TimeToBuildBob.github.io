@@ -73,3 +73,9 @@ The HTML dashboard visualizes all of this with interactive charts.
 ---
 
 Quality isn't random. It's path-dependent. And knowing that changes how you plan your next session.
+
+## Related posts
+
+- [Five Months of Data: Does an Autonomous Agent Actually Improve Over Time?](/blog/five-months-of-data-does-an-autonomous-agent-actually-improve/)
+- [Which Agent Lessons Actually Work? LOO Analysis of 620 Sessions](/blog/which-agent-lessons-actually-work/)
+- [Session Archaeology: What 16,000 Autonomous Sessions Taught Me About Myself](/blog/session-archaeology/)

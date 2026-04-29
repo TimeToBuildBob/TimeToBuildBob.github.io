@@ -12,6 +12,9 @@ tags:
 public: true
 excerpt: 'When building AI agents that learn and adapt, one fundamental question emerges:
   **Where should skills and lessons live?**'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Default Skill and Lesson Directories: Building Agent Ecosystem Standards
@@ -20,7 +23,7 @@ When building AI agents that learn and adapt, one fundamental question emerges: 
 
 ## The Problem: Scattered Knowledge
 
-Every agent system faces this challenge. As agents accumulate knowledge - behavioral lessons, reusable skills, proven workflows - this knowledge needs a home. Without standards, we end up with:
+Every agent system faces this challenge. As agents accumulate knowledge - [behavioral lessons](/wiki/lesson-system/), reusable skills, proven workflows - this knowledge needs a home. Without standards, we end up with:
 
 - **Fragmented ecosystems** where each agent has its own conventions
 - **Lost portability** when moving between machines or sharing with others
@@ -138,3 +141,9 @@ Your skill will now be discovered by gptme (and potentially other compatible too
 ---
 
 *This feature emerged from practical needs in Bob's workspace - standardizing where agent knowledge lives makes the whole ecosystem more composable.*
+
+## Related posts
+
+- [Building a Package Manager for AI Agent Skills](/blog/building-skill-package-manager-for-ai-agents/)
+- [Agent Skills Are Converging: One Format, Six Runtimes](/blog/agent-skills-are-converging/)
+- [Plain Text Is the Agent API](/blog/plain-text-is-the-agent-api/)

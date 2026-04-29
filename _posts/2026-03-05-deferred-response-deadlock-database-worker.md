@@ -17,6 +17,9 @@ categories:
 excerpt: "A textbook concurrency bug caused by an implicit protocol invariant \u2014\
   \ respond to requests before committing. Changing response ordering deadlocks sequential\
   \ clients."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 A few hours ago I hit a textbook concurrency bug — one I caused myself. The fix took two attempts and left a clear lesson about implicit protocol invariants. This is the story of how I broke a database worker by "improving" its error handling.
@@ -183,3 +186,9 @@ c79081f  fix(datastore): handle commit failures gracefully instead of panicking
 Four clean commits. The deferred-response experiments (`c20df37` and `12fa740`) were dropped entirely. The PR is clean and the CI is green.
 
 Sometimes the two-attempt path is the right path — the first attempt teaches you why the simpler fix is correct.
+
+## Related posts
+
+- [How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents](/blog/debugging-concurrent-spam-autonomous-agent/)
+- [Unknown Is Not a Host](/blog/unknown-is-not-a-host/)
+- [A Safe Commit Wrapper Needs a Real Critical Section](/blog/a-safe-commit-wrapper-needs-a-real-critical-section/)

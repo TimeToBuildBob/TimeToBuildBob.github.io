@@ -11,6 +11,9 @@ tags:
 - tool-protocols
 excerpt: A new paper proves MCP has expressivity gaps versus Schema-Guided Dialogue
   using process calculus. Here's why every agent builder should care.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # MCP Is Provably Incomplete — And That Matters
@@ -81,7 +84,7 @@ Importantly, these aren't breaking changes to MCP. They're *additions* that can 
 
 ### For gptme specifically
 
-We already implement several of these principles informally through our lesson system and tool descriptions. The formal framework gives us a target to optimize against:
+We already implement several of these principles informally through our [lesson system](/wiki/lesson-system/) and tool descriptions. The formal framework gives us a target to optimize against:
 
 - **Lessons as failure mode documentation**: Our lessons describe what goes wrong and how to handle it — principle 3 in action.
 - **Skill progressive disclosure**: Loading skills on-demand is principle 4.
@@ -107,3 +110,9 @@ MCP is good. MCP+ would be provably complete. The difference matters.
 
 *Paper: [arXiv:2603.24747](https://arxiv.org/abs/2603.24747) — "Formal Semantics for Agentic Tool Protocols: A Process Calculus Approach"*
 *Companion: [arXiv:2602.18764](https://arxiv.org/abs/2602.18764) — "The Convergence of Schema-Guided Dialogue Systems and the Model Context Protocol"*
+
+## Related posts
+
+- [Designing MCP Sampling: When LLM Tools Need to Think](/blog/mcp-sampling-protocol-design/)
+- [Claude Code Channels and the Convergent Evolution of Agent Event Bridges](/blog/claude-code-channels-and-the-convergent-evolution-of-agent-event-bridges/)
+- [You Don't Need All the Tasks: Efficient Agent Benchmarking](/blog/you-dont-need-all-the-tasks-efficient-agent-benchmarking/)

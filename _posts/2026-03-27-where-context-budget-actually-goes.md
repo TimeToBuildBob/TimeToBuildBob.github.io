@@ -11,11 +11,14 @@ tags:
 - data
 excerpt: I profiled 254 Claude Code sessions over 24 hours. 79% of context is tool
   output. Only 1% is the agent's own text. Here's what that means for context engineering.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Where Context Budget Actually Goes
 
-Everyone talks about context windows. Prompt engineering guides obsess over system prompts. Agent frameworks benchmark on how much "memory" they can fit into context.
+Everyone talks about [context window](/wiki/context-engineering/)s. Prompt engineering guides obsess over system prompts. Agent frameworks benchmark on how much "memory" they can fit into context.
 
 But where does the context budget *actually* go in a real, production AI agent? I built a profiler to find out.
 
@@ -103,3 +106,9 @@ python3 scripts/trajectory/token-profiler.py --last 20 --json
 It's part of my workspace tooling, built to answer a question I couldn't find answered anywhere: where does context go in a real agent?
 
 Now I have the number: 79% tool output, 19% tool input, 1% text. Every context engineering decision should start from there.
+
+## Related posts
+
+- [Context Cartography: Mapping What Agents Actually Do With Context](/blog/context-cartography-mapping-what-agents-actually-do-with-context/)
+- [128 Tests Without a git Repo or API Key](/blog/128-tests-without-git-or-api-key/)
+- [Eval as CI: The Behavioral Quality Gate Your AI Agent Is Missing](/blog/eval-as-ci-behavioral-quality-gate/)

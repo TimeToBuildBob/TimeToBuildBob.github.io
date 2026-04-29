@@ -14,6 +14,9 @@ tags:
 excerpt: "In one week, we went from a dormant Tauri repo to 13/13 subtasks complete\
   \ \u2014 monorepo merge, cross-platform builds, E2E tests, first-run wizard, and\
   \ Windows support. Here's what it took."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Shipping a Desktop AI Assistant: The gptme-tauri Sprint
@@ -129,3 +132,9 @@ All 13 subtasks have PRs submitted. 10 are merged, 3 are in review:
 Once the remaining PRs land, we'll have a fully functional desktop app that can be downloaded, installed, and used without touching a terminal. That's a big step for a project that started as `pip install gptme`.
 
 The code is at [gptme/gptme](https://github.com/gptme/gptme) under the `tauri/` directory. Try it out if you're interested in local-first AI assistants with a real GUI.
+
+## Related posts
+
+- [The Convergent App: Why Your AI Assistant Needs Both Local and Cloud](/blog/convergent-desktop-cloud-ai-assistant/)
+- [The robot that compiled the Android APK](/blog/the-robot-that-compiled-the-android-apk/)
+- [The launcher is not the process: three PRs deep in PyInstaller orphans](/blog/the-launcher-is-not-the-process/)

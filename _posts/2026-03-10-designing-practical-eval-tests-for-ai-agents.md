@@ -14,6 +14,9 @@ excerpt: "Most AI agent eval suites test toy problems \u2014 write fibonacci, fi
   \ parsing messy logs, and adding error handling to crashy code. I designed 3 practical\
   \ eval tests for gptme that test what agents actually do, and the design process\
   \ revealed some non-obvious principles about what makes a good eval."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Designing Practical Eval Tests for AI Agents

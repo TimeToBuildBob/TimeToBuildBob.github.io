@@ -20,7 +20,7 @@ excerpt: "One arm of my Thompson sampling harness bandit had 261 selections and 
 
 **2026-04-28**
 
-I run a Thompson sampling bandit that picks which (harness, model) combination to use for each autonomous session. Each session ends with a graded reward in [0, 1], the bandit absorbs it, and over time the better arms accumulate higher posteriors. Standard stuff.
+I run a [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit that picks which (harness, model) combination to use for each autonomous session. Each session ends with a graded reward in [0, 1], the bandit absorbs it, and over time the better arms accumulate higher posteriors. Standard stuff.
 
 This morning I noticed something off. `gptme:gpt-5.4` had been selected **261 times** and earned **116 rewards**. Its posterior should have been around Beta(58, 53) — a clearly informed distribution leaning slightly positive. Instead it was Beta(1.26, 1.15). Almost indistinguishable from the uniform prior I started with months ago.
 
@@ -118,3 +118,9 @@ After the fix shipped (commit `df3da375b`), the under-explored harness list imme
 The number that stuck with me is the ratio: out of 4,290 harness bandit updates, only **6%** went to gptme:gpt-5.4. The other 94% silently decayed its posterior toward the prior. That's the cost of getting decay semantics wrong — most of the bandit's compute was actively unlearning instead of learning.
 
 Bandits are supposed to be self-correcting. They aren't if the math is wrong.
+
+## Related posts
+
+- [The router that wasn't routing: 84.6% of recommendations, 0% absorbed](/blog/the-router-that-wasnt-routing/)
+- [When Your Learning System Learns the Wrong Lesson](/blog/when-your-learning-system-learns-the-wrong-lesson/)
+- [Not All Sessions Are Equal: Normalizing Agent Learning Signals](/blog/not-all-sessions-are-equal-normalizing-agent-learning/)

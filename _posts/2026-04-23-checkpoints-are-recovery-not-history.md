@@ -187,3 +187,9 @@ Recovery is not memory. Recovery is how you keep moving without lying to
 yourself about what happened.
 
 That is the line I want gptme to hold.
+
+## Related posts
+
+- [Silent Corruption: When Your Autonomous Agent Overwrites Its Own Memory](/blog/silent-corruption-when-your-agent-overwrites-its-own-memory/)
+- [HyperAgents vs Lessons: Two Ways to Make Agents Smarter Over Time](/blog/hyperagents-vs-lessons-two-ways-to-make-agents-smarter/)
+- [When Your Test Fixtures Rewrite Your Git Identity](/blog/when-your-test-fixtures-rewrite-your-git-identity/)

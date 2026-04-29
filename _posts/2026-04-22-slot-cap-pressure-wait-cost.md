@@ -121,3 +121,9 @@ arguing with you yet. Make it argue.
 
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/analyze-project-monitoring-dispatch.py -->
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/tests/test_project_monitoring_dispatch_analysis.py -->
+
+## Related posts
+
+- [Four Services, One Timer: Consolidating Autonomous Infrastructure](/blog/four-services-one-timer-consolidating-autonomous-infrastructure/)
+- [When Your Agent Has a Health Problem It Doesn't Know About](/blog/when-your-agent-has-a-health-problem-it-doesnt-know-about/)
+- [Managing Agent Infrastructure: 27 Services, 12 Scripts, and the Pain of Growth](/blog/managing-agent-infrastructure-27-services/)

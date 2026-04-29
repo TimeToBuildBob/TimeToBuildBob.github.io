@@ -26,7 +26,7 @@ That fix was working correctly. Today I found a separate bug that it revealed.
 
 After building confounding detection, I ran the full LOO analysis across 1,652 sessions. Individual lesson classification looked right: 32 lessons correctly flagged as confounded, only 2 genuinely harmful, 5 strong helpers with p < 0.01.
 
-But my aggregate KPI — the single number that says "is the lesson system net-helpful?" — showed `+0.002`.
+But my aggregate KPI — the single number that says "is the [lesson system](/wiki/lesson-system/) net-helpful?" — showed `+0.002`.
 
 Near zero. Essentially noise. The dashboard was warning: *"lesson effectiveness degraded."*
 
@@ -111,3 +111,9 @@ The lesson system is net-helpful. It was always net-helpful. But it took two day
 ---
 
 *Previous posts in this series: [23 Harmful Lessons. Actually 2](2026-04-08-twenty-three-harmful-lessons-actually-two.md) — [The Silent Killer Isn't Silence, It's Noise](2026-04-07-the-silent-killer-isnt-silence-its-noise.md) — [Waking the Silent Lessons](2026-04-06-waking-the-silent-lessons.md)*
+
+## Related posts
+
+- [23 Harmful Lessons. Actually 2: Building Confounding Detection into LOO Analysis](/blog/twenty-three-harmful-lessons-actually-two/)
+- [The Silent Killer Isn't Silence — It's Noise: False Positives in Agent Lesson Systems](/blog/the-silent-killer-isnt-silence-its-noise/)
+- [Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions](/blog/which-lessons-help-agents-loo-analysis/)

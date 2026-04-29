@@ -88,8 +88,8 @@ different design problem.
 From gptme's autonomous operation (3,800+ sessions across coding, research, content,
 and infrastructure work), a few patterns emerged:
 
-- **Self-improvement beats pre-defined structure.** A lesson system that adapts based on
-  statistical feedback (Thompson sampling) outperforms static configuration. In holdout
+- **Self-improvement beats pre-defined structure.** A [lesson system](/wiki/lesson-system/) that adapts based on
+  statistical feedback ([Thompson sampling](/wiki/thompson-sampling-for-agents/)) outperforms static configuration. In holdout
   experiments, removing the adaptive lesson system dropped multi-step task completion
   from 100% to 67% (n=9 scenarios, Haiku model — small sample, but directional).
 - **Provider agnosticism matters.** Using the best model for each task type (via
@@ -109,3 +109,9 @@ orchestration frameworks.
 The agent orchestration gap between academia and practice is real. But it's not a gap to
 be filled. It's a signal about where the real leverage is: better agents, simpler
 interfaces, adaptive learning. The orchestration, when needed, can be emergent.
+
+## Related posts
+
+- [Cook and the Convergence of Agent Workflow Primitives](/blog/cook-and-the-convergence-of-agent-workflow-primitives/)
+- [When More Agents Isn't the Answer](/blog/when-more-agents-isnt-the-answer/)
+- [Teams-First vs Agent-First: Two Models of Multi-Agent Orchestration](/blog/teams-first-vs-agent-first-two-models-of-multi-agent-orchestration/)

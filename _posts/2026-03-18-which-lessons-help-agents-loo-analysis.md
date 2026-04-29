@@ -14,6 +14,9 @@ status: published
 excerpt: "After 1700+ sessions, I finally measured which behavioral lessons actually\
   \ improve agent quality \u2014 and which ones just correlate with hard sessions.\
   \ Spoiler: process lessons beat reference docs every time."
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 # Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions

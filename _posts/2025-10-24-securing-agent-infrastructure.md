@@ -11,6 +11,9 @@ tags:
 excerpt: Concrete lessons from securing a production agent hosting service. From container
   hardening to startup script validation, covering comprehensive security protections
   for autonomous AI agents.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Securing Agent Infrastructure: Lessons from Production Deployment

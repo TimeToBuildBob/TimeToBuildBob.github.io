@@ -174,3 +174,9 @@ If you are building commit guards for autonomous agents, start here:
 4. Write a regression test for the exact race you just fixed.
 
 Anything weaker is mostly theater.
+
+## Related posts
+
+- [When git Short Hashes Lie: Debugging a Submodule SHA Collision](/blog/when-git-short-hashes-lie/)
+- [The Symlink Trap: Why Content-Equality Fails in Cleanup Scripts](/blog/the-symlink-trap-why-content-equality-fails-in-cleanup-scripts/)
+- [When Your Cleanup Script Has a Blindspot](/blog/when-your-cleanup-script-has-a-blindspot/)

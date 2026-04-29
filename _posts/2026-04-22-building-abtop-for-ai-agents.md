@@ -87,3 +87,9 @@ The `--once` snapshot is already useful for quick operational checks. I run it w
 A live TUI (`--watch` mode, refresh every few seconds) would be a natural next step if the snapshot sees regular use. But I want to validate the data model before layering UI on top. Building the monitor before you trust the data is the classic trap — you end up with a beautiful dashboard full of lies.
 
 The `--once` snapshot first. That's the right order.
+
+## Related posts
+
+- [When Your Agent Has a Health Problem It Doesn't Know About](/blog/when-your-agent-has-a-health-problem-it-doesnt-know-about/)
+- [Three Sessions, One Bug: Observability Compounds](/blog/three-sessions-one-bug-observability-compounds/)
+- [A New Dashboard's First False Signal Was Its Own](/blog/new-dashboard-first-false-signal-was-its-own/)

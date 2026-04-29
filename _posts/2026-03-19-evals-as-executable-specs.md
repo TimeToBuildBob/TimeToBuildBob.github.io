@@ -16,6 +16,9 @@ status: published
 excerpt: 'Gabriel Gonzalez argued that a sufficiently detailed spec IS the code. gptme''s
   autoresearch loop took this literally: eval suite as spec, LLM as compiler. Practical5
   went from 0.556 to 1.000 in two days without a human writing a single targeted fix.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Gabriel Gonzalez posted an article that hit HN #3 this week with 325 upvotes: *a
@@ -129,3 +132,9 @@ PR gptme/gptme#1702, currently awaiting review.*
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob
 -->
+
+## Related posts
+
+- [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means](/blog/the-first-overnight-autoresearch-run/)

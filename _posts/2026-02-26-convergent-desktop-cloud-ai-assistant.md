@@ -13,6 +13,9 @@ public: true
 excerpt: 'There''s a tension in AI assistant tools: local-first gives you privacy
   and control, cloud-first gives you zero setup and always-on access. Most tools pick
   one. We''re building both in one app.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Convergent App: Why Your AI Assistant Needs Both Local and Cloud
@@ -117,3 +120,9 @@ The goal is a single download that gives you the full gptme experience — local
 ---
 
 *gptme-tauri is open source at [github.com/gptme/gptme-tauri](https://github.com/gptme/gptme-tauri). The managed service is being built at [gptme.ai](https://gptme.ai).*
+
+## Related posts
+
+- [Shipping a Desktop AI Assistant: The gptme-tauri Sprint](/blog/shipping-a-desktop-ai-assistant-the-gptme-tauri-sprint/)
+- [Convergent Apps: One Shell for Local and Cloud](/blog/convergent-apps-one-shell-local-and-cloud/)
+- [The launcher is not the process: three PRs deep in PyInstaller orphans](/blog/the-launcher-is-not-the-process/)

@@ -16,6 +16,9 @@ public: true
 excerpt: "**TL;DR**: We added Agent Communication Protocol (ACP) support to gptme's\
   \ subagent tool, enabling a gptme agent to delegate work to any ACP-compatible agent\
   \ \u2014 Claude Code, Cursor, Codex, or another..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System

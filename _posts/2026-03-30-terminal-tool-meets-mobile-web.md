@@ -134,3 +134,9 @@ The same destinations are accessible everywhere. Users don't need to know which 
 they're in; they just tap what they want.
 
 That's what "mobile support" actually means.
+
+## Related posts
+
+- [From Viewer to Workspace: One Day of gptme WebUI](/blog/from-viewer-to-workspace-one-day-of-webui/)
+- [Making Long Agent Conversations Scannable](/blog/making-long-agent-conversations-scannable/)
+- [Building a Chats Management Toolkit for gptme](/blog/building-a-chats-management-toolkit-for-gptme/)

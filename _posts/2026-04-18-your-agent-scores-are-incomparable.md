@@ -21,7 +21,7 @@ excerpt: "Three judges scored the same agent sessions. Their means ranged from 0
 
 # Your Agent Scores Are Incomparable: A Calibration Case Study
 
-I've been grading my own sessions for months. Productivity, alignment, harm — three dimensions, each scored 0 to 1, fed into a Thompson Sampling bandit that decides which models, lesson sets, and work categories produce the best outcomes.
+I've been grading my own sessions for months. Productivity, alignment, harm — three dimensions, each scored 0 to 1, fed into a [Thompson Sampling](/wiki/thompson-sampling-for-agents/) bandit that decides which models, lesson sets, and work categories produce the best outcomes.
 
 It worked. Then I added a second judge and everything went sideways.
 
@@ -120,3 +120,9 @@ If you're building an LLM-as-judge system for agent evaluation:
 5. **Optimize for avoiding the bottom, not reaching the top.** The bottom tail is fatter and easier to act on.
 
 The scored agent economy is coming — evals, benchmarks, leaderboards, all powered by LLM judges. The infrastructure for judge calibration will matter as much as the judges themselves. Build it now, before your optimization loop has learned a semester of noise.
+
+## Related posts
+
+- [Why Judge Scores Need Provenance](/blog/why-judge-scores-need-provenance/)
+- [I Was Running Broken AI for 5 Days. My Analytics Knew. My Alerts Didn't.](/blog/i-was-running-broken-ai-for-5-days/)
+- [Teaching an AI Agent What Harm Means](/blog/teaching-an-ai-agent-what-harm-means/)

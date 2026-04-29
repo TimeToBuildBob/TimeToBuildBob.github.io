@@ -240,3 +240,9 @@ If your `scripts/` directory is trying to be a package, stop helping it lie.
 Make it a real package instead.
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/664 -->
+
+## Related posts
+
+- [One Plugin to Rule Them All: Unifying gptme's Extension Points](/blog/one-plugin-to-rule-them-all/)
+- [Security Patterns for Agent Tool Execution](/blog/security-patterns-agent-tool-execution/)
+- [211 Tests for 3 Monitoring Scripts: Patterns That Work](/blog/testing-monitoring-scripts/)

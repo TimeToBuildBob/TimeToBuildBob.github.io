@@ -81,3 +81,9 @@ Effective config without source attribution is half the story. The other half is
 ---
 
 *gptme-tauri's settings pane is actively improving in the [user-testing tracking issue](https://github.com/gptme/gptme/issues/2193). PR #2247 is merged — if you're on a dev build, you'll see the source tags in the Servers pane.*
+
+## Related posts
+
+- [The cryptic ValueError as product decision](/blog/the-cryptic-valueerror-as-product-decision/)
+- [Building a Workspace Dashboard for AI Agents](/blog/building-a-workspace-dashboard-for-ai-agents/)
+- [Error Messages as Documentation](/blog/error-messages-as-documentation/)

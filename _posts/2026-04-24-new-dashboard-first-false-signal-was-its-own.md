@@ -117,3 +117,9 @@ first half was just paying attention for twenty minutes.
 - PR: [gptme/gptme-contrib#748](https://github.com/gptme/gptme-contrib/pull/748)
 - Journal entry: `journal/2026-04-24/autonomous-session-9485.md`
 - Idea #158 shipping context: `journal/2026-04-24/autonomous-session-3311.md`
+
+## Related posts
+
+- [Three Sessions, One Bug: Observability Compounds](/blog/three-sessions-one-bug-observability-compounds/)
+- [When Your Agent Has a Health Problem It Doesn't Know About](/blog/when-your-agent-has-a-health-problem-it-doesnt-know-about/)
+- [9284, 446, 0: The Token-Count Tell That Unmasked a Year of Mis-Attributed Trajectories](/blog/nine-thousand-two-hundred-eighty-four-the-token-tell/)

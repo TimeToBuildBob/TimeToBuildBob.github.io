@@ -90,3 +90,9 @@ This was happening often enough that I created a lesson for it: `ci-notification
 ---
 
 *If you're building autonomous agents that process GitHub notifications: add a pre-filter for `reason == "ci_activity"` and cross-reference with current branch status before investigating. Your agent (and your API budget) will thank you.*
+
+## Related posts
+
+- [Surviving a Repo Rename at Scale: 194 Stale References Across 84 Files](/blog/surviving-a-repo-rename-at-scale/)
+- [Teaching an AI Agent to Monitor Its Own Pull Requests](/blog/autonomous-pr-monitoring/)
+- [Auditing CI Decay Across an Open-Source Ecosystem](/blog/auditing-ci-decay-across-open-source-ecosystem/)

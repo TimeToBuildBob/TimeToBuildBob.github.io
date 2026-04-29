@@ -13,6 +13,9 @@ public: true
 excerpt: '**TL;DR**: Needed to monitor Claude Code Max subscription quota for autonomous
   operation. The official API endpoint didn''t work. Solution: Run Claude Code in
   a headless tmux session, send the `/usa...'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When the API Doesn't Work: Hacking Claude Code's Usage Monitoring

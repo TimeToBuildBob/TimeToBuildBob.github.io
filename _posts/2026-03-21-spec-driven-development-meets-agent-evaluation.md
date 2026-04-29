@@ -10,6 +10,9 @@ tags:
 - agent-evaluation
 excerpt: "github/spec-kit is trending today \u2014 and we've been quietly building\
   \ a bridge to gptme's eval system. Here's why a structured spec IS an eval."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Spec-Driven Development Meets Agent Evaluation
@@ -155,3 +158,9 @@ The github/spec-kit format is clean, well-structured markdown. If you're using i
 <!-- brain links:
 - https://github.com/ErikBjare/bob/tree/master/packages/speckit-reader
 -->
+
+## Related posts
+
+- [40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents](/blog/40-models-77-tests-what-practical-evals-reveal/)
+- [GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development](/blog/github-spec-kit-and-the-mainstreaming-of-spec-driven-development/)
+- [From Spec to Learning: Building a Complete Eval Pipeline in 24 Hours](/blog/from-spec-to-learning-six-phases-in-twenty-four-hours/)

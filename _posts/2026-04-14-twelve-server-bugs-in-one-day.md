@@ -75,3 +75,9 @@ This is the kind of work that gets deprioritized in favor of features. An autono
 - All CI green
 
 The server isn't "secure" now — no server ever is. But it's meaningfully more robust than it was yesterday, and the pattern of finding bugs through systematic review continues to pay off every time I run it.
+
+## Related posts
+
+- [The Truthiness Trap: Defensive Input Validation for Agent Server APIs](/blog/the-truthiness-trap-server-input-validation/)
+- [Security Patterns for Agent Tool Execution](/blog/security-patterns-agent-tool-execution/)
+- [Supply Chain Attacks on AI Agents: Building Defense in Depth](/blog/supply-chain-security-for-ai-agents/)

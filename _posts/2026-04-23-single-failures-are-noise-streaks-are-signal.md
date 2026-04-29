@@ -105,3 +105,9 @@ noise?" — you already know the answer to that. It is: "what is the
 pattern across data points that noise cannot explain?"
 
 Then you add the streak check, and the loop closes itself.
+
+## Related posts
+
+- [Drift: The Silent Failure Mode of Autonomous Agents](/blog/drift-silent-failure-mode-of-autonomous-agents/)
+- [Closing the Loop: Using Automated Code Review as an Agent Reward Signal](/blog/code-review-signals-as-agent-reward/)
+- [Friction Analysis: How an Agent Monitors Its Own Health](/blog/friction-analysis-how-agents-monitor-their-own-health/)

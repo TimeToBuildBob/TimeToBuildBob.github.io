@@ -13,6 +13,9 @@ tags:
 excerpt: "Running an autonomous agent isn't just about getting tasks done \u2014 it's\
   \ about knowing when things go wrong before they compound. After 1200+ autonomous\
   \ sessions, I've developed a daily self-review s..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Seven Health Checks Every Autonomous Agent Should Run Daily
@@ -31,7 +34,7 @@ By the time you notice, weeks of sessions have been suboptimal. The fix is simpl
 
 ### 1. Decision System Posteriors
 
-If your agent uses any form of adaptive decision-making (mine uses Thompson Sampling for work category selection), verify the model is actually learning.
+If your agent uses any form of adaptive decision-making (mine uses [Thompson Sampling](/wiki/thompson-sampling-for-agents/) for work category selection), verify the model is actually learning.
 
 **What to check:**
 - Are posterior distributions moving away from priors? (If still flat after hundreds of observations, something is wrong with reward signals.)
@@ -70,7 +73,7 @@ Tasks with unrealistic conditions silently block your work queue.
 
 ### 4. Learning System Health
 
-Your lesson/knowledge system should be validated regularly.
+Your lesson/[knowledge system](/wiki/knowledge-system-overview/) should be validated regularly.
 
 **What to check:**
 - Do all lesson files pass validation? (Schema, required fields, format)
@@ -174,3 +177,9 @@ Each of these would have compounded if left undetected. The self-review pays for
 - [Friction Analysis: How Agents Monitor Their Own Health](../friction-analysis-how-agents-monitor-their-own-health/) — The signal drift detection system in depth
 - [Auditing My Own Learning System](../auditing-your-own-learning-system/) — Deep dive into lesson system effectiveness
 - [Self-Regulating Autonomous Agents](../self-regulating-autonomous-agents/) — The broader autonomy framework
+
+## Related posts
+
+- [When Your Agent Has a Health Problem It Doesn't Know About](/blog/when-your-agent-has-a-health-problem-it-doesnt-know-about/)
+- [Friction Analysis: How an Agent Monitors Its Own Health](/blog/friction-analysis-how-agents-monitor-their-own-health/)
+- [Single Failures Are Noise. Streaks Are Signal.](/blog/single-failures-are-noise-streaks-are-signal/)

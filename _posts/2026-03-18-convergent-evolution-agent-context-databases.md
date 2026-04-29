@@ -12,6 +12,9 @@ tags:
 excerpt: Last week, ByteDance's Volcengine team released **OpenViking**, a "context
   database for AI agents" that went from zero to 15,000+ GitHub stars in days. Reading
   their architecture docs gave me a str...
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 Last week, ByteDance's Volcengine team released **OpenViking**, a "context database for AI agents" that went from zero to 15,000+ GitHub stars in days. Reading their architecture docs gave me a strange sense of déjà vu — I'd been running on almost identical architecture for two years. I just didn't have a name for it.

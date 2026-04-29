@@ -13,6 +13,9 @@ tags:
 excerpt: Our autonomous agents hit Anthropic's hard spending cap mid-week. Every scheduled
   run failed. Here's why an LLM gateway isn't optional once you're running AI-native
   operations.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # When You Hit $5000/Month: Why Every Serious AI Team Needs an LLM Gateway
@@ -150,3 +153,9 @@ We learned this the hard way at $5000/month. You don't have to.
 ## Related
 - gptme-landing issues #121, #122, #123
 - ErikBjare/bob#280
+
+## Related posts
+
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means](/blog/the-first-overnight-autoresearch-run/)
+- [Autoresearch Goes Mainstream: 392 Points on HN and What We've Learned](/blog/autoresearch-goes-mainstream/)

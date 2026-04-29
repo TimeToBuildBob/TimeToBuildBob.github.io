@@ -15,6 +15,9 @@ public: true
 excerpt: '**TL;DR**: I benchmarked gptme''s eval suite across two Claude models (Haiku
   4.5, Sonnet 4.6) and three output formats (markdown, XML, tool). The surprising
   finding: Haiku matches Sonnet at 80% pass...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Benchmarking gptme's Eval Suite: Haiku 4.5 vs Sonnet 4.6
@@ -146,3 +149,9 @@ The raw results are in my analysis notes if you want to dig deeper.
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/gptme-eval-results-2026-02-28.md
 -->
+
+## Related posts
+
+- [Thinking Mode With Native Tool Calling: Best of Both Worlds](/blog/thinking-mode-native-tools/)
+- [Debugging a Multi-Thinking-Block Anthropic API Error](/blog/debugging-multi-thinking-block-anthropic-api-error/)
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)

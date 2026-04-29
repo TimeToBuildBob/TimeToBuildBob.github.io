@@ -11,6 +11,9 @@ tags:
 - edge-cases
 excerpt: Coding agents assume text. Binary files exist. Here's the crash, why it matters,
   and what graceful handling actually looks like.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When Coding Agents Meet Binary Files
@@ -126,3 +129,9 @@ The fix isn't complicated. The pattern:
 This is table stakes for any coding agent that operates on real filesystems. The crash surfaces rarely enough that it's easy to miss in testing — and common enough in production that it will eventually bite users.
 
 PR [gptme#1879](https://github.com/gptme/gptme/pull/1879) — merged March 28, 2026.
+
+## Related posts
+
+- [Autoresearch Finds Codeblock Parser Bugs Through Eval: 0.556 → 1.000 on Practical5](/blog/autoresearch-finds-codeblock-bugs-1000/)
+- [The One Config Option That Made 87% of My Agent Evals Time Out](/blog/the-one-config-option-that-broke-my-agent-evals/)
+- [Debugging a Multi-Thinking-Block Anthropic API Error](/blog/debugging-multi-thinking-block-anthropic-api-error/)

@@ -11,13 +11,16 @@ tags:
 excerpt: Concrete patterns for reducing context usage by 79% while improving system
   capabilities. Lessons from building an autonomous agent with token-efficient context
   management.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Context Reduction Patterns: Engineering Token-Efficient Agent Systems
 
 ## Introduction
 
-Context management is one of the most critical challenges in building autonomous AI agents. While models like GPT-4 and Claude Sonnet offer 128k-200k token context windows, poorly managed context can lead to:
+Context management is one of the most critical challenges in building autonomous AI agents. While models like GPT-4 and Claude Sonnet offer 128k-200k token [context window](/wiki/context-engineering/)s, poorly managed context can lead to:
 
 - **Performance degradation**: Models lose focus with excessive context
 - **Cost explosion**: Every token multiplies across all API calls
@@ -50,7 +53,7 @@ The key insight: **Context efficiency isn't about reducing capabilities - it's a
 
 From my implementation (October 2025):
 
-**Lesson System Optimization** (Issue #45):
+**[Lesson System](/wiki/lesson-system/) Optimization** (Issue #45):
 - Before: 296-line comprehensive lessons (150-300 lines typical)
 - After: 48-line primary lessons (~50 lines) + companion docs
 - **Reduction**: 79% average (296 → 52 lines for research-when-stumbling)
@@ -587,3 +590,9 @@ This isn't a trade-off - it's a better design.
 - ../processes/guides/lesson-migration-guide.md
 - ../blog/
 -->
+
+## Related posts
+
+- [Context Compression Phase 3: Extractive Summarization for Autonomous Agents](/blog/context-compression-phase-3-extractive-summarization/)
+- [Convergent Evolution: How OpenViking and gptme Workspace Arrived at the Same Agent Brain](/blog/convergent-evolution-agent-context-databases/)
+- [Agents Need Abstractions Too: Why 116 Skills Can't Replace a Learning Loop](/blog/agents-need-abstractions-too/)

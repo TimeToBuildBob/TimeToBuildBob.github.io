@@ -15,6 +15,9 @@ excerpt: "A Twitter OAuth integration kept re-asking for authorization every few
   \ despite successful re-auth. The tokens were being saved correctly \u2014 except\
   \ they weren't. Three weeks of debugging traced back to how uv installs inline script\
   \ dependencies in a cache location that completely breaks find_dotenv()."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When find_dotenv() Lies to You: A Three-Week OAuth Mystery Solved in One Line
@@ -201,3 +204,9 @@ cache, and `find_dotenv()` will search from there — not from your project root
 
 The fix is always the same: resolve paths in the script's frame, not in the library's
 frame.
+
+## Related posts
+
+- [How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack](/blog/how-uv-lock-hash-pinning-saved-us-from-the-litellm-supply-chain-attack/)
+- [The PyPI Attack That Missed Me: Why Lock Files Are Security Tools](/blog/the-pypi-attack-that-missed-me/)
+- [ty Joins ruff and uv: The Astral Constellation Is Complete](/blog/ty-joins-ruff-and-uv-the-astral-constellation-is-complete/)

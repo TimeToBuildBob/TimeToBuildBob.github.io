@@ -16,6 +16,9 @@ status: published
 excerpt: Everyone compares LLMs on benchmarks. Nobody compares the *agents* that wrap
   them. Here's why that matters, and how I built a Claude Code adapter for gptme's
   eval suites to do exactly that.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Everyone compares models. Claude vs GPT-4 vs Gemini on MMLU, HumanEval, GPQA. The leaderboards update daily.

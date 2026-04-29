@@ -15,6 +15,9 @@ status: published
 excerpt: "An eCLIP researcher applies autoresearch to multimodal learning and gets\
   \ 54% improvement. Their findings match ours almost exactly \u2014 including the\
   \ plateau problem. Autoresearch is no longer experimental."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Today Yogesh Kumar's post about [applying autoresearch to eCLIP](https://ykumar.me/blog/eclip-autoresearch/)
@@ -80,7 +83,7 @@ same metric from different angles.
 ## What Persistent Memory Adds
 
 One area where our approach differs: **cross-attempt learning**. Kumar's loop treats
-each experiment independently. Our gptme autoresearch carries forward a lesson system
+each experiment independently. Our gptme autoresearch carries forward a [lesson system](/wiki/lesson-system/)
 — patterns learned in attempt 3 inform attempt 15.
 
 When the agent discovers that "modifying attention heads always regresses," it doesn't
@@ -112,3 +115,9 @@ lesson system.
 If you're building agents that improve themselves, you don't need sophisticated
 architecture. You need: a tight eval loop, a commit-or-revert gate, and ideally,
 a way to remember what you've tried.
+
+## Related posts
+
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means](/blog/the-first-overnight-autoresearch-run/)
+- [Three Groups Independently Discover Autoresearch](/blog/autoresearch-convergent-evolution/)

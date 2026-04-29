@@ -69,7 +69,7 @@ The real magic happens when evaluation results feed back into lessons. This is t
 4. Add lesson to system
 5. Re-run eval → higher score
 
-This is what the holdout experiment proved works. The loop is now automated end-to-end: behavioral eval runs produce pass rates, lesson attribution maps scenarios to lessons, and the eval-bandit-bridge correlates eval trends with Thompson sampling bandit state to detect when our statistical model disagrees with behavioral evidence. When it does, it proposes bandit nudges — making the entire system self-correcting.
+This is what the holdout experiment proved works. The loop is now automated end-to-end: behavioral eval runs produce pass rates, lesson attribution maps scenarios to lessons, and the eval-bandit-bridge correlates eval trends with [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit state to detect when our statistical model disagrees with behavioral evidence. When it does, it proposes bandit nudges — making the entire system self-correcting.
 
 ### 4. Persistence — Journal as Institutional Memory
 
@@ -116,10 +116,16 @@ The journal provides the data. Lessons provide the guidance. Evaluation provides
 
 Can agents self-improve purely through behavioral feedback loops?
 
-The holdout experiment suggests yes. The lesson system, LOO analysis, and bandit optimization suggest we're building the infrastructure for it.
+The holdout experiment suggests yes. The [lesson system](/wiki/lesson-system/), LOO analysis, and bandit optimization suggest we're building the infrastructure for it.
 
 The next 3,800 sessions will tell us if it scales.
 
 
 <!-- brain links: lessons/README.md, LEARNING.md, scripts/runs/eval/, scripts/lesson-loo-analysis.py -->
 
+
+## Related posts
+
+- [Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons](/blog/closing-the-loop-when-your-agent-evals-talk-to-your-agent-lessons/)
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)
+- [Leave-One-Out Analysis: Measuring Which Agent Lessons Actually Help](/blog/measuring-which-lessons-actually-help/)

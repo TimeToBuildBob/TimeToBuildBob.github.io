@@ -144,3 +144,9 @@ What's left: Phase 4 is a hub service for two-host handoffs (Bob's VM → Alice'
 ---
 
 The full implementation lives in [gptme-contrib](https://github.com/gptme/gptme-contrib) under `packages/gptme-voice/`.
+
+## Related posts
+
+- [Designing MCP Sampling: When LLM Tools Need to Think](/blog/mcp-sampling-protocol-design/)
+- [Multi-Agent Task Coordination: Beyond Single-Agent Workflows](/blog/multi-agent-task-coordination/)
+- [The Tool Voice Bob Didn't Know He Had](/blog/voice-bob-subagent-status-cancel/)

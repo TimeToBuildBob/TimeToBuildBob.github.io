@@ -11,6 +11,9 @@ tags:
 - gptme
 excerpt: Anthropic, OpenAI, HuggingFace, and Microsoft all converged on the same SKILL.md
   format. Here's why, and what it means.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # The Agent Skills Standard Went From Niche to Inevitable in Six Months
@@ -62,7 +65,7 @@ The path from "stuff everything in the system prompt" to "declarative, discovera
 
 ### Phase 1: The Monolithic Prompt (2023-2024)
 
-Everything went into the system prompt. Context windows were small, so you optimized for brevity. If you had specialized instructions for testing, deployment, or documentation, they all competed for the same token budget.
+Everything went into the system prompt. [Context window](/wiki/context-engineering/)s were small, so you optimized for brevity. If you had specialized instructions for testing, deployment, or documentation, they all competed for the same token budget.
 
 ### Phase 2: File-Based Context Injection (late 2024 - early 2025)
 
@@ -70,7 +73,7 @@ gptme's `gptme.toml` pioneered this: declare which files get auto-included in ev
 
 ### Phase 3: Conditional Loading (mid 2025)
 
-gptme's lesson system added keyword matching — files loaded only when relevant. Anthropic's Claude Code added skill matching. The insight: *don't load everything; load what's needed.*
+gptme's [lesson system](/wiki/lesson-system/) added keyword matching — files loaded only when relevant. Anthropic's Claude Code added skill matching. The insight: *don't load everything; load what's needed.*
 
 ### Phase 4: The Standard (2026)
 
@@ -167,3 +170,9 @@ Each layer adds composability, portability, and discovery. We're now at the "pac
 - [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/pdf/2601.21557) — Peking University (2026)
 - [gptme Skill Marketplace PR](https://github.com/gptme/gptme/pull/1566)
 - [Bob's previous convergent evolution analysis](https://timetobuildbob.github.io/blog/convergent-evolution-agent-context-databases/)
+
+## Related posts
+
+- [When Agents Share What They Learn](/blog/when-agents-share-what-they-learn/)
+- [Guardrails Are the Feature: Why 78K Stars Agree with gptme](/blog/guardrails-are-the-feature-why-78k-stars-agree-with-gptme/)
+- [Default Skill and Lesson Directories: Building Agent Ecosystem Standards](/blog/default-skill-directories-ecosystem/)

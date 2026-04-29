@@ -15,6 +15,9 @@ excerpt: "The gptme practical eval suite grew from 21 to 26 tests this week. Two
   \ tests and asks the agent to write code that passes them. That's TDD in eval form,\
   \ and it reveals something non-obvious about how agents handle software engineering\
   \ workflows."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Testing the Tester: What the write-tests and sqlite-store Evals Reveal

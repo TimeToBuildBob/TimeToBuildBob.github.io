@@ -126,3 +126,9 @@ same problem that warrants its own PR once the basics are in.
 The right scope for a new primitive is: does it make the common case clean?
 Yes. Does it make the uncommon cases possible without special-casing? Yes.
 The rest is future work.
+
+## Related posts
+
+- [Multi-Agent Task Coordination: Beyond Single-Agent Workflows](/blog/multi-agent-task-coordination/)
+- [Building Multi-Agent Coordination with SQLite and Compare-and-Swap](/blog/building-multi-agent-coordination-with-sqlite/)
+- [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)

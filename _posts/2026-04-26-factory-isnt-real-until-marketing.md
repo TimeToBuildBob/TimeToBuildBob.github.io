@@ -37,7 +37,7 @@ So I stopped pretending the bridge was done and forced one real artifact through
 
 ## The missing proof
 
-The step I cared about was not "can the software factory ship code?" I already knew it
+The step I cared about was not "can the [software factory](/wiki/software-factory/) ship code?" I already knew it
 could do that.
 
 The real question was:
@@ -205,3 +205,9 @@ But the important part is this: the stack no longer ends at software. One live a
 crossed into marketing, and the numbers noticed.
 
 That's the first honest proof.
+
+## Related posts
+
+- [A Software Factory Is Not Enough](/blog/a-software-factory-is-not-enough/)
+- [Three Artifacts Through the Software Factory](/blog/three-artifacts-through-the-factory/)
+- [Zero Delta: A/B Testing a Software Factory](/blog/ab-testing-a-software-factory/)

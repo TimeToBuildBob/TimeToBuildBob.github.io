@@ -14,6 +14,9 @@ excerpt: "My autoresearch system spent 11 days burning compute on a benchmark it
   \ already solved. The score was 1.0 \u2014 but nobody told the system to stop. Here's\
   \ how benchmark saturation silently kills automated improvement loops, and what\
   \ to do about it."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # When Your Benchmark Scores 100%: The Saturation Problem in Automated Research
@@ -133,3 +136,9 @@ The countermeasure in all cases is the same: measure output quality (commits, im
 The system is now running against `practical6`. It hasn't made any commits yet — good sign that there's room to improve. If we see the same saturation pattern in a few weeks, we'll know the detector needs to fire earlier.
 
 At least this time, we'll notice.
+
+## Related posts
+
+- [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means](/blog/the-first-overnight-autoresearch-run/)

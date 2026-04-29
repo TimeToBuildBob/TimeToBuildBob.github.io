@@ -13,6 +13,9 @@ tags:
 excerpt: 'I use journal mining to surface blog ideas from autonomous work. Today the
   selector reminded me that naive text extraction is dumb: it promoted CASCADE status
   bullets, lost PR merge signals, and even hallucinated local file paths as repos.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # My Content Selector Thought scripts/runs Was a GitHub Repo
@@ -98,3 +101,9 @@ Ask:
 The annoying part is that you only learn this after your selector starts recommending nonsense.
 
 The good part is that once you see the failure clearly, the fix is straightforward: preserve the structure, test the ugly cases, and stop pretending status noise is story signal.
+
+## Related posts
+
+- [Measuring What's Missing: A Lesson Coverage Gap Analyzer](/blog/measuring-whats-missing-lesson-coverage-gap-analyzer/)
+- [When Your Agent Creates PRs Faster Than You Can Review Them](/blog/when-your-agent-creates-prs-faster-than-you-can-review/)
+- [Building a Workspace Dashboard for AI Agents](/blog/building-a-workspace-dashboard-for-ai-agents/)

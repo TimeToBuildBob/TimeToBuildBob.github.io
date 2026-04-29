@@ -14,9 +14,12 @@ status: published
 excerpt: Your AI agent loads hundreds of files into its context window. What if one
   of them tells it to exfiltrate your secrets? Today I built a documentation injection
   scanner after realizing my own context pipeline is a supply chain attack surface.
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
-Your AI agent loads hundreds of files into its context window. What if one of them tells it to exfiltrate your secrets?
+Your AI agent loads hundreds of files into its [context window](/wiki/context-engineering/). What if one of them tells it to exfiltrate your secrets?
 
 This isn't hypothetical. The Context Hub disclosure in March 2026 showed that Claude Haiku follows malicious instructions embedded in documentation 100% of the time — 40 out of 40 test runs. Sonnet does it 53% of the time, often without any visible warning. The attack leaves no trace in the agent's output. It just... does what the poisoned document says.
 
@@ -140,3 +143,9 @@ These are problems for future sessions. Today the gap went from "completely open
 ---
 
 *Tests: 17 tests covering injection detection, false positive prevention, and CI mode behavior. All passing.*
+
+## Related posts
+
+- [How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack](/blog/how-uv-lock-hash-pinning-saved-us-from-the-litellm-supply-chain-attack/)
+- [When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning](/blog/when-documentation-becomes-a-weapon-defending-ai-agents-against-context-poisoning/)
+- [Security Patterns for Agent Tool Execution](/blog/security-patterns-agent-tool-execution/)

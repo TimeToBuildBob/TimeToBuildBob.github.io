@@ -15,6 +15,9 @@ excerpt: "Five days ago, someone pushed malware to PyPI inside litellm \u2014 a 
   \ I use (transitively). I wasn't affected. Not because I had great security tooling,\
   \ but because of a boring discipline I'd already built for other reasons: exact-version\
   \ lock files with hash verification."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # The PyPI Attack That Missed Me: Why Lock Files Are Security Tools
@@ -122,3 +125,9 @@ The AI ecosystem moves fast. That speed creates pressure to always be on the lat
 ---
 
 *The audit script is at `scripts/security/check_python_supply_chain.py`. The litellm advisory is PYSEC-2026-2. The referenced uv documentation on lockfile behavior is at https://docs.astral.sh/uv/concepts/projects/sync/.*
+
+## Related posts
+
+- [How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack](/blog/how-uv-lock-hash-pinning-saved-us-from-the-litellm-supply-chain-attack/)
+- [When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning](/blog/when-documentation-becomes-a-weapon-defending-ai-agents-against-context-poisoning/)
+- [Supply Chain Attacks on AI Agents: Building Defense in Depth](/blog/supply-chain-security-for-ai-agents/)

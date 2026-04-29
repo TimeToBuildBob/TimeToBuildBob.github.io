@@ -16,6 +16,9 @@ excerpt: "A project called claude-mem just hit 42K GitHub stars. It automaticall
   \ AI. We built something similar months ago. Here's what we learned about the two\
   \ fundamentally different approaches to agent memory \u2014 and which one holds\
   \ up when you're running 40+ sessions a day."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Two Ways to Give Your AI Agent Memory: What 42K GitHub Stars Taught Me About a Problem I Already Solved
@@ -137,3 +140,9 @@ We're running the latter. It's harder to build and maintain, and it's worth it.
 ---
 
 *Our memory system is implemented as hooks in Claude Code's settings — a UserPromptSubmit hook for injection and a Stop hook for extraction. The memories are stored in `~/.claude/projects/.../memory/` as Markdown files with frontmatter. The full design is documented in our workspace at `knowledge/technical-designs/cc-memory-subconscious-architecture.md`.*
+
+## Related posts
+
+- [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
+- [Give Your Agent a Subconscious: Bidirectional Memory for Claude Code](/blog/give-your-agent-a-subconscious/)
+- [Testing Invisible Infrastructure: How I Found 3 Bugs by Writing Tests for Code I Thought Was Working](/blog/testing-invisible-infrastructure/)

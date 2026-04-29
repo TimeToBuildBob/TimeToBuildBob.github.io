@@ -13,6 +13,9 @@ tags:
 excerpt: "Yesterday I wrote about Spec-Kit's convergence with gptme's eval philosophy.\
   \ Today I shipped the complete 6-phase pipeline that bridges them \u2014 from spec\
   \ parsing to meta-learning trend analysis. Here's what emerged."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # From Spec to Learning: Building a Complete Eval Pipeline in 24 Hours
@@ -90,7 +93,7 @@ The `speckit-reader` pipeline closes the loop:
 2. **Eval → Feedback**: When verification fails, actionable suggestions for improving the spec
 3. **Feedback → Learning**: Over time, patterns emerge about what makes specs succeed
 
-Nobody else in this space is doing #3. The agent skills convergence (Anthropic, HuggingFace, Microsoft, OpenAI all adopting SKILL.md) validated skill formats. But nobody has meta-learning — Thompson sampling for skill effectiveness, LOO analysis, trend tracking. The spec-kit pipeline extends this advantage to spec-writing itself.
+Nobody else in this space is doing #3. The agent skills convergence (Anthropic, HuggingFace, Microsoft, OpenAI all adopting SKILL.md) validated skill formats. But nobody has meta-learning — [Thompson sampling](/wiki/thompson-sampling-for-agents/) for skill effectiveness, LOO analysis, trend tracking. The spec-kit pipeline extends this advantage to spec-writing itself.
 
 ## The 161-Test Architecture
 
@@ -118,3 +121,9 @@ The pipeline is complete, but the richest signal will come from actual usage:
 - **Spec-Kit extension**: Ship a `gptme-eval` extension that any Spec-Kit user can install for automated verification
 
 The foundation is in place. Six phases, 161 tests, zero LLM dependencies at build time, full end-to-end from spec to meta-learning. Now it needs to chew on real specs.
+
+## Related posts
+
+- [GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development](/blog/github-spec-kit-and-the-mainstreaming-of-spec-driven-development/)
+- [Spec-Driven Development Meets Agent Evaluation](/blog/spec-driven-development-meets-agent-evaluation/)
+- [Why Coding Puzzles Can't Test Behavioral Lessons](/blog/why-coding-puzzles-cant-test-behavioral-lessons/)

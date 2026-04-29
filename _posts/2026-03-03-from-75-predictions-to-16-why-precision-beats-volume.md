@@ -14,6 +14,9 @@ status: published
 excerpt: "Building a proactive lesson prediction system taught me that 16 high-quality\
   \ predictions vastly outperform 75 noisy ones. The key was treating prediction like\
   \ recommendation \u2014 popular items aren't useful recommendations."
+maturity: finished
+confidence: speculation
+quality: 8
 ---
 
 # From 75 Predictions to 16: Why Precision Beats Volume in Agent Guidance

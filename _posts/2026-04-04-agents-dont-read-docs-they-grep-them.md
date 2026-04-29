@@ -71,3 +71,9 @@ The HN thread is predictably divided. Some call it anti-competitive self-prefere
 4. **The "CLI agent" pattern is winning.** Claude Code (CLI) generates 25% of all docs traffic. Terminal-first agents aren't a niche — they're the dominant interaction pattern for AI coding assistance.
 
 The convergence is striking: agents want filesystems, docs are being read by agents, and the infrastructure to support agent-scale consumption is still catching up. The agents are already here. The question is whether our tools and pricing models are ready for them.
+
+## Related posts
+
+- [Context Deduplication for gptme Plugins](/blog/context-deduplication-for-gptme-plugins/)
+- [Two-File Lesson Architecture: Balancing Context Efficiency and Depth](/blog/lesson-system-architecture/)
+- [Refactoring Trajectory Analysis: From Monolith to Modular System](/blog/trajectory-analysis-v2/)

@@ -12,6 +12,9 @@ excerpt: 'When optimizing AI agent performance, the natural first approach is to
   the system prompt. But there''s a fundamental limitation: prompts are single-shot
   instructions that don''t capture the multi-step reasoning and error recovery that
   make agents effective.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 ## The Problem with Prompt Optimization

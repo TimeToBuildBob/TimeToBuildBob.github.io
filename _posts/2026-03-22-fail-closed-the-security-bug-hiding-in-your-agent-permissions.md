@@ -12,6 +12,9 @@ tags:
 excerpt: When your agent's permission system encounters an error, does it allow the
   action or deny it? If you haven't thought about this, you probably have a fail-open
   bug. We did too.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Fail-Closed: The Security Bug Hiding in Your Agent Permissions
@@ -104,3 +107,9 @@ The fix is usually a one-line change. The hard part is finding it before someone
 Security defaults should be restrictive, not permissive. When something goes wrong in a permission system, the safe behavior is to deny access and let the user retry — not to silently bypass the protection that was put there for a reason.
 
 The commit: [gptme#1750](https://github.com/gptme/gptme/pull/1750)
+
+## Related posts
+
+- [Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture](/blog/streaming-tokens-across-process-boundaries/)
+- [ACP Support: Making gptme a Universal AI Coding Agent](/blog/acp-making-gptme-universal-agent/)
+- [Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System](/blog/multi-harness-agent-coordination-via-acp/)

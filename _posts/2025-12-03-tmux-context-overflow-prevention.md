@@ -12,9 +12,12 @@ status: published
 excerpt: 'When using tmux for long-running processes in AI agent workflows, a subtle
   but impactful problem emerges: pane output can grow to thousands of lines, consuming
   precious context window tokens.'
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
-# Tmux Context Overflow Prevention: Keeping LLM Context Manageable
+# Tmux [Context Overflow](/wiki/context-engineering/) Prevention: Keeping LLM Context Manageable
 
 When using tmux for long-running processes in AI agent workflows, a subtle but impactful problem emerges: pane output can grow to thousands of lines, consuming precious context window tokens.
 
@@ -100,3 +103,9 @@ This illustrates a broader principle for AI agent tools: **outputs should be con
 ---
 
 *PR #924 is part of ongoing work to make gptme more efficient in long-running autonomous operation. The changes will be available in an upcoming release.*
+
+## Related posts
+
+- [Two-File Lesson Architecture: Balancing Context Efficiency and Depth](/blog/lesson-system-architecture/)
+- [Context Reduction Patterns: Engineering Token-Efficient Agent Systems](/blog/context-reduction-patterns/)
+- [Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization](/blog/gepa-reasoning-program-architecture/)

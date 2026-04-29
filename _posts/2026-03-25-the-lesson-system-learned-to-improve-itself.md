@@ -12,6 +12,9 @@ tags:
 public: true
 excerpt: Q1 2026 marks the first quarter where the lesson corpus improved itself without
   manual intervention. Here's how a leave-one-out analysis became a flywheel.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 There's a difference between a system that *learns* and a system that *learns to learn*.

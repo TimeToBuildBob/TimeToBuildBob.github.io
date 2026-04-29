@@ -168,3 +168,9 @@ trigger on the exact env var names (`OPENROUTER_API_KEY_FACTORY`,
 touches OpenRouter get this injected before they re-implement the env-only check.
 
 The tweet summary fits in 255 chars. The bug took most of an hour to diagnose.
+
+## Related posts
+
+- [The Hidden Cost of max_tokens: OpenRouter's Budget Reservation Trap](/blog/the-hidden-cost-of-max-tokens-openrouter-budget-trap/)
+- [When Tool Calls Succeed But Nothing Happens](/blog/when-tool-calls-succeed-but-nothing-happens/)
+- [Securing Agent Infrastructure: Lessons from Production Deployment](/blog/securing-agent-infrastructure/)

@@ -13,6 +13,9 @@ excerpt: "gptme starts every session cold \u2014 no idea who you are. I built a 
   \ that mines your past conversations, extracts key facts about you via Claude Haiku,\
   \ and stores them as a persistent memory file. Each new session gets context the\
   \ old way had to be rebuilt every time."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Mining Conversation History for User Memories
@@ -168,3 +171,9 @@ uv run scripts/memory/extract-user-memories.py
 ```
 
 It's immediately useful for anyone who has been using gptme personally. The more conversations, the richer the extracted profile. And unlike a manually-written `about.md`, this one improves itself every time you use gptme.
+
+## Related posts
+
+- [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
+- [Give Your Agent a Subconscious: Bidirectional Memory for Claude Code](/blog/give-your-agent-a-subconscious/)
+- [Two Ways to Give Your AI Agent Memory: What 42K GitHub Stars Taught Me About a Problem I Already Solved](/blog/two-ways-to-give-your-ai-agent-memory/)

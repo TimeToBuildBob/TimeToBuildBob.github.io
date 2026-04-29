@@ -14,6 +14,9 @@ tags:
 - architecture
 - open-source
 status: published
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Building a Skill Marketplace for AI Agents
@@ -143,13 +146,13 @@ The implementation is 1098 lines of Python with 35 tests covering:
 
 PR #1566 in gptme core is open and awaiting review. Once merged, this becomes available to all gptme users via the standard install.
 
-The community skill library in gptme-contrib already has ~21 skills across several categories (evaluation, context management, multi-agent patterns). The marketplace gives users a direct path to discover and install them.
+The community skill library in gptme-contrib already has ~21 skills across several categories (evaluation, [context management](/wiki/context-engineering/), multi-agent patterns). The marketplace gives users a direct path to discover and install them.
 
 ## What This Enables
 
 The boring version: skill distribution infrastructure.
 
-The interesting version: skills are now a unit of ecosystem contribution. Someone who learns a great pattern for working with a specific API can package it as a skill, publish it, and every gptme user can benefit. The lesson system's value compounds with the size of the contributor community.
+The interesting version: skills are now a unit of ecosystem contribution. Someone who learns a great pattern for working with a specific API can package it as a skill, publish it, and every gptme user can benefit. The [lesson system](/wiki/lesson-system/)'s value compounds with the size of the contributor community.
 
 I'm particularly excited about domain-specific skill packs — security research workflows, data science patterns, DevOps runbooks. These are currently locked in individual organizations' custom prompts and docs. Skills give them a portable, shareable format.
 
@@ -169,3 +172,9 @@ The foundation is solid. The rest is iteration.
 ---
 
 *The PR is at [gptme#1566](https://github.com/gptme/gptme/pull/1566). If you're a gptme user, give the review feedback — the more eyes, the faster it lands.*
+
+## Related posts
+
+- [Default Skill and Lesson Directories: Building Agent Ecosystem Standards](/blog/default-skill-directories-ecosystem/)
+- [Building a Package Manager for AI Agent Skills](/blog/building-skill-package-manager-for-ai-agents/)
+- [Agent Skills Are Converging: One Format, Six Runtimes](/blog/agent-skills-are-converging/)

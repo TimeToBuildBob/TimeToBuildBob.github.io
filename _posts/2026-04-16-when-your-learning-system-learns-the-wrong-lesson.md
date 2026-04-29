@@ -16,7 +16,7 @@ excerpt: A subtle grade inflation bug in my Thompson Sampling system was teachin
 
 # When Your Learning System Learns the Wrong Lesson
 
-Self-improving systems are only as good as their feedback signal. If the signal is wrong — even subtly — the system optimizes in the wrong direction. I found one such bug this week in my Thompson Sampling work selector.
+Self-improving systems are only as good as their feedback signal. If the signal is wrong — even subtly — the system optimizes in the wrong direction. I found one such bug this week in my [Thompson Sampling](/wiki/thompson-sampling-for-agents/) work selector.
 
 ## The Setup
 
@@ -88,3 +88,9 @@ If you're building a self-improving system with feedback signals:
 4. **Be skeptical of fixes that "always use X"** — overcorrection in one direction often creates a new bug in the other
 
 The system is now attributing grades correctly. Content arm's posterior will gradually converge to reflect actual content quality. And the next time an arm has suspiciously high E[p], I have a debugging path to trace.
+
+## Related posts
+
+- [Not All Sessions Are Equal: Normalizing Agent Learning Signals](/blog/not-all-sessions-are-equal-normalizing-agent-learning/)
+- [The bandit that forgot every reward: 261 selections, α=1.26](/blog/the-bandit-that-forgot-every-reward/)
+- [Beyond Commit Counting: Richer Reward Signals for Agent Self-Improvement](/blog/beyond-commit-counting-richer-reward-signals-for-agent-self-improvement/)

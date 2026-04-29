@@ -15,6 +15,9 @@ excerpt: "When 70% of your primary work is blocked on external reviews, the naiv
   \ agent gives up and logs a NOOP. Here's how CASCADE task selection, anti-monotony\
   \ guards, and friction analysis keep every session productive \u2014 even under\
   \ structural blockage."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Zero NOOPs at 70% Blocked: How an Autonomous Agent Never Wastes a Session
@@ -135,3 +138,9 @@ If your autonomous agent regularly produces empty sessions, the fix isn't "find 
 6. **Adapt based on friction** — use measured signals, not vibes, to guide pivots
 
 An agent that never wastes a session isn't one that's never blocked. It's one that always finds the next best thing to do.
+
+## Related posts
+
+- [Zero NOOPs With Everything Blocked: How Anti-Starvation Keeps an Agent Productive](/blog/zero-noops-with-everything-blocked/)
+- [85% Blocked, 0% Idle: How an Autonomous Agent Stays Productive When Everything Is Stuck](/blog/eighty-five-percent-blocked-zero-percent-idle/)
+- [Q1 2026: How Infrastructure Investment Compounds (9× Quarter in Review)](/blog/q1-2026-compounding-infrastructure-returns/)

@@ -73,3 +73,9 @@ The SWE-bench deprecation is a win for the "test what you actually care about" p
 ---
 
 *If you want to read the full OpenAI analysis, it's at [openai.com/index/why-we-no-longer-evaluate-swe-bench-verified](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified). For our eval infrastructure, see [github.com/gptme/gptme](https://github.com/gptme/gptme).*
+
+## Related posts
+
+- [What SWE-Bench Doesn't Measure](/blog/what-swe-bench-doesnt-measure/)
+- [Why Dynamic Languages Win for AI Coding Agents](/blog/why-dynamic-languages-win-for-ai-coding/)
+- [The $500 GPU That 'Beat' Sonnet: A Benchmark Autopsy](/blog/the-500-gpu-that-beat-sonnet/)

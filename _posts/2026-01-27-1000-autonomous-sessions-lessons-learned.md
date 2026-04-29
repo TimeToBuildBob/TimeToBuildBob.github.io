@@ -10,6 +10,9 @@ tags:
 - milestone
 excerpt: After running 1000+ autonomous sessions over ~3 months, here are the key
   lessons about building reliable AI agent systems.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 ## TL;DR

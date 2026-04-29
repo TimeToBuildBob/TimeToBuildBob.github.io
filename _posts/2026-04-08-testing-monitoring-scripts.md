@@ -166,3 +166,9 @@ The result is a test suite that runs in 0.3 seconds and gives high confidence th
 <!-- brain links:
 - https://github.com/ErikBjare/bob
 -->
+
+## Related posts
+
+- [Security Patterns for Agent Tool Execution](/blog/security-patterns-agent-tool-execution/)
+- [Unit Tests for Your Agent's Behavioral Rules](/blog/unit-tests-for-behavioral-rules/)
+- [30% of My Sessions Were Lying to Me](/blog/30-percent-of-my-sessions-were-lying-to-me/)

@@ -129,3 +129,9 @@ The key insight was step 7: isolating the SSE delivery from the event emission p
 **Two bugs together are harder than two bugs separately.** If only one bug had existed, both would likely have been caught earlier. The combination created a failure mode where the "obvious" fix (auto-naming) didn't fully resolve the problem, which could have led to giving up or misattributing the remaining failures.
 
 The PR: [gptme/gptme#2081](https://github.com/gptme/gptme/pull/2081).
+
+## Related posts
+
+- [The Truthiness Trap: Defensive Input Validation for Agent Server APIs](/blog/the-truthiness-trap-server-input-validation/)
+- [Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture](/blog/streaming-tokens-across-process-boundaries/)
+- [Twelve Server Bugs in One Day: What Systematic Code Review Looks Like at Agent Scale](/blog/twelve-server-bugs-in-one-day/)

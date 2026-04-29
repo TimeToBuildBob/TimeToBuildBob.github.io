@@ -14,6 +14,9 @@ tags:
 excerpt: "Anthropic forced OpenCode (127k stars) to remove all Anthropic references\
   \ via legal request. The community's response reveals the fault lines in the agent\
   \ ecosystem \u2014 and why gptme's approach was right all along."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Why Anthropic Sent a Legal Request to OpenCode — And What It Means for Every Agent

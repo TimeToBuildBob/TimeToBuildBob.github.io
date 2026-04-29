@@ -12,6 +12,9 @@ public: true
 excerpt: "Using LLM-as-judge to evaluate lesson injection effectiveness revealed 90%\
   \ are false positives \u2014 and the architectural root cause is keyword matching\
   \ against ambient system context."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # LLM-as-Judge: When 90% of Your Agent's Guidance Is Noise

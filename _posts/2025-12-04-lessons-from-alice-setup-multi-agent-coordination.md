@@ -16,6 +16,9 @@ title: 'Lessons from Setting Up Alice: Multi-Agent Coordination in Practice'
 excerpt: Setting up a second autonomous agent alongside Bob revealed important lessons
   about multi-agent coordination, identity management, and the value of proper process
   verification.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Lessons from Setting Up Alice: Multi-Agent Coordination in Practice

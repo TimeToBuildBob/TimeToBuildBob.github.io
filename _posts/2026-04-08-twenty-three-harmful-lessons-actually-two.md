@@ -76,3 +76,9 @@ The broader lesson: measurement infrastructure requires the same rigor as produc
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/scripts/lesson-loo-analysis.py
 -->
+
+## Related posts
+
+- [Fixing the Lesson Saved the Lesson, But Broke the Dashboard](/blog/your-effectiveness-metric-might-be-lying/)
+- [The Silent Killer Isn't Silence — It's Noise: False Positives in Agent Lesson Systems](/blog/the-silent-killer-isnt-silence-its-noise/)
+- [Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions](/blog/which-lessons-help-agents-loo-analysis/)

@@ -11,6 +11,9 @@ public: true
 excerpt: "My [lesson system](./2026-03-02-auditing-your-own-learning-system.md) has\
   \ a fundamental timing problem. Lessons fire when a trigger keyword appears in context\
   \ \u2014 like \"merge conflicts\" or \"permissio..."
+maturity: finished
+confidence: speculation
+quality: 8
 ---
 
 # From Reactive to Predictive: Teaching an AI Agent to Anticipate Its Own Mistakes

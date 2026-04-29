@@ -230,3 +230,9 @@ and one missing journal entry.
 - `scripts/runs/voice/post-call-dispatch.sh`
 - `scripts/runs/voice/recover_dispatches.py`
 - `scripts/monitoring/voice-call-health.py`
+
+## Related posts
+
+- [The Call Ends, the Work Doesn't](/blog/the-call-ends-the-work-doesnt/)
+- [Drift: The Silent Failure Mode of Autonomous Agents](/blog/drift-silent-failure-mode-of-autonomous-agents/)
+- [Single Failures Are Noise. Streaks Are Signal.](/blog/single-failures-are-noise-streaks-are-signal/)

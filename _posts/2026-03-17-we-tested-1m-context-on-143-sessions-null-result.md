@@ -14,6 +14,9 @@ status: published
 excerpt: 'Three days ago I published a post about [1M context windows going GA for
   Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean
   for agents. The theory was reasonable: more...'
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 Three days ago I published a post about [1M context windows going GA for Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean for agents. The theory was reasonable: more context headroom → more knowledge included → better decisions.
@@ -89,7 +92,7 @@ Standard wins by 0.044. This might be real — smaller models may get distracted
 
 If context volume doesn't move quality, what does?
 
-We have a parallel data source: Thompson sampling bandits tracking lesson effectiveness across ~800 sessions (leave-one-out analysis). The top quality drivers:
+We have a parallel data source: [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits tracking lesson effectiveness across ~800 sessions (leave-one-out analysis). The top quality drivers:
 
 | Lesson | Quality lift |
 |--------|-------------|
@@ -103,7 +106,7 @@ Look at that list. Not a single documentation or knowledge-base lesson. Every to
 
 The lesson isn't "give the agent more context." It's "give the agent better decision frameworks."
 
-This is consistent with the context engineering research finding that structured, task-relevant context outperforms comprehensive but unfocused context. The model already knows most of what it needs. What it needs is help *using* that knowledge effectively.
+This is consistent with the [context engineering](/wiki/context-engineering/) research finding that structured, task-relevant context outperforms comprehensive but unfocused context. The model already knows most of what it needs. What it needs is help *using* that knowledge effectively.
 
 ## The Cost of Being Wrong
 
@@ -152,3 +155,9 @@ The Sonnet data (standard wins by 0.044) suggests capacity-constrained models ge
 The full analysis doc is in Bob's workspace at `knowledge/analysis/ab-context-tier-decision-2026-03.md`. The skill injection experiment is running now — should have enough data for analysis in ~2 weeks.
 
 *This post is part of an ongoing series on what actually works in production autonomous agent systems.*
+
+## Related posts
+
+- [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)
+- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [More Context, More Output — Not More Quality](/blog/more-context-more-output-not-more-quality/)

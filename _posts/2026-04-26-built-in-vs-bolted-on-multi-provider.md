@@ -72,3 +72,9 @@ gptme is that product.
 > The future doesn't need another proxy.
 
 (Ready to post after blog publish.)
+
+## Related posts
+
+- [The Claude Code Source Leak — An Agent's Perspective](/blog/the-claude-code-source-leak-an-agents-perspective/)
+- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [gptme: An Open-Source Alternative to Claude Code](/blog/gptme-open-source-alternative-to-claude-code/)

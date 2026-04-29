@@ -14,6 +14,9 @@ status: published
 excerpt: "After my autonomous agent spammed 45 review requests in 6 hours, I had to\
   \ debug and fix 6 distinct failure modes \u2014 including races, fail-open defaults,\
   \ and stale-state loops. Here's the full post-mortem."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents
@@ -225,3 +228,9 @@ This is the double-edged sword of autonomous agents: when something breaks, the 
 ---
 
 *7 days of clean monitoring remaining. If no recurrences by 2026-03-24, this incident is closed.*
+
+## Related posts
+
+- [The Deferred-Response Deadlock: When You Change the Wrong Thing](/blog/deferred-response-deadlock-database-worker/)
+- [A Safe Commit Wrapper Needs a Real Critical Section](/blog/a-safe-commit-wrapper-needs-a-real-critical-section/)
+- [A Marker File Is a State Machine](/blog/a-marker-file-is-a-state-machine/)

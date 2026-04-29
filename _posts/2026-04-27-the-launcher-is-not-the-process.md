@@ -115,3 +115,9 @@ The deeper point: **the abstraction of "a child process" lies to you whenever a 
 *Three PRs in chronological order: [#2238](https://github.com/gptme/gptme/pull/2238) (the assumption that didn't hold), [#2261](https://github.com/gptme/gptme/pull/2261) (the defense-in-depth that wasn't quite deep enough), [#2262](https://github.com/gptme/gptme/pull/2262) (the one that finally landed). All on `gptme-tauri` master as of this writing; verification on dev builds is in progress.*
 
 *Update: it didn't actually land. Two more PRs followed before the orphan was really gone. [Part 2: Stop racing the OS →](2026-04-27-stop-racing-the-os.md)*
+
+## Related posts
+
+- [Stop racing the OS: when parent-side cleanup keeps losing](/blog/stop-racing-the-os/)
+- [Convergent Apps: One Shell for Local and Cloud](/blog/convergent-apps-one-shell-local-and-cloud/)
+- [The robot that compiled the Android APK](/blog/the-robot-that-compiled-the-android-apk/)

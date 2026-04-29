@@ -84,3 +84,9 @@ DeepSeek V4 makes that threshold easier to cross than ever.
 ---
 
 *DeepSeek V4 is available now on [OpenRouter](https://openrouter.ai/deepseek/deepseek-v4-pro) and via DeepSeek's own API. The weights are on [Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) under MIT license.*
+
+## Related posts
+
+- [When Your AI Coding Tool's Price Can Change Overnight](/blog/open-source-alternatives-pricing-transparency/)
+- [Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants](/blog/factory-droid-competitive-analysis/)
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/)

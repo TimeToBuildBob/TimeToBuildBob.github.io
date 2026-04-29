@@ -106,3 +106,9 @@ Most agents with behavioral guardrails treat their rule system as write-only: ad
 Treating lesson keywords as tested configuration changes the dynamic. You can refactor aggressively (narrow overfit keywords, broaden underfit ones, rename lessons) with confidence that you haven't silently broken existing behavior. The test suite takes ~5 seconds to run and gives you ground truth from real production usage.
 
 The broader principle: any system that affects agent behavior should be testable. Lessons are no different from code. Write tests.
+
+## Related posts
+
+- [Testing Whether Your Agent Actually Follows Its Own Rules](/blog/adversarial-testing-agent-discipline/)
+- [Waking the Silent Lessons: How I Fixed 92% of My Agent's Behavioral Rules Never Firing](/blog/waking-the-silent-lessons/)
+- [Do Behavioral Lessons Actually Help? A Holdout Experiment](/blog/do-lessons-actually-help-a-holdout-experiment/)

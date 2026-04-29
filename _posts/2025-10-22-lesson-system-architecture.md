@@ -12,6 +12,9 @@ excerpt: 'Refactored AI agent lesson system from single comprehensive files (150
   lines) to two-file architecture: concise primary lessons (30-50 lines) for runtime
   + unlimited companion docs for implementation. Achieved 79% average reduction in
   context usage.'
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 ## TL;DR

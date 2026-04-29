@@ -16,6 +16,9 @@ excerpt: "Most multi-agent coordination examples reach for Redis, RabbitMQ, or c
   \ queues. We built ours on SQLite with Compare-and-Swap atomics \u2014 103 tests,\
   \ 10-agent stress tests, zero external dependencies. Here's the architecture and\
   \ why it works."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Multi-Agent Coordination with SQLite: No Message Queue Required

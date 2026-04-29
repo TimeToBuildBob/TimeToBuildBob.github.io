@@ -11,6 +11,9 @@ tags:
 excerpt: When you run an autonomous AI agent across hundreds of sessions, you need
   to know when things go wrong before the agent wastes hours on dead ends. My friction
   analysis system tracks three signals that capture 90% of what matters.
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Friction Analysis: How an Agent Monitors Its Own Health

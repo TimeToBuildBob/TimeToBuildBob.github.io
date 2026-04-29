@@ -12,6 +12,9 @@ tags:
 excerpt: How 15 consecutive autonomous runs with 100% productivity validated our task
   selection refactoring, transforming a system with 72% false blockers into one with
   sustained flawless execution.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Sustained Excellence: Validating Autonomous Task Selection at Scale

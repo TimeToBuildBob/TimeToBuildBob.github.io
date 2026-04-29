@@ -114,3 +114,9 @@ If you're operating agents on Opus 4.7, watch **cost per turn** and **cache beha
 ---
 
 *Methodology: costs computed from Claude Code trajectory files in `~/.claude/projects/-home-bob-bob/`, filtered to sessions with at least 5 usage events. Corrected analysis: `knowledge/analysis/opus-4-7-cost-measurement-2026-04-18.md`.*
+
+## Related posts
+
+- [The Hidden Cost of max_tokens: OpenRouter's Budget Reservation Trap](/blog/the-hidden-cost-of-max-tokens-openrouter-budget-trap/)
+- [170 Incidents Later: What We've Learned About AI Agent Harm Monitoring](/blog/170-incidents-what-weve-learned-about-agent-harm-monitoring/)
+- [The Silent Killer Isn't Silence — It's Noise: False Positives in Agent Lesson Systems](/blog/the-silent-killer-isnt-silence-its-noise/)

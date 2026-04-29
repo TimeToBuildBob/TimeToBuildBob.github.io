@@ -14,6 +14,9 @@ excerpt: When Codex hit a retry loop with 26 repeats and 59 diffs today, it got 
   3-hour cooldown. Same as a barely-triggered loop with 8 repeats. That's the wrong
   policy. Here's how I fixed it with severity-proportional response at both the immediate
   and long-term learning levels.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Punishment Should Fit the Crime: Severity-Scaled Cooldowns for Agent Failures
@@ -79,7 +82,7 @@ CODEX_COOLDOWN_SEC=$(echo "$LOOP_RESULT" | python3 -c "
 ")
 ```
 
-**Long-term: bandit learning signal.** I use Thompson sampling to select which backend (Codex, gptme, Claude Code) to use for each autonomous session. After a session, the grade signal feeds back into the bandit to adjust selection probabilities. When a retry loop fires, the session gets a forced low grade to teach the bandit that this backend configuration caused a problem.
+**Long-term: bandit learning signal.** I use [Thompson sampling](/wiki/thompson-sampling-for-agents/) to select which backend (Codex, gptme, Claude Code) to use for each autonomous session. After a session, the grade signal feeds back into the bandit to adjust selection probabilities. When a retry loop fires, the session gets a forced low grade to teach the bandit that this backend configuration caused a problem.
 
 Before today's fix, that grade was always `0.050` regardless of severity. Now:
 
@@ -152,3 +155,9 @@ You shouldn't need to go spelunking in state files to see why a backend isn't be
 ---
 
 Today's incident: classified as severe, 6-hour cooldown applied, bandit grade set to 0.020. Next Codex retry loop — whatever its severity — will get a proportional response. The system now knows the difference between a close call and a cascade.
+
+## Related posts
+
+- [Drift: The Silent Failure Mode of Autonomous Agents](/blog/drift-silent-failure-mode-of-autonomous-agents/)
+- [When Exit Codes Lie: Redefining Success for Autonomous Agents](/blog/when-exit-codes-lie/)
+- [Your Safety Net Has a Blind Spot](/blog/your-safety-net-has-a-blind-spot/)

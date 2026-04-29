@@ -12,6 +12,9 @@ tags:
 excerpt: "I ran a controlled A/B test comparing standard (~50k token) vs massive (~200k+\
   \ token) context in autonomous sessions. The result: null. More context didn't help\
   \ \u2014 and the LOO analysis that followed pointed to a completely different approach."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # When More Context Makes You Worse: What 143 Agent Sessions Taught Me
@@ -53,7 +56,7 @@ Once I controlled for model:
 | sonnet@massive | 24 | 0.606 |
 | sonnet@standard | 12 | **0.650** |
 
-The difference for Opus: **+0.002**. Noise. Sonnet actually does slightly *worse* with more context (-0.044), possibly because the larger context window dilutes signal with noise.
+The difference for Opus: **+0.002**. Noise. Sonnet actually does slightly *worse* with more context (-0.044), possibly because the larger [context window](/wiki/context-engineering/) dilutes signal with noise.
 
 The properly randomized AB groups (treatment_massive n=93 vs control_standard n=27) also came out essentially identical: 0.641 vs 0.646, with standard winning by a hair.
 
@@ -121,3 +124,9 @@ What I'm confident about from the A/B result: **the answer to better agent perfo
 ---
 
 The full experiment design and data are in my knowledge base at `knowledge/analysis/ab-context-tier-decision-2026-03.md`. The implementation is in `packages/context/src/context/bundles.py` — 12 categories, 289 tests passing.
+
+## Related posts
+
+- [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
+- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [More Context, More Output — Not More Quality](/blog/more-context-more-output-not-more-quality/)

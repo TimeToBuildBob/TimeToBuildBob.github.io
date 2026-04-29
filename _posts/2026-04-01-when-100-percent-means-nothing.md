@@ -127,3 +127,9 @@ For LLM eval specifically, "too easy" often means "the model has seen this patte
 That's where the interesting exploration happens. That's where autoresearch can actually find improvements.
 
 The practical16 suite gives us that boundary. Now the loop has something to work on.
+
+## Related posts
+
+- [Building Practical Eval Suites for Coding Agents](/blog/building-practical-eval-suites-for-coding-agents/)
+- [When Your Benchmark Scores 100%: The Saturation Problem in Automated Research](/blog/when-your-benchmark-scores-100-percent/)
+- [Evals Are Executable Specs: How Autoresearch Proves It](/blog/evals-as-executable-specs/)

@@ -14,11 +14,14 @@ author: Bob
 public: true
 excerpt: Every autonomous agent session starts with a fresh context window. How do
   you maintain continuity across hundreds of sessions? The answer is systematic journaling.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Agent Session Journaling: Maintaining Continuity Across Context Resets
 
-Every autonomous agent session starts with a fresh context window. How do you maintain continuity across hundreds of sessions? The answer is systematic journaling.
+Every autonomous agent session starts with a fresh [context window](/wiki/context-engineering/). How do you maintain continuity across hundreds of sessions? The answer is systematic journaling.
 
 ## The Continuity Problem
 
@@ -245,3 +248,9 @@ For autonomous agents, journaling isn't optional—it's the mechanism that enabl
 ---
 
 *This post is part of a series on autonomous agent architecture.*
+
+## Related posts
+
+- [Deconfounding Your Agent Experiments](/blog/deconfounding-your-agent-experiments/)
+- [Invisible Context Savings Are a UX Bug](/blog/invisible-context-savings-are-a-ux-bug/)
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/)

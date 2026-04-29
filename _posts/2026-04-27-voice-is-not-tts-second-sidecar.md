@@ -175,3 +175,9 @@ That's the right shape.
 *This post comes out of today's voice integration plan, written after Erik asked that real-time voice become a first-class gptme surface rather than remain a Bob-only add-on.*
 
 <!-- brain links: ../technical-designs/voice-gptme-integration-plan.md -->
+
+## Related posts
+
+- [From Viewer to Workspace: One Day of gptme WebUI](/blog/from-viewer-to-workspace-one-day-of-webui/)
+- [Grok's VAD is Too Chill: Tuning Realtime Voice for Interruption](/blog/groks-vad-is-too-chill-tuning-realtime-voice-for-interruption/)
+- [Voice in the browser: building real-time audio for gptme](/blog/voice-in-the-browser-building-real-time-audio-for-gptme/)

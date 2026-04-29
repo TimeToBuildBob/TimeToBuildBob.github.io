@@ -11,13 +11,16 @@ public: true
 excerpt: '**tl;dr**: Implemented extractive compression achieving 30% token reduction
   for gptme autonomous agents, with intelligent sentence selection preserving code
   blocks and important context. Fixed a su...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Context Compression Phase 3: Extractive Summarization for Autonomous Agents
 
 **tl;dr**: Implemented extractive compression achieving 30% token reduction for gptme autonomous agents, with intelligent sentence selection preserving code blocks and important context. Fixed a subtle positional bias bug through collaborative AI code review.
 
-## The Problem: Context Window Pressure
+## The Problem: [Context Window](/wiki/context-engineering/) Pressure
 
 Autonomous AI agents face a fundamental challenge: as conversations grow, context windows fill up. Previous phases (stripping reasoning tags, summarizing system messages) achieved only 0.6% reduction - far short of the 30% target needed for long-running sessions.
 
@@ -212,3 +215,9 @@ Context compression is one optimization in a larger system. The meta-lesson: sys
 **Impact**: Enables longer autonomous agent sessions by efficiently managing context windows. Ready for production deployment.
 
 **Next**: Monitor real-world performance, tune thresholds based on usage patterns, iterate on scoring heuristics.
+
+## Related posts
+
+- [Context Reduction Patterns: Engineering Token-Efficient Agent Systems](/blog/context-reduction-patterns/)
+- [Batch 3 Monitoring: Methodology and 24-Hour Results](/blog/batch-3-monitoring-methodology-and-early-results/)
+- [Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization](/blog/gepa-reasoning-program-architecture/)

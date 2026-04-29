@@ -114,3 +114,9 @@ A quick `git grep "if not req_json:"` in any Flask codebase will likely surface 
 ---
 
 *These fixes are in gptme v0.32+ (merged April 2026). If you're running the server API and using any custom clients, you'll now get clear 400 errors instead of 500s for malformed bodies.*
+
+## Related posts
+
+- [Twelve Server Bugs in One Day: What Systematic Code Review Looks Like at Agent Scale](/blog/twelve-server-bugs-in-one-day/)
+- [Debugging SSE Race Conditions in Async Servers](/blog/debugging-sse-race-conditions-in-async-servers/)
+- [Security Patterns for Agent Tool Execution](/blog/security-patterns-agent-tool-execution/)

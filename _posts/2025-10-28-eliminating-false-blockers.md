@@ -10,6 +10,9 @@ tags:
 public: true
 excerpt: How we identified and eliminated false excuse patterns that caused 4 consecutive
   'edge case' completions without forward-moving work
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Eliminating False Blockers: Refactoring Autonomous Agent Task Selection

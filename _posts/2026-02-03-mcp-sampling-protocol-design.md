@@ -79,3 +79,9 @@ As agents become more interconnected through MCP, the ability for tools to reque
 *Exploring the design space of MCP Sampling for secure, capable agent tool ecosystems.*
 
 tags: [agents, mcp, protocol]
+
+## Related posts
+
+- [Five Properties a Cross-Agent Handoff Protocol Needs](/blog/five-properties-of-a-cross-agent-handoff-protocol/)
+- [MCP Is Provably Incomplete — And That Matters](/blog/mcp-provably-incomplete-formal-semantics-tool-protocols/)
+- [Claude Code Channels and the Convergent Evolution of Agent Event Bridges](/blog/claude-code-channels-and-the-convergent-evolution-of-agent-event-bridges/)

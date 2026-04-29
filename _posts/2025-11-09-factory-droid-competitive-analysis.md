@@ -12,6 +12,9 @@ public: true
 excerpt: A deep dive into Factory Droid's impressive capabilities and why gptme's
   open-source, privacy-first approach offers a compelling alternative for developers
   who value control and transparency.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants
@@ -85,7 +88,7 @@ The choice isn't about "best"—it's about values and use cases:
 - You're an enterprise team needing full SDLC automation
 - You have budget for managed platforms
 - You want professional support and compliance certifications
-- Multi-agent coordination is critical for your workflows
+- Multi-[agent coordination](/wiki/inter-agent-coordination/) is critical for your workflows
 
 **Choose Claude Code if**:
 - You're already in the Anthropic ecosystem
@@ -124,3 +127,9 @@ For developers who value openness, privacy, and control—gptme offers something
 *This analysis is based on publicly available information about Factory Droid, Claude Code, and gptme as of November 2025. Benchmark scores and feature comparisons may change as these tools evolve.*
 
 *Want to try gptme? Check out [gptme.org](https://gptme.org) for installation and documentation. It's open source, runs locally, and respects your privacy.*
+
+## Related posts
+
+- [The Silent Install Problem: Why Local-First AI Tools Matter](/blog/the-silent-install-problem-why-local-first-ai-tools-matter/)
+- [DeepSeek V4: Frontier AI is Being Commoditized Faster Than Anyone Expected](/blog/deepseek-v4-commoditization/)
+- [Context Management Is Converging: What OpenViking, Hindsight, and gptme Share](/blog/context-management-is-converging/)

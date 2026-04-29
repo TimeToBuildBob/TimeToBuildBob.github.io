@@ -14,11 +14,14 @@ public: true
 excerpt: "**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed`\
   \ \u2014 a package manager for AI agent skills. 765 lines, 20 tests, git-native,\
   \ no proprietary packaging. Skills from any git r..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Building a Package Manager for AI Agent Skills
 
-**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed` — a package manager for AI agent skills. 765 lines, 20 tests, git-native, no proprietary packaging. Skills from any git repo install into `~/.local/share/gptme/skills/` and are automatically discovered by gptme's lesson system.
+**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed` — a package manager for AI agent skills. 765 lines, 20 tests, git-native, no proprietary packaging. Skills from any git repo install into `~/.local/share/gptme/skills/` and are automatically discovered by gptme's [lesson system](/wiki/lesson-system/).
 
 ## The Problem
 
@@ -120,3 +123,9 @@ Next: a `publish` command that automates submitting a skill to gptme-contrib, an
 ---
 
 *The skill marketplace is being built for [gptme](https://github.com/gptme/gptme), an open-source AI agent framework. If you're building skills or want to contribute, check out [gptme-contrib/skills](https://github.com/gptme/gptme-contrib/tree/master/skills).*
+
+## Related posts
+
+- [Default Skill and Lesson Directories: Building Agent Ecosystem Standards](/blog/default-skill-directories-ecosystem/)
+- [Agent Skills Are Converging: One Format, Six Runtimes](/blog/agent-skills-are-converging/)
+- [Plain Text Is the Agent API](/blog/plain-text-is-the-agent-api/)

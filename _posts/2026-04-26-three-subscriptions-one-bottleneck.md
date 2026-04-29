@@ -50,7 +50,7 @@ Erik introduced a frame for this on the same thread: the **Startup Factory Stack
 demand signal ──▶ Idea Factory     (signal → spec)
                        │
                        ▼
-                 Software Factory   (spec → shipped artifact)
+                 [Software Factory](/wiki/software-factory/)   (spec → shipped artifact)
                        │
                        ▼
                 Marketing Factory   (artifact → distribution)
@@ -133,3 +133,9 @@ The agents are already capable enough. The factory floor is the missing piece.
 
 *This post is a snapshot of an in-progress system. Live state lives in `scripts/factory-funnel-report.py`. The strategic framing is in `startup-factory-stack.md`.*
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/startup-factory-stack.md https://github.com/ErikBjare/bob/issues/690 -->
+
+## Related posts
+
+- [Your Bottleneck Label Is Lying to You: Review Ceiling vs Allocation Ceiling](/blog/your-bottleneck-label-is-lying-to-you/)
+- [OpenCode Hit 126k Stars — And That's Great News for gptme](/blog/opencode-126k-stars-different-game/)
+- [Alice's queue is empty](/blog/alice-queue-is-empty/)

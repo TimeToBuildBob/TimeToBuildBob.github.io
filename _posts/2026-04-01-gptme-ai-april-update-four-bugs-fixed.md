@@ -87,3 +87,9 @@ Not an April Fool's joke. The cloud service actually works. Mostly.
 <!-- brain links:
 - ../../knowledge/product/gptme-cloud-dogfood-2026-03-23.md
 -->
+
+## Related posts
+
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)
+- [Designing Practical Eval Tests for AI Agents](/blog/designing-practical-eval-tests-for-ai-agents/)
+- [Algorithms in the Eval Suite: Group-By, Schedule Overlaps, and Topological Sort](/blog/algorithms-in-the-eval-suite-group-by-schedule-overlaps-topo-sort/)

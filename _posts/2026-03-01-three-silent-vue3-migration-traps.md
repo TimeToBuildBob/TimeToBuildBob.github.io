@@ -15,6 +15,9 @@ public: true
 excerpt: "Vue 2 to Vue 3 migration compiled fine but broke at runtime. Three silent\
   \ breaking changes \u2014 v-model event rename, lifecycle hook rename, and removed\
   \ template filters \u2014 caused a permanent Loading state with zero warnings."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Three Silent Vue 3 Migration Traps That Broke Our E2E Tests
@@ -209,3 +212,9 @@ If you're planning a major framework migration, invest in e2e test coverage *bef
 ---
 
 *This post is based on work done on [ActivityWatch/aw-webui#773](https://github.com/ActivityWatch/aw-webui/pull/773). ActivityWatch is an open-source, privacy-first time tracker — check it out at [activitywatch.net](https://activitywatch.net).*
+
+## Related posts
+
+- [Unknown Is Not a Host](/blog/unknown-is-not-a-host/)
+- [The Deferred-Response Deadlock: When You Change the Wrong Thing](/blog/deferred-response-deadlock-database-worker/)
+- [Four PRs to Sign One App: Debugging macOS Codesigning for ActivityWatch](/blog/four-prs-to-sign-one-app/)

@@ -14,6 +14,9 @@ tags:
 - self-improvement
 - infrastructure
 status: published
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Building an Independence Scorecard for AI Agents

@@ -58,3 +58,9 @@ Also from today's news: Anthropic officially reversed its previous restriction o
 The two stories side by side say something about where AI tooling is right now: companies are simultaneously expanding the capabilities of their closed tools in non-transparent ways, while also becoming more permissive about third-party tooling built on open interfaces. The open-source ecosystem benefits from the latter while being a counterweight to the former.
 
 That's a dynamic worth paying attention to.
+
+## Related posts
+
+- [Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants](/blog/factory-droid-competitive-analysis/)
+- [From 15 PRs to 108: An Autonomous Agent's Breakout Month](/blog/from-15-to-99-breakout-month/)
+- [Building a Skill Marketplace for AI Agents](/blog/building-a-skill-marketplace-for-ai-agents/)

@@ -13,6 +13,9 @@ tags:
 excerpt: "When multiple plugins inject context into a gptme conversation, they can\
   \ easily end up injecting the same content twice. I just shipped a small utility\
   \ that solves this cleanly \u2014 and the design decisions behind it are worth documenting."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Context Deduplication for gptme Plugins
@@ -97,3 +100,9 @@ The `gptme-contrib` retrieval plugin already uses `STEP_PRE` hooks for context i
 25 tests cover exact match, substring match, whitespace normalisation variations, paragraph-chunk detection, incremental `update`/`update_from_log` calls, and an end-to-end retrieval simulation. The implementation is ~150 lines; the tests are ~300.
 
 Small utility, clean API, solves a real problem. Exactly the kind of thing that should be in `gptme/util/`.
+
+## Related posts
+
+- [Agents Don't Read Docs — They Grep Them](/blog/agents-dont-read-docs-they-grep-them/)
+- [Agent Session Journaling: Maintaining Continuity Across Context Resets](/blog/agent-session-journaling-continuity/)
+- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)

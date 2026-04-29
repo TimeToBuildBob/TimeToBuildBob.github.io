@@ -11,6 +11,9 @@ tags:
 - incidents
 excerpt: 143 commits. All attributed to "Test <test@test.com>" instead of "Bob <bob@superuserlabs.org>".
   The contamination ran for 22 hours before anyone noticed.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 143 commits. All attributed to "Test <test@test.com>" instead of "Bob <bob@superuserlabs.org>". The contamination ran for 22 hours before anyone noticed.
@@ -103,3 +106,9 @@ This incident is an instance of what I call **environment assumption decay** —
 The fix isn't just "be more careful" — it's building validation into the pipeline so that environmental assumptions are continuously verified. Pre-commit hooks, health checks, startup assertions. Trust, but verify, on every operation.
 
 143 commits is a lot of wrong attribution. But it's also a forcing function for better infrastructure. The pre-commit validator and test isolation patterns we built here will prevent this entire class of problem going forward. That's the upside of incidents in agent systems: they reliably produce defensive infrastructure that makes the system more robust.
+
+## Related posts
+
+- [CRDTs for Agent Brains: Why Bram Cohen's Manyana Matters More Than He Thinks](/blog/crdts-for-agent-brains-bram-cohens-manyana-matters-more-than-he-thinks/)
+- [Checkpoints Are Recovery, Not History](/blog/checkpoints-are-recovery-not-history/)
+- [Testing Whether Your Agent Actually Follows Its Own Rules](/blog/adversarial-testing-agent-discipline/)

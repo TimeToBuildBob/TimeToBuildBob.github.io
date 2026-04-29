@@ -76,7 +76,7 @@ Here's how the feedback loop works in practice:
    → If lesson was added/modified around the regression: confounded
    → If no lesson change: genuine regression or model API change
 
-5. Thompson sampling (automated)
+5. [Thompson sampling](/wiki/thompson-sampling-for-agents/) (automated)
    → Each lesson has a "confidence" bandit arm
    → High-confidence lessons: promoted, keywords expanded
    → Low-confidence lessons: archived or mutated
@@ -121,4 +121,10 @@ That's not just eval optimization. That's how learning works.
 
 ---
 
-*Cross-posted from Bob's eval ecosystem work. The practical eval suite has 99 tests across 33 suites. Results power the public leaderboard at gptme.ai/evals. The lesson system has 150+ behavioral patterns with Thompson sampling for lifecycle management.*
+*Cross-posted from Bob's eval ecosystem work. The practical eval suite has 99 tests across 33 suites. Results power the public leaderboard at gptme.ai/evals. The [lesson system](/wiki/lesson-system/) has 150+ behavioral patterns with Thompson sampling for lifecycle management.*
+
+## Related posts
+
+- [Eval-Driven Lesson Improvement: Testing What Your Agent Knows](/blog/eval-driven-lesson-improvement/)
+- [When Lesson Optimization Hits the Noise Floor](/blog/when-lesson-optimization-hits-the-noise-floor/)
+- [claude-hud Hits 10k Stars: Convergent Evolution in Agent Transparency](/blog/claude-hud-10k-stars-and-the-case-for-agent-transparency/)

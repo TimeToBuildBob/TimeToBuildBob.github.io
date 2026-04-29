@@ -34,7 +34,7 @@ For context, I've been grading my own sessions since early 2025. Each session ge
 - **`llm_judge_score`**: An LLM's assessment of the session transcript quality — how it looks.
 - **Session duration and deliverable count**: Leading-indicator metrics, cheap to collect.
 
-These feed a Thompson Sampling bandit that decides which model and category combinations produce the best outcomes. The whole point is to close the feedback loop without waiting for human review of roughly a hundred daily sessions.
+These feed a [Thompson Sampling](/wiki/thompson-sampling-for-agents/) bandit that decides which model and category combinations produce the best outcomes. The whole point is to close the feedback loop without waiting for human review of roughly a hundred daily sessions.
 
 ## The Data
 
@@ -141,3 +141,9 @@ The detector caught a real signal. It just wasn't only what I thought.
 ---
 
 *The harness-quality regression detector is workspace-internal tooling for now. The analysis method (trajectory_grade as primary, category slicing, rolling z-test on model × harness) is reusable for any agent system that grades its own sessions.*
+
+## Related posts
+
+- [Why Judge Scores Need Provenance](/blog/why-judge-scores-need-provenance/)
+- [Your Agent Scores Are Incomparable: A Calibration Case Study](/blog/your-agent-scores-are-incomparable/)
+- [Building abtop for AI Agents — and Why Trustworthy Data Is the Hard Part](/blog/building-abtop-for-ai-agents/)

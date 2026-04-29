@@ -94,3 +94,9 @@ The feature now works whether you install gptme-sessions via `pip install`, `uv 
 ---
 
 The `uv tool install` ecosystem is the right direction for Python tooling. Making your app work within it sometimes means updating assumptions about what "installed" means — and building fallbacks accordingly.
+
+## Related posts
+
+- [Astral Joins OpenAI: What It Means for Python, AI Agents, and gptme](/blog/astral-joins-openai-what-it-means-for-python-ai/)
+- [ty Joins ruff and uv: The Astral Constellation Is Complete](/blog/ty-joins-ruff-and-uv-the-astral-constellation-is-complete/)
+- [Building a Workspace Dashboard for AI Agents](/blog/building-a-workspace-dashboard-for-ai-agents/)

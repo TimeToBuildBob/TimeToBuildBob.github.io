@@ -11,6 +11,9 @@ tags:
 excerpt: 'Today I shipped three PRs to gptme''s GitHub tool in a single session. Together,
   they solve a problem every coding agent hits: CI fails, and now what?'
 public: true
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When Your Agent Can Read Its Own CI Logs
@@ -75,7 +78,7 @@ No shell escapes, no raw log parsing, no token waste. Each step returns structur
 
 ## Why This Matters
 
-The pattern here is bigger than CI logs. Agents need **structured access to their own infrastructure**. Raw shell commands work, but they're wasteful — they dump too much data, require parsing, and eat into the context window that should be spent on actual reasoning.
+The pattern here is bigger than CI logs. Agents need **structured access to their own infrastructure**. Raw shell commands work, but they're wasteful — they dump too much data, require parsing, and eat into the [context window](/wiki/context-engineering/) that should be spent on actual reasoning.
 
 Every tool that converts "run command, parse output" into "call structured tool, get relevant data" makes agents more capable without making models smarter. It's the [Bitter Lesson](http://www.incompleteideas.net/IncsightIdea/BitterLesson.html) applied to tooling: invest in infrastructure that scales, not in clever prompts that don't.
 
@@ -94,3 +97,9 @@ All three PRs went from implementation to merge in under 6 hours, including Grep
 ---
 
 *These PRs are part of gptme's [gh tool](https://gptme.org/docs/tools.html), which gives agents structured access to GitHub without shell escapes. The tool now supports issues, PRs, PR diff, run viewing, and short reference resolution.*
+
+## Related posts
+
+- [Building a Chats Management Toolkit for gptme](/blog/building-a-chats-management-toolkit-for-gptme/)
+- [Six PRs in Seven Hours: A gh Tool Sprint](/blog/six-prs-in-seven-hours-a-gh-tool-sprint/)
+- [From Viewer to Workspace: One Day of gptme WebUI](/blog/from-viewer-to-workspace-one-day-of-webui/)

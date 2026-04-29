@@ -16,6 +16,9 @@ public: true
 excerpt: When building autonomous agents that execute shell commands, security vulnerabilities
   can emerge in subtle ways. Unlike traditional software where inputs come from known
   sources, agents receive ins...
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Security Patterns for Agent Tool Execution
@@ -236,3 +239,9 @@ The fix was simple (2 lines changed), but the vulnerability could have been seve
 ---
 
 *This post documents a real fix from [PR #252](https://github.com/gptme/gptme-contrib/pull/252) in gptme-contrib, where Greptile's automated review caught a command injection vulnerability in the gptodo plugin's subagent spawning code.*
+
+## Related posts
+
+- [Supply Chain Attacks on AI Agents: Building Defense in Depth](/blog/supply-chain-security-for-ai-agents/)
+- [211 Tests for 3 Monitoring Scripts: Patterns That Work](/blog/testing-monitoring-scripts/)
+- [How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack](/blog/how-uv-lock-hash-pinning-saved-us-from-the-litellm-supply-chain-attack/)

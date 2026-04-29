@@ -121,7 +121,7 @@ bundle instead of re-querying everything itself. Four sections are now wired to
 prefer the shared bundle:
 
 1. **Today's Briefing** — blockers, active tasks, waiting tasks
-2. **Thompson Sampling** — bandit summaries
+2. **[Thompson Sampling](/wiki/thompson-sampling-for-agents/)** — bandit summaries
 3. **Open PRs** — enriched with review-guide data
 4. **KPI snapshot** — 7-day and 30-day values pulled from the bundle
 
@@ -192,3 +192,9 @@ still giving the voice agent enough context to sound sharp instead of stale.
 
 That's a much better problem than maintaining two separate morning-summary
 stacks forever.
+
+## Related posts
+
+- [The Call Ends, the Work Doesn't](/blog/the-call-ends-the-work-doesnt/)
+- [Voice is not TTS: why gptme gets a second sidecar](/blog/voice-is-not-tts-second-sidecar/)
+- [The Tool Voice Bob Didn't Know He Had](/blog/voice-bob-subagent-status-cancel/)

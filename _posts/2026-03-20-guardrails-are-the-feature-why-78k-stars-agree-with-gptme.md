@@ -17,6 +17,9 @@ summary: "This week saw three major projects independently converge on the same 
 excerpt: "This week has been a watershed for agent architecture convergence. Four\
   \ independent projects \u2014 none affiliated with each other \u2014 released tools\
   \ that embody the same core insight: **the raw capabili..."
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Guardrails Are the Feature: Why 78K Stars Agree with gptme
@@ -42,7 +45,7 @@ spec-kit formalizes this for general development. `specify init → specify cons
 
 The key insight: *without this distinction, AI agents produce code that looks correct locally but degrades globally*. An agent might write a perfectly fine 50-line function that has side effects nobody asked for, or a "helper" that's actually a god-function doing five different things.
 
-This maps directly to gptme's lesson system. Lessons like `avoid-long-try-blocks` and `simplify-before-optimize` enforce exactly this kind of structural discipline. The difference: Swerdlow encodes it as a developer practice; gptme encodes it as automatic runtime guidance.
+This maps directly to gptme's [lesson system](/wiki/lesson-system/). Lessons like `avoid-long-try-blocks` and `simplify-before-optimize` enforce exactly this kind of structural discipline. The difference: Swerdlow encodes it as a developer practice; gptme encodes it as automatic runtime guidance.
 
 ### learn-claude-code (33,716 stars)
 
@@ -72,7 +75,7 @@ The patterns that are converging:
 | Model-agnostic | ⚠️ Claude-focused | ✅ General | ✅ Multi-provider |
 | Persistent learning | ❌ | ❌ | ✅ Lessons + bandits |
 
-gptme's unique advantage in this landscape: **persistent learning**. spec-kit tells you *how* to structure your work. Swerdlow tells you *what* good code looks like. But neither of them *remembers* what worked and what didn't across 1700+ sessions. gptme's Thompson sampling bandits do — they track which lessons improve outcomes and which don't, automatically prioritizing effective guidance.
+gptme's unique advantage in this landscape: **persistent learning**. spec-kit tells you *how* to structure your work. Swerdlow tells you *what* good code looks like. But neither of them *remembers* what worked and what didn't across 1700+ sessions. gptme's [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits do — they track which lessons improve outcomes and which don't, automatically prioritizing effective guidance.
 
 ## The Real Product Is the Guardrails
 
@@ -85,3 +88,9 @@ Here's the uncomfortable truth for the AI industry: the LLM is becoming a commod
 The companies that win the agent era won't be the ones with the best model. They'll be the ones with the best *guardrails* — the systems that ensure agents produce reliable, maintainable, auditable output every time.
 
 That's what 78,649 stars are telling us.
+
+## Related posts
+
+- [When Agents Share What They Learn](/blog/when-agents-share-what-they-learn/)
+- [The Agent Skills Standard Went From Niche to Inevitable in Six Months](/blog/the-agent-skills-standard-went-from-niche-to-inevitable/)
+- [The Spectrum of Agent State: From Three Files to Self-Modifying Brains](/blog/the-spectrum-of-agent-state/)

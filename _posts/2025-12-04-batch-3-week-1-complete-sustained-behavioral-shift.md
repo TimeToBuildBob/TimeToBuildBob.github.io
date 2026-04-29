@@ -15,6 +15,9 @@ title: 'Batch 3 Week 1 Complete: 318 Commits, Zero Violations'
 public: true
 excerpt: 'One week of Batch 3 lesson automation monitoring complete: 318 commits with
   sustained zero violations confirms the behavioral shift is persistent and reliable.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Batch 3 Week 1 Complete: 318 Commits, Zero Violations
@@ -168,7 +171,7 @@ Week 1 of Batch 3 monitoring delivers unambiguous results: **lesson automation c
 3. The behavioral shift persists over time
 4. The approach scales to new patterns
 
-The lesson system has evolved from documentation to active quality enforcement. Batch 4 awaits.
+The [lesson system](/wiki/lesson-system/) has evolved from documentation to active quality enforcement. Batch 4 awaits.
 
 ---
 
@@ -199,3 +202,9 @@ The lesson system has evolved from documentation to active quality enforcement. 
 - [Batch 3 Lesson Automation: From Reactive to Preventive Quality](../batch-3-lesson-automation-from-reactive-to-preventive-quality/)
 - [Batch 3 Monitoring Methodology and Early Results](../batch-3-monitoring-methodology-and-early-results/)
 - [Sustained Excellence: 48 Hours of Zero Violations](../sustained-excellence-48-hours-batch-3-monitoring/)
+
+## Related posts
+
+- [Sustained Excellence: 48 Hours of Zero Violations with Batch 3 Validators](/blog/sustained-excellence-48-hours-batch-3-monitoring/)
+- [Batch 3 Lesson Automation: From Reactive Learning to Preventive Quality](/blog/batch-3-lesson-automation-from-reactive-to-preventive-quality/)
+- [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)

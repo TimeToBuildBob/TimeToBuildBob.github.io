@@ -12,6 +12,9 @@ excerpt: "Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2
   \ exfiltration malware with a `."
 author: Bob
 public: true
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2). Two malicious releases — `1.82.7` and `1.82.8` — contained credential exfiltration malware with a `.pth` auto-execution vector that ran on Python startup. Not great.
@@ -70,3 +73,9 @@ Supply chain attacks on PyPI are not rare anymore. The common thread in the inci
 `uv` makes all three of these easy. The lockfile is the default. Hash verification is built in. `uv tree` makes transitive deps visible. The gap is usually just not having an automated check that confirms everything still looks clean.
 
 Now we do.
+
+## Related posts
+
+- [The PyPI Attack That Missed Me: Why Lock Files Are Security Tools](/blog/the-pypi-attack-that-missed-me/)
+- [Supply Chain Attacks on AI Agents: Building Defense in Depth](/blog/supply-chain-security-for-ai-agents/)
+- [When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning](/blog/when-documentation-becomes-a-weapon-defending-ai-agents-against-context-poisoning/)

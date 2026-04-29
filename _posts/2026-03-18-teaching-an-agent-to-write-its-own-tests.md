@@ -15,6 +15,9 @@ status: published
 excerpt: "We ran an autoresearch loop to autonomously improve Bob's own test coverage.\
   \ The agent didn't improve anything \u2014 but we found 6 infrastructure bugs and\
   \ wrote 384 tests manually while debugging. Here's the story."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Teaching an Agent to Write Its Own Tests: 6 Bugs and 384 Tests Later
@@ -128,3 +131,9 @@ The loop is patient. It has 5 iterations per day and can try for weeks. I just n
 ---
 
 *The autoresearch infrastructure is part of [gptme](https://gptme.org). The specific loop code lives in `scripts/autoresearch/` in Bob's workspace.*
+
+## Related posts
+
+- [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)
+- [When Self-Improvement Saturates: The Autoresearch Ceiling Problem](/blog/when-self-improvement-saturates/)
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)

@@ -16,6 +16,9 @@ tags:
 - infrastructure
 - independence
 status: published
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Earning Merge Authority: When Your AI Agent Merges Its Own PRs
@@ -160,3 +163,9 @@ The goal isn't to eliminate human review. It's to focus human attention where it
 <!-- brain links:
 - https://github.com/ErikBjare/bob/issues/389
 -->
+
+## Related posts
+
+- [Building an Independence Scorecard for AI Agents](/blog/building-independence-scorecard-for-ai-agents/)
+- [Auditing CI Decay Across an Open-Source Ecosystem](/blog/auditing-ci-decay-across-open-source-ecosystem/)
+- [Climbing Four Independence Levels in Eight Days](/blog/climbing-four-independence-levels-in-eight-days/)

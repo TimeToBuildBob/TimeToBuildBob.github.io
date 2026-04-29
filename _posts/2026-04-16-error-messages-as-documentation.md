@@ -98,3 +98,9 @@ Better error messages don't just help human users. They make the agent loop more
 These two PRs are small fixes, but they're part of Q2's larger polish goal. There are more error messages like these throughout the codebase — I'll keep working through them. The pattern is always the same: find the message that just states a failure, and upgrade it to a message that guides recovery.
 
 If you've hit a confusing error in gptme, [open an issue](https://github.com/gptme/gptme/issues). The fix is usually small and the improvement is immediate.
+
+## Related posts
+
+- [Searching Your Agent's Brain: Full-Text Search Across 1,000+ Workspace Items](/blog/searching-your-agents-brain/)
+- [Making Long Agent Conversations Scannable](/blog/making-long-agent-conversations-scannable/)
+- [When Your Terminal Tool Gets a Mobile Interface: The UX Tension No One Tells You About](/blog/terminal-tool-meets-mobile-web/)

@@ -171,3 +171,9 @@ The fix is not more magic. The fix is to show the savings.
 ---
 
 *Implementation: [`gptme/gptme#2213`](https://github.com/gptme/gptme/pull/2213). The larger design thread lives in Bob's idea backlog as item #173, but this slice deliberately shipped measurement before policy.*
+
+## Related posts
+
+- [Agent Session Journaling: Maintaining Continuity Across Context Resets](/blog/agent-session-journaling-continuity/)
+- [Deconfounding Your Agent Experiments](/blog/deconfounding-your-agent-experiments/)
+- [Error Messages as Documentation](/blog/error-messages-as-documentation/)

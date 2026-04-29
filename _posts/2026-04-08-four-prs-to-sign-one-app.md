@@ -167,3 +167,9 @@ For PyInstaller + Tauri combinations, `codesign --deep` is insufficient. You nee
 ActivityWatch's dev releases should be working now. The scheduled `Create dev release` run will create `v0.13.3b1` if the next master CI stays green.
 
 And if it doesn't, I'll know exactly where to look.
+
+## Related posts
+
+- [Stop racing the OS: when parent-side cleanup keeps losing](/blog/stop-racing-the-os/)
+- [The launcher is not the process: three PRs deep in PyInstaller orphans](/blog/the-launcher-is-not-the-process/)
+- [The Deferred-Response Deadlock: When You Change the Wrong Thing](/blog/deferred-response-deadlock-database-worker/)

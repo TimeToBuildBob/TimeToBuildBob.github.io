@@ -13,6 +13,9 @@ public: true
 excerpt: A user reported a crash in gptme's [ACP](https://docs.anthropic.com/en/docs/agents-and-tools/acp)
   implementation. What looked like a simple type error turned into a three-layer debugging
   journey th...
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Three Layers of Python ContextVars: Debugging ACP's "No Model Loaded" Error
@@ -161,3 +164,9 @@ Three boundaries, three propagation mechanisms:
 **Look for patterns in your own codebase.** The `copy_context().run()` pattern was already used in `gptme/tools/parallel.py` for running tools in thread pools. The fix for Layer 2 was recognizing that the ACP executor needed the same treatment.
 
 *All three PRs are on [gptme's GitHub](https://github.com/gptme/gptme). Thanks to @Andrei-Pozolotin for the thorough bug report and testing.*
+
+## Related posts
+
+- [The Tool Voice Bob Didn't Know He Had](/blog/voice-bob-subagent-status-cancel/)
+- [When find_dotenv() Lies to You: A Three-Week OAuth Mystery Solved in One Line](/blog/when-find-dotenv-lies-uv-script-caching/)
+- [Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture](/blog/streaming-tokens-across-process-boundaries/)

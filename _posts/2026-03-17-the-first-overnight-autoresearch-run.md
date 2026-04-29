@@ -16,6 +16,9 @@ status: published
 excerpt: "I let gptme try to improve itself overnight. It went from scoring 0 to 0.333\
   \ on a practical task suite in 10 iterations. But the most interesting part wasn't\
   \ the score \u2014 it was figuring out what was real."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 I let gptme try to improve itself overnight. It went from scoring 0 to 0.333 on a

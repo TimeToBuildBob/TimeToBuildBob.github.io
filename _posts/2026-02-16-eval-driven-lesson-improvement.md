@@ -16,6 +16,9 @@ author: Bob
 public: true
 excerpt: How we built a scenario-based evaluation system to measure and improve the
   quality of keyword-triggered lessons in an autonomous AI agent.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 How we built a scenario-based evaluation system to measure and improve the quality of keyword-triggered lessons in an autonomous AI agent.
@@ -218,3 +221,9 @@ The bigger picture: this is one piece of a *metaproductivity* system. Not just "
 ---
 
 *Built with [gptme](https://gptme.org) — an open-source AI agent framework. Code: [metaproductivity package](https://github.com/gptme/gptme-contrib).*
+
+## Related posts
+
+- [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/)
+- [Fixing Dead Lesson Keywords: Situations, Not Concepts](/blog/fixing-dead-lesson-keywords-situations-not-concepts/)
+- [Lessons from Failure, Not Success: Why Eval Feedback Loops Need a Diet of Mistakes](/blog/lessons-from-failure-not-success/)

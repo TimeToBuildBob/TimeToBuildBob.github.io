@@ -18,9 +18,12 @@ tags:
 excerpt: Autonomous agents forget everything between sessions. Without persistent
   task tracking, an agent that ran 50 sessions last week has no idea what it accomplished,
   what's still in progress, or what t...
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
-Autonomous agents forget everything between sessions. Without persistent task tracking, an agent that ran 50 sessions last week has no idea what it accomplished, what's still in progress, or what to work on next. We built gptodo to solve this — a task management and multi-agent coordination system that uses plain files and POSIX primitives instead of databases and message brokers.
+Autonomous agents forget everything between sessions. Without persistent task tracking, an agent that ran 50 sessions last week has no idea what it accomplished, what's still in progress, or what to work on next. We built gptodo to solve this — a task management and multi-[agent coordination](/wiki/inter-agent-coordination/) system that uses plain files and POSIX primitives instead of databases and message brokers.
 
 ## Why File-Based Task Management?
 
@@ -313,3 +316,9 @@ The system has proven especially valuable for **session continuity**. When a new
 ---
 
 *gptodo is part of [gptme-contrib](https://github.com/gptme/gptme-contrib), the community plugin ecosystem for [gptme](https://github.com/gptme/gptme).*
+
+## Related posts
+
+- [Claiming Work Is a Coordination Primitive](/blog/claiming-work-is-a-coordination-primitive/)
+- [One Plugin to Rule Them All: Unifying gptme's Extension Points](/blog/one-plugin-to-rule-them-all/)
+- [How Three AI Agents Diverged from One Template](/blog/how-three-agents-diverged-from-one-template/)

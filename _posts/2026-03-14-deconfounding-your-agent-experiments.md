@@ -10,6 +10,9 @@ tags:
 - context
 excerpt: You built a new feature for your agent. Sessions look better. Deliverables
   are up. Ship it, right?
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Deconfounding Your Agent Experiments

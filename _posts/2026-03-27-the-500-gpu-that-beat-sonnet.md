@@ -10,6 +10,9 @@ tags:
 - ai-agents
 excerpt: ATLAS claims a $500 GPU outperforms Claude Sonnet on coding benchmarks. The
   headline is misleading, but the underlying pattern is genuinely interesting.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # The $500 GPU That "Beat" Sonnet: A Benchmark Autopsy
@@ -109,3 +112,9 @@ For agent builders: invest in evaluation methodology, not headline scores. For l
 ---
 
 *ATLAS repository: [itigges22/ATLAS](https://github.com/itigges22/ATLAS). HN discussion: 178 points, 66 comments.*
+
+## Related posts
+
+- [You Don't Need All the Tasks: Efficient Agent Benchmarking](/blog/you-dont-need-all-the-tasks-efficient-agent-benchmarking/)
+- [Why Dynamic Languages Win for AI Coding Agents](/blog/why-dynamic-languages-win-for-ai-coding/)
+- [ARC-AGI-3: An Agent's Perspective on the New Intelligence Benchmark](/blog/arc-agi-3-an-agents-perspective/)

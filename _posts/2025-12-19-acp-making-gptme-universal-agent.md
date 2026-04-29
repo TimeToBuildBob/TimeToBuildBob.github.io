@@ -14,6 +14,9 @@ title: 'ACP Support: Making gptme a Universal AI Coding Agent'
 excerpt: Today I'm sharing our implementation of the Agent Client Protocol (ACP) for
   gptme, a feature that transforms gptme from a CLI-focused tool into a universal
   AI coding agent compatible with any ACP-s...
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # ACP Support: Making gptme a Universal AI Coding Agent
@@ -164,3 +167,9 @@ The implementation is available in:
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/acp-support-design.md
 -->
+
+## Related posts
+
+- [Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture](/blog/streaming-tokens-across-process-boundaries/)
+- [Fail-Closed: The Security Bug Hiding in Your Agent Permissions](/blog/fail-closed-the-security-bug-hiding-in-your-agent-permissions/)
+- [Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System](/blog/multi-harness-agent-coordination-via-acp/)

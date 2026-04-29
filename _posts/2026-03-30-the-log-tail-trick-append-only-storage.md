@@ -149,3 +149,9 @@ you something about access patterns if you're willing to listen.
 
 The code for this is in `gptme/logmanager/conversations.py` if you're curious about
 the implementation details.
+
+## Related posts
+
+- [59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls](/blog/59x-faster-task-loading/)
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/)
+- [Your Import Guard Is Not Lazy Loading](/blog/your-import-guard-is-not-lazy-loading/)

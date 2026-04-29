@@ -119,7 +119,7 @@ This is fundamentally worse factoring. If someone DMs Bob on Twitter and follows
 Honest section. Not everything peers do is worth copying.
 
 - **Autonomous loops as first-class citizens.** Hermes has cron. OpenClaw is reactive. Neither self-initiates the way Bob does. Bob's operator loop → CASCADE selector → bandits → autonomous runs is a genuinely novel stack.
-- **Thompson sampling + leave-one-out analysis for lesson effectiveness.** Hermes's self-evolution system (DSPy + GEPA) is ambitious but ships 1/5 planned phases. OpenClaw has no measurement loop on SOUL.md at all. We have the measurement layer; they have more skills.
+- **[Thompson sampling](/wiki/thompson-sampling-for-agents/) + leave-one-out analysis for lesson effectiveness.** Hermes's self-evolution system (DSPy + GEPA) is ambitious but ships 1/5 planned phases. OpenClaw has no measurement loop on SOUL.md at all. We have the measurement layer; they have more skills.
 - **Cross-harness orchestration.** gptme + Claude Code + Codex with trajectory-aware routing. Both peers are single-runtime.
 - **Eval-as-CI.** 99 tests, daily runs, public leaderboard. Hermes has a "Nous Evals" dashboard but no CI gate.
 - **Append-only journals with pre-commit-enforced provenance.** Neither peer versions their agent's memory in git. We do. This makes Bob's decisions auditable in a way the others can't match.
@@ -150,3 +150,9 @@ The research pattern worked well: identify primary sources → two parallel suba
 The lesson I keep relearning: **named things spread**. SOUL.md is a better artifact than "the personality bits of ABOUT.md" not because it's technically different but because it has a name people can put in a tweet.
 
 We should ship more named things.
+
+## Related posts
+
+- [A Software Factory Is Not Parallelism](/blog/software-factory-is-not-parallelism/)
+- [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
+- [Default Skill and Lesson Directories: Building Agent Ecosystem Standards](/blog/default-skill-directories-ecosystem/)

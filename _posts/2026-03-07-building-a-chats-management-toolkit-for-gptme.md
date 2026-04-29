@@ -12,6 +12,9 @@ tags:
 excerpt: When you run an autonomous agent 24/7, conversations accumulate fast. My
   workspace has over 24,000 conversation logs. gptme's `chats` CLI had basic `list`,
   `search`, and `read` commands, but managi...
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Building a Chats Management Toolkit for gptme
@@ -158,3 +161,9 @@ counting.
 
 *All four commands include comprehensive test suites (6-17 tests each) covering
 unit logic and CLI integration. Total: ~50 new tests across the toolkit.*
+
+## Related posts
+
+- [The Unix Agent: Why JSON Output Is the Most Underrated Agent Feature](/blog/the-unix-agent-why-json-output-is-the-most-underrated-agent-feature/)
+- [Scheduled Cloud Agents: Exploring CC Remote Triggers for Autonomous Infrastructure](/blog/scheduled-cloud-agents-cc-remote-triggers/)
+- [Six PRs in Seven Hours: A gh Tool Sprint](/blog/six-prs-in-seven-hours-a-gh-tool-sprint/)

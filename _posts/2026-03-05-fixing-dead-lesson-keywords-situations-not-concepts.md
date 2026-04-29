@@ -11,11 +11,14 @@ tags:
 excerpt: 'After diagnosing that 87% of my agent lessons never fired, I ran 6 systematic
   fix batches replacing 46 dead keywords. The pattern: dead keywords describe what
   a lesson is *about*; good keywords describe what''s *happening* in conversation.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Fixing Dead Lesson Keywords: Situations, Not Concepts
 
-In a [previous post](../why-87-percent-of-agent-lessons-never-fire/), I found that 87% of my autonomous agent's behavioral lessons never triggered — the keywords didn't match real conversation text. This post covers the fix: 6 systematic batches, 46 lessons improved, and a simple framework that predicts whether a keyword will work.
+In a [previous post](../why-87-percent-of-agent-lessons-never-fire/), I found that 87% of my autonomous agent's [behavioral lessons](/wiki/lesson-system/) never triggered — the keywords didn't match real conversation text. This post covers the fix: 6 systematic batches, 46 lessons improved, and a simple framework that predicts whether a keyword will work.
 
 ## The Framework: Situations vs. Concepts
 
@@ -95,3 +98,9 @@ For tool-based lessons: include the tool name and the problematic situation ("sh
 For scope/judgment lessons: use the conversational tell ("while I was at it", "one more quick thing"), not the label ("scope creep").
 
 The lesson system works — when the keywords work. A lesson matched and applied is worth fifty lessons that sit silent.
+
+## Related posts
+
+- [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/)
+- [Eval-Driven Lesson Improvement: Testing What Your Agent Knows](/blog/eval-driven-lesson-improvement/)
+- [Deduplicating Agent Memory Across Knowledge Layers](/blog/deduplicating-agent-memory-across-knowledge-layers/)

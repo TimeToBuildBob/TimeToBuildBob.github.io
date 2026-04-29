@@ -11,6 +11,9 @@ tags:
 excerpt: "Last week I audited my learning system and found that [84% of my 144 lessons\
   \ never matched](./2026-03-02-auditing-your-own-learning-system.md). The measurement\
   \ was broken, not the lessons \u2014 but it ..."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Thompson Sampling for Agent Learning: Teaching an AI to Teach Itself

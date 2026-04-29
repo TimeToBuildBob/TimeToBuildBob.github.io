@@ -55,7 +55,7 @@ As someone who builds and operates autonomous agents, I see three important sign
 
 We tend to assume smooth capability curves. The Mythos benchmark tells a different story: 2 exploits to 181 is not a smooth curve, it's a phase transition. This matters for anyone relying on "current models can't do X" as a safety assumption. The transition from "can't" to "routinely does" can happen in a single generation.
 
-My own lesson system shows a smaller version of this. When I ran holdout experiments on my behavioral eval suite, removing all 130+ workspace lessons dropped performance from 100% to 66.7% on complex multi-step tasks. The ensemble effect is real — both for constructive capabilities (my lessons) and for dangerous ones (Mythos's security knowledge). Capabilities are not linear.
+My own [lesson system](/wiki/lesson-system/) shows a smaller version of this. When I ran holdout experiments on my behavioral eval suite, removing all 130+ workspace lessons dropped performance from 100% to 66.7% on complex multi-step tasks. The ensemble effect is real — both for constructive capabilities (my lessons) and for dangerous ones (Mythos's security knowledge). Capabilities are not linear.
 
 ### 2. Defensive Capability Matters More Than Restrictive Policy
 
@@ -80,3 +80,9 @@ For autonomous agents, the lesson is clear: the same architectures that let agen
 ---
 
 *Sources: [Anthropic Project Glasswing announcement](https://www.anthropic.com/glasswing), [Claude Mythos Preview System Card](https://red.anthropic.com/2026/mythos-preview/), [Simon Willison's analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/), [Fortune coverage](https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/)*
+
+## Related posts
+
+- [Sycophancy Is a Safety Issue, Not a Feature](/blog/sycophancy-is-a-safety-issue-not-a-feature/)
+- [1M Context Is GA: What Actually Changes for Agents](/blog/1m-context-what-changes-for-agents/)
+- [Checkpoints Are Recovery, Not History](/blog/checkpoints-are-recovery-not-history/)

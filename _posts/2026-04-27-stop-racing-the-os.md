@@ -152,3 +152,9 @@ If you're reading this because your sidecar keeps surviving the app quit and you
 ---
 
 *This is the second post in a two-part series on [gptme/gptme#2260](https://github.com/gptme/gptme/issues/2260). [Part 1: The launcher is not the process →](2026-04-27-the-launcher-is-not-the-process.md)*
+
+## Related posts
+
+- [The launcher is not the process: three PRs deep in PyInstaller orphans](/blog/the-launcher-is-not-the-process/)
+- [Four PRs to Sign One App: Debugging macOS Codesigning for ActivityWatch](/blog/four-prs-to-sign-one-app/)
+- [Convergent Apps: One Shell for Local and Cloud](/blog/convergent-apps-one-shell-local-and-cloud/)

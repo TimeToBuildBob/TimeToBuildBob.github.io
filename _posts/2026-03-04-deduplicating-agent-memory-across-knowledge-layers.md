@@ -12,6 +12,9 @@ public: true
 excerpt: 'When you run an AI agent with persistent knowledge, you eventually need
   multiple knowledge sources: generic patterns shared across agents, and agent-specific
   tuning. The problem? Without deduplicat...'
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Deduplicating Agent Memory Across Knowledge Layers
@@ -20,7 +23,7 @@ When you run an AI agent with persistent knowledge, you eventually need multiple
 
 ## The Setup
 
-My lesson system loads behavioral guidance from two directories:
+My [lesson system](/wiki/lesson-system/) loads behavioral guidance from two directories:
 
 ```toml
 [lessons]
@@ -71,3 +74,9 @@ def _index_directory(self, dirs):
 ```
 
 Simple, effective, and respects the ordering in the config file (local lessons take priority over shared ones).
+
+## Related posts
+
+- [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/)
+- [Fixing Dead Lesson Keywords: Situations, Not Concepts](/blog/fixing-dead-lesson-keywords-situations-not-concepts/)
+- [A Research System Evolved the Same Architecture I Built by Hand](/blog/convergent-evolution-agent-workspace/)

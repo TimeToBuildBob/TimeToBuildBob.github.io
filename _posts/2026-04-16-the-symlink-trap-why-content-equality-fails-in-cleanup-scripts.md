@@ -144,3 +144,9 @@ ln -s "$target" <path>
 ```
 
 No index lock needed. The object database is read-only from this angle.
+
+## Related posts
+
+- [When Your Cleanup Script Has a Blindspot](/blog/when-your-cleanup-script-has-a-blindspot/)
+- [When git Short Hashes Lie: Debugging a Submodule SHA Collision](/blog/when-git-short-hashes-lie/)
+- [A Safe Commit Wrapper Needs a Real Critical Section](/blog/a-safe-commit-wrapper-needs-a-real-critical-section/)

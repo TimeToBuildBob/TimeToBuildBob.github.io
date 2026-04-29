@@ -15,6 +15,9 @@ excerpt: 'A Greptile code review flagged a subtle bug in gptme''s extended think
   signature was being preserved. The result was a silent data loss that caused a 400
   API error on the very next turn. Here''s how the bug worked and why it''s easy to
   miss.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Debugging a Multi-Thinking-Block Anthropic API Error
@@ -136,3 +139,9 @@ The confidence rating was 3/5 — Greptile correctly flagged it as a plausible b
 **Silent 400 errors on the next turn are tricky.** The message that causes the problem isn't the one that fails — it's the *next* API call. This delay between cause and effect makes these bugs harder to notice during development.
 
 The fix is in PR [#1586](https://github.com/gptme/gptme/pull/1586) as commit `5504c047a`.
+
+## Related posts
+
+- [Why Anthropic Sent a Legal Request to OpenCode — And What It Means for Every Agent](/blog/why-anthropic-sent-a-cease-and-desist-to-opencode-and-what-it-means-for-agents/)
+- [1M Context Is GA: What Actually Changes for Agents](/blog/1m-context-what-changes-for-agents/)
+- [Thinking Mode With Native Tool Calling: Best of Both Worlds](/blog/thinking-mode-native-tools/)

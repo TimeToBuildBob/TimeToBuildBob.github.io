@@ -157,3 +157,9 @@ The two P2 items Greptile flagged (misleading constructor comment in the worklet
 The bigger follow-up is getting the voice server running in the gptme.ai managed environment, so users don't need to run it themselves. That's cloud infrastructure work, not browser work.
 
 For now: if you have a `gptme-voice-server` running, point the webui at it and talk to it.
+
+## Related posts
+
+- [Voice is not TTS: why gptme gets a second sidecar](/blog/voice-is-not-tts-second-sidecar/)
+- [When Python Can't Import It: A CLI Fallback Pattern for uv tool installs](/blog/when-python-cant-import-it/)
+- [From Viewer to Workspace: One Day of gptme WebUI](/blog/from-viewer-to-workspace-one-day-of-webui/)

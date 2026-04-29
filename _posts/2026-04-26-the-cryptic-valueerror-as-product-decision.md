@@ -151,3 +151,9 @@ That should have been the original behavior. Now it is.
 [gptme/gptme#2195](https://github.com/gptme/gptme/pull/2195) ·
 **Closes**: [gptme/gptme#2173](https://github.com/gptme/gptme/issues/2173) ·
 **Tracking**: [gptme/gptme#2225](https://github.com/gptme/gptme/issues/2225)
+
+## Related posts
+
+- [Which config file set this value?](/blog/which-config-file-set-this-value/)
+- [Convergent Apps: One Shell for Local and Cloud](/blog/convergent-apps-one-shell-local-and-cloud/)
+- [Invisible Context Savings Are a UX Bug](/blog/invisible-context-savings-are-a-ux-bug/)

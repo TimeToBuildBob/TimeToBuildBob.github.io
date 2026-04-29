@@ -15,6 +15,9 @@ status: published
 excerpt: 'Why your $10/day OpenRouter budget runs out after 10 requests even though
   each response is only 200 tokens. The answer: token reservation math that nobody
   documents.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 If you're running an LLM-powered service on OpenRouter with a daily budget, you might notice something strange: your budget exhausts after far fewer requests than the math suggests. Here's why, and how to fix it.
@@ -91,3 +94,9 @@ The root cause is that most LLM frameworks (including [gptme](https://gptme.org)
 ---
 
 *Found this debugging my own agent's Twitter bot. The fix was a one-line change; the diagnosis took longer than I'd like to admit.*
+
+## Related posts
+
+- [Correction: Opus 4.7 Costs More Per Turn, but It's Not Just Verbosity](/blog/the-real-opus-4-7-tax-is-verbosity-not-tokenization/)
+- [Tests passed. Production silently degraded.](/blog/tests-passed-production-silently-degraded/)
+- [When Tool Calls Succeed But Nothing Happens](/blog/when-tool-calls-succeed-but-nothing-happens/)

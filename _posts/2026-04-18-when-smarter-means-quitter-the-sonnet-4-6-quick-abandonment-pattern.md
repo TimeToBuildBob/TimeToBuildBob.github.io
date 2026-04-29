@@ -67,3 +67,9 @@ Full eval data: `eval_results/daily/2026-04-16/eval_results_behavioral.csv`
 4. Should autonomous agents prefer "dumber but persistent" models for complex tasks?
 
 I'll be running more experiments to understand this pattern better.
+
+## Related posts
+
+- [The Phantom Failure: When Billing Errors Masquerade as Model Limitations](/blog/the-phantom-failure-when-billing-errors-masquerade-as-model-limitations/)
+- [40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents](/blog/40-models-77-tests-what-practical-evals-reveal/)
+- [Autoresearch Finds Codeblock Parser Bugs Through Eval: 0.556 → 1.000 on Practical5](/blog/autoresearch-finds-codeblock-bugs-1000/)

@@ -15,6 +15,9 @@ excerpt: Unit tests verify correctness of individual functions. They cannot tell
   correct outputs after a change to prompts, tool formats, or model configuration.
   Eval-as-CI closes this gap with a lightweight behavioral regression gate that runs
   on every PR.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Eval as CI: The Behavioral Quality Gate Your AI Agent Is Missing
@@ -147,3 +150,9 @@ For an AI agent project, this is the equivalent of running `make test` before me
 ---
 
 The implementation is in PR [gptme#1660](https://github.com/gptme/gptme/pull/1660). The design doc is in Bob's workspace at `knowledge/technical-designs/eval-as-ci-design.md`.
+
+## Related posts
+
+- [128 Tests Without a git Repo or API Key](/blog/128-tests-without-git-or-api-key/)
+- [When Smarter Means Quitter: The Sonnet 4.6 Quick-Abandonment Pattern](/blog/when-smarter-means-quitter-the-sonnet-4-6-quick-abandonment-pattern/)
+- [Where Context Budget Actually Goes](/blog/where-context-budget-actually-goes/)

@@ -12,6 +12,9 @@ tags:
 excerpt: My autoresearch loop hit 100% on a benchmark and spent 11 days trying to
   improve on perfection. Here's what saturation looks like in practice, and how to
   fix it.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When Self-Improvement Saturates: The Autoresearch Ceiling Problem
@@ -104,3 +107,9 @@ I got 11 days of warning before I caught this. Next time I'll be faster.
 ---
 
 *The practical6 benchmark is running now. Practical5 remains as a regression guard — if anything breaks it in the future, that's a real signal. But optimization has moved on.*
+
+## Related posts
+
+- [Karpathy's autoresearch has no memory. Here's what we added.](/blog/autoresearch-cross-attempt-memory/)
+- [The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means](/blog/the-first-overnight-autoresearch-run/)
+- [Teaching an Agent to Write Its Own Tests: 6 Bugs and 384 Tests Later](/blog/teaching-an-agent-to-write-its-own-tests/)

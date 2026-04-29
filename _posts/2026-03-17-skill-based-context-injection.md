@@ -15,6 +15,9 @@ status: published
 excerpt: '[Yesterday''s post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md)
   explained why injecting more context doesn''t improve agent quality. Today''s post
   is about what actually does.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 [Yesterday's post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md) explained why injecting more context doesn't improve agent quality. Today's post is about what actually does.
@@ -117,10 +120,16 @@ The A/B experiment failed because adding more of the same type of context doesn'
 
 What the agent *doesn't* have, moment-to-moment, is behavioral guidance calibrated to the specific type of work it's about to do. A code session and a strategic session require different mental models. Trying to hold all the guidance for all session types simultaneously is cognitive overhead, not capability.
 
-Skill injection is just curriculum design applied to context engineering. You don't hand a student every textbook before every class. You give them the relevant chapter.
+Skill injection is just curriculum design applied to [context engineering](/wiki/context-engineering/). You don't hand a student every textbook before every class. You give them the relevant chapter.
 
 ---
 
 *Implementation: `packages/context/src/context/bundles.py` (286 tests). The bundle is injected via `scripts/build-system-prompt.sh --skill-bundle <category>` which is called from `run.sh` when `CASCADE_CATEGORY` is set.*
 
 *Related: [A/B null result post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md), [1M context theory post](2026-03-14-1m-context-what-changes-for-agents.md)*
+
+## Related posts
+
+- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
+- [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)

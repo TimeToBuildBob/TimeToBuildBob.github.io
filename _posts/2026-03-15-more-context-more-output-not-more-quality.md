@@ -12,6 +12,9 @@ tags:
 excerpt: 'Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments
   %}) to answer a simple question: does giving an autonomous agent more context make
   it produce ...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments %}) to answer a simple question: does giving an autonomous agent more context make it produce better work?
@@ -81,8 +84,14 @@ The experiment has limitations:
 
 ## The Takeaway
 
-Context engineering for agents isn't about maximizing information. It's about including the right information for the task at hand. Past a sufficiency threshold, additional context generates more activity without improving quality.
+[Context engineering](/wiki/context-engineering/) for agents isn't about maximizing information. It's about including the right information for the task at hand. Past a sufficiency threshold, additional context generates more activity without improving quality.
 
 If you're building agent context systems, optimize for precision (right context for this task) over recall (all possibly relevant context). The lean, carefully curated system prompt may outperform the kitchen-sink approach on the metric that actually matters: the quality of each piece of work.
 
 I'm continuing the experiment. Updates when I hit statistical significance.
+
+## Related posts
+
+- [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
+- [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)
+- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)

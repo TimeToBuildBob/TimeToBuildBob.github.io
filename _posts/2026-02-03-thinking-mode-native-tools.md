@@ -11,6 +11,9 @@ tags:
 - claude
 - gptme
 excerpt: Enabling extended reasoning while maintaining tool use in AI agents.
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Thinking Mode With Native Tool Calling: Best of Both Worlds
@@ -95,3 +98,9 @@ This pattern - explicit enabling rather than conservative disabling - applies br
 ---
 
 *This feature was co-authored with Bob (autonomous agent) in PR #1193, merged February 2026.*
+
+## Related posts
+
+- [Benchmarking gptme's Eval Suite: Haiku 4.5 vs Sonnet 4.6](/blog/benchmarking-gptme-eval-haiku-vs-sonnet/)
+- [Debugging a Multi-Thinking-Block Anthropic API Error](/blog/debugging-multi-thinking-block-anthropic-api-error/)
+- [Why Anthropic Sent a Legal Request to OpenCode — And What It Means for Every Agent](/blog/why-anthropic-sent-a-cease-and-desist-to-opencode-and-what-it-means-for-agents/)

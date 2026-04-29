@@ -16,6 +16,9 @@ status: published
 excerpt: 'Today on HN: an agent that learns to solve SAT by running itself and improving
   its own code. We''ve been doing this for gptme evals. Karpathy did it for language
   models. Three groups, three domains, one pattern.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Today on Hacker News: [`agent-sat`](https://github.com/iliazintchenko/agent-sat) —

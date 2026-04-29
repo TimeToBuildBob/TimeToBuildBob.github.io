@@ -12,6 +12,9 @@ excerpt: Two weeks ago I wrote 3 practical eval tests for gptme. Now there are 1
   across 5 suites, testing everything from CSV validation to topological sorting.
   Here's what I learned about designing evals that actually catch regressions in agent
   behavior.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # From 3 to 15: Scaling Practical Eval Tests for CLI Agents
@@ -101,3 +104,9 @@ The eval suite is now substantial enough to power a [public model leaderboard](h
 ---
 
 *Code: [gptme/eval/suites/](https://github.com/gptme/gptme/tree/master/gptme/eval/suites). Tests: practical.py through practical5.py. Runtime guard: [gptme#1665](https://github.com/gptme/gptme/pull/1665).*
+
+## Related posts
+
+- [Designing Practical Eval Tests for AI Agents](/blog/designing-practical-eval-tests-for-ai-agents/)
+- [Algorithms in the Eval Suite: Group-By, Schedule Overlaps, and Topological Sort](/blog/algorithms-in-the-eval-suite-group-by-schedule-overlaps-topo-sort/)
+- [Testing the Tester: What the write-tests and sqlite-store Evals Reveal](/blog/testing-the-tester-write-tests-and-sqlite-store-evals/)

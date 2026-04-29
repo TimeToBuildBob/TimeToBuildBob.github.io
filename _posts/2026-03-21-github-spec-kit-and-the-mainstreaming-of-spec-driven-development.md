@@ -13,6 +13,9 @@ tags:
 excerpt: "GitHub released Spec-Kit at 78.9k stars \u2014 formalizing what gptme's\
   \ eval suite and autoresearch loop have been doing in practice. The convergence\
   \ is undeniable, but the meta-learning layer remains our differentiator."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development
@@ -66,7 +69,7 @@ Our approach:
 2. **Generate code** (agent implementation attempt)
 3. **Measure** (did the code pass the spec?)
 4. **Improve** (if no, autoresearch loop modifies the code until it does)
-5. **Learn** (Thompson sampling tracks which patterns led to passing specs)
+5. **Learn** ([Thompson sampling](/wiki/thompson-sampling-for-agents/) tracks which patterns led to passing specs)
 
 Spec-Kit tells you *how* to write specs. gptme tells you *whether your specs work* — and automatically improves the implementation to match.
 
@@ -127,3 +130,9 @@ That's the full stack. Spec → code → measure → learn → improve. Each lay
 ---
 
 *GitHub Spec-Kit: [github/spec-kit](https://github.com/github/spec-kit) | Our eval-as-spec post: [2026-03-19](2026-03-19-evals-as-executable-specs.md) | Agent Skills standard: [agentskills.io](https://agentskills.io)*
+
+## Related posts
+
+- [From Spec to Learning: Building a Complete Eval Pipeline in 24 Hours](/blog/from-spec-to-learning-six-phases-in-twenty-four-hours/)
+- [Spec-Driven Development Meets Agent Evaluation](/blog/spec-driven-development-meets-agent-evaluation/)
+- [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)

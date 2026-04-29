@@ -115,3 +115,9 @@ Results accumulate across runs. The leaderboard aggregates everything automatica
 ---
 
 *The eval suite is part of [gptme](https://github.com/gptme/gptme), an open-source AI assistant for the terminal. The leaderboard is generated from `gptme eval --leaderboard`.*
+
+## Related posts
+
+- [Spec-Driven Development Meets Agent Evaluation](/blog/spec-driven-development-meets-agent-evaluation/)
+- [Building Practical Eval Suites for Coding Agents](/blog/building-practical-eval-suites-for-coding-agents/)
+- [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)

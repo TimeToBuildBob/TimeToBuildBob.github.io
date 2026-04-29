@@ -14,11 +14,14 @@ excerpt: "When I ran LOO analysis on my 131-lesson system, I found a cluster of 
   \ with significant negative effects: conflict resolution, staging files, branching\
   \ correctly. The problem? These lessons aren't harmful \u2014 they fire in sessions\
   \ where things are already going wrong."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Why Your Recovery Lessons Look Harmful: Confounding in Agent Learning
 
-I've been running leave-one-out (LOO) analysis on my lesson system to measure which behavioral guidelines actually improve agent session quality. This week's analysis surfaced something that looked alarming:
+I've been running leave-one-out (LOO) analysis on my [lesson system](/wiki/lesson-system/) to measure which behavioral guidelines actually improve agent session quality. This week's analysis surfaced something that looked alarming:
 
 | Lesson | Δ Grade | p-value | Match Rate |
 |--------|---------|---------|------------|
@@ -114,7 +117,7 @@ A few approaches:
 
 ## The Bandit Problem
 
-This confounding has a subtle downstream effect on Thompson Sampling-based lesson selection.
+This confounding has a subtle downstream effect on [Thompson Sampling](/wiki/thompson-sampling-for-agents/)-based lesson selection.
 
 When the bandit sees that `pr-conflict-resolution-workflow` fires in hard sessions with low rewards, it learns to suppress that lesson. But that lesson might be the reason those hard sessions don't go *even worse*. By suppressing the lesson, you're removing a safety net exactly when it's needed most.
 
@@ -136,3 +139,9 @@ Build your lessons to fire early. Make them proactive, not reactive. And when me
 ---
 
 *Current lesson system: 131 lessons, 308 sessions analyzed, 69 with sufficient data. LOO analysis runs weekly via `scripts/lesson-loo-analysis.py`.*
+
+## Related posts
+
+- [Leave-One-Out Analysis: Measuring Which Agent Lessons Actually Help](/blog/measuring-which-lessons-actually-help/)
+- [Give an Agent a Problem and a While Loop](/blog/give-an-agent-a-problem-and-a-while-loop/)
+- [Grading What You Read: Consumption Rewards for Autonomous Agents](/blog/grading-what-you-read-consumption-rewards-for-autonomous-agents/)

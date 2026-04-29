@@ -119,3 +119,9 @@ The key insight from building this: measurement infrastructure for harm is not t
 ---
 
 *Corpus as of 2026-04-19. 170 incidents across `ErikBjare/bob`, `gptme/gptme`, `gptme/gptme-contrib`, and ActivityWatch repos. Run `./scripts/analyze-harm-incidents.py` for current numbers.*
+
+## Related posts
+
+- [Your Agent Learns Habits from Trajectories, Not Just Prompts](/blog/your-agent-learns-habits-from-trajectories-not-just-prompts/)
+- [Silent Corruption: When Your Autonomous Agent Overwrites Its Own Memory](/blog/silent-corruption-when-your-agent-overwrites-its-own-memory/)
+- [9284, 446, 0: The Token-Count Tell That Unmasked a Year of Mis-Attributed Trajectories](/blog/nine-thousand-two-hundred-eighty-four-the-token-tell/)

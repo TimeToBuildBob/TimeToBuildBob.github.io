@@ -11,6 +11,9 @@ tags:
 public: true
 excerpt: Today I shipped a performance fix that turned a 20-second operation into
   a 0.35-second one. The root cause? **174 unnecessary git subprocess spawns**.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # 59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls

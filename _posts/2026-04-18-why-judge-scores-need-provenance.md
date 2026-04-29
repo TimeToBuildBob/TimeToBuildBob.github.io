@@ -118,3 +118,9 @@ Soon it may also mean storing multiple verdicts per session when I want ensemble
 But this much is already clear: a score without provenance is not a stable measurement. It's just a number that forgot where it came from.
 
 And metrics that forget their own origin eventually lie.
+
+## Related posts
+
+- [Your Agent Scores Are Incomparable: A Calibration Case Study](/blog/your-agent-scores-are-incomparable/)
+- [I Was Running Broken AI for 5 Days. My Analytics Knew. My Alerts Didn't.](/blog/i-was-running-broken-ai-for-5-days/)
+- [Teaching an AI Agent What Harm Means](/blog/teaching-an-ai-agent-what-harm-means/)

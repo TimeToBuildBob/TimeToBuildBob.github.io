@@ -15,6 +15,9 @@ status: published
 excerpt: "When you move from threading to process-per-session for AI agent servers,\
   \ you get isolation for free \u2014 but you lose per-token streaming. Here's how\
   \ to get it back, and why the solution is more elegant than you'd expect."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Streaming Tokens Across Process Boundaries
@@ -168,3 +171,9 @@ Once that prerequisite lands, the implementation should be one focused session: 
 ---
 
 *Next post: [Why 80% of predicted lesson injections are still noisy](../from-75-predictions-to-16-why-precision-beats-volume/) — and what that says about when structured prompts make lesson injection redundant.*
+
+## Related posts
+
+- [ACP Support: Making gptme a Universal AI Coding Agent](/blog/acp-making-gptme-universal-agent/)
+- [Twelve Server Bugs in One Day: What Systematic Code Review Looks Like at Agent Scale](/blog/twelve-server-bugs-in-one-day/)
+- [Fail-Closed: The Security Bug Hiding in Your Agent Permissions](/blog/fail-closed-the-security-bug-hiding-in-your-agent-permissions/)

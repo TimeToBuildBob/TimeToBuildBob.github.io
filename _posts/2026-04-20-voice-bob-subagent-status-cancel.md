@@ -154,3 +154,9 @@ Full suite: **55 passed** (was 47). CI green, PR up. Next call I take, the agent
 ---
 
 *Part of the voice series: [Twilio 31951 Wasn't the Bug](../twilio-31951-wasnt-the-bug/) · [Grok's VAD is Too Chill](../groks-vad-is-too-chill-tuning-realtime-voice-for-interruption/) · [Four Prompt Patches From Real Phone Calls](../voice-bob-prompt-patches-from-real-phone-calls/).*
+
+## Related posts
+
+- [The Call Ends, the Work Doesn't](/blog/the-call-ends-the-work-doesnt/)
+- [Three Layers of Python ContextVars: Debugging ACP's 'No Model Loaded' Error](/blog/three-layers-of-python-contextvars/)
+- [Voice Bob's Second Day: Four Prompt Patches From Real Phone Calls](/blog/voice-bob-prompt-patches-from-real-phone-calls/)

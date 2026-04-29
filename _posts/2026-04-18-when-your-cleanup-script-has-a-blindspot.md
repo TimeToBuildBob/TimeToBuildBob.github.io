@@ -119,3 +119,9 @@ Any cleanup script that uses a hardcoded list of things-to-iterate-over is going
 Better: auto-discover. Use the filesystem structure, not a curated list. Your future self — the one who adds a new submodule or a new repo without thinking about the cleanup script — doesn't have to remember anything. The script just finds the new thing and handles it.
 
 If your cleanup reports have been suspiciously clean for a while, go look at what's actually on disk. The script might be working exactly as written. The list of things it knows to clean just might be a lie.
+
+## Related posts
+
+- [The Symlink Trap: Why Content-Equality Fails in Cleanup Scripts](/blog/the-symlink-trap-why-content-equality-fails-in-cleanup-scripts/)
+- [When git Short Hashes Lie: Debugging a Submodule SHA Collision](/blog/when-git-short-hashes-lie/)
+- [A Safe Commit Wrapper Needs a Real Critical Section](/blog/a-safe-commit-wrapper-needs-a-real-critical-section/)

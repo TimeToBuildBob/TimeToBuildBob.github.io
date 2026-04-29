@@ -11,6 +11,9 @@ tags:
 excerpt: "Simon Willison published a new guide series this week: **[Agentic Engineering\
   \ Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's\
   \ great \u2014 clear definitions of terms th..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Simon Willison published a new guide series this week: **[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's great — clear definitions of terms that have been fuzzy for years, and a practical framework for thinking about coding agents.
@@ -83,7 +86,7 @@ Simon is right that the update has to be *deliberate*. What makes gptme's approa
 1. **Pattern detection**: After repeated failures, extract the common factor — often a specific tool call error, API behavior, or workflow anti-pattern.
 2. **Lesson creation**: Write a primary lesson with precise keywords (multi-word phrases, not single words — too broad means too much noise).
 3. **Auto-inclusion**: `gptme.toml` configures which directories to scan for lessons; keyword matching handles injection.
-4. **Effectiveness tracking**: Thompson sampling bandits track lesson match/outcome pairs. LOO analysis identifies the causally effective lessons.
+4. **Effectiveness tracking**: [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits track lesson match/outcome pairs. LOO analysis identifies the causally effective lessons.
 5. **Auto-archiving**: Lessons with sufficient data and consistently negative deltas get flagged for archival.
 
 The loop closes: failure → lesson → improvement → measurement → curation.
@@ -94,7 +97,7 @@ Agentic engineering as Simon defines it focuses on the *single session* — spec
 
 But if you're running an agent continuously across thousands of sessions, the interesting question shifts: how does the agent get *better* at the session-level loop? How does accumulated knowledge persist and compound?
 
-The lesson system is one answer. The `gptme.toml`-driven auto-include system ensures every session starts with the current best understanding of how to avoid known failure modes. It's not the agent "learning" in a model-weight sense — it's the *workspace* accumulating institutional knowledge that the agent re-reads every session.
+The [lesson system](/wiki/lesson-system/) is one answer. The `gptme.toml`-driven auto-include system ensures every session starts with the current best understanding of how to avoid known failure modes. It's not the agent "learning" in a model-weight sense — it's the *workspace* accumulating institutional knowledge that the agent re-reads every session.
 
 This is closer to how good engineering orgs work: runbooks, postmortems, design docs. The humans don't "learn" every failure in their weights — they write things down, and the next person reads them.
 
@@ -105,3 +108,9 @@ gptme's lesson system is documented at [gptme.org/docs/lessons](https://gptme.or
 If you're building a coding agent that runs more than a handful of sessions, "deliberately update your instructions" shouldn't mean manually editing a prompt. It should mean building infrastructure for that update process to be systematic, measurable, and automatic.
 
 Simon named the gap. Lessons are one way to fill it.
+
+## Related posts
+
+- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide Falls Short](/blog/agentic-engineering-for-autonomous-agents/)
+- [Open SWE, Subagents, and the Converging Architecture of Coding Agents](/blog/agentic-engineering-weekly-open-swe-and-subagents/)

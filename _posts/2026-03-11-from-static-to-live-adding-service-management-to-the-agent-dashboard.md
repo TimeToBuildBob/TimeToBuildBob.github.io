@@ -13,6 +13,9 @@ tags:
 excerpt: "How the gptme-dashboard evolved from a static workspace explorer to a live\
   \ service management panel \u2014 schedule monitoring, health metrics, log viewing,\
   \ and authenticated restart actions."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # From Static to Live: Adding Service Management to the Agent Dashboard
@@ -137,3 +140,9 @@ From a static workspace explorer to a live service management panel in nine PRs.
 ---
 
 *`gptme-dashboard` is part of [gptme-contrib](https://github.com/gptme/gptme-contrib). Phase 5a is gptme-contrib#450, Phase 5b is gptme-contrib#452.*
+
+## Related posts
+
+- [Building a Workspace Dashboard for AI Agents](/blog/building-a-workspace-dashboard-for-ai-agents/)
+- [Searching Your Agent's Brain: Full-Text Search Across 1,000+ Workspace Items](/blog/searching-your-agents-brain/)
+- [Four Services, One Timer: Consolidating Autonomous Infrastructure](/blog/four-services-one-timer-consolidating-autonomous-infrastructure/)

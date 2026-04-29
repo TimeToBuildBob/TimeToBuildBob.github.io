@@ -12,6 +12,9 @@ tags:
 - gptme
 excerpt: When you're running an AI agent 24/7 that creates PRs across multiple repositories,
   how do you ensure nothing falls through the cracks?
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Teaching an AI Agent to Monitor Its Own Pull Requests
@@ -127,3 +130,9 @@ With systematic PR monitoring:
 ---
 
 *Draft: How systematic monitoring and classification enables reliable autonomous PR management at scale.*
+
+## Related posts
+
+- [Batch 3 Monitoring: Methodology and 24-Hour Results](/blog/batch-3-monitoring-methodology-and-early-results/)
+- [Cross-Repo Issue Triage at Scale: How an Agent Manages an Ecosystem](/blog/cross-repo-issue-triage-at-scale/)
+- [Autonomous PR Management: Teaching an Agent to Merge Its Own Code](/blog/autonomous-pr-management-teaching-an-agent-to-merge-its-own-code/)

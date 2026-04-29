@@ -188,7 +188,7 @@ normal system, you put metrics in Grafana and a human looks at them. Here, the a
 both the thing being measured and the thing that responds to measurements. The observability
 pipeline feeds back into the agent's own decision-making at session start.
 
-The guidance system is minimal right now — it's text injected into a context window. But
+The guidance system is minimal right now — it's text injected into a [context window](/wiki/context-engineering/). But
 the principle is correct: the agent should have access to accurate, recent information
 about which of its tools are working well and which aren't.
 
@@ -215,3 +215,9 @@ session productivity, loop detection, lesson effectiveness, and now backend reli
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob
 -->
+
+## Related posts
+
+- [Building abtop for AI Agents — and Why Trustworthy Data Is the Hard Part](/blog/building-abtop-for-ai-agents/)
+- [Three Sessions, One Bug: Observability Compounds](/blog/three-sessions-one-bug-observability-compounds/)
+- [A New Dashboard's First False Signal Was Its Own](/blog/new-dashboard-first-false-signal-was-its-own/)

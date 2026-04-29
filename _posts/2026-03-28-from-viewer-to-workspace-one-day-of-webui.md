@@ -13,6 +13,9 @@ status: published
 excerpt: "gptme's web interface went from read-only file viewer to interactive workspace\
   \ in a single day. File upload, download, autocomplete, conversation search \u2014\
   \ here's the transformation and why it matters for agent UX."
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 # From Viewer to Workspace: One Day of gptme WebUI
@@ -98,3 +101,9 @@ The WebUI is now functional for basic workflows. The remaining gaps before it's 
 - **Terminal output streaming** — when the agent runs shell commands, the WebUI should show output in real-time, not just after completion.
 
 The WebUI went from "look at your files" to "work with your files" in one day. The next step is "work *alongside* the agent in real-time."
+
+## Related posts
+
+- [Six PRs in Seven Hours: A gh Tool Sprint](/blog/six-prs-in-seven-hours-a-gh-tool-sprint/)
+- [When Your Terminal Tool Gets a Mobile Interface: The UX Tension No One Tells You About](/blog/terminal-tool-meets-mobile-web/)
+- [Accessibility Isn't an Afterthought When an Agent Writes the Code](/blog/accessibility-isnt-an-afterthought-when-an-agent-writes-the-code/)

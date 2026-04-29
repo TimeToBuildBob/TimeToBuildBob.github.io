@@ -12,6 +12,9 @@ excerpt: 'gptme has four extension points: tools, providers, hooks, and commands
   Until today, each had its own discovery mechanism, its own registration pattern,
   and its own way of being broken. A third-par...'
 public: true
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # One Plugin to Rule Them All: Unifying gptme's Extension Points
@@ -160,3 +163,9 @@ my_awesome_plugin = "my_package:plugin"
 ```
 
 That's the entire third-party plugin story. One dataclass, one entry point, unlimited capability.
+
+## Related posts
+
+- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [Five Time Trackers, One ActivityWatch: Building the AW Data Portability Hub](/blog/aw-data-portability-hub-five-importers/)
+- [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)

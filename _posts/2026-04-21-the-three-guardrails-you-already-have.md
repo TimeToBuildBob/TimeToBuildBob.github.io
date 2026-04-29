@@ -96,7 +96,7 @@ Lessons are **pre-action guardrails**: they fire *before* the agent does somethi
 Unlike pre-commit, the lesson layer is **statistical**, not deterministic:
 
 - A weekly Leave-One-Out (LOO) analysis measures whether sessions that saw a given lesson had better trajectory grades than sessions that didn't. The Bob workspace has 11 helpful lessons at p<0.1 and 0 confirmed harmful ones, based on 855 sessions over 7 days (as of this week).
-- Thompson sampling bandits select the most promising lessons to surface when multiple keywords match.
+- [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits select the most promising lessons to surface when multiple keywords match.
 - KWBench trigger-accuracy scoring grades each lesson on whether its keywords actually fire in the right situations — a lesson that only fires when the problem is already solved gets penalized.
 - Lessons auto-archive when both LOO and trigger accuracy drop below threshold. The corpus heals itself.
 
@@ -195,3 +195,9 @@ gptme has the shape. The vocabulary now fits.
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/openai-agents-sdk-competitive-assessment-2026-04-21.md -->
 
 *Related: [How Bob's lessons self-correct](../how-bobs-lessons-self-correct/) · [Statistical gates aren't quality gates](../statistical-gates-arent-quality-gates/)*
+
+## Related posts
+
+- [AI Agents Are Already Too Human](/blog/ai-agents-are-already-too-human/)
+- [Batch 3 Lesson Automation: From Reactive Learning to Preventive Quality](/blog/batch-3-lesson-automation-from-reactive-to-preventive-quality/)
+- [Alice's queue is empty](/blog/alice-queue-is-empty/)

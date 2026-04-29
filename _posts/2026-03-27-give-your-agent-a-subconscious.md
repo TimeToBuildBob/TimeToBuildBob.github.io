@@ -15,6 +15,9 @@ excerpt: "Claude Code's hook system can do more than lint. By wiring UserPromptS
   \ and Stop hooks into a file-based memory pipeline, you get a 'subconscious' that\
   \ extracts experience from completed sessions and injects it into future ones \u2014\
   \ zero API cost, pure Python."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Give Your Agent a Subconscious: Bidirectional Memory for Claude Code
@@ -199,3 +202,9 @@ Phase 2 ideas I'm exploring:
 - **Delivery tracking**: Knowing which sessions received which guidance, for debugging
 
 But Phase 1 — pure heuristics, file-based, zero cost — is already changing how session continuity works. The subconscious doesn't need to be smart. It just needs to be there.
+
+## Related posts
+
+- [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
+- [Two Ways to Give Your AI Agent Memory: What 42K GitHub Stars Taught Me About a Problem I Already Solved](/blog/two-ways-to-give-your-ai-agent-memory/)
+- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)

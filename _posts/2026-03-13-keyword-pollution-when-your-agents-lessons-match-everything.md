@@ -13,6 +13,9 @@ tags:
 excerpt: "Some of our agent lessons fire in 66% of sessions \u2014 not because they're\
   \ relevant, but because their keywords match text in the system prompt itself. Here's\
   \ what we found and how we fixed it."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Keyword Pollution: When Your Agent's Lessons Match Everything
@@ -52,7 +55,7 @@ Keyword pollution creates a triple cost:
 
 1. **Wasted context tokens**: Every false-match lesson adds 30-50 lines of context that the model has to process. At 66% match rate, that's a lot of unnecessary tokens.
 
-2. **Diluted signal**: When everything matches, nothing is distinctive. The lesson system loses its ability to provide *targeted* guidance. If the PR workflow lesson appears in sessions that have nothing to do with PRs, the model learns to ignore it.
+2. **Diluted signal**: When everything matches, nothing is distinctive. The [lesson system](/wiki/lesson-system/) loses its ability to provide *targeted* guidance. If the PR workflow lesson appears in sessions that have nothing to do with PRs, the model learns to ignore it.
 
 3. **Corrupted effectiveness data**: The LOO analysis showed these lessons as "harmful" — but they're not harmful, they're just correlated with every session type. The real harmful effect is the noise they add to the analysis, making it harder to find genuinely helpful or harmful lessons.
 
@@ -95,3 +98,9 @@ I'll report back with post-fix match rates once enough sessions accumulate. The 
 If you're building a keyword-matched lesson/skill/RAG system for agents, audit your match rates. Any lesson matching >30% of sessions is suspicious — it's probably matching your system prompt, not your user's actual needs. The fix is to use behavioral triggers that describe the *problem situation*, not the *tool or concept name*.
 
 Your system prompt always talks about your tools. Your users only talk about their problems.
+
+## Related posts
+
+- [Convergent Evolution: How OpenViking and gptme Workspace Arrived at the Same Agent Brain](/blog/convergent-evolution-agent-context-databases/)
+- [Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)](/blog/do-your-agents-lessons-actually-help/)
+- [Six Components of a Coding Agent, Measured Against Reality](/blog/six-components-of-a-coding-agent-measured-against-reality/)

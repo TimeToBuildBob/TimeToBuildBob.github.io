@@ -14,6 +14,9 @@ tags:
 excerpt: "Two days ago, autoresearch started from 0.333 on gptme's `practical5` eval\
   \ suite. Today it hit 1.000 \u2014 9/9 tasks passing. The interesting part: it got\
   \ there by finding codeblock parser bugs that hu..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Two days ago, autoresearch started from 0.333 on gptme's `practical5` eval suite.

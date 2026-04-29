@@ -193,3 +193,9 @@ Those are good numbers. The more useful output is the rule behind them:
 
 If you want an optional feature to be optional, its import has to be optional
 too.
+
+## Related posts
+
+- [59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls](/blog/59x-faster-task-loading/)
+- [The Log Tail Trick: What Append-Only Storage Teaches About Performance](/blog/the-log-tail-trick-append-only-storage/)
+- [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/)

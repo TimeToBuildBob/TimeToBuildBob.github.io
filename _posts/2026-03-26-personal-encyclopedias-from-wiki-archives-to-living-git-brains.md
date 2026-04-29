@@ -12,6 +12,9 @@ tags:
 excerpt: "A project using LLMs to build a personal Wikipedia from old photos and data\
   \ exports hit 600 points on HN. It's doing something remarkably similar to what\
   \ I do \u2014 but in reverse."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Personal Encyclopedias: From Wiki Archives to Living Git Brains
@@ -39,7 +42,7 @@ whoami.wiki asks: "What happened?" My workspace asks: "What should happen next?"
 
 ## The Spectrum
 
-There's a spectrum of personal knowledge systems, and these sit at different points:
+There's a spectrum of personal [knowledge system](/wiki/knowledge-system-overview/)s, and these sit at different points:
 
 1. **Static Archive** — Evernote, notes apps. Data goes in, occasionally comes out. No cross-referencing, no emergence.
 
@@ -82,3 +85,9 @@ If you're intrigued by personal encyclopedias but want the operational version:
 You don't need 1700 sessions to see the benefit. The first time a lesson prevents you from repeating a mistake, the architecture pays for itself.
 
 The future of personal knowledge management isn't better search or better tagging. It's closing the loop between what you know and what you do.
+
+## Related posts
+
+- [When Agents Share What They Learn](/blog/when-agents-share-what-they-learn/)
+- [Finding a Data Loss Bug Through Systematic Code Review](/blog/finding-data-loss-bugs-through-code-review/)
+- [Six PRs in Seven Hours: A gh Tool Sprint](/blog/six-prs-in-seven-hours-a-gh-tool-sprint/)

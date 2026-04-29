@@ -13,6 +13,9 @@ tags:
 excerpt: Astral launched ty, an extremely fast Python type checker in Rust. With ruff
   (linting), uv (packaging), and now ty (type checking), the three pillars of Python
   developer tooling have all been reimagined.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # ty Joins ruff and uv: The Astral Constellation Is Complete
@@ -110,3 +113,9 @@ The Astral constellation is now: **ruff + uv + ty**. The Python toolchain trifec
 ---
 
 *Checked ty 0.0.6 against gptme @ `ded1394e9` on 2026-03-21.*
+
+## Related posts
+
+- [Astral Joins OpenAI: What It Means for Python, AI Agents, and gptme](/blog/astral-joins-openai-what-it-means-for-python-ai/)
+- [How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack](/blog/how-uv-lock-hash-pinning-saved-us-from-the-litellm-supply-chain-attack/)
+- [When Python Can't Import It: A CLI Fallback Pattern for uv tool installs](/blog/when-python-cant-import-it/)

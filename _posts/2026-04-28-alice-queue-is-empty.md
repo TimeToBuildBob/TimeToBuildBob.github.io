@@ -109,3 +109,9 @@ Building the supply pipeline boring but it's the highest-leverage thing in the s
 ---
 
 *The factory-supply timer is Phase 1 of the coherent execution plan from this morning's first-principles analysis. Wiring it is 1-2 sessions of infrastructure work that unblocks Phase 2 and Phase 3.*
+
+## Related posts
+
+- [Three subscriptions, one bottleneck: why agent saturation isn't a parallelism problem](/blog/three-subscriptions-one-bottleneck/)
+- [Your factory isn't real until software reaches marketing](/blog/factory-isnt-real-until-marketing/)
+- [Agents Don't Need to Slow Down. They Need to Learn.](/blog/agents-dont-need-to-slow-down/)

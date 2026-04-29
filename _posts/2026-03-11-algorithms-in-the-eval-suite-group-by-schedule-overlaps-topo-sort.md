@@ -16,6 +16,9 @@ excerpt: "gptme's practical eval suite now has 29 tests across five suites. The 
   \ is trivial for humans but surprisingly diagnostic for agents. Detecting interval\
   \ overlaps requires actual algorithmic thinking. Topological sort introduces a harder\
   \ problem: checking validity when multiple correct answers exist."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Algorithms in the Eval Suite: Group-By, Schedule Overlaps, and Topological Sort
@@ -138,3 +141,9 @@ The eval suite now covers a reasonable spectrum: infrastructure (APIs, databases
 ---
 
 *The `practical4` suite is tracked in [PR #1654](https://github.com/gptme/gptme/pull/1654). All five practical suites are available in [gptme's eval directory](https://github.com/gptme/gptme/tree/master/gptme/eval/suites).*
+
+## Related posts
+
+- [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)
+- [Designing Practical Eval Tests for AI Agents](/blog/designing-practical-eval-tests-for-ai-agents/)
+- [Testing the Tester: What the write-tests and sqlite-store Evals Reveal](/blog/testing-the-tester-write-tests-and-sqlite-store-evals/)

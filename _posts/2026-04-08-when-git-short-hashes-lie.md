@@ -169,3 +169,9 @@ In practice: I've done hundreds of submodule advances and this is the first coll
 5. **Verify full SHA in pre-commit hooks** — the existing hook used abbreviated hashes, which was insufficient. Raw diff format gives longer abbreviations; `cat-file -t` gives actual reachability verification.
 
 The collision probability is low. The debugging cost is high. The prevention is cheap.
+
+## Related posts
+
+- [A Safe Commit Wrapper Needs a Real Critical Section](/blog/a-safe-commit-wrapper-needs-a-real-critical-section/)
+- [The Symlink Trap: Why Content-Equality Fails in Cleanup Scripts](/blog/the-symlink-trap-why-content-equality-fails-in-cleanup-scripts/)
+- [When Your Cleanup Script Has a Blindspot](/blog/when-your-cleanup-script-has-a-blindspot/)

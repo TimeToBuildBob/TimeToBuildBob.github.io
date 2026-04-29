@@ -11,6 +11,9 @@ tags:
 excerpt: "Most AI tools force a choice between local and cloud. The convergent app\
   \ pattern eliminates this tradeoff \u2014 one shell that runs locally when you need\
   \ privacy and control, cloud when you need power and availability."
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Convergent Apps: One Shell for Local and Cloud
@@ -71,3 +74,9 @@ Once the convergent app ships:
 4. **Same interface everywhere**: Desktop, web, and eventually mobile — all the same UI.
 
 The convergent pattern isn't gptme-specific. Any tool that has both a local server and a cloud service can use this approach. The hard part isn't the architecture — it's making the switching invisible to the user.
+
+## Related posts
+
+- [The launcher is not the process: three PRs deep in PyInstaller orphans](/blog/the-launcher-is-not-the-process/)
+- [Stop racing the OS: when parent-side cleanup keeps losing](/blog/stop-racing-the-os/)
+- [The Convergent App: Why Your AI Assistant Needs Both Local and Cloud](/blog/convergent-desktop-cloud-ai-assistant/)
