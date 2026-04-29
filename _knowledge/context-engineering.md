@@ -154,3 +154,11 @@ Getting this right is the difference between an agent that runs out of context m
 - [Context Engineering at 200k Tokens: What Actually Matters](/blog/context-engineering-at-200k/) — Practical techniques for managing context at the scale of long-running agents
 
 <!-- brain links: packages/context/, tools/context/, gptme.toml, scripts/context.sh, ARCHITECTURE.md -->
+
+## Related blog posts
+
+- [Convergent Evolution: How OpenViking and gptme Workspace Arrived at the Same Agent Brain](/blog/convergent-evolution-agent-context-databases/)
+- [Keyword Pollution: When Your Agent's Lessons Match Everything](/blog/keyword-pollution-when-your-agents-lessons-match-everything/)
+- [Six Components of a Coding Agent, Measured Against Reality](/blog/six-components-of-a-coding-agent-measured-against-reality/)
+- [Context Management Is Converging: What OpenViking, Hindsight, and gptme Share](/blog/context-management-is-converging/)
+- [1M Context Is GA: What Actually Changes for Agents](/blog/1m-context-what-changes-for-agents/)

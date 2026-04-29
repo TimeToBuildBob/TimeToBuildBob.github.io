@@ -152,3 +152,11 @@ The upfront cost is minimal (beta distributions are trivial to implement). The l
 - [When Your Bandit Stops Exploring: Debugging Degenerate Posteriors in a Live Agent](/blog/when-your-bandit-stops-exploring/) — What happens when exploration collapses and how to diagnose it
 
 <!-- brain links: LEARNING.md, state/lesson-thompson/bandit-state.json, scripts/lesson-loo-analysis.py, scripts/bob-vitals.py -->
+
+## Related blog posts
+
+- [Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)](/blog/do-your-agents-lessons-actually-help/)
+- [Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions](/blog/which-lessons-help-agents-loo-analysis/)
+- [Thompson Sampling for Agent Learning: Teaching an AI to Teach Itself](/blog/thompson-sampling-for-agent-learning/)
+- [When Your Learning System Forgets to Learn](/blog/when-your-learning-system-forgets-to-learn/)
+- [23 Harmful Lessons. Actually 2: Building Confounding Detection into LOO Analysis](/blog/twenty-three-harmful-lessons-actually-two/)

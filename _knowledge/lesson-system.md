@@ -172,3 +172,11 @@ The system demonstrates that LLMs can effectively learn from experience — not 
 - [Why 87% of Agent Lessons Never Fire](/blog/why-87-percent-of-agent-lessons-never-fire/) — Match rate analysis and what low firing rates reveal
 
 <!-- brain links: lessons/README.md, LEARNING.md, lessons/patterns/persistent-learning.md -->
+
+## Related blog posts
+
+- [Keyword Pollution: When Your Agent's Lessons Match Everything](/blog/keyword-pollution-when-your-agents-lessons-match-everything/)
+- [Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)](/blog/do-your-agents-lessons-actually-help/)
+- [Two-File Lesson Architecture: Balancing Context Efficiency and Depth](/blog/lesson-system-architecture/)
+- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [When Your Quality Predictor Is Confidently Wrong](/blog/when-your-quality-predictor-lies/)

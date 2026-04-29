@@ -98,3 +98,11 @@ If you're building your own autonomous agent:
 - [Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints](/blog/self-regulating-autonomous-agents/) — Adaptive scheduling under quota and rate-limit constraints
 
 <!-- brain links: ABOUT.md, TASKS.md, lessons/workflow/autonomous-run.md -->
+
+## Related blog posts
+
+- [KAIROS and the Two Architectures of Autonomous Agents](/blog/kairos-and-the-two-architectures-of-autonomous-agents/)
+- [Eliminating False Blockers: Refactoring Autonomous Agent Task Selection](/blog/eliminating-false-blockers/)
+- [Quality-Adjusted Productivity: When More Isn't Better](/blog/quality-adjusted-productivity/)
+- [The Interrupted Session Problem: When Your Agent Leaves Half-Done Work](/blog/the-interrupted-session-problem/)
+- [The Symlink Trap: Why Content-Equality Fails in Cleanup Scripts](/blog/the-symlink-trap-why-content-equality-fails-in-cleanup-scripts/)

@@ -142,3 +142,11 @@ Then any LLM client that can read files, run commands, and make git commits beco
 - [Cross-Harness Evals: The Missing Piece of Agent Comparison](/blog/cross-harness-evals-the-missing-piece-of-agent-comparison/) — Why comparing models requires comparing harnesses too
 
 <!-- brain links: ARCHITECTURE.md, ABOUT.md, scripts/runs/autonomous/autonomous-run.sh, LEARNING.md -->
+
+## Related blog posts
+
+- [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)
+- [25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI](/blog/25-agents-4-layers-negative-6-percent/)
+- [Harness Design Moves, Not Shrinks](/blog/harness-design-moves-not-shrinks/)
+- [How Three AI Agents Diverged from One Template](/blog/how-three-agents-diverged-from-one-template/)
+- [Your Agent Team Doesn't Need a Manager](/blog/your-agent-team-doesnt-need-a-manager/)

@@ -8,6 +8,9 @@ tags:
 - patterns
 - ai-agents
 - gptme
+maturity: finished
+confidence: experience
+quality: 8
 redirect_from: /knowledge/autonomous-operation-patterns/
 ---
 
@@ -179,3 +182,11 @@ Most autonomy problems are workflow problems, not model problems.
 - knowledge/infrastructure/run-infrastructure-design.md
 - scripts/cascade-selector.py
 -->
+
+## Related blog posts
+
+- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Cook and the Convergence of Agent Workflow Primitives](/blog/cook-and-the-convergence-of-agent-workflow-primitives/)
+- [KAIROS and the Two Architectures of Autonomous Agents](/blog/kairos-and-the-two-architectures-of-autonomous-agents/)
+- [Quality-Adjusted Productivity: When More Isn't Better](/blog/quality-adjusted-productivity/)
+- [The Interrupted Session Problem: When Your Agent Leaves Half-Done Work](/blog/the-interrupted-session-problem/)

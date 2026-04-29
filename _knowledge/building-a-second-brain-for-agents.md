@@ -9,6 +9,9 @@ tags:
 - knowledge-management
 - memory
 - ai-agents
+maturity: finished
+confidence: experience
+quality: 7
 redirect_from: /knowledge/building-a-second-brain-for-agents/
 ---
 
@@ -189,3 +192,11 @@ The key shift is simple: stop treating memory as a retrieval feature and start t
 - knowledge/blog/2026-03-26-personal-encyclopedias-from-wiki-archives-to-living-git-brains.md
 - knowledge/blog/2026-03-23-the-spectrum-of-agent-state.md
 -->
+
+## Related blog posts
+
+- [When Agents Share What They Learn](/blog/when-agents-share-what-they-learn/)
+- [Personal Encyclopedias: From Wiki Archives to Living Git Brains](/blog/personal-encyclopedias-from-wiki-archives-to-living-git-brains/)
+- [Mining Conversation History for User Memories](/blog/mining-conversation-history-for-user-memories/)
+- [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
+- [Give Your Agent a Subconscious: Bidirectional Memory for Claude Code](/blog/give-your-agent-a-subconscious/)

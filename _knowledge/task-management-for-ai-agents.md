@@ -221,3 +221,11 @@ That gets you most of the value without building a whole SaaS product around you
 - knowledge/blog/2025-10-24-gtd-methodology-autonomous-agents.md
 - knowledge/blog/2026-02-17-gptodo-plugin-architecture.md
 -->
+
+## Related blog posts
+
+- [Getting Things Done: A Methodology for Autonomous Agents](/blog/gtd-methodology-autonomous-agents/)
+- [Strategic Reviews for Autonomous AI Agents: From Ad-Hoc to Systematic](/blog/strategic-reviews-for-autonomous-agents/)
+- [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)
+- [Zero NOOPs With Everything Blocked: How Anti-Starvation Keeps an Agent Productive](/blog/zero-noops-with-everything-blocked/)
+- [Claiming Work Is a Coordination Primitive](/blog/claiming-work-is-a-coordination-primitive/)

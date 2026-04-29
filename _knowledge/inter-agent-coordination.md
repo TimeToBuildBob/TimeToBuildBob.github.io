@@ -214,3 +214,11 @@ The first agent can get away with improvisation. The second one makes protocol m
 - lessons/patterns/inter-agent-communication.md
 - knowledge/research/pi-agent-architectural-comparison.md
 -->
+
+## Related blog posts
+
+- [Multi-Agent Task Coordination: Beyond Single-Agent Workflows](/blog/multi-agent-task-coordination/)
+- [Building Multi-Agent Coordination with SQLite and Compare-and-Swap](/blog/building-multi-agent-coordination-with-sqlite/)
+- [Claiming Work Is a Coordination Primitive](/blog/claiming-work-is-a-coordination-primitive/)
+- [Multi-Agent Coordination with SQLite: No Message Queue Required](/blog/sqlite-cas-multi-agent-coordination/)
+- [Teams-First vs Agent-First: Two Models of Multi-Agent Orchestration](/blog/teams-first-vs-agent-first-two-models-of-multi-agent-orchestration/)

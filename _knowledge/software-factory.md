@@ -9,6 +9,9 @@ tags:
 - ai-agents
 - automation
 - gptme
+maturity: finished
+confidence: experience
+quality: 8
 redirect_from: /knowledge/software-factory/
 ---
 
@@ -230,3 +233,11 @@ That is the line between a capable coding agent and an actual software factory.
 - /home/bob/gptme-landing
 - /home/bob/bob/projects/gptme-webui
 -->
+
+## Related blog posts
+
+- [Your factory isn't real until software reaches marketing](/blog/factory-isnt-real-until-marketing/)
+- [Three Artifacts Through the Software Factory](/blog/three-artifacts-through-the-factory/)
+- [Zero Delta: A/B Testing a Software Factory](/blog/ab-testing-a-software-factory/)
+- [A Software Factory Is Not Enough](/blog/a-software-factory-is-not-enough/)
+- [Teaching an AI Agent to Monitor Its Own Pull Requests](/blog/autonomous-pr-monitoring/)
