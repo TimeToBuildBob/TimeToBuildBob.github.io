@@ -17,8 +17,10 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+from PIL import Image, ImageChops
+
 import yaml
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import ImageDraw, ImageFilter, ImageFont
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -42,6 +44,30 @@ IMAGES_DIR = ROOT / "assets" / "images"
 OG_DIR = IMAGES_DIR / "og"
 AVATAR_PATH = IMAGES_DIR / "bob-256.jpg"
 CONFIG_PATH = ROOT / "_config.yml"
+
+
+def images_equal(path: Path, image: Image.Image) -> bool:
+    """Return True if path already contains the same rendered image."""
+    if not path.exists():
+        return False
+    try:
+        with Image.open(path) as existing:
+            diff = ImageChops.difference(existing.convert("RGB"), image.convert("RGB"))
+            return diff.getbbox() is None
+    except OSError:
+        return False
+
+
+def save_if_changed(
+    img: Image.Image, output_path: Path, *, force: bool = False
+) -> bool:
+    """Save an OG image only when pixels changed; return True when written."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    rgb = img.convert("RGB")
+    if not force and images_equal(output_path, rgb):
+        return False
+    rgb.save(output_path, "PNG", optimize=True)
+    return True
 
 
 def load_font(path: str, size: int) -> ImageFont.FreeTypeFont:
@@ -131,8 +157,12 @@ def auto_title_size(title: str, draw: ImageDraw.ImageDraw,
 
 def generate_post_og(title: str, date_str: str, tags: list[str],
                      excerpt: str, hero_path: Path | None,
-                     output_path: Path, site_domain: str = "") -> None:
-    """Generate OG image for a blog post (Variant 1 or 2)."""
+                     output_path: Path, site_domain: str = "",
+                     *, force: bool = False) -> bool:
+    """Generate OG image for a blog post (Variant 1 or 2).
+
+    Returns True when the output file changed.
+    """
     img = Image.new("RGBA", (WIDTH, HEIGHT))
 
     if hero_path and hero_path.exists():
@@ -263,12 +293,16 @@ def generate_post_og(title: str, date_str: str, tags: list[str],
             ey += (bbox_e[3] - bbox_e[1]) + 6
 
     # Save
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    img.convert("RGB").save(output_path, "PNG", optimize=True)
+    return save_if_changed(img, output_path, force=force)
 
 
-def generate_site_default(output_path: Path, tagline: str) -> None:
-    """Generate the site-default OG image (Variant 3)."""
+def generate_site_default(
+    output_path: Path, tagline: str, *, force: bool = False
+) -> bool:
+    """Generate the site-default OG image (Variant 3).
+
+    Returns True when the output file changed.
+    """
     img = Image.new("RGBA", (WIDTH, HEIGHT))
     draw_diagonal_gradient(img, PRIMARY, DARK_BG)
 
@@ -313,8 +347,7 @@ def generate_site_default(output_path: Path, tagline: str) -> None:
     draw.text((cx - tw2 // 2, accent_y + 26),
               tagline, fill=(255, 255, 255, 200), font=tagline_font)
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    img.convert("RGB").save(output_path, "PNG", optimize=True)
+    return save_if_changed(img, output_path, force=force)
 
 
 # ---------------------------------------------------------------------------
@@ -384,8 +417,8 @@ def main() -> None:
 
     # --- Site default ---
     default_path = IMAGES_DIR / "og-default.png"
-    print(f"Generating site default → {default_path.relative_to(ROOT)}")
-    generate_site_default(default_path, tagline)
+    print(f"Checking site default → {default_path.relative_to(ROOT)}")
+    generate_site_default(default_path, tagline, force=args.force)
 
     # --- Blog posts ---
     posts = sorted(POSTS_DIR.glob("*.md"))
@@ -415,10 +448,12 @@ def main() -> None:
         if hero_image:
             hero_path = ROOT / hero_image.lstrip("/")
 
-        print(f"  [{generated + 1}] {slug}")
-        generate_post_og(title, date_str, tags, excerpt, hero_path, output_path,
-                         site_domain)
-        generated += 1
+        if generate_post_og(title, date_str, tags, excerpt, hero_path, output_path,
+                            site_domain, force=args.force):
+            generated += 1
+            print(f"  [{generated}] {slug}")
+        else:
+            skipped += 1
 
     print(f"\nDone: {generated} generated, {skipped} skipped (up-to-date)")
 
