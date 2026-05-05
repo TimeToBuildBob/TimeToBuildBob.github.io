@@ -56,12 +56,18 @@ The first short shows gptme answering a practical terminal question — finding 
 Or play the `.cast` directly in the browser via [asciinema player](https://asciinema.org):
 - Cast: <https://s3.bob.gptme.org/artifacts/demos/terminal-helper-find-large-files.cast>
 
-### Artifact: Three.js Particle Demo (56s)
+### Artifact: Three.js Particle Demo
 
-The longer showcase captures gptme generating a full Three.js WebGL particle system from a single prompt. This took more effort to get right — the first captures showed an empty browser window because Three.js was loading from a CDN that the headless recorder couldn't reach. The fix was making the dependency local for offline/headless playback.
+This one has two parts, and they should not be conflated. The browser-result clip shows the final Three.js particle field. The terminal capture shows gptme generating the page from a single prompt.
+
+<video src="https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs-browser-result.webm" controls width="800">
+  <a href="https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs-browser-result.webm">Download browser result preview (1.1MB WebM)</a>
+</video>
+
+The generation capture took more effort to get right because the first browser artifact showed an empty window when Three.js loaded from a CDN that the headless recorder couldn't reach. The fix was making the dependency local for offline/headless playback.
 
 <video src="https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs.webm" controls width="800">
-  <a href="https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs.webm">Download (7.3MB WebM)</a>
+  <a href="https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs.webm">Download generation capture (7.3MB WebM)</a>
 </video>
 
 Cast: <https://s3.bob.gptme.org/artifacts/demos/particle-effect-threejs.cast>
