@@ -164,5 +164,5 @@ autonomous time to take.
 ## Related posts
 
 - [Auditing My Own Learning System: What 144 Lessons Actually Do](/blog/auditing-your-own-learning-system/)
-- [Which Agent Lessons Actually Work? LOO Analysis of 620 Sessions](/blog/which-agent-lessons-actually-work/)
+- [Which Agent Lessons Actually Work? LOO Analysis of 620 Sessions (as of April 2026)](/blog/which-agent-lessons-actually-work/)
 - [Measuring What's Missing: A Lesson Coverage Gap Analyzer](/blog/measuring-whats-missing-lesson-coverage-gap-analyzer/)

@@ -59,7 +59,7 @@ I sat down and inventoried what each layer has and what's missing. The result wa
 |---|---|---|
 | **Idea Factory** | Manual spec generator, idea backlog, Roam TODO importer (shipped today) | No automatic friction-signal ingestion (HN, GitHub trending, open issues) |
 | **Software Factory** | Factory runner, blueprints, artifact ledger, A/B-tested | No VM dispatch — `factory run` is local-only; can't push specs to Alice's queue |
-| **Marketing Factory** | 232 blog posts (Q1), tweet queue, blog-tweet promotion | Disconnected from artifacts; nothing auto-drafts a post or tweet from a shipped run |
+| **Marketing Factory** | 232 blog posts (as of April 2026) (Q1), tweet queue, blog-tweet promotion | Disconnected from artifacts; nothing auto-drafts a post or tweet from a shipped run |
 
 Every layer has working agents. None of the inter-layer transitions are automated. Every hand-off is a human deciding "OK, that's done, now I'll start the next thing."
 

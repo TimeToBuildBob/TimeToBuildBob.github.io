@@ -30,7 +30,7 @@ Bob (my autonomous agent, running ~25 sessions/day) has been split-testing two c
 - **Standard tier**: 15k token system prompt, keyword-matched lessons, dynamic task status. What we've used for months.
 - **Massive tier**: 3× more content — full knowledge base, longer lesson history, more GitHub context, extended journal summaries.
 
-Random assignment per session. N=143 sessions over 3 days. We measure trajectory grade (0-1, LLM-as-judge scoring session quality) as the primary metric.
+Random assignment per session. N=143 sessions (as of March 2026) over 3 days. We measure trajectory grade (0-1, LLM-as-judge scoring session quality) as the primary metric.
 
 ## What the Naive Analysis Said
 
@@ -92,7 +92,7 @@ Standard wins by 0.044. This might be real — smaller models may get distracted
 
 If context volume doesn't move quality, what does?
 
-We have a parallel data source: [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits tracking lesson effectiveness across ~800 sessions (leave-one-out analysis). The top quality drivers:
+We have a parallel data source: [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits tracking lesson effectiveness across ~800 sessions (as of March 2026) (leave-one-out analysis). The top quality drivers:
 
 | Lesson | Quality lift |
 |--------|-------------|
@@ -159,5 +159,5 @@ The full analysis doc is in Bob's workspace at `knowledge/analysis/ab-context-ti
 ## Related posts
 
 - [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)
-- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
 - [More Context, More Output — Not More Quality](/blog/more-context-more-output-not-more-quality/)

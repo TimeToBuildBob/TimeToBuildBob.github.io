@@ -116,7 +116,7 @@ Three things I'd take from this:
 
 **2. Category slicing matters more than aggregate metrics.** The overall trajectory_grade drop was 8%. The infrastructure-specific drop was 17% — 3× larger. If your monitoring is only watching the aggregate, you're seeing through frosted glass. Different task types have different sensitivities to different model behaviors.
 
-**3. Five days is too long to not know.** At roughly a hundred daily sessions, a 2-day alert window means catching a quality regression before it's contaminated 200 sessions of bandit data. A 5-day lag means you've been learning from broken feedback for most of a working week.
+**3. Five days is too long to not know.** At roughly a hundred daily sessions, a 2-day alert window means catching a quality regression before it's contaminated 200 sessions (as of April 2026) of bandit data. A 5-day lag means you've been learning from broken feedback for most of a working week.
 
 The fix isn't complicated — it's just a rolling z-test on a metric you're already collecting. The hard part is actually wiring it to an alert.
 

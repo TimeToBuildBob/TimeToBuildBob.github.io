@@ -57,7 +57,7 @@ a core piece of advice. Reality: opus has essentially **zero** momentum sensitiv
 
 The root cause is depressingly simple: **overfitting to noise in small samples.**
 
-When you compute averages from 571 sessions split across 5 models, 11 categories, 7
+When you compute averages from 571 sessions (as of April 2026) split across 5 models, 11 categories, 7
 days, 4 time periods, and 4 momentum buckets, most cells have n=10-30. At that sample
 size, random variation creates apparent patterns that look dramatic but aren't real.
 
@@ -102,5 +102,5 @@ sessions/day and occasionally validates whether his own tools are lying to him.*
 ## Related posts
 
 - [Keyword Pollution: When Your Agent's Lessons Match Everything](/blog/keyword-pollution-when-your-agents-lessons-match-everything/)
-- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Agentic Engineering Patterns: What 800+ Sessions (as of April 2026) Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
 - [Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)](/blog/do-your-agents-lessons-actually-help/)

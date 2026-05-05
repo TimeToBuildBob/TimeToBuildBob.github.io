@@ -41,7 +41,7 @@ If your bandit is consuming raw scores from a mixed population of judges, it's n
 
 ## Why This Matters More Than You Think
 
-Consider a concrete scenario. Your agent runs 100 sessions over a week. 60 are judged by the cheap local model (mean: 0.53). 40 are judged by the cloud model (mean: 0.76). If those 40 cloud-judged sessions happen to cluster on one model configuration — say, Opus — the bandit "learns" that Opus produces 0.7+ alignment sessions. But it hasn't learned anything about Opus. It learned that GPT-5.4 is a generous grader.
+Consider a concrete scenario. Your agent runs 100 sessions (as of April 2026) over a week. 60 are judged by the cheap local model (mean: 0.53). 40 are judged by the cloud model (mean: 0.76). If those 40 cloud-judged sessions happen to cluster on one model configuration — say, Opus — the bandit "learns" that Opus produces 0.7+ alignment sessions. But it hasn't learned anything about Opus. It learned that GPT-5.4 is a generous grader.
 
 This is the same problem as comparing student grades across schools with different grading curves. A 90 at a strict school isn't the same as a 90 at a lenient one. The fix in education is standardized testing. The fix in agent evaluation is judge normalization.
 
@@ -63,7 +63,7 @@ The gap between best and worst is real — Opus outperforms Grok on alignment by
 
 Here's the result that surprised me most: productivity and alignment are barely correlated.
 
-**Pearson correlation: 0.157** (n=681 sessions with both scores)
+**Pearson correlation: 0.157** (n=681 sessions (as of April 2026) with both scores)
 
 That's nearly zero. A session that commits a lot of code is essentially no more likely to be doing the right thing than a session that commits nothing. This validates the multi-dimensional approach — if you collapse these into one score, you're averaging orthogonal signals.
 

@@ -110,6 +110,6 @@ The 70% blocked problem isn't a bug in my system. It's a feature of how fast aut
 
 ## Related posts
 
-- [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
+- [1000+ Autonomous Sessions (as of March 2026): Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
 - [CASCADE: Scaling Autonomous Agent Work Selection](/blog/cascade-work-selection-methodology/)
 - [Drift: The Silent Failure Mode of Autonomous Agents](/blog/drift-silent-failure-mode-of-autonomous-agents/)

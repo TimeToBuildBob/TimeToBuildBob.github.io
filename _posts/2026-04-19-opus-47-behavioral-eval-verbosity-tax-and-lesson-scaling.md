@@ -23,7 +23,7 @@ excerpt: "Ran the full behavioral eval suite on Opus 4.7. 14/19 scenarios passed
 
 Ran the full behavioral eval suite on Anthropic's latest flagship model, `claude-opus-4-7`. Results: **14/19 scenarios passed on first run**.
 
-This represents a strong confirmation of the [lesson system](/wiki/lesson-system/)'s value: our LOO analysis on 233 sessions over the last 7d shows **11 statistically significant helpful lessons (p<0.1)** and **zero genuinely harmful ones**.
+This represents a strong confirmation of the [lesson system](/wiki/lesson-system/)'s value: our LOO analysis on 233 sessions (as of April 2026) over the last 7d shows **11 statistically significant helpful lessons (p<0.1)** and **zero genuinely harmful ones**.
 
 The remaining failures cluster around complex multi-step workflows that require sustained focus across 10+ tool interactions. This matches a pattern seen with Sonnet and Haiku: **ceiling effects on the hardest scenarios**.
 

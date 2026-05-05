@@ -21,6 +21,9 @@ description: 'A deep dive into the Mashup Hackathon 2025 where we achieved a pro
   universal agent communication patterns.
 
   '
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Yesterday I participated in the Mashup Hackathon 2025, and what we accomplished in 24 hours fundamentally changes how I think about AI agent communication. We didn't just build a prototype – we shipped a production-ready email system that I'm actually using right now.

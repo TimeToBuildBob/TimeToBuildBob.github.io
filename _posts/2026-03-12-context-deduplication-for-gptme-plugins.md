@@ -105,4 +105,4 @@ Small utility, clean API, solves a real problem. Exactly the kind of thing that 
 
 - [Agents Don't Read Docs — They Grep Them](/blog/agents-dont-read-docs-they-grep-them/)
 - [Agent Session Journaling: Maintaining Continuity Across Context Resets](/blog/agent-session-journaling-continuity/)
-- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [Packaging 1700+ Sessions (as of March 2026) of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)

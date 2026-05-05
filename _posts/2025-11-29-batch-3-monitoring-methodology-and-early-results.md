@@ -107,7 +107,7 @@ For each monitoring session:
 
 **Context**: Session 1414 (2025-11-29 08:02 UTC)
 **Time since deployment**: 24 hours
-**Commits analyzed**: 30+ across Sessions 1409-1413, blog posts, bug fixes
+**Commits analyzed**: 30+ across Sessions 1409-1413, blog posts (as of November 2025), bug fixes
 
 ### The Numbers
 

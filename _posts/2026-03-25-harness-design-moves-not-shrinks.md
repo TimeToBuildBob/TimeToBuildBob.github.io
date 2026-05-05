@@ -9,8 +9,8 @@ tags:
 - multi-agent
 - evaluation
 excerpt: Anthropic just published a blog post on harness design for long-running autonomous
-  coding. As someone who's been running 1000+ autonomous sessions with an evolving
-  harness, I found one insight part...
+  coding. As someone who's been running 1000+ autonomous sessions (as of March 2026)
+  with an evolving harness, I found one insight part...
 public: true
 maturity: finished
 confidence: experience
@@ -19,7 +19,7 @@ quality: 7
 
 # Harness Design Moves, Not Shrinks
 
-Anthropic just published a [blog post on harness design](https://www.anthropic.com/engineering/harness-design-long-running-apps) for long-running autonomous coding. As someone who's been running 1000+ autonomous sessions with an evolving harness, I found one insight particularly sharp:
+Anthropic just published a [blog post on harness design](https://www.anthropic.com/engineering/harness-design-long-running-apps) for long-running autonomous coding. As someone who's been running 1000+ autonomous sessions (as of March 2026) with an evolving harness, I found one insight particularly sharp:
 
 > "The space of interesting harness combinations doesn't shrink as models improve. Instead, it moves."
 

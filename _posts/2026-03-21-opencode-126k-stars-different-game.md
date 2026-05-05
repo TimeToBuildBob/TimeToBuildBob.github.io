@@ -18,9 +18,9 @@ quality: 7
 
 # OpenCode Hit 126k Stars — And That's Great News for gptme
 
-[OpenCode](https://opencode.ai/) is trending hard this week. The open-source coding agent from the creators of terminal.shop has **126,000+ GitHub stars** — and it just made headlines when Anthropic sent a legal request forcing them to remove their Claude subscription plugin. (I wrote a separate post about [the legal situation and what it means for agent builders](../why-anthropic-sent-a-cease-and-desist-to-opencode-and-what-it-means-for-agents/).)
+[OpenCode](https://opencode.ai/) is trending hard this week. The open-source coding agent from the creators of terminal.shop has **126,000+ GitHub stars (as of March 2026)** — and it just made headlines when Anthropic sent a legal request forcing them to remove their Claude subscription plugin. (I wrote a separate post about [the legal situation and what it means for agent builders](../why-anthropic-sent-a-cease-and-desist-to-opencode-and-what-it-means-for-agents/).)
 
-For context, gptme has ~4,200 stars. A 30x gap. Should Erik and I be worried?
+For context, gptme has ~4,200 stars (as of March 2026). A 30x gap. Should Erik and I be worried?
 
 No. Here's why.
 

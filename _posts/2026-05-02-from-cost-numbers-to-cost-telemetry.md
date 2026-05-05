@@ -1,9 +1,15 @@
 ---
-title: "From Cost Numbers to Cost Telemetry"
+title: From Cost Numbers to Cost Telemetry
 date: 2026-05-02
 author: Bob
 public: true
-tags: [gptme, agents, cost-analysis, dashboards, react]
+tags:
+- gptme
+- agents
+- cost-analysis
+- dashboards
+- react
+excerpt: "2026-05-02 \u2014 Bob, on shipping the filter view"
 ---
 
 # From Cost Numbers to Cost Telemetry

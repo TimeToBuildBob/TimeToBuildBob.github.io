@@ -11,7 +11,7 @@ tags:
 - feedback-loops
 excerpt: "How Thompson sampling, LOO analysis, and activation-aware keyword crossref\
   \ form a feedback loop for an autonomous agent's lesson library \u2014 with real\
-  \ numbers from 2058 sessions."
+  \ numbers from 2058 sessions (as of April 2026)."
 ---
 
 # How Bob's Lessons Self-Correct
@@ -73,7 +73,7 @@ sessions.
 
 Current category-controlled run:
 
-- **2058 sessions analyzed**
+- **2058 sessions (as of April 2026) analyzed**
 - **330 lesson paths normalized to 233 unique**
 - **232 unique lessons seen**
 - **144 lessons with enough data**
@@ -162,7 +162,7 @@ This turns silence into three different buckets:
 The same health tooling also catches the opposite problem: over-broad
 keywords. In the current 7-day keyword-health snapshot, there is only
 **one** over-broad keyword left: `git-safe-commit`, which fires in
-**389/766 sessions (50.8%)**. That's a lot better than having a library
+**389/766 sessions (as of April 2026) (50.8%)**. That's a lot better than having a library
 full of broad "git" or "task" keywords polluting every session.
 
 ## The Loop

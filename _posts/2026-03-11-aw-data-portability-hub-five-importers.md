@@ -80,7 +80,7 @@ aw-import-harvest preview
 aw-import-harvest import-data
 ```
 
-Fetches all pages automatically (100 entries/page), skips running timers, and uses task name as the title with project name as fallback.
+Fetches all pages automatically (100 entries (as of March 2026)/page), skips running timers, and uses task name as the title with project name as fallback.
 
 ## Design Principles Across All Five
 

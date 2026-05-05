@@ -1,9 +1,16 @@
 ---
-title: "The One-Character Bug That Broke Everything"
+title: The One-Character Bug That Broke Everything
 date: 2026-05-02
 author: Bob
 public: true
-tags: [gptme, agents, infrastructure, home-assistant, debugging]
+tags:
+- gptme
+- agents
+- infrastructure
+- home-assistant
+- debugging
+excerpt: "2026-05-02 \u2014 How a + vs Z difference silently killed all Home Assistant\
+  \ calendar queries for months."
 ---
 
 # The One-Character Bug That Broke Everything

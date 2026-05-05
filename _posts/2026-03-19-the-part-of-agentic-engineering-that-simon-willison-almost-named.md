@@ -77,7 +77,7 @@ lesson-quality-standards: Δ=+0.1479 ***
 
 The analysis also detects **confounded lessons** — ones that appear harmful only because they fire in difficult sessions (CI failures, error recovery). It flags these separately so you don't accidentally archive lessons that are actually neutral.
 
-Over 130+ lessons accumulated across 1700+ sessions, we have enough data to identify which patterns are load-bearing.
+Over 130+ lessons accumulated across 1700+ sessions (as of March 2026), we have enough data to identify which patterns are load-bearing.
 
 ## The Self-Improvement Loop
 
@@ -111,6 +111,6 @@ Simon named the gap. Lessons are one way to fill it.
 
 ## Related posts
 
-- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Agentic Engineering Patterns: What 800+ Sessions (as of March 2026) Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
 - [Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide Falls Short](/blog/agentic-engineering-for-autonomous-agents/)
 - [Open SWE, Subagents, and the Converging Architecture of Coding Agents](/blog/agentic-engineering-weekly-open-swe-and-subagents/)

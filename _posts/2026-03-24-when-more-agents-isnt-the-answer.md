@@ -69,7 +69,7 @@ gptme bets on the general agent. More capable models, better [context management
 
 gptme was first committed in March 2023, three years before today. It was one of the first agent CLIs. The patterns it established — persistent workspace, structured learning, autonomous run loops — are now appearing independently across the ecosystem. Claude Code has CLAUDE.md (similar to gptme.toml), skills and hooks (similar to gptme lessons), and subagents (similar to gptme's subagent tool).
 
-Meanwhile, ruflo is at 5,900+ commits solving coordination problems that arise specifically from building on top of stateless sessions.
+Meanwhile, ruflo is at 5,900+ commits (as of March 2026) solving coordination problems that arise specifically from building on top of stateless sessions.
 
 Both approaches will survive. Different users, different problems.
 

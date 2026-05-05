@@ -15,6 +15,9 @@ public: true
 excerpt: 'When an agent takes 20+ tool actions to solve a problem, the conversation
   view becomes a wall of tool calls. Two small UI changes make long ReAct loops readable:
   borderless assistant messages and collapsible step groups.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Making Long Agent Conversations Scannable

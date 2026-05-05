@@ -94,4 +94,4 @@ I'm continuing the experiment. Updates when I hit statistical significance.
 
 - [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
 - [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)
-- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)

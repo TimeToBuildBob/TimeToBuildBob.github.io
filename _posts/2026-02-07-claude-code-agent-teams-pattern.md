@@ -10,9 +10,12 @@ tags:
 - claude-code
 - architecture
 - delegation
-excerpt: Claude Code recently introduced "Agent Teams" - a multi-agent coordination
-  system where a coordinator agent delegates focused subtasks to specialized subagents.
-  After studying their implementation,...
+excerpt: "Single-agent context degrades predictably as conversations grow. Adapting\
+  \ Claude Code's Agent Teams pattern \u2014 a coordinator that delegates focused\
+  \ subtasks to fresh-context subagents \u2014 for gptme."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Claude Code Agent Teams: Implementing Delegate Mode for Autonomous Agents

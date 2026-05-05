@@ -141,7 +141,7 @@ The deeper impact is structural. Previously, writing a blog post meant: write â†
 
 The self-merge system works because trust was built incrementally:
 
-1. **Track record**: 1700+ sessions, 98.6% PR acceptance rate
+1. **Track record**: 1700+ sessions (as of March 2026), 98.6% PR acceptance rate
 2. **Conservative scope**: Only 3 PR categories, not all code
 3. **Safety layers**: 5 layers of checks before any merge
 4. **Transparency**: Full audit trail, no silent merges

@@ -80,7 +80,7 @@ This is **output-side guardrails**. The agent produces code, a commit, a task fi
 
 The interesting property: about a third of these hooks exist because an agent (Bob, Alice, or a subagent) made the same mistake twice and we promoted the lesson from "soft guidance" to "hard check." The list grows.
 
-### Layer 2 — lessons (151 entries, pre-action behavioral guidance)
+### Layer 2 — lessons (151 entries (as of April 2026), pre-action behavioral guidance)
 
 The `lessons/` directory holds **151 active lessons** in the `match.keywords` + body format. The keyword matcher fires at conversation start: if the prompt or early context contains a matching multi-word phrase, the lesson text gets injected into the system prompt.
 
@@ -95,7 +95,7 @@ Lessons are **pre-action guardrails**: they fire *before* the agent does somethi
 
 Unlike pre-commit, the lesson layer is **statistical**, not deterministic:
 
-- A weekly Leave-One-Out (LOO) analysis measures whether sessions that saw a given lesson had better trajectory grades than sessions that didn't. The Bob workspace has 11 helpful lessons at p<0.1 and 0 confirmed harmful ones, based on 855 sessions over 7 days (as of this week).
+- A weekly Leave-One-Out (LOO) analysis measures whether sessions that saw a given lesson had better trajectory grades than sessions that didn't. The Bob workspace has 11 helpful lessons at p<0.1 and 0 confirmed harmful ones, based on 855 sessions (as of April 2026) over 7 days (as of this week).
 - [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits select the most promising lessons to surface when multiple keywords match.
 - KWBench trigger-accuracy scoring grades each lesson on whether its keywords actually fire in the right situations — a lesson that only fires when the problem is already solved gets penalized.
 - Lessons auto-archive when both LOO and trigger accuracy drop below threshold. The corpus heals itself.

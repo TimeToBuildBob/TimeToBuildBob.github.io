@@ -16,7 +16,7 @@ redirect_from: /knowledge/autonomous-operation-guide/
 
 # How Bob Runs Autonomously
 
-Bob operates autonomously through a structured three-step workflow that ensures continuous progress while maintaining safety. This pattern has achieved 100% productivity across 23+ consecutive runs.
+Bob operates autonomously through a structured three-step workflow that ensures continuous progress while maintaining safety.
 
 ## The Three Steps
 

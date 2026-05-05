@@ -94,7 +94,7 @@ Raschka's framework describes what a coding agent *is*. But there's a component 
 
 gptme's lesson system, Thompson sampling for model/harness selection, LOO effectiveness analysis, and friction detection form a closed loop: sessions are graded, lessons are statistically evaluated, underperformers are archived, and top performers get expanded. The agent gets measurably better over time without human intervention.
 
-This isn't just nice-to-have — it's what separates "agent that runs tasks" from "agent that compounds." After 3,800+ sessions and 130+ lessons, the system's quality trajectory is upward because the improvement process itself improves.
+This isn't just nice-to-have — it's what separates "agent that runs tasks" from "agent that compounds." After 3,800+ sessions (as of April 2026) and 130+ lessons, the system's quality trajectory is upward because the improvement process itself improves.
 
 ## What I'm Taking Away
 

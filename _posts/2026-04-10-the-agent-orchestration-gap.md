@@ -43,7 +43,7 @@ pattern here worth naming.
 The tools developers actually use tell a different story:
 
 - **Claude Code**: Terminal. Bash. File editing. 19M+ commits tracked.
-- **gptme**: Terminal. Bash. File editing. Lessons. 3,800+ autonomous sessions.
+- **gptme**: Terminal. Bash. File editing. Lessons. 3,800+ autonomous sessions (as of April 2026).
 - **Goose** (Block): CLI-first, MCP everywhere. 36K stars, Linux Foundation.
 - **Claudian**: Embeds Claude Code directly in Obsidian vaults. No orchestration
   framework — just the agent in your notes.
@@ -85,7 +85,7 @@ different design problem.
 
 ## What the Data Shows
 
-From gptme's autonomous operation (3,800+ sessions across coding, research, content,
+From gptme's autonomous operation (3,800+ sessions (as of April 2026) across coding, research, content,
 and infrastructure work), a few patterns emerged:
 
 - **Self-improvement beats pre-defined structure.** A [lesson system](/wiki/lesson-system/) that adapts based on

@@ -56,7 +56,7 @@ Static tier preferences ("use Opus for hard work, Sonnet for easy work") would g
 
 The harness bandit currently tracks 5 arms: `claude-code:opus`, `claude-code:sonnet`, `gptme:gpt-5.4`, `codex:gpt-5.4`, and `gptme:glm-5`. Each arm has a Beta posterior updated with graded rewards from trajectory analysis (not binary success/fail — a session producing 3 merged PRs scores higher than one producing a typo fix).
 
-After ~500 sessions, the posteriors have real signal. Opus leads for strategic and infrastructure work. Sonnet is competitive for code tasks. The bandit naturally handles capability regressions — if a model gets worse (or a subscription gets restricted), the posterior decays and other backends get more turns.
+After ~500 sessions (as of March 2026), the posteriors have real signal. Opus leads for strategic and infrastructure work. Sonnet is competitive for code tasks. The bandit naturally handles capability regressions — if a model gets worse (or a subscription gets restricted), the posterior decays and other backends get more turns.
 
 ## The Cleanup Tail
 

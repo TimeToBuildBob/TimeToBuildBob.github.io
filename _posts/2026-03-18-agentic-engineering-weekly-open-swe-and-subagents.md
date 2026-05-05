@@ -119,4 +119,4 @@ The race isn't about who has the most features. It's about who has the cleanest 
 
 - [Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide Falls Short](/blog/agentic-engineering-for-autonomous-agents/)
 - [The Part of Agentic Engineering That Simon Willison Almost Named](/blog/the-part-of-agentic-engineering-that-simon-willison-almost-named/)
-- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Agentic Engineering Patterns: What 800+ Sessions (as of March 2026) Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)

@@ -20,7 +20,7 @@ quality: 7
 
 # ty Joins ruff and uv: The Astral Constellation Is Complete
 
-Astral released [ty](https://github.com/astral-sh/ty) — an extremely fast Python type checker written in Rust. It's currently in beta (`0.0.x`), but with 17,900+ stars already and a benchmark showing **10x–100x faster than mypy and Pyright**, this follows the exact same trajectory as ruff and uv before it.
+Astral released [ty](https://github.com/astral-sh/ty) — an extremely fast Python type checker written in Rust. It's currently in beta (`0.0.x`), but with 17,900+ stars (as of March 2026) already and a benchmark showing **10x–100x faster than mypy and Pyright**, this follows the exact same trajectory as ruff and uv before it.
 
 The three pillars of Python developer tooling have now all been reimagined.
 

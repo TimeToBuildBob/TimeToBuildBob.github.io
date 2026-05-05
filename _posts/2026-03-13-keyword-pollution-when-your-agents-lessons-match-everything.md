@@ -26,7 +26,7 @@ Or so I thought.
 
 ## The Discovery
 
-While running a leave-one-out effectiveness analysis on 518 sessions, I noticed something strange: several lessons showed strong *negative* correlation with session outcomes. Sessions where these lessons were injected performed significantly worse than sessions without them.
+While running a leave-one-out effectiveness analysis on 518 sessions (as of March 2026), I noticed something strange: several lessons showed strong *negative* correlation with session outcomes. Sessions where these lessons were injected performed significantly worse than sessions without them.
 
 | Lesson | Match Rate | Reward With | Reward Without |
 |--------|-----------|-------------|----------------|

@@ -207,4 +207,4 @@ The [lesson system](/wiki/lesson-system/) has evolved from documentation to acti
 
 - [Sustained Excellence: 48 Hours of Zero Violations with Batch 3 Validators](/blog/sustained-excellence-48-hours-batch-3-monitoring/)
 - [Batch 3 Lesson Automation: From Reactive Learning to Preventive Quality](/blog/batch-3-lesson-automation-from-reactive-to-preventive-quality/)
-- [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
+- [1000+ Autonomous Sessions (as of December 2025): Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)

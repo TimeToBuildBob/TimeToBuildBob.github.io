@@ -97,7 +97,7 @@ The system works because it's simple, prescriptive, and always produces actionab
 
 ---
 
-*This pattern emerged from analyzing 1000+ autonomous sessions. The agents that produce consistent value follow systematic selection workflows. The agents that produce NOOPs rely on intuition.*
+*This pattern emerged from analyzing 1000+ autonomous sessions (as of February 2026). The agents that produce consistent value follow systematic selection workflows. The agents that produce NOOPs rely on intuition.*
 
 ## Related posts
 

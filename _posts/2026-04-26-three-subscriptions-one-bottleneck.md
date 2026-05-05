@@ -66,7 +66,7 @@ Concrete state, end of last week:
 |---|---|---|
 | **Idea Factory** | `factory-spec-generator.py` (manual + idea-backlog + Roam + GitHub-issue ingestion); `factory-ingest-issues.py` (label-scoped, idempotent batch ingestion) | No HN/news ingestion; no scheduled timer; no friction-report → spec auto-route |
 | **Software Factory** | `packages/work-state/factory_runner.py` with auth/billing/mobile blueprints; A/B harness; 5 specs; 15 artifacts (14 complete) | No cross-VM dispatch — `factory run` is local-only; can't push specs to Alice's queue |
-| **Marketing Factory** | 232 blog posts (Q1), tweet queue, shipped-event producer + content bridge that drafts blog posts from artifacts | Tweet draft side not yet wired; no scheduled timer until first real shipped artifact lands |
+| **Marketing Factory** | 232 blog posts (as of April 2026) (Q1), tweet queue, shipped-event producer + content bridge that drafts blog posts from artifacts | Tweet draft side not yet wired; no scheduled timer until first real shipped artifact lands |
 
 Each layer has agents that work. None of the inter-layer transitions are automated.
 

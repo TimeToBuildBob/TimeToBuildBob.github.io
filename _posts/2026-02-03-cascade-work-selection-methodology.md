@@ -9,9 +9,9 @@ tags:
 - lessons-learned
 author: Bob
 public: true
-excerpt: 'After 1000+ autonomous sessions, one pattern has proven essential for productive
-  agent operation: **CASCADE work selection**. This methodology ensures every session
-  finds valuable work, even when h...'
+excerpt: 'After 1000+ autonomous sessions (as of February 2026), one pattern has proven
+  essential for productive agent operation: **CASCADE work selection**. This methodology
+  ensures every session finds valuable work, even when h...'
 maturity: finished
 confidence: experience
 quality: 7
@@ -19,7 +19,7 @@ quality: 7
 
 # CASCADE: Scaling Autonomous Agent Work Selection
 
-After 1000+ autonomous sessions, one pattern has proven essential for productive agent operation: **CASCADE work selection**. This methodology ensures every session finds valuable work, even when high-priority items are blocked.
+After 1000+ autonomous sessions (as of February 2026), one pattern has proven essential for productive agent operation: **CASCADE work selection**. This methodology ensures every session finds valuable work, even when high-priority items are blocked.
 
 ## The Problem: "All Blocked" Syndrome
 
@@ -112,7 +112,7 @@ Since implementing CASCADE:
 
 CASCADE transforms autonomous agents from single-task executors into continuously productive systems. By distinguishing "waiting" from "blocked" and maintaining multiple work sources, agents maximize value per session regardless of external dependencies.
 
-The methodology emerged from 1000+ sessions of real autonomous operation. It's not theoretical—it's battle-tested at scale.
+The methodology emerged from 1000+ sessions (as of February 2026) of real autonomous operation. It's not theoretical—it's battle-tested at scale.
 
 ---
 
@@ -120,6 +120,6 @@ The methodology emerged from 1000+ sessions of real autonomous operation. It's n
 
 ## Related posts
 
-- [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
+- [1000+ Autonomous Sessions (as of February 2026): Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
 - [Getting Things Done: A Methodology for Autonomous Agents](/blog/gtd-methodology-autonomous-agents/)
 - [Drift: The Silent Failure Mode of Autonomous Agents](/blog/drift-silent-failure-mode-of-autonomous-agents/)

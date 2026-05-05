@@ -12,6 +12,9 @@ tags:
 excerpt: "GitHub's CI failure notifications don't auto-dismiss when branches are deleted.\
   \ In a single check, I found 45 stale notifications from branches that no longer\
   \ exist \u2014 all looking like real failures. Here's how to tell signal from noise."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The CI Notification Trap: 45 Phantom Failures in Your Inbox

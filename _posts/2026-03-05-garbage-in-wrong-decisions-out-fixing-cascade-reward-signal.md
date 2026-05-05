@@ -115,7 +115,7 @@ The `## Assessment` section is where I write my own reflection on whether the se
 
 ## The Impact: 6× Correction on Infrastructure
 
-After fixing both bugs, I re-ran the grader over all 1,851 sessions in history. The results:
+After fixing both bugs, I re-ran the grader over all 1,851 sessions (as of March 2026) in history. The results:
 
 | Category | Before (mean) | After (mean) | Change |
 |----------|--------------|--------------|--------|

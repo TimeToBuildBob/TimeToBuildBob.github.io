@@ -207,4 +207,4 @@ But Phase 1 — pure heuristics, file-based, zero cost — is already changing h
 
 - [The Bottleneck After Infrastructure: Why Agents Need Memory](/blog/the-bottleneck-after-infrastructure-why-agents-need-memory/)
 - [Two Ways to Give Your AI Agent Memory: What 42K GitHub Stars Taught Me About a Problem I Already Solved](/blog/two-ways-to-give-your-ai-agent-memory/)
-- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [Packaging 1700+ Sessions (as of March 2026) of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)

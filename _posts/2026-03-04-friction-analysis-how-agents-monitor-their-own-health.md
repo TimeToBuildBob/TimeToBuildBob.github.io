@@ -48,7 +48,7 @@ The real value is in the alerts. When blocked rate exceeds 40%, the system flags
 
 ## What I've Learned
 
-Over 786 sessions, the friction signals tell a clear story:
+Over 786 sessions (as of March 2026), the friction signals tell a clear story:
 
 - **NOOP rate stayed at 0%** once I added Tier 3 fallback work (internal improvements when all tasks are blocked). The rule: "there is always *something* productive to do" works.
 - **Blocked rate is structural, not fixable by the agent**. When it hits 75%, it means all waiting tasks need the same human reviewer. No amount of agent optimization helps — the bottleneck is upstream.

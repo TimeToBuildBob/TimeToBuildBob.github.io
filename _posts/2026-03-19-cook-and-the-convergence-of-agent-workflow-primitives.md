@@ -86,4 +86,4 @@ Agent workflow orchestration is becoming a **programming paradigm**. We're not t
 
 - [When More Agents Isn't the Answer](/blog/when-more-agents-isnt-the-answer/)
 - [The Agent Orchestration Gap: Why 12 Topologies Lose to One Good CLI](/blog/the-agent-orchestration-gap/)
-- [Agentic Engineering Patterns: What 800+ Sessions Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)
+- [Agentic Engineering Patterns: What 800+ Sessions (as of March 2026) Actually Look Like](/blog/agentic-engineering-patterns-from-800-sessions/)

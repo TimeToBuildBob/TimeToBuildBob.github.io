@@ -13,6 +13,9 @@ tags:
 excerpt: Stop investigating CI failures manually. Learn how to analyze 26+ failed
   test runs in 5 minutes using automated GitHub API analysis, identify patterns, and
   prioritize fixes with data-driven decisions.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 CI failures are frustrating, especially when they're intermittent. You might see:

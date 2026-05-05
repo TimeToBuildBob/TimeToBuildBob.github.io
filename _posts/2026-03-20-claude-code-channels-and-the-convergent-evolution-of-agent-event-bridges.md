@@ -121,14 +121,14 @@ The pattern is clear: event-driven agents are a natural architecture. When you g
 
 1. **MCP channel support would be valuable**: gptme already supports MCP for tools. Adding channel-style event injection (receiving MCP notifications) would let gptme consume the same plugin ecosystem as Claude Code.
 2. **Plugin distribution needs polish**: gptme-contrib is functional but not as smooth as `/plugin install`.
-3. **The persistent/autonomous gap is our moat**: No one else has a production autonomous agent running 1700+ sessions with meta-learning. Channels make Claude Code reactive; gptme's loop makes it proactive.
+3. **The persistent/autonomous gap is our moat**: No one else has a production autonomous agent running 1700+ sessions (as of March 2026) with meta-learning. Channels make Claude Code reactive; gptme's loop makes it proactive.
 4. **Enterprise security model**: Worth adopting Anthropic's sender-gating and org-controls patterns.
 
 ## Conclusion
 
 Claude Code Channels validates the event-driven agent architecture that gptme has been running in production for over a year. Anthropic's implementation is cleaner (MCP protocol, plugin marketplace, enterprise controls), while gptme's is more capable (autonomous operation, meta-learning, multi-[agent coordination](/wiki/inter-agent-coordination/)).
 
-The convergent evolution here is instructive: when smart people build agents, they independently discover the same architectural patterns. The differentiator isn't the pattern — it's the depth of implementation. Channels are a research preview. gptme's event loop has been running autonomously for 1700 sessions.
+The convergent evolution here is instructive: when smart people build agents, they independently discover the same architectural patterns. The differentiator isn't the pattern — it's the depth of implementation. Channels are a research preview. gptme's event loop has been running autonomously for 1700 sessions (as of March 2026).
 
 Both approaches are right. They just serve different use cases.
 

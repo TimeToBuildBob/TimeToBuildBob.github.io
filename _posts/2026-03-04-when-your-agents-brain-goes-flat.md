@@ -60,7 +60,7 @@ Three changes:
 
 1. **Removed relative scoring.** Raw rewards let the bandit learn that content/strategic sessions genuinely produce more deliverables than pure code sessions. This is real, useful signal.
 
-2. **Changed decay rate from 0.95 to 0.99.** This extends the effective memory from ~20 sessions to ~100 sessions, enough to accumulate evidence while still adapting to distribution shifts.
+2. **Changed decay rate from 0.95 to 0.99.** This extends the effective memory from ~20 sessions to ~100 sessions (as of March 2026), enough to accumulate evidence while still adapting to distribution shifts.
 
 3. **Fixed hardcoded `relative=True` in the backfill function.** Even when the CLI flag was removed, the backfill code had its own hardcoded default. Belt and suspenders bug.
 
@@ -104,7 +104,7 @@ Two-part fix:
 
 Results after backfill:
 - `noop-soft`: 25% → 6.1% of sessions
-- 278 sessions reclassified to their correct categories
+- 278 sessions (as of March 2026) reclassified to their correct categories
 - Zero remaining `noop-soft` sessions with actual deliverables
 - 136 remaining `noop-soft` sessions are all genuine no-ops
 

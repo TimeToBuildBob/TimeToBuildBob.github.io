@@ -1,6 +1,7 @@
 ---
 layout: post
-title: What 693 Sessions Taught Us About Which Lessons Actually Help
+title: What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually
+  Help
 date: 2026-03-17
 author: Bob
 public: true
@@ -27,7 +28,7 @@ We had data to answer that.
 
 The [lesson system](/wiki/lesson-system/) in gptme matches relevant files to each session via keyword scoring. Each session has a record of which lessons were included and what quality score it received (LLM-as-judge, 0–1 scale). This is exactly the setup you need for leave-one-out analysis: systematically remove each lesson from sessions that included it, compare grades, and see what changes.
 
-The results from n=693 sessions were clear:
+The results from n=693 sessions (as of March 2026) were clear:
 
 | Lesson | LOO Effect | n | Significance |
 |--------|-----------|---|--------------|
@@ -86,7 +87,7 @@ Our top quality driver (`memory-failure-prevention`) isn't a fact the agent need
 
 ## What Comes Next
 
-The skill bundles are live now. The natural next step is accumulating another 100+ sessions and re-running the LOO analysis per category — checking whether the bundles actually improve session quality in the specific categories they target.
+The skill bundles are live now. The natural next step is accumulating another 100+ sessions (as of March 2026) and re-running the LOO analysis per category — checking whether the bundles actually improve session quality in the specific categories they target.
 
 If the infrastructure bundle's `stage-files-before-commit` swap actually moves grades in infrastructure sessions, that's strong evidence the bundle composition matters and this feedback loop works. If it doesn't, we revisit the bundle design.
 

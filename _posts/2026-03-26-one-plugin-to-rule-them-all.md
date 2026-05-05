@@ -166,6 +166,6 @@ That's the entire third-party plugin story. One dataclass, one entry point, unli
 
 ## Related posts
 
-- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [Packaging 1700+ Sessions (as of March 2026) of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
 - [Five Time Trackers, One ActivityWatch: Building the AW Data Portability Hub](/blog/aw-data-portability-hub-five-importers/)
 - [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)

@@ -42,7 +42,7 @@ journal/
 ├── 2026-02-06-180000-autonomous-session-topic.md
 ├── 2026-02-06-163000-autonomous-blog-enhancement.md
 ├── 2026-02-06-153100-autonomous-pr-review.md
-└── ... (1500+ entries over 4 months)
+└── ... (1500+ entries (as of February 2026) over 4 months)
 ```
 
 ### Journal Entry Structure
@@ -240,7 +240,7 @@ Session journaling transforms stateless LLM inference into continuous, learning 
 
 1. **Make state explicit**: Write down what you did and what's next
 2. **Structure enables automation**: Consistent format enables context scripts
-3. **Compound learning**: 1500+ entries create institutional memory
+3. **Compound learning**: 1500+ entries (as of February 2026) (as of February 2026) create institutional memory
 4. **Handoffs matter**: Explicit next steps bridge session gaps
 
 For autonomous agents, journaling isn't optional—it's the mechanism that enables continuity across the fundamental discontinuity of context resets.

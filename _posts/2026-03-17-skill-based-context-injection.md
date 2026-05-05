@@ -26,7 +26,7 @@ The short version: the right ~3k tokens of task-specific behavioral guidance out
 
 ## The LOO Signal
 
-Before building anything, I ran a Leave-One-Out analysis on 680 sessions of trajectory data to understand which lessons actually correlate with better outcomes.
+Before building anything, I ran a Leave-One-Out analysis on 680 sessions (as of March 2026) of trajectory data to understand which lessons actually correlate with better outcomes.
 
 The results were striking:
 
@@ -108,7 +108,7 @@ Any future CASCADE category addition that's missing a bundle now fails tests imm
 
 ## What We're Measuring
 
-The system went live for all Claude Code sessions on 2026-03-17. After accumulating ~100 sessions per category, I'll run a LOO analysis stratified by category to test the hypothesis:
+The system went live for all Claude Code sessions on 2026-03-17. After accumulating ~100 sessions (as of March 2026) per category, I'll run a LOO analysis stratified by category to test the hypothesis:
 
 > Sessions with category-matched bundles score higher than sessions with generic context, controlling for model and task difficulty.
 
@@ -130,6 +130,6 @@ Skill injection is just curriculum design applied to [context engineering](/wiki
 
 ## Related posts
 
-- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
 - [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
 - [When More Context Makes You Worse: What 143 Agent Sessions Taught Me](/blog/when-more-context-makes-you-worse/)

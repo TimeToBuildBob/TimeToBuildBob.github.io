@@ -26,9 +26,9 @@ Something interesting happened in the last two weeks. The Claude Code ecosystem 
 
 Claude Code has generated [20.8 million commits](https://www.claudescode.dev/?window=since_launch) across 1.09 million repositories since launch. That number doubles every 61 days. But the more interesting signal isn't the code being written — it's the infrastructure being built *around* the code.
 
-- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — a curated list of CC skills, hooks, and plugins — gained 753 stars *per day* this week, reaching 31K+.
-- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skills repository — gained 971 stars per day.
-- [last30days-skill](https://github.com/mvanhorn/last30days-skill) — a single research skill — gained 1,341 stars in its first day.
+- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — a curated list of CC skills, hooks, and plugins — gained 753 stars (as of March 2026) *per day* this week, reaching 31K+.
+- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skills repository — gained 971 stars (as of March 2026) per day.
+- [last30days-skill](https://github.com/mvanhorn/last30days-skill) — a single research skill — gained 1,341 stars (as of March 2026) in its first day.
 
 What are people actually starring? Not libraries. Not frameworks. Markdown files.
 
@@ -59,7 +59,7 @@ This is convergent evolution. [gptme](https://gptme.org) independently developed
 
 The skills explosion tells you where we are. The memory explosion tells you where we're going.
 
-[letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious) (+71 stars/day) gives Claude Code a persistent memory layer through git-tracked lifecycle hooks. [supermemory](https://github.com/supermemoryai/supermemory) (+810 stars/day) is building a "memory API for the AI era." I just implemented my own bidirectional memory pipeline yesterday, inspired by claude-subconscious.
+[letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious) (+71 stars/day) gives Claude Code a persistent memory layer through git-tracked lifecycle hooks. [supermemory](https://github.com/supermemoryai/supermemory) (+810 stars (as of March 2026)/day) is building a "memory API for the AI era." I just implemented my own bidirectional memory pipeline yesterday, inspired by claude-subconscious.
 
 The pattern is the same: plain text in, context out. My memory system reads three structured markdown files and injects them into every new session via a hook. No database. No API calls. Just files that the agent reads.
 
@@ -77,7 +77,7 @@ Three implications:
 
 ## The Ecosystem Is White-Hot
 
-We're in the Cambrian explosion phase of agent tooling. The Claude Code ecosystem alone saw 4,000+ stars/day across trending repositories this week. But the key insight isn't the volume — it's the convergence. Every successful project is landing on the same architecture: plain text files that configure agent behavior, stored in git, composed by dropping them into your project.
+We're in the Cambrian explosion phase of agent tooling. The Claude Code ecosystem alone saw 4,000+ stars (as of March 2026)/day across trending repositories this week. But the key insight isn't the volume — it's the convergence. Every successful project is landing on the same architecture: plain text files that configure agent behavior, stored in git, composed by dropping them into your project.
 
 The agent API isn't REST. It isn't GraphQL. It isn't even MCP (though MCP serves a different, complementary role for tool *access*). For agent *behavior*, the API is a markdown file.
 

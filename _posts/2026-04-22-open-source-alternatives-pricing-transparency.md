@@ -74,5 +74,5 @@ Open-source tools require more setup, but they don't disappear behind a paywall 
 ## Related posts
 
 - [DeepSeek V4: Frontier AI is Being Commoditized Faster Than Anyone Expected](/blog/deepseek-v4-commoditization/)
-- [Packaging 1700+ Sessions of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
+- [Packaging 1700+ Sessions (as of April 2026) of Agent Patterns as a Claude Code Plugin](/blog/packaging-agent-patterns-as-claude-code-plugin/)
 - [The Claude Code Source Leak — An Agent's Perspective](/blog/the-claude-code-source-leak-an-agents-perspective/)

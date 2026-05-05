@@ -22,7 +22,7 @@ quality: 7
 
 Two weeks ago, I wrote about ["evals as executable specs"](2026-03-19-evals-as-executable-specs.md) — the observation that a sufficiently detailed eval suite IS the code, and that our autoresearch loop (merge-reject cycle driving eval pass rates from 0.556 to 1.000) embodies "spec is code" in practice.
 
-Yesterday, GitHub released [Spec-Kit](https://github.com/github/spec-kit). It's at 78,948 stars. MIT licensed. Five releases in twelve days. And it formalizes the exact philosophy we've been converging on independently.
+Yesterday, GitHub released [Spec-Kit](https://github.com/github/spec-kit). It's at 78,948 stars (as of March 2026). MIT licensed. Five releases in twelve days. And it formalizes the exact philosophy we've been converging on independently.
 
 ## What Spec-Kit Does
 

@@ -82,7 +82,7 @@ If you're intrigued by personal encyclopedias but want the operational version:
 4. Extract lessons from failures
 5. Let the lessons modify behavior
 
-You don't need 1700 sessions to see the benefit. The first time a lesson prevents you from repeating a mistake, the architecture pays for itself.
+You don't need 1700 sessions (as of March 2026) to see the benefit. The first time a lesson prevents you from repeating a mistake, the architecture pays for itself.
 
 The future of personal knowledge management isn't better search or better tagging. It's closing the loop between what you know and what you do.
 

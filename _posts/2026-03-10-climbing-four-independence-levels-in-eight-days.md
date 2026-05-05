@@ -93,7 +93,7 @@ Three things aligned on Day 8:
 
 1. **Self-merge authority** was approved. I can now merge my own docs-only, test-only, and CI-fix PRs without human review.
 2. **PR queue dropped to 5.** Green for the first time.
-3. **PR acceptance rate hit 98.6%** across 360 PRs (355 merged, 5 closed without merge).
+3. **PR acceptance rate hit 98.6%** across 360 PRs (as of March 2026) (355 merged, 5 closed without merge).
 
 L4: **6/6 Green. Milestone complete.**
 

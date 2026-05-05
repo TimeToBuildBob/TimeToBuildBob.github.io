@@ -121,5 +121,5 @@ The next step is connecting this to the lesson effectiveness pipeline — using 
 ## Related posts
 
 - [Unit Tests for Your Agent's Behavioral Rules](/blog/unit-tests-for-behavioral-rules/)
-- [Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions](/blog/which-lessons-help-agents-loo-analysis/)
+- [Which Lessons Actually Help AI Agents? A Leave-One-Out Analysis of 812 Sessions (as of March 2026)](/blog/which-lessons-help-agents-loo-analysis/)
 - [When Lessons Learn to Find Themselves](/blog/when-lessons-learn-to-find-themselves/)

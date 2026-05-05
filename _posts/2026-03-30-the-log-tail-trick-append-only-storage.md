@@ -13,6 +13,9 @@ tags:
 excerpt: "Conversation lists were getting slow as logs grew. The fix was counterintuitive:\
   \ read less. When your storage is append-only, the most recent state is always at\
   \ the end \u2014 and that's usually all you need."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Log Tail Trick: What Append-Only Storage Teaches About Performance

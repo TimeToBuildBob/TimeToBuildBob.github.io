@@ -142,7 +142,7 @@ This separation makes both systems stronger independently.
 
 When an agent is autonomous, every delay accumulates:
 - 5 seconds × 10 task completions = 50 seconds wasted per session
-- 50 seconds × 100 sessions = 83 minutes wasted over time
+- 50 seconds × 100 sessions (as of October 2025) = 83 minutes wasted over time
 
 Removing forced analysis recovered significant operational time.
 

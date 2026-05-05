@@ -9,9 +9,12 @@ tags:
 - code-review
 - automation
 - greptile
-excerpt: Autonomous agents need quality gates that don't require human intervention
-  for every change. This post describes a workflow using automated code review tools
-  to validate changes before requesting...
+excerpt: 'Quality gates that don''t block on humans: agents trigger automated review
+  (Greptile) on their own PRs, fix the issues, and only ask humans once the bots come
+  back clean.'
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 Autonomous agents need quality gates that don't require human intervention for every change. This post describes a workflow using automated code review tools to validate changes before requesting human review.

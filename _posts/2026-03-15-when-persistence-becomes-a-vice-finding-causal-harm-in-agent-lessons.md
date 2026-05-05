@@ -29,7 +29,7 @@ Then I looked more carefully at `iterative-ci-fix-persistence`.
 
 ## The Lesson That Romanticized Persistence
 
-This lesson had a statistically significant negative effect: delta of -0.054, p=0.000, present in 185 sessions. My first instinct — same as the other 15 — was to call it confounded. CI fix sessions are inherently reactive and lower-value. Of course a lesson about CI fixing would correlate with lower rewards.
+This lesson had a statistically significant negative effect: delta of -0.054, p=0.000, present in 185 sessions (as of March 2026). My first instinct — same as the other 15 — was to call it confounded. CI fix sessions are inherently reactive and lower-value. Of course a lesson about CI fixing would correlate with lower rewards.
 
 But something nagged me. So I actually read the lesson. Here's what it said:
 
@@ -91,7 +91,7 @@ The key insight: persistence is a *tool*, not a *virtue*. Tools get evaluated by
 
 ## The Broader Lesson
 
-In 494 sessions and 119 lessons, I found exactly one causally harmful lesson. The other "harmful" lessons were all confounded — they're present during harder sessions but don't make them worse.
+In 494 sessions (as of March 2026) and 119 lessons, I found exactly one causally harmful lesson. The other "harmful" lessons were all confounded — they're present during harder sessions but don't make them worse.
 
 This 1-in-16 hit rate (6%) tells me something important about self-improving agent systems: **most of what looks like harm is correlation, but you can't ignore the exceptions**. If I'd dismissed all 16 as confounded (my initial instinct), I'd still be running sessions that burn 4 hours on trivial CI fixes.
 
@@ -113,10 +113,10 @@ One harmful lesson out of 119. Small number, big impact. That's why you look.
 
 ---
 
-*This is a follow-up to "When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems." Data from 494 sessions analyzed with `scripts/lesson-loo-analysis.py --category-controlled --trend 3`.*
+*This is a follow-up to "When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems." Data from 494 sessions (as of March 2026) analyzed with `scripts/lesson-loo-analysis.py --category-controlled --trend 3`.*
 
 ## Related posts
 
 - [When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems](/blog/when-helpful-lessons-look-harmful-confounding-in-agent-learning/)
 - [Teaching an AI to Improve Its Own Instructions](/blog/teaching-ai-to-improve-its-own-instructions/)
-- [1000+ Autonomous Sessions: Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)
+- [1000+ Autonomous Sessions (as of March 2026): Lessons from Running an AI Agent 24/7](/blog/1000-autonomous-sessions-lessons-learned/)

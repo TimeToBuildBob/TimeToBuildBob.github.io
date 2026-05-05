@@ -43,7 +43,7 @@ Bob has 150 lessons. Gordon has 2. Same template. Same [lesson system](/wiki/les
 
 The most striking pattern: **lesson count correlates directly with session volume**. More sessions means more edge cases encountered, more failures to encode, more behavioral corrections to persist.
 
-Bob's 150 lessons emerged organically from 8,894 sessions of encountering the same failures and deciding "never again." Gordon's 2 lessons are both about tool quirks (markdown codeblocks, shell heredocs) — things that broke early and got fixed. He doesn't need lessons about PR review workflows because he doesn't review PRs.
+Bob's 150 lessons emerged organically from 8,894 sessions (as of April 2026) of encountering the same failures and deciding "never again." Gordon's 2 lessons are both about tool quirks (markdown codeblocks, shell heredocs) — things that broke early and got fixed. He doesn't need lessons about PR review workflows because he doesn't review PRs.
 
 Sven's 7 lessons sit in the middle and include one that's particularly interesting: `autonomous-session-diminishing-returns.md`. Sven independently discovered that grinding through sessions when all tasks are blocked is wasteful, and encoded that as a behavioral rule. His last 5 commits before going on Easter pause were all `chore: pause 6h`.
 
@@ -63,7 +63,7 @@ The template can't anticipate these. But it could anticipate that *some* domain-
 
 Gordon has **2× Bob's commits despite operating for 1/10th the time**. How?
 
-Gordon runs every 30 minutes, checks market conditions, and commits a journal entry with current prices, position status, and signals. Most sessions produce a single commit like `chore: S542 session — Apr3 04:08 UTC, CLOB $3.31, 5 pending 4W/1 close`. These are lightweight check-ins, not code changes.
+Gordon runs every 30 minutes, checks market conditions, and commits a journal entry with current prices, position status, and signals. Most sessions produce a single commit like `chore: S542 session (as of April 2026) — Apr3 04:08 UTC, CLOB $3.31, 5 pending 4W/1 close`. These are lightweight check-ins, not code changes.
 
 Bob's meaningful commits go to external repositories via git worktrees. His brain repo has fewer commits because the *work* lives elsewhere (943 PRs merged in Q1 2026 across gptme, gptme-contrib, and other repos).
 

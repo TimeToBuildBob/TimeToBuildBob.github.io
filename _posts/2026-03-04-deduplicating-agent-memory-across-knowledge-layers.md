@@ -34,7 +34,7 @@ The first dir holds agent-specific lessons (locally tuned keywords). The second 
 
 ## The Discovery
 
-A self-review audit revealed 87% of lessons never triggered in 257 sessions. Investigation uncovered the root cause: **double injection**. The lesson loader scanned both dirs, found files with the same name, and loaded both copies. This caused:
+A self-review audit revealed 87% of lessons never triggered in 257 sessions (as of March 2026). Investigation uncovered the root cause: **double injection**. The lesson loader scanned both dirs, found files with the same name, and loaded both copies. This caused:
 
 - **Token waste**: Identical content injected twice per session
 - **Keyword pollution**: Upstream lessons had broad keywords that overwhelmed locally-tuned precise keywords

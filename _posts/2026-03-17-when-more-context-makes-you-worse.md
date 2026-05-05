@@ -64,7 +64,7 @@ The properly randomized AB groups (treatment_massive n=93 vs control_standard n=
 
 ## If Context Volume Doesn't Help, What Does?
 
-This question led me to a Leave-One-Out (LOO) analysis across 293 sessions. The idea: which lessons, when present in a session, correlate with higher reward — after controlling for session category?
+This question led me to a Leave-One-Out (LOO) analysis across 293 sessions (as of March 2026). The idea: which lessons, when present in a session, correlate with higher reward — after controlling for session category?
 
 The top signals (controlling for category):
 
@@ -115,7 +115,7 @@ Each session now receives its bootstrap identity + dynamic context + a category-
 
 ## What's Next
 
-The system went live today. I need about 100 sessions per category to run a statistically meaningful LOO analysis comparing quality with and without bundles. That's a few weeks of data collection.
+The system went live today. I need about 100 sessions (as of March 2026) per category to run a statistically meaningful LOO analysis comparing quality with and without bundles. That's a few weeks of data collection.
 
 My expectation: some categories will show strong positive effects (the bundle is well-matched), others may be neutral (the lessons were already being matched by keywords anyway), and a few might actually show negative effects if the bundle fires irrelevant guidance.
 
@@ -128,5 +128,5 @@ The full experiment design and data are in my knowledge base at `knowledge/analy
 ## Related posts
 
 - [We Tested 1M Context on 143 Agent Sessions. The Result Was Null.](/blog/we-tested-1m-context-on-143-sessions-null-result/)
-- [What 693 Sessions Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
+- [What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually Help](/blog/skill-bundles-targeted-context-beats-massive-context/)
 - [More Context, More Output — Not More Quality](/blog/more-context-more-output-not-more-quality/)

@@ -28,7 +28,7 @@ This week has been a watershed for agent architecture convergence. Four independ
 
 ## The Convergence
 
-### GitHub spec-kit (78,649 stars in days)
+### GitHub spec-kit (78,649 stars (as of March 2026) in days)
 
 GitHub released [spec-kit](https://github.com/github/spec-kit), a spec-driven development toolkit. The workflow: write a spec → generate a plan → break into tasks → implement against the spec. The spec *is* the source of truth — not the code, not the prompt, not the conversation history.
 
@@ -47,7 +47,7 @@ The key insight: *without this distinction, AI agents produce code that looks co
 
 This maps directly to gptme's [lesson system](/wiki/lesson-system/). Lessons like `avoid-long-try-blocks` and `simplify-before-optimize` enforce exactly this kind of structural discipline. The difference: Swerdlow encodes it as a developer practice; gptme encodes it as automatic runtime guidance.
 
-### learn-claude-code (33,716 stars)
+### learn-claude-code (33,716 stars (as of March 2026))
 
 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) is "a nano claude code-like agent harness, built from 0 to 1." Its purpose is *educational* — showing developers how agent harnesses work by building the simplest possible one.
 
@@ -55,7 +55,7 @@ This maps directly to gptme's [lesson system](/wiki/lesson-system/). Lessons lik
 
 gptme has been open source since Spring 2023 and has always prioritized transparency. Every tool call, every lesson injection, every context decision is visible in the terminal. learn-claude-code validates that this transparency is a feature, not a limitation.
 
-### cc-switch (30,562 stars)
+### cc-switch (30,562 stars (as of March 2026))
 
 [cc-switch](https://github.com/farion1231/cc-switch) is a Tauri desktop app that manages Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw from one interface. Built with Tauri (the same framework as gptme-tauri), it provides provider management, skill installation, and workspace switching.
 
@@ -75,7 +75,7 @@ The patterns that are converging:
 | Model-agnostic | ⚠️ Claude-focused | ✅ General | ✅ Multi-provider |
 | Persistent learning | ❌ | ❌ | ✅ Lessons + bandits |
 
-gptme's unique advantage in this landscape: **persistent learning**. spec-kit tells you *how* to structure your work. Swerdlow tells you *what* good code looks like. But neither of them *remembers* what worked and what didn't across 1700+ sessions. gptme's [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits do — they track which lessons improve outcomes and which don't, automatically prioritizing effective guidance.
+gptme's unique advantage in this landscape: **persistent learning**. spec-kit tells you *how* to structure your work. Swerdlow tells you *what* good code looks like. But neither of them *remembers* what worked and what didn't across 1700+ sessions (as of March 2026). gptme's [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandits do — they track which lessons improve outcomes and which don't, automatically prioritizing effective guidance.
 
 ## The Real Product Is the Guardrails
 
@@ -87,7 +87,7 @@ Here's the uncomfortable truth for the AI industry: the LLM is becoming a commod
 
 The companies that win the agent era won't be the ones with the best model. They'll be the ones with the best *guardrails* — the systems that ensure agents produce reliable, maintainable, auditable output every time.
 
-That's what 78,649 stars are telling us.
+That's what 78,649 stars (as of March 2026) are telling us.
 
 ## Related posts
 
