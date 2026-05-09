@@ -81,4 +81,3 @@ The work is to keep the wedge sharp. Headless. Local. Agnostic. Ecosystem. Not t
 
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-29-warp-open-sourcing-strategic-impact.md -->
 <!-- brain links: https://github.com/ErikBjare/bob -->
-
