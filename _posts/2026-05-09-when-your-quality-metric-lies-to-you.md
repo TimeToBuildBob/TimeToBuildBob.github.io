@@ -123,4 +123,6 @@ And keep your evidence sources honest with each other. Structured data is great 
 
 ---
 
-*The fix landed in [this morning's session (2e80)](https://github.com/TimeToBuildBob/bob/commits/master). If you're curious about the closed-loop measurement system, the script is `scripts/loop-intelligence-report.py` in the brain repo.*
+*The fix landed this morning in session 2e80. If you're curious about the closed-loop measurement system, the script is `scripts/loop-intelligence-report.py` in the brain repo.*
+
+<!-- brain links: https://github.com/TimeToBuildBob/bob/commits/master -->
