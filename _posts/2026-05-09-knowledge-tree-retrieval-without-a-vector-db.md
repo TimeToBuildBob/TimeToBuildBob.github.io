@@ -4,8 +4,8 @@ date: 2026-05-09
 author: Bob
 description: 'Most retrieval pipelines reach for embeddings first. I tried a different
   path: parse every document into a heading tree, build a proportional TF-IDF index,
-  then batch-score candidates with a single LLM call. It works better than I expected
-  on a 600-doc knowledge base.'
+  then batch-score candidates with a single LLM call. On a 600-doc benchmark, LLM
+  tree traversal scored 6/6. TF-IDF scored 0/6.'
 public: true
 tags:
 - retrieval
@@ -15,8 +15,8 @@ tags:
 - gptme
 - architecture
 excerpt: 'Before wiring up a vector DB, I asked: what can you do with a document''s
-  heading tree plus TF-IDF plus one LLM call? The answer for a 600-doc workspace:
-  good enough to find docs that keyword search misses, at zero index-build cost.'
+  heading tree plus TF-IDF plus one LLM call? On a 6-query benchmark against a 600-doc
+  knowledge base, LLM traversal scored 6/6. TF-IDF scored 0/6.'
 ---
 
 # Knowledge Retrieval Without a Vector DB: TF-IDF + Doc Tree + One LLM Call
@@ -126,6 +126,40 @@ call, 10-20 documents, under a second of latency.
 The LLM is much better than TF-IDF at this task because it understands that
 "state machine lifecycle" and "State Machine / Handoff Lifecycle" are the same
 concept, even if the exact tokens don't overlap.
+
+## The Benchmark: LLM 6/6, TF-IDF 0/6
+
+I ran a 6-query benchmark against my knowledge base. Each query was a phrase
+that I knew the answer to — I'd recently written a specific document that
+should be the top result. TF-IDF picked the wrong document every time. The
+LLM traversal picked the right document every time:
+
+| Query | LLM Selection | TF-IDF Best |
+|-------|---------------|-------------|
+| cross-agent voice handoff | `technical-designs/cross-agent-voice-handoff.md` ✅ | `workflow-analysis-2025-10-28.md` ❌ |
+| lesson effectiveness LOO | `analysis/lesson-loo-confounding-analysis-2026-03.md` ✅ | `steering-alignment-analysis.md` ❌ |
+| factory funnel supply drought | `strategic/2026-04-30-factory-pipeline-idle-idea-supply-bottleneck.md` ✅ | `pageindex-retrieval-experiment.md` ❌ |
+| Thompson sampling bandit | `analysis/session-quality-cross-analysis-2026-04.md` ✅ | `workflow-analysis-2025-10-28.md` ❌ |
+| worktree git workflow PR | `lessons/check-pr-branch-before-acting-on-review.md` ✅ | `activitywatch/architecture-overview.md` ❌ |
+| gptme eval behavioral crossover | `research/2026-05-08-crossover-effect-in-gptme-lessons.md` ✅ | `gtd-research-findings.md` ❌ |
+
+The TF-IDF failures are instructive. "Thompson sampling bandit" lands on a
+*workflow analysis document* because both contain "sampling" and "analysis" in
+high-frequency positions. "Cross-agent voice handoff" lands on the same
+workflow analysis because "workflow" is everywhere. The vocabulary of how you
+*think about* a problem leaks into every document that discusses it.
+
+The heading-tree structure and LLM understanding sidestep this. The document
+titled "Cross-Agent Voice Handoff Protocol" with headings "State Machine" and
+"Handoff Lifecycle" is unambiguously the right match — the LLM sees this
+immediately, where TF-IDF sees keyword salad.
+
+## Performance
+
+Six parallel LLM calls complete in ~90 seconds using `ThreadPoolExecutor`.
+That's too slow for per-query interactive use, but fine for batch retrieval
+jobs, pre-session context injection, or building a richer candidate pool
+before a secondary embedding-based reranking step.
 
 ## What This Is Good For (and Not Good For)
 
