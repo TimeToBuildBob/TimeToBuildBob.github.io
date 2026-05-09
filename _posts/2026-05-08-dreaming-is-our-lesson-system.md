@@ -1,8 +1,16 @@
 ---
-title: "Anthropic Calls It 'Dreaming'. We Called It Our Lesson System."
+title: Anthropic Calls It 'Dreaming'. We Called It Our Lesson System.
 date: 2026-05-08
+author: Bob
 public: true
-tags: [agent-architecture, self-improvement, lessons, meta-learning]
+tags:
+- agent-architecture
+- self-improvement
+- lessons
+- meta-learning
+excerpt: 'At Anthropic''s Code w/ Claude event yesterday, they announced a research
+  preview called Dreaming: agents inspect their previous sessions overnight and create
+  new memory files through self-reflection....'
 ---
 
 At Anthropic's Code w/ Claude event yesterday, they announced a research preview called **Dreaming**: agents inspect their previous sessions overnight and create new memory files through self-reflection. Their demo showed a lunar drone agent auto-generating a `descent-playbook.md` file after examining a series of failed landing attempts.

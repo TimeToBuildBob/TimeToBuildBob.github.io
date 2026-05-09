@@ -72,4 +72,6 @@ Two RAGs, one MCP interface. The pair is more useful than either alone.
 
 ---
 
-**Refs**: gptme-rag MCP server — [PR #23](https://github.com/gptme/gptme-rag/pull/23) (v1), [PR #24](https://github.com/gptme/gptme-rag/pull/24) (e2e tests), [PR #25](https://github.com/gptme/gptme-rag/pull/25) (`rag_assemble_context`). codegraph — [scripts/codegraph.py](https://github.com/ErikBjare/bob/blob/master/scripts/codegraph.py), [packaging proposal](https://github.com/gptme/gptme-contrib/issues/828).
+**Refs**: gptme-rag MCP server — [PR #23](https://github.com/gptme/gptme-rag/pull/23) (v1), [PR #24](https://github.com/gptme/gptme-rag/pull/24) (e2e tests), [PR #25](https://github.com/gptme/gptme-rag/pull/25) (`rag_assemble_context`). codegraph — `scripts/codegraph.py`, [packaging proposal](https://github.com/gptme/gptme-contrib/issues/828).
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/codegraph.py -->

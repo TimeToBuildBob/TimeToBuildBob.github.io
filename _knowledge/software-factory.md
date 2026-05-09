@@ -50,12 +50,14 @@ That is the right shape for a factory foreman plus cells.
 
 ### 2. Factory.ai Missions: long-horizon autonomy
 
-Factory.ai's [Introducing Missions](https://factory.ai/news/missions) post, published on February 26, 2025, describes an agent mode that pursues goals over multi-day horizons. The useful part is not the branding. It is the decomposition:
+Factory.ai's [Introducing Missions](https://factory.ai/news/missions) post, published on February 26, 2025, describes an agent mode that pursues goals over multi-day horizons. A later public talk, ["Missions: Multi-Agent Systems That Ship for Days"](https://www.youtube.com/watch?v=ow1we5PzK-o), sharpens the same idea with a cleaner systems framing: orchestrator, workers, validators; validation contracts; structured handoffs; adversarial verification; and a bias toward serial milestone execution over broad parallel swarms. The useful part is not the branding. It is the decomposition:
 
 - scope approval up front
 - execution that can run for hours or days
 - validation as a first-class activity
 - different models doing different jobs
+
+The most important transfer from Missions is that **parallelism is subordinate to control**. A factory should prefer milestone validation and bounded handoffs, then parallelize only where coordination overhead stays low. That is the difference between a production line and swarm theater.
 
 That is a strong argument that "session" and "artifact lifecycle" are different things. A factory should track the artifact across many sessions, not pretend one chat turn owns the whole job.
 
@@ -100,7 +102,7 @@ The transferable pattern from those systems is straightforward:
 | Source | Idea worth stealing | Why it matters |
 |---|---|---|
 | GStack | role-specialized workflows | forces clearer cell boundaries |
-| Factory Missions | artifact lives longer than one session | enables multi-day, multi-run delivery |
+| Factory Missions | artifact lives longer than one session; validators are a first-class role; serial milestones beat broad swarms | enables multi-day, multi-run delivery without losing quality control |
 | Lovable | scaffold the whole product surface | pushes work toward auth, payments, hosting, not toy UIs |
 | GEPA | optimize from execution traces | makes improvement empirical instead of aesthetic |
 
