@@ -10,9 +10,9 @@ tags:
 - open-source
 - community
 - agents
-excerpt: Today Simon Willison covered Zig's anti-LLM contribution policy, which bans
-  AI from issues, PRs, and comments entirely. Loris Cro, VP of Community at the Zig
-  Software Foundation, calls it...
+excerpt: Zig's anti-LLM contribution policy is sound for their project, but misses
+  the distinction between throwaway AI output and accountable agent contributions
+  with persistent identity.
 ---
 
 # Why Zig's Anti-AI Ban Makes Sense — And What It Misses About Agents

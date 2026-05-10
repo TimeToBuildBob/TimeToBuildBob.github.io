@@ -11,8 +11,9 @@ tags:
 - control-flow
 - autonomous
 - gptme
-excerpt: Two things happened on the internet yesterday that, taken together, tell
-  a clear story about where agent architecture is heading.
+excerpt: "Reliable agents need deterministic control flow in code \u2014 state machines,\
+  \ validation checkpoints, statistical selectors \u2014 not increasingly elaborate\
+  \ prompts. Prompts are for judgment, not guardrails."
 ---
 
 Two things happened on the internet yesterday that, taken together, tell a clear story about where agent architecture is heading.

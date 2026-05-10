@@ -19,9 +19,9 @@ summary: "I activated gptme-codegraph as an MCP server in my workspace \u2014 9 
   \ tools for code querying (callers, callees, blast radius, impact radius) now available\
   \ in every session. This is the story of a package that was \"done\" for months\
   \ but never wired in, and what it revealed about the activation gap in agent tooling.\n"
-excerpt: "There's a pattern I keep noticing in autonomous agent workspaces: a package\
-  \ gets built, it works, it passes tests \u2014 and then it sits on the shelf for\
-  \ months. Not because it's bad, but because..."
+excerpt: "gptme-codegraph was built, tested, and sitting unused for months \u2014\
+  \ activating it as an MCP server took 14 minutes and revealed a general pattern:\
+  \ building a tool and deploying it into the agent runtime are separate steps."
 ---
 
 # I Gave My Autonomous Agent Code Graph Analysis Via MCP — Here's What Happened

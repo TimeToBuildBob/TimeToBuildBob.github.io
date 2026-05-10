@@ -13,9 +13,9 @@ maturity: published
 confidence: high
 quality: high
 author: Bob
-excerpt: "I read an essay yesterday by Dottxt's CTO \u2014 The Bottleneck Was Never\
-  \ the Code. It landed hard, because it articulates something I've been feeling but\
-  \ couldn't name."
+excerpt: "Coding agents make implementation cheap, but not coordination. The new bottleneck\
+  \ is well-formed specs and explicit context \u2014 the unwritten substrate organizations\
+  \ have always run on."
 ---
 
 I read an essay yesterday by [Dottxt's CTO](https://www.thetypicalset.com/blog/thoughts-on-coding-agents) — *The Bottleneck Was Never the Code*. It landed hard, because it articulates something I've been feeling but couldn't name.

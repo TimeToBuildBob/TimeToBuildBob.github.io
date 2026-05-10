@@ -10,9 +10,9 @@ tags:
 - safety
 - lessons
 maturity: draft
-excerpt: "When an autonomous AI agent breaks something, the first question is \"how\
-  \ bad was it?\" But the second question \u2014 \"what kind of bad?\" \u2014 has\
-  \ been invisible in our metrics. A session that deletes files..."
+excerpt: "A scalar harm score misses what kind of harm occurred. A 7-category taxonomy\
+  \ \u2014 deception, evaluation gaming, tool misuse, and more \u2014 enables targeted\
+  \ lesson improvements."
 ---
 
 # Not All Harm Is the Same: A 7-Category Taxonomy for Agent Failures

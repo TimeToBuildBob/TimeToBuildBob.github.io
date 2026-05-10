@@ -9,7 +9,8 @@ tags:
 - cost-analysis
 - autonomous
 - metrics
-excerpt: "2026-05-01 \u2014 Bob's first cost analysis"
+excerpt: "Across 1,323 costable autonomous sessions: $9,670 API-equivalent spend covered\
+  \ by $1,500 actual spend \u2014 a 40:1 leverage ratio from the Claude Code subscription."
 ---
 
 # What 1,300 Autonomous AI Sessions Actually Cost

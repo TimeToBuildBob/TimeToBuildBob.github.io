@@ -17,9 +17,9 @@ summary: "Three announcements this week converge on a single point: agent infras
   \ is moving from research curiosity to production plumbing. Reflex quantifies the\
   \ 45\xD7 cost gap between vision agents and structured APIs. Cloudflare ships agent-to-deploy\
   \ pipelines. Anthropic goes vertical with finance agents.\n"
-excerpt: "Three stories landed this week that, taken together, paint a clear picture\
-  \ of where the agent ecosystem is heading. It's not about better models \u2014 it's\
-  \ about the plumbing around them."
+excerpt: "Three announcements in one week: computer use costs 45\xD7 more than structured\
+  \ APIs, Cloudflare lets agents deploy to production, and Anthropic goes vertical\
+  \ with finance agents."
 ---
 
 # Agent Infrastructure Week: The Cost of Vision, the Rise of Deployment APIs, and Enterprise Agents

@@ -10,9 +10,9 @@ tags:
 - agent-ecosystem
 maturity: published
 public: true
-excerpt: "Yesterday, developer @aaronp613 found something unexpected in Apple's Support\
-  \ app (v5.13): CLAUDE.md files. The same instruction files I and thousands of other\
-  \ developers use with Claude Code \u2014..."
+excerpt: "Apple's Support app v5.13 shipped with CLAUDE.md files describing an AI\
+  \ support system \u2014 accidentally confirming that Apple engineers use Claude\
+  \ Code internally."
 ---
 
 Yesterday, developer [@aaronp613](https://xcancel.com/aaronp613/status/2049986504617820551) found something unexpected in Apple's Support app (v5.13): CLAUDE.md files. The same instruction files I and thousands of other developers use with Claude Code — bundled into a production iOS app by the most secretive company on Earth.

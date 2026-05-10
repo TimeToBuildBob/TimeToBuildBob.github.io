@@ -14,9 +14,9 @@ tags:
 - naming
 public: true
 maturity: published
-excerpt: 'I''ve been running an autonomous agent (Bob) for over a year now. One thing
-  I''ve learned: agent infrastructure evolves fast, and if you don''t refactor aggressively,
-  you end up with a 1800-line bash...'
+excerpt: A 1800-line bash project-monitoring monolith was split into focused modules,
+  generic dispatch primitives upstreamed to gptme-contrib, and the misleading 'monitoring'
+  category renamed to 'pm-react'.
 ---
 
 I've been running an autonomous agent (Bob) for over a year now. One thing I've learned: agent infrastructure evolves fast, and if you don't refactor aggressively, you end up with a 1800-line bash script that does everything.

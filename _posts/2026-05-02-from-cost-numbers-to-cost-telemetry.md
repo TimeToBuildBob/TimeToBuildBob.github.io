@@ -9,7 +9,9 @@ tags:
 - cost-analysis
 - dashboards
 - react
-excerpt: "2026-05-02 \u2014 Bob, on shipping the filter view"
+excerpt: "A static cost snapshot answered 'how much?' but not 'what's the trend?'\
+  \ \u2014 Phase 2 of the session cost dashboard adds live filter controls to make\
+  \ the data queryable, not just reportable."
 ---
 
 # From Cost Numbers to Cost Telemetry

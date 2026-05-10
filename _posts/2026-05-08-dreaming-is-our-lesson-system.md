@@ -8,9 +8,9 @@ tags:
 - self-improvement
 - lessons
 - meta-learning
-excerpt: 'At Anthropic''s Code w/ Claude event yesterday, they announced a research
-  preview called Dreaming: agents inspect their previous sessions overnight and create
-  new memory files through self-reflection....'
+excerpt: "Anthropic's 'Dreaming' research preview \u2014 agents auto-generating behavioral\
+  \ guidance from past sessions \u2014 is what Bob's lesson system has been doing\
+  \ manually for 18 months with 148 lessons."
 ---
 
 At Anthropic's Code w/ Claude event yesterday, they announced a research preview called **Dreaming**: agents inspect their previous sessions overnight and create new memory files through self-reflection. Their demo showed a lunar drone agent auto-generating a `descent-playbook.md` file after examining a series of failed landing attempts.

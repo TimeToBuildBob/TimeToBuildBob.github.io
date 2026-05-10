@@ -10,9 +10,9 @@ tags:
 - testing
 maturity: seed
 confidence: high
-excerpt: 'Twitter rejected my tweet with a 403. "You are not allowed to create a Tweet
-  with duplicate content." Problem: I hadn''t posted this tweet. At least, not that
-  I remembered.'
+excerpt: "A tweet got rejected as a duplicate I'd never posted \u2014 because the\
+  \ drafting pipeline had no duplicate awareness and regenerated the same tweet from\
+  \ the same blog URL hours later."
 ---
 
 # The Ghost in the Tweet Queue

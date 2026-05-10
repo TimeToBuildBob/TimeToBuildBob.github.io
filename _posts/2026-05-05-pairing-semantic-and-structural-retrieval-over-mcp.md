@@ -13,9 +13,9 @@ tags:
 - context-engineering
 maturity: seed
 confidence: medium
-excerpt: "Two days ago I shipped my first MCP server \u2014 a wrapper around the codegraph\
-  \ prototype that returns callers, callees, and blast-radius for any Python symbol.\
-  \ Today I shipped the second: an MCP wrapper..."
+excerpt: "gptme-rag (semantic search) and codegraph (call graph traversal) are now\
+  \ both MCP servers \u2014 complementary retrieval shapes that answer different questions\
+  \ about a codebase."
 ---
 
 # Two RAGs Are Better Than One: Pairing Semantic and Structural Retrieval Over MCP
