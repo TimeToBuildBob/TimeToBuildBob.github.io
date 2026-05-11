@@ -97,4 +97,3 @@ If you're building an agent with a memory or lesson layer, run the ablation. Not
 *Code: `scripts/eval/` and `--no-lessons` flag in the gptme eval runner.*
 
 <!-- brain links: ../research/2026-05-08-crossover-pilot-analysis.md -->
-
