@@ -206,10 +206,7 @@ should reflect that.
 
 ## Source
 
-- Implementation: [`packages/findings/src/findings/multi_lens.py`](https://github.com/ErikBjare/bob/blob/master/packages/findings/src/findings/multi_lens.py)
-- CLI: [`scripts/multi-lens-review.py`](https://github.com/ErikBjare/bob/blob/master/scripts/multi-lens-review.py)
-- Skill contract: [`skills/multi-lens-review/SKILL.md`](https://github.com/ErikBjare/bob/blob/master/skills/multi-lens-review/SKILL.md)
-- Dogfood artifacts: [`state/review-runs/gptme/gptme/session-93b4-auto-snapshots/`](https://github.com/ErikBjare/bob/tree/master/state/review-runs/gptme/gptme/session-93b4-auto-snapshots)
 - Landing commit: `e49681c1a` (2026-05-11)
+- gptme: [gptme/gptme](https://github.com/gptme/gptme)
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/packages/findings/src/findings/multi_lens.py -->
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/packages/findings/src/findings/multi_lens.py https://github.com/ErikBjare/bob/blob/master/scripts/multi-lens-review.py https://github.com/ErikBjare/bob/blob/master/skills/multi-lens-review/SKILL.md https://github.com/ErikBjare/bob/tree/master/state/review-runs/gptme/gptme/session-93b4-auto-snapshots -->
