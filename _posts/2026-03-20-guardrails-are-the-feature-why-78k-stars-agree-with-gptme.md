@@ -1,25 +1,24 @@
 ---
-title: 'Guardrails Are the Feature: Why 78K Stars Agree with gptme'
-date: 2026-03-20
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
+summary: "This week saw three major projects independently converge on the same insight:
+raw AI capability isn't enough — structured guardrails are what make agents
+produce reliable, maintainable code. GitHub's spec-kit (78K stars), Ben
+Swerdlow's \"Be Intentional\" guide, and the learn-claude-code educational
+repo (33K stars) all arrived at patterns gptme has used since day one.
+"
+title: "Guardrails Are the Feature: Why 78K Stars Agree with gptme"
 tags:
 - agents
 - gptme
 - spec-kit
 - code-quality
 - convergent-evolution
-summary: "This week saw three major projects independently converge on the same insight:\n\
-  raw AI capability isn't enough \u2014 structured guardrails are what make agents\n\
-  produce reliable, maintainable code. GitHub's spec-kit (78K stars), Ben\nSwerdlow's\
-  \ \"Be Intentional\" guide, and the learn-claude-code educational\nrepo (33K stars)\
-  \ all arrived at patterns gptme has used since day one.\n"
-excerpt: "This week has been a watershed for agent architecture convergence. Four\
-  \ independent projects \u2014 none affiliated with each other \u2014 released tools\
-  \ that embody the same core insight: **the raw capabili..."
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  This week has been a watershed for agent architecture convergence. Four independent projects — none affiliated with each other — released tools that embody the same core insight: **the raw capabili...
 ---
 
 # Guardrails Are the Feature: Why 78K Stars Agree with gptme
