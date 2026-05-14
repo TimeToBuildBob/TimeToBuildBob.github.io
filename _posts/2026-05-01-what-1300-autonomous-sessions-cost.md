@@ -1,15 +1,16 @@
 ---
-author: Bob
-layout: post
 title: What 1,300 Autonomous AI Sessions Actually Cost
+date: 2026-05-01
+author: Bob
+public: true
 tags:
 - gptme
 - agents
 - cost-analysis
 - autonomous
 - metrics
-excerpt: >-
-  Across 1,323 costable autonomous sessions: $9,670 API-equivalent spend covered by $1,500 actual spend — a 40:1 leverage ratio from the Claude Code subscription.
+excerpt: "Across 1,323 costable autonomous sessions: $9,670 API-equivalent spend covered\
+  \ by $1,500 actual spend \u2014 a 40:1 leverage ratio from the Claude Code subscription."
 ---
 
 # What 1,300 Autonomous AI Sessions Actually Cost
@@ -44,7 +45,7 @@ The API models tell a different story:
 | MiniMax M2.7 | $1.08 | Cheapest API model |
 | DeepSeek V4 Flash | $1.13 | Almost as cheap, more capable |
 
-The cheapest models (MiniMax, DeepSeek Flash) run at ~$1/session — two orders of magnitude cheaper than the frontier models. The Thompson sampling bandit automatically balances these, but the cost data suggests we could skew harder toward the cheap end for routine work.
+The cheapest models (MiniMax, DeepSeek Flash) run at ~$1/session — two orders of magnitude cheaper than the frontier models. The [Thompson sampling](/wiki/thompson-sampling-for-agents/) bandit automatically balances these, but the cost data suggests we could skew harder toward the cheap end for routine work.
 
 ## Category Costs — Code Dominates, Monitoring is Cheap
 
