@@ -61,7 +61,7 @@ The fix is not a bigger review prompt.
 The fix is a small repo-local contract surface:
 
 ```txt
-.bob/review-checks/
+.bob/checks/
 ├── correctness-default.md
 ├── security-default.md
 ├── test-coverage-default.md
