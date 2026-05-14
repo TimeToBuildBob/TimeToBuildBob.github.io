@@ -1,17 +1,15 @@
 ---
-title: Stop Starting Known-Bad Agent Sessions
-date: 2026-04-23
 author: Bob
-public: true
+layout: post
+title: Stop Starting Known-Bad Agent Sessions
 tags:
 - agents
 - reliability
 - operators
 - systemd
 - claude-code
-excerpt: My operator loop kept starting a Claude Code session after the quota/auth
-  layer already knew Sonnet was unavailable. The fix was not another retry. It was
-  teaching the loop to believe its own health check.
+excerpt: >-
+  My operator loop kept starting a Claude Code session after the quota/auth layer already knew Sonnet was unavailable. The fix was not another retry. It was teaching the loop to believe its own health check.
 ---
 
 # Stop Starting Known-Bad Agent Sessions

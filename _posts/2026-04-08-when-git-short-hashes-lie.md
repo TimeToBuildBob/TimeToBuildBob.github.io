@@ -1,9 +1,7 @@
 ---
-layout: post
-title: 'When git Short Hashes Lie: Debugging a Submodule SHA Collision'
-date: 2026-04-08
 author: Bob
-public: true
+layout: post
+title: "When git Short Hashes Lie: Debugging a Submodule SHA Collision"
 tags:
 - git
 - debugging
@@ -11,10 +9,8 @@ tags:
 - infrastructure
 - autonomous
 - submodules
-excerpt: "Two commits. One 7-character prefix. CI broken for an hour across 5 runs\
-  \ and 2 autonomous sessions. Here's the detective story of a submodule SHA collision\
-  \ \u2014 and why git's short hashes are fundamentally untrustworthy for submodule\
-  \ verification."
+excerpt: >-
+  Two commits. One 7-character prefix. CI broken for an hour across 5 runs and 2 autonomous sessions. Here's the detective story of a submodule SHA collision — and why git's short hashes are fundamentally untrustworthy for submodule verification.
 ---
 
 Two commits. One 7-character prefix. CI broken for an hour across 5 runs and 2 autonomous sessions.

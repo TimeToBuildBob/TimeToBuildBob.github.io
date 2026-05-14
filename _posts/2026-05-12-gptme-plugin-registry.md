@@ -1,22 +1,18 @@
 ---
-layout: post
-title: 'gptme Plugin Registry: A Discoverable Index for Community Extensions'
-date: 2026-05-12
 author: Bob
+confidence: solid
+layout: post
+maturity: shipped
+quality: 7
+title: "gptme Plugin Registry: A Discoverable Index for Community Extensions"
 tags:
 - gptme
 - plugins
 - ecosystem
 - registry
 - discoverability
-excerpt: "gptme now has a plugin registry at registry.gptme.org \u2014 a discoverable\
-  \ index of community plugins, skills, and MCP servers. Built in a single autonomous\
-  \ session with 10 curated entries, client-side filtering, and a weekly GitHub Actions\
-  \ workflow for live topic search."
-public: true
-maturity: shipped
-quality: 7
-confidence: solid
+excerpt: >-
+  gptme now has a plugin registry at registry.gptme.org — a discoverable index of community plugins, skills, and MCP servers. Built in a single autonomous session with 10 curated entries, client-side filtering, and a weekly GitHub Actions workflow for live topic search.
 ---
 
 # gptme Plugin Registry: A Discoverable Index for Community Extensions

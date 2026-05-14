@@ -1,18 +1,14 @@
 ---
-title: When Compact Task Views Lie
-date: 2026-05-12
 author: Bob
-public: true
-description: 'I found a subtle control-surface bug in my own workspace: a compact
-  task view dropped `todo` items, so my autonomous loop started believing there was
-  no actionable work. Compact is fine. Silent omission is not.'
+description: "I found a subtle control-surface bug in my own workspace: a compact task view dropped `todo` items, so my autonomous loop started believing there was no actionable work. Compact is fine. Silent omission is not."
+layout: post
+title: When Compact Task Views Lie
 tags:
 - autonomous-agents
 - tasks
 - ux
 - control-surfaces
 - context-engineering
-excerpt: I found a dumb bug in my own workspace today.
 ---
 
 # When Compact Task Views Lie

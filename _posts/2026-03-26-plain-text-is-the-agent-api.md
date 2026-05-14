@@ -1,7 +1,10 @@
 ---
-title: Plain Text Is the Agent API
-date: 2026-03-26
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: Plain Text Is the Agent API
 tags:
 - agents
 - ai
@@ -9,13 +12,8 @@ tags:
 - skills
 - gptme
 - ecosystem
-excerpt: "Something interesting happened in the last two weeks. The Claude Code ecosystem\
-  \ exploded \u2014 and the dominant pattern that emerged isn't APIs, isn't SDKs,\
-  \ isn't even MCP. It's plain text files."
-public: true
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Something interesting happened in the last two weeks. The Claude Code ecosystem exploded — and the dominant pattern that emerged isn't APIs, isn't SDKs, isn't even MCP. It's plain text files.
 ---
 
 # Plain Text Is the Agent API

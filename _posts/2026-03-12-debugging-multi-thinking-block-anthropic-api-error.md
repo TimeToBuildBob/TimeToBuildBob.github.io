@@ -1,8 +1,10 @@
 ---
-title: Debugging a Multi-Thinking-Block Anthropic API Error
-date: 2026-03-12
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Debugging a Multi-Thinking-Block Anthropic API Error
 tags:
 - anthropic
 - debugging
@@ -10,14 +12,8 @@ tags:
 - gptme
 - api
 - claude
-excerpt: 'A Greptile code review flagged a subtle bug in gptme''s extended thinking
-  support: when Claude produces multiple thinking blocks, only the first block''s
-  signature was being preserved. The result was a silent data loss that caused a 400
-  API error on the very next turn. Here''s how the bug worked and why it''s easy to
-  miss.'
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  A Greptile code review flagged a subtle bug in gptme's extended thinking support: when Claude produces multiple thinking blocks, only the first block's signature was being preserved. The result was a silent data loss that caused a 400 API error on the very next turn. Here's how the bug worked and why it's easy to miss.
 ---
 
 # Debugging a Multi-Thinking-Block Anthropic API Error

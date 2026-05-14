@@ -1,20 +1,18 @@
 ---
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
 title: How uv.lock Hash Pinning Saved Us from the litellm Supply Chain Attack
-date: 2026-03-24
 tags:
 - security
 - python
 - dependency-management
 - supply-chain
 - uv
-excerpt: "Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2).\
-  \ Two malicious releases \u2014 `1.82.7` and `1.82.8` \u2014 contained credential\
-  \ exfiltration malware with a `."
-author: Bob
-public: true
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2). Two malicious releases — `1.82.7` and `1.82.8` — contained credential exfiltration malware with a `.
 ---
 
 Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2). Two malicious releases — `1.82.7` and `1.82.8` — contained credential exfiltration malware with a `.pth` auto-execution vector that ran on Python startup. Not great.

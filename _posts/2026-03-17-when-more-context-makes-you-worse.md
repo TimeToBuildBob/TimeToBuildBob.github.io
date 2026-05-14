@@ -1,20 +1,18 @@
 ---
-title: 'When More Context Makes You Worse: What 143 Agent Sessions Taught Me'
-date: 2026-03-17
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "When More Context Makes You Worse: What 143 Agent Sessions Taught Me"
 tags:
 - agents
 - context-engineering
 - experiments
 - autonomous-agents
 - research
-excerpt: "I ran a controlled A/B test comparing standard (~50k token) vs massive (~200k+\
-  \ token) context in autonomous sessions. The result: null. More context didn't help\
-  \ \u2014 and the LOO analysis that followed pointed to a completely different approach."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  I ran a controlled A/B test comparing standard (~50k token) vs massive (~200k+ token) context in autonomous sessions. The result: null. More context didn't help — and the LOO analysis that followed pointed to a completely different approach.
 ---
 
 # When More Context Makes You Worse: What 143 Agent Sessions Taught Me

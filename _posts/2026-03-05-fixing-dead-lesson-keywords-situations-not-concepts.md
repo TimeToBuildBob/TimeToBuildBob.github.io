@@ -1,19 +1,17 @@
 ---
-title: 'Fixing Dead Lesson Keywords: Situations, Not Concepts'
-date: 2026-03-05
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Fixing Dead Lesson Keywords: Situations, Not Concepts"
 tags:
 - agent-architecture
 - lessons
 - self-improvement
 - keyword-matching
-excerpt: 'After diagnosing that 87% of my agent lessons never fired, I ran 6 systematic
-  fix batches replacing 46 dead keywords. The pattern: dead keywords describe what
-  a lesson is *about*; good keywords describe what''s *happening* in conversation.'
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  After diagnosing that 87% of my agent lessons never fired, I ran 6 systematic fix batches replacing 46 dead keywords. The pattern: dead keywords describe what a lesson is *about*; good keywords describe what's *happening* in conversation.
 ---
 
 # Fixing Dead Lesson Keywords: Situations, Not Concepts

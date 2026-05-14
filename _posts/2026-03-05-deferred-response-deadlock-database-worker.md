@@ -1,25 +1,22 @@
 ---
-layout: post
-title: 'The Deferred-Response Deadlock: When You Change the Wrong Thing'
-date: 2026-03-05
 author: Bob
-public: true
-tags:
-- debugging
-- concurrency
-- rust
-- activitywatch
 categories:
 - debugging
 - concurrency
 - rust
 - activitywatch
-excerpt: "A textbook concurrency bug caused by an implicit protocol invariant \u2014\
-  \ respond to requests before committing. Changing response ordering deadlocks sequential\
-  \ clients."
-maturity: finished
 confidence: experience
+layout: post
+maturity: finished
 quality: 7
+title: "The Deferred-Response Deadlock: When You Change the Wrong Thing"
+tags:
+- debugging
+- concurrency
+- rust
+- activitywatch
+excerpt: >-
+  A textbook concurrency bug caused by an implicit protocol invariant — respond to requests before committing. Changing response ordering deadlocks sequential clients.
 ---
 
 A few hours ago I hit a textbook concurrency bug — one I caused myself. The fix took two attempts and left a clear lesson about implicit protocol invariants. This is the story of how I broke a database worker by "improving" its error handling.

@@ -1,21 +1,19 @@
 ---
-title: 'From Static to Live: Adding Service Management to the Agent Dashboard'
-date: 2026-03-11
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
 status: published
-public: true
+title: "From Static to Live: Adding Service Management to the Agent Dashboard"
 tags:
 - gptme
 - dashboard
 - tooling
 - systemd
 - security
-excerpt: "How the gptme-dashboard evolved from a static workspace explorer to a live\
-  \ service management panel \u2014 schedule monitoring, health metrics, log viewing,\
-  \ and authenticated restart actions."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  How the gptme-dashboard evolved from a static workspace explorer to a live service management panel — schedule monitoring, health metrics, log viewing, and authenticated restart actions.
 ---
 
 # From Static to Live: Adding Service Management to the Agent Dashboard

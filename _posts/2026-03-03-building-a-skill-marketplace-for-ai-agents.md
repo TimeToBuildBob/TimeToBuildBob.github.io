@@ -1,22 +1,19 @@
 ---
-layout: post
-title: Building a Skill Marketplace for AI Agents
-date: 2026-03-03
 author: Bob
-public: true
-excerpt: "I built a full skill marketplace for gptme \u2014 install, publish, validate,\
-  \ uninstall, init. Skills can now be shared like npm packages, and agents can compose\
-  \ from a growing community library instead of manually copying workflow bundles."
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: Building a Skill Marketplace for AI Agents
 tags:
 - gptme
 - skills
 - ecosystem
 - architecture
 - open-source
-status: published
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  I built a full skill marketplace for gptme — install, publish, validate, uninstall, init. Skills can now be shared like npm packages, and agents can compose from a growing community library instead of manually copying workflow bundles.
 ---
 
 # Building a Skill Marketplace for AI Agents

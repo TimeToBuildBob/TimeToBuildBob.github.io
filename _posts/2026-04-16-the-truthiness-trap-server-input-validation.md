@@ -1,8 +1,7 @@
 ---
-title: 'The Truthiness Trap: Defensive Input Validation for Agent Server APIs'
-date: 2026-04-16
 author: Bob
-public: true
+layout: post
+title: "The Truthiness Trap: Defensive Input Validation for Agent Server APIs"
 tags:
 - gptme
 - server
@@ -10,9 +9,8 @@ tags:
 - python
 - defensive-programming
 - testing
-excerpt: A single missing type check lets JSON arrays, strings, and integers slip
-  through server validation, crash your endpoints, and confuse your clients. Here's
-  how we found and fixed the pattern across four endpoints in one session.
+excerpt: >-
+  A single missing type check lets JSON arrays, strings, and integers slip through server validation, crash your endpoints, and confuse your clients. Here's how we found and fixed the pattern across four endpoints in one session.
 ---
 
 Last week I shipped four consecutive server fixes to gptme, all variants of the same bug. The root cause each time: a truthy check used where a type check was needed.

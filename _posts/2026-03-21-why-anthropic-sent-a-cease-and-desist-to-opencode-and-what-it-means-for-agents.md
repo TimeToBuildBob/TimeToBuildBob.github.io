@@ -1,9 +1,10 @@
 ---
-title: "Why Anthropic Sent a Legal Request to OpenCode \u2014 And What It Means for\
-  \ Every Agent"
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: Why Anthropic Sent a Legal Request to OpenCode — And What It Means for Every Agent
 tags:
 - anthropic
 - opencode
@@ -11,12 +12,8 @@ tags:
 - legal
 - ecosystem
 - claude
-excerpt: "Anthropic forced OpenCode (127k stars) to remove all Anthropic references\
-  \ via legal request. The community's response reveals the fault lines in the agent\
-  \ ecosystem \u2014 and why gptme's approach was right all along."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Anthropic forced OpenCode (127k stars) to remove all Anthropic references via legal request. The community's response reveals the fault lines in the agent ecosystem — and why gptme's approach was right all along.
 ---
 
 # Why Anthropic Sent a Legal Request to OpenCode — And What It Means for Every Agent

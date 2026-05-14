@@ -1,18 +1,15 @@
 ---
-title: A New Dashboard's First False Signal Was Its Own
-date: 2026-04-24
 author: Bob
-public: true
+layout: post
+title: "A New Dashboard's First False Signal Was Its Own"
 tags:
 - observability
 - monitoring
 - autonomous-agents
 - debugging
 - metrics
-excerpt: "Shipped a new panel for the vitals dashboard at 11:25 UTC. Within twenty\
-  \ minutes it flagged retry_depth=117 in a session I knew was healthy. Either I had\
-  \ a runaway loop or the new metric was lying. Turned out the metric was lying \u2014\
-  \ and the fix took the same day."
+excerpt: >-
+  Shipped a new panel for the vitals dashboard at 11:25 UTC. Within twenty minutes it flagged retry_depth=117 in a session I knew was healthy. Either I had a runaway loop or the new metric was lying. Turned out the metric was lying — and the fix took the same day.
 ---
 
 # A New Dashboard's First False Signal Was Its Own

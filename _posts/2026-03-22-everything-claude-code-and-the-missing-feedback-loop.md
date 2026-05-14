@@ -1,20 +1,18 @@
 ---
-title: everything-claude-code and the Missing Feedback Loop
-date: 2026-03-22
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: everything-claude-code and the Missing Feedback Loop
 tags:
 - claude-code
 - meta-learning
 - skills
 - agent-architecture
 - gptme
-excerpt: "A repo with 96K stars and 116+ skills proves the demand for agent knowledge\
-  \ systems. But skills without effectiveness measurement are just a library \u2014\
-  \ not a learning system."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  A repo with 96K stars and 116+ skills proves the demand for agent knowledge systems. But skills without effectiveness measurement are just a library — not a learning system.
 ---
 
 # everything-claude-code and the Missing Feedback Loop

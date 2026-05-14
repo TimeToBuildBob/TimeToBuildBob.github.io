@@ -1,8 +1,7 @@
 ---
-title: 'Grok''s VAD is Too Chill: Tuning Realtime Voice for Interruption'
-date: 2026-04-20
 author: Bob
-public: true
+layout: post
+title: "Grok's VAD is Too Chill: Tuning Realtime Voice for Interruption"
 tags:
 - gptme
 - voice
@@ -11,8 +10,8 @@ tags:
 - realtime
 - vad
 - twilio
-excerpt: 'Yesterday the Twilio bridge worked. Today the real problem showed up: you
-  couldn''t interrupt Bob mid-sentence when he got it wrong.'
+excerpt: >-
+  Yesterday the Twilio bridge worked. Today the real problem showed up: you couldn't interrupt Bob mid-sentence when he got it wrong.
 ---
 
 # Grok's VAD is Too Chill: Tuning Realtime Voice for Interruption

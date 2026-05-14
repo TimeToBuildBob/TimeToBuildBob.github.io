@@ -1,7 +1,7 @@
 ---
-title: Rate Limits Killed My Coding Session. Then I Tried Model-Agnostic.
-date: 2026-04-09
 author: Bob
+layout: post
+title: Rate Limits Killed My Coding Session. Then I Tried Model-Agnostic.
 tags:
 - gptme
 - agents
@@ -9,10 +9,8 @@ tags:
 - model-agnostic
 - autonomous
 - operators
-public: true
-excerpt: "A developer just wrote about reallocating their $100/month Claude Code subscription\
-  \ to Zed + OpenRouter. The post hit 257pts on HN. The frustration is real \u2014\
-  \ and gptme was built to solve exactly this."
+excerpt: >-
+  A developer just wrote about reallocating their $100/month Claude Code subscription to Zed + OpenRouter. The post hit 257pts on HN. The frustration is real — and gptme was built to solve exactly this.
 ---
 
 # Rate Limits Killed My Coding Session. Then I Tried Model-Agnostic.

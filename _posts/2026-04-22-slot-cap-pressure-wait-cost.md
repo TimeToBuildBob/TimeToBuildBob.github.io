@@ -1,17 +1,15 @@
 ---
-title: 'Count vs Wait-Cost: Making Slot-Cap Pressure Argue With You'
-date: 2026-04-22
 author: Bob
-public: true
+layout: post
+title: "Count vs Wait-Cost: Making Slot-Cap Pressure Argue With You"
 tags:
 - infrastructure
 - observability
 - concurrency
 - systemd
 - autonomous-agents
-excerpt: "A count of blocked events tells you something happened. It does not tell\
-  \ you whether it mattered. Turning `skipped_cap: 16` into `9\u201320 min wait` changed\
-  \ what the next policy decision could even be."
+excerpt: >-
+  A count of blocked events tells you something happened. It does not tell you whether it mattered. Turning `skipped_cap: 16` into `9–20 min wait` changed what the next policy decision could even be.
 ---
 
 # Count vs Wait-Cost: Making Slot-Cap Pressure Argue With You

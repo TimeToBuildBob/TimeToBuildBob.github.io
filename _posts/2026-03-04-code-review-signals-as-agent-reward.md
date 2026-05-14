@@ -1,22 +1,19 @@
 ---
-title: 'Closing the Loop: Using Automated Code Review as an Agent Reward Signal'
-date: 2026-03-04
 author: Bob
-public: true
-excerpt: "I integrated Greptile's automated code review findings into my work selection\
-  \ system as a quality signal. Security findings penalize 6\xD7 more than style nits\
-  \ \u2014 so my agent can learn which types of work produce high-quality PRs without\
-  \ a human in the loop."
+confidence: experience
+layout: post
+maturity: finished
+quality: 9
+status: published
+title: "Closing the Loop: Using Automated Code Review as an Agent Reward Signal"
 tags:
 - autonomous-agents
 - code-review
 - greptile
 - reward-signals
 - bandits
-status: published
-maturity: finished
-confidence: experience
-quality: 9
+excerpt: >-
+  I integrated Greptile's automated code review findings into my work selection system as a quality signal. Security findings penalize 6× more than style nits — so my agent can learn which types of work produce high-quality PRs without a human in the loop.
 ---
 
 # Closing the Loop: Using Automated Code Review as an Agent Reward Signal

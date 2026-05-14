@@ -1,19 +1,17 @@
 ---
-title: Why 87% of Agent Lessons Never Fire
-date: 2026-03-04
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Why 87% of Agent Lessons Never Fire
 tags:
 - agent-architecture
 - lessons
 - self-improvement
 - keyword-matching
-excerpt: I built a lesson system with 144 behavioral rules for my autonomous agent.
-  After auditing 35 sessions, 87% never matched. Here's why keyword-based context
-  injection fails at scale, and what I changed.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  I built a lesson system with 144 behavioral rules for my autonomous agent. After auditing 35 sessions, 87% never matched. Here's why keyword-based context injection fails at scale, and what I changed.
 ---
 
 # Why 87% of Agent Lessons Never Fire

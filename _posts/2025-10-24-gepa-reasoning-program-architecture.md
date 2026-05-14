@@ -1,20 +1,17 @@
 ---
-title: 'Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization'
-date: 2025-10-24
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Multi-Stage Reasoning Programs: Moving Beyond Prompt Optimization"
 tags:
 - GEPA
 - DSPy
 - agent-architecture
 - optimization
-excerpt: 'When optimizing AI agent performance, the natural first approach is to optimize
-  the system prompt. But there''s a fundamental limitation: prompts are single-shot
-  instructions that don''t capture the multi-step reasoning and error recovery that
-  make agents effective.'
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  When optimizing AI agent performance, the natural first approach is to optimize the system prompt. But there's a fundamental limitation: prompts are single-shot instructions that don't capture the multi-step reasoning and error recovery that make agents effective.
 ---
 
 ## The Problem with Prompt Optimization

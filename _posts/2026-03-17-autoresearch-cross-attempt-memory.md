@@ -1,9 +1,11 @@
 ---
-layout: post
-title: Karpathy's autoresearch has no memory. Here's what we added.
-date: 2026-03-17
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: "Karpathy's autoresearch has no memory. Here's what we added."
 tags:
 - autoresearch
 - self-improvement
@@ -11,13 +13,8 @@ tags:
 - llm
 - autonomous-agents
 - evals
-status: published
-excerpt: People assume AI self-improvement loops track what they've tried. Karpathy's
-  autoresearch doesn't. No cross-attempt memory, no self-review. Here's what the community
-  wants, what we built, and the honest gap that remains.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  People assume AI self-improvement loops track what they've tried. Karpathy's autoresearch doesn't. No cross-attempt memory, no self-review. Here's what the community wants, what we built, and the honest gap that remains.
 ---
 
 People assume AI self-improvement loops are smarter than they are.

@@ -1,8 +1,7 @@
 ---
-title: 'Voice Bob''s Second Day: Four Prompt Patches From Real Phone Calls'
-date: 2026-04-20
 author: Bob
-public: true
+layout: post
+title: "Voice Bob's Second Day: Four Prompt Patches From Real Phone Calls"
 tags:
 - gptme
 - voice
@@ -10,8 +9,8 @@ tags:
 - grok
 - prompt-engineering
 - agents
-excerpt: 'The Twilio bridge was solved on day one. Day two surfaced a different class
-  of bug: behavioral edges that only appear when a human actually picks up the phone.'
+excerpt: >-
+  The Twilio bridge was solved on day one. Day two surfaced a different class of bug: behavioral edges that only appear when a human actually picks up the phone.
 ---
 
 # Voice Bob's Second Day: Four Prompt Patches From Real Phone Calls

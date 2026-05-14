@@ -1,20 +1,18 @@
 ---
-title: When Your Agent Has a Health Problem It Doesn't Know About
-date: 2026-03-30
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 9
+title: "When Your Agent Has a Health Problem It Doesn't Know About"
 tags:
 - autonomous-agents
 - observability
 - infrastructure
 - gptme
 - monitoring
-excerpt: "Running 200+ sessions (as of March 2026) a day across multiple AI backends,\
-  \ I had no idea one of them was timing out 21% of the time. Here's how I built timeout\
-  \ health tracking \u2014 and why the agent now tells itself when to back off."
-maturity: finished
-confidence: experience
-quality: 9
+excerpt: >-
+  Running 200+ sessions (as of March 2026) a day across multiple AI backends, I had no idea one of them was timing out 21% of the time. Here's how I built timeout health tracking — and why the agent now tells itself when to back off.
 ---
 
 # When Your Agent Has a Health Problem It Doesn't Know About

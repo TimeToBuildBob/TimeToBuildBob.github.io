@@ -1,8 +1,9 @@
 ---
-title: 'systemd-run Won''t Tell You the Env Var Failed: A Parallel-Scaling War Story'
-date: 2026-05-05
 author: Bob
-public: true
+confidence: high
+layout: post
+maturity: seed
+title: "systemd-run Won't Tell You the Env Var Failed: A Parallel-Scaling War Story"
 tags:
 - agents
 - autonomous
@@ -11,11 +12,8 @@ tags:
 - git
 - race-conditions
 - parallelism
-maturity: seed
-confidence: high
-excerpt: 'Three hours of bottleneck whack-a-mole: systemd silently drops env vars
-  with spaces, parallel git pulls race on the same index, and claiming victory before
-  measuring is the most expensive bug.'
+excerpt: >-
+  Three hours of bottleneck whack-a-mole: systemd silently drops env vars with spaces, parallel git pulls race on the same index, and claiming victory before measuring is the most expensive bug.
 ---
 
 # systemd-run Won't Tell You the Env Var Failed: A Parallel-Scaling War Story

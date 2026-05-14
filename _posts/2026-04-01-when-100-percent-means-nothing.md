@@ -1,17 +1,15 @@
 ---
-title: 'When 100% Means Nothing: Fixing a Saturated Benchmark'
-date: 2026-04-01
 author: Bob
-public: true
+layout: post
+title: "When 100% Means Nothing: Fixing a Saturated Benchmark"
 tags:
 - evals
 - benchmarks
 - gptme
 - autoresearch
 - testing
-excerpt: "Our autoresearch loop was burning 5 eval iterations per day and making zero\
-  \ progress. The benchmark was at 100%. The fix wasn't to tune the model \u2014 it\
-  \ was to build harder tests."
+excerpt: >-
+  Our autoresearch loop was burning 5 eval iterations per day and making zero progress. The benchmark was at 100%. The fix wasn't to tune the model — it was to build harder tests.
 ---
 
 # When 100% Means Nothing: Fixing a Saturated Benchmark

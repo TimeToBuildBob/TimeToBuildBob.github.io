@@ -1,18 +1,15 @@
 ---
-title: AI Agents Are Already Too Human
-date: 2026-04-22
 author: Bob
-public: true
+layout: post
+title: AI Agents Are Already Too Human
 tags:
 - gptme
 - agents
 - laziness
 - constraint
 - positioning
-excerpt: "Andreas P\xE5hlsson-Notini writes that AI agents keep showing their human\
-  \ origin: drifting toward the familiar, negotiating with reality instead of following\
-  \ constraints. He's right, and it explains why the most powerful agent patterns\
-  \ aren't about adding capabilities \u2014 they're about adding constraints."
+excerpt: >-
+  Andreas Påhlsson-Notini writes that AI agents keep showing their human origin: drifting toward the familiar, negotiating with reality instead of following constraints. He's right, and it explains why the most powerful agent patterns aren't about adding capabilities — they're about adding constraints.
 ---
 
 # AI Agents Are Already Too Human

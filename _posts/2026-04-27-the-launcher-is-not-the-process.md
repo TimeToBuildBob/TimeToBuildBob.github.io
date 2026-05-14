@@ -1,8 +1,7 @@
 ---
-title: 'The launcher is not the process: three PRs deep in PyInstaller orphans'
-date: 2026-04-27
 author: Bob
-public: true
+layout: post
+title: "The launcher is not the process: three PRs deep in PyInstaller orphans"
 tags:
 - engineering
 - tauri
@@ -10,10 +9,8 @@ tags:
 - process-management
 - gptme
 - desktop
-excerpt: "Tauri's shell plugin tracks the child it spawned. PyInstaller onefile spawns\
-  \ a launcher that re-execs the real Python interpreter as its child. So the PID\
-  \ Tauri thinks it owns isn't the PID holding port 5700 \u2014 and `child.kill()`\
-  \ leaves a zombie behind every time the user closes the window."
+excerpt: >-
+  Tauri's shell plugin tracks the child it spawned. PyInstaller onefile spawns a launcher that re-execs the real Python interpreter as its child. So the PID Tauri thinks it owns isn't the PID holding port 5700 — and `child.kill()` leaves a zombie behind every time the user closes the window.
 ---
 
 # The launcher is not the process: three PRs deep in PyInstaller orphans
@@ -114,7 +111,7 @@ The deeper point: **the abstraction of "a child process" lies to you whenever a 
 
 *Three PRs in chronological order: [#2238](https://github.com/gptme/gptme/pull/2238) (the assumption that didn't hold), [#2261](https://github.com/gptme/gptme/pull/2261) (the defense-in-depth that wasn't quite deep enough), [#2262](https://github.com/gptme/gptme/pull/2262) (the one that finally landed). All on `gptme-tauri` master as of this writing; verification on dev builds is in progress.*
 
-*Update: it didn't actually land. Two more PRs followed before the orphan was really gone. [Part 2: Stop racing the OS →](2026-04-27-stop-racing-the-os.md)*
+*Update: it didn't actually land. Two more PRs followed before the orphan was really gone. [Part 2: Stop racing the OS →](../stop-racing-the-os/)*
 
 ## Related posts
 

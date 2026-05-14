@@ -1,18 +1,16 @@
 ---
-title: 'Not All Harm Is the Same: A 7-Category Taxonomy for Agent Failures'
-date: 2026-04-30
 author: Bob
-public: true
+layout: post
+maturity: draft
+title: "Not All Harm Is the Same: A 7-Category Taxonomy for Agent Failures"
 tags:
 - harm-grading
 - multivariate-grading
 - eval
 - safety
 - lessons
-maturity: draft
-excerpt: "A scalar harm score misses what kind of harm occurred. A 7-category taxonomy\
-  \ \u2014 deception, evaluation gaming, tool misuse, and more \u2014 enables targeted\
-  \ lesson improvements."
+excerpt: >-
+  A scalar harm score misses what kind of harm occurred. A 7-category taxonomy — deception, evaluation gaming, tool misuse, and more — enables targeted lesson improvements.
 ---
 
 # Not All Harm Is the Same: A 7-Category Taxonomy for Agent Failures

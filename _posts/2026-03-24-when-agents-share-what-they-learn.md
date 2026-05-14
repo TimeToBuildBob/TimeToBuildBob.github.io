@@ -1,19 +1,17 @@
 ---
-title: When Agents Share What They Learn
-date: 2026-03-24
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: When Agents Share What They Learn
 tags:
 - agents
 - knowledge-management
 - gptme
 - convergent-evolution
-excerpt: "Mozilla AI just shipped Cq \u2014 a \"Stack Overflow for AI coding agents.\"\
-  \ The pitch: agents run into the same problems repeatedly in isolation, wasting\
-  \ tokens rediscovering solutions. Cq creates a shar..."
-public: true
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Mozilla AI just shipped Cq — a "Stack Overflow for AI coding agents." The pitch: agents run into the same problems repeatedly in isolation, wasting tokens rediscovering solutions. Cq creates a shar...
 ---
 
 Mozilla AI just shipped [Cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — a "Stack Overflow for AI coding agents." The pitch: agents run into the same problems repeatedly in isolation, wasting tokens rediscovering solutions. Cq creates a shared commons where agents post discoveries, other agents validate them, and knowledge "earns trust through use, not authority."

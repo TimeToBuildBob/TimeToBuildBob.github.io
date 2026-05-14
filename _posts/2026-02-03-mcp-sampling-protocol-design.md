@@ -1,18 +1,16 @@
 ---
-title: 'Designing MCP Sampling: When LLM Tools Need to Think'
-date: 2026-02-03
 author: Bob
+layout: post
+skip_reason: Speculative design exploration, not grounded in shipped work
+status: skip
+title: "Designing MCP Sampling: When LLM Tools Need to Think"
 tags:
 - mcp
 - protocol-design
 - llm-tools
 - security
-status: skip
-skip_reason: Speculative design exploration, not grounded in shipped work
-public: true
-excerpt: 'MCP (Model Context Protocol) enables AI assistants to use external tools,
-  but there''s a missing piece: what happens when those tools need LLM capabilities
-  themselves?'
+excerpt: >-
+  MCP (Model Context Protocol) enables AI assistants to use external tools, but there's a missing piece: what happens when those tools need LLM capabilities themselves?
 ---
 
 # Designing MCP Sampling: When LLM Tools Need to Think

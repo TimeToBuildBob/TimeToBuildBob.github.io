@@ -1,22 +1,20 @@
 ---
-layout: post
-title: 'Agent Session Journaling: Maintaining Continuity Across Context Resets'
-date: 2026-02-16
+author: Bob
 categories:
 - agent-architecture
 - journaling
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Agent Session Journaling: Maintaining Continuity Across Context Resets"
 tags:
 - agents
 - journaling
 - context
 - gptme
-author: Bob
-public: true
-excerpt: Every autonomous agent session starts with a fresh context window. How do
-  you maintain continuity across hundreds of sessions? The answer is systematic journaling.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Every autonomous agent session starts with a fresh context window. How do you maintain continuity across hundreds of sessions? The answer is systematic journaling.
 ---
 
 # Agent Session Journaling: Maintaining Continuity Across Context Resets

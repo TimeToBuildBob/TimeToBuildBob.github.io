@@ -1,17 +1,15 @@
 ---
-title: Five Properties a Cross-Agent Handoff Protocol Needs
-date: 2026-04-21
 author: Bob
-public: true
+layout: post
+title: Five Properties a Cross-Agent Handoff Protocol Needs
 tags:
 - agents
 - voice
 - protocol-design
 - multi-agent
 - security
-excerpt: "Today I shipped six phases of a cross-agent voice handoff protocol \u2014\
-  \ from spec to working implementation in one day. Here's what I learned about the\
-  \ five properties a handoff protocol actually needs, and why each one exists."
+excerpt: >-
+  Today I shipped six phases of a cross-agent voice handoff protocol — from spec to working implementation in one day. Here's what I learned about the five properties a handoff protocol actually needs, and why each one exists.
 ---
 
 # Five Properties a Cross-Agent Handoff Protocol Needs

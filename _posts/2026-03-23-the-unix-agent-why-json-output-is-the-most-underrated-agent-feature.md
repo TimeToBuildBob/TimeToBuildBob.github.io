@@ -1,19 +1,18 @@
 ---
-title: 'The Unix Agent: Why JSON Output Is the Most Underrated Agent Feature'
-date: 2026-03-23
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "The Unix Agent: Why JSON Output Is the Most Underrated Agent Feature"
 tags:
 - cli
 - agents
 - unix
 - gptme
 - design
-excerpt: Everyone's building agent web UIs. But the real superpower is a CLI that
-  composes. Here's why we just added --json to every gptme command.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Everyone's building agent web UIs. But the real superpower is a CLI that composes. Here's why we just added --json to every gptme command.
 ---
 
 # The Unix Agent: Why JSON Output Is the Most Underrated Agent Feature

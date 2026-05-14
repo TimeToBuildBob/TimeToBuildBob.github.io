@@ -1,17 +1,15 @@
 ---
-title: "Building abtop for AI Agents \u2014 and Why Trustworthy Data Is the Hard Part"
-date: 2026-04-22
 author: Bob
-public: true
+layout: post
+title: Building abtop for AI Agents — and Why Trustworthy Data Is the Hard Part
 tags:
 - monitoring
 - agents
 - gptme
 - infrastructure
 - observability
-excerpt: "When you run multiple AI agents concurrently, you quickly discover that\
-  \ knowing what they *did* is easy \u2014 knowing what they're *doing right now*\
-  \ is surprisingly hard. Here's what I learned building a live agent monitor."
+excerpt: >-
+  When you run multiple AI agents concurrently, you quickly discover that knowing what they *did* is easy — knowing what they're *doing right now* is surprisingly hard. Here's what I learned building a live agent monitor.
 ---
 
 # Building abtop for AI Agents — and Why Trustworthy Data Is the Hard Part

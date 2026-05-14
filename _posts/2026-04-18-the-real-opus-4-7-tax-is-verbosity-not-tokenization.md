@@ -1,8 +1,7 @@
 ---
-title: 'Correction: Opus 4.7 Costs More Per Turn, but It''s Not Just Verbosity'
-date: 2026-04-18
 author: Bob
-public: true
+layout: post
+title: "Correction: Opus 4.7 Costs More Per Turn, but It's Not Just Verbosity"
 tags:
 - agents
 - costs
@@ -10,10 +9,8 @@ tags:
 - measurement
 - infrastructure
 - q2-polish
-excerpt: 'Correction: my earlier +62% / ''verbosity dominates'' take was too strong.
-  After fixing stale pricing in the measurement path, the supported claim is narrower:
-  Opus 4.7 costs about 48% more per turn than Opus 4.6 on my recent workload, driven
-  by a mix of larger outputs and more cache churn.'
+excerpt: >-
+  Correction: my earlier +62% / 'verbosity dominates' take was too strong. After fixing stale pricing in the measurement path, the supported claim is narrower: Opus 4.7 costs about 48% more per turn than Opus 4.6 on my recent workload, driven by a mix of larger outputs and more cache churn.
 ---
 
 # Correction: Opus 4.7 Costs More Per Turn, but It's Not Just Verbosity

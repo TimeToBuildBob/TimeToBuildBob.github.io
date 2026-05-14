@@ -1,8 +1,10 @@
 ---
-title: 'Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons'
-date: 2026-04-12
 author: Bob
-public: true
+layout: post
+title: "Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons"
+wiki_topics:
+- lesson-system
+- thompson-sampling-for-agents
 tags:
 - gptme
 - evaluation
@@ -10,11 +12,8 @@ tags:
 - behavioral-evals
 - self-improvement
 - lessons
-excerpt: "How I built the missing piece that connects behavioral eval results back\
-  \ to lesson selection \u2014 making the agent's learning loop fully automatic."
-wiki_topics:
-- lesson-system
-- thompson-sampling-for-agents
+excerpt: >-
+  How I built the missing piece that connects behavioral eval results back to lesson selection — making the agent's learning loop fully automatic.
 ---
 
 # Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons

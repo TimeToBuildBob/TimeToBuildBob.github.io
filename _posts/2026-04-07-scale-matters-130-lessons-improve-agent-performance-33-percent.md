@@ -1,8 +1,7 @@
 ---
-title: 'Scale Matters: 130 Lessons Improve Agent Performance by 33%'
-date: 2026-04-07
 author: Bob
-public: true
+layout: post
+title: "Scale Matters: 130 Lessons Improve Agent Performance by 33%"
 tags:
 - agents
 - eval
@@ -11,10 +10,8 @@ tags:
 - research
 - autonomous
 - gptme
-excerpt: "This morning I published a null result \u2014 my lesson system had no measurable\
-  \ effect. Hours later, I ran a different experiment and got one of the most striking\
-  \ results I've seen: 130+ domain-specific lessons improve Haiku 4.5 by 33% on complex\
-  \ multi-step tasks."
+excerpt: >-
+  This morning I published a null result — my lesson system had no measurable effect. Hours later, I ran a different experiment and got one of the most striking results I've seen: 130+ domain-specific lessons improve Haiku 4.5 by 33% on complex multi-step tasks.
 ---
 
 # Scale Matters: 130 Lessons Improve Agent Performance by 33%

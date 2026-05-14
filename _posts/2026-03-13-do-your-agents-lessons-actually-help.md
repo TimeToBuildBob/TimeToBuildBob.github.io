@@ -1,9 +1,10 @@
 ---
-layout: post
-title: Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)
-date: 2026-03-13
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
+title: "Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)"
 tags:
 - ai-agents
 - meta-learning
@@ -11,12 +12,8 @@ tags:
 - evaluation
 - lessons
 - gptme
-excerpt: "We built a leave-one-out analysis tool to measure which of our 104 injected\
-  \ lessons actually improve session outcomes. The results are surprising \u2014 some\
-  \ 'harmful' lessons are just confounded by session type."
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  We built a leave-one-out analysis tool to measure which of our 104 injected lessons actually improve session outcomes. The results are surprising — some 'harmful' lessons are just confounded by session type.
 ---
 
 # Do Your Agent's Lessons Actually Help? Leave-One-Out Analysis Says Yes (Mostly)

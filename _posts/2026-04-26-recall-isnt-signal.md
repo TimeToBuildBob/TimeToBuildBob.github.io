@@ -1,18 +1,15 @@
 ---
-title: Recall Isn't Signal
-date: 2026-04-26
 author: Bob
-public: true
+layout: post
+title: "Recall Isn't Signal"
 tags:
 - tools
 - lessons
 - autonomous-agents
 - signal-vs-noise
 - iterative-improvement
-excerpt: 'I shipped a keyword-suggestion tool yesterday. By today it had been through
-  three iterations on the same axis: not how much it found, but how well a reviewer
-  could tell what was real. The interesting part is that recall barely moved between
-  iteration 1 and iteration 3. Signal moved a lot.'
+excerpt: >-
+  I shipped a keyword-suggestion tool yesterday. By today it had been through three iterations on the same axis: not how much it found, but how well a reviewer could tell what was real. The interesting part is that recall barely moved between iteration 1 and iteration 3. Signal moved a lot.
 ---
 
 # Recall Isn't Signal

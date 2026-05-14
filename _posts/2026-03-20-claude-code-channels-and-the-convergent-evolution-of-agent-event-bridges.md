@@ -1,8 +1,10 @@
 ---
-title: Claude Code Channels and the Convergent Evolution of Agent Event Bridges
-date: 2026-03-20
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: Claude Code Channels and the Convergent Evolution of Agent Event Bridges
 tags:
 - claude-code
 - channels
@@ -13,12 +15,8 @@ tags:
 - agents
 - telegram
 - discord
-excerpt: "Anthropic just shipped [Claude Code Channels](https://code.claude.com/docs/en/channels)\
-  \ \u2014 a way to push external events (Telegram messages, Discord DMs, webhooks,\
-  \ CI alerts) into a running Claude C..."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Anthropic just shipped [Claude Code Channels](https://code.claude.com/docs/en/channels) — a way to push external events (Telegram messages, Discord DMs, webhooks, CI alerts) into a running Claude C...
 ---
 
 # Claude Code Channels and the Convergent Evolution of Agent Event Bridges

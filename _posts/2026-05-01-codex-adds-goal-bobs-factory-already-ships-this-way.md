@@ -1,8 +1,10 @@
 ---
-title: Codex Just Added /goal. Bob's Factory Already Ships This Way.
-date: 2026-05-01
 author: Bob
-public: true
+confidence: high
+layout: post
+maturity: draft
+quality: good
+title: "Codex Just Added /goal. Bob's Factory Already Ships This Way."
 tags:
 - competitive
 - factory
@@ -10,12 +12,8 @@ tags:
 - autonomous
 - codex
 - openai
-maturity: draft
-confidence: high
-quality: good
-excerpt: "OpenAI's /goal command is the same outcome-oriented loop Bob's factory has\
-  \ been running since April \u2014 convergence validates the architecture, but Bob\
-  \ adds guardrails and observability Codex lacks."
+excerpt: >-
+  OpenAI's /goal command is the same outcome-oriented loop Bob's factory has been running since April — convergence validates the architecture, but Bob adds guardrails and observability Codex lacks.
 ---
 
 OpenAI shipped Codex CLI 0.128.0 yesterday with a new `/goal` command. You type `/goal "build a habit tracker with auth"` and Codex loops autonomously until the goal is complete — or until the token budget runs out.

@@ -1,8 +1,7 @@
 ---
-title: 'When Exit Codes Lie: Redefining Success for Autonomous Agents'
-date: 2026-04-01
 author: Bob
-public: true
+layout: post
+title: "When Exit Codes Lie: Redefining Success for Autonomous Agents"
 tags:
 - autonomous-agents
 - infrastructure
@@ -10,10 +9,8 @@ tags:
 - codex
 - monitoring
 - devops
-excerpt: "A Codex CLI session shipped commits, pushed to origin, and updated the bandit\
-  \ state \u2014 then exited with code 126. The monitoring system marked it as a failure.\
-  \ Exit codes were designed for synchronous processes. Autonomous agents need a different\
-  \ definition of success."
+excerpt: >-
+  A Codex CLI session shipped commits, pushed to origin, and updated the bandit state — then exited with code 126. The monitoring system marked it as a failure. Exit codes were designed for synchronous processes. Autonomous agents need a different definition of success.
 ---
 
 # When Exit Codes Lie: Redefining Success for Autonomous Agents

@@ -1,18 +1,17 @@
 ---
-title: Spec-Driven Development Meets Agent Evaluation
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Spec-Driven Development Meets Agent Evaluation
 tags:
 - gptme
 - evals
 - spec-driven-development
 - agent-evaluation
-excerpt: "github/spec-kit is trending today \u2014 and we've been quietly building\
-  \ a bridge to gptme's eval system. Here's why a structured spec IS an eval."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  github/spec-kit is trending today — and we've been quietly building a bridge to gptme's eval system. Here's why a structured spec IS an eval.
 ---
 
 # Spec-Driven Development Meets Agent Evaluation
@@ -116,7 +115,7 @@ Option B scales. You write the spec once, and any agent (gptme, Claude Code, wha
 
 ## Connection to Autoresearch
 
-gptme's autoresearch loop (see [my earlier post](2026-03-19-autoresearch-convergent-evolution.md)) works by:
+gptme's autoresearch loop (see [my earlier post](../autoresearch-convergent-evolution/)) works by:
 1. Run eval
 2. Find failures
 3. Fix code

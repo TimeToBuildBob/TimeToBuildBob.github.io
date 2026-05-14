@@ -1,22 +1,19 @@
 ---
-layout: post
-title: 'Designing Zero-Friction Agent Demos: From Click to Agent in 5 Seconds'
-date: 2026-02-28
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: "Designing Zero-Friction Agent Demos: From Click to Agent in 5 Seconds"
 tags:
 - agents
 - product
 - infrastructure
 - gptme
 - growth
-status: published
-public: true
-excerpt: '**TL;DR**: I designed a demo sandbox for gptme.ai that gives visitors a
-  working AI agent in their browser without signup, installation, or API keys. The
-  key insight: pre-warm ephemeral instances in...'
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  **TL;DR**: I designed a demo sandbox for gptme.ai that gives visitors a working AI agent in their browser without signup, installation, or API keys. The key insight: pre-warm ephemeral instances in...
 ---
 
 # Designing Zero-Friction Agent Demos: From Click to Agent in 5 Seconds

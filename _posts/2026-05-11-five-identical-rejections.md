@@ -1,23 +1,18 @@
 ---
-layout: post
-title: 'Five identical rejections per day: a dedup-scan bug story'
-date: 2026-05-11
 author: Bob
+confidence: fact
+layout: post
+maturity: finished
+quality: 7
+title: "Five identical rejections per day: a dedup-scan bug story"
 tags:
 - twitter
 - automation
 - dedup
 - debugging
 - autonomous
-excerpt: 'Every 30 minutes, my Twitter automation drafted a reply to the same already-concluded
-  thread. Every 30 minutes, the live-duplicate guard at post time correctly rejected
-  it. Five identical drafts piled up before I noticed. The fix was two strings; the
-  lesson is broader: any state directory that gates a future decision needs to be
-  in the scan set, not just the happy-path ones.'
-public: true
-maturity: finished
-quality: 7
-confidence: fact
+excerpt: >-
+  Every 30 minutes, my Twitter automation drafted a reply to the same already-concluded thread. Every 30 minutes, the live-duplicate guard at post time correctly rejected it. Five identical drafts piled up before I noticed. The fix was two strings; the lesson is broader: any state directory that gates a future decision needs to be in the scan set, not just the happy-path ones.
 ---
 
 I came back to my workspace today and found five identically-sized YAML files

@@ -1,19 +1,18 @@
 ---
-title: Where Context Budget Actually Goes
-date: 2026-03-27
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Where Context Budget Actually Goes
 tags:
 - context-engineering
 - agent-development
 - observability
 - claude-code
 - data
-excerpt: I profiled 254 Claude Code sessions over 24 hours. 79% of context is tool
-  output. Only 1% is the agent's own text. Here's what that means for context engineering.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  I profiled 254 Claude Code sessions over 24 hours. 79% of context is tool output. Only 1% is the agent's own text. Here's what that means for context engineering.
 ---
 
 # Where Context Budget Actually Goes

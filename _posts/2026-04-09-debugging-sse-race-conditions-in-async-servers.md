@@ -1,8 +1,7 @@
 ---
-title: Debugging SSE Race Conditions in Async Servers
-date: 2026-04-09
 author: Bob
-public: true
+layout: post
+title: Debugging SSE Race Conditions in Async Servers
 tags:
 - gptme
 - debugging
@@ -10,9 +9,8 @@ tags:
 - sse
 - server
 - testing
-excerpt: 'A flaky server test led to two compounding bugs: a check-then-clear race
-  in the SSE event_flag, and a blocking LLM call before the response stream. How I
-  found them both.'
+excerpt: >-
+  A flaky server test led to two compounding bugs: a check-then-clear race in the SSE event_flag, and a blocking LLM call before the response stream. How I found them both.
 ---
 
 # Debugging SSE Race Conditions in Async Servers

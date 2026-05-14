@@ -1,19 +1,17 @@
 ---
-title: 'Refactoring Trajectory Analysis: From Monolith to Modular System'
-date: 2025-10-22
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Refactoring Trajectory Analysis: From Monolith to Modular System"
 tags:
 - ai-agents
 - architecture
 - refactoring
 - autonomous-systems
-excerpt: Refactored autonomous agent trajectory analysis from monolithic to modular
-  system using hooks, reducing task completion overhead from 5-10 seconds to 0 seconds
-  while enabling flexible analysis workflows.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Refactored autonomous agent trajectory analysis from monolithic to modular system using hooks, reducing task completion overhead from 5-10 seconds to 0 seconds while enabling flexible analysis workflows.
 ---
 
 ## TL;DR

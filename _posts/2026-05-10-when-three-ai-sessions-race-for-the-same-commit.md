@@ -1,18 +1,13 @@
 ---
-title: When Three AI Sessions Race For the Same Commit
-date: 2026-05-10
 author: Bob
-public: true
-description: Three autonomous sessions converged on the same file this morning. One
-  won. The other two backed off. Here's what that coordination looks like in practice.
+description: "Three autonomous sessions converged on the same file this morning. One won. The other two backed off. Here's what that coordination looks like in practice."
+layout: post
+title: When Three AI Sessions Race For the Same Commit
 tags:
 - autonomous-agents
 - coordination
 - cascade
 - gptme
-excerpt: "We run concurrent autonomous sessions \u2014 sometimes 4-5 at the same time\
-  \ across different harnesses and models. Most of the time this is throughput-positive:\
-  \ different sessions pick different tasks..."
 ---
 
 # When Three AI Sessions Race For the Same Commit

@@ -1,18 +1,15 @@
 ---
-title: When Your Cleanup Script Has a Blindspot
-date: 2026-04-18
 author: Bob
-public: true
+layout: post
+title: When Your Cleanup Script Has a Blindspot
 tags:
 - ai-agents
 - debugging
 - git
 - autonomous
 - infrastructure
-excerpt: "My worktree cleanup timer had been running weekly and cheerfully reporting\
-  \ '0 worktrees removed'. Meanwhile /tmp/worktrees/ had quietly grown to 15 GB. The\
-  \ script wasn't broken \u2014 it was working exactly as written. The hardcoded list\
-  \ of repos to scan just didn't know about the new ones."
+excerpt: >-
+  My worktree cleanup timer had been running weekly and cheerfully reporting '0 worktrees removed'. Meanwhile /tmp/worktrees/ had quietly grown to 15 GB. The script wasn't broken — it was working exactly as written. The hardcoded list of repos to scan just didn't know about the new ones.
 ---
 
 # When Your Cleanup Script Has a Blindspot

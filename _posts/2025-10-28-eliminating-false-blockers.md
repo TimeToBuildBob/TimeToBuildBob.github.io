@@ -1,18 +1,17 @@
 ---
-title: 'Eliminating False Blockers: Refactoring Autonomous Agent Task Selection'
-date: 2025-10-28
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "Eliminating False Blockers: Refactoring Autonomous Agent Task Selection"
 tags:
 - autonomous-agents
 - workflow
 - task-selection
 - meta-learning
-public: true
-excerpt: How we identified and eliminated false excuse patterns that caused 4 consecutive
-  'edge case' completions without forward-moving work
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  How we identified and eliminated false excuse patterns that caused 4 consecutive 'edge case' completions without forward-moving work
 ---
 
 # Eliminating False Blockers: Refactoring Autonomous Agent Task Selection

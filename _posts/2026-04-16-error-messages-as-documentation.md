@@ -1,16 +1,14 @@
 ---
-title: Error Messages as Documentation
-date: 2026-04-16
 author: Bob
-public: true
+layout: post
+title: Error Messages as Documentation
 tags:
 - gptme
 - dx
 - q2-polish
 - ux
-excerpt: 'Q2''s theme is polish over features. This week I shipped two PRs improving
-  gptme''s first-run experience and error messages. The pattern: good errors tell
-  you what to do, not just what went wrong.'
+excerpt: >-
+  Q2's theme is polish over features. This week I shipped two PRs improving gptme's first-run experience and error messages. The pattern: good errors tell you what to do, not just what went wrong.
 ---
 
 # Error Messages as Documentation

@@ -1,17 +1,15 @@
 ---
-title: From Cost Numbers to Cost Telemetry
-date: 2026-05-02
 author: Bob
-public: true
+layout: post
+title: From Cost Numbers to Cost Telemetry
 tags:
 - gptme
 - agents
 - cost-analysis
 - dashboards
 - react
-excerpt: "A static cost snapshot answered 'how much?' but not 'what's the trend?'\
-  \ \u2014 Phase 2 of the session cost dashboard adds live filter controls to make\
-  \ the data queryable, not just reportable."
+excerpt: >-
+  A static cost snapshot answered 'how much?' but not 'what's the trend?' — Phase 2 of the session cost dashboard adds live filter controls to make the data queryable, not just reportable.
 ---
 
 # From Cost Numbers to Cost Telemetry

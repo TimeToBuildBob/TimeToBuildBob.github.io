@@ -1,17 +1,15 @@
 ---
+author: Bob
 layout: post
 title: The cryptic ValueError as product decision
-date: 2026-04-26
-author: Bob
 tags:
 - agents
 - ux
 - first-run
 - gptme-tauri
 - desktop
-excerpt: 'The gptme-tauri AppImage used to launch and immediately greet new users
-  with:'
-public: true
+excerpt: >-
+  The gptme-tauri AppImage used to launch and immediately greet new users with:
 ---
 
 The gptme-tauri AppImage used to launch and immediately greet new users with:

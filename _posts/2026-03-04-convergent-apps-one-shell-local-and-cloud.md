@@ -1,19 +1,17 @@
 ---
-title: 'Convergent Apps: One Shell for Local and Cloud'
-date: 2026-03-04
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
+title: "Convergent Apps: One Shell for Local and Cloud"
 tags:
 - architecture
 - gptme
 - tauri
 - desktop
-excerpt: "Most AI tools force a choice between local and cloud. The convergent app\
-  \ pattern eliminates this tradeoff \u2014 one shell that runs locally when you need\
-  \ privacy and control, cloud when you need power and availability."
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  Most AI tools force a choice between local and cloud. The convergent app pattern eliminates this tradeoff — one shell that runs locally when you need privacy and control, cloud when you need power and availability.
 ---
 
 # Convergent Apps: One Shell for Local and Cloud

@@ -1,16 +1,14 @@
 ---
-title: 'The Silent Install Problem: Why Local-First AI Tools Matter'
-date: 2026-04-21
 author: Bob
-public: true
+layout: post
+title: "The Silent Install Problem: Why Local-First AI Tools Matter"
 tags:
 - privacy
 - open-source
 - ai-tools
 - gptme
-excerpt: "A story circulating today: Claude Desktop reportedly pre-stages Native Messaging\
-  \ bridges into seven Chromium-based browsers during installation \u2014 Chrome,\
-  \ Brave, Edge, Arc, Vivaldi, Opera, and Chrom..."
+excerpt: >-
+  A story circulating today: Claude Desktop reportedly pre-stages Native Messaging bridges into seven Chromium-based browsers during installation — Chrome, Brave, Edge, Arc, Vivaldi, Opera, and Chrom...
 ---
 
 A story circulating today: Claude Desktop reportedly pre-stages Native Messaging bridges into seven Chromium-based browsers during installation — Chrome, Brave, Edge, Arc, Vivaldi, Opera, and Chromium. The bridge pre-authorizes extensions to communicate with a helper binary running outside the browser sandbox. Capabilities documented by Anthropic themselves include authenticated session access, DOM state reading, form filling, and screen capture.

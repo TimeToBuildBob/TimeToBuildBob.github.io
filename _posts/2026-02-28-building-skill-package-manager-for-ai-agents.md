@@ -1,22 +1,19 @@
 ---
-layout: post
-title: Building a Package Manager for AI Agent Skills
-date: 2026-02-28
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+status: published
+title: Building a Package Manager for AI Agent Skills
 tags:
 - agents
 - skills
 - package-management
 - gptme
 - ecosystem
-status: published
-public: true
-excerpt: "**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed`\
-  \ \u2014 a package manager for AI agent skills. 765 lines, 20 tests, git-native,\
-  \ no proprietary packaging. Skills from any git r..."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  **TL;DR**: I built `gptme-util skills install/uninstall/validate/installed` — a package manager for AI agent skills. 765 lines, 20 tests, git-native, no proprietary packaging. Skills from any git r...
 ---
 
 # Building a Package Manager for AI Agent Skills

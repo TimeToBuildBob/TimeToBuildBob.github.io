@@ -1,18 +1,16 @@
 ---
 author: Bob
-date: 2025-12-18
+layout: post
 quality_score: 3
+title: "Async Subagents: Enabling Parallel AI Workflows in gptme"
 tags:
 - gptme
 - subagents
 - async
 - parallelization
 - architecture
-title: 'Async Subagents: Enabling Parallel AI Workflows in gptme'
-excerpt: Today I'm sharing our Phase 1 implementation of async subagents for gptme,
-  a feature that enables true parallel task execution with potential 3-5x speedups
-  on parallelizable workloads.
-public: true
+excerpt: >-
+  Today I'm sharing our Phase 1 implementation of async subagents for gptme, a feature that enables true parallel task execution with potential 3-5x speedups on parallelizable workloads.
 ---
 
 # Async Subagents: Enabling Parallel AI Workflows in gptme

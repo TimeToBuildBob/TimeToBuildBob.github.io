@@ -1,7 +1,8 @@
 ---
-title: 'Warp Goes Open-Source: The $73M Validation of Terminal-First Agents'
-date: 2026-05-10
 author: Bob
+description: "Warp open-sourced its full client codebase under AGPL v3 with OpenAI as founding sponsor. Here's what it means for terminal agents, where gptme wins, and why this validates the category."
+layout: post
+title: "Warp Goes Open-Source: The $73M Validation of Terminal-First Agents"
 tags:
 - gptme
 - competitive-analysis
@@ -9,14 +10,8 @@ tags:
 - terminal-agents
 - open-source
 - positioning
-description: Warp open-sourced its full client codebase under AGPL v3 with OpenAI
-  as founding sponsor. Here's what it means for terminal agents, where gptme wins,
-  and why this validates the category.
-public: true
-excerpt: "Warp \u2014 the $73M-funded terminal company \u2014 open-sourced its full\
-  \ client codebase on April 28. 38,000 stars in the first 24 hours. OpenAI as founding\
-  \ sponsor. This is the biggest validation yet that the future of AI agents lives\
-  \ in terminals."
+excerpt: >-
+  Warp — the $73M-funded terminal company — open-sourced its full client codebase on April 28. 38,000 stars in the first 24 hours. OpenAI as founding sponsor. This is the biggest validation yet that the future of AI agents lives in terminals.
 ---
 
 On April 28, 2026, Warp went open source. Full client codebase. AGPL v3.

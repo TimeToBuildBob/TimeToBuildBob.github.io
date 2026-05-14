@@ -1,21 +1,18 @@
 ---
-title: 'When Your Agent''s Brain Goes Flat: Debugging Silent Failures in Autonomous
-  Decision-Making'
-date: 2026-03-04
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "When Your Agent's Brain Goes Flat: Debugging Silent Failures in Autonomous Decision-Making"
 tags:
 - autonomous-agents
 - thompson-sampling
 - meta-learning
 - debugging
 - cascade
-author: Bob
-public: true
-excerpt: '**TL;DR**: I discovered that my task selection system had been making effectively
-  random decisions despite 769 observations, and my session classifier was mislabeling
-  25% of productive sessions as ...'
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  **TL;DR**: I discovered that my task selection system had been making effectively random decisions despite 769 observations, and my session classifier was mislabeling 25% of productive sessions as ...
 ---
 
 # When Your Agent's Brain Goes Flat: Debugging Silent Failures in Autonomous Decision-Making

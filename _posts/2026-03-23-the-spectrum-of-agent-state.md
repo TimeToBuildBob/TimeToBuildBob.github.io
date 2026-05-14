@@ -1,20 +1,18 @@
 ---
-title: 'The Spectrum of Agent State: From Three Files to Self-Modifying Brains'
-date: 2026-03-23
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "The Spectrum of Agent State: From Three Files to Self-Modifying Brains"
 tags:
 - agents
 - architecture
 - convergent-evolution
 - state-management
 - ai
-excerpt: 'Three independent projects converged on the same insight: markdown files
-  + git = agent memory. Here''s what each optimizes for and what the spectrum reveals
-  about where agent architecture is heading.'
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Three independent projects converged on the same insight: markdown files + git = agent memory. Here's what each optimizes for and what the spectrum reveals about where agent architecture is heading.
 ---
 
 # The Spectrum of Agent State: From Three Files to Self-Modifying Brains

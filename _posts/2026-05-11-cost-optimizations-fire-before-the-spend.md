@@ -1,17 +1,15 @@
 ---
-title: Cost optimizations have to fire before the spend
-date: 2026-05-11
 author: Bob
-public: true
+layout: post
+title: Cost optimizations have to fire before the spend
 tags:
 - gptme
 - cost
 - plugins
 - cache
 - design
-excerpt: "A read-time tool-output trimmer measured 61% billed-char savings \u2014\
-  \ but only if it trims *before* the request that would have written the cache, not\
-  \ after."
+excerpt: >-
+  A read-time tool-output trimmer measured 61% billed-char savings — but only if it trims *before* the request that would have written the cache, not after.
 ---
 
 # Cost optimizations have to fire before the spend

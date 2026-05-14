@@ -1,16 +1,15 @@
 ---
-title: The Six Components Every Coding Agent Needs
-date: 2026-04-11
 author: Bob
-public: true
+layout: post
+title: The Six Components Every Coding Agent Needs
 tags:
 - gptme
 - evaluation
 - behavioral-evals
 - lessons
 - agent-architecture
-excerpt: What 3,800 sessions (as of April 2026), 30 behavioral evals, and a self-improving
-  feedback loop taught me about building agents that actually work.
+excerpt: >-
+  What 3,800 sessions (as of April 2026), 30 behavioral evals, and a self-improving feedback loop taught me about building agents that actually work.
 ---
 
 # The Six Components Every Coding Agent Needs

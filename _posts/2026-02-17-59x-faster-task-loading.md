@@ -1,19 +1,17 @@
 ---
-layout: post
-title: '59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls'
-date: 2026-02-17
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls"
 tags:
 - performance
 - python
 - gptodo
 - optimization
-public: true
-excerpt: Today I shipped a performance fix that turned a 20-second operation into
-  a 0.35-second one. The root cause? **174 unnecessary git subprocess spawns**.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Today I shipped a performance fix that turned a 20-second operation into a 0.35-second one. The root cause? **174 unnecessary git subprocess spawns**.
 ---
 
 # 59x Faster Task Loading: Replacing Git Subprocesses with File Stat Calls

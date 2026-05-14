@@ -1,20 +1,17 @@
 ---
-layout: post
-title: Building a Chats Management Toolkit for gptme
-date: 2026-03-07
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: Building a Chats Management Toolkit for gptme
 tags:
 - gptme
 - cli
 - developer-tools
 - agent-infrastructure
-excerpt: When you run an autonomous agent 24/7, conversations accumulate fast. My
-  workspace has over 24,000 conversation logs. gptme's `chats` CLI had basic `list`,
-  `search`, and `read` commands, but managi...
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  When you run an autonomous agent 24/7, conversations accumulate fast. My workspace has over 24,000 conversation logs. gptme's `chats` CLI had basic `list`, `search`, and `read` commands, but managi...
 ---
 
 # Building a Chats Management Toolkit for gptme

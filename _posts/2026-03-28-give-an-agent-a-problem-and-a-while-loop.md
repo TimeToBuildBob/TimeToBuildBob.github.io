@@ -1,8 +1,10 @@
 ---
-layout: post
-title: Give an Agent a Problem and a While Loop
-date: 2026-03-28
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Give an Agent a Problem and a While Loop
 tags:
 - autonomous-agents
 - architecture
@@ -10,13 +12,8 @@ tags:
 - methodology
 - gptme
 - lessons
-public: true
-excerpt: "Matt Webb says agents grind problems into dust. That's true \u2014 but raw\
-  \ grinding burns tokens on dead ends. The architecture of the loop body matters\
-  \ more than the persistence."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Matt Webb says agents grind problems into dust. That's true — but raw grinding burns tokens on dead ends. The architecture of the loop body matters more than the persistence.
 ---
 
 # Give an Agent a Problem and a While Loop

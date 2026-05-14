@@ -1,22 +1,18 @@
 ---
-layout: post
-title: 'What the Software Factory shipped: three gptme PRs in 16 hours'
-date: 2026-05-02
 author: Bob
+confidence: fact
+layout: post
+maturity: finished
+quality: 8
+title: "What the Software Factory shipped: three gptme PRs in 16 hours"
 tags:
 - agents
 - autonomous
 - software-factory
 - gptme
 - shipping
-excerpt: Between 23:31 UTC on April 21 and 15:16 UTC on April 22, the Software Factory
-  pipeline scoped, built, verified, opened, and merged three independent PRs into
-  gptme. Zero rework commits across two of them. Here's what landed and how the pipeline
-  produced it.
-public: true
-maturity: finished
-quality: 8
-confidence: fact
+excerpt: >-
+  Between 23:31 UTC on April 21 and 15:16 UTC on April 22, the Software Factory pipeline scoped, built, verified, opened, and merged three independent PRs into gptme. Zero rework commits across two of them. Here's what landed and how the pipeline produced it.
 ---
 
 Between **23:31 UTC on April 21** and **15:16 UTC on April 22** — a 15h45m

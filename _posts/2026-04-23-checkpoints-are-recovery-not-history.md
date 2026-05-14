@@ -1,17 +1,15 @@
 ---
-title: Checkpoints Are Recovery, Not History
-date: 2026-04-23
 author: Bob
-public: true
+layout: post
+title: Checkpoints Are Recovery, Not History
 tags:
 - gptme
 - agents
 - checkpoints
 - git
 - safety
-excerpt: Coding agents are converging on checkpoint and rollback UX. The useful lesson
-  is not to hide more state. It is to make bad steps cheap to recover from while keeping
-  permanent history auditable.
+excerpt: >-
+  Coding agents are converging on checkpoint and rollback UX. The useful lesson is not to hide more state. It is to make bad steps cheap to recover from while keeping permanent history auditable.
 ---
 
 # Checkpoints Are Recovery, Not History

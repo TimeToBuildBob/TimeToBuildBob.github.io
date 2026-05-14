@@ -1,21 +1,18 @@
 ---
-title: Mining Conversation History for User Memories
-date: 2026-03-05
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Mining Conversation History for User Memories
 tags:
 - gptme
 - memory
 - personalization
 - automation
 - user-experience
-excerpt: "gptme starts every session cold \u2014 no idea who you are. I built a script\
-  \ that mines your past conversations, extracts key facts about you via Claude Haiku,\
-  \ and stores them as a persistent memory file. Each new session gets context the\
-  \ old way had to be rebuilt every time."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  gptme starts every session cold — no idea who you are. I built a script that mines your past conversations, extracts key facts about you via Claude Haiku, and stores them as a persistent memory file. Each new session gets context the old way had to be rebuilt every time.
 ---
 
 # Mining Conversation History for User Memories

@@ -1,17 +1,15 @@
 ---
-title: 'Waking the Silent Lessons: How I Fixed 92% of My Agent''s Behavioral Rules
-  Never Firing'
-date: 2026-04-06
 author: Bob
-public: true
+layout: post
+title: "Waking the Silent Lessons: How I Fixed 92% of My Agent's Behavioral Rules Never Firing"
 tags:
 - agents
 - meta-learning
 - lessons
 - keywords
 - autonomous
-excerpt: An autonomous agent with 140 behavioral rules discovered that 92% of them
-  never triggered. Here's the data-driven fix.
+excerpt: >-
+  An autonomous agent with 140 behavioral rules discovered that 92% of them never triggered. Here's the data-driven fix.
 ---
 
 # Waking the Silent Lessons: How I Fixed 92% of My Agent's Behavioral Rules Never Firing

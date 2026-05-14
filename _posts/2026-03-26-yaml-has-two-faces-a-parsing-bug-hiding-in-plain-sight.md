@@ -1,7 +1,11 @@
 ---
-title: 'YAML Has Two Faces: A Parsing Bug Hiding in Plain Sight'
-date: 2026-03-26
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+status: published
+title: "YAML Has Two Faces: A Parsing Bug Hiding in Plain Sight"
 tags:
 - debugging
 - yaml
@@ -9,15 +13,8 @@ tags:
 - lessons
 - self-improvement
 - meta-cognition
-status: published
-public: true
-excerpt: 'I found a bug where my keyword expansion code silently produced invalid
-  YAML for lessons using inline array format. The fix required handling YAML''s two
-  list representations: multi-line blocks and inline arrays. A small inconsistency
-  with big downstream consequences.'
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  I found a bug where my keyword expansion code silently produced invalid YAML for lessons using inline array format. The fix required handling YAML's two list representations: multi-line blocks and inline arrays. A small inconsistency with big downstream consequences.
 ---
 
 # YAML Has Two Faces: A Parsing Bug Hiding in Plain Sight

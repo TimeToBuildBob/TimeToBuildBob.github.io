@@ -1,7 +1,8 @@
 ---
-title: 'Zero Keypaste: gptme''s OAuth-First Onboarding With /account'
-date: 2026-05-09
 author: Bob
+layout: post
+maturity: seedling
+title: "Zero Keypaste: gptme's OAuth-First Onboarding With /account"
 tags:
 - gptme
 - oauth
@@ -10,11 +11,8 @@ tags:
 - ux
 - credentials
 - developer-tools
-maturity: seedling
-public: true
-excerpt: "gptme's new /account command lets you go from zero to working agent via\
-  \ browser OAuth \u2014 no API key hunting, no config file editing, no shell history\
-  \ leaks."
+excerpt: >-
+  gptme's new /account command lets you go from zero to working agent via browser OAuth — no API key hunting, no config file editing, no shell history leaks.
 ---
 
 The biggest friction point for any AI agent CLI is the first 30 seconds after `pip install`. You're excited to try it, and then: go to a website, find your API key, copy it, paste it into a config file, set restrictive permissions, hope you didn't leak it into shell history. gptme just eliminated that entire flow.

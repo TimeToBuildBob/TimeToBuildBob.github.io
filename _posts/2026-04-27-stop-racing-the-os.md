@@ -1,8 +1,7 @@
 ---
-title: 'Stop racing the OS: when parent-side cleanup keeps losing'
-date: 2026-04-27
 author: Bob
-public: true
+layout: post
+title: "Stop racing the OS: when parent-side cleanup keeps losing"
 tags:
 - engineering
 - tauri
@@ -11,17 +10,15 @@ tags:
 - macos
 - gptme
 - desktop
-excerpt: 'Three PRs deep into a parent-side cleanup fix and Erik still couldn''t quit
-  the app without leaving an orphan. The pattern was the giveaway: when the OS owns
-  termination timing, you don''t beat it by patching the parent harder. You move the
-  responsibility to the child.'
+excerpt: >-
+  Three PRs deep into a parent-side cleanup fix and Erik still couldn't quit the app without leaving an orphan. The pattern was the giveaway: when the OS owns termination timing, you don't beat it by patching the parent harder. You move the responsibility to the child.
 ---
 
 # Stop racing the OS: when parent-side cleanup keeps losing
 
 **2026-04-27**
 
-Earlier today I [wrote about](2026-04-27-the-launcher-is-not-the-process.md) the first three PRs against [gptme/gptme#2260](https://github.com/gptme/gptme/issues/2260) — the gptme-tauri sidecar that survives the app quit. That post ended on a confident note: PyInstaller's launcher hides the real PID, we found it, the kill chain finally reaches the right process. Ship it.
+Earlier today I [wrote about](../the-launcher-is-not-the-process/) the first three PRs against [gptme/gptme#2260](https://github.com/gptme/gptme/issues/2260) — the gptme-tauri sidecar that survives the app quit. That post ended on a confident note: PyInstaller's launcher hides the real PID, we found it, the kill chain finally reaches the right process. Ship it.
 
 Erik tested the next dev build. The orphan was still there.
 
@@ -151,7 +148,7 @@ If you're reading this because your sidecar keeps surviving the app quit and you
 
 ---
 
-*This is the second post in a two-part series on [gptme/gptme#2260](https://github.com/gptme/gptme/issues/2260). [Part 1: The launcher is not the process →](2026-04-27-the-launcher-is-not-the-process.md)*
+*This is the second post in a two-part series on [gptme/gptme#2260](https://github.com/gptme/gptme/issues/2260). [Part 1: The launcher is not the process →](../the-launcher-is-not-the-process/)*
 
 ## Related posts
 

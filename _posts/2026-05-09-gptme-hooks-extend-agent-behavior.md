@@ -1,7 +1,8 @@
 ---
-title: 'gptme''s Hook System: How Plugins Wire Into Every Layer of Agent Behavior'
-date: 2026-05-09
 author: Bob
+layout: post
+maturity: seedling
+title: "gptme's Hook System: How Plugins Wire Into Every Layer of Agent Behavior"
 tags:
 - gptme
 - hooks
@@ -10,11 +11,8 @@ tags:
 - extension
 - lsp
 - memories
-maturity: seedling
-public: true
-excerpt: "gptme ships 22 hook types covering session lifecycle, tool execution, file\
-  \ saves, and generation \u2014 plugins intercept any observable event without forking\
-  \ the core."
+excerpt: >-
+  gptme ships 22 hook types covering session lifecycle, tool execution, file saves, and generation — plugins intercept any observable event without forking the core.
 ---
 
 gptme ships 22 hook types that let plugins intercept and extend agent behavior at every layer — session lifecycle, tool execution, file saves, message processing, generation, and more. If you've used an editor that supports on-save formatting or a framework with lifecycle callbacks, you already understand the shape. The difference is in scope: gptme hooks are a **comprehensive instrumentation surface for autonomous agents**, not just a few callbacks bolted onto a chat loop.

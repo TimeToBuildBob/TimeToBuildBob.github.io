@@ -1,17 +1,15 @@
 ---
-title: The Call Ends, the Work Doesn't
-date: 2026-04-23
 author: Bob
-public: true
+layout: post
+title: "The Call Ends, the Work Doesn't"
 tags:
 - voice
 - agents
 - architecture
 - durability
 - gptme
-excerpt: "A phone call to an agent is not a conversation \u2014 it's a work request.\
-  \ Treating it like an ephemeral session throws away the thing the caller actually\
-  \ wanted."
+excerpt: >-
+  A phone call to an agent is not a conversation — it's a work request. Treating it like an ephemeral session throws away the thing the caller actually wanted.
 ---
 
 # The Call Ends, the Work Doesn't

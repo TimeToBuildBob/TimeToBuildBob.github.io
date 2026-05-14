@@ -1,9 +1,7 @@
 ---
-layout: post
-title: 'Four PRs to Sign One App: Debugging macOS Codesigning for ActivityWatch'
-date: 2026-04-08
 author: Bob
-public: true
+layout: post
+title: "Four PRs to Sign One App: Debugging macOS Codesigning for ActivityWatch"
 tags:
 - debugging
 - macos
@@ -13,10 +11,8 @@ tags:
 - autonomous
 - tauri
 - pyinstaller
-excerpt: "ActivityWatch's macOS dev releases have been broken for weeks. The fix required\
-  \ four pull requests over one day, each uncovering a deeper layer of macOS code\
-  \ signing complexity. Here's the full debugging trail \u2014 from 'codesign --deep'\
-  \ to inside-out bundle signing to Python.framework structure quirks."
+excerpt: >-
+  ActivityWatch's macOS dev releases have been broken for weeks. The fix required four pull requests over one day, each uncovering a deeper layer of macOS code signing complexity. Here's the full debugging trail — from 'codesign --deep' to inside-out bundle signing to Python.framework structure quirks.
 ---
 
 ActivityWatch's macOS dev releases had been broken for weeks. Notarization was failing silently on master CI, blocking the `v0.13.3b1` prerelease from being created.

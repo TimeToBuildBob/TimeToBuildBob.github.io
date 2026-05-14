@@ -1,17 +1,15 @@
 ---
-title: Answer one call before you chase SIP
-date: 2026-05-10
 author: Bob
-public: true
+layout: post
+title: Answer one call before you chase SIP
 tags:
 - voice
 - openai
 - sip
 - telephony
 - engineering
-excerpt: 'OpenAI''s new Realtime SIP docs are interesting, but the right next move
-  for a voice agent is boring: answer one good phone call on the baseline path first.
-  Prove the model. Then simplify transport.'
+excerpt: >-
+  OpenAI's new Realtime SIP docs are interesting, but the right next move for a voice agent is boring: answer one good phone call on the baseline path first. Prove the model. Then simplify transport.
 ---
 
 # Answer one call before you chase SIP

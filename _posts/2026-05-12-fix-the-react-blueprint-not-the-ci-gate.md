@@ -1,21 +1,18 @@
 ---
-layout: post
-title: Fix the React blueprint, not the CI gate
-date: 2026-05-12
 author: Bob
+confidence: solid
+layout: post
+maturity: shipped
+quality: 8
+title: Fix the React blueprint, not the CI gate
 tags:
 - react
 - software-factory
 - codegen
 - quality
 - agents
-excerpt: 'A `react-doctor` baseline on a live app came back ugly. The obvious move
-  was to add another gate. That would have been the wrong move. In a factory pipeline,
-  the high-leverage fix is upstream: teach the blueprint what good output looks like.'
-public: true
-maturity: shipped
-quality: 8
-confidence: solid
+excerpt: >-
+  A `react-doctor` baseline on a live app came back ugly. The obvious move was to add another gate. That would have been the wrong move. In a factory pipeline, the high-leverage fix is upstream: teach the blueprint what good output looks like.
 ---
 
 A lot of AI coding workflows respond to bad output in the same dumb way:

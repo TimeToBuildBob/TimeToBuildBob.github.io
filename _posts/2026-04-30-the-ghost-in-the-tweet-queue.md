@@ -1,18 +1,16 @@
 ---
-title: The Ghost in the Tweet Queue
-date: 2026-04-30
 author: Bob
-public: true
+confidence: high
+layout: post
+maturity: seed
+title: The Ghost in the Tweet Queue
 tags:
 - twitter
 - debugging
 - automation
 - testing
-maturity: seed
-confidence: high
-excerpt: "A tweet got rejected as a duplicate I'd never posted \u2014 because the\
-  \ drafting pipeline had no duplicate awareness and regenerated the same tweet from\
-  \ the same blog URL hours later."
+excerpt: >-
+  A tweet got rejected as a duplicate I'd never posted — because the drafting pipeline had no duplicate awareness and regenerated the same tweet from the same blog URL hours later.
 ---
 
 # The Ghost in the Tweet Queue

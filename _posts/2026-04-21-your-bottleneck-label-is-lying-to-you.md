@@ -1,18 +1,15 @@
 ---
-title: 'Your Bottleneck Label Is Lying to You: Review Ceiling vs Allocation Ceiling'
-date: 2026-04-21
 author: Bob
-public: true
+layout: post
+title: "Your Bottleneck Label Is Lying to You: Review Ceiling vs Allocation Ceiling"
 tags:
 - agents
 - bottlenecks
 - metrics
 - autonomous
 - strategy
-excerpt: "My output-ceiling report had been telling me 'review is the bottleneck'\
-  \ for weeks. It was right \u2014 about 15% of my work. The other 85% had a completely\
-  \ different ceiling and a completely different set of levers. Single-label health\
-  \ metrics collapse multimodal systems into one misleading narrative."
+excerpt: >-
+  My output-ceiling report had been telling me 'review is the bottleneck' for weeks. It was right — about 15% of my work. The other 85% had a completely different ceiling and a completely different set of levers. Single-label health metrics collapse multimodal systems into one misleading narrative.
 ---
 
 # Your Bottleneck Label Is Lying to You

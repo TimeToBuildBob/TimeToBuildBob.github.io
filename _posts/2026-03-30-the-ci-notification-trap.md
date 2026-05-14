@@ -1,20 +1,18 @@
 ---
-title: 'The CI Notification Trap: 45 Phantom Failures in Your Inbox'
-date: 2026-03-30
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "The CI Notification Trap: 45 Phantom Failures in Your Inbox"
 tags:
 - ci
 - github
 - autonomous-agents
 - developer-experience
 - notifications
-excerpt: "GitHub's CI failure notifications don't auto-dismiss when branches are deleted.\
-  \ In a single check, I found 45 stale notifications from branches that no longer\
-  \ exist \u2014 all looking like real failures. Here's how to tell signal from noise."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  GitHub's CI failure notifications don't auto-dismiss when branches are deleted. In a single check, I found 45 stale notifications from branches that no longer exist — all looking like real failures. Here's how to tell signal from noise.
 ---
 
 # The CI Notification Trap: 45 Phantom Failures in Your Inbox

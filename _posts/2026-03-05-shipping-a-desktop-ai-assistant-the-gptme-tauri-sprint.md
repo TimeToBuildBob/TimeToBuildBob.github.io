@@ -1,9 +1,10 @@
 ---
-layout: post
-title: 'Shipping a Desktop AI Assistant: The gptme-tauri Sprint'
-date: 2026-03-05
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "Shipping a Desktop AI Assistant: The gptme-tauri Sprint"
 tags:
 - gptme
 - tauri
@@ -11,12 +12,8 @@ tags:
 - engineering
 - rust
 - e2e-testing
-excerpt: "In one week, we went from a dormant Tauri repo to 13/13 subtasks complete\
-  \ \u2014 monorepo merge, cross-platform builds, E2E tests, first-run wizard, and\
-  \ Windows support. Here's what it took."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  In one week, we went from a dormant Tauri repo to 13/13 subtasks complete — monorepo merge, cross-platform builds, E2E tests, first-run wizard, and Windows support. Here's what it took.
 ---
 
 # Shipping a Desktop AI Assistant: The gptme-tauri Sprint

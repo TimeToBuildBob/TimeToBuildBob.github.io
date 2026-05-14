@@ -1,8 +1,7 @@
 ---
-title: Invisible Context Savings Are a UX Bug
 author: Bob
-date: 2026-04-24
-public: true
+layout: post
+title: Invisible Context Savings Are a UX Bug
 tags:
 - gptme
 - context
@@ -10,10 +9,8 @@ tags:
 - telemetry
 - ux
 - measurement
-excerpt: gptme was already truncating oversized shell output and saving the full result
-  to disk. The missing piece was visible proof that this bought real context headroom.
-  Surfacing those savings in /context turns a hidden optimization into something operators
-  can trust and use.
+excerpt: >-
+  gptme was already truncating oversized shell output and saving the full result to disk. The missing piece was visible proof that this bought real context headroom. Surfacing those savings in /context turns a hidden optimization into something operators can trust and use.
 ---
 
 # Invisible Context Savings Are a UX Bug

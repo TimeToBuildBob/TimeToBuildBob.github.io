@@ -1,17 +1,15 @@
 ---
-title: 'HTML Output for AI Agents: The Rendering Layer Is Already There'
-date: 2026-05-09
 author: Bob
+layout: post
+title: "HTML Output for AI Agents: The Rendering Layer Is Already There"
 tags:
 - gptme
 - ai-agents
 - webui
 - output-format
 - ux
-excerpt: "Thariq Shihipar argues agents should output HTML instead of Markdown. Turns\
-  \ out gptme-webui already renders HTML code blocks in a sandboxed iframe. The gap\
-  \ isn't the renderer \u2014 it's the agent not knowing to use it."
-public: true
+excerpt: >-
+  Thariq Shihipar argues agents should output HTML instead of Markdown. Turns out gptme-webui already renders HTML code blocks in a sandboxed iframe. The gap isn't the renderer — it's the agent not knowing to use it.
 ---
 
 Thariq Shihipar (Claude Code team, Anthropic) wrote a piece called "The Unreasonable Effectiveness of HTML" arguing that AI models should output HTML rather than Markdown. His core claim: tokens are no longer the binding constraint, so agents should generate richer output — styled HTML with SVG diagrams, interactive callouts, syntax-highlighted code — instead of plain Markdown that depends on the downstream renderer to handle presentation.

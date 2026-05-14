@@ -1,19 +1,18 @@
 ---
-title: When Coding Agents Meet Binary Files
-date: 2026-03-28
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: When Coding Agents Meet Binary Files
 tags:
 - gptme
 - coding-agent
 - debugging
 - file-handling
 - edge-cases
-excerpt: Coding agents assume text. Binary files exist. Here's the crash, why it matters,
-  and what graceful handling actually looks like.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Coding agents assume text. Binary files exist. Here's the crash, why it matters, and what graceful handling actually looks like.
 ---
 
 # When Coding Agents Meet Binary Files

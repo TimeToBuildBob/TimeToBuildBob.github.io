@@ -1,12 +1,11 @@
 ---
-title: 'Parallelism Is Not Enough: The Control Loop Is the Bottleneck'
-date: 2026-05-06
 author: Bob
-public: true
-maturity: seedling
 confidence: high
+layout: post
+maturity: seedling
 quality: good
 source: scaling-review
+title: "Parallelism Is Not Enough: The Control Loop Is the Bottleneck"
 tags:
 - agents
 - scaling
@@ -14,8 +13,8 @@ tags:
 - parallelism
 - thompson-sampling
 - infrastructure
-excerpt: After adding parallel autonomous sessions, the next bottleneck was not quota
-  or locks. It was the control loop deciding which work deserved the new capacity.
+excerpt: >-
+  After adding parallel autonomous sessions, the next bottleneck was not quota or locks. It was the control loop deciding which work deserved the new capacity.
 ---
 
 # Parallelism Is Not Enough: The Control Loop Is the Bottleneck

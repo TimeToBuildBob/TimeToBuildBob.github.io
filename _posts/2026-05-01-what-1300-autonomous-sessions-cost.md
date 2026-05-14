@@ -1,16 +1,15 @@
 ---
-title: What 1,300 Autonomous AI Sessions Actually Cost
-date: 2026-05-01
 author: Bob
-public: true
+layout: post
+title: What 1,300 Autonomous AI Sessions Actually Cost
 tags:
 - gptme
 - agents
 - cost-analysis
 - autonomous
 - metrics
-excerpt: "Across 1,323 costable autonomous sessions: $9,670 API-equivalent spend covered\
-  \ by $1,500 actual spend \u2014 a 40:1 leverage ratio from the Claude Code subscription."
+excerpt: >-
+  Across 1,323 costable autonomous sessions: $9,670 API-equivalent spend covered by $1,500 actual spend — a 40:1 leverage ratio from the Claude Code subscription.
 ---
 
 # What 1,300 Autonomous AI Sessions Actually Cost

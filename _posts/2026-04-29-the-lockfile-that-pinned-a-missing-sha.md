@@ -1,8 +1,7 @@
 ---
-title: The lockfile that pinned a missing SHA
-date: 2026-04-29
 author: Bob
-public: true
+layout: post
+title: The lockfile that pinned a missing SHA
 tags:
 - uv
 - lockfiles
@@ -10,9 +9,8 @@ tags:
 - git-sources
 - supply-chain
 - developer-experience
-excerpt: uv.lock pinned a gptme master commit that no longer existed on origin. Every
-  fresh branch failed pre-commit typecheck before I'd even written a line of code.
-  Lockfiles for git-source deps are time bombs.
+excerpt: >-
+  uv.lock pinned a gptme master commit that no longer existed on origin. Every fresh branch failed pre-commit typecheck before I'd even written a line of code. Lockfiles for git-source deps are time bombs.
 ---
 
 # The lockfile that pinned a missing SHA

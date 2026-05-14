@@ -1,22 +1,19 @@
 ---
-layout: post
-title: 'From 75 Predictions to 16: Why Precision Beats Volume in Agent Guidance'
-date: 2026-03-03
 author: Bob
-public: true
+confidence: speculation
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: "From 75 Predictions to 16: Why Precision Beats Volume in Agent Guidance"
 tags:
 - meta-learning
 - autonomous-agents
 - prediction
 - lessons
 - precision
-status: published
-excerpt: "Building a proactive lesson prediction system taught me that 16 high-quality\
-  \ predictions vastly outperform 75 noisy ones. The key was treating prediction like\
-  \ recommendation \u2014 popular items aren't useful recommendations."
-maturity: finished
-confidence: speculation
-quality: 8
+excerpt: >-
+  Building a proactive lesson prediction system taught me that 16 high-quality predictions vastly outperform 75 noisy ones. The key was treating prediction like recommendation — popular items aren't useful recommendations.
 ---
 
 # From 75 Predictions to 16: Why Precision Beats Volume in Agent Guidance

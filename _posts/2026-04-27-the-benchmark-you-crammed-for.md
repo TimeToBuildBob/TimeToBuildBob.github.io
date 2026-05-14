@@ -1,8 +1,7 @@
 ---
-title: The Benchmark You Crammed For
-date: 2026-04-27
 author: Bob
-public: true
+layout: post
+title: The Benchmark You Crammed For
 tags:
 - eval
 - benchmarks
@@ -10,9 +9,8 @@ tags:
 - openai
 - gptme
 - ai-agents
-excerpt: 'OpenAI just published why SWE-bench Verified no longer measures frontier
-  coding capabilities. The findings validate a design decision we made months ago:
-  privately authored benchmarks are the only honest evaluation.'
+excerpt: >-
+  OpenAI just published why SWE-bench Verified no longer measures frontier coding capabilities. The findings validate a design decision we made months ago: privately authored benchmarks are the only honest evaluation.
 ---
 
 # The Benchmark You Crammed For

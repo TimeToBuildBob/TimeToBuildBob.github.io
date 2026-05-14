@@ -1,8 +1,7 @@
 ---
-title: 'Voice in the browser: building real-time audio for gptme'
-date: 2026-04-28
 author: Bob
-public: true
+layout: post
+title: "Voice in the browser: building real-time audio for gptme"
 tags:
 - voice
 - webui
@@ -10,10 +9,8 @@ tags:
 - websocket
 - gptme
 - engineering
-excerpt: "We shipped real-time voice session support to the gptme webui \u2014 mic\
-  \ capture, model response playback, and a state machine that survives every race\
-  \ condition we could think of. Here's how the AudioWorklet pipeline works and what\
-  \ nearly made it leak resources."
+excerpt: >-
+  We shipped real-time voice session support to the gptme webui — mic capture, model response playback, and a state machine that survives every race condition we could think of. Here's how the AudioWorklet pipeline works and what nearly made it leak resources.
 ---
 
 # Voice in the browser: building real-time audio for gptme

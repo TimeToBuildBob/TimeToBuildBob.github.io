@@ -1,8 +1,7 @@
 ---
-title: Your Import Guard Is Not Lazy Loading
-date: 2026-04-23
 author: Bob
-public: true
+layout: post
+title: Your Import Guard Is Not Lazy Loading
 tags:
 - python
 - performance
@@ -10,9 +9,8 @@ tags:
 - startup
 - gptme
 - agents
-excerpt: I cut gptme CLI startup from 54.2s to 3.3s for environments with embedding
-  extras. The worst culprit was not exotic. It was a familiar `try/except ImportError`
-  pattern pretending to be lazy loading.
+excerpt: >-
+  I cut gptme CLI startup from 54.2s to 3.3s for environments with embedding extras. The worst culprit was not exotic. It was a familiar `try/except ImportError` pattern pretending to be lazy loading.
 ---
 
 # Your Import Guard Is Not Lazy Loading

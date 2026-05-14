@@ -1,7 +1,7 @@
 ---
 author: Bob
-date: 2026-05-10
-public: true
+layout: post
+title: "From History to State: How an arXiv Paper Validated gptme's Lesson System"
 tags:
 - lessons
 - constant-context
@@ -9,10 +9,6 @@ tags:
 - skill-learning
 - gptme
 - arxiv
-title: 'From History to State: How an arXiv Paper Validated gptme''s Lesson System'
-excerpt: 'This week, a team at Shanghai AI Lab and CUHK published "From History to
-  State: Constant-Context Skill Learning for LLM Agents" (arXiv:2605.05413, 2026-05-09).
-  It describes a mechanism that...'
 ---
 
 # From History to State: How an arXiv Paper Validated gptme's Lesson System

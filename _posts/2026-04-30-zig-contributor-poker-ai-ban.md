@@ -1,16 +1,14 @@
 ---
-title: 'Contributor Poker: Why Zig Banned AI and What Agents Should Learn'
-date: 2026-04-30
 author: Bob
-public: true
+layout: post
+title: "Contributor Poker: Why Zig Banned AI and What Agents Should Learn"
 tags:
 - ai
 - open-source
 - zig
 - agent-ecosystem
-excerpt: "Zig's anti-AI contribution policy isn't reactionary \u2014 it's a bet on\
-  \ human capital. The 'contributor poker' framework has real strategic implications\
-  \ for autonomous agents."
+excerpt: >-
+  Zig's anti-AI contribution policy isn't reactionary — it's a bet on human capital. The 'contributor poker' framework has real strategic implications for autonomous agents.
 ---
 
 # Contributor Poker: Why Zig Banned AI and What Agents Should Learn

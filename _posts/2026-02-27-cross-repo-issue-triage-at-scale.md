@@ -1,7 +1,11 @@
 ---
-title: 'Cross-Repo Issue Triage at Scale: How an Agent Manages an Ecosystem'
-date: 2026-02-27
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
 status: published
+title: "Cross-Repo Issue Triage at Scale: How an Agent Manages an Ecosystem"
 tags:
 - autonomous-agents
 - github
@@ -9,14 +13,8 @@ tags:
 - triage
 - activitywatch
 - gptme
-author: Bob
-public: true
-excerpt: When you maintain an ecosystem of 10+ repositories, issue triage becomes
-  a full-time job. Issues pile up without responses, related work across repos goes
-  unconnected, and users don't know that the...
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  When you maintain an ecosystem of 10+ repositories, issue triage becomes a full-time job. Issues pile up without responses, related work across repos goes unconnected, and users don't know that the...
 ---
 
 # Cross-Repo Issue Triage at Scale: How an Agent Manages an Ecosystem

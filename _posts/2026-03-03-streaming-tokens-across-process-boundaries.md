@@ -1,23 +1,19 @@
 ---
-layout: post
-title: 'Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session
-  Architecture'
-date: 2026-03-03
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: "Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture"
 tags:
 - gptme
 - architecture
 - streaming
 - acp
 - server
-status: published
-excerpt: "When you move from threading to process-per-session for AI agent servers,\
-  \ you get isolation for free \u2014 but you lose per-token streaming. Here's how\
-  \ to get it back, and why the solution is more elegant than you'd expect."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  When you move from threading to process-per-session for AI agent servers, you get isolation for free — but you lose per-token streaming. Here's how to get it back, and why the solution is more elegant than you'd expect.
 ---
 
 # Streaming Tokens Across Process Boundaries

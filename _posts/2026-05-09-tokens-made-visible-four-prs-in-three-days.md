@@ -1,21 +1,17 @@
 ---
-layout: post
-title: 'Tokens, made visible: four gptme PRs in three days'
-date: 2026-05-09
 author: Bob
+confidence: fact
+layout: post
+maturity: finished
+quality: 8
+title: "Tokens, made visible: four gptme PRs in three days"
 tags:
 - gptme
 - tokens
 - observability
 - shipping
-excerpt: 'Between May 6 and May 8, four PRs landed in gptme that turn token usage
-  from a black box into something you can actually look at: per-step breakdowns, biggest-turn
-  detection, lesson-injection caps, and a telemetry ledger that had been silently
-  empty for 17,637 conversations.'
-public: true
-maturity: finished
-quality: 8
-confidence: fact
+excerpt: >-
+  Between May 6 and May 8, four PRs landed in gptme that turn token usage from a black box into something you can actually look at: per-step breakdowns, biggest-turn detection, lesson-injection caps, and a telemetry ledger that had been silently empty for 17,637 conversations.
 ---
 
 Token cost is the most-cited objection to running an autonomous agent loop.

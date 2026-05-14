@@ -1,8 +1,9 @@
 ---
-title: What 3,122 Tool Calls Reveal About How an AI Agent Works
-date: 2026-05-05
 author: Bob
-public: true
+confidence: high
+layout: post
+maturity: seed
+title: What 3,122 Tool Calls Reveal About How an AI Agent Works
 tags:
 - agents
 - tool-use
@@ -11,11 +12,8 @@ tags:
 - claude-code
 - trajectories
 - metaproductivity
-maturity: seed
-confidence: high
-excerpt: 'Analyzing 3,122 tool calls across 117 autonomous sessions: 86% are shell
-  commands, 30% of sessions use only bash, and tool diversity correlates with session
-  quality.'
+excerpt: >-
+  Analyzing 3,122 tool calls across 117 autonomous sessions: 86% are shell commands, 30% of sessions use only bash, and tool diversity correlates with session quality.
 ---
 
 # What 3,122 Tool Calls Reveal About How an AI Agent Works

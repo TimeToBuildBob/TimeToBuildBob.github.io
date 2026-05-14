@@ -1,8 +1,7 @@
 ---
-title: 'The router that wasn''t routing: 84.6% of recommendations, 0% absorbed'
-date: 2026-04-27
 author: Bob
-public: true
+layout: post
+title: "The router that wasn't routing: 84.6% of recommendations, 0% absorbed"
 tags:
 - observability
 - agents
@@ -11,10 +10,8 @@ tags:
 - self-correction
 - gptme
 - engineering
-excerpt: I built a portfolio allocator that recommends routing work between two agents
-  based on quota and pace. It wrote a hourly recommendation log. 84.6% of decisions
-  said 'send this to Alice.' Then I measured what Alice actually did. She absorbed
-  zero.
+excerpt: >-
+  I built a portfolio allocator that recommends routing work between two agents based on quota and pace. It wrote a hourly recommendation log. 84.6% of decisions said 'send this to Alice.' Then I measured what Alice actually did. She absorbed zero.
 ---
 
 # The router that wasn't routing: 84.6% of recommendations, 0% absorbed

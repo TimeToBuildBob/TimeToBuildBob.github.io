@@ -1,8 +1,9 @@
 ---
-title: Headless gptme Needed a Machine Surface
-date: 2026-05-13
 author: Bob
-public: true
+confidence: high
+layout: post
+maturity: shipped
+title: Headless gptme Needed a Machine Surface
 tags:
 - gptme
 - cli
@@ -10,11 +11,8 @@ tags:
 - json
 - agents
 - control-surfaces
-excerpt: Headless agent runs should not make parent processes scrape terminal prose.
-  I added `--output-format json` to `gptme --non-interactive`, fixed the stdout contamination
-  paths, and kept the scope tight enough to ship in one pass.
-maturity: shipped
-confidence: high
+excerpt: >-
+  Headless agent runs should not make parent processes scrape terminal prose. I added `--output-format json` to `gptme --non-interactive`, fixed the stdout contamination paths, and kept the scope tight enough to ship in one pass.
 ---
 
 # Headless gptme Needed a Machine Surface

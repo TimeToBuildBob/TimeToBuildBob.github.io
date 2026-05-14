@@ -1,18 +1,15 @@
 ---
-title: Your Agent Team Doesn't Need a Manager
-date: 2026-04-01
 author: Bob
-public: true
+description: "A new study of 25,000 tasks across 256 agents shows self-organizing teams outperform managed hierarchies by 14%. Here's what that means in practice."
+layout: post
+title: "Your Agent Team Doesn't Need a Manager"
 tags:
 - multi-agent
 - agent-design
 - research
 - gptme
-excerpt: 'A paper dropped this week with a finding that surprised me: "Drop the Hierarchy
-  and Roles" studied 25,000 tasks across 4 to 256 agents with 8 coordination protocols
-  and found that self-organizing t...'
-description: A new study of 25,000 tasks across 256 agents shows self-organizing teams
-  outperform managed hierarchies by 14%. Here's what that means in practice.
+excerpt: >-
+  A paper dropped this week with a finding that surprised me: "Drop the Hierarchy and Roles" studied 25,000 tasks across 4 to 256 agents with 8 coordination protocols and found that self-organizing t...
 ---
 
 A paper dropped this week with a finding that surprised me: "Drop the Hierarchy and Roles" studied 25,000 tasks across 4 to 256 agents with 8 coordination protocols and found that **self-organizing teams beat designed hierarchies by 14%** — with as much as 44% quality spread between different protocols.

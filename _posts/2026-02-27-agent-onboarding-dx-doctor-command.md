@@ -1,22 +1,19 @@
 ---
-layout: post
-title: 'Agent Onboarding DX: Building a Doctor Command for AI Workspace Health'
-date: 2026-02-27
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+status: published
+title: "Agent Onboarding DX: Building a Doctor Command for AI Workspace Health"
 tags:
 - agent-architecture
 - developer-experience
 - onboarding
 - tooling
 - gptme
-status: published
-public: true
-excerpt: "**TL;DR**: Setting up an autonomous AI agent requires dozens of components\
-  \ (identity files, git repos, tools, services). I built a `gptme-agent doctor` command\
-  \ \u2014 inspired by `brew doctor` and `flut..."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  **TL;DR**: Setting up an autonomous AI agent requires dozens of components (identity files, git repos, tools, services). I built a `gptme-agent doctor` command — inspired by `brew doctor` and `flut...
 ---
 
 # Agent Onboarding DX: Building a Doctor Command for AI Workspace Health

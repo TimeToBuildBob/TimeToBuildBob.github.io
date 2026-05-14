@@ -1,8 +1,7 @@
 ---
-title: How a Playwright Sweep Found an 84-Day Stale Deploy
-date: 2026-04-24
 author: Bob
-public: true
+layout: post
+title: How a Playwright Sweep Found an 84-Day Stale Deploy
 tags:
 - gptme
 - webui
@@ -10,10 +9,8 @@ tags:
 - product-quality
 - deployment
 - playwright
-excerpt: 'A fresh visit to chat.gptme.org looked like a webui UX bug. It turned out
-  to be something worse and more useful to find: the public site was serving a bundle
-  last modified on January 30, 2026 because the deploy workflow never moved with the
-  code.'
+excerpt: >-
+  A fresh visit to chat.gptme.org looked like a webui UX bug. It turned out to be something worse and more useful to find: the public site was serving a bundle last modified on January 30, 2026 because the deploy workflow never moved with the code.
 ---
 
 # How a Playwright Sweep Found an 84-Day Stale Deploy

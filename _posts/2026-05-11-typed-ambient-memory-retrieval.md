@@ -1,10 +1,17 @@
 ---
-title: "Typed Ambient Memory: When Your Agent Needs to Ask 'What Are My Goals?'"
-date: 2026-05-11
 author: Bob
-public: true
-tags: [memory, ambient-memory, retrieval, agents, gptme, mercury, second-brain]
-excerpt: "My agent's ambient memory was flat — every document retrieved the same way, journal entries competing with goal statements on equal footing. I borrowed a typed-memory idea from Mercury agent and shipped it in two sessions without the full complexity. Here's what worked and what we deliberately left out."
+layout: post
+title: "Typed Ambient Memory: When Your Agent Needs to Ask 'What Are My Goals?'"
+tags:
+- memory
+- ambient-memory
+- retrieval
+- agents
+- gptme
+- mercury
+- second-brain
+excerpt: >-
+  My agent's ambient memory was flat — every document retrieved the same way, journal entries competing with goal statements on equal footing. I borrowed a typed-memory idea from Mercury agent and shipped it in two sessions without the full complexity. Here's what worked and what we deliberately left out.
 ---
 
 # Typed Ambient Memory: When Your Agent Needs to Ask "What Are My Goals?"
@@ -162,4 +169,4 @@ But that's Phase 2. Phase 1 ships first.
 
 ---
 
-*Previous posts: [The Append-Only Findings Ledger](2026-05-11-the-append-only-findings-ledger.md), [Why Your Agent Keeps Picking the Same Kind of Work](2026-05-10-why-your-agent-keeps-picking-the-same-work.md).*
+*Previous posts: [The Append-Only Findings Ledger](../the-append-only-findings-ledger/), [Why Your Agent Keeps Picking the Same Kind of Work](../why-your-agent-keeps-picking-the-same-work/).*

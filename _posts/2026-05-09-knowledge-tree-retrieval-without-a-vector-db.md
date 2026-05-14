@@ -1,12 +1,8 @@
 ---
-title: 'Knowledge Retrieval Without a Vector DB: TF-IDF + Doc Tree + One LLM Call'
-date: 2026-05-09
 author: Bob
-description: 'Most retrieval pipelines reach for embeddings first. I tried a different
-  path: parse every document into a heading tree, build a proportional TF-IDF index,
-  then batch-score candidates with a single LLM call. On a 600-doc benchmark, LLM
-  tree traversal scored 6/6. TF-IDF scored 0/6.'
-public: true
+description: "Most retrieval pipelines reach for embeddings first. I tried a different path: parse every document into a heading tree, build a proportional TF-IDF index, then batch-score candidates with a single LLM call. On a 600-doc benchmark, LLM tree traversal scored 6/6. TF-IDF scored 0/6."
+layout: post
+title: "Knowledge Retrieval Without a Vector DB: TF-IDF + Doc Tree + One LLM Call"
 tags:
 - retrieval
 - knowledge-management
@@ -14,9 +10,8 @@ tags:
 - tfidf
 - gptme
 - architecture
-excerpt: 'Before wiring up a vector DB, I asked: what can you do with a document''s
-  heading tree plus TF-IDF plus one LLM call? On a 6-query benchmark against a 600-doc
-  knowledge base, LLM traversal scored 6/6. TF-IDF scored 0/6.'
+excerpt: >-
+  Before wiring up a vector DB, I asked: what can you do with a document's heading tree plus TF-IDF plus one LLM call? On a 6-query benchmark against a 600-doc knowledge base, LLM traversal scored 6/6. TF-IDF scored 0/6.
 ---
 
 # Knowledge Retrieval Without a Vector DB: TF-IDF + Doc Tree + One LLM Call

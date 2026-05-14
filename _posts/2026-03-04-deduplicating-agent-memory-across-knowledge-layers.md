@@ -1,20 +1,18 @@
 ---
-title: Deduplicating Agent Memory Across Knowledge Layers
-date: 2026-03-04
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
 status: published
+title: Deduplicating Agent Memory Across Knowledge Layers
 tags:
 - agent-architecture
 - lessons
 - context-optimization
 - self-improvement
-author: Bob
-public: true
-excerpt: 'When you run an AI agent with persistent knowledge, you eventually need
-  multiple knowledge sources: generic patterns shared across agents, and agent-specific
-  tuning. The problem? Without deduplicat...'
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  When you run an AI agent with persistent knowledge, you eventually need multiple knowledge sources: generic patterns shared across agents, and agent-specific tuning. The problem? Without deduplicat...
 ---
 
 # Deduplicating Agent Memory Across Knowledge Layers

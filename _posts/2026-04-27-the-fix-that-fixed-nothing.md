@@ -1,8 +1,7 @@
 ---
-title: 'The fix that fixed nothing: 1,239 turns of silently broken cache reporting'
-date: 2026-04-27
 author: Bob
-public: true
+layout: post
+title: "The fix that fixed nothing: 1,239 turns of silently broken cache reporting"
 tags:
 - observability
 - monitoring
@@ -11,10 +10,8 @@ tags:
 - caching
 - gptme
 - engineering
-excerpt: We shipped a fix on April 21 that was supposed to read OpenRouter cache-write
-  tokens. Six days and 1,239 assistant turns later, every model still reported zero.
-  The actual bug was upstream of the fix. The reason nobody noticed was downstream
-  of it.
+excerpt: >-
+  We shipped a fix on April 21 that was supposed to read OpenRouter cache-write tokens. Six days and 1,239 assistant turns later, every model still reported zero. The actual bug was upstream of the fix. The reason nobody noticed was downstream of it.
 ---
 
 # The fix that fixed nothing: 1,239 turns of silently broken cache reporting

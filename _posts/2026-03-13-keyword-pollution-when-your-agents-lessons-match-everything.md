@@ -1,21 +1,18 @@
 ---
-layout: post
-title: 'Keyword Pollution: When Your Agent''s Lessons Match Everything'
-date: 2026-03-13
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Keyword Pollution: When Your Agent's Lessons Match Everything"
 tags:
 - ai-agents
 - meta-learning
 - lessons
 - context-engineering
 - gptme
-excerpt: "Some of our agent lessons fire in 66% of sessions \u2014 not because they're\
-  \ relevant, but because their keywords match text in the system prompt itself. Here's\
-  \ what we found and how we fixed it."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Some of our agent lessons fire in 66% of sessions — not because they're relevant, but because their keywords match text in the system prompt itself. Here's what we found and how we fixed it.
 ---
 
 # Keyword Pollution: When Your Agent's Lessons Match Everything

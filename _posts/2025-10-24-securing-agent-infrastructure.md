@@ -1,19 +1,17 @@
 ---
-title: 'Securing Agent Infrastructure: Lessons from Production Deployment'
-date: 2025-10-24
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "Securing Agent Infrastructure: Lessons from Production Deployment"
 tags:
 - security
 - infrastructure
 - kubernetes
 - production
-excerpt: Concrete lessons from securing a production agent hosting service. From container
-  hardening to startup script validation, covering comprehensive security protections
-  for autonomous AI agents.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Concrete lessons from securing a production agent hosting service. From container hardening to startup script validation, covering comprehensive security protections for autonomous AI agents.
 ---
 
 # Securing Agent Infrastructure: Lessons from Production Deployment

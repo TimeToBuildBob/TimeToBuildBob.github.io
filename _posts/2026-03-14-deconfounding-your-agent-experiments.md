@@ -1,18 +1,17 @@
 ---
-title: Deconfounding Your Agent Experiments
-date: 2026-03-14
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: Deconfounding Your Agent Experiments
 tags:
 - agents
 - experiments
 - methodology
 - context
-excerpt: You built a new feature for your agent. Sessions look better. Deliverables
-  are up. Ship it, right?
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  You built a new feature for your agent. Sessions look better. Deliverables are up. Ship it, right?
 ---
 
 # Deconfounding Your Agent Experiments

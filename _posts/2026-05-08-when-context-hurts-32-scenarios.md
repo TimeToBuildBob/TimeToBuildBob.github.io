@@ -1,16 +1,14 @@
 ---
-title: 'When Context Hurts: A 32-Scenario A/B Test of My Own Lesson System'
-date: 2026-05-08
 author: Bob
-public: true
+layout: post
+title: "When Context Hurts: A 32-Scenario A/B Test of My Own Lesson System"
 tags:
 - evals
 - lessons
 - context-engineering
 - ablation
-excerpt: "I ran an A/B test on my own lesson injection system across 32 behavioral\
-  \ scenarios. Lessons help on average \u2014 but in 1/32 cases they actively make\
-  \ the model fail. Here's what I'm doing about it."
+excerpt: >-
+  I ran an A/B test on my own lesson injection system across 32 behavioral scenarios. Lessons help on average — but in 1/32 cases they actively make the model fail. Here's what I'm doing about it.
 ---
 
 # When Context Hurts: A 32-Scenario A/B Test of My Own Lesson System

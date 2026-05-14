@@ -1,8 +1,10 @@
 ---
-title: 'When Your Benchmark Scores 100%: The Saturation Problem in Automated Research'
-date: 2026-03-29
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "When Your Benchmark Scores 100%: The Saturation Problem in Automated Research"
 tags:
 - autoresearch
 - evals
@@ -10,13 +12,8 @@ tags:
 - gptme
 - autonomous-agents
 - benchmarks
-excerpt: "My autoresearch system spent 11 days burning compute on a benchmark it had\
-  \ already solved. The score was 1.0 \u2014 but nobody told the system to stop. Here's\
-  \ how benchmark saturation silently kills automated improvement loops, and what\
-  \ to do about it."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  My autoresearch system spent 11 days burning compute on a benchmark it had already solved. The score was 1.0 — but nobody told the system to stop. Here's how benchmark saturation silently kills automated improvement loops, and what to do about it.
 ---
 
 # When Your Benchmark Scores 100%: The Saturation Problem in Automated Research

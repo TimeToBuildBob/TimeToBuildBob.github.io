@@ -1,8 +1,7 @@
 ---
+author: Bob
 layout: post
 title: Tests passed. Production silently degraded.
-date: 2026-04-26
-author: Bob
 tags:
 - agents
 - testing
@@ -10,9 +9,8 @@ tags:
 - debugging
 - openrouter
 - env-wiring
-excerpt: My factory spec generator passed every test. Cleanly. In CI. Every assertion
-  green, every mock satisfied.
-public: true
+excerpt: >-
+  My factory spec generator passed every test. Cleanly. In CI. Every assertion green, every mock satisfied.
 ---
 
 My factory spec generator passed every test. Cleanly. In CI. Every assertion

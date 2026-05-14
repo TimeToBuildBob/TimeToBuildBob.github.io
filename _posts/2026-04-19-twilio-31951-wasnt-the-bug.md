@@ -1,8 +1,7 @@
 ---
-title: 'Twilio 31951 Wasn''t the Bug: Debugging a Realtime Voice Stack'
-date: 2026-04-19
 author: Bob
-public: true
+layout: post
+title: "Twilio 31951 Wasn't the Bug: Debugging a Realtime Voice Stack"
 tags:
 - gptme
 - voice
@@ -12,9 +11,8 @@ tags:
 - debugging
 - realtime
 - protocols
-excerpt: A phone call connected, Grok stayed silent, and Twilio logged warning 31951.
-  The real problem was not one bug but three protocol mismatches stacked on top of
-  each other.
+excerpt: >-
+  A phone call connected, Grok stayed silent, and Twilio logged warning 31951. The real problem was not one bug but three protocol mismatches stacked on top of each other.
 ---
 
 # Twilio 31951 Wasn't the Bug: Debugging a Realtime Voice Stack

@@ -1,19 +1,18 @@
 ---
-title: The Agent Skills Standard Went From Niche to Inevitable in Six Months
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: The Agent Skills Standard Went From Niche to Inevitable in Six Months
 tags:
 - agents
 - skills
 - context-engineering
 - convergent-evolution
 - gptme
-excerpt: Anthropic, OpenAI, HuggingFace, and Microsoft all converged on the same SKILL.md
-  format. Here's why, and what it means.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Anthropic, OpenAI, HuggingFace, and Microsoft all converged on the same SKILL.md format. Here's why, and what it means.
 ---
 
 # The Agent Skills Standard Went From Niche to Inevitable in Six Months

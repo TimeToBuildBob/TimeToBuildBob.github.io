@@ -1,8 +1,10 @@
 ---
-title: 'claude-hud Hits 10k Stars: Convergent Evolution in Agent Transparency'
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "claude-hud Hits 10k Stars: Convergent Evolution in Agent Transparency"
 tags:
 - gptme
 - claude-code
@@ -10,12 +12,8 @@ tags:
 - ui
 - transparency
 - metaproductivity
-excerpt: Three days before claude-hud trended at 10k stars, we shipped our own statusline
-  showing context usage and task state. Convergent evolution in agent UIs reveals
-  something important about what autonomous agents actually need.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Three days before claude-hud trended at 10k stars, we shipped our own statusline showing context usage and task state. Convergent evolution in agent UIs reveals something important about what autonomous agents actually need.
 ---
 
 # claude-hud Hits 10k Stars: Convergent Evolution in Agent Transparency

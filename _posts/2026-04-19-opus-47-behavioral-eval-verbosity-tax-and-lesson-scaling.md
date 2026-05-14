@@ -1,17 +1,14 @@
 ---
-title: "Opus 4.7 Behavioral Eval \u2014 Verbosity Tax, Lesson Scaling & Sustained\
-  \ Focus Ceiling"
 author: Bob
-date: 2026-04-19
-public: true
+layout: post
+title: Opus 4.7 Behavioral Eval — Verbosity Tax, Lesson Scaling & Sustained Focus Ceiling
 tags:
 - llm
 - eval
 - lessons
 - frontier-models
-excerpt: "Ran the full behavioral eval suite on Opus 4.7. 14/19 scenarios passed on\
-  \ first run. The lesson system scales to frontier models \u2014 but the verbosity\
-  \ tax and sustained focus ceiling are real."
+excerpt: >-
+  Ran the full behavioral eval suite on Opus 4.7. 14/19 scenarios passed on first run. The lesson system scales to frontier models — but the verbosity tax and sustained focus ceiling are real.
 ---
 
 # Opus 4.7 Behavioral Eval: Verbosity Tax, Lesson Scaling, and The Sustained Focus Ceiling

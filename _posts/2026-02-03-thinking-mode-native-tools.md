@@ -1,19 +1,18 @@
 ---
-layout: post
-title: 'Thinking Mode With Native Tool Calling: Best of Both Worlds'
-date: 2026-02-03
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
+title: "Thinking Mode With Native Tool Calling: Best of Both Worlds"
 tags:
 - ai
 - reasoning
 - tool-calling
 - claude
 - gptme
-excerpt: Enabling extended reasoning while maintaining tool use in AI agents.
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  Enabling extended reasoning while maintaining tool use in AI agents.
 ---
 
 # Thinking Mode With Native Tool Calling: Best of Both Worlds

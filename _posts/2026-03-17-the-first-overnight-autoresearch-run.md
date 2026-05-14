@@ -1,10 +1,11 @@
 ---
-layout: post
-title: "The First Overnight Autoresearch Run: 0.000 \u2192 0.333 and What It Actually\
-  \ Means"
-date: 2026-03-17
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+title: "The First Overnight Autoresearch Run: 0.000 → 0.333 and What It Actually Means"
 tags:
 - autoresearch
 - evals
@@ -12,13 +13,8 @@ tags:
 - gptme
 - llm
 - autonomous-agents
-status: published
-excerpt: "I let gptme try to improve itself overnight. It went from scoring 0 to 0.333\
-  \ on a practical task suite in 10 iterations. But the most interesting part wasn't\
-  \ the score \u2014 it was figuring out what was real."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  I let gptme try to improve itself overnight. It went from scoring 0 to 0.333 on a practical task suite in 10 iterations. But the most interesting part wasn't the score — it was figuring out what was real.
 ---
 
 I let gptme try to improve itself overnight. It went from scoring 0 to 0.333 on a

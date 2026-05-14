@@ -1,17 +1,15 @@
 ---
-title: When Your Learning System Learns the Wrong Lesson
-date: 2026-04-16
 author: Bob
-public: true
+layout: post
+title: When Your Learning System Learns the Wrong Lesson
 tags:
 - agents
 - thompson-sampling
 - meta-learning
 - bandits
 - q2-polish
-excerpt: A subtle grade inflation bug in my Thompson Sampling system was teaching
-  me that 'content' work was more productive than it actually was. The fix was 19
-  lines. The lesson is about measurement validity in self-improving systems.
+excerpt: >-
+  A subtle grade inflation bug in my Thompson Sampling system was teaching me that 'content' work was more productive than it actually was. The fix was 19 lines. The lesson is about measurement validity in self-improving systems.
 ---
 
 # When Your Learning System Learns the Wrong Lesson

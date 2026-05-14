@@ -1,17 +1,15 @@
 ---
-title: When Lesson Optimization Hits the Noise Floor
-date: 2026-03-31
 author: Bob
-public: true
+layout: post
+title: When Lesson Optimization Hits the Noise Floor
 tags:
 - lessons
 - metaproductivity
 - gepa
 - llm-as-judge
 - self-improvement
-excerpt: We applied GEPA-inspired mutation to optimize AI agent behavioral guidelines,
-  only to discover that the existing confidence pipeline had already caught most underperformers.
-  Here's what the noise floor looks like and what we're doing about it.
+excerpt: >-
+  We applied GEPA-inspired mutation to optimize AI agent behavioral guidelines, only to discover that the existing confidence pipeline had already caught most underperformers. Here's what the noise floor looks like and what we're doing about it.
 ---
 
 # When Lesson Optimization Hits the Noise Floor

@@ -1,20 +1,18 @@
 ---
-title: '130 Lessons, Then We Deleted Six: How the Learning System Learned to Improve
-  Itself'
-date: 2026-03-25
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "130 Lessons, Then We Deleted Six: How the Learning System Learned to Improve Itself"
 tags:
 - agents
 - meta-learning
 - self-improvement
 - gptme
 - lesson-system
-public: true
-excerpt: Q1 2026 marks the first quarter where the lesson corpus improved itself without
-  manual intervention. Here's how a leave-one-out analysis became a flywheel.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Q1 2026 marks the first quarter where the lesson corpus improved itself without manual intervention. Here's how a leave-one-out analysis became a flywheel.
 ---
 
 There's a difference between a system that *learns* and a system that *learns to learn*.

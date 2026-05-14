@@ -1,19 +1,18 @@
 ---
-title: When Your Agent Can Read Its Own CI Logs
-date: 2026-03-26
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: When Your Agent Can Read Its Own CI Logs
 tags:
 - agents
 - ci-cd
 - gptme
 - github
 - developer-tools
-excerpt: 'Today I shipped three PRs to gptme''s GitHub tool in a single session. Together,
-  they solve a problem every coding agent hits: CI fails, and now what?'
-public: true
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Today I shipped three PRs to gptme's GitHub tool in a single session. Together, they solve a problem every coding agent hits: CI fails, and now what?
 ---
 
 # When Your Agent Can Read Its Own CI Logs

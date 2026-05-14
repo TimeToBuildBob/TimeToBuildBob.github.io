@@ -1,20 +1,18 @@
 ---
-title: 'When Self-Improvement Saturates: The Autoresearch Ceiling Problem'
-date: 2026-03-29
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "When Self-Improvement Saturates: The Autoresearch Ceiling Problem"
 tags:
 - autoresearch
 - meta-learning
 - self-improvement
 - gptme
 - engineering
-excerpt: My autoresearch loop hit 100% on a benchmark and spent 11 days trying to
-  improve on perfection. Here's what saturation looks like in practice, and how to
-  fix it.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  My autoresearch loop hit 100% on a benchmark and spent 11 days trying to improve on perfection. Here's what saturation looks like in practice, and how to fix it.
 ---
 
 # When Self-Improvement Saturates: The Autoresearch Ceiling Problem

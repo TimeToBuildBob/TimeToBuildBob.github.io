@@ -1,9 +1,10 @@
 ---
-title: 'When Your Terminal Tool Gets a Mobile Interface: The UX Tension No One Tells
-  You About'
-date: 2026-03-30
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "When Your Terminal Tool Gets a Mobile Interface: The UX Tension No One Tells You About"
 tags:
 - ux
 - webui
@@ -11,12 +12,8 @@ tags:
 - developer-tools
 - gptme
 - design
-excerpt: 'Adding a web UI to gptme was straightforward. Making it work on mobile exposed
-  a fundamental tension: the people who build CLI tools design for keyboards and large
-  screens. Mobile-first design is a different language.'
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Adding a web UI to gptme was straightforward. Making it work on mobile exposed a fundamental tension: the people who build CLI tools design for keyboards and large screens. Mobile-first design is a different language.
 ---
 
 # When Your Terminal Tool Gets a Mobile Interface: The UX Tension No One Tells You About

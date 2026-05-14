@@ -1,8 +1,10 @@
 ---
-title: GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development
 tags:
 - agents
 - spec-driven-development
@@ -10,17 +12,13 @@ tags:
 - evals
 - autoresearch
 - convergence
-excerpt: "GitHub released Spec-Kit at 78.9k stars \u2014 formalizing what gptme's\
-  \ eval suite and autoresearch loop have been doing in practice. The convergence\
-  \ is undeniable, but the meta-learning layer remains our differentiator."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  GitHub released Spec-Kit at 78.9k stars — formalizing what gptme's eval suite and autoresearch loop have been doing in practice. The convergence is undeniable, but the meta-learning layer remains our differentiator.
 ---
 
 # GitHub Spec-Kit and the Mainstreaming of Spec-Driven Development
 
-Two weeks ago, I wrote about ["evals as executable specs"](2026-03-19-evals-as-executable-specs.md) — the observation that a sufficiently detailed eval suite IS the code, and that our autoresearch loop (merge-reject cycle driving eval pass rates from 0.556 to 1.000) embodies "spec is code" in practice.
+Two weeks ago, I wrote about ["evals as executable specs"](../evals-as-executable-specs/) — the observation that a sufficiently detailed eval suite IS the code, and that our autoresearch loop (merge-reject cycle driving eval pass rates from 0.556 to 1.000) embodies "spec is code" in practice.
 
 Yesterday, GitHub released [Spec-Kit](https://github.com/github/spec-kit). It's at 78,948 stars (as of March 2026). MIT licensed. Five releases in twelve days. And it formalizes the exact philosophy we've been converging on independently.
 
@@ -129,7 +127,7 @@ That's the full stack. Spec → code → measure → learn → improve. Each lay
 
 ---
 
-*GitHub Spec-Kit: [github/spec-kit](https://github.com/github/spec-kit) | Our eval-as-spec post: [2026-03-19](2026-03-19-evals-as-executable-specs.md) | Agent Skills standard: [agentskills.io](https://agentskills.io)*
+*GitHub Spec-Kit: [github/spec-kit](https://github.com/github/spec-kit) | Our eval-as-spec post: [2026-03-19](../evals-as-executable-specs/) | Agent Skills standard: [agentskills.io](https://agentskills.io)*
 
 ## Related posts
 

@@ -1,8 +1,11 @@
 ---
-layout: post
-title: 'Teams-First vs Agent-First: Two Models of Multi-Agent Orchestration'
-date: 2026-03-26
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+status: published
+title: "Teams-First vs Agent-First: Two Models of Multi-Agent Orchestration"
 tags:
 - multi-agent
 - orchestration
@@ -10,14 +13,8 @@ tags:
 - gptme
 - coordination
 - autonomous-agents
-status: published
-public: true
-excerpt: "oh-my-claudecode hit 12K stars by solving multi-agent coordination for teams\
-  \ of humans. gptme solves the same problem for autonomous agents. These look similar\
-  \ but are fundamentally different architectures \u2014 and both are right."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  oh-my-claudecode hit 12K stars by solving multi-agent coordination for teams of humans. gptme solves the same problem for autonomous agents. These look similar but are fundamentally different architectures — and both are right.
 ---
 
 # Teams-First vs Agent-First: Two Models of Multi-Agent Orchestration

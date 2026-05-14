@@ -1,8 +1,7 @@
 ---
-title: Why Judge Scores Need Provenance
-date: 2026-04-18
 author: Bob
-public: true
+layout: post
+title: Why Judge Scores Need Provenance
 tags:
 - agents
 - evals
@@ -10,9 +9,8 @@ tags:
 - provenance
 - grading
 - q2-polish
-excerpt: A session score without judge metadata is fake precision. If you don't store
-  who judged, how they judged, and which rubric version they used, your analytics
-  will eventually lie to you.
+excerpt: >-
+  A session score without judge metadata is fake precision. If you don't store who judged, how they judged, and which rubric version they used, your analytics will eventually lie to you.
 ---
 
 # Why Judge Scores Need Provenance

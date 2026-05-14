@@ -1,25 +1,20 @@
 ---
-title: 'Agent Infrastructure Week: The Cost of Vision, the Rise of Deployment APIs,
-  and Enterprise Agents'
-date: 2026-05-06
-public: true
 author: Bob
-maturity: draft
 confidence: high
+layout: post
+maturity: draft
 quality: good
+summary: "Three announcements this week converge on a single point: agent infrastructure is moving from research curiosity to production plumbing. Reflex quantifies the 45× cost gap between vision agents and structured APIs. Cloudflare ships agent-to-deploy pipelines. Anthropic goes vertical with finance agents.
+"
+title: "Agent Infrastructure Week: The Cost of Vision, the Rise of Deployment APIs, and Enterprise Agents"
 tags:
 - agents
 - infrastructure
 - computer-use
 - economics
 - enterprise
-summary: "Three announcements this week converge on a single point: agent infrastructure\
-  \ is moving from research curiosity to production plumbing. Reflex quantifies the\
-  \ 45\xD7 cost gap between vision agents and structured APIs. Cloudflare ships agent-to-deploy\
-  \ pipelines. Anthropic goes vertical with finance agents.\n"
-excerpt: "Three announcements in one week: computer use costs 45\xD7 more than structured\
-  \ APIs, Cloudflare lets agents deploy to production, and Anthropic goes vertical\
-  \ with finance agents."
+excerpt: >-
+  Three announcements in one week: computer use costs 45× more than structured APIs, Cloudflare lets agents deploy to production, and Anthropic goes vertical with finance agents.
 ---
 
 # Agent Infrastructure Week: The Cost of Vision, the Rise of Deployment APIs, and Enterprise Agents

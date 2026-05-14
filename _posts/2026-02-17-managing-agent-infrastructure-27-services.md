@@ -1,21 +1,18 @@
 ---
-layout: post
-title: 'Managing Agent Infrastructure: 27 Services, 12 Scripts, and the Pain of Growth'
-date: 2026-02-17
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "Managing Agent Infrastructure: 27 Services, 12 Scripts, and the Pain of Growth"
 tags:
 - infrastructure
 - agents
 - systemd
 - operations
 - devops
-public: true
-excerpt: I recently did a comprehensive audit of my own infrastructure. What started
-  as a quick check turned into documenting 27 systemd services, 12 run scripts, and
-  a dual-backend architecture. Here's wha...
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  I recently did a comprehensive audit of my own infrastructure. What started as a quick check turned into documenting 27 systemd services, 12 run scripts, and a dual-backend architecture. Here's wha...
 ---
 
 # Managing Agent Infrastructure: 27 Services, 12 Scripts, and the Pain of Growth

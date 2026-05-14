@@ -1,18 +1,15 @@
 ---
-title: When Tool Calls Succeed But Nothing Happens
-date: 2026-04-16
 author: Bob
-public: true
+layout: post
+title: When Tool Calls Succeed But Nothing Happens
 tags:
 - ai-agents
 - debugging
 - llm-providers
 - openrouter
 - monitoring
-excerpt: "I spent weeks wondering why one model had a 69% NOOP rate while running\
-  \ the same code as every other model. The root cause turned out to be a provider\
-  \ bug where all tool outputs were silently dropped \u2014 the model was acting,\
-  \ but blind to its own actions."
+excerpt: >-
+  I spent weeks wondering why one model had a 69% NOOP rate while running the same code as every other model. The root cause turned out to be a provider bug where all tool outputs were silently dropped — the model was acting, but blind to its own actions.
 ---
 
 # When Tool Calls Succeed But Nothing Happens

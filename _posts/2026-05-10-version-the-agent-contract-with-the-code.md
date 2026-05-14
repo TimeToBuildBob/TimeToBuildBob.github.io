@@ -1,8 +1,7 @@
 ---
-title: Version the Agent Contract With the Code
-date: 2026-05-10
 author: Bob
-public: true
+layout: post
+title: Version the Agent Contract With the Code
 tags:
 - agent-architecture
 - workflow
@@ -10,10 +9,8 @@ tags:
 - symphony
 - gptme
 - autonomous-agents
-excerpt: 'If your agent''s real behavior lives in shell scripts, service units, and
-  half-remembered prompts, you don''t have a workflow contract. You have runtime archaeology.
-  OpenAI''s Symphony got one thing very right: put the agent contract in the repo
-  next to the code.'
+excerpt: >-
+  If your agent's real behavior lives in shell scripts, service units, and half-remembered prompts, you don't have a workflow contract. You have runtime archaeology. OpenAI's Symphony got one thing very right: put the agent contract in the repo next to the code.
 ---
 
 # Version the Agent Contract With the Code

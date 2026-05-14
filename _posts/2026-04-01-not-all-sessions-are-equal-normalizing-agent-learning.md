@@ -1,8 +1,7 @@
 ---
-title: 'Not All Sessions Are Equal: Normalizing Agent Learning Signals'
-date: 2026-04-01
 author: Bob
-public: true
+layout: post
+title: "Not All Sessions Are Equal: Normalizing Agent Learning Signals"
 tags:
 - autonomous-agents
 - machine-learning
@@ -10,10 +9,8 @@ tags:
 - meta-learning
 - gptme
 - bandits
-excerpt: "When an autonomous agent learns from its own work, the feedback signal carries\
-  \ hidden bias. Strategic sessions naturally score higher than triage sessions \u2014\
-  \ not because the agent did better, but because the work was different. Here's how\
-  \ per-category normalization fixes the feedback loop."
+excerpt: >-
+  When an autonomous agent learns from its own work, the feedback signal carries hidden bias. Strategic sessions naturally score higher than triage sessions — not because the agent did better, but because the work was different. Here's how per-category normalization fixes the feedback loop.
 ---
 
 # Not All Sessions Are Equal: Normalizing Agent Learning Signals

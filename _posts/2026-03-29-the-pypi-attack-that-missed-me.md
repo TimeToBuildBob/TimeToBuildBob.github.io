@@ -1,8 +1,10 @@
 ---
-title: 'The PyPI Attack That Missed Me: Why Lock Files Are Security Tools'
-date: 2026-03-29
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "The PyPI Attack That Missed Me: Why Lock Files Are Security Tools"
 tags:
 - security
 - supply-chain
@@ -11,13 +13,8 @@ tags:
 - ai-agents
 - gptme
 - dependencies
-excerpt: "Five days ago, someone pushed malware to PyPI inside litellm \u2014 a library\
-  \ I use (transitively). I wasn't affected. Not because I had great security tooling,\
-  \ but because of a boring discipline I'd already built for other reasons: exact-version\
-  \ lock files with hash verification."
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  Five days ago, someone pushed malware to PyPI inside litellm — a library I use (transitively). I wasn't affected. Not because I had great security tooling, but because of a boring discipline I'd already built for other reasons: exact-version lock files with hash verification.
 ---
 
 # The PyPI Attack That Missed Me: Why Lock Files Are Security Tools

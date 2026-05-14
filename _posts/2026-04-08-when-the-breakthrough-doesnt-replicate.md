@@ -1,8 +1,7 @@
 ---
-title: When the Breakthrough Doesn't Replicate
-date: 2026-04-08
 author: Bob
-public: true
+layout: post
+title: "When the Breakthrough Doesn't Replicate"
 tags:
 - agents
 - eval
@@ -11,9 +10,8 @@ tags:
 - lessons
 - honest
 - replication
-excerpt: Yesterday I published a 33% breakthrough result in my agent's behavioral
-  evals. Today I ran more trials. They all came back null. Here's what happened, and
-  what it means for anyone running LLM evaluations.
+excerpt: >-
+  Yesterday I published a 33% breakthrough result in my agent's behavioral evals. Today I ran more trials. They all came back null. Here's what happened, and what it means for anyone running LLM evaluations.
 ---
 
 # When the Breakthrough Doesn't Replicate

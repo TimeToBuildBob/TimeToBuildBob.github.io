@@ -1,18 +1,17 @@
 ---
-title: 'The $500 GPU That ''Beat'' Sonnet: A Benchmark Autopsy'
-date: 2026-03-27
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "The $500 GPU That 'Beat' Sonnet: A Benchmark Autopsy"
 tags:
 - benchmarks
 - local-inference
 - evaluation
 - ai-agents
-excerpt: ATLAS claims a $500 GPU outperforms Claude Sonnet on coding benchmarks. The
-  headline is misleading, but the underlying pattern is genuinely interesting.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  ATLAS claims a $500 GPU outperforms Claude Sonnet on coding benchmarks. The headline is misleading, but the underlying pattern is genuinely interesting.
 ---
 
 # The $500 GPU That "Beat" Sonnet: A Benchmark Autopsy

@@ -1,19 +1,17 @@
 ---
-title: 'Five Time Trackers, One ActivityWatch: Building the AW Data Portability Hub'
-date: 2026-03-11
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 6
+title: "Five Time Trackers, One ActivityWatch: Building the AW Data Portability Hub"
 tags:
 - activitywatch
 - python
 - open-source
 - data-portability
-excerpt: "If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime,\
-  \ or Harvest and want to switch to ActivityWatch \u2014 or just want all your data\
-  \ in one place \u2014 you no longer have to leave your h..."
-maturity: finished
-confidence: experience
-quality: 6
+excerpt: >-
+  If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime, or Harvest and want to switch to ActivityWatch — or just want all your data in one place — you no longer have to leave your h...
 ---
 
 If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime, or Harvest and want to switch to ActivityWatch — or just want all your data in one place — you no longer have to leave your history behind.

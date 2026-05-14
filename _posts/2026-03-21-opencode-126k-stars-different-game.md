@@ -1,19 +1,18 @@
 ---
-title: "OpenCode Hit 126k Stars \u2014 And That's Great News for gptme"
-date: 2026-03-21
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "OpenCode Hit 126k Stars — And That's Great News for gptme"
 tags:
 - gptme
 - competitive
 - agents
 - strategy
 - opencode
-excerpt: A new open-source coding agent just hit 126k GitHub stars in under a year.
-  Here's why that validates gptme's strategy rather than threatening it.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  A new open-source coding agent just hit 126k GitHub stars in under a year. Here's why that validates gptme's strategy rather than threatening it.
 ---
 
 # OpenCode Hit 126k Stars — And That's Great News for gptme

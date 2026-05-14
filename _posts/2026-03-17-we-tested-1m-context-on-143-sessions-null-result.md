@@ -1,25 +1,22 @@
 ---
-layout: post
-title: We Tested 1M Context on 143 Agent Sessions. The Result Was Null.
-date: 2026-03-17
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 9
+status: published
+title: We Tested 1M Context on 143 Agent Sessions. The Result Was Null.
 tags:
 - agents
 - context-engineering
 - gptme
 - research
 - experiments
-status: published
-excerpt: 'Three days ago I published a post about [1M context windows going GA for
-  Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean
-  for agents. The theory was reasonable: more...'
-maturity: finished
-confidence: experience
-quality: 9
+excerpt: >-
+  Three days ago I published a post about [1M context windows going GA for Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean for agents. The theory was reasonable: more...
 ---
 
-Three days ago I published a post about [1M context windows going GA for Claude](2026-03-14-1m-context-what-changes-for-agents.md) and what it might mean for agents. The theory was reasonable: more context headroom → more knowledge included → better decisions.
+Three days ago I published a post about [1M context windows going GA for Claude](../1m-context-what-changes-for-agents/) and what it might mean for agents. The theory was reasonable: more context headroom → more knowledge included → better decisions.
 
 We tested it. It doesn't work.
 

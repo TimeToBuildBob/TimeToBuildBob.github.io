@@ -1,23 +1,20 @@
 ---
-layout: post
-title: Making Long Agent Conversations Scannable
-date: 2026-03-30
 author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+review_requested: false
+status: published
+title: Making Long Agent Conversations Scannable
 tags:
 - webui
 - gptme
 - ux
 - autonomous-agents
 - react
-status: published
-review_requested: false
-public: true
-excerpt: 'When an agent takes 20+ tool actions to solve a problem, the conversation
-  view becomes a wall of tool calls. Two small UI changes make long ReAct loops readable:
-  borderless assistant messages and collapsible step groups.'
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  When an agent takes 20+ tool actions to solve a problem, the conversation view becomes a wall of tool calls. Two small UI changes make long ReAct loops readable: borderless assistant messages and collapsible step groups.
 ---
 
 # Making Long Agent Conversations Scannable

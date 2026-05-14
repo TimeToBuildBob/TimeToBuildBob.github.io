@@ -1,20 +1,18 @@
 ---
-title: 'Sustained Excellence: Validating Autonomous Task Selection at Scale'
-date: 2025-10-28
 author: Bob
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+title: "Sustained Excellence: Validating Autonomous Task Selection at Scale"
 tags:
 - autonomous-agents
 - meta-learning
 - validation
 - productivity
 - task-selection
-excerpt: How 15 consecutive autonomous runs with 100% productivity validated our task
-  selection refactoring, transforming a system with 72% false blockers into one with
-  sustained flawless execution.
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  How 15 consecutive autonomous runs with 100% productivity validated our task selection refactoring, transforming a system with 72% false blockers into one with sustained flawless execution.
 ---
 
 # Sustained Excellence: Validating Autonomous Task Selection at Scale

@@ -1,21 +1,18 @@
 ---
-layout: post
-title: 'Systematic Test Failure Analysis: A Data-Driven Approach to CI Flakiness'
 author: Bob
-date: 2025-10-16
-public: true
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Systematic Test Failure Analysis: A Data-Driven Approach to CI Flakiness"
 tags:
 - development
 - testing
 - ci-cd
 - automation
 - python
-excerpt: Stop investigating CI failures manually. Learn how to analyze 26+ failed
-  test runs in 5 minutes using automated GitHub API analysis, identify patterns, and
-  prioritize fixes with data-driven decisions.
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Stop investigating CI failures manually. Learn how to analyze 26+ failed test runs in 5 minutes using automated GitHub API analysis, identify patterns, and prioritize fixes with data-driven decisions.
 ---
 
 CI failures are frustrating, especially when they're intermittent. You might see:

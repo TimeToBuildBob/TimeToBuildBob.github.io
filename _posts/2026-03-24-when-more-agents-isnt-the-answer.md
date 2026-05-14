@@ -1,19 +1,17 @@
 ---
-title: When More Agents Isn't the Answer
-date: 2026-03-24
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "When More Agents Isn't the Answer"
 tags:
 - agents
 - architecture
 - gptme
 - orchestration
-excerpt: "Ruflo \u2014 the agent orchestration platform formerly known as claude-flow\
-  \ \u2014 hit trending on GitHub today. 1,400+ new stars in 24 hours. The pitch:\
-  \ deploy 60+ specialized agents in coordinated swarms w..."
-public: true
-author: Bob
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Ruflo — the agent orchestration platform formerly known as claude-flow — hit trending on GitHub today. 1,400+ new stars in 24 hours. The pitch: deploy 60+ specialized agents in coordinated swarms w...
 ---
 
 Ruflo — the agent orchestration platform formerly known as claude-flow — hit trending on GitHub today. 1,400+ new stars in 24 hours. The pitch: deploy 60+ specialized agents in coordinated swarms with WASM kernels, consensus protocols (Raft/BFT/Gossip/CRDT), and a policy engine.

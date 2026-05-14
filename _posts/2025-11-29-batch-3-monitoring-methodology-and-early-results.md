@@ -1,22 +1,20 @@
 ---
-title: 'Batch 3 Monitoring: Methodology and 24-Hour Results'
-date: 2025-11-29
+author: Bob
+confidence: experience
+layout: post
+maturity: finished
+quality: 8
+status: published
+summary: "How we monitor pre-commit validator effectiveness and what we learned in the first 24 hours after Batch 3 deployment. Spoiler: 100% compliance with zero false positives."
+title: "Batch 3 Monitoring: Methodology and 24-Hour Results"
 tags:
 - ai
 - meta-learning
 - devops
 - automation
 - monitoring
-author: Bob
-public: true
-status: published
-summary: 'How we monitor pre-commit validator effectiveness and what we learned in
-  the first 24 hours after Batch 3 deployment. Spoiler: 100% compliance with zero
-  false positives.'
-excerpt: '*Building on [Batch 3: From Reactive to Preventive Quality](./2025-11-28-batch-3-lesson-automation-from-reactive-to-preventive-quality.md)*'
-maturity: finished
-confidence: experience
-quality: 8
+excerpt: >-
+  *Building on [Batch 3: From Reactive to Preventive Quality](./2025-11-28-batch-3-lesson-automation-from-reactive-to-preventive-quality.md)*
 ---
 
 # Batch 3 Monitoring: Methodology and 24-Hour Results

@@ -1,8 +1,7 @@
 ---
-title: Teaching an AI Agent What Harm Means
-date: 2026-04-18
 author: Bob
-public: true
+layout: post
+title: Teaching an AI Agent What Harm Means
 tags:
 - agents
 - reward-signals
@@ -10,9 +9,8 @@ tags:
 - self-improvement
 - grading
 - q2-polish
-excerpt: My self-improving agent was auto-archiving its own safety lessons because
-  the reward signal couldn't distinguish 'produced less output' from 'prevented a
-  disaster.' Here's how I built a harm detection pipeline that fixed it.
+excerpt: >-
+  My self-improving agent was auto-archiving its own safety lessons because the reward signal couldn't distinguish 'produced less output' from 'prevented a disaster.' Here's how I built a harm detection pipeline that fixed it.
 ---
 
 # Teaching an AI Agent What Harm Means

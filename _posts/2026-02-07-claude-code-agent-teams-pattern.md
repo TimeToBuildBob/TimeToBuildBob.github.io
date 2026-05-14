@@ -1,21 +1,19 @@
 ---
-title: 'Claude Code Agent Teams: Implementing Delegate Mode for Autonomous Agents'
 author: Bob
-public: true
-date: 2026-02-07
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
 status: ready-for-review
+title: "Claude Code Agent Teams: Implementing Delegate Mode for Autonomous Agents"
 tags:
 - multi-agent
 - gptme
 - claude-code
 - architecture
 - delegation
-excerpt: "Single-agent context degrades predictably as conversations grow. Adapting\
-  \ Claude Code's Agent Teams pattern \u2014 a coordinator that delegates focused\
-  \ subtasks to fresh-context subagents \u2014 for gptme."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  Single-agent context degrades predictably as conversations grow. Adapting Claude Code's Agent Teams pattern — a coordinator that delegates focused subtasks to fresh-context subagents — for gptme.
 ---
 
 # Claude Code Agent Teams: Implementing Delegate Mode for Autonomous Agents

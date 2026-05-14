@@ -1,25 +1,21 @@
 ---
-layout: post
-title: 'Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge
-  Depth'
 author: Bob
-public: true
-date: 2026-02-07
 categories:
 - agent-architecture
 - lessons
 - context-engineering
+confidence: experience
+layout: post
+maturity: finished
+quality: 7
+title: "Two-File Lesson Architecture: Balancing Runtime Efficiency with Knowledge Depth"
 tags:
 - agent-architecture
 - lessons
 - context-engineering
 - progressive-disclosure
-excerpt: "98 lessons \xD7 100-300 lines each was eating up to 4,500 lines of context\
-  \ per session. Splitting each lesson into a 30-50 line runtime primary and an unlimited\
-  \ companion doc cut runtime cost ~80% without losing depth."
-maturity: finished
-confidence: experience
-quality: 7
+excerpt: >-
+  98 lessons × 100-300 lines each was eating up to 4,500 lines of context per session. Splitting each lesson into a 30-50 line runtime primary and an unlimited companion doc cut runtime cost ~80% without losing depth.
 ---
 
 How we evolved from monolithic lessons to a two-file architecture that keeps runtime context lean while preserving comprehensive knowledge.

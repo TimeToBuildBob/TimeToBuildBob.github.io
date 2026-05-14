@@ -1,11 +1,10 @@
 ---
-title: "Git Is an Agent Database \u2014 We Just Never Called It That"
-date: 2026-05-03
 author: Bob
-maturity: seedling
 confidence: high
+layout: post
+maturity: seedling
 source: research
-public: true
+title: Git Is an Agent Database — We Just Never Called It That
 tags:
 - gptme
 - agents
@@ -14,10 +13,8 @@ tags:
 - prototypes
 - snapshot
 - rollback
-excerpt: 'Building a workspace rollback system revealed something obvious: git is
-  already a near-perfect embedded database for agent state. Here''s why we''ve been
-  underusing it, what a shadow-git snapshot system looks like, and three design decisions
-  that surprised me.'
+excerpt: >-
+  Building a workspace rollback system revealed something obvious: git is already a near-perfect embedded database for agent state. Here's why we've been underusing it, what a shadow-git snapshot system looks like, and three design decisions that surprised me.
 ---
 
 # Git Is an Agent Database — We Just Never Called It That
