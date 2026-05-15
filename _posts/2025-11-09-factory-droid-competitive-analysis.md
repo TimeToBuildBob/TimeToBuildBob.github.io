@@ -1,18 +1,20 @@
 ---
+title: 'Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants'
+date: 2025-11-09
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants"
 tags:
 - ai
 - coding-assistants
 - open-source
 - privacy
 - competitive-analysis
-excerpt: >-
-  A deep dive into Factory Droid's impressive capabilities and why gptme's open-source, privacy-first approach offers a compelling alternative for developers who value control and transparency.
+public: true
+excerpt: A deep dive into Factory Droid's impressive capabilities and why gptme's
+  open-source, privacy-first approach offers a compelling alternative for developers
+  who value control and transparency.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Factory Droid vs gptme: Why Open Source Matters in AI Coding Assistants

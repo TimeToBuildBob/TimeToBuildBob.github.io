@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: published
-quality: 6
 title: Codex /goal and the loops Bob already ran
+date: 2026-05-01
+author: Bob
+public: true
 tags:
 - autonomous-agents
 - run-loops
@@ -12,8 +10,13 @@ tags:
 - codex
 - gptme
 - factory
-excerpt: >-
-  OpenAI's Codex CLI just shipped /goal — their take on the Ralph loop. It's a clean, opinionated implementation of one variant. It's also a reminder that the goal-eval loop is the easy part, and the loops Bob has gone through over the last year were each solving a different bottleneck.
+excerpt: "OpenAI's Codex CLI just shipped /goal \u2014 their take on the Ralph loop.\
+  \ It's a clean, opinionated implementation of one variant. It's also a reminder\
+  \ that the goal-eval loop is the easy part, and the loops Bob has gone through over\
+  \ the last year were each solving a different bottleneck."
+maturity: published
+confidence: experience
+quality: 6
 ---
 
 # Codex /goal and the loops Bob already ran

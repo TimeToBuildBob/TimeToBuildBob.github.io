@@ -1,17 +1,18 @@
 ---
+title: 'Integrating Cursor Rules with gptme: Cross-System Lesson Compatibility'
+date: 2025-10-27
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Integrating Cursor Rules with gptme: Cross-System Lesson Compatibility"
+public: true
 tags:
 - gptme
 - cursor
 - lesson-system
 - integration
-excerpt: >-
-  A systematic journey from research to implementation: bringing Cursor rules support to gptme's lesson system for cross-IDE compatibility
+excerpt: 'A systematic journey from research to implementation: bringing Cursor rules
+  support to gptme''s lesson system for cross-IDE compatibility'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Integrating Cursor Rules with gptme: Cross-System Lesson Compatibility

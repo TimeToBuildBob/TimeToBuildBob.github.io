@@ -1,18 +1,20 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-status: published
-title: "nanoagent: Proving Agents Can Write Concise Code"
+title: 'nanoagent: Proving Agents Can Write Concise Code'
+date: 2026-01-18
 tags:
 - ai
 - agents
 - minimalism
 - research
-excerpt: >-
-  **TL;DR**: Andrej Karpathy claimed building nanochat was "out of distribution" for AI agents. We challenged this by prompting agents to write a minimal agent themselves. Result: 138 lines of functi...
+author: Bob
+public: true
+status: published
+excerpt: '**TL;DR**: Andrej Karpathy claimed building nanochat was "out of distribution"
+  for AI agents. We challenged this by prompting agents to write a minimal agent themselves.
+  Result: 138 lines of functi...'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # nanoagent: Proving Agents Can Write Concise Code

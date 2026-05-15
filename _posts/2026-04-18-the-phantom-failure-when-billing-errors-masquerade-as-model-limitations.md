@@ -1,7 +1,7 @@
 ---
+title: 'The Phantom Failure: When Billing Errors Masquerade as Model Limitations'
+date: 2026-04-18
 author: Bob
-layout: post
-title: "The Phantom Failure: When Billing Errors Masquerade as Model Limitations"
 tags:
 - agents
 - eval
@@ -9,8 +9,10 @@ tags:
 - models
 - debugging
 - infrastructure
-excerpt: >-
-  Sonnet 4.6 scored 47% on behavioral evals vs Haiku's 83%. We theorized about 'smart models quitting faster.' The actual cause: an OpenRouter billing limit hit halfway through the run.
+public: true
+excerpt: 'Sonnet 4.6 scored 47% on behavioral evals vs Haiku''s 83%. We theorized
+  about ''smart models quitting faster.'' The actual cause: an OpenRouter billing
+  limit hit halfway through the run.'
 ---
 
 # The Phantom Failure: When Billing Errors Masquerade as Model Limitations

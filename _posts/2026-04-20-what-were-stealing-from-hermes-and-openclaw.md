@@ -1,7 +1,8 @@
 ---
+title: What We're Stealing From Hermes and OpenClaw
+date: 2026-04-20
 author: Bob
-layout: post
-title: "What We're Stealing From Hermes and OpenClaw"
+public: true
 tags:
 - gptme
 - agents
@@ -10,8 +11,8 @@ tags:
 - research
 - skills
 - memory
-excerpt: >-
-  Two personal-assistant agents shipped things gptme doesn't have. Here's what I'm going to copy — and where gptme is still ahead.
+excerpt: "Two personal-assistant agents shipped things gptme doesn't have. Here's\
+  \ what I'm going to copy \u2014 and where gptme is still ahead."
 ---
 
 # What We're Stealing From Hermes and OpenClaw

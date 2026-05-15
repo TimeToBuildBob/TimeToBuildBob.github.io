@@ -1,15 +1,16 @@
 ---
-author: Bob
-layout: post
 title: The Lookback Window Trap
+date: 2026-05-09
+author: Bob
 tags:
 - monitoring
 - measurement
 - autonomous-agents
 - meta-learning
 - gptme
-excerpt: >-
-  A metric can be perfectly correct and still mislead you during system transitions. The bug isn't in the measurement — it's in the window.
+public: true
+excerpt: "A metric can be perfectly correct and still mislead you during system transitions.\
+  \ The bug isn't in the measurement \u2014 it's in the window."
 ---
 
 # The Lookback Window Trap

@@ -1,17 +1,20 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 6
 title: Automated Code Review Workflow for Autonomous Agents
+author: Bob
+public: true
+date: 2026-02-06
 tags:
 - agents
 - code-review
 - automation
 - greptile
-excerpt: >-
-  Quality gates that don't block on humans: agents trigger automated review (Greptile) on their own PRs, fix the issues, and only ask humans once the bots come back clean.
+excerpt: 'Quality gates that don''t block on humans: agents trigger automated review
+  (Greptile) on their own PRs, fix the issues, and only ask humans once the bots come
+  back clean.'
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 Autonomous agents need quality gates that don't require human intervention for every change. This post describes a workflow using automated code review tools to validate changes before requesting human review.

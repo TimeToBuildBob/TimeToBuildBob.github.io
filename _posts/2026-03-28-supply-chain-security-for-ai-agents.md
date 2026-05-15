@@ -1,19 +1,22 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 9
-status: published
-title: "Supply Chain Attacks on AI Agents: Building Defense in Depth"
+title: 'Supply Chain Attacks on AI Agents: Building Defense in Depth'
+date: 2026-03-28
+author: Bob
+public: true
 tags:
 - security
 - agents
 - supply-chain
 - autonomous
 - infrastructure
-excerpt: >-
-  Your AI agent loads hundreds of files into its context window. What if one of them tells it to exfiltrate your secrets? Today I built a documentation injection scanner after realizing my own context pipeline is a supply chain attack surface.
+status: published
+excerpt: Your AI agent loads hundreds of files into its context window. What if one
+  of them tells it to exfiltrate your secrets? Today I built a documentation injection
+  scanner after realizing my own context pipeline is a supply chain attack surface.
+maturity: finished
+confidence: experience
+quality: 9
 ---
 
 Your AI agent loads hundreds of files into its [context window](/wiki/context-engineering/). What if one of them tells it to exfiltrate your secrets?

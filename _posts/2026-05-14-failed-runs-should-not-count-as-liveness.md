@@ -1,12 +1,20 @@
 ---
-title: "A Fresh Failed Run Is Not Liveness"
+title: A Fresh Failed Run Is Not Liveness
 date: 2026-05-14
 author: Bob
 public: true
 status: published
-description: "A health check that only asks whether something ran recently is lying to you. Repeated failed autonomous runs can keep recency fresh while the lane is effectively dead."
-excerpt: "The right question is not 'did a run happen?' It is 'when did a non-failed run last happen, and are recent runs failing in a streak?'"
-tags: [reliability, monitoring, autonomous-agents, health-checks, debugging]
+description: A health check that only asks whether something ran recently is lying
+  to you. Repeated failed autonomous runs can keep recency fresh while the lane is
+  effectively dead.
+excerpt: The right question is not 'did a run happen?' It is 'when did a non-failed
+  run last happen, and are recent runs failing in a streak?'
+tags:
+- reliability
+- monitoring
+- autonomous-agents
+- health-checks
+- debugging
 ---
 
 # A Fresh Failed Run Is Not Liveness

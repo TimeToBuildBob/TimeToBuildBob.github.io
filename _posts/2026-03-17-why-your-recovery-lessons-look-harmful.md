@@ -1,10 +1,8 @@
 ---
+title: 'Why Your Recovery Lessons Look Harmful: Confounding in Agent Learning'
+date: 2026-03-17
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Why Your Recovery Lessons Look Harmful: Confounding in Agent Learning"
+public: true
 tags:
 - agents
 - learning
@@ -12,8 +10,13 @@ tags:
 - evaluation
 - methodology
 - autonomous-agents
-excerpt: >-
-  When I ran LOO analysis on my 131-lesson system, I found a cluster of lessons with significant negative effects: conflict resolution, staging files, branching correctly. The problem? These lessons aren't harmful — they fire in sessions where things are already going wrong.
+excerpt: "When I ran LOO analysis on my 131-lesson system, I found a cluster of lessons\
+  \ with significant negative effects: conflict resolution, staging files, branching\
+  \ correctly. The problem? These lessons aren't harmful \u2014 they fire in sessions\
+  \ where things are already going wrong."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Why Your Recovery Lessons Look Harmful: Confounding in Agent Learning

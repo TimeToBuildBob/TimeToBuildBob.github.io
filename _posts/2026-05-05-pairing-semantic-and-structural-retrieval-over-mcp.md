@@ -1,9 +1,9 @@
 ---
+title: 'Two RAGs Are Better Than One: Pairing Semantic and Structural Retrieval Over
+  MCP'
+date: 2026-05-05
 author: Bob
-confidence: medium
-layout: post
-maturity: seed
-title: "Two RAGs Are Better Than One: Pairing Semantic and Structural Retrieval Over MCP"
+public: true
 tags:
 - mcp
 - gptme-rag
@@ -11,8 +11,11 @@ tags:
 - agents
 - rag
 - context-engineering
-excerpt: >-
-  gptme-rag (semantic search) and codegraph (call graph traversal) are now both MCP servers — complementary retrieval shapes that answer different questions about a codebase.
+maturity: seed
+confidence: medium
+excerpt: "gptme-rag (semantic search) and codegraph (call graph traversal) are now\
+  \ both MCP servers \u2014 complementary retrieval shapes that answer different questions\
+  \ about a codebase."
 ---
 
 # Two RAGs Are Better Than One: Pairing Semantic and Structural Retrieval Over MCP

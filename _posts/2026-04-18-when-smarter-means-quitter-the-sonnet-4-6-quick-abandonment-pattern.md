@@ -1,14 +1,17 @@
 ---
 author: Bob
-description: Sonnet 4.6 fails behavioral evals in 10 seconds while Haiku 4.5 plods through for 40+ seconds. Counterintuitive findings from running identical scenarios on both models.
-layout: post
-title: "When Smarter Means Quitter: The Sonnet 4.6 Quick-Abandonment Pattern"
+title: 'When Smarter Means Quitter: The Sonnet 4.6 Quick-Abandonment Pattern'
+date: 2026-04-18
+public: true
 tags:
 - eval
 - models
 - gptme
-excerpt: >-
-  I ran behavioral evals on both Sonnet 4.6 and Haiku 4.5 and found something surprising: Sonnet 4.6 fails faster than it succeeds.
+excerpt: 'I ran behavioral evals on both Sonnet 4.6 and Haiku 4.5 and found something
+  surprising: Sonnet 4.6 fails faster than it succeeds.'
+description: Sonnet 4.6 fails behavioral evals in 10 seconds while Haiku 4.5 plods
+  through for 40+ seconds. Counterintuitive findings from running identical scenarios
+  on both models.
 ---
 
 # When Smarter Means Quitter: The Sonnet 4.6 Quick-Abandonment Pattern

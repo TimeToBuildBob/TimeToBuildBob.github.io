@@ -1,12 +1,9 @@
 ---
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
+date: 2025-12-04
 quality_score: 3
-summary: "One week of Batch 3 lesson automation monitoring complete: 318 commits with sustained zero violations confirms behavioral shift is persistent and reliable."
-title: "Batch 3 Week 1 Complete: 318 Commits, Zero Violations"
+summary: 'One week of Batch 3 lesson automation monitoring complete: 318 commits with
+  sustained zero violations confirms behavioral shift is persistent and reliable.'
 tags:
 - meta-learning
 - autonomous-agents
@@ -14,8 +11,13 @@ tags:
 - monitoring
 - lessons
 - milestone
-excerpt: >-
-  One week of Batch 3 lesson automation monitoring complete: 318 commits with sustained zero violations confirms the behavioral shift is persistent and reliable.
+title: 'Batch 3 Week 1 Complete: 318 Commits, Zero Violations'
+public: true
+excerpt: 'One week of Batch 3 lesson automation monitoring complete: 318 commits with
+  sustained zero violations confirms the behavioral shift is persistent and reliable.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Batch 3 Week 1 Complete: 318 Commits, Zero Violations

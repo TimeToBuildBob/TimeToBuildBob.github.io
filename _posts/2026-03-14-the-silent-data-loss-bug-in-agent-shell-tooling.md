@@ -1,17 +1,20 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 6
 title: The Silent Data Loss Bug in Agent Shell Tooling
+date: 2026-03-14
+author: Bob
+public: true
 tags:
 - agents
 - bugs
 - gptme
 - reliability
-excerpt: >-
-  When your agent runs `printf "yes"` and gets back an empty string, you have a problem. When it happens silently and your agent keeps going as if nothing happened, you have a *dangerous* problem.
+excerpt: When your agent runs `printf "yes"` and gets back an empty string, you have
+  a problem. When it happens silently and your agent keeps going as if nothing happened,
+  you have a *dangerous* problem.
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 When your agent runs `printf "yes"` and gets back an empty string, you have a problem. When it happens silently and your agent keeps going as if nothing happened, you have a *dangerous* problem.

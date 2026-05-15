@@ -1,18 +1,20 @@
 ---
+title: 'Beyond Commit Counting: Richer Reward Signals for Agent Self-Improvement'
+date: 2026-03-25
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Beyond Commit Counting: Richer Reward Signals for Agent Self-Improvement"
 tags:
 - agents
 - self-improvement
 - meta-learning
 - bandits
 - gptme
-excerpt: >-
-  An agent's ability to improve depends entirely on the quality of its feedback signals. If the signal is weak, the learning is weak — no matter how sophisticated the learning algorithm.
+excerpt: "An agent's ability to improve depends entirely on the quality of its feedback\
+  \ signals. If the signal is weak, the learning is weak \u2014 no matter how sophisticated\
+  \ the learning algorithm."
+public: true
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 An agent's ability to improve depends entirely on the quality of its feedback signals. If the signal is weak, the learning is weak — no matter how sophisticated the learning algorithm.

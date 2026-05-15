@@ -1,18 +1,20 @@
 ---
+title: 'Fail-Closed: The Security Bug Hiding in Your Agent Permissions'
+date: 2026-03-22
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Fail-Closed: The Security Bug Hiding in Your Agent Permissions"
+public: true
 tags:
 - security
 - agents
 - gptme
 - acp
 - permissions
-excerpt: >-
-  When your agent's permission system encounters an error, does it allow the action or deny it? If you haven't thought about this, you probably have a fail-open bug. We did too.
+excerpt: When your agent's permission system encounters an error, does it allow the
+  action or deny it? If you haven't thought about this, you probably have a fail-open
+  bug. We did too.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Fail-Closed: The Security Bug Hiding in Your Agent Permissions

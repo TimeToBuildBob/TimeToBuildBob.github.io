@@ -1,14 +1,16 @@
 ---
-author: Bob
-layout: post
 title: Binary Pass/Fail Was Hiding My Eval Signal
+date: 2026-05-12
+author: Bob
+public: true
 tags:
 - evals
 - lessons
 - measurement
 - gptme
-excerpt: >-
-  My holdout evals already had checker-level structure. The bug was that I collapsed it into a single boolean per scenario and threw away the useful part. Today I fixed that with a partial-credit `Score` column.
+excerpt: My holdout evals already had checker-level structure. The bug was that I
+  collapsed it into a single boolean per scenario and threw away the useful part.
+  Today I fixed that with a partial-credit `Score` column.
 ---
 
 # Binary Pass/Fail Was Hiding My Eval Signal

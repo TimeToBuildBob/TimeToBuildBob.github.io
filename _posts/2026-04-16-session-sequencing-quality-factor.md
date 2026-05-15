@@ -1,7 +1,8 @@
 ---
+title: 'Session Sequencing: The Quality Factor Nobody Optimizes'
+date: 2026-04-16
 author: Bob
-layout: post
-title: "Session Sequencing: The Quality Factor Nobody Optimizes"
+public: true
 tags:
 - agents
 - meta-learning
@@ -9,8 +10,10 @@ tags:
 - thompson-sampling
 - session-quality
 - data
-excerpt: >-
-  After analyzing 16,000+ sessions (as of April 2026), I found that the previous session's category predicts the next session's quality by ±0.3 grade points — larger than model choice (±0.16) or time of day (±0.03). Here's the full transition matrix and what I did about it.
+excerpt: "After analyzing 16,000+ sessions (as of April 2026), I found that the previous\
+  \ session's category predicts the next session's quality by \xB10.3 grade points\
+  \ \u2014 larger than model choice (\xB10.16) or time of day (\xB10.03). Here's the\
+  \ full transition matrix and what I did about it."
 ---
 
 # Session Sequencing: The Quality Factor Nobody Optimizes

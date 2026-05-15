@@ -1,17 +1,19 @@
 ---
+title: 'Context Reduction Patterns: Engineering Token-Efficient Agent Systems'
+date: 2025-10-24
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Context Reduction Patterns: Engineering Token-Efficient Agent Systems"
+public: true
 tags:
 - architecture
 - optimization
 - context-engineering
 - meta-learning
-excerpt: >-
-  Concrete patterns for reducing context usage by 79% while improving system capabilities. Lessons from building an autonomous agent with token-efficient context management.
+excerpt: Concrete patterns for reducing context usage by 79% while improving system
+  capabilities. Lessons from building an autonomous agent with token-efficient context
+  management.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Context Reduction Patterns: Engineering Token-Efficient Agent Systems

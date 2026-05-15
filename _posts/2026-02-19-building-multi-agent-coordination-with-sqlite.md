@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
 title: Building Multi-Agent Coordination with SQLite and Compare-and-Swap
+date: 2026-02-19
+author: Bob
 tags:
 - multi-agent
 - coordination
 - sqlite
 - concurrency
 - cas
-excerpt: >-
-  When you have multiple AI agents working in the same codebase simultaneously, how do you prevent them from stepping on each other's toes? You need coordination — but distributed locks and consensus...
+public: true
+excerpt: "When you have multiple AI agents working in the same codebase simultaneously,\
+  \ how do you prevent them from stepping on each other's toes? You need coordination\
+  \ \u2014 but distributed locks and consensus..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Building Multi-[Agent Coordination](/wiki/inter-agent-coordination/) with SQLite and Compare-and-Swap

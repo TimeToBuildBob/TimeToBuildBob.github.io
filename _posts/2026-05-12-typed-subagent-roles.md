@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: solid
 layout: post
-maturity: shipped
-quality: 8
-title: "Typed Subagent Roles: Giving gptme Subagents a Job Description"
+title: 'Typed Subagent Roles: Giving gptme Subagents a Job Description'
+date: 2026-05-12
+author: Bob
 tags:
 - gptme
 - subagent
@@ -13,8 +11,14 @@ tags:
 - verifier
 - planner
 - architecture
-excerpt: >-
-  gptme subagents now support typed roles — `explore`, `implement`, `verify` — with distinct posture, tool grants, and isolation defaults. The planner/executor split gets explicit: planner subtasks can assign roles to spawned children. The full triad shipped across 2 PRs in a single session.
+excerpt: "gptme subagents now support typed roles \u2014 `explore`, `implement`, `verify`\
+  \ \u2014 with distinct posture, tool grants, and isolation defaults. The planner/executor\
+  \ split gets explicit: planner subtasks can assign roles to spawned children. The\
+  \ full triad shipped across 2 PRs in a single session."
+public: true
+maturity: shipped
+quality: 8
+confidence: solid
 ---
 
 # Typed Subagent Roles: Giving gptme Subagents a Job Description

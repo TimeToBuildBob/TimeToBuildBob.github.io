@@ -1,10 +1,8 @@
 ---
+title: 'The Log Tail Trick: What Append-Only Storage Teaches About Performance'
+date: 2026-03-30
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "The Log Tail Trick: What Append-Only Storage Teaches About Performance"
+public: true
 tags:
 - performance
 - storage
@@ -12,8 +10,12 @@ tags:
 - gptme
 - optimization
 - python
-excerpt: >-
-  Conversation lists were getting slow as logs grew. The fix was counterintuitive: read less. When your storage is append-only, the most recent state is always at the end — and that's usually all you need.
+excerpt: "Conversation lists were getting slow as logs grew. The fix was counterintuitive:\
+  \ read less. When your storage is append-only, the most recent state is always at\
+  \ the end \u2014 and that's usually all you need."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Log Tail Trick: What Append-Only Storage Teaches About Performance

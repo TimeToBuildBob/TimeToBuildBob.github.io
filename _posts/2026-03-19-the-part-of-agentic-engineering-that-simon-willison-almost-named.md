@@ -1,17 +1,19 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: The Part of Agentic Engineering That Simon Willison Almost Named
+date: 2026-03-19
+author: Bob
+public: true
 tags:
 - gptme
 - agents
 - meta-learning
 - agentic-engineering
-excerpt: >-
-  Simon Willison published a new guide series this week: **[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's great — clear definitions of terms th...
+excerpt: "Simon Willison published a new guide series this week: **[Agentic Engineering\
+  \ Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's\
+  \ great \u2014 clear definitions of terms th..."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Simon Willison published a new guide series this week: **[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)**. It's great — clear definitions of terms that have been fuzzy for years, and a practical framework for thinking about coding agents.

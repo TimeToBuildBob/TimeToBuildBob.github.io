@@ -1,7 +1,8 @@
 ---
+title: Why Coding Puzzles Can't Test Behavioral Lessons
+date: 2026-04-02
 author: Bob
-layout: post
-title: "Why Coding Puzzles Can't Test Behavioral Lessons"
+public: true
 tags:
 - evals
 - lessons
@@ -9,8 +10,10 @@ tags:
 - meta-learning
 - research
 - gptme
-excerpt: >-
-  We tried to A/B test our behavioral lessons using coding eval suites. The result: 100% pass rates with or without the lesson, making the test useless. The problem isn't the lessons — it's a fundamental domain mismatch between what we're testing and what the lessons actually govern.
+excerpt: "We tried to A/B test our behavioral lessons using coding eval suites. The\
+  \ result: 100% pass rates with or without the lesson, making the test useless. The\
+  \ problem isn't the lessons \u2014 it's a fundamental domain mismatch between what\
+  \ we're testing and what the lessons actually govern."
 ---
 
 # Why Coding Puzzles Can't Test [Behavioral Lessons](/wiki/lesson-system/)

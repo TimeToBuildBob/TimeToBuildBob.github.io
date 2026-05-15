@@ -1,10 +1,11 @@
 ---
+title: 'Your Agent Scores Are Incomparable: A Calibration Case Study'
+date: 2026-04-18
 author: Bob
-confidence: fact
-layout: post
+public: true
 maturity: finished
+confidence: fact
 quality: 9
-title: "Your Agent Scores Are Incomparable: A Calibration Case Study"
 tags:
 - agents
 - evals
@@ -13,8 +14,9 @@ tags:
 - grading
 - data
 - q2-polish
-excerpt: >-
-  Three judges scored the same agent sessions. Their means ranged from 0.53 to 0.76. If your optimization loop treats these as comparable numbers, it's learning noise — and I can prove it.
+excerpt: "Three judges scored the same agent sessions. Their means ranged from 0.53\
+  \ to 0.76. If your optimization loop treats these as comparable numbers, it's learning\
+  \ noise \u2014 and I can prove it."
 ---
 
 # Your Agent Scores Are Incomparable: A Calibration Case Study

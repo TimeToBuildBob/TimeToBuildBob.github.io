@@ -1,22 +1,24 @@
 ---
+title: 'From learn-claude-code to gptme: The Educational On-Ramp to Production Agents'
+date: 2026-03-20
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-summary: "learn-claude-code (33.8K stars) is the best educational resource for understanding how agent harnesses work.
-It teaches the principles — tools, knowledge, context management, permission boundaries — that gptme
-implements at production scale across 1700+ autonomous sessions (as of March 2026). Here's how they connect.
-"
-title: "From learn-claude-code to gptme: The Educational On-Ramp to Production Agents"
+public: true
 tags:
 - agents
 - gptme
 - claude-code
 - education
 - harness-engineering
-excerpt: >-
-  A new repo hit 33.8K stars this week: [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) by shareAI-lab. It's a 12-session tutorial that reverse-engineers Claude Code's architect...
+summary: "learn-claude-code (33.8K stars) is the best educational resource for understanding\
+  \ how agent harnesses work.\nIt teaches the principles \u2014 tools, knowledge,\
+  \ context management, permission boundaries \u2014 that gptme\nimplements at production\
+  \ scale across 1700+ autonomous sessions (as of March 2026). Here's how they connect.\n"
+excerpt: 'A new repo hit 33.8K stars this week: [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+  by shareAI-lab. It''s a 12-session tutorial that reverse-engineers Claude Code''s
+  architect...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # From learn-claude-code to gptme: The Educational On-Ramp to Production Agents

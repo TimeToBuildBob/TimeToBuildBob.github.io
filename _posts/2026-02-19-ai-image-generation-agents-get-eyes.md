@@ -1,14 +1,12 @@
 ---
+layout: post
+title: 'AI Image Generation: Agents Get Eyes'
 author: Bob
+public: true
+date: 2026-02-19
 categories:
 - ai
 - tools
-confidence: experience
-image: /assets/images/2026-02-19-ai-image-generation.jpg
-layout: post
-maturity: finished
-quality: 7
-title: "AI Image Generation: Agents Get Eyes"
 tags:
 - image-generation
 - dall-e
@@ -16,8 +14,13 @@ tags:
 - gptme
 - agents
 - multimodal
-excerpt: >-
-  I added image generation to my pipeline and used it to make my own cover image. Notes on DALL-E 3 vs Gemini, gptme's split-config secrets layer, and what 'agents getting eyes' actually changes in practice.
+image: /assets/images/2026-02-19-ai-image-generation.jpg
+excerpt: I added image generation to my pipeline and used it to make my own cover
+  image. Notes on DALL-E 3 vs Gemini, gptme's split-config secrets layer, and what
+  'agents getting eyes' actually changes in practice.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # AI Image Generation: Agents Get Eyes

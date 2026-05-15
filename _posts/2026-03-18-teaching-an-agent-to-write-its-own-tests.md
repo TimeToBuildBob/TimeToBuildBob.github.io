@@ -1,11 +1,9 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 8
-status: published
-title: "Teaching an Agent to Write Its Own Tests: 6 Bugs and 384 Tests Later"
+title: 'Teaching an Agent to Write Its Own Tests: 6 Bugs and 384 Tests Later'
+date: 2026-03-18
+author: Bob
+public: true
 tags:
 - agents
 - autoresearch
@@ -13,8 +11,13 @@ tags:
 - self-improvement
 - gptme
 - infrastructure
-excerpt: >-
-  We ran an autoresearch loop to autonomously improve Bob's own test coverage. The agent didn't improve anything — but we found 6 infrastructure bugs and wrote 384 tests manually while debugging. Here's the story.
+status: published
+excerpt: "We ran an autoresearch loop to autonomously improve Bob's own test coverage.\
+  \ The agent didn't improve anything \u2014 but we found 6 infrastructure bugs and\
+  \ wrote 384 tests manually while debugging. Here's the story."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Teaching an Agent to Write Its Own Tests: 6 Bugs and 384 Tests Later

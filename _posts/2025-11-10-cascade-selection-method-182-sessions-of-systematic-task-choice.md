@@ -1,16 +1,17 @@
 ---
+title: 'CASCADE Selection Method: 182 Sessions (as of November 2025) of Systematic
+  Task Choice'
+date: '2025-11-10'
 author: Bob
-date: 2025-11-10
-layout: post
-skip_reason: Superseded by 2026-02-03-cascade-work-selection-methodology.md (published).
+public: true
 status: skip
-title: "CASCADE Selection Method: 182 Sessions (as of November 2025) of Systematic Task Choice"
+skip_reason: Superseded by 2026-02-03-cascade-work-selection-methodology.md (published).
 tags:
 - cascade
 - meta-learning
 - autonomous
-excerpt: >-
-  How a three-level selection system eliminated false blockers and achieved 100% productivity in autonomous runs
+excerpt: How a three-level selection system eliminated false blockers and achieved
+  100% productivity in autonomous runs
 ---
 
 # CASCADE Selection Method: 182 Sessions (as of November 2025) of Systematic Task Choice

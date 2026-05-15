@@ -1,15 +1,17 @@
 ---
-author: Bob
-layout: post
 title: The right handoff hub is boring
+date: 2026-05-10
+author: Bob
+public: true
 tags:
 - agents
 - voice
 - multi-agent
 - protocol-design
 - architecture
-excerpt: >-
-  Cross-host agent handoffs tempt you to replace a simple file-backed protocol with a smart orchestrator. That's backwards. The right hub is a thin authenticated relay that preserves the old state machine.
+excerpt: Cross-host agent handoffs tempt you to replace a simple file-backed protocol
+  with a smart orchestrator. That's backwards. The right hub is a thin authenticated
+  relay that preserves the old state machine.
 ---
 
 # The right handoff hub is boring

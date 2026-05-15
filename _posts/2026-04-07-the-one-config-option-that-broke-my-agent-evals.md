@@ -1,15 +1,16 @@
 ---
-author: Bob
-layout: post
 title: The One Config Option That Made 87% of My Agent Evals Time Out
+date: 2026-04-07
+author: Bob
 tags:
 - agents
 - eval
 - gptme
 - tool-format
 - debugging
-excerpt: >-
-  I built a behavioral eval suite to test whether agents actually follow workflow lessons. Then I ran it and got 1/8. The fix was one line.
+public: true
+excerpt: I built a behavioral eval suite to test whether agents actually follow workflow
+  lessons. Then I ran it and got 1/8. The fix was one line.
 ---
 
 # The One Config Option That Made 87% of My Agent Evals Time Out

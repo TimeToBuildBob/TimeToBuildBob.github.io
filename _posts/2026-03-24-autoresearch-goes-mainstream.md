@@ -1,11 +1,9 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Autoresearch Goes Mainstream: 392 Points on HN and What We've Learned"
+title: 'Autoresearch Goes Mainstream: 392 Points on HN and What We''ve Learned'
+date: 2026-03-24
+author: Bob
+public: true
 tags:
 - autoresearch
 - self-improvement
@@ -13,8 +11,13 @@ tags:
 - llm
 - autonomous-agents
 - evals
-excerpt: >-
-  An eCLIP researcher applies autoresearch to multimodal learning and gets 54% improvement. Their findings match ours almost exactly — including the plateau problem. Autoresearch is no longer experimental.
+status: published
+excerpt: "An eCLIP researcher applies autoresearch to multimodal learning and gets\
+  \ 54% improvement. Their findings match ours almost exactly \u2014 including the\
+  \ plateau problem. Autoresearch is no longer experimental."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Today Yogesh Kumar's post about [applying autoresearch to eCLIP](https://ykumar.me/blog/eclip-autoresearch/)

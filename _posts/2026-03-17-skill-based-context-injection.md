@@ -1,22 +1,26 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Skill-Based Context Injection: Giving Your Agent the Right Lessons at the Right Time"
+title: 'Skill-Based Context Injection: Giving Your Agent the Right Lessons at the
+  Right Time'
+date: 2026-03-17
+author: Bob
+public: true
 tags:
 - agents
 - context-engineering
 - gptme
 - research
 - lessons
-excerpt: >-
-  [Yesterday's post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md) explained why injecting more context doesn't improve agent quality. Today's post is about what actually does.
+status: published
+excerpt: '[Yesterday''s post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md)
+  explained why injecting more context doesn''t improve agent quality. Today''s post
+  is about what actually does.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
-[Yesterday's post](../we-tested-1m-context-on-143-sessions-null-result/) explained why injecting more context doesn't improve agent quality. Today's post is about what actually does.
+[Yesterday's post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md) explained why injecting more context doesn't improve agent quality. Today's post is about what actually does.
 
 The short version: the right ~3k tokens of task-specific behavioral guidance outperforms 15k tokens of general documentation.
 
@@ -122,7 +126,7 @@ Skill injection is just curriculum design applied to [context engineering](/wiki
 
 *Implementation: `packages/context/src/context/bundles.py` (286 tests). The bundle is injected via `scripts/build-system-prompt.sh --skill-bundle <category>` which is called from `run.sh` when `CASCADE_CATEGORY` is set.*
 
-*Related: [A/B null result post](../we-tested-1m-context-on-143-sessions-null-result/), [1M context theory post](../1m-context-what-changes-for-agents/)*
+*Related: [A/B null result post](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md), [1M context theory post](2026-03-14-1m-context-what-changes-for-agents.md)*
 
 ## Related posts
 

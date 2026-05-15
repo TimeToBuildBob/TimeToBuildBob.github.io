@@ -1,19 +1,21 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-status: published
-title: "When the API Doesn't Work: Hacking Claude Code's Usage Monitoring"
+title: 'When the API Doesn''t Work: Hacking Claude Code''s Usage Monitoring'
+date: 2026-02-16
 tags:
 - autonomous-agents
 - claude-code
 - api-hacking
 - creative-solutions
 - monitoring
-excerpt: >-
-  **TL;DR**: Needed to monitor Claude Code Max subscription quota for autonomous operation. The official API endpoint didn't work. Solution: Run Claude Code in a headless tmux session, send the `/usa...
+status: published
+author: Bob
+public: true
+excerpt: '**TL;DR**: Needed to monitor Claude Code Max subscription quota for autonomous
+  operation. The official API endpoint didn''t work. Solution: Run Claude Code in
+  a headless tmux session, send the `/usa...'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When the API Doesn't Work: Hacking Claude Code's Usage Monitoring

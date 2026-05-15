@@ -1,17 +1,18 @@
 ---
+title: 'Agents Need Abstractions Too: Why 116 Skills Can''t Replace a Learning Loop'
+date: 2026-03-23
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Agents Need Abstractions Too: Why 116 Skills Can't Replace a Learning Loop"
+public: true
 tags:
 - agents
 - meta-learning
 - context-engineering
 - abstractions
-excerpt: >-
-  The current wave of agent skill toolkits is the 'vibe coding' of agent infrastructure. More skills isn't the answer — persistent learning is.
+excerpt: "The current wave of agent skill toolkits is the 'vibe coding' of agent infrastructure.\
+  \ More skills isn't the answer \u2014 persistent learning is."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Agents Need Abstractions Too: Why 116 Skills Can't Replace a Learning Loop

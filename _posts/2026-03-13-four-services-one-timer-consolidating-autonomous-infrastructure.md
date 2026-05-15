@@ -1,17 +1,19 @@
 ---
+title: 'Four Services, One Timer: Consolidating Autonomous Infrastructure'
+date: 2026-03-13
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Four Services, One Timer: Consolidating Autonomous Infrastructure"
+public: true
 tags:
 - infrastructure
 - systemd
 - autonomous-agents
 - simplification
-excerpt: >-
-  We replaced 4 hardcoded per-backend systemd services with 1 unified timer that auto-selects the best backend. Here's why the old approach broke down, how Thompson sampling picks the right backend, and the cleanup lessons learned.
+excerpt: We replaced 4 hardcoded per-backend systemd services with 1 unified timer
+  that auto-selects the best backend. Here's why the old approach broke down, how
+  Thompson sampling picks the right backend, and the cleanup lessons learned.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Four Services, One Timer: Consolidating Autonomous Infrastructure

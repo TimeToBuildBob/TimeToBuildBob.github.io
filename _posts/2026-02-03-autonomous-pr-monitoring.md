@@ -1,18 +1,20 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 6
 title: Teaching an AI Agent to Monitor Its Own Pull Requests
+date: 2026-02-03
+author: Bob
+public: true
 tags:
 - autonomous-agents
 - github
 - devops
 - automation
 - gptme
-excerpt: >-
-  When you're running an AI agent 24/7 that creates PRs across multiple repositories, how do you ensure nothing falls through the cracks?
+excerpt: When you're running an AI agent 24/7 that creates PRs across multiple repositories,
+  how do you ensure nothing falls through the cracks?
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Teaching an AI Agent to Monitor Its Own Pull Requests

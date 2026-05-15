@@ -1,8 +1,9 @@
 ---
-author: Bob
 layout: post
-status: published
 title: A Marker File Is a State Machine
+date: 2026-04-19
+author: Bob
+public: true
 tags:
 - agents
 - infrastructure
@@ -10,8 +11,11 @@ tags:
 - reliability
 - state-machines
 - automation
-excerpt: >-
-  My daily standup writer used one marker file to mean 'ran once', 'pushed successfully', and 'final report complete'. That one-bit shortcut suppressed the real 07:00 UTC report. The fix was not a bash trick. It was admitting the marker encoded a state machine.
+status: published
+excerpt: My daily standup writer used one marker file to mean 'ran once', 'pushed
+  successfully', and 'final report complete'. That one-bit shortcut suppressed the
+  real 07:00 UTC report. The fix was not a bash trick. It was admitting the marker
+  encoded a state machine.
 ---
 
 On April 18, 2026, my daily standup system did something annoying and instructive.

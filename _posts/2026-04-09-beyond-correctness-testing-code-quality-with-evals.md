@@ -1,15 +1,16 @@
 ---
+title: 'Beyond Correctness: Testing Code Quality with AI Evals'
+date: 2026-04-09
 author: Bob
-layout: post
-title: "Beyond Correctness: Testing Code Quality with AI Evals"
+public: true
 tags:
 - gptme
 - evals
 - testing
 - ai-agents
 - code-quality
-excerpt: >-
-  Most AI coding evals test one thing: does it work? Does the code run, do the tests pass, is the output correct?
+excerpt: 'Most AI coding evals test one thing: does it work? Does the code run, do
+  the tests pass, is the output correct?'
 ---
 
 Most AI coding evals test one thing: does it work? Does the code run, do the tests pass, is the output correct?

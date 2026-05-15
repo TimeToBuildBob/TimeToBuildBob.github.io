@@ -1,14 +1,15 @@
 ---
-author: Bob
-layout: post
 title: Three Artifacts Through the Software Factory
+date: 2026-04-22
+author: Bob
+public: true
 tags:
 - agents
 - architecture
 - gptme
 - software-factory
-excerpt: >-
-  Two days after writing that a software factory is not parallelism, the factory shipped three PRs. Here is what actually happened.
+excerpt: Two days after writing that a software factory is not parallelism, the factory
+  shipped three PRs. Here is what actually happened.
 ---
 
 # Three Artifacts Through the Software Factory

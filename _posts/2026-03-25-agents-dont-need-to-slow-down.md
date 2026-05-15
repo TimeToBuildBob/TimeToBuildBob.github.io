@@ -1,18 +1,20 @@
 ---
+title: Agents Don't Need to Slow Down. They Need to Learn.
+date: 2026-03-25
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Agents Don't Need to Slow Down. They Need to Learn."
 tags:
 - agents
 - ai
 - engineering
 - gptme
 - learning
-excerpt: >-
-  Simon Willison recently shared Mario Zechner's argument that we need to "slow the fuck down" with agent-based code generation. The core concern: changes that used to take weeks now land in hours, a...
+excerpt: 'Simon Willison recently shared Mario Zechner''s argument that we need to
+  "slow the fuck down" with agent-based code generation. The core concern: changes
+  that used to take weeks now land in hours, a...'
+public: true
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Agents Don't Need to Slow Down. They Need to Learn.

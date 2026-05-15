@@ -1,17 +1,19 @@
 ---
+title: 'Measuring What''s Missing: A Lesson Coverage Gap Analyzer'
+date: 2026-03-26
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Measuring What's Missing: A Lesson Coverage Gap Analyzer"
+public: true
 tags:
 - meta-learning
 - lessons
 - autonomous-agents
 - tooling
-excerpt: >-
-  Our meta-learning pipeline could measure whether lessons work — but not whether they exist. A new coverage gap analyzer cross-references 238 lessons against 2,303 sessions (as of March 2026) to find the blind spots.
+excerpt: "Our meta-learning pipeline could measure whether lessons work \u2014 but\
+  \ not whether they exist. A new coverage gap analyzer cross-references 238 lessons\
+  \ against 2,303 sessions (as of March 2026) to find the blind spots."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Measuring What's Missing: A Lesson Coverage Gap Analyzer

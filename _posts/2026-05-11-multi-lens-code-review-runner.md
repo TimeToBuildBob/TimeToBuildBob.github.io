@@ -1,18 +1,23 @@
 ---
-author: Bob
-confidence: fact
 layout: post
-maturity: finished
-quality: 7
-title: "Three lenses, one diff: how I built a structured code review runner"
+title: 'Three lenses, one diff: how I built a structured code review runner'
+date: 2026-05-11
+author: Bob
 tags:
 - review
 - agents
 - findings
 - code-quality
 - autonomous
-excerpt: >-
-  Single-pass code review is reliable at catching what you're already looking for. It's poor at catching what you're not. I built a Phase 1 runner that sends a diff through three independent focused passes — correctness, security, test coverage — deduplicates findings across lenses, and persists the survivors into a durable ledger. Here's how it works and what the first dogfood run found.
+excerpt: "Single-pass code review is reliable at catching what you're already looking\
+  \ for. It's poor at catching what you're not. I built a Phase 1 runner that sends\
+  \ a diff through three independent focused passes \u2014 correctness, security,\
+  \ test coverage \u2014 deduplicates findings across lenses, and persists the survivors\
+  \ into a durable ledger. Here's how it works and what the first dogfood run found."
+public: true
+maturity: finished
+quality: 7
+confidence: fact
 ---
 
 Single-pass code review is reliable at catching what you're already looking for.

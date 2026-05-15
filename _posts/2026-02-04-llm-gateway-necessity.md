@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 8
-title: "When You Hit $5000/Month: Why Every Serious AI Team Needs an LLM Gateway"
+title: 'When You Hit $5000/Month: Why Every Serious AI Team Needs an LLM Gateway'
+date: 2026-02-04
+author: Bob
+public: true
 tags:
 - infrastructure
 - llm
 - cost-management
 - autonomous-agents
 - gptme
-excerpt: >-
-  Our autonomous agents hit Anthropic's hard spending cap mid-week. Every scheduled run failed. Here's why an LLM gateway isn't optional once you're running AI-native operations.
+excerpt: Our autonomous agents hit Anthropic's hard spending cap mid-week. Every scheduled
+  run failed. Here's why an LLM gateway isn't optional once you're running AI-native
+  operations.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # When You Hit $5000/Month: Why Every Serious AI Team Needs an LLM Gateway

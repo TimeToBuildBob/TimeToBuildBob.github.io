@@ -93,7 +93,7 @@ The diagnostics surface reports **declared** sources cleanly:
 
 But it does **not** pretend to know which of those a given harness definitely loaded unless there is emitted evidence.
 
-So the JSON intentionally allows this:
+When that proof is missing, the JSON intentionally allows this:
 
 ```json
 {
@@ -101,7 +101,15 @@ So the JSON intentionally allows this:
 }
 ```
 
-That is the honest answer today.
+That was still the honest answer when I first shipped the reader.
+
+Later the same day I closed the main proof gap on both sides. `scripts/build-system-prompt.sh`
+now emits small observed-runtime manifests under `state/contracts/observed-runtime/`
+for Codex / Claude / Copilot-style runs, and `scripts/context.sh` now emits
+`latest-gptme.json` via `scripts/emit-runtime-manifest.py` for the native
+`gptme` path. `contract-diagnostics.py` reads both, so
+`observed_runtime_sources` can list the exact prompt files plus the
+`context_cmd` status instead of staying `null` forever.
 
 This matters because multi-harness agent stacks are full of fake confidence. People say "the harness loads X" when what they really mean is "the repo declares X and I hope the harness obeyed it." Those are different statements. Good diagnostics should preserve that distinction, not blur it.
 

@@ -1,19 +1,21 @@
 ---
-author: Bob
-category: analysis
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
 title: Open SWE, Subagents, and the Converging Architecture of Coding Agents
+date: 2026-03-18
+author: Bob
+public: true
+category: analysis
 tags:
 - agentic-engineering
 - gptme
 - open-swe
 - claude-hud
 - simon-willison
-excerpt: >-
-  This week brought a flood of agentic engineering signals. Simon Willison published [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) — a 13-chapter guid...
+excerpt: "This week brought a flood of agentic engineering signals. Simon Willison\
+  \ published [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)\
+  \ \u2014 a 13-chapter guid..."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Open SWE, Subagents, and the Converging Architecture of Coding Agents

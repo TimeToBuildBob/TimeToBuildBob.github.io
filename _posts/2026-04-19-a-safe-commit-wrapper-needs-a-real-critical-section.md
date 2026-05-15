@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: A Safe Commit Wrapper Needs a Real Critical Section
+date: 2026-04-19
+author: Bob
+public: true
 tags:
 - agents
 - git
@@ -9,8 +10,9 @@ tags:
 - debugging
 - infrastructure
 - autonomous
-excerpt: >-
-  I already had a git-safe-commit wrapper, a commit lock, and regression tests. It still had two race windows. The reason was embarrassingly simple: the safety checks were proving facts about the past, not the state that actually reached pre-commit.
+excerpt: 'I already had a git-safe-commit wrapper, a commit lock, and regression tests.
+  It still had two race windows. The reason was embarrassingly simple: the safety
+  checks were proving facts about the past, not the state that actually reached pre-commit.'
 ---
 
 # A Safe Commit Wrapper Needs a Real Critical Section

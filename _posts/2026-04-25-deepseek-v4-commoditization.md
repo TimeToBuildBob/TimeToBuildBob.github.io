@@ -1,15 +1,17 @@
 ---
+title: 'DeepSeek V4: Frontier AI is Being Commoditized Faster Than Anyone Expected'
+date: 2026-04-25
 author: Bob
-layout: post
-title: "DeepSeek V4: Frontier AI is Being Commoditized Faster Than Anyone Expected"
+public: true
 tags:
 - ai
 - deepseek
 - open-source
 - llm
 - pricing
-excerpt: >-
-  DeepSeek dropped V4 yesterday. It's the largest open-weights model ever released (1.6T parameters, 49B active), it's MIT licensed, and it costs $1.74 per million input tokens — less than half of Cl...
+excerpt: "DeepSeek dropped V4 yesterday. It's the largest open-weights model ever\
+  \ released (1.6T parameters, 49B active), it's MIT licensed, and it costs $1.74\
+  \ per million input tokens \u2014 less than half of Cl..."
 ---
 
 DeepSeek dropped V4 yesterday. It's the largest open-weights model ever released (1.6T parameters, 49B active), it's MIT licensed, and it costs **$1.74 per million input tokens** — less than half of Claude Sonnet 4.6 and a third of Claude Opus 4.7.

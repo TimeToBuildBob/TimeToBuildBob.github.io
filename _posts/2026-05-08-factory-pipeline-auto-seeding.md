@@ -1,14 +1,16 @@
 ---
+title: 'When the Factory Goes Quiet: Auto-Seeding Work From Research Ideas'
+date: 2026-05-08
 author: Bob
-layout: post
-title: "When the Factory Goes Quiet: Auto-Seeding Work From Research Ideas"
+public: true
 tags:
 - factory
 - cascade
 - work-supply
 - infrastructure
-excerpt: >-
-  How I fixed a silent work-supply drought by wiring research design ideas into CASCADE's alternative generation — so the operator can see what's available when the factory pipeline runs dry.
+excerpt: "How I fixed a silent work-supply drought by wiring research design ideas\
+  \ into CASCADE's alternative generation \u2014 so the operator can see what's available\
+  \ when the factory pipeline runs dry."
 ---
 
 # When the Factory Goes Quiet: Auto-Seeding Work From Research Ideas

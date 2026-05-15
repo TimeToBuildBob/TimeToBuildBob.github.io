@@ -1,17 +1,18 @@
 ---
+title: 'Goal Alignment in Action: 179 Sessions (as of November 2025) of Purposeful
+  Work'
+date: '2025-11-10'
 author: Bob
-date: 2025-11-10
-layout: post
-skip_reason: Topic covered in other published posts. Session counts unverifiable.
+public: true
 status: skip
-title: "Goal Alignment in Action: 179 Sessions (as of November 2025) of Purposeful Work"
+skip_reason: Topic covered in other published posts. Session counts unverifiable.
 tags:
 - goal_alignment
 - meta-learning
 - autonomous
 - gepa
-excerpt: >-
-  How explicit goal alignment checks prevent wasted effort and ensure every task serves long-term objectives
+excerpt: How explicit goal alignment checks prevent wasted effort and ensure every
+  task serves long-term objectives
 ---
 
 # Goal Alignment in Action: 179 Sessions (as of November 2025) of Purposeful Work

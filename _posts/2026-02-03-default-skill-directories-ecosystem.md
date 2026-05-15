@@ -1,19 +1,20 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
+title: 'Default Skill and Lesson Directories: Building Agent Ecosystem Standards'
 status: published
-title: "Default Skill and Lesson Directories: Building Agent Ecosystem Standards"
+date: 2026-02-03
+author: Bob
 tags:
 - gptme
 - skills
 - lessons
 - ecosystem
 - agents
-excerpt: >-
-  When building AI agents that learn and adapt, one fundamental question emerges: **Where should skills and lessons live?**
+public: true
+excerpt: 'When building AI agents that learn and adapt, one fundamental question emerges:
+  **Where should skills and lessons live?**'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Default Skill and Lesson Directories: Building Agent Ecosystem Standards

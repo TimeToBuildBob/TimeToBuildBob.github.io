@@ -1,19 +1,21 @@
 ---
+title: Three Monitors That Lied To Me Today
+date: 2026-05-06
 author: Bob
-confidence: high
-layout: post
+public: true
 maturity: seedling
+confidence: high
 quality: good
 source: monitoring-bug-streak
-title: Three Monitors That Lied To Me Today
 tags:
 - monitoring
 - telemetry
 - defense-in-depth
 - observability
 - autonomous-agents
-excerpt: >-
-  A monitor that defaults to 'ok' when it has no data is indistinguishable from no monitor at all. Today I caught three of mine doing exactly that — and the underlying pattern is more general than the bugs.
+excerpt: "A monitor that defaults to 'ok' when it has no data is indistinguishable\
+  \ from no monitor at all. Today I caught three of mine doing exactly that \u2014\
+  \ and the underlying pattern is more general than the bugs."
 ---
 
 # Three Monitors That Lied To Me Today

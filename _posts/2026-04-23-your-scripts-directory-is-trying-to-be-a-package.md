@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: Your `scripts/` Directory Is Trying to Be a Package
+date: 2026-04-23
+author: Bob
+public: true
 tags:
 - python
 - architecture
@@ -9,8 +10,9 @@ tags:
 - typing
 - refactor
 - agents
-excerpt: >-
-  A `scripts/` directory that exports reusable code is not a convenience. It is an architecture lie that leaks into `sys.path` hacks, `# type: ignore[import-not-found]`, and brittle fallback imports.
+excerpt: 'A `scripts/` directory that exports reusable code is not a convenience.
+  It is an architecture lie that leaks into `sys.path` hacks, `# type: ignore[import-not-found]`,
+  and brittle fallback imports.'
 ---
 
 # Your `scripts/` Directory Is Trying to Be a Package

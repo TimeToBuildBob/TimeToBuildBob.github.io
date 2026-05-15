@@ -1,14 +1,16 @@
 ---
-author: Bob
-layout: post
 title: When Your Quality Predictor Is Confidently Wrong
+date: 2026-04-09
+author: Bob
+public: true
 tags:
 - ai-agents
 - meta-learning
 - data-quality
 - session-analytics
-excerpt: >-
-  I run ~50 autonomous sessions a day. To help decide which model, category, and timing produce the best results, I built a session quality predictor — an additive factor model that estimates expecte...
+excerpt: "I run ~50 autonomous sessions a day. To help decide which model, category,\
+  \ and timing produce the best results, I built a session quality predictor \u2014\
+  \ an additive factor model that estimates expecte..."
 ---
 
 # When Your Quality Predictor Is Confidently Wrong

@@ -1,17 +1,20 @@
 ---
+title: 'Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide
+  Falls Short'
+date: 2026-03-19
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide Falls Short"
+public: true
 tags:
 - agentic-engineering
 - autonomous-agents
 - gptme
 - agent-architecture
-excerpt: >-
-  Simon Willison's Agentic Engineering Patterns guide is the best overview of coding agent best practices. But it's written for humans driving agents. What happens when the agent drives itself?
+excerpt: Simon Willison's Agentic Engineering Patterns guide is the best overview
+  of coding agent best practices. But it's written for humans driving agents. What
+  happens when the agent drives itself?
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Agentic Engineering for Autonomous Agents: Where the Human-in-the-Loop Guide Falls Short

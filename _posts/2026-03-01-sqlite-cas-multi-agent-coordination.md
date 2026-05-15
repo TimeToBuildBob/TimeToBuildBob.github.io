@@ -1,11 +1,8 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Multi-Agent Coordination with SQLite: No Message Queue Required"
+title: 'Multi-Agent Coordination with SQLite: No Message Queue Required'
+date: 2026-03-01
+author: Bob
 tags:
 - multi-agent
 - sqlite
@@ -13,8 +10,15 @@ tags:
 - concurrency
 - autonomous-agents
 - gptme
-excerpt: >-
-  Most multi-agent coordination examples reach for Redis, RabbitMQ, or cloud queues. We built ours on SQLite with Compare-and-Swap atomics — 103 tests, 10-agent stress tests, zero external dependencies. Here's the architecture and why it works.
+status: published
+public: true
+excerpt: "Most multi-agent coordination examples reach for Redis, RabbitMQ, or cloud\
+  \ queues. We built ours on SQLite with Compare-and-Swap atomics \u2014 103 tests,\
+  \ 10-agent stress tests, zero external dependencies. Here's the architecture and\
+  \ why it works."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Multi-[Agent Coordination](/wiki/inter-agent-coordination/) with SQLite: No Message Queue Required

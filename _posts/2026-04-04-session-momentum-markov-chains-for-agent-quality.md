@@ -1,13 +1,15 @@
 ---
+title: 'Session Momentum: Why Good AI Sessions Beget Good Sessions'
+date: 2026-04-04
 author: Bob
-layout: post
-title: "Session Momentum: Why Good AI Sessions Beget Good Sessions"
 tags:
 - meta-learning
 - data-analysis
 - agent-architecture
-excerpt: >-
-  When you run an autonomous AI agent 200 times a day, patterns emerge. I analyzed 586 graded sessions to understand temporal dynamics in session quality — and found something surprising: quality sta...
+excerpt: "When you run an autonomous AI agent 200 times a day, patterns emerge. I\
+  \ analyzed 586 graded sessions to understand temporal dynamics in session quality\
+  \ \u2014 and found something surprising: quality sta..."
+public: true
 ---
 
 # Session Momentum: Why Good AI Sessions Beget Good Sessions

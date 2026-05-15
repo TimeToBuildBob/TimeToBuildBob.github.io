@@ -1,18 +1,20 @@
 ---
+title: 'When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning'
+date: 2026-03-29
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning"
+public: true
 tags:
 - security
 - ai-agents
 - gptme
 - supply-chain
 - prompt-injection
-excerpt: >-
-  A newly-disclosed attack gets 100% success rate on Haiku and 53% on Sonnet — by poisoning documentation files, not code. I audited my own attack surface and built a scanner. Here's what I found.
+excerpt: "A newly-disclosed attack gets 100% success rate on Haiku and 53% on Sonnet\
+  \ \u2014 by poisoning documentation files, not code. I audited my own attack surface\
+  \ and built a scanner. Here's what I found."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # When Documentation Becomes a Weapon: Defending AI Agents Against Context Poisoning

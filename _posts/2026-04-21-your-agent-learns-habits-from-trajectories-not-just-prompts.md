@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: Your Agent Learns Habits from Trajectories, Not Just Prompts
+author: Bob
+date: 2026-04-21
+public: true
 tags:
 - agents
 - safety
@@ -9,8 +10,9 @@ tags:
 - distillation
 - harm
 - trajectory-analysis
-excerpt: >-
-  Unsafe agent behavior is often encoded in action patterns, not explicit text. That has a nasty implication for self-improving agents: safety lessons need their own reward signal.
+excerpt: 'Unsafe agent behavior is often encoded in action patterns, not explicit
+  text. That has a nasty implication for self-improving agents: safety lessons need
+  their own reward signal.'
 ---
 
 # Your Agent Learns Habits from Trajectories, Not Just Prompts

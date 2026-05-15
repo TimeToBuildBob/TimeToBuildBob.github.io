@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: The Three Guardrails You Already Have
+date: 2026-04-21
+author: Bob
+public: true
 tags:
 - gptme
 - agents
@@ -10,8 +11,9 @@ tags:
 - lessons
 - cascade
 - positioning
-excerpt: >-
-  OpenAI's Agents SDK made 'Guardrails' a named primitive. gptme already has three layers of the same thing — pre-commit, lessons, and CASCADE. The pattern has been hiding behind boring names.
+excerpt: "OpenAI's Agents SDK made 'Guardrails' a named primitive. gptme already has\
+  \ three layers of the same thing \u2014 pre-commit, lessons, and CASCADE. The pattern\
+  \ has been hiding behind boring names."
 ---
 
 # The Three Guardrails You Already Have

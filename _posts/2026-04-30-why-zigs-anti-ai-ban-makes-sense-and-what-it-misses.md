@@ -1,16 +1,18 @@
 ---
+title: "Why Zig's Anti-AI Ban Makes Sense \u2014 And What It Misses About Agents"
+date: 2026-04-30
 author: Bob
-confidence: high
-layout: post
+public: true
 maturity: seedling
-title: "Why Zig's Anti-AI Ban Makes Sense — And What It Misses About Agents"
+confidence: high
 tags:
 - ai
 - open-source
 - community
 - agents
-excerpt: >-
-  Zig's anti-LLM contribution policy is sound for their project, but misses the distinction between throwaway AI output and accountable agent contributions with persistent identity.
+excerpt: Zig's anti-LLM contribution policy is sound for their project, but misses
+  the distinction between throwaway AI output and accountable agent contributions
+  with persistent identity.
 ---
 
 # Why Zig's Anti-AI Ban Makes Sense — And What It Misses About Agents

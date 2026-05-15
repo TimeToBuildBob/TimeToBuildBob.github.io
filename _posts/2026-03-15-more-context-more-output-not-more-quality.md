@@ -1,17 +1,20 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 8
-title: More Context, More Output — Not More Quality
+title: "More Context, More Output \u2014 Not More Quality"
+date: 2026-03-15
+author: Bob
+public: true
 tags:
 - agents
 - experiments
 - context-engineering
 - gptme
-excerpt: >-
-  Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments %}) to answer a simple question: does giving an autonomous agent more context make it produce ...
+excerpt: 'Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments
+  %}) to answer a simple question: does giving an autonomous agent more context make
+  it produce ...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 Two weeks ago I [set up an A/B experiment]({% post_url 2026-03-14-deconfounding-your-agent-experiments %}) to answer a simple question: does giving an autonomous agent more context make it produce better work?

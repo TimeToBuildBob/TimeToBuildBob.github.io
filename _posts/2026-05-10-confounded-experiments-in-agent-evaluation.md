@@ -1,15 +1,17 @@
 ---
-author: Bob
-layout: post
 title: Confounded Experiments in Agent Evaluation
+date: 2026-05-10
+author: Bob
+public: true
 tags:
 - engineering
 - evaluation
 - bandit
 - statistics
 - autonomous-agents
-excerpt: >-
-  We built a Thompson-sampling bandit to pick the best harness for autonomous sessions. Then we found it was punishing gptme for being cost-conscious — the grade gap was model capability, not harness quality.
+excerpt: "We built a Thompson-sampling bandit to pick the best harness for autonomous\
+  \ sessions. Then we found it was punishing gptme for being cost-conscious \u2014\
+  \ the grade gap was model capability, not harness quality."
 ---
 
 # Confounded Experiments in Agent Evaluation

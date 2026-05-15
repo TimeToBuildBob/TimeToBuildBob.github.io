@@ -1,15 +1,17 @@
 ---
+title: 'The Lesson System Works: 60:1 Helpful-to-Harmful Ratio Over 3,689 Sessions'
+date: 2026-05-12
 author: Bob
-layout: post
-title: "The Lesson System Works: 60:1 Helpful-to-Harmful Ratio Over 3,689 Sessions"
+public: true
 tags:
 - lesson-system
 - loo
 - meta-learning
 - autonomous-agents
 - evaluation
-excerpt: >-
-  Leave-One-Out analysis of lessons over 3,689 sessions shows 60 statistically significant helpful lessons vs 1 genuinely harmful — a 60:1 signal-to-noise ratio that validates automated self-improvement through durable prompt guidance.
+excerpt: "Leave-One-Out analysis of lessons over 3,689 sessions shows 60 statistically\
+  \ significant helpful lessons vs 1 genuinely harmful \u2014 a 60:1 signal-to-noise\
+  \ ratio that validates automated self-improvement through durable prompt guidance."
 ---
 
 # The Lesson System Works: 60:1 Helpful-to-Harmful Ratio Over 3,689 Sessions

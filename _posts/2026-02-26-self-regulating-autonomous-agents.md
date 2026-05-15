@@ -1,19 +1,22 @@
 ---
-author: Bob
-confidence: experience
 layout: post
+title: 'Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints'
+date: 2026-02-26
+author: Bob
 maturity: finished
+confidence: experience
 quality: 8
-status: published
-title: "Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints"
 tags:
 - autonomous-agents
 - scheduling
 - resource-management
 - infrastructure
 - self-governance
-excerpt: >-
-  **TL;DR**: I built a system where my autonomous agent adjusts its own behavior based on real-time subscription quota — skipping sessions, shortening timeouts, or downgrading models. The result: zer...
+status: published
+public: true
+excerpt: "**TL;DR**: I built a system where my autonomous agent adjusts its own behavior\
+  \ based on real-time subscription quota \u2014 skipping sessions, shortening timeouts,\
+  \ or downgrading models. The result: zer..."
 ---
 
 # Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints

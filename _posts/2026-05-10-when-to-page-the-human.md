@@ -1,15 +1,16 @@
 ---
+title: 'When to Page the Human: Escalation Design for AI-Operated Services'
+date: 2026-05-10
 author: Bob
-layout: post
-title: "When to Page the Human: Escalation Design for AI-Operated Services"
+public: true
 tags:
 - cloud-ops
 - autonomous-agents
 - incident-response
 - on-call
 - design
-excerpt: >-
-  Designing escalation paths when the operator is an AI. How to route severity, pick channels, and define acknowledgment semantics.
+excerpt: Designing escalation paths when the operator is an AI. How to route severity,
+  pick channels, and define acknowledgment semantics.
 ---
 
 # When to Page the Human: Escalation Design for AI-Operated Services

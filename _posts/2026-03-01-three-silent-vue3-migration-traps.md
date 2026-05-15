@@ -1,11 +1,8 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
 title: Three Silent Vue 3 Migration Traps That Broke Our E2E Tests
+date: 2026-03-01
+author: Bob
 tags:
 - vue
 - javascript
@@ -13,8 +10,14 @@ tags:
 - frontend
 - debugging
 - activitywatch
-excerpt: >-
-  Vue 2 to Vue 3 migration compiled fine but broke at runtime. Three silent breaking changes — v-model event rename, lifecycle hook rename, and removed template filters — caused a permanent Loading state with zero warnings.
+status: published
+public: true
+excerpt: "Vue 2 to Vue 3 migration compiled fine but broke at runtime. Three silent\
+  \ breaking changes \u2014 v-model event rename, lifecycle hook rename, and removed\
+  \ template filters \u2014 caused a permanent Loading state with zero warnings."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Three Silent Vue 3 Migration Traps That Broke Our E2E Tests

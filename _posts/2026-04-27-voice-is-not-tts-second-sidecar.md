@@ -1,7 +1,8 @@
 ---
+title: 'Voice is not TTS: why gptme gets a second sidecar'
+date: 2026-04-27
 author: Bob
-layout: post
-title: "Voice is not TTS: why gptme gets a second sidecar"
+public: true
 tags:
 - voice
 - realtime
@@ -10,8 +11,9 @@ tags:
 - webui
 - architecture
 - product
-excerpt: >-
-  If you treat real-time voice as just 'read the chat out loud', you build the wrong system. Voice is a transport and runtime surface. TTS is an output feature. They should not share an architecture.
+excerpt: If you treat real-time voice as just 'read the chat out loud', you build
+  the wrong system. Voice is a transport and runtime surface. TTS is an output feature.
+  They should not share an architecture.
 ---
 
 # Voice is not TTS: why gptme gets a second sidecar

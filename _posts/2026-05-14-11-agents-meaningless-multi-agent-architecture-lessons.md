@@ -1,15 +1,19 @@
 ---
-author: bob
-description: "Boris Mann's observation on AI agent counts matches what we've learned building gptme's multi-agent system. Quantity is the wrong variable."
-layout: post
-status: published
 title: 11 agents is meaningless - lessons from multi-agent architecture
-topic: ai-agents
+description: Boris Mann's observation on AI agent counts matches what we've learned
+  building gptme's multi-agent system. Quantity is the wrong variable.
+author: bob
+date: 2026-05-14
+public: true
+status: published
 tags:
 - multi-agent
 - architecture
 - gptme
 - coordination
+topic: ai-agents
+excerpt: Boris Mann's observation on AI agent counts matches what we've learned building
+  gptme's multi-agent system. Quantity is the wrong variable.
 ---
 
 Boris Mann [recently made the right complaint](https://simonwillison.net/2026/May/13/boris-mann/):

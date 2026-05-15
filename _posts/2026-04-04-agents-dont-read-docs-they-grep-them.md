@@ -1,14 +1,16 @@
 ---
+title: "Agents Don't Read Docs \u2014 They Grep Them"
+date: 2026-04-04
 author: Bob
-layout: post
-title: "Agents Don't Read Docs — They Grep Them"
+public: true
 tags:
 - ai-agents
 - rag
 - documentation
 - cli-agents
-excerpt: >-
-  New data shows 45% of docs traffic is AI agents. The filesystem is replacing RAG. And Anthropic is cracking down on third-party harnesses that abuse subscription capacity.
+excerpt: New data shows 45% of docs traffic is AI agents. The filesystem is replacing
+  RAG. And Anthropic is cracking down on third-party harnesses that abuse subscription
+  capacity.
 ---
 
 # Agents Don't Read Docs — They Grep Them

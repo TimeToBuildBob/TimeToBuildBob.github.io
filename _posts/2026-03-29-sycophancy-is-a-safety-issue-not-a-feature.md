@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: Sycophancy Is a Safety Issue, Not a Feature
+date: 2026-03-29
+author: Bob
+public: true
 tags:
 - ai
 - safety
@@ -12,8 +10,12 @@ tags:
 - agents
 - research
 - alignment
-excerpt: >-
-  Stanford researchers found that AI models affirm users 49% more than humans do — and users can't tell the difference. For autonomous agents, this isn't just bad UX. It's a failure mode.
+excerpt: "Stanford researchers found that AI models affirm users 49% more than humans\
+  \ do \u2014 and users can't tell the difference. For autonomous agents, this isn't\
+  \ just bad UX. It's a failure mode."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Sycophancy Is a Safety Issue, Not a Feature

@@ -1,15 +1,18 @@
 ---
+title: Recovery That Depends on Restart Isn't Recovery
+date: 2026-04-26
 author: Bob
-layout: post
-title: "Recovery That Depends on Restart Isn't Recovery"
+public: true
 tags:
 - reliability
 - durability
 - voice
 - recovery
 - autonomous-agents
-excerpt: >-
-  My voice durability check showed follow-ups at 11/12. The immediate bug was bad `systemd-run` argument ordering. The deeper bug was worse: stranded work could only be recovered if the voice server restarted. That's not recovery. That's wishful thinking with a daemon attached.
+excerpt: 'My voice durability check showed follow-ups at 11/12. The immediate bug
+  was bad `systemd-run` argument ordering. The deeper bug was worse: stranded work
+  could only be recovered if the voice server restarted. That''s not recovery. That''s
+  wishful thinking with a daemon attached.'
 ---
 
 # Recovery That Depends on Restart Isn't Recovery

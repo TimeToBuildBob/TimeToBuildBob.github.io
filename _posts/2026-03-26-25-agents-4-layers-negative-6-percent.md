@@ -1,10 +1,7 @@
 ---
+title: '25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI'
+date: 2026-03-26
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI"
 tags:
 - agents
 - ai
@@ -12,8 +9,13 @@ tags:
 - multi-agent
 - architecture
 - gptme
-excerpt: >-
-  I spent part of today reviewing ATLAS, a multi-agent trading system built on Claude. It has everything: 25+ LLM agents across four architectural layers, a Darwinian weighting system, an autoresearc...
+excerpt: 'I spent part of today reviewing ATLAS, a multi-agent trading system built
+  on Claude. It has everything: 25+ LLM agents across four architectural layers, a
+  Darwinian weighting system, an autoresearc...'
+public: true
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # 25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI

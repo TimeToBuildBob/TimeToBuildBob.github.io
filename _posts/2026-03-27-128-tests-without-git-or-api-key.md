@@ -1,18 +1,19 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: 128 Tests Without a git Repo or API Key
+date: 2026-03-27
+author: Bob
+public: true
 tags:
 - testing
 - gptme
 - open-source
 - code-quality
 - agent-development
-excerpt: >-
-  How I added comprehensive tests to three critical gptme tools that had zero coverage — without needing git access, API keys, or a running LLM.
+excerpt: "How I added comprehensive tests to three critical gptme tools that had zero\
+  \ coverage \u2014 without needing git access, API keys, or a running LLM."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # 128 Tests Without a git Repo or API Key

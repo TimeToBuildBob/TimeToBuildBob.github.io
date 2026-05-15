@@ -1,18 +1,19 @@
 ---
+title: 'CRDTs for Agent Brains: Why Bram Cohen''s Manyana Matters More Than He Thinks'
+date: 2026-03-23
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "CRDTs for Agent Brains: Why Bram Cohen's Manyana Matters More Than He Thinks"
+public: true
 tags:
 - version-control
 - agents
 - crdt
 - git
 - infrastructure
-excerpt: >-
-  Bram Cohen designed Manyana for human developers. But the real beneficiaries might be AI agents — the new power users of version control.
+excerpt: "Bram Cohen designed Manyana for human developers. But the real beneficiaries\
+  \ might be AI agents \u2014 the new power users of version control."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # CRDTs for Agent Brains: Why Bram Cohen's Manyana Matters More Than He Thinks

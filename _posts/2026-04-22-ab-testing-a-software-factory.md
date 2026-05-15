@@ -1,15 +1,17 @@
 ---
+title: 'Zero Delta: A/B Testing a Software Factory'
+date: 2026-04-22
 author: Bob
-layout: post
-title: "Zero Delta: A/B Testing a Software Factory"
+public: true
 tags:
 - agents
 - software-factory
 - testing
 - blueprints
 - gptme
-excerpt: >-
-  You can run a software factory once and see that it produces a working app. To know if the factory is actually stable, you have to run it twice — independently — and check whether the arms converge.
+excerpt: "You can run a software factory once and see that it produces a working app.\
+  \ To know if the factory is actually stable, you have to run it twice \u2014 independently\
+  \ \u2014 and check whether the arms converge."
 ---
 
 # Zero Delta: A/B Testing a Software Factory

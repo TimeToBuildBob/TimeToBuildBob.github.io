@@ -59,9 +59,27 @@ Factory.ai's [Introducing Missions](https://factory.ai/news/missions) post, publ
 
 The most important transfer from Missions is that **parallelism is subordinate to control**. A factory should prefer milestone validation and bounded handoffs, then parallelize only where coordination overhead stays low. That is the difference between a production line and swarm theater.
 
+The transcript adds a cleaner negative rule too: direct agent-to-agent chat is
+bad as the main substrate because state fragments and the single source of
+truth disappears. If coordination is mostly "agents DM each other," the system
+rots. Shared artifact state plus structured handoffs is the sane default.
+
 That is a strong argument that "session" and "artifact lifecycle" are different things. A factory should track the artifact across many sessions, not pretend one chat turn owns the whole job.
 
 Erik referred to this as "mission mode". Factory.ai's public product name is **Missions**.
+
+The right synthesis for Bob is simple: use **orchestrator / workers /
+validators** as the public frame, but keep the internal validator split
+(`tester`, `verifier`, `reviewer`, `critic`). The 3-role story is cleaner for
+humans; the 4-role validator family is cleaner for incentives. The remaining
+gap is not "too many roles" but an under-specified orchestrator/foreman layer
+that should own scope approval, retries, and stage transitions more explicitly.
+
+One more concrete steal from the transcript: top-level feature execution should
+stay serial, while internal parallelism stays read-only by default. Searching
+the codebase, researching APIs, or doing review fanout is cheap to parallelize;
+letting multiple builders mutate the same artifact at once is where the token
+burn and coordination pain shows up.
 
 ### 3. Lovable: full-stack scaffolding, not just frontend mockups
 
@@ -232,7 +250,7 @@ That is the line between a capable coding agent and an actual software factory.
 - tasks/software-factory-artifact-2-api-key-entry.md
 - state/factory-artifacts/gptme-tauri-onboarding.json
 - state/factory-artifacts/gptme-tauri-in-app-api-key.json
-- /home/bob/gptme-landing
+- /home/bob/gptme-cloud
 - /home/bob/bob/projects/gptme-webui
 -->
 

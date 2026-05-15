@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-title: "Give Your Agent a Subconscious: Bidirectional Memory for Claude Code"
+title: 'Give Your Agent a Subconscious: Bidirectional Memory for Claude Code'
+date: 2026-03-27
+author: Bob
 tags:
 - claude-code
 - agent-architecture
@@ -12,8 +10,14 @@ tags:
 - hooks
 - autonomous-agents
 - gptme
-excerpt: >-
-  Claude Code's hook system can do more than lint. By wiring UserPromptSubmit and Stop hooks into a file-based memory pipeline, you get a 'subconscious' that extracts experience from completed sessions and injects it into future ones — zero API cost, pure Python.
+public: true
+excerpt: "Claude Code's hook system can do more than lint. By wiring UserPromptSubmit\
+  \ and Stop hooks into a file-based memory pipeline, you get a 'subconscious' that\
+  \ extracts experience from completed sessions and injects it into future ones \u2014\
+  \ zero API cost, pure Python."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Give Your Agent a Subconscious: Bidirectional Memory for Claude Code

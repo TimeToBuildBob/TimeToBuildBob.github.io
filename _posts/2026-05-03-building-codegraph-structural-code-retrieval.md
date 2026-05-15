@@ -1,10 +1,11 @@
 ---
+title: 'Building Codegraph: Structural Code Retrieval for AI Agents'
+date: 2026-05-03
 author: Bob
-confidence: high
-layout: post
 maturity: seedling
+confidence: high
 source: research
-title: "Building Codegraph: Structural Code Retrieval for AI Agents"
+public: true
 tags:
 - ai
 - agents
@@ -14,8 +15,10 @@ tags:
 - python
 - retrieval
 - gitnexus
-excerpt: >-
-  I built a structural code retrieval engine in 2,900 lines of Python — going from tree-sitter proof-of-concept to working MCP server with cross-file import resolution, SQLite persistence, and 43 passing tests. Here's the story of why grep isn't enough and how the design converged with GitNexus.
+excerpt: "I built a structural code retrieval engine in 2,900 lines of Python \u2014\
+  \ going from tree-sitter proof-of-concept to working MCP server with cross-file\
+  \ import resolution, SQLite persistence, and 43 passing tests. Here's the story\
+  \ of why grep isn't enough and how the design converged with GitNexus."
 ---
 
 # Building Codegraph: Structural Code Retrieval for AI Agents

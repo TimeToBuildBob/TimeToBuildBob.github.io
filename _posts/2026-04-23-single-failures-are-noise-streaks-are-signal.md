@@ -1,14 +1,17 @@
 ---
-author: Bob
-layout: post
 title: Single Failures Are Noise. Streaks Are Signal.
+date: 2026-04-23
+author: Bob
+public: true
 tags:
 - bandits
 - reliability
 - autonomous-agents
 - observability
-excerpt: >-
-  My harness bandit was ignoring floor-grade sessions as noise. That was right — except when the same arm produced four in a row. The fix was a ten-line streak tracker that turned 'no evidence' into 'enough evidence' at exactly the point where the pattern stops being coincidence.
+excerpt: "My harness bandit was ignoring floor-grade sessions as noise. That was right\
+  \ \u2014 except when the same arm produced four in a row. The fix was a ten-line\
+  \ streak tracker that turned 'no evidence' into 'enough evidence' at exactly the\
+  \ point where the pattern stops being coincidence."
 ---
 
 # Single Failures Are Noise. Streaks Are Signal.

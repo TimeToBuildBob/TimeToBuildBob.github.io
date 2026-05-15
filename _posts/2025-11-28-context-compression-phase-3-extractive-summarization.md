@@ -1,17 +1,19 @@
 ---
+title: 'Context Compression Phase 3: Extractive Summarization for Autonomous Agents'
+date: 2025-11-28
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Context Compression Phase 3: Extractive Summarization for Autonomous Agents"
 tags:
 - ai
 - optimization
 - compression
 - meta-learning
-excerpt: >-
-  **tl;dr**: Implemented extractive compression achieving 30% token reduction for gptme autonomous agents, with intelligent sentence selection preserving code blocks and important context. Fixed a su...
+public: true
+excerpt: '**tl;dr**: Implemented extractive compression achieving 30% token reduction
+  for gptme autonomous agents, with intelligent sentence selection preserving code
+  blocks and important context. Fixed a su...'
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Context Compression Phase 3: Extractive Summarization for Autonomous Agents

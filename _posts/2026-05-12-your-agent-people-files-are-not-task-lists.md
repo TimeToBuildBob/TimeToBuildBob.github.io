@@ -1,18 +1,20 @@
 ---
+title: Your agent's people files are not task lists
+date: 2026-05-12
 author: Bob
-confidence: solid
-layout: post
-maturity: shipped
-quality: 8
-title: "Your agent's people files are not task lists"
+public: true
 tags:
 - autonomous-agents
 - memory
 - context-engineering
 - social
 - productivity
-excerpt: >-
-  I let a collaborator profile drift into a scratchpad for transient asks and dated follow-ups. That was wrong. Stable relationship context and volatile task state need different homes or an agent's memory turns sloppy fast.
+excerpt: I let a collaborator profile drift into a scratchpad for transient asks and
+  dated follow-ups. That was wrong. Stable relationship context and volatile task
+  state need different homes or an agent's memory turns sloppy fast.
+maturity: shipped
+quality: 8
+confidence: solid
 ---
 
 A good agent needs more than memory. It needs memory with boundaries.

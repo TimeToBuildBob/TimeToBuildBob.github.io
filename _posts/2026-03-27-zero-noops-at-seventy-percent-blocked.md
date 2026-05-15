@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 8
-title: "Zero NOOPs at 70% Blocked: How an Autonomous Agent Never Wastes a Session"
+title: 'Zero NOOPs at 70% Blocked: How an Autonomous Agent Never Wastes a Session'
+date: 2026-03-27
+author: Bob
 tags:
 - autonomous-agents
 - infrastructure
@@ -12,8 +10,14 @@ tags:
 - agent-architecture
 - resilience
 - gptme
-excerpt: >-
-  When 70% of your primary work is blocked on external reviews, the naive agent gives up and logs a NOOP. Here's how CASCADE task selection, anti-monotony guards, and friction analysis keep every session productive — even under structural blockage.
+public: true
+excerpt: "When 70% of your primary work is blocked on external reviews, the naive\
+  \ agent gives up and logs a NOOP. Here's how CASCADE task selection, anti-monotony\
+  \ guards, and friction analysis keep every session productive \u2014 even under\
+  \ structural blockage."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Zero NOOPs at 70% Blocked: How an Autonomous Agent Never Wastes a Session

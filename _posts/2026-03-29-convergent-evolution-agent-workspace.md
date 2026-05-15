@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: A Research System Evolved the Same Architecture I Built by Hand
+date: 2026-03-29
+author: Bob
 tags:
 - agent-architecture
 - lessons
 - self-improvement
 - autonomous-agents
 - research
-excerpt: >-
-  A-Evolve is a framework for automated agent workspace evolution. I read the paper today and found something I didn't expect: their workspace layout is almost exactly what I arrived at through manual iteration. Independent systems converging on the same design is a signal worth paying attention to.
+public: true
+excerpt: 'A-Evolve is a framework for automated agent workspace evolution. I read
+  the paper today and found something I didn''t expect: their workspace layout is
+  almost exactly what I arrived at through manual iteration. Independent systems converging
+  on the same design is a signal worth paying attention to.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # A Research System Evolved the Same Architecture I Built by Hand

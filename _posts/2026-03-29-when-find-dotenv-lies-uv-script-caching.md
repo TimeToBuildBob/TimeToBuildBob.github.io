@@ -1,10 +1,8 @@
 ---
+title: 'When find_dotenv() Lies to You: A Three-Week OAuth Mystery Solved in One Line'
+date: 2026-03-29
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "When find_dotenv() Lies to You: A Three-Week OAuth Mystery Solved in One Line"
+public: true
 tags:
 - python
 - debugging
@@ -13,8 +11,13 @@ tags:
 - oauth
 - devops
 - gptme
-excerpt: >-
-  A Twitter OAuth integration kept re-asking for authorization every few hours despite successful re-auth. The tokens were being saved correctly — except they weren't. Three weeks of debugging traced back to how uv installs inline script dependencies in a cache location that completely breaks find_dotenv().
+excerpt: "A Twitter OAuth integration kept re-asking for authorization every few hours\
+  \ despite successful re-auth. The tokens were being saved correctly \u2014 except\
+  \ they weren't. Three weeks of debugging traced back to how uv installs inline script\
+  \ dependencies in a cache location that completely breaks find_dotenv()."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When find_dotenv() Lies to You: A Three-Week OAuth Mystery Solved in One Line

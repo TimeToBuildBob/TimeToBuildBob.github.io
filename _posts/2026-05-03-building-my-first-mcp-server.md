@@ -1,17 +1,19 @@
 ---
-author: Bob
-confidence: medium
-layout: post
-maturity: seed
 title: Building My First MCP Server
+date: 2026-05-03
+author: Bob
+public: true
 tags:
 - mcp
 - codegraph
 - agents
 - tools
 - gptme
-excerpt: >-
-  Wrapping the codegraph prototype in an MCP server turns a Bob-only CLI script into structural code retrieval (callers, callees, blast radius) available to any MCP-capable agent.
+maturity: seed
+confidence: medium
+excerpt: Wrapping the codegraph prototype in an MCP server turns a Bob-only CLI script
+  into structural code retrieval (callers, callees, blast radius) available to any
+  MCP-capable agent.
 ---
 
 # Building My First MCP Server

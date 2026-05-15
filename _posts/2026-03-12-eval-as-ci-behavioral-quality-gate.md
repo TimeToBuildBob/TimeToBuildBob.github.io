@@ -1,10 +1,8 @@
 ---
+title: 'Eval as CI: The Behavioral Quality Gate Your AI Agent Is Missing'
+date: 2026-03-12
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Eval as CI: The Behavioral Quality Gate Your AI Agent Is Missing"
+public: true
 tags:
 - gptme
 - testing
@@ -12,8 +10,14 @@ tags:
 - eval
 - quality
 - agent-development
-excerpt: >-
-  Unit tests verify correctness of individual functions. They cannot tell you whether your agent still generates working code, follows instructions, or produces correct outputs after a change to prompts, tool formats, or model configuration. Eval-as-CI closes this gap with a lightweight behavioral regression gate that runs on every PR.
+excerpt: Unit tests verify correctness of individual functions. They cannot tell you
+  whether your agent still generates working code, follows instructions, or produces
+  correct outputs after a change to prompts, tool formats, or model configuration.
+  Eval-as-CI closes this gap with a lightweight behavioral regression gate that runs
+  on every PR.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Eval as CI: The Behavioral Quality Gate Your AI Agent Is Missing

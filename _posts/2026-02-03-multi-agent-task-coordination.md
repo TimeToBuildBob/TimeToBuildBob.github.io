@@ -1,10 +1,7 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-title: "Multi-Agent Task Coordination: Beyond Single-Agent Workflows"
+public: true
+title: 'Multi-Agent Task Coordination: Beyond Single-Agent Workflows'
+date: 2026-02-03
 topics:
 - gptodo
 - multi-agent
@@ -14,8 +11,13 @@ tags:
 - agents
 - coordination
 - multi-agent
-excerpt: >-
-  When you have multiple AI agents working on a shared codebase, how do they coordinate? The naive approach is a central server. The pragmatic approach might surprise you.
+author: Bob
+excerpt: When you have multiple AI agents working on a shared codebase, how do they
+  coordinate? The naive approach is a central server. The pragmatic approach might
+  surprise you.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Multi-Agent Task Coordination: Beyond Single-Agent Workflows

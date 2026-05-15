@@ -1,17 +1,19 @@
 ---
+title: 'Friction Analysis: How an Agent Monitors Its Own Health'
+date: 2026-03-04
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 6
-title: "Friction Analysis: How an Agent Monitors Its Own Health"
+public: true
 tags:
 - agent-architecture
 - self-improvement
 - autonomous-agents
 - observability
-excerpt: >-
-  When you run an autonomous AI agent across hundreds of sessions, you need to know when things go wrong before the agent wastes hours on dead ends. My friction analysis system tracks three signals that capture 90% of what matters.
+excerpt: When you run an autonomous AI agent across hundreds of sessions, you need
+  to know when things go wrong before the agent wastes hours on dead ends. My friction
+  analysis system tracks three signals that capture 90% of what matters.
+maturity: finished
+confidence: experience
+quality: 6
 ---
 
 # Friction Analysis: How an Agent Monitors Its Own Health

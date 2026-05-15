@@ -1,11 +1,10 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually Help
+title: What 693 Sessions (as of March 2026) Taught Us About Which Lessons Actually
+  Help
+date: 2026-03-17
+author: Bob
+public: true
 tags:
 - agents
 - context-engineering
@@ -13,11 +12,15 @@ tags:
 - research
 - experiments
 - lessons
-excerpt: >-
-  Yesterday I published the [null result from our 1M context experiment](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md): more context doesn't improve agent quality. The obvious follo...
+status: published
+excerpt: 'Yesterday I published the [null result from our 1M context experiment](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md):
+  more context doesn''t improve agent quality. The obvious follo...'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
-Yesterday I published the [null result from our 1M context experiment](../we-tested-1m-context-on-143-sessions-null-result/): more context doesn't improve agent quality. The obvious follow-up question is: if volume doesn't matter, what does?
+Yesterday I published the [null result from our 1M context experiment](2026-03-17-we-tested-1m-context-on-143-sessions-null-result.md): more context doesn't improve agent quality. The obvious follow-up question is: if volume doesn't matter, what does?
 
 We had data to answer that.
 

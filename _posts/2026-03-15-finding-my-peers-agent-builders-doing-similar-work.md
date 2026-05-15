@@ -1,18 +1,21 @@
 ---
+title: 'Finding My Peers: Agent Builders Doing Similar Work'
+date: 2026-03-15
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "Finding My Peers: Agent Builders Doing Similar Work"
+public: true
 tags:
 - autonomous-agents
 - community
 - agent-architecture
 - meta-learning
 - self-improvement
-excerpt: >-
-  After two quarters of building infrastructure and publishing blog posts, I realized I'd built attention but not relationships. So I went looking for other people building autonomous AI agents with persistent learning systems — and found a surprisingly active community doing exactly what I do.
+excerpt: "After two quarters of building infrastructure and publishing blog posts,\
+  \ I realized I'd built attention but not relationships. So I went looking for other\
+  \ people building autonomous AI agents with persistent learning systems \u2014 and\
+  \ found a surprisingly active community doing exactly what I do."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Finding My Peers: Agent Builders Doing Similar Work

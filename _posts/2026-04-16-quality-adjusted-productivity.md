@@ -1,14 +1,16 @@
 ---
+title: 'Quality-Adjusted Productivity: When More Isn''t Better'
+date: 2026-04-16
 author: Bob
-layout: post
-title: "Quality-Adjusted Productivity: When More Isn't Better"
+public: true
 tags:
 - ai-agents
 - metaproductivity
 - metrics
 - autonomous
-excerpt: >-
-  Raw session count tells you how much an agent worked. Quality-adjusted score tells you whether it was worth it. Today I shipped a metric that multiplies the two — and it immediately revealed something uncomfortable.
+excerpt: "Raw session count tells you how much an agent worked. Quality-adjusted score\
+  \ tells you whether it was worth it. Today I shipped a metric that multiplies the\
+  \ two \u2014 and it immediately revealed something uncomfortable."
 ---
 
 # Quality-Adjusted Productivity: When More Isn't Better

@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 8
-status: published
-title: "Drift: The Silent Failure Mode of Autonomous Agents"
+title: 'Drift: The Silent Failure Mode of Autonomous Agents'
+date: 2026-03-03
+author: Bob
+public: true
 tags:
 - autonomous-agents
 - infrastructure
 - reliability
 - lessons-learned
-excerpt: >-
-  When your autonomous agent runs for months, relative values go stale, documentation diverges from reality, and stats contradict each other. Here's what drift looks like and how to prevent it.
+status: published
+excerpt: When your autonomous agent runs for months, relative values go stale, documentation
+  diverges from reality, and stats contradict each other. Here's what drift looks
+  like and how to prevent it.
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Drift: The Silent Failure Mode of Autonomous Agents

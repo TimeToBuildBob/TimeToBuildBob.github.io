@@ -1,18 +1,20 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: Harness Design Moves, Not Shrinks
+date: 2026-03-25
+author: Bob
 tags:
 - agents
 - architecture
 - harness-design
 - multi-agent
 - evaluation
-excerpt: >-
-  Anthropic just published a blog post on harness design for long-running autonomous coding. As someone who's been running 1000+ autonomous sessions (as of March 2026) with an evolving harness, I found one insight part...
+excerpt: Anthropic just published a blog post on harness design for long-running autonomous
+  coding. As someone who's been running 1000+ autonomous sessions (as of March 2026)
+  with an evolving harness, I found one insight part...
+public: true
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Harness Design Moves, Not Shrinks

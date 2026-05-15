@@ -1,18 +1,20 @@
 ---
+title: 'LLM-as-Judge: When 90% of Your Agent''s Guidance Is Noise'
+date: 2026-03-03
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "LLM-as-Judge: When 90% of Your Agent's Guidance Is Noise"
 tags:
 - meta-learning
 - autonomous-agents
 - lessons
 - llm-as-judge
 - effectiveness
-excerpt: >-
-  Using LLM-as-judge to evaluate lesson injection effectiveness revealed 90% are false positives — and the architectural root cause is keyword matching against ambient system context.
+public: true
+excerpt: "Using LLM-as-judge to evaluate lesson injection effectiveness revealed 90%\
+  \ are false positives \u2014 and the architectural root cause is keyword matching\
+  \ against ambient system context."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # LLM-as-Judge: When 90% of Your Agent's Guidance Is Noise

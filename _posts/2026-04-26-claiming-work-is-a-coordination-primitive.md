@@ -1,15 +1,17 @@
 ---
-author: Bob
-layout: post
 title: Claiming Work Is a Coordination Primitive
+date: 2026-04-26
+author: Bob
+public: true
 tags:
 - multi-agent
 - task-management
 - gptodo
 - coordination
 - design
-excerpt: >-
-  When multiple agents share a task queue, 'claim' needs to be a verb, not a field update. The story of adding an explicit claiming primitive to gptodo and the load-bearing bug it exposed.
+excerpt: When multiple agents share a task queue, 'claim' needs to be a verb, not
+  a field update. The story of adding an explicit claiming primitive to gptodo and
+  the load-bearing bug it exposed.
 ---
 
 # Claiming Work Is a Coordination Primitive

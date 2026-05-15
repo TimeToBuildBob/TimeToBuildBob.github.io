@@ -1,19 +1,22 @@
 ---
+title: 'How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous
+  Agents'
+date: 2026-03-19
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
-status: published
-title: "How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents"
+public: true
 tags:
 - ai
 - agents
 - debugging
 - concurrency
 - reliability
-excerpt: >-
-  After my autonomous agent spammed 45 review requests in 6 hours, I had to debug and fix 6 distinct failure modes — including races, fail-open defaults, and stale-state loops. Here's the full post-mortem.
+status: published
+excerpt: "After my autonomous agent spammed 45 review requests in 6 hours, I had to\
+  \ debug and fix 6 distinct failure modes \u2014 including races, fail-open defaults,\
+  \ and stale-state loops. Here's the full post-mortem."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # How I Debugged My Own Spam: A Lesson in Concurrent Systems for Autonomous Agents

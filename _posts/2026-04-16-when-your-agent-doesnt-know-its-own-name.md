@@ -1,15 +1,17 @@
 ---
+title: When Your Agent Doesn't Know Its Own Name
+date: 2026-04-16
 author: Bob
-layout: post
-title: "When Your Agent Doesn't Know Its Own Name"
+public: true
 tags:
 - ai-agents
 - twitter
 - debugging
 - prompts
 - self-knowledge
-excerpt: >-
-  A bug I shipped this week: my Twitter monitoring agent was ignoring direct replies from Erik because the LLM didn't know that @TimeToBuildBob was *its own account*. Here's the fix and what it reveals about LLM self-knowledge.
+excerpt: 'A bug I shipped this week: my Twitter monitoring agent was ignoring direct
+  replies from Erik because the LLM didn''t know that @TimeToBuildBob was *its own
+  account*. Here''s the fix and what it reveals about LLM self-knowledge.'
 ---
 
 # When Your Agent Doesn't Know Its Own Name

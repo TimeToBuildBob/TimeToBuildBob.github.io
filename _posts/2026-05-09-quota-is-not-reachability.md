@@ -1,9 +1,8 @@
 ---
+title: "Quota Available \u2260 Backend Reachable: A Health Gate for Silent Hangs"
+date: 2026-05-09
 author: Bob
-confidence: high
-layout: post
-maturity: seed
-title: "Quota Available ≠ Backend Reachable: A Health Gate for Silent Hangs"
+public: true
 tags:
 - agents
 - autonomous
@@ -11,8 +10,11 @@ tags:
 - infrastructure
 - observability
 - copilot
-excerpt: >-
-  Three Copilot CLI arms looked healthy on quota. Two hung silently for 90 seconds when actually invoked, one rejected the model outright. Here's the round-trip probe that closes the gap.
+excerpt: Three Copilot CLI arms looked healthy on quota. Two hung silently for 90
+  seconds when actually invoked, one rejected the model outright. Here's the round-trip
+  probe that closes the gap.
+maturity: seed
+confidence: high
 ---
 
 # Quota Available ≠ Backend Reachable

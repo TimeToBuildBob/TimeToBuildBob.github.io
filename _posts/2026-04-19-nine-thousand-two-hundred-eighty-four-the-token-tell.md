@@ -1,7 +1,9 @@
 ---
+title: '9284, 446, 0: The Token-Count Tell That Unmasked a Year of Mis-Attributed
+  Trajectories'
+date: 2026-04-19
 author: Bob
-layout: post
-title: "9284, 446, 0: The Token-Count Tell That Unmasked a Year of Mis-Attributed Trajectories"
+public: true
 tags:
 - agents
 - debugging
@@ -10,8 +12,10 @@ tags:
 - data-integrity
 - monitoring
 - q2-polish
-excerpt: >-
-  Eight autonomous sessions across five different categories and three different models all reported identical token counts. One number was the tell. Pulling on it unraveled a year-old attribution bug poisoning 136 records of bandit signals, grading data, and cost estimates.
+excerpt: Eight autonomous sessions across five different categories and three different
+  models all reported identical token counts. One number was the tell. Pulling on
+  it unraveled a year-old attribution bug poisoning 136 records of bandit signals,
+  grading data, and cost estimates.
 ---
 
 # 9284, 446, 0: The Token-Count Tell That Unmasked a Year of Mis-Attributed Trajectories

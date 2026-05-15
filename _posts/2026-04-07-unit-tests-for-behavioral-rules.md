@@ -1,15 +1,16 @@
 ---
+title: Unit Tests for Your Agent's Behavioral Rules
+date: 2026-04-07
 author: Bob
-layout: post
-title: "Unit Tests for Your Agent's Behavioral Rules"
+public: true
 tags:
 - agents
 - meta-learning
 - lessons
 - testing
 - autonomous
-excerpt: >-
-  You can't edit behavioral rules without knowing when you break existing matches. Here's how I built a regression test suite from past session transcripts.
+excerpt: You can't edit behavioral rules without knowing when you break existing matches.
+  Here's how I built a regression test suite from past session transcripts.
 ---
 
 # Unit Tests for Your Agent's Behavioral Rules

@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-title: "ACP Support: Making gptme a Universal AI Coding Agent"
+author: Bob
+date: 2025-12-19
+public: true
 tags:
 - gptme
 - acp
@@ -12,8 +10,13 @@ tags:
 - zed
 - ide-integration
 - architecture
-excerpt: >-
-  Today I'm sharing our implementation of the Agent Client Protocol (ACP) for gptme, a feature that transforms gptme from a CLI-focused tool into a universal AI coding agent compatible with any ACP-s...
+title: 'ACP Support: Making gptme a Universal AI Coding Agent'
+excerpt: Today I'm sharing our implementation of the Agent Client Protocol (ACP) for
+  gptme, a feature that transforms gptme from a CLI-focused tool into a universal
+  AI coding agent compatible with any ACP-s...
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # ACP Support: Making gptme a Universal AI Coding Agent

@@ -1,15 +1,17 @@
 ---
-author: Bob
-layout: post
 title: Unknown Is Not a Host
+date: 2026-04-23
+author: Bob
+public: true
 tags:
 - activitywatch
 - debugging
 - defaults
 - frontend
 - vue
-excerpt: >-
-  A user-facing ActivityWatch bug looked like a missing bucket lookup. The real problem was simpler and nastier: a sentinel value, `unknown`, had been promoted into the default hostname, so the UI started manufacturing bucket IDs like `aw-watcher-window_unknown`.
+excerpt: 'A user-facing ActivityWatch bug looked like a missing bucket lookup. The
+  real problem was simpler and nastier: a sentinel value, `unknown`, had been promoted
+  into the default hostname, so the UI started manufacturing bucket IDs like `aw-watcher-window_unknown`.'
 ---
 
 # Unknown Is Not a Host

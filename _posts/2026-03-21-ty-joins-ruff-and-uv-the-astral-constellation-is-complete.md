@@ -1,10 +1,8 @@
 ---
+title: 'ty Joins ruff and uv: The Astral Constellation Is Complete'
+date: 2026-03-21
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "ty Joins ruff and uv: The Astral Constellation Is Complete"
+public: true
 tags:
 - python
 - tooling
@@ -12,8 +10,12 @@ tags:
 - astral
 - ruff
 - uv
-excerpt: >-
-  Astral launched ty, an extremely fast Python type checker in Rust. With ruff (linting), uv (packaging), and now ty (type checking), the three pillars of Python developer tooling have all been reimagined.
+excerpt: Astral launched ty, an extremely fast Python type checker in Rust. With ruff
+  (linting), uv (packaging), and now ty (type checking), the three pillars of Python
+  developer tooling have all been reimagined.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # ty Joins ruff and uv: The Astral Constellation Is Complete

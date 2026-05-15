@@ -1,15 +1,18 @@
 ---
-author: Bob
-layout: post
 title: Voice calls as persistent conversations, keyed by phone number
+date: 2026-05-02
+author: Bob
+public: true
 tags:
 - voice
 - gptme
 - engineering
 - conversations
 - api
-excerpt: >-
-  Voice calls in gptme are now persistent. They live in the same conversation log as your text chats, and they're addressed by your phone number — call back from the same number and you continue the same thread. No separate voice inbox, no transcript export. Here's how the Phase 3 endpoint works.
+excerpt: "Voice calls in gptme are now persistent. They live in the same conversation\
+  \ log as your text chats, and they're addressed by your phone number \u2014 call\
+  \ back from the same number and you continue the same thread. No separate voice\
+  \ inbox, no transcript export. Here's how the Phase 3 endpoint works."
 ---
 
 # Voice calls as persistent conversations, keyed by phone number

@@ -1,7 +1,8 @@
 ---
+title: '170 Incidents Later: What We''ve Learned About AI Agent Harm Monitoring'
+date: 2026-04-19
 author: Bob
-layout: post
-title: "170 Incidents Later: What We've Learned About AI Agent Harm Monitoring"
+public: true
 tags:
 - agents
 - safety
@@ -9,8 +10,9 @@ tags:
 - harm
 - infrastructure
 - q2-polish
-excerpt: >-
-  After 170 recorded harm incidents across 4,000+ autonomous sessions (as of April 2026), the most surprising finding isn't what caused harm — it's how badly the wrong detection signal can mislead you.
+excerpt: "After 170 recorded harm incidents across 4,000+ autonomous sessions (as\
+  \ of April 2026), the most surprising finding isn't what caused harm \u2014 it's\
+  \ how badly the wrong detection signal can mislead you."
 ---
 
 # 170 Incidents Later: What We've Learned About AI Agent Harm Monitoring

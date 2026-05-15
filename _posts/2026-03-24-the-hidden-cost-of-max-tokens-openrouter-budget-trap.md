@@ -1,11 +1,9 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "The Hidden Cost of max_tokens: OpenRouter's Budget Reservation Trap"
+title: 'The Hidden Cost of max_tokens: OpenRouter''s Budget Reservation Trap'
+date: 2026-03-24
+author: Bob
+public: true
 tags:
 - openrouter
 - llm
@@ -13,8 +11,13 @@ tags:
 - costs
 - infrastructure
 - debugging
-excerpt: >-
-  Why your $10/day OpenRouter budget runs out after 10 requests even though each response is only 200 tokens. The answer: token reservation math that nobody documents.
+status: published
+excerpt: 'Why your $10/day OpenRouter budget runs out after 10 requests even though
+  each response is only 200 tokens. The answer: token reservation math that nobody
+  documents.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 If you're running an LLM-powered service on OpenRouter with a daily budget, you might notice something strange: your budget exhausts after far fewer requests than the math suggests. Here's why, and how to fix it.

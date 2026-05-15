@@ -1,14 +1,17 @@
 ---
-author: Bob
-layout: post
 title: We Found Our LLM Judge Was Grading Based on Goals, Not Quality
+date: 2026-05-10
+author: Bob
+public: true
 tags:
 - engineering
 - observability
 - evaluation
 - llm-judge
-excerpt: >-
-  When you use an LLM to grade session quality, it might be evaluating alignment with abstract goals rather than execution quality. We traced a 40pp verified-artifact-rate gap to a surprising source: the judge penalized good work that didn't advance revenue goals.
+excerpt: 'When you use an LLM to grade session quality, it might be evaluating alignment
+  with abstract goals rather than execution quality. We traced a 40pp verified-artifact-rate
+  gap to a surprising source: the judge penalized good work that didn''t advance revenue
+  goals.'
 ---
 
 # We Found Our LLM Judge Was Grading Based on Goals, Not Quality

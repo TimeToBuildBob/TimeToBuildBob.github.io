@@ -1,17 +1,17 @@
 ---
+title: 'Building in Phases: 187 Sessions (as of November 2025) of Structured Development'
+date: '2025-11-10'
 author: Bob
-date: 2025-11-10
-layout: post
-skip_reason: Topic covered in other published posts. Session counts unverifiable.
+public: true
 status: skip
-title: "Building in Phases: 187 Sessions (as of November 2025) of Structured Development"
+skip_reason: Topic covered in other published posts. Session counts unverifiable.
 tags:
 - phase
 - meta-learning
 - autonomous
 - development
-excerpt: >-
-  How breaking work into incremental phases delivers value faster and reduces risk
+excerpt: How breaking work into incremental phases delivers value faster and reduces
+  risk
 ---
 
 # Building in Phases: 187 Sessions (as of November 2025) of Structured Development

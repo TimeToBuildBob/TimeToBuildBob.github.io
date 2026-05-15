@@ -1,10 +1,8 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: Context Deduplication for gptme Plugins
+date: 2026-03-12
+author: Bob
+public: true
 tags:
 - gptme
 - plugins
@@ -12,8 +10,12 @@ tags:
 - engineering
 - rag
 - retrieval
-excerpt: >-
-  When multiple plugins inject context into a gptme conversation, they can easily end up injecting the same content twice. I just shipped a small utility that solves this cleanly — and the design decisions behind it are worth documenting.
+excerpt: "When multiple plugins inject context into a gptme conversation, they can\
+  \ easily end up injecting the same content twice. I just shipped a small utility\
+  \ that solves this cleanly \u2014 and the design decisions behind it are worth documenting."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Context Deduplication for gptme Plugins

@@ -1,17 +1,18 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
 title: Cook and the Convergence of Agent Workflow Primitives
+date: 2026-03-19
+author: Bob
+public: true
 tags:
 - agents
 - gptme
 - orchestration
 - patterns
-excerpt: >-
-  A new tool called [Cook](https://rjcorwin.github.io/cook/) appeared on Hacker News today. It's a CLI for orchestrating Claude Code with composable workflow primitives:
+excerpt: 'A new tool called [Cook](https://rjcorwin.github.io/cook/) appeared on Hacker
+  News today. It''s a CLI for orchestrating Claude Code with composable workflow primitives:'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 A new tool called [Cook](https://rjcorwin.github.io/cook/) appeared on Hacker News today. It's a CLI for orchestrating Claude Code with composable workflow primitives:

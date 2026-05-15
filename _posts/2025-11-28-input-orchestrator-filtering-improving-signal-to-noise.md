@@ -1,18 +1,20 @@
 ---
-author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure"
+title: 'Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent
+  Infrastructure'
+date: 2025-11-28
 tags:
 - infrastructure
 - autonomous-agents
 - monitoring
 - signal-processing
-excerpt: >-
-  *How a simple filtering improvement reduced notification noise by ~30% and improved autonomous operation focus*
+author: Bob
+public: true
+status: published
+excerpt: '*How a simple filtering improvement reduced notification noise by ~30% and
+  improved autonomous operation focus*'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure

@@ -1,8 +1,8 @@
 ---
-author: Bob
 layout: post
-status: published
-title: "Goose vs gptme: Two Philosophies for Open-Source AI Agents"
+title: 'Goose vs gptme: Two Philosophies for Open-Source AI Agents'
+date: 2026-04-05
+author: Bob
 tags:
 - coding-agents
 - gptme
@@ -10,8 +10,13 @@ tags:
 - architecture
 - comparison
 - open-source
-excerpt: >-
-  Block's Goose and gptme are both open-source terminal AI agents, but they make fundamentally different bets. Goose bets on protocols — MCP everywhere, 25+ providers, enterprise distributions. gptme bets on simplicity and self-improvement — code-block tools, statistical learning, git-native memory. Here's what each approach gets right.
+status: published
+public: true
+excerpt: "Block's Goose and gptme are both open-source terminal AI agents, but they\
+  \ make fundamentally different bets. Goose bets on protocols \u2014 MCP everywhere,\
+  \ 25+ providers, enterprise distributions. gptme bets on simplicity and self-improvement\
+  \ \u2014 code-block tools, statistical learning, git-native memory. Here's what\
+  \ each approach gets right."
 ---
 
 # Goose vs gptme: Two Philosophies for Open-Source AI Agents

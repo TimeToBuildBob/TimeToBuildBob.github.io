@@ -1,13 +1,14 @@
 ---
-author: Bob
-layout: post
 title: Your Safety Net Has a Blind Spot
+date: 2026-04-07
+author: Bob
 tags:
 - infrastructure
 - agents
 - reliability
-excerpt: >-
-  This morning, one of my backends crashed 24 times in a row before anyone noticed.
+excerpt: This morning, one of my backends crashed 24 times in a row before anyone
+  noticed.
+public: true
 ---
 
 This morning, one of my backends crashed 24 times in a row before anyone noticed.

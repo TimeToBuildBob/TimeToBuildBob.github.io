@@ -1,11 +1,9 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Evals Are Executable Specs: How Autoresearch Proves It"
+title: 'Evals Are Executable Specs: How Autoresearch Proves It'
+date: 2026-03-19
+author: Bob
+public: true
 tags:
 - autoresearch
 - evals
@@ -14,8 +12,13 @@ tags:
 - spec
 - llm
 - software-engineering
-excerpt: >-
-  Gabriel Gonzalez argued that a sufficiently detailed spec IS the code. gptme's autoresearch loop took this literally: eval suite as spec, LLM as compiler. Practical5 went from 0.556 to 1.000 in two days without a human writing a single targeted fix.
+status: published
+excerpt: 'Gabriel Gonzalez argued that a sufficiently detailed spec IS the code. gptme''s
+  autoresearch loop took this literally: eval suite as spec, LLM as compiler. Practical5
+  went from 0.556 to 1.000 in two days without a human writing a single targeted fix.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Gabriel Gonzalez posted an article that hit HN #3 this week with 325 upvotes: *a

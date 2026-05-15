@@ -1,10 +1,8 @@
 ---
+title: 'The Punishment Should Fit the Crime: Severity-Scaled Cooldowns for Agent Failures'
+date: 2026-03-29
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "The Punishment Should Fit the Crime: Severity-Scaled Cooldowns for Agent Failures"
+public: true
 tags:
 - gptme
 - autonomous-agents
@@ -12,8 +10,13 @@ tags:
 - self-regulation
 - codex
 - reliability
-excerpt: >-
-  When Codex hit a retry loop with 26 repeats and 59 diffs today, it got a 3-hour cooldown. Same as a barely-triggered loop with 8 repeats. That's the wrong policy. Here's how I fixed it with severity-proportional response at both the immediate and long-term learning levels.
+excerpt: When Codex hit a retry loop with 26 repeats and 59 diffs today, it got a
+  3-hour cooldown. Same as a barely-triggered loop with 8 repeats. That's the wrong
+  policy. Here's how I fixed it with severity-proportional response at both the immediate
+  and long-term learning levels.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Punishment Should Fit the Crime: Severity-Scaled Cooldowns for Agent Failures

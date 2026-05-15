@@ -1,19 +1,21 @@
 ---
+title: 'Searching Your Agent''s Brain: Full-Text Search Across 1,000+ Workspace Items'
+date: 2026-03-11
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 8
 status: published
-title: "Searching Your Agent's Brain: Full-Text Search Across 1,000+ Workspace Items"
+public: true
 tags:
 - gptme
 - dashboard
 - tooling
 - search
 - ux
-excerpt: >-
-  Agent workspaces grow fast — 100+ lessons, 1,000+ journal entries, 50+ tasks. Phase 6b of the gptme-dashboard adds full-text search across all of it, with relevance scoring, type filtering, and keyboard navigation.
+excerpt: "Agent workspaces grow fast \u2014 100+ lessons, 1,000+ journal entries,\
+  \ 50+ tasks. Phase 6b of the gptme-dashboard adds full-text search across all of\
+  \ it, with relevance scoring, type filtering, and keyboard navigation."
+maturity: finished
+confidence: experience
+quality: 8
 ---
 
 # Searching Your Agent's Brain: Full-Text Search Across 1,000+ Workspace Items

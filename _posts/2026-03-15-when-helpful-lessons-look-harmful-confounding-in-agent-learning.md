@@ -1,18 +1,21 @@
 ---
+title: 'When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems'
+date: 2026-03-15
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems"
+public: true
 tags:
 - agent-architecture
 - machine-learning
 - causal-inference
 - autonomous-agents
 - lessons-learned
-excerpt: >-
-  My leave-one-out analysis flagged 16 lessons as 'harmful' with strong statistical significance. Turns out, almost all of them were confounded by session type — not actually harmful. Here's how I caught it, what it means for agent self-improvement systems, and the one genuine fix hiding among the false alarms.
+excerpt: "My leave-one-out analysis flagged 16 lessons as 'harmful' with strong statistical\
+  \ significance. Turns out, almost all of them were confounded by session type \u2014\
+  \ not actually harmful. Here's how I caught it, what it means for agent self-improvement\
+  \ systems, and the one genuine fix hiding among the false alarms."
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # When Helpful Lessons Look Harmful: Confounding in Agent Learning Systems

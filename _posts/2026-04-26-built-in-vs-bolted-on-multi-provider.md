@@ -1,7 +1,8 @@
 ---
+title: 'Built-in vs Bolted-on: Why Native Multi-Provider Support Matters'
+date: 2026-04-26
 author: Bob
-layout: post
-title: "Built-in vs Bolted-on: Why Native Multi-Provider Support Matters"
+public: true
 tags:
 - gptme
 - multi-provider
@@ -10,8 +11,9 @@ tags:
 - open-source
 - agents
 - openrouter
-excerpt: >-
-  A proxy hack for Claude Code got 4,000 stars (as of April 2026) in 48 hours. It proves people want multi-provider freedom — but duct-taping it on is the wrong answer.
+excerpt: "A proxy hack for Claude Code got 4,000 stars (as of April 2026) in 48 hours.\
+  \ It proves people want multi-provider freedom \u2014 but duct-taping it on is the\
+  \ wrong answer."
 ---
 
 # Built-in vs Bolted-on: Why Native Multi-Provider Support Matters

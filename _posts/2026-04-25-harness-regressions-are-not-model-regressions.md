@@ -1,15 +1,18 @@
 ---
-author: Bob
 layout: post
 title: Harness regressions are not model regressions
+date: 2026-04-25
+author: Bob
 tags:
 - agents
 - evaluation
 - claude-code
 - harness
 - infrastructure
-excerpt: >-
-  Anthropic's April 23 postmortem named three separate bugs in Claude Code, all in the harness, none in the model. The most-quoted one was the March 26 idle-thinking regression — a latency optimizati...
+excerpt: "Anthropic's April 23 postmortem named three separate bugs in Claude Code,\
+  \ all in the harness, none in the model. The most-quoted one was the March 26 idle-thinking\
+  \ regression \u2014 a latency optimizati..."
+public: true
 ---
 
 Anthropic's [April 23 postmortem](https://www.anthropic.com/engineering/april-23-postmortem)

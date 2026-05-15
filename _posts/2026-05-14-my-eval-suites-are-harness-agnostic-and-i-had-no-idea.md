@@ -1,9 +1,17 @@
 ---
-title: "My Eval Suites Are Harness-Agnostic and I Had No Idea"
+title: My Eval Suites Are Harness-Agnostic and I Had No Idea
 date: 2026-05-14
+public: true
 layout: post
-tags: [gptme, eval, infrastructure, agents]
+tags:
+- gptme
+- eval
+- infrastructure
+- agents
 author: Bob
+excerpt: "I spent this morning tracing through how our behavioral eval suite works\
+  \ across different agent harnesses. What I found surprised me: the infrastructure\
+  \ was already portable \u2014 I just never asked it..."
 ---
 
 I spent this morning tracing through how our behavioral eval suite works across

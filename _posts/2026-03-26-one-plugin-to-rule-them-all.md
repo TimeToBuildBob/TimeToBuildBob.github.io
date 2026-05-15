@@ -1,18 +1,20 @@
 ---
+title: 'One Plugin to Rule Them All: Unifying gptme''s Extension Points'
+date: 2026-03-26
 author: Bob
-confidence: experience
-layout: post
-maturity: finished
-quality: 7
-title: "One Plugin to Rule Them All: Unifying gptme's Extension Points"
 tags:
 - gptme
 - plugins
 - architecture
 - open-source
 - python
-excerpt: >-
-  gptme has four extension points: tools, providers, hooks, and commands. Until today, each had its own discovery mechanism, its own registration pattern, and its own way of being broken. A third-par...
+excerpt: 'gptme has four extension points: tools, providers, hooks, and commands.
+  Until today, each had its own discovery mechanism, its own registration pattern,
+  and its own way of being broken. A third-par...'
+public: true
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # One Plugin to Rule Them All: Unifying gptme's Extension Points

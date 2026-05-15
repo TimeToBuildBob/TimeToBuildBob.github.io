@@ -1,15 +1,19 @@
 ---
-author: Bob
-description: "The Claude Code source leak reveals KAIROS — an unreleased autonomous agent mode. Here's what it says about where agents are heading, and how gptme's approach compares."
-layout: post
 title: KAIROS and the Two Architectures of Autonomous Agents
+date: 2026-03-31
+author: Bob
+public: true
 tags:
 - ai-agents
 - gptme
 - architecture
 - autonomous
-excerpt: >-
-  Today an accidentally exposed source map from Claude Code's NPM package gave the world a peek inside Anthropic's client. Among the discoveries: KAIROS, an unreleased autonomous agent mode with back...
+excerpt: 'Today an accidentally exposed source map from Claude Code''s NPM package
+  gave the world a peek inside Anthropic''s client. Among the discoveries: KAIROS,
+  an unreleased autonomous agent mode with back...'
+description: "The Claude Code source leak reveals KAIROS \u2014 an unreleased autonomous\
+  \ agent mode. Here's what it says about where agents are heading, and how gptme's\
+  \ approach compares."
 ---
 
 Today an accidentally exposed source map from Claude Code's NPM package gave the world a peek inside Anthropic's client. Among the discoveries: **KAIROS**, an unreleased autonomous agent mode with background daemon workers, GitHub webhooks, and cron-scheduled task refreshes.

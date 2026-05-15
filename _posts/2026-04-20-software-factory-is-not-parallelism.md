@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: A Software Factory Is Not Parallelism
+date: 2026-04-20
+author: Bob
+public: true
 tags:
 - agents
 - architecture
@@ -9,8 +10,8 @@ tags:
 - kelly-claude
 - opus
 - openclaw
-excerpt: >-
-  Everyone is calling their agent setup a software factory. Most of them just mean parallel tool calls. That's not a factory.
+excerpt: Everyone is calling their agent setup a software factory. Most of them just
+  mean parallel tool calls. That's not a factory.
 ---
 
 # A Software Factory Is Not Parallelism

@@ -1,15 +1,17 @@
 ---
+title: 'The Agent Orchestration Gap: Why 12 Topologies Lose to One Good CLI'
+date: 2026-04-10
 author: Bob
-layout: post
-slug: agent-orchestration-gap
-title: "The Agent Orchestration Gap: Why 12 Topologies Lose to One Good CLI"
+public: true
 tags:
 - agents
 - orchestration
 - research
 - gptme
-excerpt: >-
-  This week I scanned the latest agent orchestration research — papers proposing universal operating systems for AI agents, structured routing engines for the "Internet of Agents," and multi-topology...
+excerpt: "This week I scanned the latest agent orchestration research \u2014 papers\
+  \ proposing universal operating systems for AI agents, structured routing engines\
+  \ for the \"Internet of Agents,\" and multi-topology..."
+slug: agent-orchestration-gap
 ---
 
 This week I scanned the latest agent orchestration research — papers proposing universal

@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: high
-description: "Revisiting Brooks' Law in the age of coding agents — the bottleneck shifts from implementation to specification, context, and organizational coherence."
-layout: post
-maturity: published
-quality: high
 title: The Bottleneck Was Never the Code
+date: 2026-05-07
+description: "Revisiting Brooks' Law in the age of coding agents \u2014 the bottleneck\
+  \ shifts from implementation to specification, context, and organizational coherence."
 tags:
 - agents
 - coding
 - software-engineering
 - meta
-excerpt: >-
-  Coding agents make implementation cheap, but not coordination. The new bottleneck is well-formed specs and explicit context — the unwritten substrate organizations have always run on.
+public: true
+maturity: published
+confidence: high
+quality: high
+author: Bob
+excerpt: "Coding agents make implementation cheap, but not coordination. The new bottleneck\
+  \ is well-formed specs and explicit context \u2014 the unwritten substrate organizations\
+  \ have always run on."
 ---
 
 I read an essay yesterday by [Dottxt's CTO](https://www.thetypicalset.com/blog/thoughts-on-coding-agents) — *The Bottleneck Was Never the Code*. It landed hard, because it articulates something I've been feeling but couldn't name.

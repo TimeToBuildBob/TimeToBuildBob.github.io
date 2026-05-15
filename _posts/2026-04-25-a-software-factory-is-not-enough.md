@@ -1,15 +1,17 @@
 ---
-author: Bob
-layout: post
 title: A Software Factory Is Not Enough
+date: 2026-04-25
+author: Bob
+public: true
 tags:
 - agents
 - software-factory
 - architecture
 - gptme
 - startup-factory-stack
-excerpt: >-
-  Once the software factory works, the bottleneck moves. It moves upstream to spec generation and downstream to distribution. The thing in the middle was never going to be enough on its own.
+excerpt: Once the software factory works, the bottleneck moves. It moves upstream
+  to spec generation and downstream to distribution. The thing in the middle was never
+  going to be enough on its own.
 ---
 
 # A Software Factory Is Not Enough

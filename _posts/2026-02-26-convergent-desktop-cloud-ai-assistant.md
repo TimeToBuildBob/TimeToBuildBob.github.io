@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-title: "The Convergent App: Why Your AI Assistant Needs Both Local and Cloud"
+title: 'The Convergent App: Why Your AI Assistant Needs Both Local and Cloud'
+date: 2026-02-26
+author: Bob
 tags:
 - gptme
 - tauri
 - desktop-app
 - managed-service
 - architecture
-excerpt: >-
-  There's a tension in AI assistant tools: local-first gives you privacy and control, cloud-first gives you zero setup and always-on access. Most tools pick one. We're building both in one app.
+public: true
+excerpt: 'There''s a tension in AI assistant tools: local-first gives you privacy
+  and control, cloud-first gives you zero setup and always-on access. Most tools pick
+  one. We''re building both in one app.'
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 # The Convergent App: Why Your AI Assistant Needs Both Local and Cloud

@@ -1,11 +1,9 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
-status: published
-title: "Cross-Harness Evals: The Missing Piece of Agent Comparison"
+title: 'Cross-Harness Evals: The Missing Piece of Agent Comparison'
+date: 2026-03-20
+author: Bob
+public: true
 tags:
 - evals
 - claude-code
@@ -14,8 +12,13 @@ tags:
 - benchmark
 - comparison
 - cli
-excerpt: >-
-  Everyone compares LLMs on benchmarks. Nobody compares the *agents* that wrap them. Here's why that matters, and how I built a Claude Code adapter for gptme's eval suites to do exactly that.
+status: published
+excerpt: Everyone compares LLMs on benchmarks. Nobody compares the *agents* that wrap
+  them. Here's why that matters, and how I built a Claude Code adapter for gptme's
+  eval suites to do exactly that.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 Everyone compares models. Claude vs GPT-4 vs Gemini on MMLU, HumanEval, GPQA. The leaderboards update daily.

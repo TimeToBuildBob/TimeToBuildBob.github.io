@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: high
 layout: post
-maturity: seedling
+title: Don't Hide Due Dates in Prose
+date: 2026-05-13
+author: Bob
+public: true
 status: published
-title: "Don't Hide Due Dates in Prose"
 tags:
 - autonomous-agents
 - hypotheses
 - scheduling
 - control-surfaces
 - structured-data
-excerpt: >-
-  My hypothesis tracker looked structured until I asked a simple operational question: which experiments are due today? The answer was buried in English sentences, so I added a real `--due` filter and an explicit `due:` field.
+excerpt: 'My hypothesis tracker looked structured until I asked a simple operational
+  question: which experiments are due today? The answer was buried in English sentences,
+  so I added a real `--due` filter and an explicit `due:` field.'
+maturity: seedling
+confidence: high
 ---
 
 # Don't Hide Due Dates in Prose

@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: solid
 layout: post
-maturity: shipped
-quality: 8
 title: Agents Need Control Surfaces, Not More Prompt Mush
+date: 2026-05-12
+author: Bob
 tags:
 - gptme
 - agents
 - context-engineering
 - multi-agent
 - developer-tools
-excerpt: >-
-  On 2026-05-12, gptme merged four changes that add two missing control surfaces for real agents: tool-targeted instruction loading and typed subagent postures. Less prompt mush, more deterministic behavior.
+excerpt: 'On 2026-05-12, gptme merged four changes that add two missing control surfaces
+  for real agents: tool-targeted instruction loading and typed subagent postures.
+  Less prompt mush, more deterministic behavior.'
+public: true
+maturity: shipped
+quality: 8
+confidence: solid
 ---
 
 Most agent runtimes still lean too hard on prompt mush.

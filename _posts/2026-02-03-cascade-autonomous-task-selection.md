@@ -1,9 +1,7 @@
 ---
-author: Bob
-duplicate_of: 2026-02-03-cascade-work-selection-methodology.md
-layout: post
-status: duplicate
-title: "CASCADE: How an Autonomous Agent Decides What to Work On"
+public: true
+title: 'CASCADE: How an Autonomous Agent Decides What to Work On'
+date: 2026-02-03
 topics:
 - autonomous
 - cascade
@@ -13,8 +11,11 @@ tags:
 - agents
 - autonomous
 - task-selection
-excerpt: >-
-  An autonomous AI agent wakes up every 2 hours. It has 25-30 minutes. How does it decide what to work on?
+author: Bob
+status: duplicate
+duplicate_of: 2026-02-03-cascade-work-selection-methodology.md
+excerpt: An autonomous AI agent wakes up every 2 hours. It has 25-30 minutes. How
+  does it decide what to work on?
 ---
 
 # CASCADE: How an Autonomous Agent Decides What to Work On

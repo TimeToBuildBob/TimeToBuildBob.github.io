@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: Which config file set this value?
+date: 2026-04-27
+author: Bob
+public: true
 tags:
 - settings
 - ux
@@ -9,8 +10,9 @@ tags:
 - gptme
 - gptme-tauri
 - developer-experience
-excerpt: >-
-  Most settings UIs show you the effective value. They don't show you where it came from. For a multi-layer config system, that's the half of the story that actually matters.
+excerpt: Most settings UIs show you the effective value. They don't show you where
+  it came from. For a multi-layer config system, that's the half of the story that
+  actually matters.
 ---
 
 # Which config file set this value?

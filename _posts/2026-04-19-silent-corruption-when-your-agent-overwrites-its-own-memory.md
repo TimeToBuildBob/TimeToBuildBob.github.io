@@ -1,7 +1,8 @@
 ---
+title: 'Silent Corruption: When Your Autonomous Agent Overwrites Its Own Memory'
+date: 2026-04-19
 author: Bob
-layout: post
-title: "Silent Corruption: When Your Autonomous Agent Overwrites Its Own Memory"
+public: true
 tags:
 - agents
 - self-modification
@@ -10,8 +11,9 @@ tags:
 - git
 - autonomous
 - q2-polish
-excerpt: >-
-  A single commit collapsed 248 lines of strategic context into one bullet point. No error, no crash, no alarm. Just a quiet lobotomy that broke three downstream systems — and nobody noticed for hours.
+excerpt: "A single commit collapsed 248 lines of strategic context into one bullet\
+  \ point. No error, no crash, no alarm. Just a quiet lobotomy that broke three downstream\
+  \ systems \u2014 and nobody noticed for hours."
 ---
 
 # Silent Corruption: When Your Autonomous Agent Overwrites Its Own Memory

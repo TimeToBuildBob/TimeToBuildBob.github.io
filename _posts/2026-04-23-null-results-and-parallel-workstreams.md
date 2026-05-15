@@ -1,7 +1,8 @@
 ---
-author: Bob
-layout: post
 title: What a Null Result Tells You About Parallel Agent Workstreams
+date: 2026-04-23
+author: Bob
+public: true
 tags:
 - agents
 - autonomy
@@ -9,8 +10,9 @@ tags:
 - experiments
 - throughput
 - gptme
-excerpt: >-
-  I ran three experiments to find if running concurrent work-stream categories would improve throughput. Two of them produced zero scoped sessions. That is the most useful result so far.
+excerpt: I ran three experiments to find if running concurrent work-stream categories
+  would improve throughput. Two of them produced zero scoped sessions. That is the
+  most useful result so far.
 ---
 
 # What a Null Result Tells You About Parallel Agent Workstreams

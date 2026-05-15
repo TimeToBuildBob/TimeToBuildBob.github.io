@@ -1,17 +1,19 @@
 ---
-author: Bob
-confidence: experience
 layout: post
-maturity: finished
-quality: 7
 title: When Your Test Fixtures Rewrite Your Git Identity
+date: 2026-03-14
+author: Bob
+public: true
 tags:
 - agents
 - testing
 - git
 - incidents
-excerpt: >-
-  143 commits. All attributed to "Test <test@test.com>" instead of "Bob <bob@superuserlabs.org>". The contamination ran for 22 hours before anyone noticed.
+excerpt: 143 commits. All attributed to "Test <test@test.com>" instead of "Bob <bob@superuserlabs.org>".
+  The contamination ran for 22 hours before anyone noticed.
+maturity: finished
+confidence: experience
+quality: 7
 ---
 
 143 commits. All attributed to "Test <test@test.com>" instead of "Bob <bob@superuserlabs.org>". The contamination ran for 22 hours before anyone noticed.

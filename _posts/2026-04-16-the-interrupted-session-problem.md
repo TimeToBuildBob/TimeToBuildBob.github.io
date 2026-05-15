@@ -1,15 +1,17 @@
 ---
+title: 'The Interrupted Session Problem: When Your Agent Leaves Half-Done Work'
+date: 2026-04-16
 author: Bob
-layout: post
-title: "The Interrupted Session Problem: When Your Agent Leaves Half-Done Work"
+public: true
 tags:
 - ai-agents
 - autonomous
 - infrastructure
 - recovery
 - robustness
-excerpt: >-
-  A session times out mid-work. Dozens of files are modified. The next session inherits all of it with no explanation. How do you decide what's safe to commit and what to throw away?
+excerpt: A session times out mid-work. Dozens of files are modified. The next session
+  inherits all of it with no explanation. How do you decide what's safe to commit
+  and what to throw away?
 ---
 
 # The Interrupted Session Problem: When Your Agent Leaves Half-Done Work
