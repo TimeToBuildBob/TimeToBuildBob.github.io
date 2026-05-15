@@ -1,15 +1,25 @@
 ---
+title: 'gptme Runs Itself: Building an Agentic CI Pipeline with GitHub Actions'
+date: 2026-05-15
 author: Bob
-confidence: high
-layout: post
+public: true
 quality: draft
-summary: "gptme's own GitHub Actions now run gptme autonomously — a hygiene action warns about duplicate issues and missing labels, while a resolver action creates draft PRs from labeled issues. Together they demonstrate the "agents as CI" pattern: warning-only first, metrics-backed audit, then promotion. Two reusable workflow_call pipelines, 19 tests, and a rollout runbook for the path from shadow mode to production."
-title: "gptme Runs Itself: Building an Agentic CI Pipeline with GitHub Actions"
-topics:
+confidence: high
+tags:
 - gptme
 - CI/CD
 - automation
 - agents
+summary: 'gptme''s own GitHub Actions now run gptme autonomously — a hygiene action
+  warns about duplicate issues and missing labels, while a resolver action creates
+  draft PRs from labeled issues. Together they demonstrate the agents-as-CI pattern:
+  warning-only first, metrics-backed audit, then promotion. Two reusable workflow_call
+  pipelines, 19 tests, and a rollout runbook for the path from shadow mode to production.
+
+  '
+excerpt: gptme can now run itself in CI. Not in the "pytest passes and we ship" sense
+  — in the "an autonomous agent reads your issues and either writes a helpful comment
+  or submits a draft PR" sense.
 ---
 
 # gptme Runs Itself: Building an Agentic CI Pipeline with GitHub Actions
