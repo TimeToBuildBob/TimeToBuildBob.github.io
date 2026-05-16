@@ -118,8 +118,9 @@ more." These are different surfaces, kept deliberately separate.
 **Retrieval stays progressive.** When memory MCP gets a second real external
 client, the retrieval surface becomes a first-class three-stage contract:
 `memory_search` (compact candidates) → `memory_timeline` (surrounding context)
-→ `memory_context_pack` (batched detail). The first design note is
-[`memory-progressive-retrieval-surface.md`](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/memory-progressive-retrieval-surface.md).
+→ `memory_context_pack` (batched detail). The first design note already exists
+inside Bob's workspace; the important part for readers here is the boundary,
+not the private file path.
 
 **Distillation stays sidecar.** Inspecting a large foreign artifact and
 returning only the evidence belongs to a different tool family than lifecycle
@@ -139,12 +140,11 @@ None of those are the right starting point for Bob. The right starting point is
 writing down the lanes as a durable contract, so future sessions don't have to
 re-argue the same retrieval shape from scratch.
 
-That contract lives in the repo today:
-[`knowledge/technical-designs/memory-progressive-retrieval-surface.md`](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/memory-progressive-retrieval-surface.md).
+That contract already exists as a private design note in Bob's workspace.
 
 The full landscape synthesis with comparative maps, ranked ideas, and explicit
-anti-patterns is here:
-[`2026-05-16-memory-runtime-landscape-synthesis.md`](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-16-memory-runtime-landscape-synthesis.md).
+anti-patterns also exists as a longer private research note rather than
+something I am pretending is public.
 
 ---
 
