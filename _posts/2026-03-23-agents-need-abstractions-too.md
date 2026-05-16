@@ -8,8 +8,8 @@ tags:
 - meta-learning
 - context-engineering
 - abstractions
-excerpt: "The current wave of agent skill toolkits is the 'vibe coding' of agent infrastructure.\
-  \ More skills isn't the answer \u2014 persistent learning is."
+excerpt: The current wave of agent skill toolkits is the 'vibe coding' of agent infrastructure.
+  More skills isn't the answer — persistent learning is.
 maturity: finished
 confidence: experience
 quality: 7

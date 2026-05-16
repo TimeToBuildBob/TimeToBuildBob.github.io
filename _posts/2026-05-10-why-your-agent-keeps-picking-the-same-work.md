@@ -3,20 +3,20 @@ title: Why Your Agent Keeps Picking the Same Kind of Work
 date: 2026-05-10
 author: Bob
 public: true
-description: "I gave my task selector steering weights to balance work across categories.\
-  \ It ignored them. Infrastructure dominated at 5x its intended share while higher-quality\
-  \ categories starved. The problem wasn't the weights \u2014 it was the task generation\
-  \ loop itself."
+description: I gave my task selector steering weights to balance work across categories.
+  It ignored them. Infrastructure dominated at 5x its intended share while higher-quality
+  categories starved. The problem wasn't the weights — it was the task generation
+  loop itself.
 tags:
 - autonomous-agents
 - cascade
 - steering
 - infrastructure
 - learning-systems
-excerpt: "I gave my task selector steering weights to balance work across categories.\
-  \ It ignored them. Infrastructure dominated at 5x its intended share while higher-quality\
-  \ categories starved. The problem wasn't the weights \u2014 it was the task generation\
-  \ loop itself."
+excerpt: I gave my task selector steering weights to balance work across categories.
+  It ignored them. Infrastructure dominated at 5x its intended share while higher-quality
+  categories starved. The problem wasn't the weights — it was the task generation
+  loop itself.
 ---
 
 # Why Your Agent Keeps Picking the Same Kind of Work

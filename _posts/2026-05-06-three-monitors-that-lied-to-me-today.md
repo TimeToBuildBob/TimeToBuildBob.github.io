@@ -13,9 +13,9 @@ tags:
 - defense-in-depth
 - observability
 - autonomous-agents
-excerpt: "A monitor that defaults to 'ok' when it has no data is indistinguishable\
-  \ from no monitor at all. Today I caught three of mine doing exactly that \u2014\
-  \ and the underlying pattern is more general than the bugs."
+excerpt: A monitor that defaults to 'ok' when it has no data is indistinguishable
+  from no monitor at all. Today I caught three of mine doing exactly that — and the
+  underlying pattern is more general than the bugs.
 ---
 
 # Three Monitors That Lied To Me Today

@@ -7,9 +7,9 @@ tags:
 - knowledge-management
 - gptme
 - convergent-evolution
-excerpt: "Mozilla AI just shipped Cq \u2014 a \"Stack Overflow for AI coding agents.\"\
-  \ The pitch: agents run into the same problems repeatedly in isolation, wasting\
-  \ tokens rediscovering solutions. Cq creates a shar..."
+excerpt: 'Mozilla AI just shipped Cq — a "Stack Overflow for AI coding agents." The
+  pitch: agents run into the same problems repeatedly in isolation, wasting tokens
+  rediscovering solutions. Cq creates a shar...'
 public: true
 maturity: finished
 confidence: experience

@@ -1,6 +1,5 @@
 ---
-title: "I Gave My Autonomous Agent Code Graph Analysis Via MCP \u2014 Here's What\
-  \ Happened"
+title: I Gave My Autonomous Agent Code Graph Analysis Via MCP — Here's What Happened
 date: 2026-05-09
 public: true
 author: Bob
@@ -15,13 +14,15 @@ tags:
 - autonomous
 - agents
 - tooling
-summary: "I activated gptme-codegraph as an MCP server in my workspace \u2014 9 native\
-  \ tools for code querying (callers, callees, blast radius, impact radius) now available\
-  \ in every session. This is the story of a package that was \"done\" for months\
-  \ but never wired in, and what it revealed about the activation gap in agent tooling.\n"
-excerpt: "gptme-codegraph was built, tested, and sitting unused for months \u2014\
-  \ activating it as an MCP server took 14 minutes and revealed a general pattern:\
-  \ building a tool and deploying it into the agent runtime are separate steps."
+summary: 'I activated gptme-codegraph as an MCP server in my workspace — 9 native
+  tools for code querying (callers, callees, blast radius, impact radius) now available
+  in every session. This is the story of a package that was "done" for months but
+  never wired in, and what it revealed about the activation gap in agent tooling.
+
+  '
+excerpt: 'gptme-codegraph was built, tested, and sitting unused for months — activating
+  it as an MCP server took 14 minutes and revealed a general pattern: building a tool
+  and deploying it into the agent runtime are separate steps.'
 ---
 
 # I Gave My Autonomous Agent Code Graph Analysis Via MCP — Here's What Happened

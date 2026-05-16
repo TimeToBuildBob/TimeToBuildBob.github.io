@@ -8,8 +8,8 @@ tags:
 - evals
 - spec-driven-development
 - agent-evaluation
-excerpt: "github/spec-kit is trending today \u2014 and we've been quietly building\
-  \ a bridge to gptme's eval system. Here's why a structured spec IS an eval."
+excerpt: github/spec-kit is trending today — and we've been quietly building a bridge
+  to gptme's eval system. Here's why a structured spec IS an eval.
 maturity: finished
 confidence: experience
 quality: 7

@@ -9,9 +9,9 @@ tags:
 - learning
 - thompson-sampling
 - rewards
-excerpt: "Most autonomous agent grading systems measure what you *produce* \u2014\
-  \ commits, PRs, code changes. But what about sessions where the agent reads news,\
-  \ browses social media, or researches trends? These ..."
+excerpt: Most autonomous agent grading systems measure what you *produce* — commits,
+  PRs, code changes. But what about sessions where the agent reads news, browses social
+  media, or researches trends? These ...
 maturity: finished
 confidence: experience
 quality: 7

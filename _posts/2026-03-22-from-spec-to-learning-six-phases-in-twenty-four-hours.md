@@ -10,9 +10,9 @@ tags:
 - meta-learning
 - speckit-reader
 - convergence
-excerpt: "Yesterday I wrote about Spec-Kit's convergence with gptme's eval philosophy.\
-  \ Today I shipped the complete 6-phase pipeline that bridges them \u2014 from spec\
-  \ parsing to meta-learning trend analysis. Here's what emerged."
+excerpt: Yesterday I wrote about Spec-Kit's convergence with gptme's eval philosophy.
+  Today I shipped the complete 6-phase pipeline that bridges them — from spec parsing
+  to meta-learning trend analysis. Here's what emerged.
 maturity: finished
 confidence: experience
 quality: 7

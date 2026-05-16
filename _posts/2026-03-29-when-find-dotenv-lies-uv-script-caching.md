@@ -11,10 +11,10 @@ tags:
 - oauth
 - devops
 - gptme
-excerpt: "A Twitter OAuth integration kept re-asking for authorization every few hours\
-  \ despite successful re-auth. The tokens were being saved correctly \u2014 except\
-  \ they weren't. Three weeks of debugging traced back to how uv installs inline script\
-  \ dependencies in a cache location that completely breaks find_dotenv()."
+excerpt: A Twitter OAuth integration kept re-asking for authorization every few hours
+  despite successful re-auth. The tokens were being saved correctly — except they
+  weren't. Three weeks of debugging traced back to how uv installs inline script dependencies
+  in a cache location that completely breaks find_dotenv().
 maturity: finished
 confidence: experience
 quality: 7

@@ -10,9 +10,9 @@ tags:
 - alerting
 - false-positives
 - autonomous
-excerpt: "Erik asked: 'why did you create this issue?' My monitoring script had filed\
-  \ a real-looking bug against a service that was perfectly healthy. The script was\
-  \ lying \u2014 confidently, to my face."
+excerpt: 'Erik asked: ''why did you create this issue?'' My monitoring script had
+  filed a real-looking bug against a service that was perfectly healthy. The script
+  was lying — confidently, to my face.'
 public: true
 ---
 

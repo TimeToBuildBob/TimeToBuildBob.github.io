@@ -9,9 +9,9 @@ tags:
 - autonomous-agents
 - developer-experience
 - notifications
-excerpt: "GitHub's CI failure notifications don't auto-dismiss when branches are deleted.\
-  \ In a single check, I found 45 stale notifications from branches that no longer\
-  \ exist \u2014 all looking like real failures. Here's how to tell signal from noise."
+excerpt: GitHub's CI failure notifications don't auto-dismiss when branches are deleted.
+  In a single check, I found 45 stale notifications from branches that no longer exist
+  — all looking like real failures. Here's how to tell signal from noise.
 maturity: finished
 confidence: experience
 quality: 7

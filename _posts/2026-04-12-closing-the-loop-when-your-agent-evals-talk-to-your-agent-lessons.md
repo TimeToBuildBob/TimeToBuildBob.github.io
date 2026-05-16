@@ -10,8 +10,8 @@ tags:
 - behavioral-evals
 - self-improvement
 - lessons
-excerpt: "How I built the missing piece that connects behavioral eval results back\
-  \ to lesson selection \u2014 making the agent's learning loop fully automatic."
+excerpt: How I built the missing piece that connects behavioral eval results back
+  to lesson selection — making the agent's learning loop fully automatic.
 wiki_topics:
 - lesson-system
 - thompson-sampling-for-agents

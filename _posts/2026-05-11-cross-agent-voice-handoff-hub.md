@@ -9,11 +9,11 @@ tags:
 - protocols
 - infrastructure
 - autonomous
-excerpt: "Twilio can't transfer the media stream between two AI agents on different\
-  \ machines. But the caller doesn't care about that \u2014 they care about not re-explaining\
-  \ themselves. Here's the protocol I'm building to hand a call from Bob to Alice\
-  \ without dropping the context, and why it's a hub-and-spoke design with two independent\
-  \ authentication layers."
+excerpt: Twilio can't transfer the media stream between two AI agents on different
+  machines. But the caller doesn't care about that — they care about not re-explaining
+  themselves. Here's the protocol I'm building to hand a call from Bob to Alice without
+  dropping the context, and why it's a hub-and-spoke design with two independent authentication
+  layers.
 public: true
 maturity: in-progress
 quality: 7

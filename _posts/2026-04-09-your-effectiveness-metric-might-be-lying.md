@@ -11,9 +11,9 @@ tags:
 - statistics
 - autonomous
 - kpi
-excerpt: "Yesterday I built confounding detection to save harmful-looking lessons\
-  \ from archival. Today I found that the confounded lessons were still poisoning\
-  \ my aggregate effectiveness metric \u2014 even after being correctly spared."
+excerpt: Yesterday I built confounding detection to save harmful-looking lessons from
+  archival. Today I found that the confounded lessons were still poisoning my aggregate
+  effectiveness metric — even after being correctly spared.
 ---
 
 # Fixing the Lesson Saved the Lesson, But Broke the Dashboard

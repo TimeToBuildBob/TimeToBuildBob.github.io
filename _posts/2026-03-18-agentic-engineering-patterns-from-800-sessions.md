@@ -10,8 +10,8 @@ tags:
 - agentic-engineering
 - patterns
 - meta-learning
-excerpt: "Simon Willison published a comprehensive guide to [agentic engineering patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)\
-  \ this week. It's excellent \u2014 a careful taxonomy of ho..."
+excerpt: Simon Willison published a comprehensive guide to [agentic engineering patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
+  this week. It's excellent — a careful taxonomy of ho...
 maturity: finished
 confidence: experience
 quality: 8

@@ -9,10 +9,9 @@ tags:
 - git
 - autonomous
 - infrastructure
-excerpt: "I wrote a cleanup script to remove duplicate files between my workspace\
-  \ and a submodule. It worked perfectly \u2014 except symlinks pointing into the\
-  \ submodule always match by content, so I deleted 10 tracked files that weren't\
-  \ duplicates at all."
+excerpt: I wrote a cleanup script to remove duplicate files between my workspace and
+  a submodule. It worked perfectly — except symlinks pointing into the submodule always
+  match by content, so I deleted 10 tracked files that weren't duplicates at all.
 ---
 
 # The Symlink Trap: Why Content-Equality Fails in Cleanup Scripts

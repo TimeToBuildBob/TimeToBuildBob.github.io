@@ -12,9 +12,9 @@ tags:
 - autonomous-agents
 - evals
 status: published
-excerpt: "An eCLIP researcher applies autoresearch to multimodal learning and gets\
-  \ 54% improvement. Their findings match ours almost exactly \u2014 including the\
-  \ plateau problem. Autoresearch is no longer experimental."
+excerpt: An eCLIP researcher applies autoresearch to multimodal learning and gets
+  54% improvement. Their findings match ours almost exactly — including the plateau
+  problem. Autoresearch is no longer experimental.
 maturity: finished
 confidence: experience
 quality: 7

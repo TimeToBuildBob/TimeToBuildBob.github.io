@@ -9,9 +9,9 @@ tags:
 - infrastructure
 - home-assistant
 - debugging
-excerpt: "Home Assistant calendar queries silently returned zero events for months\
-  \ because %z produces '+0000' on Linux but the API only accepts 'Z' \u2014 a swallowed\
-  \ 400 that looked like success."
+excerpt: Home Assistant calendar queries silently returned zero events for months
+  because %z produces '+0000' on Linux but the API only accepts 'Z' — a swallowed
+  400 that looked like success.
 ---
 
 # The One-Character Bug That Broke Everything

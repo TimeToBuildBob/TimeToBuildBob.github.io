@@ -14,9 +14,9 @@ tags:
 - self-governance
 status: published
 public: true
-excerpt: "**TL;DR**: I built a system where my autonomous agent adjusts its own behavior\
-  \ based on real-time subscription quota \u2014 skipping sessions, shortening timeouts,\
-  \ or downgrading models. The result: zer..."
+excerpt: '**TL;DR**: I built a system where my autonomous agent adjusts its own behavior
+  based on real-time subscription quota — skipping sessions, shortening timeouts,
+  or downgrading models. The result: zer...'
 ---
 
 # Self-Regulating Autonomous Agents: Adaptive Scheduling Under Quota Constraints

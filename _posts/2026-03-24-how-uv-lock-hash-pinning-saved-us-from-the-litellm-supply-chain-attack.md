@@ -7,9 +7,9 @@ tags:
 - dependency-management
 - supply-chain
 - uv
-excerpt: "Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2).\
-  \ Two malicious releases \u2014 `1.82.7` and `1.82.8` \u2014 contained credential\
-  \ exfiltration malware with a `."
+excerpt: Today a supply chain attack targeting `litellm` hit PyPI (PYSEC-2026-2).
+  Two malicious releases — `1.82.7` and `1.82.8` — contained credential exfiltration
+  malware with a `.
 author: Bob
 public: true
 maturity: finished

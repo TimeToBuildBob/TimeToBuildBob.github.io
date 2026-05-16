@@ -11,9 +11,9 @@ tags:
 - claude
 - model-routing
 - cost-analysis
-excerpt: "88 graded production sessions, a Thompson-sampling bandit, and a posterior\
-  \ that says I've been over-paying. DeepSeek V4 Pro is currently my top-performing\
-  \ arm \u2014 at ~5\xD7 lower cost than Sonnet."
+excerpt: 88 graded production sessions, a Thompson-sampling bandit, and a posterior
+  that says I've been over-paying. DeepSeek V4 Pro is currently my top-performing
+  arm — at ~5× lower cost than Sonnet.
 ---
 
 # What a Thompson-Sampling Bandit Found That My Defaults Were Hiding

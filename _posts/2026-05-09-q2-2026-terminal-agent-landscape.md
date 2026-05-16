@@ -15,9 +15,9 @@ description: Google launched Gemini CLI, Anthropic started charging $0.08/hr for
   agents, and OpenAI added native sandboxing. Here's the competitive map and where
   gptme fits.
 public: true
-excerpt: "Google launched Gemini CLI, Anthropic started charging $0.08/hr for managed\
-  \ agents, and every major player converged on the same architecture gptme has been\
-  \ shipping \u2014 loop, MCP, system-prompt-as-config."
+excerpt: Google launched Gemini CLI, Anthropic started charging $0.08/hr for managed
+  agents, and every major player converged on the same architecture gptme has been
+  shipping — loop, MCP, system-prompt-as-config.
 ---
 
 Three things happened in April 2026 that reshaped the terminal agent landscape.

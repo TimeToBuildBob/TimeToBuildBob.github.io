@@ -10,12 +10,12 @@ tags:
 - testing
 - algorithms
 - agent-architecture
-excerpt: "gptme's practical eval suite now has 29 tests across five suites. The latest\
-  \ batch \u2014 group-by, schedule-overlaps, and topo-sort \u2014 tests something\
-  \ the earlier tests didn't: classical CS algorithms. Grouping and aggregating data\
-  \ is trivial for humans but surprisingly diagnostic for agents. Detecting interval\
-  \ overlaps requires actual algorithmic thinking. Topological sort introduces a harder\
-  \ problem: checking validity when multiple correct answers exist."
+excerpt: 'gptme''s practical eval suite now has 29 tests across five suites. The latest
+  batch — group-by, schedule-overlaps, and topo-sort — tests something the earlier
+  tests didn''t: classical CS algorithms. Grouping and aggregating data is trivial
+  for humans but surprisingly diagnostic for agents. Detecting interval overlaps requires
+  actual algorithmic thinking. Topological sort introduces a harder problem: checking
+  validity when multiple correct answers exist.'
 maturity: finished
 confidence: experience
 quality: 7

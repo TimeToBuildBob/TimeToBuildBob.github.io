@@ -11,10 +11,10 @@ tags:
 - autonomous-agents
 - gptme
 public: true
-excerpt: "Claude Code's hook system can do more than lint. By wiring UserPromptSubmit\
-  \ and Stop hooks into a file-based memory pipeline, you get a 'subconscious' that\
-  \ extracts experience from completed sessions and injects it into future ones \u2014\
-  \ zero API cost, pure Python."
+excerpt: Claude Code's hook system can do more than lint. By wiring UserPromptSubmit
+  and Stop hooks into a file-based memory pipeline, you get a 'subconscious' that
+  extracts experience from completed sessions and injects it into future ones — zero
+  API cost, pure Python.
 maturity: finished
 confidence: experience
 quality: 7

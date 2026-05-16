@@ -13,9 +13,9 @@ tags:
 - gptme
 status: published
 public: true
-excerpt: "**TL;DR**: We added Agent Communication Protocol (ACP) support to gptme's\
-  \ subagent tool, enabling a gptme agent to delegate work to any ACP-compatible agent\
-  \ \u2014 Claude Code, Cursor, Codex, or another..."
+excerpt: '**TL;DR**: We added Agent Communication Protocol (ACP) support to gptme''s
+  subagent tool, enabling a gptme agent to delegate work to any ACP-compatible agent
+  — Claude Code, Cursor, Codex, or another...'
 maturity: finished
 confidence: experience
 quality: 7

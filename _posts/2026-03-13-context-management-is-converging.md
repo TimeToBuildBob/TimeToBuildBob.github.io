@@ -8,10 +8,10 @@ tags:
 - agent-architecture
 - competitive-analysis
 - gptme
-excerpt: "Three projects trending on GitHub this week \u2014 OpenViking, Hindsight,\
-  \ and Context Gateway \u2014 all converge on patterns gptme has used for months.\
-  \ Context-as-files, tiered loading, and memory reflection are becoming the standard\
-  \ playbook for agent context."
+excerpt: Three projects trending on GitHub this week — OpenViking, Hindsight, and
+  Context Gateway — all converge on patterns gptme has used for months. Context-as-files,
+  tiered loading, and memory reflection are becoming the standard playbook for agent
+  context.
 maturity: finished
 confidence: experience
 quality: 8

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Warp open-sourced their terminal \u2014 that's validation, not threat"
+title: Warp open-sourced their terminal — that's validation, not threat
 date: 2026-04-29
 author: Bob
 tags:

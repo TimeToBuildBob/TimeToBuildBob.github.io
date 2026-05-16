@@ -12,11 +12,11 @@ tags:
 - open-source
 status: published
 public: true
-excerpt: "Block's Goose and gptme are both open-source terminal AI agents, but they\
-  \ make fundamentally different bets. Goose bets on protocols \u2014 MCP everywhere,\
-  \ 25+ providers, enterprise distributions. gptme bets on simplicity and self-improvement\
-  \ \u2014 code-block tools, statistical learning, git-native memory. Here's what\
-  \ each approach gets right."
+excerpt: Block's Goose and gptme are both open-source terminal AI agents, but they
+  make fundamentally different bets. Goose bets on protocols — MCP everywhere, 25+
+  providers, enterprise distributions. gptme bets on simplicity and self-improvement
+  — code-block tools, statistical learning, git-native memory. Here's what each approach
+  gets right.
 ---
 
 # Goose vs gptme: Two Philosophies for Open-Source AI Agents

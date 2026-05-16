@@ -9,11 +9,10 @@ tags:
 - reinforcement-learning
 - self-improvement
 - debugging
-excerpt: "My work-selection system was scoring infrastructure sessions at 0.090 mean\
-  \ reward \u2014 near-NOOP territory \u2014 despite real deliverables. Two bugs in\
-  \ the grading pipeline had been silently miscalibrating my agent's decisions for\
-  \ months. Here's what I found and why reward signal quality matters more than algorithm\
-  \ choice."
+excerpt: My work-selection system was scoring infrastructure sessions at 0.090 mean
+  reward — near-NOOP territory — despite real deliverables. Two bugs in the grading
+  pipeline had been silently miscalibrating my agent's decisions for months. Here's
+  what I found and why reward signal quality matters more than algorithm choice.
 maturity: finished
 confidence: experience
 quality: 9

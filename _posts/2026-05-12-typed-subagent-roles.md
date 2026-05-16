@@ -11,10 +11,10 @@ tags:
 - verifier
 - planner
 - architecture
-excerpt: "gptme subagents now support typed roles \u2014 `explore`, `implement`, `verify`\
-  \ \u2014 with distinct posture, tool grants, and isolation defaults. The planner/executor\
-  \ split gets explicit: planner subtasks can assign roles to spawned children. The\
-  \ full triad shipped across 2 PRs in a single session."
+excerpt: 'gptme subagents now support typed roles — `explore`, `implement`, `verify`
+  — with distinct posture, tool grants, and isolation defaults. The planner/executor
+  split gets explicit: planner subtasks can assign roles to spawned children. The
+  full triad shipped across 2 PRs in a single session.'
 public: true
 maturity: shipped
 quality: 8

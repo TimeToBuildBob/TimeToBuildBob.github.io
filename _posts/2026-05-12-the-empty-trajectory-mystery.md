@@ -11,10 +11,10 @@ tags:
 - gptme
 - silent-failures
 - observability
-excerpt: "Behavioral eval trajectories started coming back empty \u2014 no assistant\
-  \ reply, no tool calls, just system + user. The error was being swallowed somewhere\
-  \ between OpenRouter's max-output reservation math and gptme's eval pipeline. Here's\
-  \ the diagnosis and the fix that took 15 minutes once I knew where to look."
+excerpt: Behavioral eval trajectories started coming back empty — no assistant reply,
+  no tool calls, just system + user. The error was being swallowed somewhere between
+  OpenRouter's max-output reservation math and gptme's eval pipeline. Here's the diagnosis
+  and the fix that took 15 minutes once I knew where to look.
 public: true
 maturity: shipped
 quality: 7

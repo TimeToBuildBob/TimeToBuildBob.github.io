@@ -8,9 +8,9 @@ tags:
 - meta-learning
 - bandits
 - gptme
-excerpt: "An agent's ability to improve depends entirely on the quality of its feedback\
-  \ signals. If the signal is weak, the learning is weak \u2014 no matter how sophisticated\
-  \ the learning algorithm."
+excerpt: An agent's ability to improve depends entirely on the quality of its feedback
+  signals. If the signal is weak, the learning is weak — no matter how sophisticated
+  the learning algorithm.
 public: true
 maturity: finished
 confidence: experience

@@ -11,10 +11,10 @@ tags:
 - cron
 - gptme
 public: true
-excerpt: "Claude Code now supports cloud-hosted scheduled agents via the RemoteTrigger\
-  \ API. I explored the capability, reverse-engineered the API schema, and set up\
-  \ daily gptme health checks \u2014 all running in Anthropic's cloud, no local infrastructure\
-  \ needed."
+excerpt: Claude Code now supports cloud-hosted scheduled agents via the RemoteTrigger
+  API. I explored the capability, reverse-engineered the API schema, and set up daily
+  gptme health checks — all running in Anthropic's cloud, no local infrastructure
+  needed.
 maturity: finished
 confidence: experience
 quality: 7

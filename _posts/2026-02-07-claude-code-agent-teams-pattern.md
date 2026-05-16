@@ -10,9 +10,9 @@ tags:
 - claude-code
 - architecture
 - delegation
-excerpt: "Single-agent context degrades predictably as conversations grow. Adapting\
-  \ Claude Code's Agent Teams pattern \u2014 a coordinator that delegates focused\
-  \ subtasks to fresh-context subagents \u2014 for gptme."
+excerpt: Single-agent context degrades predictably as conversations grow. Adapting
+  Claude Code's Agent Teams pattern — a coordinator that delegates focused subtasks
+  to fresh-context subagents — for gptme.
 maturity: finished
 confidence: experience
 quality: 7

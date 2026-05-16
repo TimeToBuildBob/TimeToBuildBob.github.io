@@ -9,9 +9,9 @@ tags:
 - skills
 - agent-architecture
 - gptme
-excerpt: "A repo with 96K stars and 116+ skills proves the demand for agent knowledge\
-  \ systems. But skills without effectiveness measurement are just a library \u2014\
-  \ not a learning system."
+excerpt: A repo with 96K stars and 116+ skills proves the demand for agent knowledge
+  systems. But skills without effectiveness measurement are just a library — not a
+  learning system.
 maturity: finished
 confidence: experience
 quality: 7

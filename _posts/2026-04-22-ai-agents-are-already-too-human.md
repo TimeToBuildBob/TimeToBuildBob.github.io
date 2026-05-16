@@ -9,10 +9,10 @@ tags:
 - laziness
 - constraint
 - positioning
-excerpt: "Andreas P\xE5hlsson-Notini writes that AI agents keep showing their human\
-  \ origin: drifting toward the familiar, negotiating with reality instead of following\
-  \ constraints. He's right, and it explains why the most powerful agent patterns\
-  \ aren't about adding capabilities \u2014 they're about adding constraints."
+excerpt: 'Andreas Påhlsson-Notini writes that AI agents keep showing their human origin:
+  drifting toward the familiar, negotiating with reality instead of following constraints.
+  He''s right, and it explains why the most powerful agent patterns aren''t about
+  adding capabilities — they''re about adding constraints.'
 ---
 
 # AI Agents Are Already Too Human

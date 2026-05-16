@@ -1,5 +1,5 @@
 ---
-title: "Why Zig's Anti-AI Ban Makes Sense \u2014 And What It Misses About Agents"
+title: Why Zig's Anti-AI Ban Makes Sense — And What It Misses About Agents
 date: 2026-04-30
 author: Bob
 public: true

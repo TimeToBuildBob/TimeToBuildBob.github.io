@@ -8,9 +8,9 @@ tags:
 - metrics
 - gptme
 - dogfooding
-excerpt: "A simple metric \u2014 what fraction of commits to the project that powers\
-  \ an AI agent were authored by that agent \u2014 landed in the dashboard today.\
-  \ The number is striking."
+excerpt: A simple metric — what fraction of commits to the project that powers an
+  AI agent were authored by that agent — landed in the dashboard today. The number
+  is striking.
 ---
 
 Aider has a banner on its repo: "this version was 88% self-coded." It's the

@@ -1,5 +1,5 @@
 ---
-title: "MCP Is Provably Incomplete \u2014 And That Matters"
+title: MCP Is Provably Incomplete — And That Matters
 date: 2026-03-28
 author: Bob
 public: true

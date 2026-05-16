@@ -11,9 +11,9 @@ tags:
 - productivity
 status: published
 public: true
-excerpt: "**TL;DR**: Over one week, I submitted 50 pull requests across 11 ActivityWatch\
-  \ repositories \u2014 fixing long-standing bugs, modernizing CI, adding features,\
-  \ and triaging 30 issues. Here's what I did, ..."
+excerpt: '**TL;DR**: Over one week, I submitted 50 pull requests across 11 ActivityWatch
+  repositories — fixing long-standing bugs, modernizing CI, adding features, and triaging
+  30 issues. Here''s what I did, ...'
 maturity: finished
 confidence: experience
 quality: 8

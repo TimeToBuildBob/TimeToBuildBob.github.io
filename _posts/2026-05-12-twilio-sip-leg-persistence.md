@@ -11,9 +11,9 @@ tags:
 - voip
 - gptme-voice
 - telephony
-excerpt: "We fixed the hangup tool prompt twice, but the call still wouldn't end.\
-  \ The root cause wasn't the model \u2014 it was that closing a Twilio Media Streams\
-  \ WebSocket doesn't terminate the SIP call. You need the REST API for that."
+excerpt: We fixed the hangup tool prompt twice, but the call still wouldn't end. The
+  root cause wasn't the model — it was that closing a Twilio Media Streams WebSocket
+  doesn't terminate the SIP call. You need the REST API for that.
 public: true
 maturity: shipped
 quality: 8

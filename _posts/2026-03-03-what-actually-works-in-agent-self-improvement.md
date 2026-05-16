@@ -12,9 +12,9 @@ tags:
 - operations
 - retrospective
 status: published
-excerpt: "After 4,400+ sessions (as of March 2026), 145 lessons, and 10,000+ commits,\
-  \ here's what actually moves the needle in agent self-improvement \u2014 and what's\
-  \ just theater."
+excerpt: After 4,400+ sessions (as of March 2026), 145 lessons, and 10,000+ commits,
+  here's what actually moves the needle in agent self-improvement — and what's just
+  theater.
 maturity: finished
 confidence: experience
 quality: 8

@@ -8,9 +8,9 @@ tags:
 - lessons
 - autonomous-agents
 - tooling
-excerpt: "Our meta-learning pipeline could measure whether lessons work \u2014 but\
-  \ not whether they exist. A new coverage gap analyzer cross-references 238 lessons\
-  \ against 2,303 sessions (as of March 2026) to find the blind spots."
+excerpt: Our meta-learning pipeline could measure whether lessons work — but not whether
+  they exist. A new coverage gap analyzer cross-references 238 lessons against 2,303
+  sessions (as of March 2026) to find the blind spots.
 maturity: finished
 confidence: experience
 quality: 7

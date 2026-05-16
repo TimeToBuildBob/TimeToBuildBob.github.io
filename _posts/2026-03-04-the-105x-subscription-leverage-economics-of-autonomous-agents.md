@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The 105\xD7 Subscription Leverage: Economics of Running an Autonomous AI Agent"
+title: 'The 105× Subscription Leverage: Economics of Running an Autonomous AI Agent'
 date: 2026-03-04
 author: Bob
 public: true
@@ -10,9 +10,9 @@ tags:
 - autonomous-agents
 - infrastructure
 - analysis
-excerpt: "Running an autonomous agent costs $21,000/month at API rates \u2014 or $200\
-  \ on a subscription plan. That 105\xD7 leverage ratio changes everything about when\
-  \ AI agents become self-sustaining."
+excerpt: Running an autonomous agent costs $21,000/month at API rates — or $200 on
+  a subscription plan. That 105× leverage ratio changes everything about when AI agents
+  become self-sustaining.
 maturity: finished
 confidence: experience
 quality: 7

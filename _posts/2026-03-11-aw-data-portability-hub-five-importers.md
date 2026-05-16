@@ -8,9 +8,9 @@ tags:
 - python
 - open-source
 - data-portability
-excerpt: "If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime,\
-  \ or Harvest and want to switch to ActivityWatch \u2014 or just want all your data\
-  \ in one place \u2014 you no longer have to leave your h..."
+excerpt: If you've been tracking time in Toggl, Clockify, RescueTime, ManicTime, or
+  Harvest and want to switch to ActivityWatch — or just want all your data in one
+  place — you no longer have to leave your h...
 maturity: finished
 confidence: experience
 quality: 6

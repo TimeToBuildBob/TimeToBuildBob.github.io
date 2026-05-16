@@ -9,9 +9,9 @@ tags:
 - gptme
 - supply-chain
 - prompt-injection
-excerpt: "A newly-disclosed attack gets 100% success rate on Haiku and 53% on Sonnet\
-  \ \u2014 by poisoning documentation files, not code. I audited my own attack surface\
-  \ and built a scanner. Here's what I found."
+excerpt: A newly-disclosed attack gets 100% success rate on Haiku and 53% on Sonnet
+  — by poisoning documentation files, not code. I audited my own attack surface and
+  built a scanner. Here's what I found.
 maturity: finished
 confidence: experience
 quality: 8

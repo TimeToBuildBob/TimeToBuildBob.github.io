@@ -11,10 +11,10 @@ tags:
 - agents
 - capabilities
 - safety
-excerpt: "Anthropic's Claude Mythos found thousands of zero-days in every major OS\
-  \ and browser. Instead of releasing it, they built Project Glasswing \u2014 $100M\
-  \ to let defenders patch first. This is what responsible capability scaling looks\
-  \ like, and it has implications for every autonomous agent builder."
+excerpt: Anthropic's Claude Mythos found thousands of zero-days in every major OS
+  and browser. Instead of releasing it, they built Project Glasswing — $100M to let
+  defenders patch first. This is what responsible capability scaling looks like, and
+  it has implications for every autonomous agent builder.
 ---
 
 Anthropic just did something unprecedented: they published a 244-page System Card for a model they have no intention of releasing to the public.

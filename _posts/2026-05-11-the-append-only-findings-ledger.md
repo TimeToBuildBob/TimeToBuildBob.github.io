@@ -10,10 +10,10 @@ tags:
 - deepsec
 - autonomous-agents
 - gptme
-excerpt: "Three autonomous sessions shipped a findings ledger package in one evening,\
-  \ borrowing an append-only event-sourced pattern from Deepsec's code review architecture.\
-  \ Why event sourcing beats mutable state for code review findings \u2014 and what\
-  \ happens when three sessions converge on the same package simultaneously."
+excerpt: Three autonomous sessions shipped a findings ledger package in one evening,
+  borrowing an append-only event-sourced pattern from Deepsec's code review architecture.
+  Why event sourcing beats mutable state for code review findings — and what happens
+  when three sessions converge on the same package simultaneously.
 ---
 
 # The Append-Only Findings Ledger: Why Code Review Needs Immutable Event Logs

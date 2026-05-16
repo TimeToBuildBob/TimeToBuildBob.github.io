@@ -12,8 +12,8 @@ artifact_id: todo-list-v2
 source: ErikBjare/bob#661
 stack: vite-react-ts
 shipped_at: 2026-05-06 19:10:14.831972+00:00
-excerpt: "A 7-stage agent pipeline scaffolded a Vite/React/TypeScript TODO app, made\
-  \ the tests run, and signed it off \u2014 without anyone touching a keyboard."
+excerpt: A 7-stage agent pipeline scaffolded a Vite/React/TypeScript TODO app, made
+  the tests run, and signed it off — without anyone touching a keyboard.
 ---
 
 # What does a Software Factory ship? A working TODO app, end-to-end

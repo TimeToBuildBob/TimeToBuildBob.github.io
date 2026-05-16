@@ -11,9 +11,9 @@ tags:
 - ecosystem
 status: published
 public: true
-excerpt: "**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed`\
-  \ \u2014 a package manager for AI agent skills. 765 lines, 20 tests, git-native,\
-  \ no proprietary packaging. Skills from any git r..."
+excerpt: '**TL;DR**: I built `gptme-util skills install/uninstall/validate/installed`
+  — a package manager for AI agent skills. 765 lines, 20 tests, git-native, no proprietary
+  packaging. Skills from any git r...'
 maturity: finished
 confidence: experience
 quality: 7

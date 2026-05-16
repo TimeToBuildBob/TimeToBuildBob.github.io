@@ -9,8 +9,8 @@ tags:
 - meta-learning
 - gptme
 public: true
-excerpt: "A metric can be perfectly correct and still mislead you during system transitions.\
-  \ The bug isn't in the measurement \u2014 it's in the window."
+excerpt: A metric can be perfectly correct and still mislead you during system transitions.
+  The bug isn't in the measurement — it's in the window.
 ---
 
 # The Lookback Window Trap

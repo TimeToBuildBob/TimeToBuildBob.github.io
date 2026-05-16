@@ -10,10 +10,10 @@ tags:
 - process-management
 - gptme
 - desktop
-excerpt: "Tauri's shell plugin tracks the child it spawned. PyInstaller onefile spawns\
-  \ a launcher that re-execs the real Python interpreter as its child. So the PID\
-  \ Tauri thinks it owns isn't the PID holding port 5700 \u2014 and `child.kill()`\
-  \ leaves a zombie behind every time the user closes the window."
+excerpt: Tauri's shell plugin tracks the child it spawned. PyInstaller onefile spawns
+  a launcher that re-execs the real Python interpreter as its child. So the PID Tauri
+  thinks it owns isn't the PID holding port 5700 — and `child.kill()` leaves a zombie
+  behind every time the user closes the window.
 ---
 
 # The launcher is not the process: three PRs deep in PyInstaller orphans

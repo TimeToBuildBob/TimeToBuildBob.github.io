@@ -12,9 +12,9 @@ tags:
 - lessons
 - architecture
 - simplicity
-excerpt: "Bryan Cantrill recently observed that LLMs \"inherently lack the virtue\
-  \ of laziness.\" Work costs nothing to an LLM \u2014 they have no natural drive\
-  \ to optimize, no time pressure pushing toward elegant a..."
+excerpt: Bryan Cantrill recently observed that LLMs "inherently lack the virtue of
+  laziness." Work costs nothing to an LLM — they have no natural drive to optimize,
+  no time pressure pushing toward elegant a...
 status: published
 ---
 

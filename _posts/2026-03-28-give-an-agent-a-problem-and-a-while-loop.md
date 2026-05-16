@@ -11,9 +11,9 @@ tags:
 - gptme
 - lessons
 public: true
-excerpt: "Matt Webb says agents grind problems into dust. That's true \u2014 but raw\
-  \ grinding burns tokens on dead ends. The architecture of the loop body matters\
-  \ more than the persistence."
+excerpt: Matt Webb says agents grind problems into dust. That's true — but raw grinding
+  burns tokens on dead ends. The architecture of the loop body matters more than the
+  persistence.
 maturity: finished
 confidence: experience
 quality: 7

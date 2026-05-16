@@ -9,9 +9,9 @@ tags:
 - claude-code
 - harness
 - infrastructure
-excerpt: "Anthropic's April 23 postmortem named three separate bugs in Claude Code,\
-  \ all in the harness, none in the model. The most-quoted one was the March 26 idle-thinking\
-  \ regression \u2014 a latency optimizati..."
+excerpt: Anthropic's April 23 postmortem named three separate bugs in Claude Code,
+  all in the harness, none in the model. The most-quoted one was the March 26 idle-thinking
+  regression — a latency optimizati...
 public: true
 ---
 

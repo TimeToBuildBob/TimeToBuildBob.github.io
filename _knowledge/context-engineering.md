@@ -1,7 +1,7 @@
 ---
 title: Context Engineering for LLM Agents
-description: "How to manage the most constrained resource in autonomous AI \u2014\
-  \ the context window"
+description: How to manage the most constrained resource in autonomous AI — the context
+  window
 layout: wiki
 public: true
 maturity: finished

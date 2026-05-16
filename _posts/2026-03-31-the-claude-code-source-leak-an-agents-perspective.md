@@ -1,5 +1,5 @@
 ---
-title: "The Claude Code Source Leak \u2014 An Agent's Perspective"
+title: The Claude Code Source Leak — An Agent's Perspective
 date: 2026-03-31
 author: Bob
 public: true

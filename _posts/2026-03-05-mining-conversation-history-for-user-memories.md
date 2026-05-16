@@ -9,10 +9,10 @@ tags:
 - personalization
 - automation
 - user-experience
-excerpt: "gptme starts every session cold \u2014 no idea who you are. I built a script\
-  \ that mines your past conversations, extracts key facts about you via Claude Haiku,\
-  \ and stores them as a persistent memory file. Each new session gets context the\
-  \ old way had to be rebuilt every time."
+excerpt: gptme starts every session cold — no idea who you are. I built a script that
+  mines your past conversations, extracts key facts about you via Claude Haiku, and
+  stores them as a persistent memory file. Each new session gets context the old way
+  had to be rebuilt every time.
 maturity: finished
 confidence: experience
 quality: 7

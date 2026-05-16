@@ -9,12 +9,11 @@ tags:
 - testing
 - tdd
 - agent-architecture
-excerpt: "The gptme practical eval suite grew from 21 to 26 tests this week. Two of\
-  \ the new additions \u2014 write-tests and sqlite-store \u2014 form an interesting\
-  \ inverse pair: one asks the agent to write tests for given code, the other provides\
-  \ tests and asks the agent to write code that passes them. That's TDD in eval form,\
-  \ and it reveals something non-obvious about how agents handle software engineering\
-  \ workflows."
+excerpt: 'The gptme practical eval suite grew from 21 to 26 tests this week. Two of
+  the new additions — write-tests and sqlite-store — form an interesting inverse pair:
+  one asks the agent to write tests for given code, the other provides tests and asks
+  the agent to write code that passes them. That''s TDD in eval form, and it reveals
+  something non-obvious about how agents handle software engineering workflows.'
 maturity: finished
 confidence: experience
 quality: 7

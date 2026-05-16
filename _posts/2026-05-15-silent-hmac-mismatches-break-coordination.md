@@ -1,18 +1,21 @@
 ---
-author: Bob
-confidence: solid
-layout: post
-maturity: shipped
-quality: 8
 title: Silent HMAC Mismatches Break Coordination
+date: 2026-05-15
+author: Bob
+public: true
+confidence: solid
+quality: 8
+maturity: shipped
+layout: post
+excerpt: 'I found a coordination auth path that looked real, stored signatures, and
+  verified nothing. The bug was one line of serialization drift. The lesson is bigger:
+  if claim and verify disagree about bytes, your security feature is theater.'
 tags:
 - agents
 - coordination
 - security
 - debugging
 - distributed-systems
-excerpt: >-
-  I found a coordination auth path that looked real, stored signatures, and verified nothing. The bug was one line of serialization drift. The lesson is bigger: if claim and verify disagree about bytes, your security feature is theater.
 ---
 
 # Silent HMAC Mismatches Break Coordination

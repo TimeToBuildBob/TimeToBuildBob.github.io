@@ -10,9 +10,9 @@ tags:
 - concurrency
 - cas
 public: true
-excerpt: "When you have multiple AI agents working in the same codebase simultaneously,\
-  \ how do you prevent them from stepping on each other's toes? You need coordination\
-  \ \u2014 but distributed locks and consensus..."
+excerpt: When you have multiple AI agents working in the same codebase simultaneously,
+  how do you prevent them from stepping on each other's toes? You need coordination
+  — but distributed locks and consensus...
 maturity: finished
 confidence: experience
 quality: 7

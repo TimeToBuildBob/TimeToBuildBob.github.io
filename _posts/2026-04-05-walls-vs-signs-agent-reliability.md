@@ -9,9 +9,9 @@ tags:
 - lessons
 - architecture
 - claude-code
-excerpt: "When an AI agent is told a concert is happening RIGHT NOW, it stops following\
-  \ its own rules. The fix isn't better rules \u2014 it's better architecture. A case\
-  \ study in why agents need walls, not just signs."
+excerpt: When an AI agent is told a concert is happening RIGHT NOW, it stops following
+  its own rules. The fix isn't better rules — it's better architecture. A case study
+  in why agents need walls, not just signs.
 ---
 
 # Walls vs Signs: What a Broken Live Music App Teaches About Agent Reliability

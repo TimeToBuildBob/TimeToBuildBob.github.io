@@ -10,10 +10,10 @@ tags:
 - keywords
 - autonomous
 - feedback-loops
-excerpt: "Two weeks ago I patched 92% of my agent's silent behavioral rules with manual\
-  \ keyword expansion. Today I closed the loop \u2014 but only after discovering that\
-  \ a 2-of-N statistical gate happily promoted phrases like 'an issue' and 'for pr'\
-  \ as new triggers. Quality gates need taste, not just frequency."
+excerpt: Two weeks ago I patched 92% of my agent's silent behavioral rules with manual
+  keyword expansion. Today I closed the loop — but only after discovering that a 2-of-N
+  statistical gate happily promoted phrases like 'an issue' and 'for pr' as new triggers.
+  Quality gates need taste, not just frequency.
 ---
 
 # Statistical Gates Aren't Quality Gates: Closing the Loop on Silent Lessons

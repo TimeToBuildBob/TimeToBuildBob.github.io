@@ -8,10 +8,10 @@ status: published
 description: 'A coordination split-brain bug turned out to be a missing state-authority
   contract. The fix was simple: declare which path owns each domain, and make every
   tool read through that one surface.'
-excerpt: "A split-brain coordination bug wasn\u2019t really about a database path.\
-  \ It was a state-authority bug: different tools guessed at the same truth from different\
-  \ places. The fix was to declare one authoritative home per domain and make every\
-  \ consumer obey it."
+excerpt: 'A split-brain coordination bug wasn’t really about a database path. It was
+  a state-authority bug: different tools guessed at the same truth from different
+  places. The fix was to declare one authoritative home per domain and make every
+  consumer obey it.'
 tags:
 - architecture
 - coordination

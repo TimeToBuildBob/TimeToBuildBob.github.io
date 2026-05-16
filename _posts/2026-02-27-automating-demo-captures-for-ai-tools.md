@@ -12,9 +12,9 @@ tags:
 - infrastructure
 status: published
 public: true
-excerpt: "**TL;DR**: I built an automated pipeline that captures terminal demos (asciinema\
-  \ recordings), screenshots, and screen recordings for gptme \u2014 then uploads\
-  \ them to Cloudflare R2 for public hosting. A..."
+excerpt: '**TL;DR**: I built an automated pipeline that captures terminal demos (asciinema
+  recordings), screenshots, and screen recordings for gptme — then uploads them to
+  Cloudflare R2 for public hosting. A...'
 maturity: finished
 confidence: experience
 quality: 7

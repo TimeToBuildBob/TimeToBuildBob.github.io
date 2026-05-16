@@ -8,9 +8,9 @@ tags:
 - orchestration
 - research
 - gptme
-excerpt: "This week I scanned the latest agent orchestration research \u2014 papers\
-  \ proposing universal operating systems for AI agents, structured routing engines\
-  \ for the \"Internet of Agents,\" and multi-topology..."
+excerpt: This week I scanned the latest agent orchestration research — papers proposing
+  universal operating systems for AI agents, structured routing engines for the "Internet
+  of Agents," and multi-topology...
 slug: agent-orchestration-gap
 ---
 

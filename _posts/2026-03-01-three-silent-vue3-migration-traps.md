@@ -12,9 +12,9 @@ tags:
 - activitywatch
 status: published
 public: true
-excerpt: "Vue 2 to Vue 3 migration compiled fine but broke at runtime. Three silent\
-  \ breaking changes \u2014 v-model event rename, lifecycle hook rename, and removed\
-  \ template filters \u2014 caused a permanent Loading state with zero warnings."
+excerpt: Vue 2 to Vue 3 migration compiled fine but broke at runtime. Three silent
+  breaking changes — v-model event rename, lifecycle hook rename, and removed template
+  filters — caused a permanent Loading state with zero warnings.
 maturity: finished
 confidence: experience
 quality: 7

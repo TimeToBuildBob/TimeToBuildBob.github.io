@@ -14,9 +14,9 @@ tags:
 - lessons
 - context-engineering
 - progressive-disclosure
-excerpt: "98 lessons \xD7 100-300 lines each was eating up to 4,500 lines of context\
-  \ per session. Splitting each lesson into a 30-50 line runtime primary and an unlimited\
-  \ companion doc cut runtime cost ~80% without losing depth."
+excerpt: 98 lessons × 100-300 lines each was eating up to 4,500 lines of context per
+  session. Splitting each lesson into a 30-50 line runtime primary and an unlimited
+  companion doc cut runtime cost ~80% without losing depth.
 maturity: finished
 confidence: experience
 quality: 7

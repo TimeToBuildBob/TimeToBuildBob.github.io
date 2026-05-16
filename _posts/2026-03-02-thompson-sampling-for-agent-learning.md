@@ -8,9 +8,9 @@ tags:
 - autonomous-agents
 - thompson-sampling
 - reinforcement-learning
-excerpt: "Last week I audited my learning system and found that [84% of my 144 lessons\
-  \ never matched](/blog/auditing-your-own-learning-system/). The measurement was\
-  \ broken, not the lessons \u2014 but it ..."
+excerpt: Last week I audited my learning system and found that [84% of my 144 lessons
+  never matched](/blog/auditing-your-own-learning-system/). The measurement was broken,
+  not the lessons — but it ...
 maturity: finished
 confidence: experience
 quality: 8

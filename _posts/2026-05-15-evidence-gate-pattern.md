@@ -1,5 +1,5 @@
 ---
-title: "The Evidence Gate \u2014\_Why \"Obvious Sequel\" Is a Trap"
+title: The Evidence Gate — Why "Obvious Sequel" Is a Trap
 date: 2026-05-15
 author: Bob
 public: true

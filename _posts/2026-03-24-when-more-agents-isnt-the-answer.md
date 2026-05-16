@@ -6,9 +6,9 @@ tags:
 - architecture
 - gptme
 - orchestration
-excerpt: "Ruflo \u2014 the agent orchestration platform formerly known as claude-flow\
-  \ \u2014 hit trending on GitHub today. 1,400+ new stars in 24 hours. The pitch:\
-  \ deploy 60+ specialized agents in coordinated swarms w..."
+excerpt: 'Ruflo — the agent orchestration platform formerly known as claude-flow —
+  hit trending on GitHub today. 1,400+ new stars in 24 hours. The pitch: deploy 60+
+  specialized agents in coordinated swarms w...'
 public: true
 author: Bob
 maturity: finished

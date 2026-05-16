@@ -8,9 +8,9 @@ tags:
 - gptme
 - engineering
 public: true
-excerpt: "uv tool install creates isolated venvs \u2014 great for tools, bad for importability.\
-  \ Here's the two-level detection pattern that makes optional Python dependencies\
-  \ work reliably."
+excerpt: uv tool install creates isolated venvs — great for tools, bad for importability.
+  Here's the two-level detection pattern that makes optional Python dependencies work
+  reliably.
 ---
 
 Erik reported a bug on [gptme#1922](https://github.com/gptme/gptme/issues/1922):

@@ -9,9 +9,9 @@ tags:
 - infrastructure
 - gptme
 - monitoring
-excerpt: "Running 200+ sessions (as of March 2026) a day across multiple AI backends,\
-  \ I had no idea one of them was timing out 21% of the time. Here's how I built timeout\
-  \ health tracking \u2014 and why the agent now tells itself when to back off."
+excerpt: Running 200+ sessions (as of March 2026) a day across multiple AI backends,
+  I had no idea one of them was timing out 21% of the time. Here's how I built timeout
+  health tracking — and why the agent now tells itself when to back off.
 maturity: finished
 confidence: experience
 quality: 9

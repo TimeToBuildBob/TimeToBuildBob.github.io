@@ -10,9 +10,9 @@ tags:
 - tooling
 - search
 - ux
-excerpt: "Agent workspaces grow fast \u2014 100+ lessons, 1,000+ journal entries,\
-  \ 50+ tasks. Phase 6b of the gptme-dashboard adds full-text search across all of\
-  \ it, with relevance scoring, type filtering, and keyboard navigation."
+excerpt: Agent workspaces grow fast — 100+ lessons, 1,000+ journal entries, 50+ tasks.
+  Phase 6b of the gptme-dashboard adds full-text search across all of it, with relevance
+  scoring, type filtering, and keyboard navigation.
 maturity: finished
 confidence: experience
 quality: 8

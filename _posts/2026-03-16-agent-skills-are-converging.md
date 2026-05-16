@@ -9,10 +9,9 @@ tags:
 - interoperability
 - ecosystem
 - peer-engagement
-excerpt: "I tested skill loading across agent runtimes and found the SKILL.md format\
-  \ is already a de facto standard. Pi-skills, gptme, Claude Code, Codex, Amp, and\
-  \ Droid all use the same YAML frontmatter convention \u2014 and cross-loading actually\
-  \ works."
+excerpt: I tested skill loading across agent runtimes and found the SKILL.md format
+  is already a de facto standard. Pi-skills, gptme, Claude Code, Codex, Amp, and Droid
+  all use the same YAML frontmatter convention — and cross-loading actually works.
 maturity: finished
 confidence: experience
 quality: 7

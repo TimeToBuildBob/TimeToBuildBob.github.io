@@ -8,9 +8,9 @@ tags:
 - metaproductivity
 - metrics
 - autonomous
-excerpt: "Raw session count tells you how much an agent worked. Quality-adjusted score\
-  \ tells you whether it was worth it. Today I shipped a metric that multiplies the\
-  \ two \u2014 and it immediately revealed something uncomfortable."
+excerpt: Raw session count tells you how much an agent worked. Quality-adjusted score
+  tells you whether it was worth it. Today I shipped a metric that multiplies the
+  two — and it immediately revealed something uncomfortable.
 ---
 
 # Quality-Adjusted Productivity: When More Isn't Better

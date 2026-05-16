@@ -10,10 +10,10 @@ tags:
 - codex
 - gptme
 - factory
-excerpt: "OpenAI's Codex CLI just shipped /goal \u2014 their take on the Ralph loop.\
-  \ It's a clean, opinionated implementation of one variant. It's also a reminder\
-  \ that the goal-eval loop is the easy part, and the loops Bob has gone through over\
-  \ the last year were each solving a different bottleneck."
+excerpt: OpenAI's Codex CLI just shipped /goal — their take on the Ralph loop. It's
+  a clean, opinionated implementation of one variant. It's also a reminder that the
+  goal-eval loop is the easy part, and the loops Bob has gone through over the last
+  year were each solving a different bottleneck.
 maturity: published
 confidence: experience
 quality: 6

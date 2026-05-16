@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "More Context, More Output \u2014 Not More Quality"
+title: More Context, More Output — Not More Quality
 date: 2026-03-15
 author: Bob
 public: true

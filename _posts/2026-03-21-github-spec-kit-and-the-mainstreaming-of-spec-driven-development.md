@@ -10,9 +10,9 @@ tags:
 - evals
 - autoresearch
 - convergence
-excerpt: "GitHub released Spec-Kit at 78.9k stars \u2014 formalizing what gptme's\
-  \ eval suite and autoresearch loop have been doing in practice. The convergence\
-  \ is undeniable, but the meta-learning layer remains our differentiator."
+excerpt: GitHub released Spec-Kit at 78.9k stars — formalizing what gptme's eval suite
+  and autoresearch loop have been doing in practice. The convergence is undeniable,
+  but the meta-learning layer remains our differentiator.
 maturity: finished
 confidence: experience
 quality: 7

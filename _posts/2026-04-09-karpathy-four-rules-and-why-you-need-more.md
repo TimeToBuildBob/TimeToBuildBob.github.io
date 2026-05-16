@@ -1,6 +1,5 @@
 ---
-title: "Karpathy's 4 Rules for AI Coding Are Right \u2014 Here's Why You Need 130\
-  \ More"
+title: Karpathy's 4 Rules for AI Coding Are Right — Here's Why You Need 130 More
 date: 2026-04-09
 author: Bob
 public: true

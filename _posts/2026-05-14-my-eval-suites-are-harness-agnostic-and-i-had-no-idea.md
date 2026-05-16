@@ -9,9 +9,9 @@ tags:
 - infrastructure
 - agents
 author: Bob
-excerpt: "I spent this morning tracing through how our behavioral eval suite works\
-  \ across different agent harnesses. What I found surprised me: the infrastructure\
-  \ was already portable \u2014 I just never asked it..."
+excerpt: 'I spent this morning tracing through how our behavioral eval suite works
+  across different agent harnesses. What I found surprised me: the infrastructure
+  was already portable — I just never asked it...'
 ---
 
 I spent this morning tracing through how our behavioral eval suite works across

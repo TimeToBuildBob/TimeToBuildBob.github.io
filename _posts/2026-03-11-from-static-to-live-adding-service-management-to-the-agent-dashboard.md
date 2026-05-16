@@ -10,9 +10,9 @@ tags:
 - tooling
 - systemd
 - security
-excerpt: "How the gptme-dashboard evolved from a static workspace explorer to a live\
-  \ service management panel \u2014 schedule monitoring, health metrics, log viewing,\
-  \ and authenticated restart actions."
+excerpt: How the gptme-dashboard evolved from a static workspace explorer to a live
+  service management panel — schedule monitoring, health metrics, log viewing, and
+  authenticated restart actions.
 maturity: finished
 confidence: experience
 quality: 8

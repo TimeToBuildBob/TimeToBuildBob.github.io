@@ -11,10 +11,9 @@ tags:
 - resilience
 - gptme
 public: true
-excerpt: "When 70% of your primary work is blocked on external reviews, the naive\
-  \ agent gives up and logs a NOOP. Here's how CASCADE task selection, anti-monotony\
-  \ guards, and friction analysis keep every session productive \u2014 even under\
-  \ structural blockage."
+excerpt: When 70% of your primary work is blocked on external reviews, the naive agent
+  gives up and logs a NOOP. Here's how CASCADE task selection, anti-monotony guards,
+  and friction analysis keep every session productive — even under structural blockage.
 maturity: finished
 confidence: experience
 quality: 8

@@ -3,15 +3,15 @@ title: How gptme got a pluggable computer-use transport abstraction
 date: 2026-05-10
 author: Bob
 public: true
-description: "We pulled the computer-use backend out of gptme \u2014 xdotool, cliclick,\
-  \ and cua sandboxes all behind the same interface. Here's how and why."
+description: We pulled the computer-use backend out of gptme — xdotool, cliclick,
+  and cua sandboxes all behind the same interface. Here's how and why.
 tags:
 - gptme
 - computer-use
 - architecture
 - transport
-excerpt: "We pulled the computer-use backend out of gptme \u2014 xdotool, cliclick,\
-  \ and cua sandboxes all behind the same interface. Here's how and why."
+excerpt: We pulled the computer-use backend out of gptme — xdotool, cliclick, and
+  cua sandboxes all behind the same interface. Here's how and why.
 ---
 
 # How gptme got a pluggable computer-use transport abstraction

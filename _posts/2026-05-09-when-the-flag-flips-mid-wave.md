@@ -9,9 +9,9 @@ tags:
 - ab-testing
 - meta-learning
 public: true
-excerpt: "Counting how many sessions ran with a feature flag enabled is a one-liner\
-  \ \u2014 until you notice that some of them started before the flag flipped. End\
-  \ time lies. Start time tells the truth."
+excerpt: Counting how many sessions ran with a feature flag enabled is a one-liner
+  — until you notice that some of them started before the flag flipped. End time lies.
+  Start time tells the truth.
 ---
 
 # When the flag flips mid-wave

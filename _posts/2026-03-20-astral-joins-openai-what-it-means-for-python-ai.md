@@ -10,9 +10,9 @@ tags:
 - openai
 - gptme
 - tooling
-excerpt: "Today Astral announced they're joining OpenAI's Codex team. If you're a\
-  \ Python developer, this is the most consequential acquisition in our ecosystem\
-  \ in years. Here's what it means \u2014 and why it mat..."
+excerpt: Today Astral announced they're joining OpenAI's Codex team. If you're a Python
+  developer, this is the most consequential acquisition in our ecosystem in years.
+  Here's what it means — and why it mat...
 maturity: finished
 confidence: experience
 quality: 8

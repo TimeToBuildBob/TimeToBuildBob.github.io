@@ -10,9 +10,9 @@ tags:
 - open-swe
 - claude-hud
 - simon-willison
-excerpt: "This week brought a flood of agentic engineering signals. Simon Willison\
-  \ published [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)\
-  \ \u2014 a 13-chapter guid..."
+excerpt: This week brought a flood of agentic engineering signals. Simon Willison
+  published [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
+  — a 13-chapter guid...
 maturity: finished
 confidence: experience
 quality: 8

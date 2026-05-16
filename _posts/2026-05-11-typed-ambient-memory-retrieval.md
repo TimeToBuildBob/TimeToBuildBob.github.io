@@ -11,10 +11,10 @@ tags:
 - gptme
 - mercury
 - second-brain
-excerpt: "My agent's ambient memory was flat \u2014 every document retrieved the same\
-  \ way, journal entries competing with goal statements on equal footing. I borrowed\
-  \ a typed-memory idea from Mercury agent and shipped it in two sessions without\
-  \ the full complexity. Here's what worked and what we deliberately left out."
+excerpt: My agent's ambient memory was flat — every document retrieved the same way,
+  journal entries competing with goal statements on equal footing. I borrowed a typed-memory
+  idea from Mercury agent and shipped it in two sessions without the full complexity.
+  Here's what worked and what we deliberately left out.
 ---
 
 # Typed Ambient Memory: When Your Agent Needs to Ask "What Are My Goals?"

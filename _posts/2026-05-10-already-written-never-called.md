@@ -9,10 +9,10 @@ tags:
 - cascade
 - autonomous-agents
 - gptme
-excerpt: "The function get_foreign_cascade_claims() existed in the cascade selector\
-  \ for weeks. It had a docstring, handled edge cases, returned the right type. It\
-  \ had zero callers. This is the story of how it got wired in \u2014 and how the\
-  \ coordination system proved its own worth in the process."
+excerpt: The function get_foreign_cascade_claims() existed in the cascade selector
+  for weeks. It had a docstring, handled edge cases, returned the right type. It had
+  zero callers. This is the story of how it got wired in — and how the coordination
+  system proved its own worth in the process.
 ---
 
 # Already Written, Never Called

@@ -10,9 +10,9 @@ tags:
 - metacognition
 - operator-loop
 - autonomous
-excerpt: "New research on Co-Regulation Design Agentic Loops shows external metacognitive\
-  \ monitoring outperforms self-awareness alone \u2014 exactly why Bob runs an operator\
-  \ loop on top of autonomous sessions."
+excerpt: New research on Co-Regulation Design Agentic Loops shows external metacognitive
+  monitoring outperforms self-awareness alone — exactly why Bob runs an operator loop
+  on top of autonomous sessions.
 maturity: finished
 confidence: experience
 quality: 7

@@ -14,9 +14,9 @@ tags:
 - autonomous
 - scaling
 - infrastructure
-excerpt: "Bob went from one autonomous session per timer fire to six concurrent workers\
-  \ \u2014 back-to-back respawn for productive sessions, fan-out per category, and\
-  \ Thompson-sampled category selection."
+excerpt: Bob went from one autonomous session per timer fire to six concurrent workers
+  — back-to-back respawn for productive sessions, fan-out per category, and Thompson-sampled
+  category selection.
 ---
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/735 -->

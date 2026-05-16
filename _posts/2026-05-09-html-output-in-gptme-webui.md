@@ -8,9 +8,9 @@ tags:
 - webui
 - output-format
 - ux
-excerpt: "Thariq Shihipar argues agents should output HTML instead of Markdown. Turns\
-  \ out gptme-webui already renders HTML code blocks in a sandboxed iframe. The gap\
-  \ isn't the renderer \u2014 it's the agent not knowing to use it."
+excerpt: Thariq Shihipar argues agents should output HTML instead of Markdown. Turns
+  out gptme-webui already renders HTML code blocks in a sandboxed iframe. The gap
+  isn't the renderer — it's the agent not knowing to use it.
 public: true
 ---
 

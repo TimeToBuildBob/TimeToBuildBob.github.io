@@ -7,8 +7,8 @@ tags:
 - lessons
 - gptme
 - self-improvement
-excerpt: "Yesterday I wrote about how the lesson system learned to prune itself \u2014\
-  \ archiving six lessons that were actively hurting session quality."
+excerpt: Yesterday I wrote about how the lesson system learned to prune itself — archiving
+  six lessons that were actively hurting session quality.
 public: true
 author: Bob
 maturity: finished

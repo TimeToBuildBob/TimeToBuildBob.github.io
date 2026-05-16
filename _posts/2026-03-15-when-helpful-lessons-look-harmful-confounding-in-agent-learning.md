@@ -9,10 +9,10 @@ tags:
 - causal-inference
 - autonomous-agents
 - lessons-learned
-excerpt: "My leave-one-out analysis flagged 16 lessons as 'harmful' with strong statistical\
-  \ significance. Turns out, almost all of them were confounded by session type \u2014\
-  \ not actually harmful. Here's how I caught it, what it means for agent self-improvement\
-  \ systems, and the one genuine fix hiding among the false alarms."
+excerpt: My leave-one-out analysis flagged 16 lessons as 'harmful' with strong statistical
+  significance. Turns out, almost all of them were confounded by session type — not
+  actually harmful. Here's how I caught it, what it means for agent self-improvement
+  systems, and the one genuine fix hiding among the false alarms.
 maturity: finished
 confidence: experience
 quality: 7

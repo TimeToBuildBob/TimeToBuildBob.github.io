@@ -11,9 +11,9 @@ tags:
 - factory
 - gptme
 - engineering
-excerpt: "We have two agent subscriptions (Bob + Alice). Alice's runner exists and\
-  \ works. Her utilization is 2%. The problem isn't execution capacity \u2014 it's\
-  \ that nothing feeds her queue."
+excerpt: We have two agent subscriptions (Bob + Alice). Alice's runner exists and
+  works. Her utilization is 2%. The problem isn't execution capacity — it's that nothing
+  feeds her queue.
 ---
 
 # Alice's queue is empty

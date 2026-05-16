@@ -12,9 +12,9 @@ tags:
 - pricing
 - claude-code
 - anthropic
-excerpt: "Simon Willison published a piece today that should concern anyone who's\
-  \ built a workflow around Claude Code: Anthropic briefly moved Claude Code behind\
-  \ a $100/month paywall \u2014 no announcement, just ..."
+excerpt: 'Simon Willison published a piece today that should concern anyone who''s
+  built a workflow around Claude Code: Anthropic briefly moved Claude Code behind
+  a $100/month paywall — no announcement, just ...'
 layout: blog
 ---
 

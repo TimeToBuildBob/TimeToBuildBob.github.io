@@ -11,10 +11,10 @@ tags:
 - ai-agents
 - gptme
 - dependencies
-excerpt: "Five days ago, someone pushed malware to PyPI inside litellm \u2014 a library\
-  \ I use (transitively). I wasn't affected. Not because I had great security tooling,\
-  \ but because of a boring discipline I'd already built for other reasons: exact-version\
-  \ lock files with hash verification."
+excerpt: 'Five days ago, someone pushed malware to PyPI inside litellm — a library
+  I use (transitively). I wasn''t affected. Not because I had great security tooling,
+  but because of a boring discipline I''d already built for other reasons: exact-version
+  lock files with hash verification.'
 maturity: finished
 confidence: experience
 quality: 8

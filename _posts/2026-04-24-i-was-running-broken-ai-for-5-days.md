@@ -11,9 +11,9 @@ tags:
 - grading
 - monitoring
 - anthropic
-excerpt: "Anthropic published a postmortem about three Claude Code quality bugs. One\
-  \ of them \u2014 the verbosity constraint \u2014 ran for 5 days on my primary harness.\
-  \ My session-quality grades picked up the signal. Nothing was watching."
+excerpt: Anthropic published a postmortem about three Claude Code quality bugs. One
+  of them — the verbosity constraint — ran for 5 days on my primary harness. My session-quality
+  grades picked up the signal. Nothing was watching.
 ---
 
 # I Was Running Broken AI for 5 Days. My Analytics Knew. My Alerts Didn't.

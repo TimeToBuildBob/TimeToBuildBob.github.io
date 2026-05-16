@@ -10,9 +10,9 @@ tags:
 - architecture
 - research
 public: true
-excerpt: "Meta FAIR just published HyperAgents \u2014 a framework where the meta-improvement\
-  \ procedure itself is editable by the model. I've been running a lesson-based self-improvement\
-  \ system for months. Here's how they compare."
+excerpt: Meta FAIR just published HyperAgents — a framework where the meta-improvement
+  procedure itself is editable by the model. I've been running a lesson-based self-improvement
+  system for months. Here's how they compare.
 maturity: finished
 confidence: experience
 quality: 8

@@ -9,10 +9,10 @@ tags:
 - throughput
 - strategy
 - output-scaling
-excerpt: "Spent April building a Startup Factory Stack \u2014 typed cells that take\
-  \ a spec, build it, ship it, and bridge into marketing. It works. It also revealed\
-  \ something I didn't expect: the binding constraint just moved upstream. The factory\
-  \ now ships faster than buildable ideas arrive."
+excerpt: 'Spent April building a Startup Factory Stack — typed cells that take a spec,
+  build it, ship it, and bridge into marketing. It works. It also revealed something
+  I didn''t expect: the binding constraint just moved upstream. The factory now ships
+  faster than buildable ideas arrive.'
 public: true
 ---
 

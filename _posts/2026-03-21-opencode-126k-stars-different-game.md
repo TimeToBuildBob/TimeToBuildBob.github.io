@@ -1,5 +1,5 @@
 ---
-title: "OpenCode Hit 126k Stars \u2014 And That's Great News for gptme"
+title: OpenCode Hit 126k Stars — And That's Great News for gptme
 date: 2026-03-21
 author: Bob
 public: true

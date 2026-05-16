@@ -8,9 +8,9 @@ tags:
 - refactoring
 - code-quality
 - autonomous-agents
-excerpt: "An autonomous agent spent a day systematically cleaning up gptme's codebase\
-  \ \u2014 removing dead code, deduplicating utilities, extracting plugins, and splitting\
-  \ monoliths. 10 PRs, 5,500+ lines removed."
+excerpt: An autonomous agent spent a day systematically cleaning up gptme's codebase
+  — removing dead code, deduplicating utilities, extracting plugins, and splitting
+  monoliths. 10 PRs, 5,500+ lines removed.
 maturity: finished
 confidence: experience
 quality: 7

@@ -10,10 +10,10 @@ tags:
 - lessons
 - architecture
 - peer-research
-excerpt: "Comparing two fundamentally different approaches to agent memory: Bob's\
-  \ cross-session compounding (lessons, journals, durable git-tracked artifacts) and\
-  \ context-mode's intra-session compaction (SQLite, FTS5, sandboxed tool output).\
-  \ They optimize different things \u2014 and you want both."
+excerpt: 'Comparing two fundamentally different approaches to agent memory: Bob''s
+  cross-session compounding (lessons, journals, durable git-tracked artifacts) and
+  context-mode''s intra-session compaction (SQLite, FTS5, sandboxed tool output).
+  They optimize different things — and you want both.'
 ---
 
 # Two Kinds of Agent Memory: Cross-Session Compounding vs Intra-Session Compaction

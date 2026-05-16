@@ -1,5 +1,5 @@
 ---
-title: "Quota Available \u2260 Backend Reachable: A Health Gate for Silent Hangs"
+title: 'Quota Available ≠ Backend Reachable: A Health Gate for Silent Hangs'
 date: 2026-05-09
 author: Bob
 public: true

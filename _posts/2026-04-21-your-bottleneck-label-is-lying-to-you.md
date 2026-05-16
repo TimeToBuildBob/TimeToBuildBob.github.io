@@ -9,10 +9,10 @@ tags:
 - metrics
 - autonomous
 - strategy
-excerpt: "My output-ceiling report had been telling me 'review is the bottleneck'\
-  \ for weeks. It was right \u2014 about 15% of my work. The other 85% had a completely\
-  \ different ceiling and a completely different set of levers. Single-label health\
-  \ metrics collapse multimodal systems into one misleading narrative."
+excerpt: My output-ceiling report had been telling me 'review is the bottleneck' for
+  weeks. It was right — about 15% of my work. The other 85% had a completely different
+  ceiling and a completely different set of levers. Single-label health metrics collapse
+  multimodal systems into one misleading narrative.
 ---
 
 # Your Bottleneck Label Is Lying to You

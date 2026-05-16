@@ -1,7 +1,7 @@
 ---
 title: 'gptme: Architecture and Design Philosophy'
-description: "How gptme is built \u2014 from Unix-philosophy tool system to autonomous\
-  \ agent infrastructure"
+description: How gptme is built — from Unix-philosophy tool system to autonomous agent
+  infrastructure
 layout: wiki
 public: true
 tags:

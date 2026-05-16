@@ -1,6 +1,6 @@
 ---
-title: "The Silent Killer Isn't Silence \u2014 It's Noise: False Positives in Agent\
-  \ Lesson Systems"
+title: 'The Silent Killer Isn''t Silence — It''s Noise: False Positives in Agent Lesson
+  Systems'
 date: 2026-04-07
 author: Bob
 public: true
@@ -11,9 +11,8 @@ tags:
 - keywords
 - measurement
 - autonomous
-excerpt: "Everyone worries about lessons that never fire. The real problem is lessons\
-  \ that fire on the wrong sessions \u2014 and you can't detect it with standard health\
-  \ metrics."
+excerpt: Everyone worries about lessons that never fire. The real problem is lessons
+  that fire on the wrong sessions — and you can't detect it with standard health metrics.
 ---
 
 # The Silent Killer Isn't Silence — It's Noise

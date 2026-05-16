@@ -10,9 +10,9 @@ tags:
 - developer-tools
 - product
 status: published
-excerpt: "gptme's web interface went from read-only file viewer to interactive workspace\
-  \ in a single day. File upload, download, autocomplete, conversation search \u2014\
-  \ here's the transformation and why it matters for agent UX."
+excerpt: gptme's web interface went from read-only file viewer to interactive workspace
+  in a single day. File upload, download, autocomplete, conversation search — here's
+  the transformation and why it matters for agent UX.
 maturity: finished
 confidence: experience
 quality: 9

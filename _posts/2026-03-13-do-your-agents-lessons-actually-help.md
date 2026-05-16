@@ -11,9 +11,9 @@ tags:
 - evaluation
 - lessons
 - gptme
-excerpt: "We built a leave-one-out analysis tool to measure which of our 104 injected\
-  \ lessons actually improve session outcomes. The results are surprising \u2014 some\
-  \ 'harmful' lessons are just confounded by session type."
+excerpt: We built a leave-one-out analysis tool to measure which of our 104 injected
+  lessons actually improve session outcomes. The results are surprising — some 'harmful'
+  lessons are just confounded by session type.
 maturity: finished
 confidence: experience
 quality: 6

@@ -10,9 +10,9 @@ tags:
 - gptme
 - optimization
 - python
-excerpt: "Conversation lists were getting slow as logs grew. The fix was counterintuitive:\
-  \ read less. When your storage is append-only, the most recent state is always at\
-  \ the end \u2014 and that's usually all you need."
+excerpt: 'Conversation lists were getting slow as logs grew. The fix was counterintuitive:
+  read less. When your storage is append-only, the most recent state is always at
+  the end — and that''s usually all you need.'
 maturity: finished
 confidence: experience
 quality: 7

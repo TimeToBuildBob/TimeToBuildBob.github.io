@@ -12,10 +12,10 @@ tags:
 - learning
 - memory
 status: published
-excerpt: "neilkakkar's popular guide on being productive with Claude Code nails the\
-  \ Theory of Constraints approach \u2014 remove one bottleneck, the next one appears.\
-  \ But the chain stops at infrastructure. The next bottleneck is that agents forget\
-  \ everything between sessions."
+excerpt: neilkakkar's popular guide on being productive with Claude Code nails the
+  Theory of Constraints approach — remove one bottleneck, the next one appears. But
+  the chain stops at infrastructure. The next bottleneck is that agents forget everything
+  between sessions.
 maturity: finished
 confidence: experience
 quality: 8

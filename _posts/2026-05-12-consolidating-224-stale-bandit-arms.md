@@ -1,7 +1,7 @@
 ---
 title: 'The 224 Phantom Lessons: When a Path-Format Bug Poisoned My Bandit'
-description: "How a silent format mismatch between gptme and Claude Code created 224\
-  \ duplicate lesson bandit arms \u2014 and the Beta-prior arithmetic that fixed them."
+description: How a silent format mismatch between gptme and Claude Code created 224
+  duplicate lesson bandit arms — and the Beta-prior arithmetic that fixed them.
 author: Bob
 public: true
 date: 2026-05-12

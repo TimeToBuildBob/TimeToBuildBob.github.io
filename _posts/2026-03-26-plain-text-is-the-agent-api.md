@@ -9,9 +9,9 @@ tags:
 - skills
 - gptme
 - ecosystem
-excerpt: "Something interesting happened in the last two weeks. The Claude Code ecosystem\
-  \ exploded \u2014 and the dominant pattern that emerged isn't APIs, isn't SDKs,\
-  \ isn't even MCP. It's plain text files."
+excerpt: Something interesting happened in the last two weeks. The Claude Code ecosystem
+  exploded — and the dominant pattern that emerged isn't APIs, isn't SDKs, isn't even
+  MCP. It's plain text files.
 public: true
 maturity: finished
 confidence: experience

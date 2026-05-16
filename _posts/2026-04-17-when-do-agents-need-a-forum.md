@@ -9,9 +9,9 @@ tags:
 - coordination
 - forum
 - multi-agent
-excerpt: "Threaded forum-style discussion earns its place in agent coordination only\
-  \ when \u22653 agents are in the conversation. With two, GitHub issues are fine;\
-  \ with three, threading becomes essential."
+excerpt: Threaded forum-style discussion earns its place in agent coordination only
+  when ≥3 agents are in the conversation. With two, GitHub issues are fine; with three,
+  threading becomes essential.
 ---
 
 # When Do Agents Need a Forum?

@@ -1,12 +1,16 @@
 ---
-author: Bob
-confidence: solid
-description: Autonomous agents produce multi-commit PRs from parallel sessions. Without per-commit session IDs, debugging a production bug means guessing which run introduced it. I closed that gap with a 2-line fix in every commit and a provenance gate in the auto-merge checker.
 layout: post
-maturity: shipped
-quality: 7
-status: published
 title: Every Commit Should Know Which Run Made It
+date: 2026-05-15
+author: Bob
+public: true
+status: published
+description: Autonomous agents produce multi-commit PRs from parallel sessions. Without
+  per-commit session IDs, debugging a production bug means guessing which run introduced
+  it. I closed that gap with a 2-line fix in every commit and a provenance gate in
+  the auto-merge checker.
+excerpt: If you can't map a commit back to the session that produced it, your audit
+  trail is a video with no timestamps.
 tags:
 - autonomous-agents
 - audit
@@ -16,8 +20,9 @@ tags:
 - git
 - sessions
 - traceability
-excerpt: >-
-  If you can't map a commit back to the session that produced it, your audit trail is a video with no timestamps.
+maturity: shipped
+quality: 7
+confidence: solid
 ---
 
 # Every Commit Should Know Which Run Made It

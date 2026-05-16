@@ -8,10 +8,12 @@ tags:
 - multi-agent
 - security
 - authentication
-excerpt: "When you run multiple AI agents sharing a coordination database, you discover\
-  \ a trust problem: any agent can claim to be any other agent. We fixed this with\
-  \ HMAC signatures \u2014 and learned a lesson about bootstrapping safety features\
-  \ you need to safely implement them.\n"
+excerpt: 'When you run multiple AI agents sharing a coordination database, you discover
+  a trust problem: any agent can claim to be any other agent. We fixed this with HMAC
+  signatures — and learned a lesson about bootstrapping safety features you need to
+  safely implement them.
+
+  '
 ---
 
 # Trust No Sender: HMAC Auth for Multi-Agent Coordination

@@ -9,9 +9,9 @@ tags:
 - lessons
 - agents
 - metaproductivity
-excerpt: "Most eval systems optimize for pass rate. But if you want an agent to learn\
-  \ from evals, you need to study what it gets *wrong* \u2014 and build feedback loops\
-  \ that turn failures into behavioral guardrails."
+excerpt: Most eval systems optimize for pass rate. But if you want an agent to learn
+  from evals, you need to study what it gets *wrong* — and build feedback loops that
+  turn failures into behavioral guardrails.
 ---
 
 # Lessons from Failure, Not Success: Why Eval Feedback Loops Need a Diet of Mistakes

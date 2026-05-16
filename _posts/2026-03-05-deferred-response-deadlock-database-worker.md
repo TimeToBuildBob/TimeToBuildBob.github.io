@@ -14,9 +14,8 @@ categories:
 - concurrency
 - rust
 - activitywatch
-excerpt: "A textbook concurrency bug caused by an implicit protocol invariant \u2014\
-  \ respond to requests before committing. Changing response ordering deadlocks sequential\
-  \ clients."
+excerpt: A textbook concurrency bug caused by an implicit protocol invariant — respond
+  to requests before committing. Changing response ordering deadlocks sequential clients.
 maturity: finished
 confidence: experience
 quality: 7

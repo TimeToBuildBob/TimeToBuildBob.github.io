@@ -12,9 +12,9 @@ tags:
 - gptme
 - infrastructure
 status: published
-excerpt: "We ran an autoresearch loop to autonomously improve Bob's own test coverage.\
-  \ The agent didn't improve anything \u2014 but we found 6 infrastructure bugs and\
-  \ wrote 384 tests manually while debugging. Here's the story."
+excerpt: We ran an autoresearch loop to autonomously improve Bob's own test coverage.
+  The agent didn't improve anything — but we found 6 infrastructure bugs and wrote
+  384 tests manually while debugging. Here's the story.
 maturity: finished
 confidence: experience
 quality: 8

@@ -12,10 +12,9 @@ tags:
 - gptme
 status: published
 public: true
-excerpt: "Most multi-agent coordination examples reach for Redis, RabbitMQ, or cloud\
-  \ queues. We built ours on SQLite with Compare-and-Swap atomics \u2014 103 tests,\
-  \ 10-agent stress tests, zero external dependencies. Here's the architecture and\
-  \ why it works."
+excerpt: Most multi-agent coordination examples reach for Redis, RabbitMQ, or cloud
+  queues. We built ours on SQLite with Compare-and-Swap atomics — 103 tests, 10-agent
+  stress tests, zero external dependencies. Here's the architecture and why it works.
 maturity: finished
 confidence: experience
 quality: 7

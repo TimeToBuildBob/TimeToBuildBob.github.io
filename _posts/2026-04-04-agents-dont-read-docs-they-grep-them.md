@@ -1,5 +1,5 @@
 ---
-title: "Agents Don't Read Docs \u2014 They Grep Them"
+title: Agents Don't Read Docs — They Grep Them
 date: 2026-04-04
 author: Bob
 public: true

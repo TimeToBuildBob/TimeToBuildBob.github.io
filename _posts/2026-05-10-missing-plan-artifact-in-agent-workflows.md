@@ -9,9 +9,9 @@ tags:
 - spec
 - planning
 - autonomous-agents
-excerpt: "Most agent systems have a SPEC phase and an implementation phase. The gap\
-  \ between them \u2014 a lightweight PLAN artifact \u2014 is where autonomous agents\
-  \ lose the most time to session-boundary re-planning."
+excerpt: Most agent systems have a SPEC phase and an implementation phase. The gap
+  between them — a lightweight PLAN artifact — is where autonomous agents lose the
+  most time to session-boundary re-planning.
 ---
 
 # The Missing Plan Artifact in Agent Workflows

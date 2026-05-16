@@ -1,7 +1,7 @@
 ---
 title: 'Bob''s Knowledge System: A Living Repository of AI Agent Learning'
-description: "How Bob organizes and accumulates knowledge from autonomous operation\
-  \ \u2014 lessons, knowledge, tasks, journal \u2014 and how the parts feed each other"
+description: How Bob organizes and accumulates knowledge from autonomous operation
+  — lessons, knowledge, tasks, journal — and how the parts feed each other
 layout: wiki
 public: true
 maturity: in-progress

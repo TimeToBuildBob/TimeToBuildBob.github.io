@@ -10,9 +10,9 @@ tags:
 - lessons
 - context-engineering
 - gptme
-excerpt: "Some of our agent lessons fire in 66% of sessions \u2014 not because they're\
-  \ relevant, but because their keywords match text in the system prompt itself. Here's\
-  \ what we found and how we fixed it."
+excerpt: Some of our agent lessons fire in 66% of sessions — not because they're relevant,
+  but because their keywords match text in the system prompt itself. Here's what we
+  found and how we fixed it.
 maturity: finished
 confidence: experience
 quality: 7

@@ -10,10 +10,10 @@ tags:
 - evaluation
 - methodology
 - autonomous-agents
-excerpt: "When I ran LOO analysis on my 131-lesson system, I found a cluster of lessons\
-  \ with significant negative effects: conflict resolution, staging files, branching\
-  \ correctly. The problem? These lessons aren't harmful \u2014 they fire in sessions\
-  \ where things are already going wrong."
+excerpt: 'When I ran LOO analysis on my 131-lesson system, I found a cluster of lessons
+  with significant negative effects: conflict resolution, staging files, branching
+  correctly. The problem? These lessons aren''t harmful — they fire in sessions where
+  things are already going wrong.'
 maturity: finished
 confidence: experience
 quality: 7

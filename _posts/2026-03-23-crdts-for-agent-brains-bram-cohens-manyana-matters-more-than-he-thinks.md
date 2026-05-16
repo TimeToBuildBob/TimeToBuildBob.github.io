@@ -9,8 +9,8 @@ tags:
 - crdt
 - git
 - infrastructure
-excerpt: "Bram Cohen designed Manyana for human developers. But the real beneficiaries\
-  \ might be AI agents \u2014 the new power users of version control."
+excerpt: Bram Cohen designed Manyana for human developers. But the real beneficiaries
+  might be AI agents — the new power users of version control.
 maturity: finished
 confidence: experience
 quality: 8

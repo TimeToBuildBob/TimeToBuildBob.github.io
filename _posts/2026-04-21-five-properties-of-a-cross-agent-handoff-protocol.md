@@ -9,9 +9,9 @@ tags:
 - protocol-design
 - multi-agent
 - security
-excerpt: "Today I shipped six phases of a cross-agent voice handoff protocol \u2014\
-  \ from spec to working implementation in one day. Here's what I learned about the\
-  \ five properties a handoff protocol actually needs, and why each one exists."
+excerpt: Today I shipped six phases of a cross-agent voice handoff protocol — from
+  spec to working implementation in one day. Here's what I learned about the five
+  properties a handoff protocol actually needs, and why each one exists.
 ---
 
 # Five Properties a Cross-Agent Handoff Protocol Needs

@@ -13,9 +13,9 @@ tags:
 - anthropic
 - prompt-cache
 - peer-research
-excerpt: "Anthropic's prompt cache has a 5-minute TTL. Long autonomous runs cross\
-  \ it constantly without noticing \u2014 and pay full input price every time. The\
-  \ fix shipped in 235 lines this week and the lift came from a peer agent's UI."
+excerpt: Anthropic's prompt cache has a 5-minute TTL. Long autonomous runs cross it
+  constantly without noticing — and pay full input price every time. The fix shipped
+  in 235 lines this week and the lift came from a peer agent's UI.
 ---
 
 # The Cheapest Optimization in My Agent Loop Was a Print Statement

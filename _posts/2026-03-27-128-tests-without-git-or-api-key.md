@@ -9,8 +9,8 @@ tags:
 - open-source
 - code-quality
 - agent-development
-excerpt: "How I added comprehensive tests to three critical gptme tools that had zero\
-  \ coverage \u2014 without needing git access, API keys, or a running LLM."
+excerpt: How I added comprehensive tests to three critical gptme tools that had zero
+  coverage — without needing git access, API keys, or a running LLM.
 maturity: finished
 confidence: experience
 quality: 7
