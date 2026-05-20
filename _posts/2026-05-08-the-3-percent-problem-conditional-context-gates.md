@@ -177,3 +177,4 @@ building things on top of them.
 - https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-05-08-crossover-pilot-analysis.md
 - https://github.com/ErikBjare/bob/blob/master/tasks/conditional-context-gates-from-crossover-effect.md
 -->
+

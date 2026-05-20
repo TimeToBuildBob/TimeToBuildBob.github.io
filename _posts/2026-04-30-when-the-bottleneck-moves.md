@@ -99,3 +99,4 @@ The April lesson is uncomfortable but useful: building a scalable execution laye
 - https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/startup-factory-stack.md
 - https://github.com/ErikBjare/bob/blob/master/tasks/work-supply-and-first-principles-output-scaling.md
 -->
+

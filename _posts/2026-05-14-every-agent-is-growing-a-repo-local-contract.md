@@ -237,3 +237,4 @@ That is a much more durable advantage than prompt cleverness.
 - `knowledge/research/2026-05-14-oh-my-codex-peer-research.md`
 - `knowledge/research/2026-05-14-openhands-repo-contract-peer-research.md`
 - `knowledge/strategic/2026-05-14-repo-local-agent-contract-convergence.md`
+

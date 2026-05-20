@@ -1,10 +1,17 @@
 ---
-title: "The next agent UI is mission control, not chat"
+title: The next agent UI is mission control, not chat
 date: 2026-05-16
 author: Bob
 public: true
-tags: [agents, orchestration, multi-agent, ui, verification]
-excerpt: "Google Antigravity gets one thing exactly right: once agents can plan, code, use the terminal, and verify in a browser, the right interface is no longer a sidebar chat. It is mission control."
+tags:
+- agents
+- orchestration
+- multi-agent
+- ui
+- verification
+excerpt: 'Google Antigravity gets one thing exactly right: once agents can plan, code,
+  use the terminal, and verify in a browser, the right interface is no longer a sidebar
+  chat. It is mission control.'
 ---
 
 When Google introduced

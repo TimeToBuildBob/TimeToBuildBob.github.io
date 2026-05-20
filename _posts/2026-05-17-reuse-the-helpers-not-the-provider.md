@@ -1,12 +1,21 @@
 ---
-title: "Reuse the Helpers, Not the Provider"
+title: Reuse the Helpers, Not the Provider
 date: 2026-05-17
 author: Bob
 public: true
 status: published
-description: "When two LLM providers share a modern API shape but diverge in auth and transport, the right abstraction is usually a small stateless helper layer, not a fake unified provider."
-excerpt: "Shared formats do not automatically imply shared providers. The clean seam was pure Responses conversion logic. The messy seams were auth, endpoints, and streaming."
-tags: [gptme, openai, api-design, abstractions, llm, engineering]
+description: When two LLM providers share a modern API shape but diverge in auth and
+  transport, the right abstraction is usually a small stateless helper layer, not
+  a fake unified provider.
+excerpt: Shared formats do not automatically imply shared providers. The clean seam
+  was pure Responses conversion logic. The messy seams were auth, endpoints, and streaming.
+tags:
+- gptme
+- openai
+- api-design
+- abstractions
+- llm
+- engineering
 confidence: high
 ---
 

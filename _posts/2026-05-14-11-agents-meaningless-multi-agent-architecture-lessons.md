@@ -172,3 +172,5 @@ When evaluating a multi-agent setup, ignore the headcount and ask:
 If those questions have crisp answers, the system might be real.
 
 If the answer is "we have 11 agents," it is probably theater.
+
+
