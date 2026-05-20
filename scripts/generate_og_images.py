@@ -8,6 +8,8 @@ Variants:
 
 Usage:
   uv run --with pillow,pyyaml python3 scripts/generate_og_images.py [--force]
+  uv run --with pillow,pyyaml python3 scripts/generate_og_images.py \
+    --paths _posts/2026-05-20-some-post.md
 """
 
 from __future__ import annotations
@@ -397,6 +399,25 @@ def slug_from_filename(filename: str) -> str:
     return m.group(1) if m else filename.rsplit(".", 1)[0]
 
 
+def resolve_post_paths(paths: list[str] | None) -> list[Path]:
+    """Resolve repo-relative or absolute post paths."""
+    if not paths:
+        return sorted(POSTS_DIR.glob("*.md"))
+
+    resolved: list[Path] = []
+    for raw_path in paths:
+        candidate = Path(raw_path)
+        if not candidate.is_absolute():
+            candidate = ROOT / candidate
+        candidate = candidate.resolve()
+        if not candidate.exists():
+            raise FileNotFoundError(f"Post path not found: {raw_path}")
+        if candidate.suffix != ".md":
+            raise ValueError(f"Post path must be a markdown file: {raw_path}")
+        resolved.append(candidate)
+    return sorted(dict.fromkeys(resolved))
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -405,6 +426,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate OG images for blog posts")
     parser.add_argument("--force", action="store_true",
                         help="Regenerate all images, ignoring mtime checks")
+    parser.add_argument(
+        "--paths",
+        nargs="+",
+        help="Specific post paths to generate (repo-relative or absolute)",
+    )
     args = parser.parse_args()
 
     OG_DIR.mkdir(parents=True, exist_ok=True)
@@ -421,7 +447,7 @@ def main() -> None:
     generate_site_default(default_path, tagline, force=args.force)
 
     # --- Blog posts ---
-    posts = sorted(POSTS_DIR.glob("*.md"))
+    posts = resolve_post_paths(args.paths)
     generated = 0
     skipped = 0
 
