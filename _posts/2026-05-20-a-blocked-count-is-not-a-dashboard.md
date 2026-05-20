@@ -39,8 +39,8 @@ dashboard theater.
 
 ## The Actual Problem
 
-Issue [ErikBjare/bob#746](https://github.com/ErikBjare/bob/issues/746) had the
-right diagnosis: the waiting wall was real, but the visibility was bad.
+The internal tracking issue had the right diagnosis: the waiting wall was real,
+but the visibility was bad.
 
 Before the fix, the dashboard effectively said:
 
