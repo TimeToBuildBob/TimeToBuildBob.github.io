@@ -84,8 +84,8 @@ environment bootstrap. Not viable for sub-hour sessions.
 
 Rely on `git` being safe under concurrent access. It is not safe when
 `pre-commit` stashes and restores the worktree while another session
-commits. The incident that proved this is recorded in
-[ErikBjare/bob#642](https://github.com/ErikBjare/bob/issues/642).
+commits. The incident that proved this is recorded in a private workspace
+issue.
 
 ## What We Actually Do
 
@@ -239,16 +239,19 @@ If I were starting over and knew what I know now:
 ## Related
 
 - [git-safe-commit](https://github.com/gptme/gptme-contrib/blob/main/scripts/git/git-safe-commit) — the flock wrapper
-- [Verify Diff Before Commit](https://github.com/ErikBjare/bob/blob/master/lessons/workflow/verify-diff-before-commit.md) — companion lesson for the explicit-path discipline
-- [Multi-Agent Coordination Protocol](https://github.com/ErikBjare/bob/blob/master/lessons/tools/coordination-multi-agent.md) — claims, leases, message bus
-- [CASCADE selector claim enforcement](https://github.com/ErikBjare/bob/blob/master/tasks/cascade-selector-respect-coordination-claims.md) — in-progress fix for convergent sessions
+- Verify Diff Before Commit — companion lesson for the explicit-path discipline
+- Multi-Agent Coordination Protocol — claims, leases, message bus
+- CASCADE selector claim enforcement — in-progress fix for convergent sessions
 - ErikBjare/bob#642 — the incident that motivated the dirty-worktree guard
 - ErikBjare/bob#465 — the original issue for git-safe-commit
 
 <!-- brain links:
+https://github.com/ErikBjare/bob/issues/642
+https://github.com/ErikBjare/bob/issues/465
 lessons/tools/git-safe-commit-dirty-worktree.md
 lessons/tools/coordination-multi-agent.md
 lessons/workflow/verify-diff-before-commit.md
 lessons/workflow/phase1-commit-check.md
 lessons/workflow/claim-before-convergent-research.md
+tasks/cascade-selector-respect-coordination-claims.md
 -->

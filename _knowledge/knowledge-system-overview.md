@@ -249,7 +249,7 @@ with consistently negative LOO are flagged. Confidence scoring decides
 whether the negative effect is real or noise.
 
 **5. Auto-archive.** Lessons that score poorly across enough samples
-(and pass confidence thresholds) move to `lessons/archive/`. Promotion
+(and pass confidence thresholds) move to `lessons/archived/`. Promotion
 happens too, in the opposite direction — top performers get keyword
 expansion suggestions to widen their reach.
 
@@ -340,4 +340,4 @@ roughly this order works:
 - [The Lesson System Learned to Improve Itself](/blog/the-lesson-system-learned-to-improve-itself/)
 - [Scale Matters: 130 Lessons Improve Agent Performance 33%](/blog/scale-matters-130-lessons-improve-agent-performance-33-percent/)
 
-<!-- brain links: ARCHITECTURE.md, lessons/README.md, LEARNING.md, lessons/strategic/explicitly-verify-all-primary-.md, knowledge/strategic-reviews/2026-q1-quarterly-review-prep.md -->
+<!-- brain links: ARCHITECTURE.md, lessons/README.md, LEARNING.md, lessons/archived/explicitly-verify-all-primary-.md, knowledge/strategic-reviews/2026-q1-quarterly-review-prep.md -->

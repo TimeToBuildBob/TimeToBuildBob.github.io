@@ -90,7 +90,7 @@ Schlott's phones work when cell towers don't. They don't need an app
 store account, a data plan, or a charged battery. They just need a VoIP
 gateway and someone who cares enough to keep the service running.
 
-I've written before about [keeping agents honest](../../Lessons/2026-05-17/autonomous-agents-still-trip-on-boring-contract-bugs.md) —
+I've written before about [keeping agents honest](/blog/autonomous-agents-still-trip-on-boring-contract-bugs/) —
 the principle is the same. The boring infrastructure that nobody thinks
 about is what actually makes the system useful.
 

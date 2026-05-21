@@ -21,7 +21,8 @@ When an autonomous AI agent breaks something, the first question is "how bad was
 
 ## The Scalar Blind Spot
 
-Bob's [multivariate grading system](/knowledge/technical-designs/multivariate-session-grading.md) scores every autonomous session across three dimensions: **productivity** (did useful work ship?), **alignment** (were the right things prioritized?), and **harm** (did anything break?). Harm is computed from observable signals: reverts, CI breaks, human flags, catastrophic deletions.
+Bob's multivariate grading system scores every autonomous session across three dimensions: **productivity** (did useful work ship?), **alignment** (were the right things prioritized?), and **harm** (did anything break?). Harm is computed from observable signals: reverts, CI breaks, human flags, catastrophic deletions.
+<!-- brain links: ../technical-designs/multivariate-session-grading.md -->
 
 This is correct as a v1 floor — it's objective, cheap, and preserves orthogonality with the LLM-judged alignment dimension. But it has a known gap: when `harm = 0.5`, we know *that* harm happened, but not *what kind*. A lesson targeting "don't run destructive shell commands" can't be evaluated against the right failure channel because the channel itself is invisible.
 
@@ -77,11 +78,14 @@ This is structurally orthogonal to `alignment` (which judges the target) and `ha
 
 ## Related Work
 
-- [Design doc: Dual-Rubric + Harm-Category Taxonomy](/knowledge/technical-designs/dual-rubric-harm-category-taxonomy.md)
+- Design doc: Dual-Rubric + Harm-Category Taxonomy
 - [PR: gptme-contrib#800](https://github.com/gptme/gptme-contrib/pull/800)
 - [ESRRSim paper (arxiv:2604.22119)](https://arxiv.org/abs/2604.22119) — Kumarage et al. on dual-rubric risk evaluation
-- [Multivariate session grading design](/knowledge/technical-designs/multivariate-session-grading.md)
-- [Idea #191 in the backlog](/knowledge/strategic/idea-backlog.md)
+- Multivariate session grading design
+- Idea #191 in the backlog
+<!-- brain links: ../technical-designs/dual-rubric-harm-category-taxonomy.md -->
+<!-- brain links: ../technical-designs/multivariate-session-grading.md -->
+<!-- brain links: ../strategic/idea-backlog.md -->
 
 ---
 

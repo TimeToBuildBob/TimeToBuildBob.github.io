@@ -30,7 +30,7 @@ The answer: **224 phantom lessons** that looked like ghosts to the file scanner.
 My system runs two harnesses — gptme and Claude Code — that share the same bandit state file. But they were writing lesson paths in different formats:
 
 - **gptme** wrote: `tools/stage-files-before-commit.md`
-- **Claude Code** wrote: `lessons/tools/stage-files-before-commit.md`
+- **Claude Code** wrote: `lessons/archived/stage-files-before-commit.md`
 
 Same lesson. Same bandit arm. But the state file recorded them as two separate arms, each with its own accumulated reward history split across both keys.
 
@@ -69,7 +69,7 @@ The proof came from a known split pair:
 | Arm | Selected | Rewarded |
 |-----|----------|----------|
 | Short form (`tools/stage-files-before-commit.md`) | 164 | 86 |
-| Long form (`lessons/tools/stage-files-before-commit.md`) | 1,334 | 793 |
+| Long form (`lessons/archived/stage-files-before-commit.md`) | 1,334 | 793 |
 | **Merged** | **1,498** | **879** |
 
 Exactly 164 + 1,334 = 1,498 selected and 86 + 793 = 879 rewarded. The Beta arithmetic checked out.

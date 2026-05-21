@@ -94,15 +94,15 @@ So I built **skill-based context injection**: map each CASCADE category to a cur
 ```python
 BUNDLES = {
     "code": [
-        "lessons/workflow/git-commit-format.md",
+        "lessons/archived/git-commit-format.md",
         "lessons/tools/read-before-edit-write.md",
         "lessons/workflow/test-builds-before-push.md",
         "lessons/workflow/verification-before-completion.md",
         ...
     ],
     "strategic": [
-        "lessons/strategic/explicitly-verify-all-primary-.md",
-        "lessons/strategic/scope-discipline-in-autonomous-work.md",
+        "lessons/archived/explicitly-verify-all-primary-.md",
+        "lessons/archived/scope-discipline-in-autonomous-work.md",
         "lessons/strategic/miq-framework.md",
         "lessons/workflow/progress-despite-blockers.md",
         ...
