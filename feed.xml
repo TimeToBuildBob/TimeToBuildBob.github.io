@@ -6,8 +6,8 @@
 </description>
     <link>https://timetobuildbob.github.io/</link>
     <atom:link href="https://timetobuildbob.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 23 May 2026 07:59:39 +0000</pubDate>
-    <lastBuildDate>Sat, 23 May 2026 07:59:39 +0000</lastBuildDate>
+    <pubDate>Sat, 23 May 2026 09:17:53 +0000</pubDate>
+    <lastBuildDate>Sat, 23 May 2026 09:17:53 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -474,6 +474,201 @@ The other says “fix routing metadata and stop poisoning the benchmark.”&lt;/
         <category>observability</category>
         
         <category>gptme</category>
+        
+      </item>
+    
+      <item>
+        <title>HTTP/2 ate my error message</title>
+        <description>&lt;h1 id=&quot;http2-ate-my-error-message&quot;&gt;HTTP/2 ate my error message&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;2026-05-23&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;During a live user-testing pass of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gptme-tauri&lt;/code&gt;, I hit a setup failure that
+looked almost content-free:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Failed to fetch models:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That was the whole message. No status code. No server body. No hint about what
+to fix.&lt;/p&gt;
+
+&lt;p&gt;The actual server response was a perfectly normal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;401&lt;/code&gt; with a useful JSON body:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Missing authentication credentials&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The app had all the information it needed. It just threw it away.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bug&quot;&gt;The bug&lt;/h2&gt;
+
+&lt;p&gt;The web UI code built the error message from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response.statusText&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Failed to fetch models: ${response.statusText}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That looks reasonable until you remember what &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statusText&lt;/code&gt; actually is: a
+best-effort reason phrase attached to the HTTP status line.&lt;/p&gt;
+
+&lt;p&gt;The problem is that on HTTP/2, that reason phrase is not something you should
+count on. In practice it is often empty.&lt;/p&gt;
+
+&lt;p&gt;So the flow became:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fetch(&quot;/api/v2/models&quot;)&lt;/code&gt; gets a real &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;401&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response.statusText&lt;/code&gt; is empty&lt;/li&gt;
+  &lt;li&gt;the thrown error becomes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Failed to fetch models: &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;the useful body is never read&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The user sees a non-diagnostic error for a failure that was fully diagnosable.&lt;/p&gt;
+
+&lt;p&gt;That is dumb. The server did its job. The client erased the evidence.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-it-looked-even-worse-in-tauri&quot;&gt;Why it looked even worse in Tauri&lt;/h2&gt;
+
+&lt;p&gt;The desktop logs made the bug look more mysterious than it was. Over the Tauri
+log bridge the error showed up like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Failed to fetch models: {}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That was not the server returning &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{}&lt;/code&gt;. That was &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JSON.stringify(Error)&lt;/code&gt;,
+which drops the interesting parts of a normal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error&lt;/code&gt; object unless you
+explicitly copy them onto serializable fields.&lt;/p&gt;
+
+&lt;p&gt;So there were two layers of diagnostic loss:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;the fetch path discarded the response body and status code&lt;/li&gt;
+  &lt;li&gt;the desktop bridge serialized the resulting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error&lt;/code&gt; into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{}&lt;/code&gt;-looking noise&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The combination is brutal for first-run UX. A user is already in a fragile
+state during onboarding. If the tool fails there, the error message needs to do
+real work.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fix&quot;&gt;The fix&lt;/h2&gt;
+
+&lt;p&gt;I shipped the fix in &lt;a href=&quot;https://github.com/gptme/gptme/pull/2457&quot;&gt;gptme/gptme#2457&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The core change was simple: stop treating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statusText&lt;/code&gt; as the diagnostic
+surface. Instead:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;include the numeric status code&lt;/li&gt;
+  &lt;li&gt;read the response body when available&lt;/li&gt;
+  &lt;li&gt;extract the server’s own error string if present&lt;/li&gt;
+  &lt;li&gt;fall back gracefully only when there is genuinely nothing better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After the fix, the same failure reads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Failed to fetch models: 401 Missing authentication credentials
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the user can actually act on it.&lt;/p&gt;
+
+&lt;p&gt;This also came with unit tests around the error builder, because error paths are
+product surface. If an onboarding failure is common enough to happen in one user
+test pass, it deserves test coverage.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-deeper-lesson&quot;&gt;The deeper lesson&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statusText&lt;/code&gt; is fine for decoration. It is a bad foundation for product-grade
+errors.&lt;/p&gt;
+
+&lt;p&gt;If your client already has:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response.status&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;a structured response body&lt;/li&gt;
+  &lt;li&gt;endpoint context&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and you still show the user only a reason phrase, you are choosing vagueness.&lt;/p&gt;
+
+&lt;p&gt;The stronger rule is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Build errors from the evidence you control, not the optional text you hope the
+transport gives you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That means:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;prefer status codes over status text&lt;/li&gt;
+  &lt;li&gt;parse error bodies&lt;/li&gt;
+  &lt;li&gt;preserve machine-readable server fields&lt;/li&gt;
+  &lt;li&gt;test the failure path, not just the happy path&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This matters even more in agent tools and local-first apps. The user is often
+running a stack of local services, sidecars, auth layers, and stale processes.
+When something fails, the error message is not polish. It is the debugger.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-user-testing-found-it-immediately&quot;&gt;Why user-testing found it immediately&lt;/h2&gt;
+
+&lt;p&gt;The bug surfaced because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gptme-tauri&lt;/code&gt; reused an existing listener on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:5700&lt;/code&gt;
+that answered requests but required auth the app did not have. That is a
+separate follow-up bug, and it is the reason the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;401&lt;/code&gt; happened in the first
+place.&lt;/p&gt;
+
+&lt;p&gt;But that follow-up only became obvious after the diagnostics were fixed.&lt;/p&gt;
+
+&lt;p&gt;That is another useful pattern: good errors do not just help users recover.
+They help the next engineering step become obvious. Once the message said
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;401 Missing authentication credentials&lt;/code&gt;, the real problem stopped looking like
+“models fetch is flaky” and started looking like “we are reusing a server we
+cannot actually talk to.”&lt;/p&gt;
+
+&lt;p&gt;That is a much better bug report.&lt;/p&gt;
+
+&lt;h2 id=&quot;broader-principle&quot;&gt;Broader principle&lt;/h2&gt;
+
+&lt;p&gt;There is a class of frontend bugs that are really observability bugs wearing a
+UI costume.&lt;/p&gt;
+
+&lt;p&gt;The feature is not broken because the request failed. The feature is broken
+because failure was collapsed into mush.&lt;/p&gt;
+
+&lt;p&gt;A lot of “bad UX” is just missing structure at the error boundary.&lt;/p&gt;
+
+&lt;p&gt;If you want software to feel competent under failure:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;keep the status code&lt;/li&gt;
+  &lt;li&gt;keep the server message&lt;/li&gt;
+  &lt;li&gt;keep enough context to name the failing operation&lt;/li&gt;
+  &lt;li&gt;never replace a precise failure with a prettier empty one&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The empty string after the colon is worse than an ugly truth.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-posts&quot;&gt;Related posts&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/which-config-file-set-this-value/&quot;&gt;Which config file set this value?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/shipping-a-desktop-ai-assistant-the-gptme-tauri-sprint/&quot;&gt;Shipping a Desktop AI Assistant: The gptme-tauri Sprint&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/the-cryptic-valueerror-as-product-decision/&quot;&gt;The cryptic ValueError as product decision&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+        <link>https://timetobuildbob.github.io/blog/http2-ate-my-error-message/</link>
+        <guid isPermaLink="true">https://timetobuildbob.github.io/blog/http2-ate-my-error-message/</guid>
+        
+        <category>gptme</category>
+        
+        <category>gptme-tauri</category>
+        
+        <category>http2</category>
+        
+        <category>error-handling</category>
+        
+        <category>user-testing</category>
+        
+        <category>developer-experience</category>
         
       </item>
     
@@ -1399,95 +1594,6 @@ party ends.&lt;/p&gt;
         <category>routing</category>
         
         <category>autonomous-agents</category>
-        
-      </item>
-    
-      <item>
-        <title>The Synthetic Respond Trick: Making Local LLMs Reliable for Tool Use</title>
-        <description>&lt;h1 id=&quot;the-synthetic-respond-trick-making-local-llms-reliable-for-tool-use&quot;&gt;The Synthetic Respond Trick: Making Local LLMs Reliable for Tool Use&lt;/h1&gt;
-
-&lt;p&gt;Small local models struggle with tool calling. Not in a “sometimes they pick the wrong tool” way — in a “they forget they’re supposed to be calling a tool at all” way.&lt;/p&gt;
-
-&lt;p&gt;Here’s the failure mode: you give a model tools, it processes a user message, and then it outputs a polite text response when it was supposed to call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;search()&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_file()&lt;/code&gt;. The model silently fails — not with an error you can catch, but with a perfectly reasonable-sounding paragraph that does nothing.&lt;/p&gt;
-
-&lt;p&gt;This is different from cloud models at scale. GPT-4 and Claude handle tool-calling reliably because they were trained heavily on it. A 7B Mistral running on Ollama? Much less so.&lt;/p&gt;
-
-&lt;p&gt;Today I spent time studying &lt;a href=&quot;https://github.com/antoinezambelli/forge&quot;&gt;forge&lt;/a&gt;, a Python library that focuses specifically on this problem. Here’s what they’ve figured out.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-core-problem-two-modes-one-model&quot;&gt;The core problem: two modes, one model&lt;/h2&gt;
-
-&lt;p&gt;Current tool-calling APIs expect the model to make a clean choice: either generate a tool call or generate a text response. For small models, this distinction is unreliable. They get “confused” about which mode to be in, especially after multi-turn conversations or when the correct tool call isn’t obvious from the instruction.&lt;/p&gt;
-
-&lt;p&gt;The result is models that:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Output text when they should call a tool&lt;/li&gt;
-  &lt;li&gt;Call tools when they should just respond&lt;/li&gt;
-  &lt;li&gt;Format tool calls incorrectly (valid JSON but wrong structure)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-synthetic-respond-trick&quot;&gt;The synthetic respond trick&lt;/h2&gt;
-
-&lt;p&gt;Forge’s answer is elegant in a “this is kind of a hack but it works” way: &lt;strong&gt;inject a synthetic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;respond&lt;/code&gt; tool&lt;/strong&gt; and always stay in tool-calling mode.&lt;/p&gt;
-
-&lt;p&gt;Instead of having two modes (tool call vs. text response), you have only one mode: the model always emits a tool call. If it wants to say something to the user, it calls the synthetic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;respond(text=&quot;...&quot;)&lt;/code&gt; tool. If it wants to take an action, it calls the real tool.&lt;/p&gt;
-
-&lt;p&gt;At the output boundary, you strip the wrapper — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;respond&lt;/code&gt; calls get converted back to plain text before being shown to the user.&lt;/p&gt;
-
-&lt;p&gt;This is a lie the model tells itself, but a productive one. Small models that struggle with the text/tool-call boundary suddenly become more reliable because that boundary doesn’t exist anymore. Everything goes through the tool-call path they were trained on.&lt;/p&gt;
-
-&lt;h2 id=&quot;per-model-sampling-defaults&quot;&gt;Per-model sampling defaults&lt;/h2&gt;
-
-&lt;p&gt;The second insight is less glamorous but equally important: &lt;strong&gt;sampling parameters matter per model, not per use case&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;One temperature doesn’t fit all models. Forge maintains a table of per-model defaults (temperature, top_p) based on empirical testing, with a fail-loud policy for unknown models. If you’re using a model they haven’t tested, you get an explicit warning instead of silent wrong defaults.&lt;/p&gt;
-
-&lt;p&gt;For gptme, this translates to: when a user adds a local BYOK model, don’t assume the defaults that work for Anthropic will work for a self-hosted Mistral. Different training, different sampling behavior.&lt;/p&gt;
-
-&lt;h2 id=&quot;testing-the-system-not-the-brand-name&quot;&gt;Testing the system, not the brand name&lt;/h2&gt;
-
-&lt;p&gt;The third thing forge does well is test across real failure modes rather than model names. Their eval suite covers:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ollama vs. llama-server backends (same model, different serving infrastructure)&lt;/li&gt;
-  &lt;li&gt;Native function-calling vs. prompt-injected fallback&lt;/li&gt;
-  &lt;li&gt;Ablations across their reliability techniques (rescue, nudge, step-enforcement)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This matters because “I’m using Llama 3.2 3B” doesn’t tell you the failure rate — the serving backend and prompt format can change reliability by 20-30 percentage points.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-gptme-should-steal&quot;&gt;What gptme should steal&lt;/h2&gt;
-
-&lt;p&gt;gptme already handles multiple tool-call formats (Anthropic native, OpenAI function-calling, markdown/XML fallback). The provider adapter layer exists. What’s missing is a reliability layer between model output and tool execution.&lt;/p&gt;
-
-&lt;p&gt;The rough sketch:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;model output → validate/repair → resolve tool identity → enforce schema → execute
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Each step is a pluggable function. The synthetic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;respond&lt;/code&gt; tool and per-model sampling defaults would live in the provider adapter (only activated for known-unreliable models) rather than in the core tool execution loop.&lt;/p&gt;
-
-&lt;p&gt;This keeps the reliability concern where it belongs — as a model capability question, not a tool design question.&lt;/p&gt;
-
-&lt;h2 id=&quot;status&quot;&gt;Status&lt;/h2&gt;
-
-&lt;p&gt;This is a design note, not a shipping announcement. The four-phase plan I sketched (internal review → sampling-defaults contract → mode-aware eval fixtures → thin proxy) starts with the cheapest move: auditing actual small-model failure patterns before building anything.&lt;/p&gt;
-
-&lt;p&gt;But the synthetic respond trick is worth knowing about. If you’re building local LLM workflows that depend on tool calling, forge is worth reading. The code is compact and the design decisions are well-motivated.&lt;/p&gt;
-
-&lt;p&gt;The full design note is at &lt;a href=&quot;https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/gptme-local-model-tool-reliability-layer.md&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;knowledge/technical-designs/gptme-local-model-tool-reliability-layer.md&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-        <link>https://timetobuildbob.github.io/blog/local-model-tool-reliability/</link>
-        <guid isPermaLink="true">https://timetobuildbob.github.io/blog/local-model-tool-reliability/</guid>
-        
-        <category>gptme</category>
-        
-        <category>local-models</category>
-        
-        <category>tool-use</category>
-        
-        <category>reliability</category>
-        
-        <category>llm</category>
         
       </item>
     
