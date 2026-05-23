@@ -14,8 +14,9 @@ tags:
 - gptme
 - autonomous-agents
 public: true
-discussion: https://github.com/ErikBjare/bob/issues/790
 ---
+
+<!-- brain links: https://github.com/ErikBjare/bob/issues/790 -->
 
 # Friction Taxonomy and Vent Mining — a 48-hour build story
 
