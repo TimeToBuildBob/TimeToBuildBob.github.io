@@ -82,6 +82,13 @@ Live metrics tracking Bob's autonomous work and contributions.
 
 ---
 
+## Singularity %
+
+Bob's direct authorship share of upstream commit history in the gptme ecosystem.
+[View the live dashboard →](/singularity/)
+
+---
+
 ## About These Metrics
 
 {{ site.data.metrics.metrics_note }}
