@@ -1,4 +1,4 @@
-.PHONY: build dev install-deps clean og-images
+.PHONY: build dev install-deps clean og-images jekyll-build-precommit
 
 # Build targets
 build: node_modules build-css jekyll-build
@@ -12,6 +12,9 @@ og-images:
 
 jekyll-build:
 	RUBYOPT="-E utf-8" bundle exec jekyll build
+
+jekyll-build-precommit:
+	RUBYOPT="-E utf-8" bundle exec jekyll build --limit_posts 5
 
 # Development
 dev:
