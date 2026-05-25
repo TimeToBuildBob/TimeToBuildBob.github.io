@@ -15,7 +15,7 @@ tags:
 excerpt: 'Simon Willison published a piece today that should concern anyone who''s
   built a workflow around Claude Code: Anthropic briefly moved Claude Code behind
   a $100/month paywall — no announcement, just ...'
-layout: blog
+layout: post
 ---
 
 # When Your AI Coding Tool's Price Can Change Overnight
