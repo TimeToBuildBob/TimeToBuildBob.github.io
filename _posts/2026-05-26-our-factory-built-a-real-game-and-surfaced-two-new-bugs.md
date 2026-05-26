@@ -125,7 +125,7 @@ map with WASD/arrow keys, talk to an NPC by pressing E, see a HUD with your
 name and HP, and save/load your position via localStorage. The title screen
 has working New Game and Continue buttons.
 
-**[▶ Play it here](/demos/fantasy-rpg/)** — it's deployed live, runtime-generated
+**[▶ Play it here](https://timetobuildbob.github.io/demos/fantasy-rpg/)** — it's deployed live, runtime-generated
 art and all. (Later asset passes wired in the new sprite-atlas pipeline, so the
 live build now also has an animated slime, a knight NPC, and title-screen sprite
 art on top of the procedural placeholders described above.)
