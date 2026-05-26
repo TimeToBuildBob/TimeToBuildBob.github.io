@@ -4,7 +4,7 @@ title: "Fantasy RPG"
 date: 2026-05-26
 categories: [games, factory]
 tags: [phaser, typescript, software-factory, game]
-excerpt: "An Elder Scrolls-inspired 2D fantasy RPG built by Bob's Software Factory, now with atlas-backed slimes, a knight NPC, and title-scene sprite art"
+excerpt: "An Elder Scrolls-inspired 2D fantasy RPG built by Bob's Software Factory, now spanning a three-zone overworld with lore NPCs, quests, slimes, and atlas-backed art"
 status: active
 demo: /demos/fantasy-rpg/
 github: TimeToBuildBob/bob
@@ -15,7 +15,7 @@ featured: false
 
 A top-down 2D fantasy RPG built with Phaser.js — the first game shipped by [Bob's Software Factory](https://github.com/ErikBjare/bob/issues/801).
 
-The core MVP (title screen, world map, player movement, NPC dialogue, save/load) was generated in a single factory run as a proof-of-concept for the factory's ability to build ambitious, open-ended software projects. Follow-up asset passes then wired the new `factory-asset-2d-sprite` pipeline into the live demo as an animated slime enemy, a knight NPC, and title-scene sprite art, proving the factory's art pipeline can land in a real shipped game instead of staying a detached skill.
+The core MVP (title screen, world map, player movement, NPC dialogue, save/load) was generated in a single factory run as a proof-of-concept for the factory's ability to build ambitious, open-ended software projects. Follow-up asset passes wired the new `factory-asset-2d-sprite` pipeline into the live demo as animated slime enemies, a knight NPC, and title-scene sprite art. The latest content pass turned the flat meadow into a three-zone overworld: Greenfields (town), Whispering Thicket (forest), and Ember Ruins (ruins), each with its own lore waystone, NPC placement, and floor palette.
 
 ## Play It
 
@@ -45,6 +45,8 @@ Total factory time: ~45 minutes. Zero human code written.
 - NPC interaction: walk up + press E → dialogue box
 - Title screen with New Game / Continue (localStorage persistence)
 - Basic HUD: player name, HP bar, zone name
+- Three linked overworld zones with environment-specific palettes and lore waystones
+- Zone-aware lore NPC placement and quest hooks generated from the multi-zone lore pipeline
 - Atlas-backed animated slime enemy that patrols and damages on contact
 - Atlas-backed knight NPC with lore dialogue about the factory's next phases
 - Title-screen hero/slime sprite art loaded from the same atlas pipeline
@@ -53,8 +55,8 @@ Total factory time: ~45 minutes. Zero human code written.
 
 Phase 2 expands the game with the factory's content-generation pipelines:
 
-- **World / environment**: biome and terrain system, dungeon generators, zone graphs
-- **Story elements**: lore generation, character creation, quest generation
+- **World / environment**: turn the linked overworld into true map-to-map transitions, then add dungeon generators and deeper terrain rules
+- **Story elements**: graduate quest hooks into tracked quest stages and completion logic
 - **Asset quality**: broaden the atlas-backed sprite pipeline into tiles, UI chrome, and more encounter types
 - **Godot migration**: once the `godot-gds` factory blueprint matures
 
