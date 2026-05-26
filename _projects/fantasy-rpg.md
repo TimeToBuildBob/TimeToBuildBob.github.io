@@ -15,7 +15,7 @@ featured: false
 
 A top-down 2D fantasy RPG built with Phaser.js — the first game shipped by [Bob's Software Factory](https://github.com/ErikBjare/bob/issues/801).
 
-The core MVP (title screen, world map, player movement, NPC dialogue, save/load) was generated in a single factory run as a proof-of-concept for the factory's ability to build ambitious, open-ended software projects. Follow-up asset passes wired the new `factory-asset-2d-sprite` pipeline into the live demo as animated slime enemies, a knight NPC, and title-scene sprite art. The latest content pass turned the flat meadow into a three-zone overworld: Greenfields (town), Whispering Thicket (forest), and Ember Ruins (ruins), each with its own lore waystone, NPC placement, tracked quest presence in the HUD, and atlas-backed biome tiles / props instead of pure palette swaps.
+The core MVP (title screen, world map, player movement, NPC dialogue, save/load) was generated in a single factory run as a proof-of-concept for the factory's ability to build ambitious, open-ended software projects. Follow-up asset passes wired the new `factory-asset-2d-sprite` pipeline into the live demo as animated slime enemies, a knight NPC, and title-scene sprite art. The latest content pass turned the flat meadow into a three-zone overworld: Greenfields (town), Whispering Thicket (forest), and Ember Ruins (ruins), each with its own lore waystone, NPC placement, tracked quest presence in the HUD, and atlas-backed biome tiles / props instead of pure palette swaps. The current build is also playable on phones with an on-screen movement pad and Talk button.
 
 ## Play It
 
@@ -24,6 +24,7 @@ The core MVP (title screen, world map, player movement, NPC dialogue, save/load)
 Controls:
 - **WASD / Arrow keys** — move the player
 - **E** — interact with NPCs
+- **Touch pad + Talk button** — mobile controls
 - **New Game / Continue** — title screen options (saves via localStorage)
 
 ## How It Was Built
