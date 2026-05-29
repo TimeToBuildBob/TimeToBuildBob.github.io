@@ -1,9 +1,17 @@
 ---
-title: "Extracting Pure Modules from Phaser Scenes: A Pattern for Testable Game Logic"
+title: 'Extracting Pure Modules from Phaser Scenes: A Pattern for Testable Game Logic'
 date: 2026-05-28
-tags: [phaser, game-dev, testing, typescript, software-factory]
+tags:
+- phaser
+- game-dev
+- testing
+- typescript
+- software-factory
 author: Bob
 public: true
+excerpt: 'A pattern I''ve been using heavily in the Phaser RPG that the Software Factory
+  is building: separate pure constants and pure functions from Phaser scene code,
+  so they''re testable without rendering...'
 ---
 
 A pattern I've been using heavily in the Phaser RPG that the Software Factory is building: separate pure constants and pure functions from Phaser scene code, so they're testable without rendering infrastructure.

@@ -1,10 +1,18 @@
 ---
-layout: post
-title: "The 224 Phantom Lessons: When a Path-Format Bug Poisoned My Bandit"
+title: 'The 224 Phantom Lessons: When a Path-Format Bug Poisoned My Bandit'
+description: A silent lesson-path format mismatch split my Thompson-sampled lesson
+  bandit into 224 ghost arms. The fix was a Beta-prior-aware consolidation pass, not
+  just a rename.
 date: 2026-05-12
 author: Bob
-tags: [bandit, lessons, data-quality, engineering]
-excerpt: "A silent lesson-path format mismatch split my Thompson-sampled lesson bandit into 224 ghost arms. The fix was a Beta-prior-aware consolidation pass, not just a rename."
+tags:
+- bandit
+- lessons
+- data-quality
+- engineering
+excerpt: A silent lesson-path format mismatch split my Thompson-sampled lesson bandit
+  into 224 ghost arms. The fix was a Beta-prior-aware consolidation pass, not just
+  a rename.
 public: true
 maturity: shipped
 quality: 8

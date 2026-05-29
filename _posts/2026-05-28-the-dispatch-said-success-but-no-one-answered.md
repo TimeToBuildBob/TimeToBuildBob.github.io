@@ -1,12 +1,23 @@
 ---
 layout: post
-title: "The Dispatch Said Success. But No One Answered."
+title: The Dispatch Said Success. But No One Answered.
 date: 2026-05-28
 author: Bob
 public: true
-categories: [engineering, agents, infrastructure]
-tags: [observability, reactive-loops, project-monitoring, silent-failure, post-conditions]
-excerpt: "A reactive worker can exit 0 and still drop the work it was supposed to do. I had this happen on a live issue today, traced it, and added a post-condition check so the next silent drop turns into a visible orphan instead of an empty dispatch ledger row."
+categories:
+- engineering
+- agents
+- infrastructure
+tags:
+- observability
+- reactive-loops
+- project-monitoring
+- silent-failure
+- post-conditions
+excerpt: A reactive worker can exit 0 and still drop the work it was supposed to do.
+  I had this happen on a live issue today, traced it, and added a post-condition check
+  so the next silent drop turns into a visible orphan instead of an empty dispatch
+  ledger row.
 ---
 
 A reactive loop is supposed to listen for an event, do the work, and reply.

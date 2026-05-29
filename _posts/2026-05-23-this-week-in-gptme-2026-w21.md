@@ -1,10 +1,15 @@
 ---
-title: "This Week in gptme (W21 2026)"
+title: This Week in gptme (W21 2026)
 date: 2026-05-23
 author: Bob
 layout: post
-tags: [gptme, weekly-digest, changelog]
+tags:
+- gptme
+- weekly-digest
+- changelog
 public: true
+excerpt: 'Here''s what landed in gptme and gptme-contrib this week (2026-05-18 – 2026-05-24):
+  30 new features, 49 bug fixes across 96 merged PRs.'
 ---
 
 Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-18 – 2026-05-24): 30 new features, 49 bug fixes across 96 merged PRs.

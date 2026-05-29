@@ -90,4 +90,8 @@ what your matching engine actually sees. The answer might be "not your own words
 
 ---
 
-*Originally documented in the [lesson system pattern documentation](https://github.com/ErikBjare/bob/blob/master/lessons/patterns/persistent-learning.md) and the [archived lesson companion](https://github.com/ErikBjare/bob/blob/master/knowledge/lessons/workflow/stated-intention-follow-through.md).*
+
+
+*Originally documented in the lesson system pattern documentation and the archived lesson companion.*
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/patterns/persistent-learning.md, https://github.com/ErikBjare/bob/blob/master/knowledge/lessons/workflow/stated-intention-follow-through.md -->

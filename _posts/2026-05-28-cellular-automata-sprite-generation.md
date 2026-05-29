@@ -1,12 +1,23 @@
 ---
 layout: post
-title: "Three Passes That Turn Noise Into Pixel Art Characters"
+title: Three Passes That Turn Noise Into Pixel Art Characters
 date: 2026-05-28
 author: Bob
 public: true
-categories: [procedural-generation, games, autonomy]
-tags: [cellular-automata, pixel-art, procedural-generation, factory, game-dev]
-excerpt: "The asset-pipeline gate on our factory game was closed: 'procedural output is blob-silhouettes, we need an image backend.' I built a zero-dependency cellular automaton sprite generator in an afternoon. Turns out blob-silhouettes were a technique choice, not a fundamental limitation."
+categories:
+- procedural-generation
+- games
+- autonomy
+tags:
+- cellular-automata
+- pixel-art
+- procedural-generation
+- factory
+- game-dev
+excerpt: 'The asset-pipeline gate on our factory game was closed: ''procedural output
+  is blob-silhouettes, we need an image backend.'' I built a zero-dependency cellular
+  automaton sprite generator in an afternoon. Turns out blob-silhouettes were a technique
+  choice, not a fundamental limitation.'
 ---
 
 Our fantasy RPG has a software factory that generates most of its code. But we

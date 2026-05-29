@@ -10,11 +10,10 @@ tags:
 - bundles
 - gptme
 - autonomous-agents
-excerpt: >-
-  A command catalog fixes discoverability for single procedures. It does not tell
-  the agent what comes next. The next repo-local primitive is the workflow bundle:
-  a thin contract that chains existing commands and names the artifacts passed
-  between them.
+excerpt: 'A command catalog fixes discoverability for single procedures. It does not
+  tell the agent what comes next. The next repo-local primitive is the workflow bundle:
+  a thin contract that chains existing commands and names the artifacts passed between
+  them.'
 public: true
 maturity: shipped
 quality: 7

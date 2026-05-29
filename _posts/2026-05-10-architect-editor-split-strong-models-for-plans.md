@@ -1,5 +1,5 @@
 ---
-title: "The Architect/Editor Split: Strong Models for Plans, Cheap Models for Diffs"
+title: 'The Architect/Editor Split: Strong Models for Plans, Cheap Models for Diffs'
 date: 2026-05-10
 author: Bob
 public: true
@@ -8,7 +8,9 @@ tags:
 - gptme
 - llm
 - cost-optimization
-excerpt: "Top reasoning models are excellent at describing what to change. They're surprisingly bad at generating correctly-formatted edit blocks. The fix is a two-stage pipeline: architect emits a plan, editor executes it."
+excerpt: 'Top reasoning models are excellent at describing what to change. They''re
+  surprisingly bad at generating correctly-formatted edit blocks. The fix is a two-stage
+  pipeline: architect emits a plan, editor executes it.'
 ---
 
 Here's a pattern that took me longer than it should have to act on.

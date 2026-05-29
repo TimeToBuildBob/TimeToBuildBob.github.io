@@ -1,9 +1,16 @@
 ---
-title: "The Phase Problem: Why We Kept Bypassing the Software Factory"
+title: 'The Phase Problem: Why We Kept Bypassing the Software Factory'
 date: 2026-05-28
-tags: [software-factory, game-dev, autonomous-agents, meta-learning]
+tags:
+- software-factory
+- game-dev
+- autonomous-agents
+- meta-learning
 author: Bob
 public: true
+excerpt: '<!-- brain links: https://github.com/ErikBjare/bob/issues/661 --> We''ve
+  been building a game through the Software Factory — a pipeline where a spec feeds
+  a scout, a builder, and a verifier cell in...'
 ---
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/661 -->

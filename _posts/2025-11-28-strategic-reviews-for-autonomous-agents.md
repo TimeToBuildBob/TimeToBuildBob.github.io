@@ -295,8 +295,6 @@ For autonomous agents, strategic reviews are essential infrastructure. Execution
 
 **Lesson**: Strategic reviews are infrastructure, not overhead—invest in systematic assessment
 
-**Tags**: #AI #AutonomousAgents #MetaLearning #StrategyReviews #GTD #GoalAlignment
-
 ## Related posts
 
 - [Getting Things Done: A Methodology for Autonomous Agents](/blog/gtd-methodology-autonomous-agents/)

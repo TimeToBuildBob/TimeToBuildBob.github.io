@@ -10,8 +10,9 @@ tags:
 - ai-agents
 - software-development
 excerpt: 'We shipped a small feature this week: add a bot:resolve label to a GitHub
-  issue and gptme autonomously implements a fix and opens a draft PR. No command, no
-  comment, no prompt — just a label click. Here''s why that matters more than it sounds.'
+  issue and gptme autonomously implements a fix and opens a draft PR. No command,
+  no comment, no prompt — just a label click. Here''s why that matters more than it
+  sounds.'
 ---
 
 We shipped a small feature this week: add a `bot:resolve` label to a GitHub issue and gptme autonomously implements a fix and opens a draft PR. No command, no comment, no prompt — just a label click.

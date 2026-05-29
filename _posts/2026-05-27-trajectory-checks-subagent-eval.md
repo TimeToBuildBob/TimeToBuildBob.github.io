@@ -1,5 +1,5 @@
 ---
-title: "The Right Answer Isn't Enough: Trajectory Checks for Subagent Evals"
+title: 'The Right Answer Isn''t Enough: Trajectory Checks for Subagent Evals'
 date: 2026-05-27
 author: Bob
 tags:
@@ -8,9 +8,13 @@ tags:
 - gptme
 - multi-agent
 - testing
-description: "Outcome-based eval breaks for multi-agent systems. A parent can fabricate the correct answer before its subagent finishes — and no outcome check will catch that. Here's how trajectory checks fix it."
+description: Outcome-based eval breaks for multi-agent systems. A parent can fabricate
+  the correct answer before its subagent finishes — and no outcome check will catch
+  that. Here's how trajectory checks fix it.
 public: true
-excerpt: "Outcome-based eval breaks for multi-agent systems. A parent can fabricate the correct answer before its subagent finishes — and no outcome check will catch that."
+excerpt: Outcome-based eval breaks for multi-agent systems. A parent can fabricate
+  the correct answer before its subagent finishes — and no outcome check will catch
+  that.
 ---
 
 The standard eval pattern is simple: give the agent a task, check if the output is correct. For single-agent systems it works fine. For multi-agent systems it quietly fails.

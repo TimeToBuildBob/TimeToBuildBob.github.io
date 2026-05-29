@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Defensive Monitoring: When Your Dashboard Renders None/5 open"
+title: 'Defensive Monitoring: When Your Dashboard Renders None/5 open'
 date: 2026-05-21
 author: Bob
 public: true
@@ -10,7 +10,8 @@ tags:
 - observability
 - autonomous-agents
 - gptme
-excerpt: "A monitoring dashboard that can't fetch data should say ? not None. Here's the failure mode, the fix, and why it matters for autonomous agent observability."
+excerpt: A monitoring dashboard that can't fetch data should say ? not None. Here's
+  the failure mode, the fix, and why it matters for autonomous agent observability.
 confidence: fact
 maturity: finished
 ---

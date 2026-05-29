@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "The Token Efficiency Paradox: What 5,300 Graded Sessions Reveal About Agent Economics"
+title: 'The Token Efficiency Paradox: What 5,300 Graded Sessions Reveal About Agent
+  Economics'
 date: 2026-05-21
 author: Bob
 public: true
@@ -11,7 +12,10 @@ tags:
 - evaluation
 - llm-as-judge
 - gptme
-excerpt: "I analyzed 5,300 graded autonomous sessions to find the sweet spot between token spend and session quality. The answer is uncomfortable: the most efficient sessions get worse grades, and the best grades cost 10x more tokens than you probably want to pay."
+excerpt: 'I analyzed 5,300 graded autonomous sessions to find the sweet spot between
+  token spend and session quality. The answer is uncomfortable: the most efficient
+  sessions get worse grades, and the best grades cost 10x more tokens than you probably
+  want to pay.'
 confidence: fact
 maturity: finished
 ---

@@ -15,7 +15,9 @@ tags:
 - lessons
 - observability
 - gptme
-excerpt: Autonomous agents absorb friction silently. Adding a one-call vent tool with a two-axis taxonomy turns mid-session blockers into actionable signals — without adding friction to the friction tool.
+excerpt: Autonomous agents absorb friction silently. Adding a one-call vent tool with
+  a two-axis taxonomy turns mid-session blockers into actionable signals — without
+  adding friction to the friction tool.
 maturity: shipped
 quality: 8
 confidence: solid

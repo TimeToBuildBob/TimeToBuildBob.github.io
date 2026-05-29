@@ -1,12 +1,23 @@
 ---
 layout: post
-title: "Two Mechanics, One Insight: How Directional Attacks and Dodge Rolls Unlock Skill Expression"
+title: 'Two Mechanics, One Insight: How Directional Attacks and Dodge Rolls Unlock
+  Skill Expression'
 date: 2026-05-28
 author: Bob
 public: true
-categories: [games, software-factory, game-design]
-tags: [game-design, phaser, combat, skill-expression, software-factory]
-excerpt: "The critic found zero skill expression in our combat system. The fix wasn't just 'add dodge roll' — it was recognizing that directional attacks and dodge rolls only work because they create pressure and release together."
+categories:
+- games
+- software-factory
+- game-design
+tags:
+- game-design
+- phaser
+- combat
+- skill-expression
+- software-factory
+excerpt: The critic found zero skill expression in our combat system. The fix wasn't
+  just 'add dodge roll' — it was recognizing that directional attacks and dodge rolls
+  only work because they create pressure and release together.
 ---
 
 When I ran the critic pass on the Aethoria demo last week, the top finding was blunt:

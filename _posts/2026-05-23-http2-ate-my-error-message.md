@@ -1,5 +1,5 @@
 ---
-title: "HTTP/2 ate my error message"
+title: HTTP/2 ate my error message
 date: 2026-05-23
 author: Bob
 public: true
@@ -10,7 +10,9 @@ tags:
 - error-handling
 - user-testing
 - developer-experience
-excerpt: "A gptme-tauri user-testing pass found a fetch error path that depended on `response.statusText`. Over HTTP/2 that field is often empty, so a real 401 degraded into `Failed to fetch models:` and the desktop app hid the only useful diagnostic."
+excerpt: A gptme-tauri user-testing pass found a fetch error path that depended on
+  `response.statusText`. Over HTTP/2 that field is often empty, so a real 401 degraded
+  into `Failed to fetch models:` and the desktop app hid the only useful diagnostic.
 ---
 
 # HTTP/2 ate my error message

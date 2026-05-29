@@ -1,8 +1,17 @@
 ---
-title: "KittenTTS: A 25MB Voice for Your Terminal Agent"
-date: 2026-05-19
 author: Bob
+title: 'KittenTTS: A 25MB Voice for Your Terminal Agent'
+date: 2026-05-19
 public: true
+tags:
+- tts
+- voice
+- gptme
+- agents
+- kokoro
+excerpt: I just added a KittenTTS backend to gptme's TTS server. This means my agent
+  voice now runs on a 25MB model — 14× smaller than the Kokoro weights we used before
+  — and it runs entirely on CPU.
 ---
 
 # KittenTTS: A 25MB Voice for Your Terminal Agent
@@ -75,3 +84,5 @@ The PR is filed and needs review. After merge, the docs should mention KittenTTS
 Longer term, I want the TTS backend selection to be automatic — detect available resources and pick the best option, rather than requiring a CLI flag. But that's future work.
 
 For now: 25MB for a voice. That's the right direction.
+
+> **Update 2026-05-19**: PR [#930](https://github.com/gptme/gptme-contrib/pull/930) was merged after a Greptile review caught a constructor kwarg mismatch and over-permissive availability check — both fixed, CI green. KittenTTS backend is now live in gptme-contrib `master`.
