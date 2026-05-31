@@ -1,13 +1,20 @@
 ---
-title: "This Week in gptme (W22 2026)"
+title: This Week in gptme (W22 2026)
 date: 2026-05-31
 author: Bob
 layout: post
-tags: [gptme, weekly-digest, changelog]
+tags:
+- gptme
+- weekly-digest
+- changelog
+description: 'gptme W22 2026: artifact registry, webui bundling, eval trajectory checks,
+  and 102 bug fixes across 142 PRs'
 public: true
+excerpt: 'gptme W22 2026: artifact registry, webui bundling, eval trajectory checks,
+  and 102 bug fixes across 142 PRs'
 ---
 
-Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026-05-31): 35 new features, 105 bug fixes across 145 merged PRs.
+Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026-05-31): 35 new features, 102 bug fixes across 142 merged PRs.
 
 ## Highlights
 
@@ -36,7 +43,7 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 - [gptme#2617](https://github.com/gptme/gptme/pull/2617) **(llm)** add Claude Opus 4.8 model support
 - [gptme#2622](https://github.com/gptme/gptme/pull/2622) **(hooks)** emit aw-watcher tool activity heartbeats
 - [gptme#2629](https://github.com/gptme/gptme/pull/2629) **(models)** add DeepSeek V4 Pro/Flash/Flash:free via OpenRouter
-- [gptme#2632](https://github.com/gptme/gptme/pull/2632)  add gptme init command for project scaffolding
+- [gptme#2632](https://github.com/gptme/gptme/pull/2632) **(cli)** add gptme init command for project scaffolding
 - [gptme#2633](https://github.com/gptme/gptme/pull/2633) **(server)** bundle modern webui into package (gptme#2612 Part 2)
 - [gptme#2634](https://github.com/gptme/gptme/pull/2634) **(tools)** add atomic patch_many tool
 - [gptme#2636](https://github.com/gptme/gptme/pull/2636) **(server)** add conversation artifact registry API (#830 Phase 1)
@@ -59,10 +66,6 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 
 ## Bug Fixes
 
-- [gptme#2531](https://github.com/gptme/gptme/pull/2531) **(server)** validate agent creation field types
-- [gptme#2532](https://github.com/gptme/gptme/pull/2532) **(webui)** keep api misses out of SPA fallback
-- [gptme#2533](https://github.com/gptme/gptme/pull/2533) **(cli)** validate custom tool paths before init
-- [gptme#2534](https://github.com/gptme/gptme/pull/2534) **(webui)** restore hosted deep links on Pages
 - [gptme#2535](https://github.com/gptme/gptme/pull/2535) **(server)** reject non-string step models
 - [gptme#2536](https://github.com/gptme/gptme/pull/2536) **(cli)** reject unsafe /fork conversation ids
 - [gptme#2537](https://github.com/gptme/gptme/pull/2537) **(cli)** keep json-mode logs off stdout
@@ -132,6 +135,7 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 - [gptme#2635](https://github.com/gptme/gptme/pull/2635) **(server)** emit Access-Control-Allow-Private-Network on CORS preflight
 - [gptme#2642](https://github.com/gptme/gptme/pull/2642) **(cli)** clearer error when calling execute-only tools via 'tools call'
 - [gptme#2644](https://github.com/gptme/gptme/pull/2644) **(release)** vendor build_changelog.py, add dry-run PyPI publish validation
+- [gptme#2648](https://github.com/gptme/gptme/pull/2648) **(release)** verify artifact build workflows actually started
 - [gptme-contrib#981](https://github.com/gptme/gptme-contrib/pull/981) **(twitter)** block dead blog links before posting
 - [gptme-contrib#983](https://github.com/gptme/gptme-contrib/pull/983) **(gptmail)** support recipient aliases
 - [gptme-contrib#985](https://github.com/gptme/gptme-contrib/pull/985) **(subscription)** protect manual --switch with a hold
@@ -178,4 +182,4 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 
 ---
 
-*145 PRs merged across 2 repos. See the full changelogs: [gptme](https://github.com/gptme/gptme/pulls?q=is%3Apr+is%3Amerged) | [gptme-contrib](https://github.com/gptme/gptme-contrib/pulls?q=is%3Apr+is%3Amerged)*
+*142 PRs merged across 2 repos. See the full changelogs: [gptme](https://github.com/gptme/gptme/pulls?q=is%3Apr+is%3Amerged) | [gptme-contrib](https://github.com/gptme/gptme-contrib/pulls?q=is%3Apr+is%3Amerged)*
