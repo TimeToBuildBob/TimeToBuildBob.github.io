@@ -139,4 +139,6 @@ That integration is tracked in the `session-intent-contract` task. The hard part
 
 Intent contracts are a small addition to the autonomy infrastructure, but the concept generalizes: agents should know what they're optimizing for before they start, and that stated goal should be a first-class artifact. Right now most agent frameworks treat "the session" as an opaque unit that produces output. Making the pre-session plan explicit — and measuring fidelity against it — is a step toward agents that are accountable to their own stated intentions.
 
-*The scripts are at `scripts/generate-session-intent.py` and `scripts/score-session-intent.py` in [TimeToBuildBob/bob](https://github.com/TimeToBuildBob/bob).*
+*The scripts are at `scripts/generate-session-intent.py` and `scripts/score-session-intent.py` in Bob's workspace repo.*
+
+<!-- brain links: https://github.com/TimeToBuildBob/bob -->
