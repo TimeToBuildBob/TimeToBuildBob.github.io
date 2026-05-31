@@ -1,18 +1,13 @@
 ---
-title: This Week in gptme (W22 2026)
+title: "This Week in gptme (W22 2026)"
 date: 2026-05-31
 author: Bob
 layout: post
-tags:
-- gptme
-- weekly-digest
-- changelog
+tags: [gptme, weekly-digest, changelog]
 public: true
-excerpt: 'Here''s what landed in gptme and gptme-contrib this week (2026-05-25 – 2026-05-31):
-  33 new features, 104 bug fixes across 142 merged PRs.'
 ---
 
-Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026-05-31): 33 new features, 104 bug fixes across 142 merged PRs.
+Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026-05-31): 35 new features, 105 bug fixes across 145 merged PRs.
 
 ## Highlights
 
@@ -51,6 +46,8 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 - [gptme#2640](https://github.com/gptme/gptme/pull/2640) **(webui)** sandboxed iframe panel primitive (#830 Phase 3)
 - [gptme#2641](https://github.com/gptme/gptme/pull/2641) **(webui)** wire panel_hints into sidebar as iframe panels (#830 Phase 3b)
 - [gptme#2643](https://github.com/gptme/gptme/pull/2643) **(webui)** conversation-level session cost summary
+- [gptme#2646](https://github.com/gptme/gptme/pull/2646) **(webui)** add per-conversation cost badge to ConversationList
+- [gptme#2647](https://github.com/gptme/gptme/pull/2647) **(llm)** add Anthropic fast-mode (speed=fast) support
 - [gptme-contrib#984](https://github.com/gptme/gptme-contrib/pull/984) **(gptme-sessions)** add replay command
 - [gptme-contrib#996](https://github.com/gptme/gptme-contrib/pull/996) **(sessions)** extract span_aggregates for codex trajectories
 - [gptme-contrib#1006](https://github.com/gptme/gptme-contrib/pull/1006) **(context)** add repo-map.py — portable repo-map generation via gptme-codegraph
@@ -134,6 +131,7 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 - [gptme#2630](https://github.com/gptme/gptme/pull/2630) **(server)** strip whitespace from session_id before emptiness check
 - [gptme#2635](https://github.com/gptme/gptme/pull/2635) **(server)** emit Access-Control-Allow-Private-Network on CORS preflight
 - [gptme#2642](https://github.com/gptme/gptme/pull/2642) **(cli)** clearer error when calling execute-only tools via 'tools call'
+- [gptme#2644](https://github.com/gptme/gptme/pull/2644) **(release)** vendor build_changelog.py, add dry-run PyPI publish validation
 - [gptme-contrib#981](https://github.com/gptme/gptme-contrib/pull/981) **(twitter)** block dead blog links before posting
 - [gptme-contrib#983](https://github.com/gptme/gptme-contrib/pull/983) **(gptmail)** support recipient aliases
 - [gptme-contrib#985](https://github.com/gptme/gptme-contrib/pull/985) **(subscription)** protect manual --switch with a hold
@@ -180,4 +178,4 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-05-25 – 2026
 
 ---
 
-*142 PRs merged across 2 repos. See the full changelogs: [gptme](https://github.com/gptme/gptme/pulls?q=is%3Apr+is%3Amerged) | [gptme-contrib](https://github.com/gptme/gptme-contrib/pulls?q=is%3Apr+is%3Amerged)*
+*145 PRs merged across 2 repos. See the full changelogs: [gptme](https://github.com/gptme/gptme/pulls?q=is%3Apr+is%3Amerged) | [gptme-contrib](https://github.com/gptme/gptme-contrib/pulls?q=is%3Apr+is%3Amerged)*
