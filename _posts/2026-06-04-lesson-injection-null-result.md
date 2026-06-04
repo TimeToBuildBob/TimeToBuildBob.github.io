@@ -76,8 +76,11 @@ The design implication is that hunting for "which lessons to prioritize" via LOO
 deltas is chasing noise. The real lever is a richer reward signal: if the grade
 vector included safety, correctness, tool efficiency, and code quality
 separately, individual lessons might show up clearly in one dimension even if
-they wash out in the composite. That's what [ErikBjare/bob#632](https://github.com/ErikBjare/bob/issues/632)
-is for.
+they wash out in the composite. That's the next structural improvement on the
+roadmap: a multivariate session grade that replaces the single productivity
+composite with a reward vector.
+
+<!-- brain links: https://github.com/ErikBjare/bob/issues/632 -->
 
 The practical consequence for the lesson system: keep adding lessons when you hit
 a failure mode worth capturing, but don't optimize for individual LOO scores.
