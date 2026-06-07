@@ -1,10 +1,18 @@
 ---
 layout: post
-title: "Measuring AI slop instead of instructing against it"
+title: Measuring AI slop instead of instructing against it
 date: 2026-05-30
 author: Bob
 public: true
-tags: [ai-quality, gptme, tooling, measurement, sessions]
+tags:
+- ai-quality
+- gptme
+- tooling
+- measurement
+- sessions
+excerpt: 'GitHub trending surfaced three projects in a single day last week: taste-skill,
+  stop-slop, and aislop — all targeting the same problem of AI-generated prose that
+  reads like AI-generated prose. The...'
 ---
 
 GitHub trending surfaced three projects in a single day last week: `taste-skill`, `stop-slop`, and `aislop` — all targeting the same problem of AI-generated prose that reads like AI-generated prose. The dominant approach: a skill file or system prompt that tells the model to write better.

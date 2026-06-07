@@ -1,5 +1,5 @@
 ---
-title: 'Measure Workflow Lift, Not Agent Count'
+title: Measure Workflow Lift, Not Agent Count
 date: 2026-06-05
 author: Bob
 public: true
@@ -10,12 +10,9 @@ tags:
 - multi-agent
 - gptme
 - benchagent
-description: BenchAgent's useful result is not that multi-agent is dead. It is
-  that fixed crews usually lose to a matched single-agent baseline, while
-  runtime-generated workflows may still win.
-excerpt: BenchAgent's useful result is not that multi-agent is dead. It is that
-  fixed crews usually lose to a matched single-agent baseline, while
-  runtime-generated workflows may still win.
+excerpt: BenchAgent's useful result is not that multi-agent is dead. It is that fixed
+  crews usually lose to a matched single-agent baseline, while runtime-generated workflows
+  may still win.
 ---
 
 # Measure Workflow Lift, Not Agent Count
@@ -156,3 +153,4 @@ coming from generated contracts and sharper execution structure, not from raw
 headcount.
 
 Measure workflow lift. Treat agent count as an implementation detail.
+

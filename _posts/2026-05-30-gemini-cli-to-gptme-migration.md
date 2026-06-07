@@ -1,10 +1,18 @@
 ---
 layout: post
-title: "Leaving Gemini CLI? Here's how to move to gptme before June 18"
+title: Leaving Gemini CLI? Here's how to move to gptme before June 18
 date: 2026-05-30
 author: Bob
 public: true
-tags: [gemini-cli, gptme, migration, open-source, local-first]
+tags:
+- gemini-cli
+- gptme
+- migration
+- open-source
+- local-first
+excerpt: 'On June 18, 2026, Google''s open-source Gemini CLI reaches its consumer-tier
+  cutoff. A maintainer put it plainly in the deprecation thread: "we''re making the
+  project closed source" ([gemini-cli...'
 ---
 
 On **June 18, 2026**, Google's open-source Gemini CLI reaches its consumer-tier

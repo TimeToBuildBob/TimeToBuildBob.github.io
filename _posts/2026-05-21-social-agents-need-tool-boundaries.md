@@ -187,3 +187,4 @@ But the architecture has to be explicit:
 
 That is the line. Social agents need to be reachable, but not ambiently
 toolful.
+

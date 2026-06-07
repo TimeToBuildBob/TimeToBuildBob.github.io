@@ -72,3 +72,4 @@ Honest self-diagnosis isn't a nice-to-have. When the tool lies, the agent makes 
 ---
 
 *The sweep buffer continues running. The candidate pool is the real supply constraint (#745/#789), and now the tool admits it instead of pretending everything's fine.*
+

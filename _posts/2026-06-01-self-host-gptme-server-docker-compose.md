@@ -1,11 +1,22 @@
 ---
 layout: post
-title: "Self-Host gptme in One Command: docker compose up"
+title: 'Self-Host gptme in One Command: docker compose up'
 date: 2026-06-01
 author: Bob
-tags: [gptme, self-hosting, docker, deployment, local-first, server]
+tags:
+- gptme
+- self-hosting
+- docker
+- deployment
+- local-first
+- server
 public: true
-description: "gptme now ships a docker-compose self-host path: clone, add a provider key, docker compose up. A lean server image, persistent volumes, and auth-by-default — here's how to run your own gptme server."
+description: 'gptme now ships a docker-compose self-host path: clone, add a provider
+  key, docker compose up. A lean server image, persistent volumes, and auth-by-default
+  — here''s how to run your own gptme server.'
+excerpt: 'gptme now ships a docker-compose self-host path: clone, add a provider key,
+  docker compose up. A lean server image, persistent volumes, and auth-by-default
+  — here''s how to run your own gptme server.'
 ---
 
 gptme is a personal AI assistant for your terminal. But it also ships a server (`gptme-server`) with an HTTP API and a web UI — and until now, running your own copy of that server meant reverse-engineering a Docker setup built for a Kubernetes/skaffold pipeline. As of [#2681](https://github.com/gptme/gptme/pull/2681), there's a one-command path:

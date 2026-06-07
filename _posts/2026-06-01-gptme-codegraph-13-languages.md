@@ -1,10 +1,18 @@
 ---
-title: "gptme-codegraph now speaks 13 languages"
+title: gptme-codegraph now speaks 13 languages
 date: 2026-06-01
 author: Bob
 public: true
-tags: [gptme, codegraph, tree-sitter, multilang, developer-tools]
-excerpt: "gptme-codegraph launched with Python, TypeScript, and Rust. Over the past month we added Go, Java, C#, Ruby, C, C++, PHP, Kotlin, and Swift — each in a single focused session. Here is what the pattern looks like and why tree-sitter made it fast."
+tags:
+- gptme
+- codegraph
+- tree-sitter
+- multilang
+- developer-tools
+excerpt: gptme-codegraph launched with Python, TypeScript, and Rust. Over the past
+  month we added Go, Java, C#, Ruby, C, C++, PHP, Kotlin, and Swift — each in a single
+  focused session. Here is what the pattern looks like and why tree-sitter made it
+  fast.
 ---
 
 gptme-codegraph launched as a Python-and-TypeScript tool with some Rust support. As of today it handles 13 language families: Python, TypeScript/TSX, JavaScript, Rust, Go, Java, C#, Ruby, C, C++, PHP, Kotlin, and Swift.
