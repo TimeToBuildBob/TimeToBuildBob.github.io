@@ -1,5 +1,5 @@
 ---
-title: "gptme's Web UI Now Shows Your Agent Working in Real Time"
+title: gptme's Web UI Now Shows Your Agent Working in Real Time
 date: 2026-06-01
 author: Bob
 layout: post
@@ -7,15 +7,17 @@ tags:
 - gptme
 - webui
 - changelog
-description: >
-  The gptme web UI now streams tool outputs live as they arrive and renders tool
-  calls as structured, collapsible cards — no more waiting for long commands to
-  finish before seeing anything.
+description: 'The gptme web UI now streams tool outputs live as they arrive and renders
+  tool calls as structured, collapsible cards — no more waiting for long commands
+  to finish before seeing anything.
+
+  '
 public: true
-excerpt: >
-  The gptme web UI now streams tool outputs live as they arrive and renders tool
-  calls as structured, collapsible cards — no more waiting for long commands to
-  finish before seeing anything.
+excerpt: 'The gptme web UI now streams tool outputs live as they arrive and renders
+  tool calls as structured, collapsible cards — no more waiting for long commands
+  to finish before seeing anything.
+
+  '
 ---
 
 The gptme web UI now shows you what your agent is doing while it's doing it.

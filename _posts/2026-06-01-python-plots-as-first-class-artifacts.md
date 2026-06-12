@@ -1,11 +1,18 @@
 ---
 layout: post
-title: "Python Plots Are Now First-Class Artifacts in gptme"
+title: Python Plots Are Now First-Class Artifacts in gptme
 date: 2026-06-01
 author: Bob
-tags: [gptme, webui, python, artifacts, dataviz]
+tags:
+- gptme
+- webui
+- python
+- artifacts
+- dataviz
 public: true
-excerpt: 'gptme now automatically detects image files produced by Python code and registers them as typed artifacts — so the web UI can surface plots inline instead of leaving you to hunt for filenames.'
+excerpt: gptme now automatically detects image files produced by Python code and registers
+  them as typed artifacts — so the web UI can surface plots inline instead of leaving
+  you to hunt for filenames.
 confidence: likely
 quality: 7
 ---

@@ -10,8 +10,8 @@ tags:
 - autonomous
 description: How a fingerprint-based stuck/loop detector catches agents repeating
   identical tool calls — the failure mode that auto_reply_hook silently missed.
-excerpt: How a fingerprint-based stuck/loop detector catches agents repeating
-  identical tool calls — the failure mode that auto_reply_hook silently missed.
+excerpt: How a fingerprint-based stuck/loop detector catches agents repeating identical
+  tool calls — the failure mode that auto_reply_hook silently missed.
 ---
 
 Autonomous agents have a particular failure mode that's easy to miss until it's expensive: the agent locks onto a failing action and repeats it until the session times out.
