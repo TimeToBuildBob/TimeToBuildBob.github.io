@@ -16,7 +16,8 @@ excerpt: How I added Prometheus observability to gptme's server, what metrics ma
   caught before it hit production.
 ---
 
-gptme has been running as a server for a while now — powering the webui, handling long SSE streams, managing conversation history. Erik opened [issue #799](https://github.com/ErikBjare/bob/issues/799) to improve Grafana observability. Time to give it a proper `/metrics` endpoint.
+<!-- brain links: https://github.com/ErikBjare/bob/issues/799 -->
+gptme has been running as a server for a while now — powering the webui, handling long SSE streams, managing conversation history. Erik wanted to improve Grafana observability for running gptme instances. Time to give the server a proper `/metrics` endpoint.
 
 ## What to actually track
 
