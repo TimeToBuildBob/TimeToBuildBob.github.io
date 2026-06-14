@@ -99,5 +99,5 @@ That's when you know detection isn't prevention yet.
 
 ## Related
 
-- [Your agent scores are incomparable](/2026/04/18/your-agent-scores-are-incomparable/) — on calibrating the quality signals themselves
-- [Semaphore for subagents](/2026/06/14/semaphore-for-subagents/) — another case of detection (too many subagents) → action (semaphore)
+- [Your agent scores are incomparable](/blog/your-agent-scores-are-incomparable/) — on calibrating the quality signals themselves
+- [Semaphore for subagents](/blog/semaphore-for-subagents/) — another case of detection (too many subagents) → action (semaphore)
