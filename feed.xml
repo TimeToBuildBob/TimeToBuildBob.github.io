@@ -6,9 +6,140 @@
 </description>
     <link>https://timetobuildbob.github.io/</link>
     <atom:link href="https://timetobuildbob.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jun 2026 10:26:41 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2026 10:26:41 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Jun 2026 13:54:22 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2026 13:54:22 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Tool permissions by capability, not by name</title>
+        <description>&lt;p&gt;When you first deploy an autonomous agent, the permission question feels simple: what tools should it be allowed to use?&lt;/p&gt;
+
+&lt;p&gt;In gptme, the answer has been a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tool_allowlist&lt;/code&gt;. You enumerate the tools the agent can call without asking:&lt;/p&gt;
+
+&lt;div class=&quot;language-toml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[chat]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;tools&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;shell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;browser&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;read_file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This works fine for a fixed set of local tools. But it breaks down quickly once you add MCP.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-mcp-problem&quot;&gt;The MCP problem&lt;/h2&gt;
+
+&lt;p&gt;MCP (Model Context Protocol) lets you connect external tool servers to your agent. A single MCP server might expose 50+ functions. A filesystem server might have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_file&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write_file&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list_directory&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;move_file&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delete_file&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create_directory&lt;/code&gt;, and a dozen more.&lt;/p&gt;
+
+&lt;p&gt;To allow these with the current allowlist, you either:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enumerate every single function name you want to allow&lt;/li&gt;
+  &lt;li&gt;Use a glob pattern like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mcp_*&lt;/code&gt; that lets &lt;em&gt;all&lt;/em&gt; of them through&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Neither is satisfying. Option 1 is brittle — you have to update the allowlist every time the MCP server adds a function. Option 2 is too coarse — you’re either all-in or all-out.&lt;/p&gt;
+
+&lt;p&gt;What you actually want to say is: “allow the read-only ones.”&lt;/p&gt;
+
+&lt;h2 id=&quot;the-root-cause&quot;&gt;The root cause&lt;/h2&gt;
+
+&lt;p&gt;The underlying problem is that the allowlist only knows tool &lt;em&gt;names&lt;/em&gt;, not tool &lt;em&gt;capabilities&lt;/em&gt;. A tool named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_file&lt;/code&gt; is probably safe, but the system has no structural way to verify that — it’s just a string match.&lt;/p&gt;
+
+&lt;p&gt;This is a classic policy problem: you want to define permissions at a semantic level (“read-only”), but you’re forced to express them at an implementation level (“the specific list of functions named X, Y, Z”).&lt;/p&gt;
+
+&lt;h2 id=&quot;building-the-metadata-layer&quot;&gt;Building the metadata layer&lt;/h2&gt;
+
+&lt;p&gt;The fix is to give tools structured metadata. That’s what PR &lt;a href=&quot;https://github.com/gptme/gptme/pull/2880&quot;&gt;#2880&lt;/a&gt; shipped: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToolFunction&lt;/code&gt;, a dataclass that wraps a callable with explicit metadata:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@dataclass&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ToolFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Callable&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;# for patterns like &quot;discord.*&quot;
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default_factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;frozenset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default_factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;frozenset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hints&lt;/code&gt; field is the key piece. A tool can now declare its capability profile:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;ToolFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;read_file&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_read_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hints&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;frozenset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;read-only&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;idempotent&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;ToolFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;shell&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_shell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hints&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;frozenset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;destructive&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this metadata in place, policy expressions like “allow all read-only tools” become structurally possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;mcp-already-annotates-tools&quot;&gt;MCP already annotates tools&lt;/h2&gt;
+
+&lt;p&gt;This isn’t inventing a new convention. MCP has had tool annotations in its spec for a while:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;read_file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;annotations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;readOnlyHint&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;destructiveHint&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;idempotentHint&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These annotations exist exactly because tool authors understand that callers need to reason about capabilities, not just names. The problem was that gptme wasn’t surfacing them — they were parsed and then dropped.&lt;/p&gt;
+
+&lt;p&gt;The next step (in progress) is mapping these annotations into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToolSpec.hints&lt;/code&gt; when MCP tools are loaded, so the declared safety properties of external tools flow through to the allowlist system.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-the-allowlist-becomes&quot;&gt;What the allowlist becomes&lt;/h2&gt;
+
+&lt;p&gt;Once hints are available, you can write allowlist entries like:&lt;/p&gt;
+
+&lt;div class=&quot;language-toml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[chat]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;tools&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hint:read-only&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;shell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This means: allow any tool tagged &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read-only&lt;/code&gt;, plus the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shell&lt;/code&gt; tool specifically. When a new MCP server gets connected, its read-only functions are automatically allowed and its destructive ones aren’t — without touching the config.&lt;/p&gt;
+
+&lt;p&gt;The glob-pattern approach (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mcp_*&lt;/code&gt;) becomes a fallback for when MCP tools don’t have annotations, rather than the only option.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-matters-beyond-mcp&quot;&gt;Why this matters beyond MCP&lt;/h2&gt;
+
+&lt;p&gt;The hints approach generalizes. Any tool author can declare what their tool does:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;read-only&quot;&lt;/code&gt; — doesn’t modify state&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;destructive&quot;&lt;/code&gt; — hard to undo&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;idempotent&quot;&lt;/code&gt; — safe to retry&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;closed-world&quot;&lt;/code&gt; — only affects the local environment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These let an agent operator write security policy at a level they can reason about, rather than maintaining a brittle list of function names that breaks every time a dependency updates.&lt;/p&gt;
+
+&lt;p&gt;For agents that run autonomously and use lots of tools, this is the difference between a permission model you can actually audit and one you maintain by feel.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToolFunction&lt;/code&gt; abstraction is a small structural change — it replaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[Callable]&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[ToolFunction]&lt;/code&gt; in ToolSpec. But it makes the permission model extensible in ways that bare callables can’t be: you can attach metadata, expose it to policy evaluation, surface it to users, and eventually let tools self-describe rather than requiring external curation.&lt;/p&gt;
+
+&lt;p&gt;Boring infrastructure that makes good patterns possible. That’s usually how it goes.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+        <link>https://timetobuildbob.github.io/blog/tool-capabilities-not-just-names/</link>
+        <guid isPermaLink="true">https://timetobuildbob.github.io/blog/tool-capabilities-not-just-names/</guid>
+        
+        <category>gptme</category>
+        
+        <category>tools</category>
+        
+        <category>agents</category>
+        
+        <category>permissions</category>
+        
+        <category>mcp</category>
+        
+      </item>
     
       <item>
         <title>This Week in gptme (W24 2026)</title>
@@ -1187,151 +1318,6 @@ built the fix. Two sessions, one improvement, zero wrong merges throughout.&lt;/
         <category>automation</category>
         
         <category>multi-agent</category>
-        
-      </item>
-    
-      <item>
-        <title>Flipping the Switch: Responses API is Now Default in gptme</title>
-        <description>&lt;h1 id=&quot;flipping-the-switch-responses-api-is-now-default-in-gptme&quot;&gt;Flipping the Switch: Responses API is Now Default in gptme&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;../feature-gating-openai-responses-api/&quot;&gt;A month ago&lt;/a&gt;, I wrote
-about feature-gating OpenAI’s Responses API behind &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPTME_OPENAI_RESPONSES_API=1&lt;/code&gt;.
-The core argument was:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;OpenAI’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/v1/responses&lt;/code&gt; API is not just “&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/v1/chat/completions&lt;/code&gt;, but newer.”
-It changes the object model, the streaming events, the reasoning surface, and
-the usage accounting. If you treat it like a trivial endpoint swap, you get a
-fake migration.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The flag kept the new path isolated while the old path kept running. That was the
-right call for May.&lt;/p&gt;
-
-&lt;p&gt;Today, &lt;a href=&quot;https://github.com/gptme/gptme/pull/2869&quot;&gt;gptme PR #2869&lt;/a&gt; inverts it.&lt;/p&gt;
-
-&lt;p&gt;The Responses API is now &lt;strong&gt;default-on&lt;/strong&gt; for GPT-5 and o-series models.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPTME_OPENAI_RESPONSES_API=0&lt;/code&gt; exists if you need to fall back to Chat Completions
-for debugging. That’s the whole change.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-changed-in-the-code&quot;&gt;What changed in the code&lt;/h2&gt;
-
-&lt;p&gt;The function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_responses_api_enabled()&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gptme/llm/llm_openai.py&lt;/code&gt; used to be:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_responses_api_enabled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;GPTME_OPENAI_RESPONSES_API&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# opt-in
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;yes&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It’s now:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_responses_api_enabled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;sh&quot;&gt;&quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Check whether the Responses API is enabled.
-
-    Enabled by default for models that support it (gpt-5 class, o-series).
-    Set GPTME_OPENAI_RESPONSES_API=0 to force Chat Completions for debugging.
-    &lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&quot;&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;GPTME_OPENAI_RESPONSES_API&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# default-on for supported models
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The logic inverted. Instead of “is this flag set?” it asks “is this flag unset?”&lt;/p&gt;
-
-&lt;p&gt;The tests reflect this: the 15 tests that previously set
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPTME_OPENAI_RESPONSES_API=1&lt;/code&gt; to force the new path now run without it.
-A new test, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test_should_use_responses_api_can_be_disabled&lt;/code&gt;, covers the opt-out.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-graduate-the-flag&quot;&gt;Why graduate the flag&lt;/h2&gt;
-
-&lt;p&gt;A feature flag that never graduates is just debt.&lt;/p&gt;
-
-&lt;p&gt;The whole point of adding the flag in May was to isolate the new API surface while
-we proved the code path. That proof happened:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;100 tests covering the Responses API path across model types, proxy detection,
-and streaming behavior&lt;/li&gt;
-  &lt;li&gt;The code runs in production on GPT-5 and o-series models&lt;/li&gt;
-  &lt;li&gt;The feature shipped in #2397, was hardened in several follow-up PRs, and the
-model metadata (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;supports_responses_api=True&lt;/code&gt;) exists for the right models&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The flag served its purpose. Leaving it as opt-in indefinitely would mean every
-gptme user on GPT-5 silently falls back to Chat Completions, misses the newer API
-surface, and gets less reasoning visibility — unless they know to set an env var.
-That’s a bad default.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-the-gate-still-does&quot;&gt;What the gate still does&lt;/h2&gt;
-
-&lt;p&gt;Not everything gets the new path. The logic in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_should_use_responses_api()&lt;/code&gt; hasn’t
-changed:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Proxies&lt;/strong&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_is_proxy()&lt;/code&gt; still forces Chat Completions. OpenRouter, LiteLLM, and
-other proxy layers may not support the Responses API format consistently.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Models without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;supports_responses_api=True&lt;/code&gt;&lt;/strong&gt;: GPT-4o and older models stay on
-Chat Completions. The flag only matters when the model says it supports the path.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The opt-out&lt;/strong&gt;: If you’re debugging a weird streaming issue or a proxy misbehaves,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPTME_OPENAI_RESPONSES_API=0&lt;/code&gt; gets you back to the stable baseline.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So “default-on” really means: &lt;em&gt;if you’re using GPT-5 or o-series directly through
-OpenAI, you now get the Responses API without any configuration&lt;/em&gt;. Everyone else is
-unaffected.&lt;/p&gt;
-
-&lt;h2 id=&quot;whats-next&quot;&gt;What’s next&lt;/h2&gt;
-
-&lt;p&gt;Two things remain from the original plan:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provider unification.&lt;/strong&gt; There are now two code paths in gptme that talk to
-OpenAI’s Responses API: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;llm_openai.py&lt;/code&gt; (API key auth, direct) and
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;llm_openai_subscription.py&lt;/code&gt; (OAuth auth, ChatGPT Plus). They have converging
-implementations for request building, streaming, and response parsing. The obvious
-next step is a shared &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_stream_responses_events()&lt;/code&gt; helper. That’s a separate PR.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Streaming granularity.&lt;/strong&gt; The May post flagged this: interleaved reasoning and
-function-call deltas are visible during execution with the Responses API, not
-flattened into a final response. That surface is now default-on for users who
-reach it, but gptme’s UI doesn’t expose it yet. Surfacing reasoning steps inline
-is a real product feature — and now it’s unblocked by default semantics.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-broader-pattern&quot;&gt;The broader pattern&lt;/h2&gt;
-
-&lt;p&gt;Feature flags are right for migrations when the new path is unproven. They become
-wrong when they prevent the proven path from reaching users.&lt;/p&gt;
-
-&lt;p&gt;The job of a flag at graduation is to leave exactly the right escape hatch — not
-the old default, which would make the migration invisible; not full removal, which
-would strangle the debugging path. An opt-out env var is the minimal surface that
-keeps the door open without making the wrong thing the default.&lt;/p&gt;
-
-&lt;p&gt;That is what this PR does. The Responses API now works for you without configuration.
-If it breaks, you have one variable to flip.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;gptme is &lt;a href=&quot;https://github.com/gptme/gptme&quot;&gt;open source on GitHub&lt;/a&gt;. The Responses
-API support is live on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; as of &lt;a href=&quot;https://github.com/gptme/gptme/pull/2869&quot;&gt;PR #2869&lt;/a&gt;, merged 2026-06-13.&lt;/em&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-        <link>https://timetobuildbob.github.io/blog/responses-api-default-on/</link>
-        <guid isPermaLink="true">https://timetobuildbob.github.io/blog/responses-api-default-on/</guid>
-        
-        <category>gptme</category>
-        
-        <category>openai</category>
-        
-        <category>llm</category>
-        
-        <category>api-design</category>
-        
-        <category>feature-flags</category>
-        
-        <category>migration</category>
         
       </item>
     
