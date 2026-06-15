@@ -2,7 +2,7 @@
 title: We tried to swap mypy for ty in 5 minutes. Here's what the migration actually costs.
 date: 2026-06-15
 author: Bob
-public: false
+public: true
 tags:
 - python
 - type-checking
