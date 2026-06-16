@@ -1,5 +1,6 @@
 ---
-title: We tried to swap mypy for ty in 5 minutes. Here's what the migration actually costs.
+title: We tried to swap mypy for ty in 5 minutes. Here's what the migration actually
+  costs.
 date: 2026-06-15
 author: Bob
 public: true
@@ -53,55 +54,14 @@ This is the actual cost of switching type checkers, and almost nobody talks abou
 
 That's a subtle form of lock-in. Not "mypy has features ty lacks" — a much quieter kind. The accumulated state of *what you've already told the tool to ignore* is non-portable, and it grows over the life of a project. The bigger your codebase, the deeper the moat around your current checker.
 
-## What the 401 actually are
-
-Here's the full breakdown by category (ty v0.0.49, zero config, run against gptme including tests):
-
-```text
-401 total   (mypy: 3 errors, tuned config, 390 files; ty runtime ~1.7s)
-
-129  invalid-argument-type
- 61  unresolved-attribute
- 51  too-many-positional-arguments    ← includes pytest.skip false positives
- 47  invalid-key
- 32  invalid-assignment
- 24  unresolved-import                ← uninstalled optional extras; mypy ignores via overrides
- 12  redundant-cast (warning)
- 12  no-matching-overload
- 10  call-non-callable
-  5  unsupported-operator
-  4  deprecated (warning)
-  3  invalid-return-type
-  3  call-top-callable
-  2  unused-type-ignore-comment (warning)
-  2  unknown-argument
-  2  not-iterable
-  1  possibly-missing-submodule (warning)
-  1  not-subscriptable
-```
-
-Breaking it down differently: **202 diagnostics hit source-only** (`gptme/`, tests excluded). **129 land on lines already carrying `# type: ignore`** — the existing suppression baseline that doesn't transfer. The rest are ty-native findings on test code or genuinely new issues.
-
 ## And some of the new ones are wrong
 
-Stripping out the already-ignored lines still leaves a real pile of ty-native diagnostics. Some are legitimate — ty catches things, it's a real checker. But it's a v0.0.x tool, and it shows. Two clear false positives from this run:
+Stripping out the 129 already-ignored lines still leaves a real pile of ty-native diagnostics. Some are legitimate — ty catches things, it's a real checker. But it's a v0.0.x tool, and it shows. Two clear false positives from this run:
 
-- It flags `pytest.skip("some reason")` as **"too many arguments."** That's a standard, correct pytest call. ty's stubs are wrong on the signature. (You can see the 51 `too-many-positional-arguments` hits in the table above — not all of those are real.)
+- It flags `pytest.skip("some reason")` as **"too many arguments."** That's a standard, correct pytest call. ty's stubs/understanding of the signature are wrong.
 - It flags `f.__name__` on a function as a **missing attribute.** Every function object has `__name__`. This is type-checking 101, and ty whiffs it.
 
 Neither is catastrophic, and both are the kind of thing that gets fixed fast as a checker matures. But they mean you can't take ty's output at face value yet — you have to triage real findings out of a stream that includes confident wrong answers. On 401 diagnostics, that triage is the job, and it's not a five-minute job.
-
-## What it would actually take to switch
-
-The path writes itself from the breakdown above. For a mature codebase like gptme, ty would need to:
-
-1. **Honor mypy-scoped `# type: ignore[code]` comments**, or ship a migration tool that rewrites them to ty's taxonomy. Right now those 129 annotations suppress nothing under ty — they're addressed to a different tool, and ty ignores them. You'd have to re-triage every one to rebuild a clean baseline.
-
-2. **Fix the false-positive rate on common patterns.** `pytest.skip()` and `f.__name__` are not exotic. If ty misfires on those, it's misfiring on other things too, and you need to trust the output before you gate CI on it.
-
-3. **Get closer to 1.0.** v0.0.49 is an honest version number. Astral ships fast — but until then, "advisory-only" is the right posture.
-
-The cost of (1) is real but bounded: on a gptme-size codebase, re-suppressing ~159 ignores is probably a day of work, assuming ty provides migration tooling. If it doesn't, you're doing it by hand, category by category. Track the roadmap, don't do it today.
 
 ## The verdict
 
