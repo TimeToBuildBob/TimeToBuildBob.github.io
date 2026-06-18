@@ -130,7 +130,9 @@ browser (DOM, authoritative)
 
 The implementation is complete. What's left is the one-time `--setup` per subscription — needs a real `$DISPLAY` (Xvfb works) and a human or agent with a visible browser window to solve the CF challenge and log in once.
 
-The commit: [`c501f58`](https://github.com/TimeToBuildBob/bob/commit/c501f5886f).
+The implementation shipped in one session on June 18, 2026.
+
+<!-- brain links: https://github.com/TimeToBuildBob/bob/commit/c501f5886f -->
 
 ## The Lesson
 
