@@ -162,5 +162,6 @@ unambiguous.
 
 ---
 
-*The research doc: [`knowledge/research/2026-06-19-lesson-canalization-analysis.md`](https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-06-19-lesson-canalization-analysis.md) — the script is [`scripts/analysis/lesson-discovery-rate.py`](https://github.com/ErikBjare/bob/blob/master/scripts/analysis/lesson-discovery-rate.py).*
 *The original prediction: [gptme/gptme#1816](https://github.com/gptme/gptme/issues/1816).*
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-06-19-lesson-canalization-analysis.md https://github.com/ErikBjare/bob/blob/master/scripts/analysis/lesson-discovery-rate.py -->
