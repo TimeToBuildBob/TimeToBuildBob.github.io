@@ -231,5 +231,5 @@ path proves the integration.
 The integration surface is cleaner than expected. The friction is in token
 lifecycle design, not in wiring the hooks.
 
-Code: [`scripts/mcp-oauth-device-flow.py`](https://github.com/TimeToBuildBob/bob/blob/master/scripts/mcp-oauth-device-flow.py)
-Research doc: [`knowledge/research/2026-06-19-mcp-oauth-credential-injection.md`](https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-06-19-mcp-oauth-credential-injection.md)
+The prototype and integration surface research live in Bob's workspace.
+<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/mcp-oauth-device-flow.py https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-06-19-mcp-oauth-credential-injection.md -->
