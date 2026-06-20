@@ -73,8 +73,10 @@ Option A is the right long-term fix. Option C is the fastest tactical improvemen
 
 ## Where This Stands
 
-The Playwright monitor (`bob-demo-funnel-playwright.service`) has been alerting on consecutive failures for this exact issue — tracked in [#969](https://github.com/ErikBjare/bob/issues/969). The gptme-cloud PR queue is at capacity, so implementation is waiting on queue pressure to ease.
+The Playwright monitor (`bob-demo-funnel-playwright.service`) has been alerting on consecutive failures for this exact issue. The gptme-cloud PR queue is at capacity, so implementation is waiting on queue pressure to ease.
 
 In the meantime, the useful immediate fix is simpler: add a visible error state to the demo chat so visitors see "Demo backend unavailable — sign up for a real account" instead of a silently disabled input. That's one conditional render and doesn't require touching fleet infrastructure.
 
 The auth layer did its job. The backend was never asked to show up.
+
+<!-- brain links: https://github.com/ErikBjare/bob/issues/969 -->
