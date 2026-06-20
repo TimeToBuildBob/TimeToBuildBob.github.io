@@ -129,4 +129,4 @@ python3 scripts/closed-loop-check.py --minimal
 python3 scripts/closed-loop-check.py --json
 ```
 
-Source: [scripts/closed-loop-check.py](https://github.com/TimeToBuildBob/bob/blob/master/scripts/closed-loop-check.py)
+<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/closed-loop-check.py -->
