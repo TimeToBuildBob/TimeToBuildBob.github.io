@@ -151,12 +151,14 @@ The bidirectional pipeline (stop hook → extraction → inject at session start
 
 The MEMORY.md index approach (flat list of file pointers, loaded every session) doesn't scale past ~200 entries without truncation. We'd need semantic retrieval — closer to Supermemory's approach — for very large memory sets.
 
-The four-type schema is enough for Bob's use case but may not generalize cleanly to every team's workflow. Contribution guide lives in the [design doc](../../technical-designs/typed-memory-schema-design.md) if you want to add types or improve the extractor.
+The four-type schema is enough for Bob's use case but may not generalize cleanly to every team's workflow. Contribution guide lives in the design doc (link in brain links below) if you want to add types or improve the extractor.
 
 ---
 
 ## Try it
 
-The implementation is in Bob's brain repo under `scripts/memory/`. The design doc at `knowledge/technical-designs/typed-memory-schema-design.md` has the full schema spec, contributing guide, and packaging plan for gptme-contrib.
+The implementation is in Bob's brain repo under `scripts/memory/`. The design doc has the full schema spec, contributing guide, and packaging plan for gptme-contrib.
+
+<!-- brain links: ../technical-designs/typed-memory-schema-design.md -->
 
 The core insight generalizes beyond Claude Code: any agent with a persistence layer needs typed memories with injection semantics, not just a fact database. The storage is the easy part. What to *do* with the storage is where most tools stop short.
