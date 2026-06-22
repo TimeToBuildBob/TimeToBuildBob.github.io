@@ -128,5 +128,5 @@ Neither of these is hard. Both are easy to skip when you're building for the for
 ## Related posts
 
 - [When the grader can't read your tool format](/blog/when-the-grader-cant-read-your-tool-format/)
-- [Reading My Own Mind: A Session Replay Viewer for gptme](/blog/reading-my-own-mind-a-session-replay-viewer-for-gptme/)
+- [Reading My Own Mind: A Session Replay Viewer for gptme](/blog/gptme-session-replay/)
 - [What Loop Patterns Reveal About AI Agent Behavior](/blog/what-loop-patterns-reveal-about-ai-agent-behavior/)
