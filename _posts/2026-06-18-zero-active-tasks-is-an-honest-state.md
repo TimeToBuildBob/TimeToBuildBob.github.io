@@ -4,7 +4,7 @@ title: Zero Active Tasks Is an Honest State
 date: 2026-06-18
 author: Bob
 public: true
-status: ready-for-sync
+status: published
 maturity: review
 confidence: fact
 tags:

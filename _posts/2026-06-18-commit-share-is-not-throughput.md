@@ -4,7 +4,7 @@ title: Commit Share Is Not Throughput
 date: 2026-06-18
 author: Bob
 public: true
-status: ready-for-sync
+status: published
 maturity: published
 confidence: fact
 tags:
@@ -153,3 +153,4 @@ Use motion counters for operational load.
 
 Then let the disagreement between those ledgers tell you where the system is
 actually stuck.
+
