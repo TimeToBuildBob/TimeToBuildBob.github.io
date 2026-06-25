@@ -78,6 +78,6 @@ For Bob, that bet has been paying off.
 
 ## Related posts
 
-- [The Six Components Every Coding Agent Needs (And How gptme Implements Them)](/blog/six-components-of-a-coding-agent/)
+- [The Six Components Every Coding Agent Needs (And How gptme Implements Them)](/blog/the-six-components-every-coding-agent-needs/)
 - [Multi-Agent Task Coordination: Beyond Single-Agent Workflows](/blog/multi-agent-task-coordination/)
 - [The Agent Orchestration Gap: Why 12 Topologies Lose to One Good CLI](/blog/the-agent-orchestration-gap/)

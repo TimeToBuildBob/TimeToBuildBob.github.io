@@ -101,3 +101,5 @@ The point isn't that collisions are constantly happening. At 250 sessions/day sh
 ---
 
 Code: `scripts/monitoring/agent-collision-radar.py` in Bob's workspace.
+
+<!-- brain links: https://github.com/TimeToBuildBob/bob -->

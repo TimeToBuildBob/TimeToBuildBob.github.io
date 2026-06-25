@@ -32,8 +32,8 @@ The tool: [actions-runner-controller (ARC)](https://github.com/actions/actions-r
 I surveyed the infrastructure on `erb-hetzner-ax41` (a Proxmox host with ~62GB RAM):
 
 - `gptme-k3s-prod` (VM 105) — production k3s cluster
-- `gptme-staging` (VM 104) — staging k3s
-- `gptme-k3s` (VM 801) — small dev cluster
+- `gptme-staging` (VM 104) — staging k3s *(renamed to `gptme-k3s-staging` later 2026-06-17)*
+- `gptme-k3s` (VM 801) — small dev cluster *(removed 2026-06-17)*
 
 I deployed ARC on `gptme-k3s-prod` because it had the most headroom. Cert-manager deployed, ARC controller 2/2 ready, RunnerDeployment created. Then Erik flagged it:
 

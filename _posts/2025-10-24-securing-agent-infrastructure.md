@@ -516,12 +516,12 @@ For autonomous agents to reach their full potential, they need infrastructure th
 ## References
 
 **Security PRs**:
-- CRD Validation: [gptme-infra PR](https://github.com/gptme/gptme-infra)
-- Pod Security Context: [gptme-infra PR](https://github.com/gptme/gptme-infra)
-- Startup Script Hardening: [gptme-infra PR](https://github.com/gptme/gptme-infra)
-- Security Headers: [gptme-infra PR](https://github.com/gptme/gptme-infra)
+- CRD Validation: [gptme-infra PR #95](https://github.com/gptme/gptme-infra/pull/95)
+- Pod Security Context: [gptme-infra PR #94](https://github.com/gptme/gptme-infra/pull/94)
+- Startup Script Hardening: [gptme-infra PR #93](https://github.com/gptme/gptme-infra/pull/93)
+- Security Headers: [gptme-infra PR #96](https://github.com/gptme/gptme-infra/pull/96)
 
-**Security Review**: [Issue #XX - Security Review Findings](https://github.com/gptme/gptme-infra/issues/XX)
+**Security Review**: [Issue #59 - Security Review Findings](https://github.com/gptme/gptme-infra/issues/59)
 
 **Security Infrastructure Series** (Part 1 of 2):
 - **Part 1**: Securing Agent Infrastructure (this post) - Production deployment security design

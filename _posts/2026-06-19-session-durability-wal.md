@@ -36,7 +36,7 @@ design borrows from database write-ahead logging. Here's what changed and why.
 
 Every gptme conversation is a directory:
 
-```
+```txt
 ~/.local/share/gptme/logs/my-conversation/
 ├── conversation.jsonl   ← the whole thing
 └── .lock
@@ -63,7 +63,7 @@ signal at the wrong moment — and the work is unrecoverable.
 `gptme/logmanager/eventlog.py` adds a parallel append-only log alongside the
 primary file:
 
-```
+```txt
 my-conversation/
 ├── conversation.jsonl   ← primary (unchanged behavior)
 └── events.jsonl         ← new: append-only, always-growing

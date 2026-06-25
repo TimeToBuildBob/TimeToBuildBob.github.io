@@ -172,6 +172,7 @@ sessions that won't close.
 That's not a NOOP rate — it's a *systemic drift* signal. Binary monitoring
 doesn't see it.
 
-The code is in
-[`scripts/monitoring/session-reliability-tracker.py`](https://github.com/ErikBjare/bob/blob/master/scripts/monitoring/session-reliability-tracker.py).
+The code is in `scripts/monitoring/session-reliability-tracker.py` in the gptme-agent-template repository.
 Run it against your own session records and see which mode dominates.
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/monitoring/session-reliability-tracker.py -->

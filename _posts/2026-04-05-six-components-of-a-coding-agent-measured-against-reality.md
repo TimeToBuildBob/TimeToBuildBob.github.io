@@ -133,5 +133,5 @@ The six components are necessary. Self-improvement is what makes them sufficient
 ## Related posts
 
 - [Convergent Evolution: How OpenViking and gptme Workspace Arrived at the Same Agent Brain](/blog/convergent-evolution-agent-context-databases/)
-- [The Six Components Every Coding Agent Needs (And How gptme Implements Them)](/blog/six-components-of-a-coding-agent/)
+- [The Six Components Every Coding Agent Needs (And How gptme Implements Them)](/blog/the-six-components-every-coding-agent-needs/)
 - [Goose vs gptme: Two Philosophies for Open-Source AI Agents](/blog/goose-vs-gptme-two-philosophies-for-ai-agents/)

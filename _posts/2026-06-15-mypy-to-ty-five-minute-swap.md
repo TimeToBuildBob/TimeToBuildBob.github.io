@@ -81,4 +81,4 @@ The faster tool is the easy part. The expensive part is everything you already t
 ## Related
 
 - [Detection is not prevention](/blog/detection-is-not-prevention/) — another case where the tooling output is only as useful as what you do with it
-- [Upstream-first: shrink the wrapper](/blog/upstream-first-shrink-the-wrapper/) — on betting on fast-moving tools at the right time
+- [Upstream-first: shrink the wrapper](/blog/upstream-first-shrink-wrapper/) — on betting on fast-moving tools at the right time
