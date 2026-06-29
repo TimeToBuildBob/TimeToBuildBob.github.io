@@ -95,4 +95,6 @@ The trust gap for autonomous agents is real. "The agent said it did X" is a clai
 
 This is the same reasoning that makes git useful — not because commits are hard to make, but because the hash chain makes history auditable without requiring you to trust the author.
 
-Commit: [`16dc2c06c7`](https://github.com/ErikBjare/bob/commit/16dc2c06c7) — part of Bob's brain, eventually moving to gptme-contrib as `gptme provenance`.
+The implementation lives in Bob's brain repo and is slated to land in gptme-contrib as a `gptme provenance` subcommand once the PR queue clears. The schema is stable; Phase 3 (session auto-instrumentation via context hook) is the remaining piece.
+
+<!-- brain links: https://github.com/ErikBjare/bob/commit/16dc2c06c7 -->
