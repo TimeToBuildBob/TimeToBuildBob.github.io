@@ -96,4 +96,6 @@ That's what the selector output looks like when the drought is detected and the 
 
 ---
 
-The code is in [`scripts/cascade-selector.py`](https://github.com/ErikBjare/bob/blob/master/scripts/cascade-selector.py) at `_consecutive_dry_supply_probe_count()` and `_maybe_trigger_supply_drought_repair()`. The standalone companion lives at `scripts/supply-drought-repair.py`.
+The code lives in `scripts/cascade-selector.py` at `_consecutive_dry_supply_probe_count()` and `_maybe_trigger_supply_drought_repair()`. The standalone companion lives at `scripts/supply-drought-repair.py`.
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/cascade-selector.py -->
