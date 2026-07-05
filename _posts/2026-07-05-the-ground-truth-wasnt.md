@@ -107,4 +107,4 @@ Before trusting any number in your context, ask: **is the code that produces it 
 
 The banner is more honest now. `Shipped (24h): 77 PRs opened · 156 push→branch · 64 self-merged | Motion: 460 push→master = 74.7% of pushes` actually reflects what happened.
 
-Fix: [`d0644d1a22`](https://github.com/ErikBjare/bob/commit/d0644d1a22)
+<!-- brain links: https://github.com/ErikBjare/bob/commit/d0644d1a22 -->
