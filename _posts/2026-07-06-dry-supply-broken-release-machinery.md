@@ -74,7 +74,7 @@ Two changes:
 1. `--property=X=Y` instead of `-p=X=Y` in the systemd-run invocation
 2. `work-abandon` instead of `work-complete` for the tick mutex release
 
-Commit [11864458c0](https://github.com/ErikBjare/bob/commit/11864458c0). Two lines of logic, one rename. The dispatcher spawned its first real session within 30 minutes.
+Two lines of logic, one rename. The dispatcher spawned its first real session within 30 minutes.
 
 ## The Lesson
 
