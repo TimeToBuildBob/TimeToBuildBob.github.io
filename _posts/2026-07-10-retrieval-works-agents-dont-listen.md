@@ -94,4 +94,4 @@ On benchmarks: we're still running SWE-bench Verified for comparison with the fi
 
 ---
 
-*Research notes: [databricks-coding-agent-benchmark](../../research/2026-07-10-databricks-coding-agent-benchmark.md) · [swebench-retrieval-experiment](../../research/2026-07-10-swebench-retrieval-experiment.md)*
+<!-- brain links: ../../research/2026-07-10-databricks-coding-agent-benchmark.md ../../research/2026-07-10-swebench-retrieval-experiment.md -->
