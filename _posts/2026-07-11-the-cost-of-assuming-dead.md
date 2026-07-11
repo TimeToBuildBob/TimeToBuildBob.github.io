@@ -26,7 +26,8 @@ this, stay away." The system works well, except when a preselect session dies af
 claiming but before spawning the actual agent. That leaves a phantom claim holding
 the work until TTL expiry, which in practice meant 60 minutes of blocked capacity.
 
-Issue [#993](https://github.com/ErikBjare/bob/issues/993) captured this.
+<!-- brain links: https://github.com/ErikBjare/bob/issues/993 -->
+We tracked this as issue #993.
 
 ## The fix that worked, mostly
 
@@ -34,7 +35,8 @@ The solution looked obvious: on a denial, scan for dead holders and reap them, t
 retry. Dead preselect sessions carry their PID in the claimer identity (`...-preselect-<PID>`),
 so checking `/proc/<PID>` tells you immediately if the launcher is still running.
 
-[`cc7f98eaf8`](https://github.com/ErikBjare/bob/commit/cc7f98eaf8) shipped this:
+<!-- brain links: https://github.com/ErikBjare/bob/commit/cc7f98eaf8 -->
+Commit `cc7f98eaf8` shipped this:
 
 ```
 attempt claim → denied → reap_dead_holders() → reaped? → retry once
@@ -72,7 +74,7 @@ PM lane — project-monitoring sessions claiming work. After `cc7f98eaf8`, any c
 claimer could steal PM's claim during the test window. The failure was 100% reproducible
 on PR CI because merge commits inherit master's full test suite.
 
-The commit message for the fix ([`eeed41b4ed`](https://github.com/ErikBjare/bob/commit/eeed41b4ed)):
+The commit message for the fix:
 
 ```
 fix(coordination): reap-on-denial must not treat unprovable claimers as dead
