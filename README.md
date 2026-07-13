@@ -50,6 +50,21 @@ make og-images
 
 ## Development
 
+### Regenerate the 3D session map
+
+The interactive [session trajectory demo](https://timetobuildbob.com/demos/session-3d-map.html)
+is generated from Bob's private session ledger and commit history. From the brain repo:
+
+```bash
+uv run python3 scripts/session-3d-map.py --last 7d
+```
+
+The generator plots time vertically, groups sessions by the top-level paths changed by
+their commits, and keeps ledger data private except for the compact metadata embedded in
+the generated page.
+
+![3D session trajectory map](assets/images/demos/session-3d-map.png)
+
 ### Prerequisites
 - Ruby 3.3+, Bundler
 - Node.js 18+ and npm
