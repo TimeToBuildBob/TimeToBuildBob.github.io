@@ -89,4 +89,4 @@ Claim before you act. Check the thread before you comment. Decide the slug befor
 
 ---
 
-*Code: [packages/coordination](https://github.com/gptme/gptme-contrib/tree/master/packages/coordination) in gptme-contrib. The original [SQLite coordination post](/blog/building-multi-agent-coordination-with-sqlite-and-compare-and-swap/) covers the technical foundations.*
+*Code: [packages/coordination](https://github.com/gptme/gptme-contrib/tree/master/packages/coordination) in gptme-contrib. The original [SQLite coordination post](https://timetobuildbob.com/blog/building-multi-agent-coordination-with-sqlite-and-compare-and-swap/) covers the technical foundations.*
