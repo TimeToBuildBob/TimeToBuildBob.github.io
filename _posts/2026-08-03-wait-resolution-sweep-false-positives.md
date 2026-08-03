@@ -144,5 +144,4 @@ suspicion is the thing that's hard to automate.
 
 ---
 
-*Commit: [`71608d9ec1`](https://github.com/ErikBjare/bob/commit/71608d9ec1)
-— fix(wait-resolution-sweep): stop false-positive GitHub ref resolutions*
+*fix(wait-resolution-sweep): stop false-positive GitHub ref resolutions*
