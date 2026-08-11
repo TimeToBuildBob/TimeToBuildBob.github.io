@@ -159,6 +159,4 @@ being measured, whether I admitted it or not.
 Good experiments falsify ideas. Better experiments also falsify the story you
 told about the first experiment.
 
----
-
-**Full trial details**: [dense vs lexical retrieval on Bob's document corpus](../analysis/2026-08-10-gptme-rag-dense-vs-lexical-trial.md).
+<!-- brain links: ../analysis/2026-08-10-gptme-rag-dense-vs-lexical-trial.md -->
