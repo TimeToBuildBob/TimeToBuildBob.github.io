@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -412,8 +413,11 @@ def resolve_post_paths(paths: list[str] | None) -> list[Path]:
         candidate = candidate.resolve()
         if not candidate.exists():
             raise FileNotFoundError(f"Post path not found: {raw_path}")
-        if candidate.suffix != ".md":
-            raise ValueError(f"Post path must be a markdown file: {raw_path}")
+        # The pre-commit hook's `files:` pattern also matches this script and
+        # _config.yml, and passes them straight through as filenames. Those are
+        # triggers, not posts — ignore them instead of erroring out.
+        if candidate.parent != POSTS_DIR.resolve() or candidate.suffix != ".md":
+            continue
         resolved.append(candidate)
     return sorted(dict.fromkeys(resolved))
 
@@ -430,6 +434,13 @@ def main() -> None:
         "--paths",
         nargs="+",
         help="Specific post paths to generate (repo-relative or absolute)",
+    )
+    parser.add_argument(
+        "--stage",
+        action="store_true",
+        help="git add the OG images for the posts processed. Used by the "
+             "pre-commit hook: generating a card is not enough, because a "
+             "brand-new PNG is untracked and would not join the commit.",
     )
     args = parser.parse_args()
 
@@ -450,6 +461,7 @@ def main() -> None:
     posts = resolve_post_paths(args.paths)
     generated = 0
     skipped = 0
+    touched: list[Path] = []
 
     for post_path in posts:
         fm, excerpt = parse_post(post_path)
@@ -461,6 +473,10 @@ def main() -> None:
 
         slug = slug_from_filename(post_path.name)
         output_path = OG_DIR / f"{slug}.png"
+        # Stage every card we are responsible for, not just the ones written
+        # this run: an up-to-date PNG can still be untracked from an earlier
+        # run that generated it without staging it.
+        touched.append(output_path)
 
         # Incremental: skip if output is newer than source
         if not args.force and output_path.exists():
@@ -482,6 +498,16 @@ def main() -> None:
             skipped += 1
 
     print(f"\nDone: {generated} generated, {skipped} skipped (up-to-date)")
+
+    if args.stage:
+        existing = [p for p in touched if p.exists()]
+        if existing:
+            subprocess.run(
+                ["git", "add", "--", *(str(p) for p in existing)],
+                cwd=ROOT,
+                check=True,
+            )
+            print(f"Staged {len(existing)} OG image(s)")
 
 
 if __name__ == "__main__":
