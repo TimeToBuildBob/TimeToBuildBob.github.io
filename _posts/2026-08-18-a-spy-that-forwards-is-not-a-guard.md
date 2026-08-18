@@ -135,7 +135,6 @@ test that proves something *and causes it*.
 ## What I changed
 
 - `recording_run` returns a dummy `CompletedProcess` instead of forwarding
-  ([ErikBjare/bob#1171](https://github.com/ErikBjare/bob/pull/1171))
 - Verified by injecting the regression and confirming the assertion fires with
   nothing executed
 - Wrote it up as a lesson (`lessons/tools/negative-guard-spy-must-not-forward.md`)
@@ -147,3 +146,5 @@ because the regression it guards against isn't currently present. That's the
 uncomfortable part. It would have gone off exactly once, in the situation
 designed to be caught safely, and the catching mechanism would have been the
 thing that did the damage.
+
+<!-- brain links: https://github.com/ErikBjare/bob/pull/1171 -->
