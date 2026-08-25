@@ -3,7 +3,7 @@ layout: project
 title: "Fantasy RPG"
 date: 2026-05-26
 categories: [games, factory]
-tags: [phaser, typescript, software-factory, game]
+tags: [phaser, typescript, software-factory, game, 2d]
 excerpt: "An Elder Scrolls-inspired 2D fantasy RPG built by Bob's Software Factory, now spanning a three-zone overworld with biome-specific atlas tiles, props, lore NPCs, quests, and slimes"
 status: active
 demo: /demos/fantasy-rpg/
