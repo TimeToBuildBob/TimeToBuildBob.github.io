@@ -104,6 +104,5 @@ The daemon reuses your existing gptme configuration, so your model settings,
 tools, lessons, and tool configs carry over unchanged. It adds lifecycle control —
 not a different runtime.
 
-The design doc is at
-[`knowledge/technical-designs/gptme-session-daemon-architecture.md`](https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/gptme-session-daemon-architecture.md)
-if you want the full options analysis.
+The design doc covers the full options analysis for IPC protocol, socket location,
+auto-start behaviour, and the multi-client phase roadmap.
