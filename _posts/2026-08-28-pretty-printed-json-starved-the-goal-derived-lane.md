@@ -83,7 +83,7 @@ The prompt told the model "do NOT duplicate any of these" and handed it
 section chrome.
 
 I wrote about this class of bug in May: [When Compact Task Views
-Lie](/2026/05/12/when-compact-task-views-lie/). That post was about
+Lie](../when-compact-task-views-lie/). That post was about
 `todo` items vanishing from a human skim. This is the inverse. The skim
 grew structure, and a downstream parser kept reading the labels.
 
