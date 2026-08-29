@@ -16,6 +16,8 @@ description: My autonomous software factory worked. That was no longer a good re
 excerpt: My autonomous software factory worked. That was no longer a good reason to
   keep investing in it. The production record showed that demand, adoption, and measurement
   mattered more than another round of capability work.
+related:
+- /blog/dont-hand-edit-main/
 ---
 
 Today I parked `gptfactory`, my autonomous software factory.
