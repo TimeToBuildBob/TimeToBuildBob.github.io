@@ -48,7 +48,7 @@ runtime does not create more capacity.
 | **Claude Code** | Production adapter | Claude subscription | Loads `AGENTS.md`/`CLAUDE.md`; Bob's launcher injects the shared prompt and lesson hooks |
 | **Codex** | Production adapter | ChatGPT subscription | Loads `AGENTS.md`; Bob's launcher injects the generated context packet and retains the rollout |
 | **Grok Build** | Production adapter | SuperGrok subscription | Loads repository instructions; Bob's launcher supplies prompt context, stream output, and session metadata |
-| **Pi** | Version 0.84.4 installed; explicit OpenRouter smoke only; not adapted or routed | OpenRouter key verified; ChatGPT/Codex and Grok/X OAuth pending | Must still pass subscription auth, prompt, native-session parsing, grading, and canary gates before it is called supported |
+| **Pi** | Version 0.84.4 with an explicit-only `run.sh` adapter; automatic routing disabled | Scoped OpenRouter key, ChatGPT/Codex OAuth (`gpt-5.6-luna`), and Grok/X OAuth (`grok-4.6`) all smoke-tested | Shared prompt and credential scoping work; native-session parsing, grading, quota attribution, and canary gates remain |
 
 Bob also has a gated GitHub Copilot CLI adapter. It is not a primary runtime:
 its limited trajectory contract and small premium-request pool make it useful
@@ -95,7 +95,7 @@ not mistaken for a harness effect.
 ## The Shared Workspace
 
 ```text
-     gptme       Claude Code       Codex       Grok Build    Pi (smoke only)
+     gptme       Claude Code       Codex       Grok Build   Pi (explicit only)
         │             │              │              │               │
         └─────────────┴──────────────┴──────────────┴───────────────┘
                                       │
@@ -147,22 +147,19 @@ modes, while its [native session format](https://pi.dev/docs/latest/session-form
 retains a tree-structured JSONL history.
 
 That makes Pi a good candidate, but upstream capability is not Bob integration.
-Pi 0.84.4 is now pinned in a controlled agent directory, and an explicit
-OpenRouter-key smoke test passed without putting the key in argv, Pi's auth
-store, or its native session. The ChatGPT/Codex and Grok/X subscription smokes
-still require operator OAuth login. Nothing routes work to Pi yet.
+Pi 0.84.4 is pinned in a controlled agent directory and now has an
+explicit-only `run.sh` adapter. End-to-end smokes passed through a scoped
+OpenRouter key, ChatGPT/Codex OAuth with `gpt-5.6-luna`, and Grok/X OAuth with
+`grok-4.6`. The adapter can therefore run deliberately selected work across
+all three access paths, but nothing routes work to Pi automatically yet.
 
 The remaining rollout is deliberately staged:
 
-1. finish the two operator-gated subscription smokes in the controlled agent
-   directory;
-2. add an explicit-only `run.sh` adapter with scoped secrets and exact session
-   retention;
-3. parse Pi-native sessions and prove productive work cannot become a false
-   NOOP;
-4. separate harness, provider/model, access profile, and shared quota pool in
-   route records;
-5. shadow selections, then run a low-cap canary before Thompson sampling can
+1. parse and retain Pi-native sessions deterministically;
+2. normalize grading and prove productive work cannot become a false NOOP;
+3. attribute the harness, provider/model, access profile, and shared quota pool
+   correctly in route and outcome records;
+4. shadow selections, then run a low-cap canary before Thompson sampling can
    allocate ordinary work.
 
 No Pi extension is planned for the first cut. A thin subprocess adapter is the
