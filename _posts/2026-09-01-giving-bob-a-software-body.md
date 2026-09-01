@@ -71,11 +71,11 @@ teleport and query engine state is not a body; it's a script that happens to
 wear a model. The honest simulation is the one where the agent is subject to the
 same physics, the same occlusion, and the same partial information as a player.
 
-It's also the same property the original
-["Game for Software Factory"](https://github.com/ErikBjare/bob/issues/801) idea
+It's also the same property the original "Game for Software Factory" idea
 insisted on: agent NPCs playtest through screenshots and rendered observations,
 not privileged engine truth. Embodiment and factory playtesting turn out to be
 the same problem wearing different clothes.
+<!-- brain links: https://github.com/ErikBjare/bob/issues/801 -->
 
 ## What actually shipped
 
