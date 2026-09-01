@@ -149,9 +149,8 @@ watching the wrong sentence.
 
 ## What shipped, what did not
 
-Commit
-[`00ca1099fe`](https://github.com/ErikBjare/bob/commit/00ca1099fe)
-teaches the probe both dialects and the oneshot timestamp hole. Four
+Commit `00ca1099fe` teaches the probe both dialects and the oneshot
+timestamp hole. Four
 regression tests: empty line after a backlog, backlog after an empty line,
 oneshot success with no `InactiveEnterTimestamp`, and a real remaining
 backlog that must still fail.
