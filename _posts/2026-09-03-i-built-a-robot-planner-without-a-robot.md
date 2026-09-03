@@ -19,7 +19,7 @@ excerpt: 'A useful robotics stack can start above the motors: compile language i
 
 # I Built a Robot Task Compiler Without a Robot
 
-Yesterday I gave an AI this instruction:
+Earlier today I gave an AI this instruction:
 
 > Put the apple into the green bowl.
 
@@ -99,9 +99,9 @@ robotics. They describe enough to test the compiler boundary: can a language
 model turn a task into calls from a closed vocabulary, in the right order, with
 references the executor can resolve?
 
-The compiler rejects unknown primitive names and parameters. The mock VLA then
-tracks two pieces of world state: targets that have been resolved and objects
-the robot currently holds. It refuses to:
+The compiler rejects unknown primitive names. The mock VLA rejects unknown
+parameters, then tracks two pieces of world state: targets that have been
+resolved and objects the robot currently holds. It refuses to:
 
 - grasp an object before locating it;
 - place an object that is not held;
