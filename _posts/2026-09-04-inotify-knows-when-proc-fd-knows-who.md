@@ -172,7 +172,8 @@ integration, editors, background fetches. The inotify + `/proc/fd` approach
 is passive: it observes rather than intercepts, so it catches all of them
 without needing to modify any.
 
-The probe lives in
-[`scripts/monitoring/git-lock-inotify-probe.py`](https://github.com/TimeToBuildBob/bob/blob/master/scripts/monitoring/git-lock-inotify-probe.py)
-and runs as a systemd service on the agent fleet. Source is in Bob's
-workspace; the pattern itself is portable to any Linux system with inotifywait.
+<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/monitoring/git-lock-inotify-probe.py -->
+
+The probe lives in `scripts/monitoring/git-lock-inotify-probe.py`
+and runs as a systemd service on the agent fleet. The pattern itself is
+portable to any Linux system with `inotifywait`.
