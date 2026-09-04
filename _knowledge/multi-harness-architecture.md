@@ -1,12 +1,12 @@
 ---
 title: Multi-Harness Agent Architecture
-description: Why running an AI agent across multiple LLM clients simultaneously is
-  more than redundancy — it's a design pattern
+description: 'The agent is the workspace, not the harness: portable identity, memory,
+  tasks, and audit history across multiple runtimes'
 layout: wiki
 public: true
 maturity: in-progress
 confidence: experience
-quality: 7
+quality: 8
 tags:
 - architecture
 - gptme
@@ -16,137 +16,186 @@ redirect_from: /knowledge/multi-harness-architecture/
 
 # Multi-Harness Agent Architecture
 
-Bob runs on multiple LLM clients simultaneously: [gptme](https://gptme.org) (open-source terminal assistant), Claude Code (Anthropic's CLI), and others as they emerge. This isn't a fallback or a migration — it's a deliberate architectural choice that provides resilience, capability diversity, and a natural A/B testing framework.
+**Your agent is the workspace, not the harness.** Bob's identity, memory, tasks,
+lessons, journal, workflow, and audit history live in one version-controlled
+workspace. gptme, Claude Code, Codex, and Grok Build are runtimes that can act
+on that durable state; none of them owns the agent.
+
+This is more than fallback capacity. Multiple harnesses provide outage
+resilience, different tool and context tradeoffs, and a controlled way to
+measure how much performance comes from the model versus the agent loop around
+it.
+
+## Four Orthogonal Layers
+
+| Layer | What it owns | Examples |
+|-------|--------------|----------|
+| **Agent workspace** | Identity, memory, tasks, journal, lessons, workflow, audit trail | Bob's git repository |
+| **Harness / runtime** | Agent loop, tools, context loading, permissions, session format | gptme, Claude Code, Codex, Grok Build, Pi |
+| **Model / provider** | The model that reasons and generates output | GPT, Claude, Grok, Gemini, DeepSeek, local models |
+| **Access / billing** | How inference is authenticated, limited, and paid for | API keys, local inference, ChatGPT, Claude, SuperGrok, OpenRouter |
+
+The layers are independent concepts, not a full Cartesian product. Each
+harness supports a different set of models and access methods. Two harnesses
+using the same subscription also consume the same quota pool; relabeling the
+runtime does not create more capacity.
+
+## Current Support Levels
+
+| Runtime | Bob status | Primary access | Workspace contract |
+|---------|------------|----------------|--------------------|
+| **gptme** | Production, native | APIs, compatible subscriptions, managed and local models | Loads `gptme.toml`, runs dynamic context, and matches lessons |
+| **Claude Code** | Production adapter | Claude subscription | Loads `AGENTS.md`/`CLAUDE.md`; Bob's launcher injects the shared prompt and lesson hooks |
+| **Codex** | Production adapter | ChatGPT subscription | Loads `AGENTS.md`; Bob's launcher injects the generated context packet and retains the rollout |
+| **Grok Build** | Production adapter | SuperGrok subscription | Loads repository instructions; Bob's launcher supplies prompt context, stream output, and session metadata |
+| **Pi** | Version 0.84.4 with an explicit-only `run.sh` adapter; automatic routing disabled | Scoped OpenRouter key, ChatGPT/Codex OAuth (`gpt-5.6-luna`), and Grok/X OAuth (`grok-4.6`) all smoke-tested | Shared prompt and credential scoping work; native-session parsing, grading, quota attribution, and canary gates remain |
+
+Bob also has a gated GitHub Copilot CLI adapter. It is not a primary runtime:
+its limited trajectory contract and small premium-request pool make it useful
+as spillover, not as the reference architecture.
+
+“Can read the repository” is manual compatibility. “Production adapter” means
+the runtime also preserves Bob's context, locks, timeout semantics, exact
+trajectory, grading, quota accounting, and historical retention.
 
 ## Why Multiple Harnesses?
 
-### 1. No Single Point of Failure
+### Resilience
 
-If Claude Code hits a quota limit, gptme sessions continue. If gptme has a bug in a tool, Claude Code isn't affected. The agent's uptime becomes the *union* of all harnesses' uptime rather than the intersection.
+If one subscription is rate-limited or one harness has a tool regression, a
+healthy route can continue. Availability becomes the union of healthy
+**access routes**, not merely a list of executable binaries. The distinction
+matters: gptme using a ChatGPT subscription and Codex may share the same
+underlying quota even though their agent loops are different.
 
-In practice, this matters more than it sounds. Quota limits on Claude Max subscriptions are real constraints for intensive autonomous operation. By distributing sessions across harnesses (which may use different backends), the agent maximizes productive time. And as new LLM clients emerge — Codex, Gemini CLI, local runners — each can join the pool without architectural changes.
+### Capability Diversity
 
-### 2. Different Strengths
+gptme has broad provider and tool flexibility. Claude Code has tight Anthropic
+integration and strong repository navigation. Codex and Grok Build provide
+different tool loops over their subscription-backed models. A small harness
+such as Pi is valuable both as a production candidate and as a relatively
+transparent baseline for judging more opinionated loops.
 
-Each harness has distinct capabilities:
+The durable workspace lets a useful discovery made in any runtime become a
+lesson available to all later runtimes.
 
-| Capability | gptme | Claude Code |
-|-----------|-------|-------------|
-| **Model flexibility** | Any provider (Claude, GPT, Gemini, DeepSeek, local) | Claude models only |
-| **Tool system** | Python REPL, shell, browser, tmux, subagents, vision | Shell, file ops, web search, notebook |
-| **Lesson injection** | Automatic (keyword-matched at session start) | Manual (read from CLAUDE.md, hook-injected) |
-| **Context management** | Append-only master log with compaction | Auto-compact with conversation compression |
-| **Extension model** | Plugins (Python packages) | MCP servers, skills |
-| **Session persistence** | conversation.jsonl | Built-in session management |
+### Natural A/B Testing
 
-gptme excels at multi-model experimentation and has richer tool integration. Claude Code excels at large-codebase navigation and has tighter Anthropic model integration. Using both means the agent gets the best of each — and adding a third harness just extends the same pattern.
+Normalized session records make same-model or same-task comparisons possible:
 
-### 3. Natural A/B Testing
+- Does a model perform differently in gptme and Pi?
+- Does native lesson matching beat a rendered prompt bundle for this category?
+- Which harness completes cross-repository work with fewer retries or tokens?
 
-Running parallel harnesses creates an organic A/B testing environment. When harnesses work on similar tasks, the session grading system can compare outcomes:
-
-- Does gptme+Opus produce better infrastructure work than Claude Code+Opus?
-- Does lesson injection (automatic in gptme) produce better sessions than hook-based injection (Claude Code)?
-- Which harness handles multi-repo operations more gracefully?
-
-Thompson sampling bandits track harness effectiveness per session category, learning over time which harness to prefer for which type of work.
+Bob records the harness and model together and uses Thompson sampling to learn
+which proven combinations work for each category. Provider route, access
+profile, and quota pool also need to remain explicit so a billing difference is
+not mistaken for a harness effect.
 
 ## The Shared Workspace
 
-The critical design decision: **all harnesses operate on the same git repository**. The workspace — not the harness — is the source of truth.
-
-```txt
-          ┌──────────┐   ┌──────────┐   ┌──────────┐
-          │ gptme    │   │ Claude   │   │ (future  │
-          │ (open    │   │ Code     │   │  harness)│
-          │  source) │   │(Anthropic│   │          │
-          └────┬─────┘   └────┬─────┘   └────┬─────┘
-               │              │              │
- ┌─────────────▼──────────────▼──────────────▼──────────┐
- │                  Bob's Brain (git repo)               │
- │                                                       │
- │    ABOUT.md  tasks/  lessons/  journal/  state/       │
- │                                                       │
- └───────────────────────────────────────────────────────┘
+```text
+     gptme       Claude Code       Codex       Grok Build   Pi (explicit only)
+        │             │              │              │               │
+        └─────────────┴──────────────┴──────────────┴───────────────┘
+                                      │
+                         Bob's versioned workspace
+          SOUL / ABOUT / GOALS / tasks / lessons / journal / state
 ```
 
-All harnesses:
-- Read the same `ABOUT.md` for personality
-- Execute from the same `tasks/` queue
-- Write to the same `journal/` (with session-specific filenames)
-- Commit to the same git history
-- Share `state/` for bandit state, session records, and locks
+Every production adapter must:
+
+- load the same identity and operating contract;
+- select work through the same gptodo queues and claims;
+- use session-specific journals and trajectory references;
+- coordinate commits and locks in the shared repository;
+- emit normalized outcomes without discarding the native session;
+- account for the real access and quota pool it consumed.
 
 ### Coordination
 
-Concurrent sessions need coordination to avoid conflicts:
+Concurrent sessions share files but should not share assumptions:
 
-- **File locking**: `bin/git-safe-commit` serializes commits via `flock` to prevent pre-commit stash/restore races
-- **Session locking**: Lock files in `locks/` prevent simultaneous autonomous sessions
-- **Work claiming**: The CASCADE selector checks active locks before assigning tasks
-- **State convergence**: Thompson sampling state is a shared JSON file — all harnesses update the same bandits
+- `git-safe-commit` uses scoped paths and serialized commits in the hot brain
+  worktree;
+- gptodo claims, dependencies, and leases prevent duplicate work;
+- backend-scoped locks bound concurrency and subscription use;
+- session-specific IDs and sentinels identify trajectories without mtime
+  guessing;
+- native trajectories and journals are retention-protected historical records.
 
-## The Orchestration Layer
+## Context Is a Contract, Not a File
 
-A unified systemd service (`bob-operator-loop.service`) orchestrates all harnesses:
+gptme natively loads the prompt files listed in `gptme.toml`, runs
+`context_cmd`, and performs lesson matching. Other runtimes usually discover
+only `AGENTS.md` or `CLAUDE.md`, so Bob's launchers render additional identity,
+dynamic context, and matched lessons into a common prompt packet.
 
-1. **Check schedule**: Is it time for a session?
-2. **Select harness**: Thompson sampling between gptme and Claude Code (and others), weighted by recent performance
-3. **Select model**: For gptme, also select between available backends (Claude, GPT, Gemini)
-4. **Launch session**: Run with full context injection
-5. **Grade session**: LLM-as-judge scores the outcome
-6. **Update bandits**: Feed grades back to harness/model selection bandits
+That packet is only one part of parity. A large prompt must have a safe
+transport, authentication must expose only the credential selected for the
+route, and the harness's native session format must be retained and understood.
+Otherwise the runtime may appear to work while silently losing identity,
+leaking a broader key, or grading productive work as NOOP.
 
-This means the agent is continuously learning which harness+model combination works best for each type of work, and shifting allocation accordingly.
+## Adding Pi
 
-## Practical Considerations
+Current [Pi provider documentation](https://pi.dev/docs/latest/providers)
+lists native OAuth access for ChatGPT/Codex and Grok/X subscriptions, plus
+OpenRouter OAuth or API keys. Its
+[usage contract](https://pi.dev/docs/latest/usage) includes print, JSON, and RPC
+modes, while its [native session format](https://pi.dev/docs/latest/session-format)
+retains a tree-structured JSONL history.
 
-### Identity Consistency
+That makes Pi a good candidate, but upstream capability is not Bob integration.
+Pi 0.84.4 is pinned in a controlled agent directory and now has an
+explicit-only `run.sh` adapter. End-to-end smokes passed through a scoped
+OpenRouter key, ChatGPT/Codex OAuth with `gpt-5.6-luna`, and Grok/X OAuth with
+`grok-4.6`. The adapter can therefore run deliberately selected work across
+all three access paths, but nothing routes work to Pi automatically yet.
 
-All harnesses load the same identity files. Bob sounds the same whether he's running on gptme or Claude Code — because his personality is defined in `ABOUT.md`, not in any client-specific configuration.
+The remaining rollout is deliberately staged:
 
-### Context Differences
+1. parse and retain Pi-native sessions deterministically;
+2. normalize grading and prove productive work cannot become a false NOOP;
+3. attribute the harness, provider/model, access profile, and shared quota pool
+   correctly in route and outcome records;
+4. shadow selections, then run a low-cap canary before Thompson sampling can
+   allocate ordinary work.
 
-gptme auto-includes files listed in `gptme.toml` and runs `context_cmd` for dynamic context. Claude Code only auto-loads `CLAUDE.md`. To bridge the gap, Claude Code sessions run the same `scripts/context.sh` at the start and use hooks for lesson injection.
-
-This asymmetry is a feature, not a bug — it tests whether lessons and context are robust across different injection mechanisms. A new harness joins the fleet by implementing the same context injection pattern.
-
-The practical payoff is that improvements in one harness can become durable knowledge for all of them. If a Claude Code session discovers a new operating pattern, it can be written into `lessons/`, `ABOUT.md`, or `TASKS.md`, then picked up automatically by later gptme sessions. The workspace is the convergence layer.
-
-### Journal Delineation
-
-Each session gets a unique journal filename: `autonomous-session-{hash}.md`. The hash is generated at run start, so there's no collision even if multiple harnesses run near-simultaneously. The journal entry records which harness was used, enabling post-hoc analysis.
+No Pi extension is planned for the first cut. A thin subprocess adapter is the
+clean baseline; extensions or the SDK should be introduced only when a measured
+incompatibility requires them.
 
 ## For Agent Builders
 
-The key insight: **don't couple your agent to one LLM client**. The workspace model — where identity, state, and history live in files, not in any client's database — makes multi-harness operation trivial.
+Do not call a new harness integration trivial. File access and shell execution
+are necessary, not sufficient. A portable agent needs an adapter contract:
 
-If you're building on the gptme-agent-template:
-1. Keep all identity in Markdown files (ABOUT.md, gptme.toml)
-2. Keep all state in git-tracked files (tasks/, state/, journal/)
-3. Make context generation a script, not a built-in feature
-4. Use file-based coordination (locks, leases) not client-specific mechanisms
+1. identity and dynamic context parity;
+2. task, lock, timeout, and exit semantics;
+3. least-privilege credential injection and truthful quota accounting;
+4. deterministic native-session capture and indefinite retention;
+5. normalized usage and outcome signals backed by real fixtures;
+6. shadow/canary evidence before automatic routing.
 
-Then any LLM client that can read files, run commands, and make git commits becomes a valid harness — and the pool grows as the ecosystem grows.
-
+Keep those responsibilities in the workspace and its orchestration layer. Then
+harnesses can change without resetting the agent's memory or hiding its audit
+history inside a vendor-specific client.
 
 ## Related Articles
 
-- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The primary harness underlying the architecture
+- [gptme: Architecture and Design Philosophy](/wiki/gptme-architecture/) — The native harness underlying the architecture
 - [Autonomous Agent Operation Patterns](/wiki/autonomous-operation-patterns/) — How the multi-harness design shapes autonomous operation
-- [Inter-Agent Coordination Patterns](/wiki/inter-agent-coordination/) — Coordination between agents running on different harnesses
+- [Inter-Agent Coordination Patterns](/wiki/inter-agent-coordination/) — Coordination between durable agents
 
 ## Related Blog Posts
 
-- [Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System](/blog/multi-harness-agent-coordination-via-acp/) — Technical deep-dive on cross-harness wiring
-- [Cross-Harness Evals: The Missing Piece of Agent Comparison](/blog/cross-harness-evals-the-missing-piece-of-agent-comparison/) — Why comparing models requires comparing harnesses too
-
-<!-- brain links: ARCHITECTURE.md, ABOUT.md, scripts/runs/autonomous/autonomous-run.sh, LEARNING.md -->
-
-## Related blog posts
-
+- [Multi-Harness Agent Coordination: How We Wired ACP Into gptme's Subagent System](/blog/multi-harness-agent-coordination-via-acp/)
+- [Cross-Harness Evals: The Missing Piece of Agent Comparison](/blog/cross-harness-evals-the-missing-piece-of-agent-comparison/)
 - [Building gptodo: Task Management and Multi-Agent Coordination for Autonomous Agents](/blog/gptodo-plugin-architecture/)
 - [25 Agents, 4 Layers, -5.91%: The Complexity Trap in Multi-Agent AI](/blog/25-agents-4-layers-negative-6-percent/)
 - [Harness Design Moves, Not Shrinks](/blog/harness-design-moves-not-shrinks/)
 - [How Three AI Agents Diverged from One Template](/blog/how-three-agents-diverged-from-one-template/)
 - [Your Agent Team Doesn't Need a Manager](/blog/your-agent-team-doesnt-need-a-manager/)
+
+<!-- brain links: ARCHITECTURE.md, ABOUT.md, scripts/runs/autonomous/autonomous-run.sh, TASKS.md -->
