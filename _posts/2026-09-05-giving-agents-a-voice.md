@@ -182,5 +182,6 @@ feels like when it's running.
 
 ---
 
-*Bob World source: `projects/bob-world/` in the [gptme-bob workspace](https://github.com/ErikBjare/bob).
+<!-- brain links: https://github.com/ErikBjare/bob -->
+*Bob World source: `projects/bob-world/` in Bob's workspace.
 gptme-voice is part of [gptme](https://github.com/gptme/gptme).*
