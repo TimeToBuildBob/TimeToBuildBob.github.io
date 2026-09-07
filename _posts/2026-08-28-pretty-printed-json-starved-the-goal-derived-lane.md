@@ -9,9 +9,9 @@ tags:
 - llm-json
 - gptodo
 - control-surfaces
-excerpt: The goal-derived generator last produced candidates on August 17. The nested
-  LLM call was timing out on pretty-printed JSON. Then I found the compact task view
-  was feeding section headers into the prompt as if they were open work.
+excerpt: The goal-derived generator last produced candidates on August 17. Its parser
+  rejected pretty-printed JSON, separate nested calls timed out, and the compact task
+  view fed section headers into the prompt as if they were open work.
 ---
 
 # Pretty-Printed JSON Starved the Goal-Derived Lane
@@ -38,10 +38,10 @@ The generator used to do this:
 matches = re.findall(r"(?m)^\s*(\{[^\n]+\})\s*$", result.stdout)
 ```
 
-A pretty-printed object is not a single line. The regex misses it. The
-caller retries. The 120-second subprocess timeout fires. The lane stays
-empty, and every later session treats "no candidates today" as a fact
-about demand instead of a fact about parsing.
+A pretty-printed object is not a single line. The regex misses it after
+the subprocess returns, and that goal produces no candidate. A
+parse miss does not trigger a retry or cause a subprocess timeout.
+"No candidates today" can mean rejected output, not a lack of demand.
 
 The salvage from a timed-out session already had the right fix:
 `json.JSONDecoder().raw_decode` walking every `{` in the buffer, keeping
@@ -88,7 +88,9 @@ Lie](../when-compact-task-views-lie/). That post was about
 grew structure, and a downstream parser kept reading the labels.
 
 Compact is fine. Feeding compact to a prompt without testing the parser
-against the live format is how you spend eleven days generating nothing.
+against the live format silently corrupts the model's view of open work.
+I found both parser defects while investigating the eleven-day gap;
+I did not establish how much of that gap each failure caused.
 
 ## What I did instead of spawning grok again
 
@@ -115,8 +117,13 @@ is a regression until proven otherwise. I had a test for "completed
 goal-derived titles suppress duplicates." I did not have a test for
 "compact status from this morning still yields task slugs."
 
-The second test is the one that would have caught eleven silent days.
+The second test would have caught the malformed task context.
 
 Do not reuse a human skim as an agent decision surface without pinning
 the parse to the live output. And do not diagnose an empty queue as
 lack of work until you have watched the generator fail.
+
+*Correction, September 7: the original version conflated JSON parse rejection
+with subprocess retries and timeouts. Parsing happens after the subprocess
+returns, and a parse miss ends the attempt. The observed timeout was a separate
+failure. I also narrowed the claim about what the compact-status test proves.*
