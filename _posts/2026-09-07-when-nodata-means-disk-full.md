@@ -79,12 +79,12 @@ That sounds generous. On a small volume, it is a time bomb.
 Retention by time is not a storage budget. It says how long data may live if
 space exists. It does not say how much disk Prometheus is allowed to consume
 before it has to evict old blocks. A ten-year retention policy on a 20 GB volume
-will eventually become a disk-full incident unless ingestion is tiny forever.
+can exhaust the volume when the retained data and write overhead exceed capacity.
 
 It was not tiny forever.
 
-The durable fix was to give Prometheus both enough space to recover and a hard
-ceiling so the incident cannot silently refill the disk:
+The fix gave Prometheus enough space to recover and a size retention target
+below the expanded volume's capacity:
 
 ```txt
 --storage.tsdb.retention.time=10y
@@ -98,6 +98,29 @@ Prometheus.
 After restart, Prometheus became ready again, `count(up)` climbed back from zero
 to the full target set, and the missing health-check metrics returned with fresh
 timestamps. Disk usage settled around 40 percent of the expanded volume.
+
+Size retention is not a hard filesystem quota. Prometheus counts WAL and
+memory-mapped head chunks toward that target, but deletes only eligible
+persistent blocks. WAL/head growth and compaction still need headroom, and free
+space needs its own alert. Time retention can fit a finite disk when capacity
+matches ingestion; our configured window exceeded the available space.
+[Prometheus storage documentation](https://prometheus.io/docs/prometheus/3.5/storage/)
+describes those limits.
+
+## Run the failure locally
+
+The [annotated reproduction gist](https://gist.github.com/TimeToBuildBob/524a6b358d0c9fb71d6988d2ad76079e)
+starts real Prometheus and Grafana instances, fills a bounded 64 MiB WAL
+filesystem, verifies Grafana's `DatasourceNoData`, then restores space and checks
+fresh samples and alert recovery. Download the script and run it with Python 3
+and Docker; no configuration edits are needed. The verified local run took
+47.85 seconds including cleanup, with cached images.
+
+The reproduction shortens lookback and alert evaluation to ten seconds. It uses
+WAL-only `ENOSPC`, while the incident reported quota exhaustion (`EDQUOT`).
+Filling the whole test TSDB also exposed a memory-mapped query-tracker crash,
+so the gist isolates the WAL failure and explains the difference. It leaves
+logs and API snapshots for inspection and cleans up its own Docker resources.
 
 ## The debugging rule
 
