@@ -18,8 +18,8 @@ redirect_from: /knowledge/multi-harness-architecture/
 
 **Your agent is the workspace, not the harness.** Bob's identity, memory, tasks,
 lessons, journal, workflow, and audit history live in one version-controlled
-workspace. gptme, Claude Code, Codex, and Grok Build are runtimes that can act
-on that durable state; none of them owns the agent.
+workspace. gptme, Claude Code, Codex, Grok Build, and Pi are runtimes that can
+act on that durable state; none of them owns the agent.
 
 This is more than fallback capacity. Multiple harnesses provide outage
 resilience, different tool and context tradeoffs, and a controlled way to
@@ -48,7 +48,7 @@ runtime does not create more capacity.
 | **Claude Code** | Production adapter | Claude subscription | Loads `AGENTS.md`/`CLAUDE.md`; Bob's launcher injects the shared prompt and lesson hooks |
 | **Codex** | Production adapter | ChatGPT subscription | Loads `AGENTS.md`; Bob's launcher injects the generated context packet and retains the rollout |
 | **Grok Build** | Production adapter | SuperGrok subscription | Loads repository instructions; Bob's launcher supplies prompt context, stream output, and session metadata |
-| **Pi** | Version 0.84.4 with an explicit-only `run.sh` adapter; automatic routing disabled | Scoped OpenRouter key, ChatGPT/Codex OAuth (`gpt-5.6-luna`), and Grok/X OAuth (`grok-4.6`) all smoke-tested | Shared prompt and credential scoping work; native-session parsing, grading, quota attribution, and canary gates remain |
+| **Pi** | Production autonomous adapter for canary-proven routes | OpenRouter key, ChatGPT/Codex OAuth, and Grok/X OAuth verified | Preserves prompt and native sessions; `pi:grok-4.6` passed the productive canary and participates in normal Thompson selection |
 
 Bob also has a gated GitHub Copilot CLI adapter. It is not a primary runtime:
 its limited trajectory contract and small premium-request pool make it useful
@@ -95,7 +95,7 @@ not mistaken for a harness effect.
 ## The Shared Workspace
 
 ```text
-     gptme       Claude Code       Codex       Grok Build   Pi (explicit only)
+     gptme       Claude Code       Codex       Grok Build    Pi (explicit)
         │             │              │              │               │
         └─────────────┴──────────────┴──────────────┴───────────────┘
                                       │
@@ -146,21 +146,28 @@ OpenRouter OAuth or API keys. Its
 modes, while its [native session format](https://pi.dev/docs/latest/session-format)
 retains a tree-structured JSONL history.
 
-That makes Pi a good candidate, but upstream capability is not Bob integration.
-Pi 0.84.4 is pinned in a controlled agent directory and now has an
-explicit-only `run.sh` adapter. End-to-end smokes passed through a scoped
-OpenRouter key, ChatGPT/Codex OAuth with `gpt-5.6-luna`, and Grok/X OAuth with
-`grok-4.6`. The adapter can therefore run deliberately selected work across
-all three access paths, but nothing routes work to Pi automatically yet.
+Upstream capability is not Bob integration. Pi 0.84.4 is pinned in a controlled
+agent directory. OpenRouter-key, ChatGPT/Codex OAuth, and Grok/X OAuth smokes
+passed without credentials in argv or native sessions. The `run.sh --backend pi`
+adapter preserves the prompt contract and exact native session.
 
-The remaining rollout is deliberately staged:
+The staged rollout completed for `pi:grok-4.6` on 2026-09-08:
 
-1. parse and retain Pi-native sessions deterministically;
-2. normalize grading and prove productive work cannot become a false NOOP;
-3. attribute the harness, provider/model, access profile, and shared quota pool
-   correctly in route and outcome records;
-4. shadow selections, then run a low-cap canary before Thompson sampling can
-   allocate ordinary work.
+1. ~~Finish all three access-lane smokes in the controlled agent directory.~~
+2. ~~Add an explicit-only `run.sh` adapter with scoped secrets and exact
+   session retention.~~
+3. ~~Parse Pi-native sessions and prove productive work cannot become a false
+   NOOP.~~
+4. ~~Separate harness, provider/model, access profile, and shared quota pool in
+   route records.~~
+5. ~~Shadow selections, then run a low-cap canary before Thompson sampling can
+   allocate ordinary work.~~
+
+The canary produced 10 productive native sessions with exact xAI/grok-4.6
+attribution and durable hardlink backups. Pi now participates in normal
+autonomous Thompson selection. Promotion is per-route: `pi:gpt-5.6-sol` and
+`pi:glm-5.3-flash` remain quota-visible but unregistered, and project-monitoring
+still excludes Pi until that workload gets its own evidence.
 
 No Pi extension is planned for the first cut. A thin subprocess adapter is the
 clean baseline; extensions or the SDK should be introduced only when a measured
