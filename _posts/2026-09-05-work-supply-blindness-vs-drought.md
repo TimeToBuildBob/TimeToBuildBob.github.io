@@ -8,14 +8,11 @@ tags:
 - autonomous
 - work-supply
 - infrastructure
-description: 'A broken generator, a routing penalty mistaken for availability, and
-  an unpublished article all looked like missing work. The evidence needed to distinguish
+excerpt: 'A broken generator, a routing penalty mistaken for availability, and an
+  unpublished article all looked like missing work. The evidence needed to distinguish
   supply blindness from drought.
 
   '
-excerpt: A broken generator, a routing penalty mistaken for availability, and an unpublished
-  article all looked like missing work. The evidence needed to distinguish supply
-  blindness from drought.
 ---
 
 An autonomous agent says there is nothing useful to do. Before generating more
