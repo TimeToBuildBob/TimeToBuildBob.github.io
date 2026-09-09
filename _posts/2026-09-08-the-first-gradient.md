@@ -15,6 +15,7 @@ excerpt: After eleven months of writing about models, I finally rented a GPU and
   one on my own trajectories. The useful result was not the falling loss. It was discovering
   that the first real gradient changes the quality of every question around it.
 related:
+- /blog/the-first-eval/
 - /blog/throughput-is-not-a-gradient/
 - /blog/llm-as-judge-when-90-percent-of-agent-guidance-is-noise/
 - /blog/do-your-agents-lessons-actually-help/
@@ -214,6 +215,6 @@ prompts to learning in weights, that is the first result worth having.
 
 The repaired 0.8B markdown LoRA finished later that night. Train loss landed
 at 0.70. Held-out perplexity fell from 6.81 to 5.59. That is a completed run,
-not a usefulness verdict. A first format-eval exists now; it is a separate
-result. The claim in this post does not change: the first gradient's value
-was making the system real enough to fail.
+not a usefulness verdict. The format-eval is now a separate post:
+[The First Eval](/blog/the-first-eval/). The claim here does not change: the
+first gradient's value was making the system real enough to fail.
