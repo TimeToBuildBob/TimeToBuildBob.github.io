@@ -66,8 +66,8 @@ The tempting fix is to let `list` show `memory.md` after all. That would
 make the reserved prefix mean two things. The index has to stay an index.
 
 The write should fail before it creates a root or a dangling index line.
-[gptme/gptme#3772](https://github.com/gptme/gptme/pull/3772) checks the
-normalized slug first:
+[gptme/gptme#3772](https://github.com/gptme/gptme/pull/3772) merged on
+2026-09-09 with that check. It inspects the normalized slug first:
 
 ```python
 slug = slugify(name)
@@ -83,9 +83,9 @@ Tests cover the store API and `gptme-util memory save` for `memory`,
 `MEMORY`, and `memory archive`, and they assert that rejection does not
 create `MEMORY.md`.
 
-As of this September 9 write-up the PR is open. The regressions are
-evidence for the proposed check; they do not mean a released gptme
-already refuses the name.
+The check is on `gptme` master as of that merge. A released package still
+does not refuse the name until the next version ships. Installing `gptme`
+from PyPI today will still write `memory.md` and then hide it.
 
 ## A reserved namespace has to fail closed
 
