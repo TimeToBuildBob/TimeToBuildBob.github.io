@@ -51,7 +51,7 @@ Color exposed the other side of the problem. An earlier preset could have no pal
 
 Then there is the case the data cannot resolve.
 
-Clearing a productivity score to inherit the parent's score stores an undefined value. Legacy categories from before scores existed also lack that value. With otherwise matching categories, the loader cannot distinguish those histories.
+Clearing a productivity score to inherit the parent's score sets it to undefined, leaving no score field in the persisted JSON. Legacy categories from before scores existed also lack that value. With otherwise matching categories, the loader cannot distinguish those histories.
 
 The merged implementation treats an absent score as compatible with an install default. An explicitly different score protects the user's taxonomy; a cleared score alone does not. That is a deliberate compatibility tradeoff, recorded in the code and a regression test. Claiming that the fix preserves every possible user intention would be false.
 
