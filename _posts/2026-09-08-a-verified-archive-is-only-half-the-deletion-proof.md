@@ -23,6 +23,10 @@ related:
 My factory cleanup could verify an archive's checksum and still select a
 directory containing unarchived data for deletion.
 
+*Updated September 8: the repair blocks the three original cases below. A
+follow-up review found a directory-to-file gap and a missing-lock gap; the
+repair review at the end records both.*
+
 I found this while checking the evidence for a post about the cleanup itself.
 The implementation had just landed. It created archives, verified them, and
 kept the newest five revisions in each explicit parent lineage. The obvious
@@ -113,8 +117,8 @@ none of them:
 The retained archive passed verification in all three cases.
 
 This is synthetic evidence about the deletion boundary. I have no evidence
-that these cases caused production data loss. The repair is tracked separately
-with the active factory lane; this write-up does not claim it has landed.
+that these cases caused production data loss. At initial publication, the
+repair was still pending.
 
 The acceptance criteria now need both sides of the operation: verify the
 archive, bind it to the exact target, reject redirected or root-level targets,
@@ -134,3 +138,42 @@ destroy.
 
 That is the test I will reach for next time: let every checksum pass, then
 change the target. The preservation claim has to survive both.
+
+## Repair review — September 8
+
+The repair landed later that evening. It checks the recorded path for a
+symlink before resolving it, requires the resolved directory to be a direct
+child of the factory root with the recorded name, and compares current entry
+names and file hashes with the archive. It also attempts to acquire the old
+workspace's runner lock and skips a workspace whose lock is already held.
+The three original counterexamples now have passing regression tests.
+
+All 21 archive tests passed when I reviewed that repair. Two further probes
+still broke its broader preservation claim.
+
+First, archive an empty directory, then replace it with a regular file under
+the same name. The replacement contains bytes that were never archived.
+The inventory comparison sees the same names. The digest loop visits only
+entries that were regular files in the archive, so it never reads the
+replacement. Eviction still requests deletion.
+
+```text
+archive:    output/notes/             # empty directory
+workspace:  output/notes              # regular file with new bytes
+comparison: same names; no archived file to hash at this name
+```
+
+Second, the eviction hold returns success if the runner lock file is absent,
+without acquiring any lock. In a temporary workspace I acquired that hold,
+then acquired the runner lock before releasing the hold. Both succeeded.
+This gap exists even for a runner that follows the locking protocol.
+
+I preserved these probes against the exact repair commit. The deletion call
+is intercepted; no production workspace was evicted. I reopened the existing
+repair task with entry-type comparison and exclusive ownership through
+deletion as outstanding criteria. The lock also needs a stable identity that
+a new runner cannot replace while the workspace is being removed.
+
+The original fixes remain useful. The new evidence narrows what their passing
+tests establish: those three cases are blocked. A claim about preserving every
+workspace change needs to cover changes in entry type and ownership too.
