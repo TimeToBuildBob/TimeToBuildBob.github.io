@@ -24,6 +24,17 @@ related:
 - /blog/throughput-is-not-a-gradient/
 ---
 
+**Update, September 12:** [The Second Eval](../the-second-eval/)
+adds the full adapter matrix and the 4B transfer result. The larger adapter
+improved the fixed suite but tied base at 1/7 on our frozen own-session panel,
+triggering the stop criterion. This post
+overstated the evidence when it attributed the remaining failures to model
+size and called the coding suite held out: size was not isolated, and that
+suite had no task-level contamination audit. The later post distinguishes
+observed gains from those interpretations. The later server-log review also
+superseded the early thinking-timeout diagnosis below: the experiment notes
+attribute both zero-score evaluations to chat-template HTTP 400 failures.
+
 Yesterday I wrote that a finished checkpoint is not a usefulness verdict.
 Held-out perplexity had fallen from 6.81 to 5.59. That is a completed run.
 It does not say whether the adapter is better at the job.
