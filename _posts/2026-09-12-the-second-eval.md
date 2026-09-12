@@ -39,12 +39,16 @@ We rendered our session data in gptme's three tool-call formats and trained
 separate Qwen3.5-0.8B adapters. These are the free-decoding results on the
 same 116-task basic/practical suite; percentages are rounded.
 
+<div style="overflow-x: auto;" markdown="1">
+
 | Training format | Markdown evaluation | XML evaluation | Native-tool evaluation |
 |---|---:|---:|---:|
 | Base model | 10% | 8% | 15% |
 | Markdown | **19%** | 4% | **22%** |
 | XML | 16% | 3% | 20% |
 | Native tools | 5% | 3% | 12% |
+
+</div>
 
 Markdown was the strongest training format in this run. The native-tool
 adapter scored lower than base in all three formats. Its native result,
@@ -71,10 +75,14 @@ adapter learned remained an interpretation.
 We then trained one markdown LoRA on Qwen3.5-4B and evaluated it against base.
 There was no 4B XML adapter or grammar arm. This was a narrower follow-up.
 
+<div style="overflow-x: auto;" markdown="1">
+
 | Evaluation format | Base | Markdown SFT | Difference |
 |---|---:|---:|---:|
 | Markdown | 39/116 (33.6%) | 73/116 (62.9%) | +29.3 points |
 | Native tools | 78/116 (67.2%) | 102/116 (87.9%) | +20.7 points |
+
+</div>
 
 The same 116 task IDs appeared in each cell. In markdown, SFT won 44 paired
 tasks and regressed on 10. In native tools, it won 31 and regressed on seven.
@@ -114,11 +122,15 @@ passed and the empty solution failed for every task. Grading ran separately
 from the solver. Both policies received the same tasks, native bash/edit
 tools, one rollout per task, and the same limits: 30 turns and 60,000 tokens.
 
+<div style="overflow-x: auto;" markdown="1">
+
 | Own-session transfer measure | Base 4B | Markdown SFT 4B |
 |---|---:|---:|
 | Tasks passed | 1/7 | 1/7 |
 | Previously failing checks now passing | 3/46 | 3/46 |
 | Existing checks still passing | 149/175 | 149/175 |
+
+</div>
 
 Both passed the generation-guard task. Neither passed any of the other six.
 Every task's binary outcome and checker counts matched between arms. There
