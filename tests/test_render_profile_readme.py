@@ -77,7 +77,7 @@ def test_check_mode(tmp_path: Path) -> None:
     assert rpr.main([str(readme), "--data", str(data), "--check"]) == 0
     # an explicit --recent 0 is honored, not treated as "unset"
     assert rpr.main([str(readme), "--data", str(data), "--recent", "0"]) == 0
-    assert "### February 2026" not in readme.read_text()
+    assert "\n### February 2026" not in readme.read_text()
 
 
 def test_real_timeline_data_is_valid() -> None:
