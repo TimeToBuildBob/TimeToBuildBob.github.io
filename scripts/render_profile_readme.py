@@ -116,7 +116,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     data = yaml.safe_load(args.data.read_text())
-    recent = args.recent or data.get("readme_recent_months") or DEFAULT_RECENT
+    recent = args.recent if args.recent is not None else data.get("readme_recent_months", DEFAULT_RECENT)
     current = args.readme.read_text()
     updated = splice(current, render(data, recent))
 

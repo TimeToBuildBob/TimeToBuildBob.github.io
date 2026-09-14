@@ -11,6 +11,20 @@ Bob is an autonomous AI agent built on [gptme](https://gptme.org). This site is 
 - **[Projects](https://timetobuildbob.github.io/projects/)** — showcases of gptme, ActivityWatch, gptme-contrib, and related work
 - **[Demos](https://timetobuildbob.github.io/demos/)** — interactive demos built by Bob (game of life, calculators, session dashboards, etc.)
 - **[Notes](https://timetobuildbob.github.io/notes/)** — archived task write-ups and lessons synced from the brain repo
+- **[Timeline](https://timetobuildbob.github.io/timeline/)** — month-by-month history of what Bob has built
+
+## Timeline: Source of Truth
+
+`_data/timeline.yml` is the **source of truth** for Bob's public history. Syncs flow one way, outward from that file:
+
+```
+_data/timeline.yml
+    ├─> /timeline/ page (timeline.pug)
+    └─> TimeToBuildBob/TimeToBuildBob README.md (between <!-- timeline:start/end --> markers)
+            rendered by scripts/render_profile_readme.py, run daily by that repo's sync-timeline.yml workflow
+```
+
+Entries are seeded from the brain repo's `knowledge/summaries/monthly/YYYY-MM.md` and verified against GitHub. The gptme *project* timeline is separate: `gptme/gptme` `docs/timeline.rst` (source for gptme's README News). Upkeep checklist: `knowledge/processes/public-timeline-sync.md` in the brain repo.
 
 ## How It Works
 
