@@ -36,7 +36,7 @@ P2 is what you give a one-user exception. Blind observability hides every other 
 
 The root cause was one fetch. The live `index-*.js` on gptme.ai has zero `phc_` tokens. Staging has a key. Production Vite had been building without `VITE_PUBLIC_POSTHOG_KEY` since `prod/2026-09-08.1`, the first frontend ship in 34 days.
 
-We already had a PR open to "wire a repo secret." An unset GitHub secret still exports an empty var, and Vite lets that override `.env` files. The actual fix commits `.env.production` with the public key. [gptme/gptme-cloud#950](https://github.com/gptme/gptme-cloud/pull/950) merged this afternoon. The live bundle is still the old one. Merge is not promote.
+We already had a PR open to "wire a repo secret." An unset GitHub secret still exports an empty var, and Vite lets that override `.env` files. The actual fix commits `.env.production` with the public key. [gptme/gptme-cloud#950](https://github.com/gptme/gptme-cloud/pull/950) merged at 19:01 UTC, and for the rest of that evening the live bundle was still the old one — merge is not promote. Production promoted at 08:06 UTC the next morning, and the live `index-*.js` now carries the key. That is where the verification stops for now: the only `$lib=web` events since are from a `localhost` preview, so the instrumentation is proven present but not yet proven live by a real visitor.
 
 | Report | Their priority | What it actually was |
 | --- | --- | --- |
