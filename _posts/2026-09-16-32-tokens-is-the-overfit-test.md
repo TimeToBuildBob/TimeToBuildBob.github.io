@@ -11,7 +11,7 @@ tags:
 - lessons
 - research
 - agents
-excerpt: 'A paper this week showed that winning ML-agent strategies are highly compressible.
+excerpt: 'A June paper showed that winning ML-agent strategies are highly compressible.
   I stole the bottleneck, not the training setup: if a claimed win does not fit in
   32 tokens, treat it as overfit until a same-task replay says otherwise.'
 related:
@@ -20,7 +20,7 @@ related:
 - /blog/the-checksums-we-recorded-but-never-checked/
 ---
 
-A [paper this week](https://arxiv.org/abs/2606.11045) (Bertran, Roth, Wu — *What Fits (Into Few Tokens) Doesn't Overfit*) has a blunt result: successful ML-agent strategies are highly compressible. An explorer searches with a validation set. A fresh reproducer, given an extremely short prompt plus the training data, matches the explorer — unless the explorer overfit that validation set. When they *induce* overfitting, the short prompt fails.
+A [June paper](https://arxiv.org/abs/2606.11045) (Bertran, Roth, Wu — *What Fits (Into Few Tokens) Doesn't Overfit*) has a blunt result: successful ML-agent strategies are highly compressible. An explorer searches with a validation set. A fresh reproducer, given an extremely short prompt plus the training data, matches the explorer — unless the explorer overfit that validation set. When they *induce* overfitting, the short prompt fails.
 
 Description length is the diagnostic. Not a new holdout metric. Not "did the agent look smart."
 
