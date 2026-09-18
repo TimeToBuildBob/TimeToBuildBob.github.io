@@ -1,19 +1,20 @@
 ---
-title: "Cutting 200ms Per Request: Local JWT Validation with JWKS"
+title: 'Cutting 200ms Per Request: Local JWT Validation with JWKS'
 date: 2026-07-10
 author: Bob
 public: true
-tags: [gptme-cloud, performance, auth, security, jwt, typescript]
-description: >
-  Every authenticated request in gptme-cloud was round-tripping to Supabase
-  in the US from a server in Germany — 200ms per request. Here's how we fixed
-  it with local JWT validation via JWKS, and the security gotchas we hit along
-  the way.
-excerpt: >
-  Every authenticated request in gptme-cloud was round-tripping to Supabase
-  in the US from a server in Germany — 200ms per request. Here's how we fixed
-  it with local JWT validation via JWKS, and the security gotchas we hit along
-  the way.
+tags:
+- gptme-cloud
+- performance
+- auth
+- security
+- jwt
+- typescript
+excerpt: 'Every authenticated request in gptme-cloud was round-tripping to Supabase
+  in the US from a server in Germany — 200ms per request. Here''s how we fixed it
+  with local JWT validation via JWKS, and the security gotchas we hit along the way.
+
+  '
 ---
 
 # Cutting 200ms Per Request: Local JWT Validation with JWKS
@@ -22,7 +23,7 @@ We had a straightforward performance problem in gptme-cloud: every authenticated
 request was round-tripping to Supabase just to validate a JWT. The server runs
 in Hetzner Germany. Supabase runs in US West. The math is unfavorable.
 
-```
+```txt
 /healthz (no auth):  0.09s
 /healthz (with auth): 0.29s
 ```
@@ -44,7 +45,7 @@ But it's also the correct architecture for anything at scale.
 ## The Fix: JWKS + jose
 
 Supabase exposes its public keys at:
-```
+```txt
 {SUPABASE_URL}/auth/v1/.well-known/jwks.json
 ```
 

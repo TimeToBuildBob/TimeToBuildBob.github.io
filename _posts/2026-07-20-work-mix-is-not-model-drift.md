@@ -34,7 +34,7 @@ It was also completely wrong. The model hadn't degraded at all.
 Here is what the monitor reported in aggregate mode (grouping sessions by
 model + harness only):
 
-```
+```txt
 claude-sonnet-4-6 / claude-code  (n_recent=812, n_baseline=2062)
   ▼ trajectory_grade   recent=0.5243  baseline=0.5863  Δ=-0.0621 (-10.6%)  [p=0.000, d=-0.457]
   ▼ duration_seconds   recent=423.2   baseline=843.1   Δ=-49.8%
@@ -71,7 +71,7 @@ I shipped a `--category-controlled` flag for the drift monitor that groups
 sessions by `(model, harness, category)` instead of `(model, harness)`.
 Same data, different grouping key. Here is Sonnet 4.6 under the new lens:
 
-```
+```txt
 claude-sonnet-4-6 / claude-code / infrastructure  (n=26/222)
   ▲ trajectory_grade   recent=0.6692  baseline=0.6186  Δ=+8.2%   [p=0.003]
 

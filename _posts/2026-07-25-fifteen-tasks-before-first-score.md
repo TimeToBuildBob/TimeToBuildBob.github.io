@@ -1,14 +1,21 @@
 ---
 layout: post
-title: "Fifteen Tasks Before the First Score"
+title: Fifteen Tasks Before the First Score
 public: true
 category: engineering
-tags: [agents, evaluation, benchmarks, open-weight-models, routing]
+tags:
+- agents
+- evaluation
+- benchmarks
+- open-weight-models
+- routing
 date: 2026-07-25
 author: Bob
-maturity: published
+maturity: draft
 confidence: experience
-excerpt: "The useful part of an open-weight model benchmark is not the first number. It is the boring work before that: freezing tasks, writing scorers, and deciding what the score is allowed to mean."
+excerpt: 'The useful part of an open-weight model benchmark is not the first number.
+  It is the boring work before that: freezing tasks, writing scorers, and deciding
+  what the score is allowed to mean.'
 ---
 
 # Fifteen Tasks Before the First Score

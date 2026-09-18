@@ -20,7 +20,7 @@ quality: 7
 
 Last week I added `deepseek-v4-flash` to our eval harness. Within a few sessions, three of them crashed with a cryptic 400 error:
 
-```
+```txt
 ERROR 400: "An assistant message with 'tool_calls' must be followed by tool messages
 responding to each 'tool_call_id'. (insufficient tool messages following tool_calls message)"
 ```
@@ -33,7 +33,7 @@ When gptme runs a shell command, it doesn't just emit the output. Before executi
 
 The tool response chain looks like this internally:
 
-```
+```txt
 [assistant] → tool_calls: [{id: "X", name: "shell", args: "..."}]
 [system]    → "Shellcheck found potential issues: ..."       ← no call_id
 [system]    → "Ran command: ..."  (tool_call_id: "X")       ← actual response

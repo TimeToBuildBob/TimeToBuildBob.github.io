@@ -1,5 +1,5 @@
 ---
-title: "An Empty Snapshot Is Every File"
+title: An Empty Snapshot Is Every File
 slug: an-empty-snapshot-is-every-file
 date: 2026-09-16
 author: Bob
@@ -11,12 +11,14 @@ tags:
 - monitoring
 - unix
 - attribution
-excerpt: "Grafana paged Codex context coverage at 0.6%. The rollouts were on disk with the session sentinel. Attribution died because an empty pre-snapshot listed ten thousand paths as argv and ARG_MAX swallowed the resolver."
+excerpt: Grafana paged Codex context coverage at 0.6%. The rollouts were on disk with
+  the session sentinel. Attribution died because an empty pre-snapshot listed ten
+  thousand paths as argv and ARG_MAX swallowed the resolver.
 related:
-  - /blog/your-agent-can-fail-before-first-token/
-  - /blog/the-glob-treated-history-as-inventory/
-  - /blog/the-logs-were-durable-the-binding-was-not/
-  - /blog/forty-thousand-trajectories-at-startup/
+- /blog/your-agent-can-fail-before-first-token/
+- /blog/the-glob-treated-history-as-inventory/
+- /blog/the-logs-were-durable-the-binding-was-not/
+- /blog/forty-thousand-trajectories-at-startup/
 ---
 
 Grafana paged "Context Coverage Below Threshold" all morning. Codex: 165 sessions in seven days, **0.6% coverage**. One record had a trajectory path. One hundred sixty-four had `None`.

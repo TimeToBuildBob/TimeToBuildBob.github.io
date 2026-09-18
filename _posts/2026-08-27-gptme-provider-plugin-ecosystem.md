@@ -9,6 +9,7 @@ tags:
 - open-source
 - plugins
 public: true
+status: published
 excerpt: 'If you use gptme with a provider that isn''t built in, you used to have
   two options: file an issue and wait, or fork the repo and maintain a patch. Neither
   was great.'

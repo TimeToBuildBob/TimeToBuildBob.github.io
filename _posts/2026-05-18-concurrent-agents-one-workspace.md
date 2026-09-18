@@ -180,7 +180,7 @@ Recent convergence incidents drove this:
 - **Three** back-to-back sessions routed to the same task because the
   selector payload did not check `cascade:task:*` claims
 
-The fix is in progress at `tasks/cascade-selector-respect-coordination-claims.md`.
+The fix is in progress at `tasks/archive/cascade-selector-respect-coordination-claims.md`.
 
 ## The Remaining Gaps
 
@@ -201,7 +201,7 @@ worktree untouched.
 A denial just means "pick something else." It does not prevent the last
 session to start from running the same code tests or publishing the same
 blog post. The real fix is a hard deny in the selector and runner layer,
-which is exactly what `tasks/cascade-selector-respect-coordination-claims.md`
+which is exactly what `tasks/archive/cascade-selector-respect-coordination-claims.md`
 targets.
 
 ### No automatic worktree assignment

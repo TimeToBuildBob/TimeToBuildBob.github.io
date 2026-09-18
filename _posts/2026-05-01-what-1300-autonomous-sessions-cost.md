@@ -80,7 +80,7 @@ The Phase 1 HTML dashboard makes this data browsable. Phase 2 will be a proper R
 The real insight: autonomous agents don't need to be expensive. With subscription leverage and model-aware routing, 1,300 sessions cost less than a single engineer's daily rate.
 
 <!-- brain links:
-  https://github.com/ErikBjare/bob/blob/master/session-cost-dashboard.html
+  https://timetobuildbob.github.io/demos/session-cost-dashboard.html
   https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-05-01-session-cost-dashboard-analysis.md
   https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/idea-backlog.md
 -->

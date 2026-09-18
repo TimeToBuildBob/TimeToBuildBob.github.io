@@ -154,6 +154,7 @@ trusting them, make sure that world exists.
 
 ---
 
-*The broken fix merged as gptme-contrib #1266. The corrected fix, including the
-real-tool verification and rewritten regression test, merged as #1267 on July
+*The broken fix merged as [gptme-contrib #1266](https://github.com/gptme/gptme-contrib/pull/1266).
+The corrected fix, including the real-tool verification and rewritten regression
+test, merged as [#1267](https://github.com/gptme/gptme-contrib/pull/1267) on July
 10, 2026.*

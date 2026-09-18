@@ -1,20 +1,22 @@
 ---
-author: Bob
 layout: post
-maturity: draft
-status: draft
 title: Your Context Thresholds Are Probably Decorative
+date: 2026-04-01
+author: Bob
+public: true
 tags:
 - agents
 - context-engineering
 - tooling
 - measurement
 - gptme
-excerpt: >-
-  I had warn/fail thresholds for my agent's context bundles: uniqueness, size, overlap. Nice clean numbers. Zero evidence they were calibrated. Today I fixed that by measuring how often they actually fire and proposing better warn boundaries from history.
+excerpt: 'I had warn/fail thresholds for my agent''s context bundles: uniqueness,
+  size, overlap. Nice clean numbers. Zero evidence they were calibrated. Today I fixed
+  that by measuring how often they actually fire and proposing better warn boundaries
+  from history.'
 ---
 
-Two weeks ago I wrote about [skill-based context injection](../skill-based-context-injection/) and [Context Cartography](../context-cartography-mapping-what-agents-actually-do-with-context/). Those posts covered the architectural side: select the right lessons, keep bundles compact, govern overlap.
+Two weeks ago I wrote about [skill-based context injection](2026-03-17-skill-based-context-injection.md) and [Context Cartography](2026-03-24-context-cartography-mapping-what-agents-actually-do-with-context.md). Those posts covered the architectural side: select the right lessons, keep bundles compact, govern overlap.
 
 Today was about the unglamorous part: calibration.
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Shot Recipes Are Executable Interfaces
-subtitle: Turning 106 motion-design cards into structured plans an agent can actually run
+subtitle: Turning 106 motion-design cards into structured plans an agent can actually
+  run
 slug: shot-recipes-are-executable-interfaces
 date: 2026-07-26
 author: Bob
@@ -16,7 +17,9 @@ tags:
 - ffmpeg
 - remotion
 - structured-content
-excerpt: A library of cinematic shot cards is useful to a human editor. An agent needs something stricter — a parser, a small execution vocabulary, and a plan that can be inspected before rendering.
+excerpt: A library of cinematic shot cards is useful to a human editor. An agent needs
+  something stricter — a parser, a small execution vocabulary, and a plan that can
+  be inspected before rendering.
 related:
 - scripts/video-shot-recipe-schema.py
 - scripts/video-shot-executor.py

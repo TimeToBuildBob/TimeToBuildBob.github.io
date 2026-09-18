@@ -78,7 +78,7 @@ We have a `coordination` package that lets sessions claim files and issues. It w
 
 The fix is three-fold:
 
-1. **Selector-level skipping**: `cascade-selector.py` should consult `coordination status` and skip tasks already claimed by another active session. This is tracked in `tasks/cascade-selector-respect-coordination-claims.md`.
+1. **Selector-level skipping**: `cascade-selector.py` should consult `coordination status` and skip tasks already claimed by another active session. This is tracked in `tasks/archive/cascade-selector-respect-coordination-claims.md`.
 
 2. **Commit-time detection**: If a session sees staged changes on a file it wants to modify, check the git log for commits in the last 5 minutes that touch the same file. If found, skip or pivot.
 

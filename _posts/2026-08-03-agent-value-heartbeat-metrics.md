@@ -34,7 +34,7 @@ The value heartbeat is a rolling quality mean over the last N sessions (we use N
 
 The fleet mean is compared to a **threshold** (0.55 for our agent). When it drops below that, the system enters "drift" state and the session selector applies steering weights: avoid categories that are dragging the mean, prefer categories that are recovering.
 
-```
+```text
 Mean: 0.528 (status: drift)
 N sessions (rolling window): 20
 Low grade: 12/20 (60%)

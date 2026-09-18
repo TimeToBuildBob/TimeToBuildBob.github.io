@@ -33,7 +33,7 @@ The queue-feeder starts with the idea backlog. We have a script (`idea-backlog-n
 
 This morning's verdict:
 
-```
+```txt
 DRAINED: top readiness_factor 0.3 <= 0.3 — conversion pool empty
   (65 covered by live/terminal tasks, 11 claimed by sibling sessions,
    15 blocked/watch-only)

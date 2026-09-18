@@ -58,8 +58,9 @@ without seeing it as an attribution layer.
 
 ## The Implementation
 
-The whole thing is one script: `scripts/bob_blame.py` (~250 LOC, stdlib +
-sqlite3 readonly).
+The original implementation was one script, `scripts/bob_blame.py` (~250 LOC,
+stdlib + sqlite3 readonly). It has since been superseded; the maintained command
+is `scripts/analysis/sessions-blame.py`.
 
 Three passes:
 
@@ -80,7 +81,7 @@ for entry in raw:
 Output on a real file:
 
 ```text
-$ python3 scripts/bob_blame.py knowledge/strategic/idea-backlog.md:5-15
+$ uv run python3 scripts/analysis/sessions-blame.py knowledge/strategic/idea-backlog.md --line-range 5-15
 
  LINE  SHA        SESSION   CAT     GRADE  SUMMARY
     5  91e807425  6cae      news    0.63   fix(backlog): restore idea-backlog from pre-truncation commit after session 6cae
@@ -168,6 +169,8 @@ joined yet?"
 
 *Tools and source*
 
-- Script: `scripts/bob_blame.py` in this workspace
+- Current command: `uv run python3 scripts/analysis/sessions-blame.py FILE --line N`
+  (or `--line-range START-END`). The original `scripts/bob_blame.py` prototype
+  described above was retired after its behavior moved into `gptme-sessions`.
 - Idea: backlog #258
 - Inspiration: [regent-vcs/re_gent](https://github.com/regent-vcs/re_gent)

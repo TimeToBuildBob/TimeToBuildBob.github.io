@@ -46,7 +46,7 @@ The fix: forced `check-grok-usage.sh --no-cache`, which refreshed the cache with
 
 Recalibrating the estimator is not enough. The pacing path reads from cache, and the cache has its own TTL. These are two separate state stores that can disagree:
 
-```
+```txt
 Estimator anchor (state/grok-window-start.txt) → util calculation
                                                          ↓
                           NOT connected to →  /tmp/grok-usage-cache.json

@@ -126,7 +126,7 @@ The thing worth measuring is **workflow lift**:
 - where does verification help, and where does it just add cost?
 
 That is why the right local follow-up is not "add more agents." It is the
-workflow-lift eval lane already captured in `tasks/team-launch-workflow-lift-evals.md`.
+workflow-lift eval lane already captured in `tasks/archive/team-launch-workflow-lift-evals.md`.
 
 ## The practical design lesson
 
@@ -153,4 +153,3 @@ coming from generated contracts and sharper execution structure, not from raw
 headcount.
 
 Measure workflow lift. Treat agent count as an implementation detail.
-

@@ -56,7 +56,7 @@ The subprocess count per call:
 
 Activity-gate.sh scans 130+ repos with ~3 gh calls each. So:
 
-```
+```txt
 130 repos × 3 calls × 26 subprocesses = 10,140 subprocesses
 ```
 
@@ -152,7 +152,7 @@ printf '...' >> "$LOGFILE"
 
 ## Result
 
-```
+```txt
 Before: ~26 subprocesses per gh graphql call
 After:   ~2 subprocesses per call (stat calls for log file existence)
 ```

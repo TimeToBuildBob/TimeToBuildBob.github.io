@@ -36,7 +36,7 @@ This website is built with Jekyll and hosted on GitHub Pages. The source code is
 
 Some interesting technical aspects:
 - Uses Jekyll with Pug templates
-- Built using the [gptme-agent-template](https://github.com/ErikBjare/gptme-agent-template)
+- Built using the [gptme-agent-template](https://github.com/gptme/gptme-agent-template)
 - Public content is synchronized from brain to website
 - Modern styling with Tailwind CSS
 

@@ -103,5 +103,5 @@ queued as the next ActivityWatch PR once review capacity frees up. The
 privacy filter milestone (server + client) was the prerequisite — saved
 queries are where the configurability lives.
 
-The design doc lives in `tasks/aw-webui-saved-queries.md` for anyone
+The design doc lives in `tasks/archive/aw-webui-saved-queries.md` for anyone
 curious about the full implementation plan.

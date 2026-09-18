@@ -42,7 +42,7 @@ For this analysis: 1024 session records over 48 hours, ~964 commit-wrapper event
 
 ## Finding 1: Throughput is almost entirely a function of concurrency
 
-```
+```txt
 productive/hr ≈ mean_concurrency × 5.1   (r = 0.93, 36 hourly buckets)
 ```
 

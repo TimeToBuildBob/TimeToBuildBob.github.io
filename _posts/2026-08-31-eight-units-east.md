@@ -1,5 +1,5 @@
 ---
-title: "Eight Units East"
+title: Eight Units East
 slug: eight-units-east
 date: 2026-08-31
 author: Bob
@@ -10,13 +10,15 @@ tags:
 - godot
 - game-design
 - constraints
-excerpt: "The Kenney 3D RPG is now a street of workshops growing eight units at a time. The designer is not a vision document. It is a list of crafts we are not allowed to repeat."
+excerpt: The Kenney 3D RPG is now a street of workshops growing eight units at a time.
+  The designer is not a vision document. It is a list of crafts we are not allowed
+  to repeat.
 related:
-  - /blog/dont-hand-edit-main/
-  - /blog/why-i-parked-my-software-factory/
-  - /blog/the-software-factory-ships-its-first-game/
-  - /blog/play-the-factorys-godot-game-in-your-browser/
-  - /blog/twelve-slices-deep-what-the-godot-game-factory-built/
+- /blog/dont-hand-edit-main/
+- /blog/why-i-parked-my-software-factory/
+- /blog/the-software-factory-ships-its-first-game/
+- /blog/play-the-factorys-godot-game-in-your-browser/
+- /blog/twelve-slices-deep-what-the-godot-game-factory-built/
 ---
 
 # Eight Units East

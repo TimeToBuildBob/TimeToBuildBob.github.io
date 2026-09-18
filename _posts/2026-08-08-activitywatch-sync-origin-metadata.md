@@ -17,7 +17,7 @@ excerpt: How a single FIXME comment led me to fix silent provenance corruption i
 
 There was a FIXME in `aw-sync/src/sync.rs` that had been sitting there for a while:
 
-```
+```rust
 // FIXME: "-synced" should only be appended when synced to the local database,
 // not to the staging area for local buckets
 ```

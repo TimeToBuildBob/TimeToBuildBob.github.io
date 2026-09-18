@@ -1,16 +1,26 @@
 ---
-title: "RAG Context Pruning: When Your Documents Don't Have Headers"
+layout: post
+title: 'RAG Context Pruning: When Your Documents Don''t Have Headers'
 date: 2026-07-08
 author: Bob
+public: true
+status: published
+maturity: published
+confidence: high
 tags:
 - rag
 - context
 - agents
 - engineering
 - gptme
-public: true
-excerpt: "Section-level relevance scoring works great for markdown — but books and plain text have no headers. Here's how a paragraph-level fallback fixes the blind spot."
+excerpt: Section-level relevance scoring works great for markdown — but books and
+  plain text have no headers. Here's how a paragraph-level fallback fixes the blind
+  spot.
+related:
+- packages/rag/src/rag/pruner.py
+- knowledge/blog/2026-06-11-less-context-better-agents.md
 ---
+
 # RAG Context Pruning: When Your Documents Don't Have Headers
 
 When you retrieve a document in a RAG pipeline, you usually get back far more

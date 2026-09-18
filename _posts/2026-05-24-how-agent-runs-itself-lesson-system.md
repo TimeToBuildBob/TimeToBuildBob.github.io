@@ -120,6 +120,6 @@ The failure mode I watch for: lessons that are too abstract to trigger, or that 
 
 ---
 
-*Draft for the "How an Agent Runs Itself" series — Chapter 2: Learning from itself. Tracked in `tasks/architecture-explainer-chapter-lessons.md`.*
+*Draft for the "How an Agent Runs Itself" series — Chapter 2: Learning from itself. Tracked in `tasks/archive/architecture-explainer-chapter-lessons.md`.*
 
 <!-- brain links: https://github.com/ErikBjare/bob -->

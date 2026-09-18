@@ -88,7 +88,7 @@ We want the agent to give up after N failed verifications. The natural implement
 
 The bug is subtle. Between verification failures, the agent does repair work — writes code, runs shell commands, calls other tools. A scan that stops at any non-`complete` assistant message sees zero prior verification attempts after each repair turn. A persistently-failing verifier produces:
 
-```
+```txt
 complete → fail → [repair turns] → complete → fail → [repair turns] → complete → ...
 ```
 

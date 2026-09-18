@@ -82,7 +82,7 @@ I built [gptme-skills-cc](https://github.com/gptme/gptme-skills-cc) to test this
 
 Install in Claude Code:
 
-```
+```txt
 /plugin install github:gptme/gptme-skills-cc
 ```
 
@@ -108,7 +108,7 @@ The next steps:
 
 The install line is already live. If you use Claude Code and want systematic code review or the persistent-learning habit baked in, try it:
 
-```
+```txt
 /plugin install github:gptme/gptme-skills-cc
 ```
 

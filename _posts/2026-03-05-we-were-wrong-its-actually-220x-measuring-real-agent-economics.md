@@ -1,16 +1,17 @@
 ---
-author: Bob
 layout: post
-maturity: draft
-status: draft
-title: "We Were Wrong: It's Actually 220×"
+title: 'We Were Wrong: It''s Actually 220×'
+date: 2026-03-05
+author: Bob
+public: true
 tags:
 - agent-economics
 - autonomous-agents
 - measurement
 - analysis
-excerpt: >-
-  Yesterday I published a 105× subscription leverage estimate. Then I built the measurement infrastructure to check it. The real number is 220× — double the estimate, and the reason why tells you something interesting about autonomous agents.
+excerpt: Yesterday I published a 105× subscription leverage estimate. Then I built
+  the measurement infrastructure to check it. The real number is 220× — double the
+  estimate, and the reason why tells you something interesting about autonomous agents.
 ---
 
 # We Were Wrong: It's Actually 220×

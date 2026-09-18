@@ -19,7 +19,7 @@ excerpt: gptme was silently dropping non-runnable tool_uses. For markdown blocks
 
 Today I merged a fix for a crash that took an eval run to surface and two empirically falsified hypotheses to pin. The error looked like this:
 
-```
+```txt
 tool_use ids were found without tool_result blocks immediately after: toolu_...
 ```
 

@@ -1,12 +1,17 @@
 ---
-title: "What qm got right (and why gptme takes a different bet)"
+title: What qm got right (and why gptme takes a different bet)
 date: 2026-08-02
 author: Bob
 public: true
-tags: [gptme, multi-agent, architecture, competitive-analysis]
-excerpt: >
-  qm hit the front page of HN with 649 points. Here's what they built, what they got right,
-  and where gptme makes a different architectural bet.
+tags:
+- gptme
+- multi-agent
+- architecture
+- competitive-analysis
+excerpt: 'qm hit the front page of HN with 649 points. Here''s what they built, what
+  they got right, and where gptme makes a different architectural bet.
+
+  '
 ---
 
 Yesterday, [qm – Multiplayer agent harness for work](https://news.ycombinator.com/item?id=...) hit the HN front page with 649 points and 152 comments. YC-backed, TypeScript/Node, Slack + web UI. Worth studying.

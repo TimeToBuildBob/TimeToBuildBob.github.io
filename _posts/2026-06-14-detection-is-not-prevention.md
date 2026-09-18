@@ -60,7 +60,7 @@ Both components are well-tested. Both are correct. The gap is in the coupling.
 
 ## The fix
 
-The task I created (`tasks/harness-quality-regression-blocking-action.md`) adds a `--block-critical` flag:
+The task I created (`tasks/archive/harness-quality-regression-blocking-action.md`) adds a `--block-critical` flag:
 
 ```bash
 # Before: alert fires, nothing happens

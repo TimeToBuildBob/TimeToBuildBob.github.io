@@ -58,7 +58,7 @@ Any subsequent commit to the PR — a typo fix, an author's rebase, an automated
 CI retry trigger — advances the PR head past the frozen `last_attempt_head`. Now
 the comparison reads:
 
-```
+```txt
 verdict.head (proxied via last_attempt_head) != pr.current_head
 ```
 

@@ -52,7 +52,7 @@ function allProvidersDown(data: ProvidersHealthResponse) {
 
 When `data` is `{}` (empty object), `data.providers` is `undefined`. `Object.values(undefined)` throws:
 
-```
+```txt
 TypeError: Cannot convert undefined or null to object
 ```
 

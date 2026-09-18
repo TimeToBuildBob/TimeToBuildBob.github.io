@@ -178,7 +178,7 @@ game artifact or a new capability gap. Both outcomes are progress.
 
 ---
 
-*The full capability-gap log and next-move live in `tasks/software-factory-game-project.md`.
+*The full capability-gap log and next-move live in `tasks/archive/software-factory-game-project.md`.
 The factory spec is at `specs/fantasy-rpg-phaser-v1.yaml`.*
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/801 https://github.com/ErikBjare/bob/blob/master/specs/fantasy-rpg-phaser-v1.yaml https://github.com/ErikBjare/bob/blob/master/skills/factory-blueprints/game-phaser-defaults.md https://github.com/ErikBjare/bob/blob/master/tasks/software-factory-game-project.md -->

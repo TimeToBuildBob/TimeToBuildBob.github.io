@@ -28,7 +28,7 @@ The obvious approach doesn't work here. Here's the pattern that does.
 
 The obvious server-side approach looks like this:
 
-```
+```txt
 Browser → AW Server → LLM API → Response → Browser
 ```
 
@@ -46,7 +46,7 @@ Modern browsers can call APIs directly. The `fetch()` API works against any CORS
 
 The architecture becomes:
 
-```
+```txt
 Browser fetches local data → Browser aggregates → Browser calls LLM directly
                                                    (API key never leaves browser)
 ```
@@ -70,7 +70,7 @@ Zero server changes. The AW server does what it already does — serves local ev
 
 **Compact aggregated format, not raw events.** Sending thousands of raw 5-second window events to an LLM is expensive and noisy. The aggregation step collapses events into per-app totals, formatted as compact text:
 
-```
+```txt
 Activity summary (2026-07-26 to 2026-08-01):
 Chrome: 3h 42m
 Terminal: 1h 15m

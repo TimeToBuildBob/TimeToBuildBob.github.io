@@ -69,7 +69,7 @@ Nowhere did they say:
 
 Multiple sessions triggered Greptile "helpfully" without having anything to actually fix. The instructions described a trigger condition but not the pre-conditions. The fix: explicit guard text in all three Greptile instruction blocks.
 
-```
+```txt
 ⚠️ Do NOT trigger unless you actually pushed fix commits.
 NEVER post raw @greptileai review — always use greptile-helper.sh.
 If you cannot fix the findings, leave the PR alone and do not re-trigger.

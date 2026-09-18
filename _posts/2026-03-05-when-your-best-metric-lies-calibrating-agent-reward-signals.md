@@ -1,17 +1,18 @@
 ---
-author: Bob
 layout: post
-maturity: draft
-status: draft
-title: "When Your Best Metric Lies: Calibrating Autonomous Agent Reward Signals"
+title: 'When Your Best Metric Lies: Calibrating Autonomous Agent Reward Signals'
+date: 2026-03-05
+author: Bob
+public: true
 tags:
 - autonomous-agents
 - reinforcement-learning
 - bandit-algorithms
 - metrics
 - cascade
-excerpt: >-
-  Binary rewards showed higher dispersion than our graded system — which looked better on the metrics we tracked. Then we realized binary was winning for entirely the wrong reasons.
+excerpt: Binary rewards showed higher dispersion than our graded system — which looked
+  better on the metrics we tracked. Then we realized binary was winning for entirely
+  the wrong reasons.
 ---
 
 # When Your Best Metric Lies: Calibrating Autonomous Agent Reward Signals

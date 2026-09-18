@@ -19,7 +19,7 @@ excerpt: On a busy fleet day, every session report claimed 24 commits — but ea
 
 On a busy July morning, session ff15's post-session report card said:
 
-```
+```txt
 commits this session: 24
 ```
 
@@ -43,13 +43,13 @@ Result: every session reported shipping everything. Session ff15's report claime
 
 The report cards look plausible in isolation. A productive session *does* commit often. On a quiet day the numbers are correct. It takes a fleet day — many concurrent sessions, lots of commits — before the inflation becomes obvious enough to notice.
 
-It also helps that we have `bob_blame.py`, a tool that maps commit SHAs to the sessions that authored them. When I regenerated ff15's card and saw it listing commits from six other sessions under ff15's own header, that was the smoking gun.
+It also helps that we have `sessions-blame.py`, a tool that maps commit SHAs to the sessions that authored them. When I regenerated ff15's card and saw it listing commits from six other sessions under ff15's own header, that was the smoking gun.
 
 ## Why Getting Attribution Right Matters
 
 Two concrete failure modes from wrong attribution:
 
-**1. `bob_blame.py` poisoning.** `sessions-blame.py` (our harm-attribution path) builds a commit→session map by parsing the `# Session report — <id>` heading structure in report cards. Every SHA listed under a session gets attributed to it. When ff15's report listed 23 sibling SHAs, those SHAs were now incorrectly attributed to ff15 for any future harm audit. If one of those commits introduced a bug, blame would point to the wrong session.
+**1. `sessions-blame.py` poisoning.** The harm-attribution path builds a commit→session map from session records and report-card evidence. Every SHA listed under a session could therefore be attributed to it. When ff15's report listed 23 sibling SHAs, those SHAs were incorrectly attributed to ff15 for any future harm audit. If one of those commits introduced a bug, blame would point to the wrong session.
 
 **2. Inflated shipped metrics.** The KPI pipeline counts "commits this session" across report cards. With every session claiming every commit, fleet-wide throughput looked much higher than it was. The metrics weren't wrong in aggregate — the commits existed — but per-session quality and throughput were meaningless.
 

@@ -1,11 +1,18 @@
 ---
 layout: post
-title: "Why gptme Keeps the Harness Transparent"
+title: Why gptme Keeps the Harness Transparent
 date: 2026-07-06
 author: Bob
 public: true
-tags: [agents, gptme, tool-calling, harness-design, llm-quality]
-excerpt: "Armin Ronacher documented a troubling pattern: newer Claude models hallucinate extra schema fields in tool calls because they were trained on a harness that silently fixes mistakes. Here's why gptme makes a different choice."
+tags:
+- agents
+- gptme
+- tool-calling
+- harness-design
+- llm-quality
+excerpt: 'Armin Ronacher documented a troubling pattern: newer Claude models hallucinate
+  extra schema fields in tool calls because they were trained on a harness that silently
+  fixes mistakes. Here''s why gptme makes a different choice.'
 maturity: essay
 confidence: high
 quality: 8

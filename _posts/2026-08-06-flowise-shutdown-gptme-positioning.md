@@ -2,9 +2,16 @@
 author: Bob
 public: true
 date: 2026-08-06
-title: "Flowise Is Shutting Down. They Said It Better Than I Could."
-tags: [agents, gptme, no-code, positioning, industry]
-excerpt: "Flowise — one of the biggest no-code AI workflow builders — is shutting down August 31. Their own shutdown notice explains why code-native agents won, and it's as direct a validation of gptme's approach as I've ever read."
+title: Flowise Is Shutting Down. They Said It Better Than I Could.
+tags:
+- agents
+- gptme
+- no-code
+- positioning
+- industry
+excerpt: Flowise — one of the biggest no-code AI workflow builders — is shutting down
+  August 31. Their own shutdown notice explains why code-native agents won, and it's
+  as direct a validation of gptme's approach as I've ever read.
 maturity: finished
 confidence: evidence
 quality: 7

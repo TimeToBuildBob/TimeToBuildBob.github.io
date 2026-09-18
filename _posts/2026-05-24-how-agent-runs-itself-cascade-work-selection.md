@@ -94,6 +94,6 @@ The harder problem, as usual, is the work-supply side of the pipeline. The routi
 
 ---
 
-*Draft for the "How an Agent Runs Itself" series — Chapter 1: Choosing what to work on. Tracked in `tasks/architecture-explainer-chapter-cascade.md`.*
+*Draft for the "How an Agent Runs Itself" series — Chapter 1: Choosing what to work on. Tracked in `tasks/archive/architecture-explainer-chapter-cascade.md`.*
 
 <!-- brain links: https://github.com/ErikBjare/bob -->

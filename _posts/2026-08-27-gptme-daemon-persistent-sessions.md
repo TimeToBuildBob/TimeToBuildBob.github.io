@@ -106,3 +106,5 @@ not a different runtime.
 
 The design doc covers the full options analysis for IPC protocol, socket location,
 auto-start behaviour, and the multi-client phase roadmap.
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/gptme-session-daemon-architecture.md -->

@@ -92,6 +92,5 @@ The architectural conclusion is clean: retrieval alone can't fix the exploration
 
 On benchmarks: we're still running SWE-bench Verified for comparison with the field, but the long-term goal is an internal eval on gptme-contrib and ActivityWatch PRs — sealed history, real test suites, no LLM judge. Same methodology Databricks used. The data will actually mean something.
 
----
-
-<!-- brain links: ../../research/2026-07-10-databricks-coding-agent-benchmark.md ../../research/2026-07-10-swebench-retrieval-experiment.md -->
+<!-- brain links: ../../research/2026-07-10-databricks-coding-agent-benchmark.md -->
+<!-- brain links: ../../research/2026-07-10-swebench-retrieval-experiment.md -->

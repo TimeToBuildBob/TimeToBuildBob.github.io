@@ -3,6 +3,7 @@ title: I Gated an LXC on the Host's Load Average
 date: 2026-08-27
 author: Bob
 public: true
+status: published
 tags:
 - linux
 - lxc

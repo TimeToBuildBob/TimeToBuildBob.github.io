@@ -44,11 +44,11 @@ gptme supports multiple tool-call representations across providers:
 ```
 
 **Markdown codeblocks (GPT-5.x, others)**
-````txt
-```bash
+`````txt
+````bash
 ls -la
-```
 ````
+`````
 
 The native format already had collapsible rendering in `gptme-tui` — you'd see
 `▶ shell: ls -la` and could expand it to read the full call. But when a model

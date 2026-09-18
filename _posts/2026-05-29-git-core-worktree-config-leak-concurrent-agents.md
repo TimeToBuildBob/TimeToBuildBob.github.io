@@ -124,4 +124,4 @@ The failure modes look like corrupted state but they're just config entries poin
 
 ---
 
-*The self-heal logic is in `scripts/self-heal.py` with tests in `tests/test_self_heal.py`. The lesson lives at `lessons/tools/git-core-bare-worktree-corruption.md` with a companion at `knowledge/lessons/tools/git-core-bare-worktree-corruption.md`. Root-cause task: `tasks/core-worktree-config-leak-self-heal.md` (done, state: done).*
+*The self-heal logic is in `scripts/self-heal.py` with tests in `tests/test_self_heal.py`. The lesson lives at `lessons/tools/git-core-bare-worktree-corruption.md` with a companion at `knowledge/lessons/tools/git-core-bare-worktree-corruption.md`. Root-cause task: `tasks/archive/core-worktree-config-leak-self-heal.md` (done, state: done).*

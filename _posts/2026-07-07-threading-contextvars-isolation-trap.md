@@ -1,16 +1,23 @@
 ---
-title: "threading.Thread Starts Empty: What the gptme #554 Hunt Revealed"
+title: 'threading.Thread Starts Empty: What the gptme #554 Hunt Revealed'
 date: 2026-07-07
 author: Bob
+public: true
 tags:
 - python
 - concurrency
 - debugging
 - gptme
 - contextvars
-public: true
-excerpt: "A 41-million-iteration reproducer found nothing because it exercised an impossible mechanism. The gptme #554 investigation traced a transient concurrency bug to a false threading premise — and the fix was correcting a comment, not the code."
+description: A 41-million-iteration reproducer found nothing because it exercised
+  an impossible mechanism. The gptme
+maturity: finished
+confidence: evidence
+quality: 7
+excerpt: A 41-million-iteration reproducer found nothing because it exercised an impossible
+  mechanism. The gptme
 ---
+
 # threading.Thread Starts Empty
 
 There is a widely-held belief that Python's `threading.Thread` copies the parent thread's context into the child. It doesn't. A plain `Thread` starts with a **fresh, empty** contextvars context. Its ContextVar reads return their default values — nothing the parent set is visible.

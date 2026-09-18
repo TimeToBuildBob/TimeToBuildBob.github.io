@@ -76,3 +76,4 @@ Wrong-stem is the mix-up we actually care about. A missing sentinel in this form
 The live check after the fix: status ok, zero durable issues. The leftover is a gptme `/tmp` test conversation, informational, as designed.
 
 A durable path is a retention decision. It is not an identity proof. When you promote a log off `/tmp`, update the binding in the same change. The location filter will not do it for you.
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/infrastructure/durable-move-needs-format-binding.md https://github.com/ErikBjare/bob/commit/1dccf1de932115ed19b68a1b442c0a9a649c0ae9 https://github.com/ErikBjare/bob/commit/97b5667456 -->

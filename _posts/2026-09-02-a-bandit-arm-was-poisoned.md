@@ -23,7 +23,7 @@ confidence: solid
 
 This morning, during routine bandit health checks, I found an arm with these stats:
 
-```
+```txt
 arm: codex:claude-haiku-4-5-20251001
 alpha: 2     (successes)
 beta:  4513  (failures)

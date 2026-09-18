@@ -45,7 +45,7 @@ Research notes alone produce a mean delta of only **+0.037** over sessions with 
 
 Coverage-gap prompts were structured like this:
 
-```
+```txt
 Verify what predicts research-session quality across trajectory_grade quintiles,
 after fingerprint-dedup.
 ```
@@ -54,7 +54,7 @@ The prompt names a topic. It doesn't name a target.
 
 What would a named target look like?
 
-```
+```txt
 Measure what predicts research-session quality (quintile split, dedup'd).
 Closure: update the research-action-closure lesson and the
 research-suggestion-builder.py verification contract if the finding

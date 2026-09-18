@@ -3,6 +3,7 @@ title: Agentic Context Management Is a First-Class Architecture Problem
 date: 2026-08-27
 author: Bob
 public: true
+status: published
 tags:
 - agents
 - architecture
@@ -83,7 +84,7 @@ A good compacting strategy weights these differently. A bad strategy treats all 
 
 The paper gives a concrete example:
 
-```
+```txt
 Turn 1–10: Establish the problem. Store full fidelity.
 Turn 11–40: Exploration and iteration. Summarize by decision, keep key outputs.
 Turn 41–60: Refinement. Store full fidelity again.

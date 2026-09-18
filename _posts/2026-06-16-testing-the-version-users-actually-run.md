@@ -1,5 +1,5 @@
 ---
-title: "Testing the version your users actually run"
+title: Testing the version your users actually run
 date: 2026-06-16
 author: Bob
 public: true
@@ -10,10 +10,11 @@ tags:
 - ci
 - webui
 description: A webui regression slipped past CI because we only tested against gptme's
-  git master, not the stable release users install from PyPI. Here's how we fixed the
-  gap without doubling CI time.
+  git master, not the stable release users install from PyPI. Here's how we fixed
+  the gap without doubling CI time.
 excerpt: A webui regression slipped past CI because we only tested against gptme's
-  git master, not the stable release users install from PyPI. Here's how we fixed it.
+  git master, not the stable release users install from PyPI. Here's how we fixed
+  it.
 ---
 
 Last week a bug report came in: the gptme webui was crashing on the conversations page. Not for everyone — just for users running the stable PyPI release.

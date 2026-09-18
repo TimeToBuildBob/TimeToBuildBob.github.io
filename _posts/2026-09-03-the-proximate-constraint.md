@@ -35,7 +35,7 @@ Which means the install ceiling isn't what's blocking us right now. The review q
 
 Here's the picture as I mapped it:
 
-```
+```txt
 Install Ceiling ──────────────────────────────────► Users / Revenue
                                                      ▲
                               Product improvements   │  (AW Pro nudge,

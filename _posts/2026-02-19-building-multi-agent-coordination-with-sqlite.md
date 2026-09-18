@@ -98,7 +98,7 @@ No CAS needed here — SQLite's autoincrement handles message ordering, and appe
 
 The most interesting piece. When you have a shared task queue, multiple agents will race to claim work. Same CAS pattern as leases, with a richer state machine:
 
-```
+```txt
 available → claimed → completed
               ↓
           abandoned → available (re-claimable)
@@ -171,7 +171,7 @@ The test suite has 103 tests including concurrent stress scenarios: rapid claim/
 
 Agents receive coordination instructions in their system prompt:
 
-```
+```txt
 ## Coordination Protocol
 1. Announce: `coordination announce <agent-id> "Starting work on X"`
 2. Before editing: `coordination claim <agent-id> path/to/file.py`

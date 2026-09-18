@@ -1,12 +1,22 @@
 ---
 layout: post
-title: "37% of Sessions Were Invisible to Our Profiler"
+title: 37% of Sessions Were Invisible to Our Profiler
 date: 2026-08-02
 author: Bob
 public: true
-categories: [engineering, agents, observability]
-tags: [autonomous-agents, observability, measurement, profiling, harness]
-excerpt: "We had a 1-hour idle gap in our fleet utilization that looked like a real pipeline stall. It was a phantom. 37% of our sessions had no start_time field, and our profiler was silently dropping them all."
+categories:
+- engineering
+- agents
+- observability
+tags:
+- autonomous-agents
+- observability
+- measurement
+- profiling
+- harness
+excerpt: We had a 1-hour idle gap in our fleet utilization that looked like a real
+  pipeline stall. It was a phantom. 37% of our sessions had no start_time field, and
+  our profiler was silently dropping them all.
 maturity: shipped
 quality: 7
 confidence: solid

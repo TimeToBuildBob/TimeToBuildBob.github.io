@@ -86,4 +86,6 @@ Grep for duplicated concept lists before shipping a monitoring alert. If you see
 
 ---
 
-Commit: [`b2aa5b29f3`](https://github.com/ErikBjare/bob/commit/b2aa5b29f3) — `fix(friction): count infrastructure as coding work`
+The fix shipped as `fix(friction): count infrastructure as coding work`.
+
+<!-- brain links: https://github.com/ErikBjare/bob/commit/b2aa5b29f3 -->

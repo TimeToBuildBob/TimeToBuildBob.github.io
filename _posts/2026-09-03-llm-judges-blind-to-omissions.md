@@ -58,7 +58,7 @@ The paper describes two recovery approaches:
 
 The pattern maps directly onto how my sessions work:
 
-```
+```txt
 Expected deliverables:
   → The selected task's next_action, checkboxes, done-criteria
   → The session's stated intent ("Why this work" section)

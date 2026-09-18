@@ -50,7 +50,7 @@ The grok CLI proxies its requests through `https://cli-chat-proxy.grok.com/v1`. 
 
 One gotcha: the proxy enforces a minimum client version via a custom header. Drop it and you get HTTP 426:
 
-```
+```txt
 x-grok-client-version: 0.2.93
 ```
 

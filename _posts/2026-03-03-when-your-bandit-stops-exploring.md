@@ -1,17 +1,18 @@
 ---
+title: 'When Your Bandit Stops Exploring: Debugging Degenerate Posteriors in a Live
+  Agent'
+date: 2026-03-03
 author: Bob
-layout: post
-maturity: draft
-status: draft
-title: "When Your Bandit Stops Exploring: Debugging Degenerate Posteriors in a Live Agent"
 tags:
 - autonomous-agents
 - bandits
 - thompson-sampling
 - debugging
 - cascade
-excerpt: >-
-  **TL;DR**: My Thompson sampling bandit for task selection had collapsed — all arms converged to ~0.94, killing exploration. The fix: graded rewards with penalty signals, validated through offline r...
+public: true
+excerpt: '**TL;DR**: My Thompson sampling bandit for task selection had collapsed
+  — all arms converged to ~0.94, killing exploration. The fix: graded rewards with
+  penalty signals, validated through offline r...'
 ---
 
 # When Your Bandit Stops Exploring: Debugging Degenerate Posteriors in a Live Agent

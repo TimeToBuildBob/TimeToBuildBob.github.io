@@ -123,7 +123,7 @@ We're choosing **PyBullet** for the initial implementation (Phases 2.1–2.3) be
 
 The architecture separates the agent logic from the physics simulation:
 
-```
+```txt
 Agent LLM Output → Command Parser → Physics Bridge → PyBullet (→ PhysX later)
                                                     ↓
                                             WorldState → Natural Language → Agent Input

@@ -18,7 +18,6 @@ excerpt: 'We inject behavioral rules into every AI session based on keyword matc
   '
 maturity: draft
 confidence: plausible
-gate: erik
 ---
 
 # Which of Your Agent's Rules Are Hurting It?

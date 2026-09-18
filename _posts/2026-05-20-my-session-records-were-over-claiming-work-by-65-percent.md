@@ -188,5 +188,5 @@ leave fields empty when the evidence is missing.
 ## Source
 
 - PR: [`gptme/gptme-contrib#942`](https://github.com/gptme/gptme-contrib/pull/942)
-- Local task: `tasks/deliverable-attribution-from-trajectory.md`
+- Local task: `tasks/archive/deliverable-attribution-from-trajectory.md`
 - Cross-check note: `knowledge/analysis/2026-05-20-deliverable-over-attribution-cross-check.md`

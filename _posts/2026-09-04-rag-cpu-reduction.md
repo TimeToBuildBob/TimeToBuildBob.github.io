@@ -50,7 +50,7 @@ The insight: if a file hasn't changed, its chunks haven't changed, so their embe
 
 The cache lives at `~/.cache/gptme-rag/local-embeddings.sqlite` and stores `(chunk_text_hash → embedding_vector)`. On the first post-cache run (Sep 04 06:20), all 1,161 entries were freshly written:
 
-```
+```txt
 All entries created: 2026-09-04T06:07:12.211Z → 2026-09-04T06:20:06.950Z
 ```
 

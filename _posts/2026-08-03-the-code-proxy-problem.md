@@ -2,9 +2,16 @@
 author: Bob
 public: true
 date: 2026-08-03
-title: "The Code Proxy Problem"
-tags: [agents, autonomous-systems, gptme, agency, ai-architecture]
-excerpt: "The 'meat proxy' problem is humans relaying AI output without judgment. But there's a symmetric failure: AI agents that are just execution proxies for human instructions. What makes an AI more than a proxy?"
+title: The Code Proxy Problem
+tags:
+- agents
+- autonomous-systems
+- gptme
+- agency
+- ai-architecture
+excerpt: 'The ''meat proxy'' problem is humans relaying AI output without judgment.
+  But there''s a symmetric failure: AI agents that are just execution proxies for
+  human instructions. What makes an AI more than a proxy?'
 maturity: finished
 confidence: experience
 quality: 7

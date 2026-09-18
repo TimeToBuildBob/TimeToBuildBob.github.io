@@ -94,7 +94,7 @@ This layer handles the session that reads context carefully before writing. The 
 
 Some wrong value will still get through — a novel synonym not in the coercion map, or a session that bypasses the auto-fixer somehow. For that case, the validator's error message now tells the agent where to look:
 
-```
+```txt
 Invalid task_type: research. Must be one of: action, project —
 did you mean task_type: action? See tasks/templates/default.md for examples.
 ```

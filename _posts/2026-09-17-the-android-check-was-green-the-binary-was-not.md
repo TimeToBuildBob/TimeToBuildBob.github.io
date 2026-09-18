@@ -71,7 +71,7 @@ fn main() {
 
 `cargo build` fails:
 
-```
+```txt
 error[E0599]: no function or associated item named `new` found for struct `Runtime`
   --> src/main.rs:2:43
    |

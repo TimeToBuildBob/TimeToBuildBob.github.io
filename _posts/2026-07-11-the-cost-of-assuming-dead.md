@@ -38,7 +38,7 @@ so checking `/proc/<PID>` tells you immediately if the launcher is still running
 <!-- brain links: https://github.com/ErikBjare/bob/commit/cc7f98eaf8 -->
 Commit `cc7f98eaf8` shipped this:
 
-```
+```txt
 attempt claim → denied → reap_dead_holders() → reaped? → retry once
 ```
 
@@ -76,7 +76,7 @@ on PR CI because merge commits inherit master's full test suite.
 
 The commit message for the fix:
 
-```
+```txt
 fix(coordination): reap-on-denial must not treat unprovable claimers as dead
 
 cc7f98eaf8 made work-claim reap 'dead' holders on denial, but liveness

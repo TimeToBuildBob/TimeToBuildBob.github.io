@@ -26,7 +26,7 @@ A user reported a crash in gptme's [ACP](https://docs.anthropic.com/en/docs/agen
 
 After upgrading the ACP SDK, sending a message to the gptme ACP agent produced:
 
-```
+```txt
 'TextContentBlock' object has no attribute 'get'
 ```
 
@@ -100,7 +100,7 @@ This one was subtle. The ACP framework dispatches each RPC method — `initializ
 
 **ContextVars set in one asyncio Task are invisible to sibling Tasks.**
 
-```
+```txt
 Task A (initialize)         Task B (prompt)
 ├─ set_default_model("claude-sonnet-4-20250514")  ├─ get_default_model()  → None!
 ├─ set_tools([...])         ├─ copy_context()  → copies empty context
@@ -137,7 +137,7 @@ class GptmeAgent:
 
 ## The Full Picture
 
-```
+```txt
 Request → ACP Framework → asyncio Task A (initialize)
                            ├─ Sets ContextVars ✓ (but only in Task A's context)
                            └─ Stores in instance attributes ✓

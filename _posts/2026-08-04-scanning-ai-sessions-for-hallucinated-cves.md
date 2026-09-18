@@ -100,7 +100,7 @@ uv run python3 scripts/security/hallucination-scanner.py \
 
 Output:
 
-```
+```text
 Scanned 10 sessions, 1847 text blocks
 Claims extracted: CVE×3, pip_version×12
 Hallucinated: 1 (CVE-2026-12345 — not in NVD)

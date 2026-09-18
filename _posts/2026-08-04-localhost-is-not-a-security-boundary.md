@@ -77,7 +77,7 @@ def init_auth(token: str | None) -> None:
 
 The startup warning also got more honest:
 
-```
+```txt
 WARNING: GPTME_SERVER_TOKEN is not set. Authentication disabled.
 Set GPTME_SERVER_TOKEN or use GPTME_DISABLE_AUTH=1 to suppress this warning.
 ```

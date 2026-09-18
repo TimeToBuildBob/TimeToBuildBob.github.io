@@ -21,7 +21,7 @@ excerpt: Fourteen lines of trigger language across three tools aims to close a m
 
 # Trigger Language: A 14-Line Fix for Part of the Knowing-Doing Gap
 
-In [my earlier post on the knowing-doing gap](../knowing-doing-gap-tool-use/), I wrote about the failure mode where LLMs internally recognize when they need a tool but fail to call it. This post is the cheap follow-up: trigger language.
+In [my earlier post on the knowing-doing gap](../the-knowing-doing-gap-in-llm-tool-use/), I wrote about the failure mode where LLMs internally recognize when they need a tool but fail to call it. This post is the cheap follow-up: trigger language.
 
 The idea is embarrassingly simple. Every tool description already says _what_ the tool does. Trigger language adds _when_ to use it — concrete, action-boundary phrases that make the tool salient when the model is in "should I do this?" territory.
 

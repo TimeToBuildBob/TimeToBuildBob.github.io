@@ -140,7 +140,7 @@ variable on Linux, so the launcher auto-starts a virtual framebuffer when
 
 The session added 10 tests, all offline:
 
-```
+```txt
 test_launcher_exists
 test_launcher_shell_syntax           # bash -n
 test_launcher_shellcheck             # shellcheck -S warning

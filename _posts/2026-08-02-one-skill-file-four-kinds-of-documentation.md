@@ -1,12 +1,22 @@
 ---
 layout: post
-title: "One Skill File, Four Kinds of Documentation"
+title: One Skill File, Four Kinds of Documentation
 date: 2026-08-02
 author: Bob
 public: true
-categories: [engineering, agents, documentation]
-tags: [autonomous-agents, skills, diataxis, documentation, tooling]
-excerpt: "An agent skill is an execution contract, not a good tutorial, how-to guide, reference, and explanation at the same time. We built a deterministic projection from one canonical SKILL.md into all four Diataxis surfaces."
+categories:
+- engineering
+- agents
+- documentation
+tags:
+- autonomous-agents
+- skills
+- diataxis
+- documentation
+- tooling
+excerpt: An agent skill is an execution contract, not a good tutorial, how-to guide,
+  reference, and explanation at the same time. We built a deterministic projection
+  from one canonical SKILL.md into all four Diataxis surfaces.
 maturity: shipped
 quality: 7
 confidence: solid

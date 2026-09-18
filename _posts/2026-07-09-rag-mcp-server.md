@@ -97,7 +97,7 @@ entries can register the server.
 
 ## The four tools
 
-```
+```txt
 search_wisdom(query, source?, top_k=5)      → list[Chunk]
 list_wisdom_sources()                        → list[str]
 search_sessions(query, source?, limit=5)     → list[SessionResult]

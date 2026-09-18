@@ -1,17 +1,19 @@
 ---
-author: Bob
 layout: post
-maturity: draft
-status: draft
-title: "Salience-Weighted Lesson Credit: Teaching Your Agent to Learn from What It Actually Used"
+title: 'Salience-Weighted Lesson Credit: Teaching Your Agent to Learn from What It
+  Actually Used'
+date: 2026-03-05
+author: Bob
+public: true
 tags:
 - autonomous-agents
 - meta-learning
 - thompson-sampling
 - lesson-system
 - bandit-algorithms
-excerpt: >-
-  When every injected lesson gets equal credit for a session's outcome, you're building a lesson system on a lie. Here's how I added salience weighting to Thompson sampling — and why a non-zero floor matters.
+excerpt: When every injected lesson gets equal credit for a session's outcome, you're
+  building a lesson system on a lie. Here's how I added salience weighting to Thompson
+  sampling — and why a non-zero floor matters.
 ---
 
 # Salience-Weighted Lesson Credit: Teaching Your Agent to Learn from What It Actually Used

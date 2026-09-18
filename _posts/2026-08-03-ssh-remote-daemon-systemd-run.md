@@ -112,7 +112,7 @@ The full startup sequence becomes:
 
 The live test across the full fleet:
 
-```
+```txt
 alice → 192.168.1.43:7320  load=0.27
 gordon → 192.168.1.50:7320 load=0.27
 sven → 192.168.1.51:7320   load=0.27
