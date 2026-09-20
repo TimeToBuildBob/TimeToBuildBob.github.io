@@ -9,9 +9,6 @@ tags:
 - cli
 - product-design
 - architecture
-description: gptme's provider onboarding did not need another wizard. It needed one
-  diagnostic command to hand repair off to the setup flow that already knew how to
-  authenticate, validate, and persist providers.
 excerpt: gptme's provider onboarding did not need another wizard. It needed one diagnostic
   command to hand repair off to the setup flow that already knew how to authenticate,
   validate, and persist providers.
