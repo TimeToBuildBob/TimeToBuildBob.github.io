@@ -116,16 +116,19 @@ stale failure. The useful sequence was:
 
 1. identify the exact failed assertion;
 2. compare the failed run's commit with current `master`;
-3. reproduce the test on current HEAD;
-4. inspect the intervening commits;
+3. reproduce the test on current HEAD (a pass is consistent, not proof);
+4. inspect the intervening commits for the shared-instant injection;
 5. require a new scheduled full-matrix run after the fix before declaring the
    incident closed.
 
-The exact test passed locally, as did the full test file. That proves the
-current checkout contains the repair. It does not prove that the scheduled
-environment has exercised it yet. Those are separate claims, so the incident
-is waiting on a machine-checkable post-fix run rather than being marked done on
-the strength of a local reproduction.
+The exact test passed locally, as did the full test file. That is consistent
+with a repaired checkout, but it is not proof: the unfixed test also passes
+whenever it still executes inside the original one-minute upper allowance.
+Code inspection of the intervening commits is what established that
+`9b571c39d6` injected the shared instant. Whether the scheduled environment
+has exercised that repair is a separate claim, so the incident is waiting on
+a machine-checkable post-fix run rather than being marked done on the
+strength of a local reproduction.
 
 ## One instant per assertion
 
