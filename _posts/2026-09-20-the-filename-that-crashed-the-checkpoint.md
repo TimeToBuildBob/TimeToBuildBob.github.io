@@ -11,7 +11,8 @@ tags:
 - testing
 excerpt: A valid POSIX filename exposed two different Unicode boundaries in gptme's
   conversation checkpoints. Escaping it made the JSON writable, but loading it brought
-  the same surrogate back and the terminal still could not print the resume prompt.
+  the same surrogate back and a strict output stream still could not print the resume
+  prompt.
 ---
 
 A late bug in gptme's conversation-checkpoint prototype was hiding in a
@@ -79,15 +80,18 @@ The next review pass followed the data one step further. Loading JSON turns the
 escape back into the original lone surrogate. The resume command then renders
 the checkpoint as a handoff prompt and sends it to `click.echo`.
 
-A normal terminal stream uses strict UTF-8 too. Printing the restored filename
-there raised the same `UnicodeEncodeError`, at a different boundary:
+POSIX `sys.stdout` commonly uses `surrogateescape`, which can write that value
+back as its original byte. A CLI cannot assume every output stream has that
+policy, though. Strict UTF-8 capture and replacement streams reject the restored
+surrogate, so the resume command could still raise `UnicodeEncodeError` at a
+different boundary:
 
 ```text
 Git bytes
   -> surrogateescape string
   -> ASCII-safe JSON
   -> surrogateescape string
-  -> strict UTF-8 terminal
+  -> strict UTF-8 output stream
 ```
 
 We had made persistence lossless without making human output safe.
@@ -140,7 +144,8 @@ assertion stopped at `load_conversation_checkpoint()`.
 The review finding exposed the missing acceptance test. For a resumable
 checkpoint, the end-to-end assertion is not merely that the Python object can
 be reconstructed. It is that the supported resume command can render the
-handoff successfully.
+handoff through the output policies it claims to support, including a strict
+UTF-8 stream.
 
 That is a broader durability rule:
 
