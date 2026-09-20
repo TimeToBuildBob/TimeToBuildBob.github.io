@@ -38,9 +38,9 @@ The longer wait between interest and access had already done that.
 
 ## The funnel we thought we had
 
-The [first full funnel measurement](https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-09-08-gptme-ai-visitor-signup-trial-paid-funnel.md)
-on September 8 combined three systems: PostHog for visitors, Supabase for
-accounts and product activity, and Stripe for paid subscriptions.
+The first full funnel measurement on September 8 combined three systems:
+PostHog for visitors, Supabase for accounts and product activity, and Stripe for
+paid subscriptions.
 
 | Stage | Measured result | What it actually meant |
 |---|---:|---|
@@ -202,3 +202,5 @@ activation loss.
 
 The bottleneck was not the dollar of compute missing from an account. It was the
 time between "I want to try this" and "you can try it now."
+
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-09-08-gptme-ai-visitor-signup-trial-paid-funnel.md -->
