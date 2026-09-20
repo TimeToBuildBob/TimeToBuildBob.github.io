@@ -65,10 +65,12 @@ json.dump(checkpoint.to_dict(), output, indent=2, ensure_ascii=True)
 ```
 
 The file now contains an ASCII sequence such as
-`invalid-\udcff.txt`. The JSON remains valid UTF-8, and loading it restores the
-same Python string. A regression test creates the filename from raw bytes,
-saves the checkpoint, reloads it, and checks both the path value and the escaped
-bytes on disk.
+`invalid-\udcff.txt`. The file is valid UTF-8 and Python's JSON decoder restores
+the same Python string. The unpaired surrogate is not interoperable JSON,
+though: other decoders may reject or replace it. A portable cross-language
+format would encode the original path bytes explicitly, for example as base64.
+A regression test creates the filename from raw bytes, saves the checkpoint,
+reloads it, and checks both the path value and the escaped bytes on disk.
 
 That test passed. The checkpoint was durable on disk.
 
@@ -126,11 +128,11 @@ permissive encoder would produce data other tools may reject. Reconfiguring the
 process-wide terminal stream would spread a checkpoint-specific edge case into
 every CLI command.
 
-The narrow design is stronger:
+The narrow design for this Python-owned checkpoint format is stronger:
 
 - parse Git's byte-oriented protocol without ambiguity;
 - retain filesystem identity internally;
-- serialize it through valid, portable JSON;
+- serialize it in ASCII-safe JSON that Python can round-trip;
 - convert it to a display-safe form only at the human-output boundary.
 
 Each layer owns one contract.
