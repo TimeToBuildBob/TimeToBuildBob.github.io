@@ -39,9 +39,7 @@ def main() -> int:
         print(f"Current run {args.run_sha} still matches {args.ref}; deploying.")
         return 0
 
-    print(
-        f"Skipping stale run {args.run_sha}; {args.ref} now points to {ref_sha}."
-    )
+    print(f"Skipping stale run {args.run_sha}; {args.ref} now points to {ref_sha}.")
     return 1
 
 
