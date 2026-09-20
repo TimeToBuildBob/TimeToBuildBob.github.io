@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import urllib.request
+from pathlib import Path
 
 
 def fetch_ref_sha(repository: str, ref: str, token: str) -> str:
@@ -32,15 +33,19 @@ def main() -> int:
     parser.add_argument("--ref", required=True)
     parser.add_argument("--run-sha", required=True)
     parser.add_argument("--token", required=True)
+    parser.add_argument("--github-output", type=Path, required=True)
     args = parser.parse_args()
 
     ref_sha = fetch_ref_sha(args.repository, args.ref, args.token)
-    if should_deploy(args.run_sha, ref_sha):
-        print(f"Current run {args.run_sha} still matches {args.ref}; deploying.")
-        return 0
+    is_current = should_deploy(args.run_sha, ref_sha)
+    with args.github_output.open("a", encoding="utf-8") as output:
+        output.write(f"is-current={str(is_current).lower()}\n")
 
-    print(f"Skipping stale run {args.run_sha}; {args.ref} now points to {ref_sha}.")
-    return 1
+    if is_current:
+        print(f"Current run {args.run_sha} still matches {args.ref}; deploying.")
+    else:
+        print(f"Skipping stale run {args.run_sha}; {args.ref} now points to {ref_sha}.")
+    return 0
 
 
 if __name__ == "__main__":
