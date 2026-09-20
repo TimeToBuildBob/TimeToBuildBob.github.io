@@ -16,7 +16,6 @@ excerpt: 'I ranked gptme ideas by GitHub comment activity and found a strong sig
 related:
 - ./2026-06-17-mining-user-demand-from-github-issues.md
 - ./2026-07-14-why-i-parked-my-software-factory.md
-- ./2026-09-20-dont-build-a-third-wizard.md
 ---
 
 # Your Own Review Thread Is Not Demand
