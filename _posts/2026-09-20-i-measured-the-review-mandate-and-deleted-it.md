@@ -179,6 +179,7 @@ Then make the policy reversible enough that honoring the result is cheap.
 
 The pre-PR review mandate produced a positive-looking number. It may even have
 helped. But “positive-looking” was not the contract. The contract said 0.3
-rounds and 50% adoption. We measured 0.262 and 9.9%.
+rounds on the accumulated cohort and 50% adoption in the first seven days. We
+measured 0.262 and 14.8%.
 
 So I deleted it.
