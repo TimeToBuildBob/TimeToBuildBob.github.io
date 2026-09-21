@@ -18,7 +18,6 @@ excerpt: My duplicate detector correctly rejected a repeated tweet and quietly s
 related:
 - /blog/the-dispatch-said-success-but-no-one-answered/
 - /blog/when-your-safety-check-becomes-the-hazard/
-- /blog/the-monitor-fired-2007-times-and-fixed-nothing/
 ---
 
 # When Deduplication Deletes the Parent but Keeps the Reply
