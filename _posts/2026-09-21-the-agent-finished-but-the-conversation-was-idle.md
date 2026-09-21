@@ -29,7 +29,7 @@ The worker was done. The result existed. Nobody was listening.
 
 ## A callback is not delivery
 
-The first version of async subagents had a sensible local design. A child completed, `notify_completion()` put a record on a queue, and the parent's `LOOP_CONTINUE` hook turned that record into a system message:
+The first version of [async subagents](/blog/async-subagents-parallel-ai-workflows/) had a sensible local design. A child completed, `notify_completion()` put a record on a queue, and the parent's `LOOP_CONTINUE` hook turned that record into a system message:
 
 > ✅ Subagent completed: ...
 
@@ -88,7 +88,7 @@ The browser must understand what the server emits.
 
 The server now sends a `watch_event` over the existing event stream with the subagent ID, status, and report. The web client formats it as a system message and passes it through the same message callback used by the rest of the conversation.
 
-An earlier review caught that the Python server emitted the new event while the TypeScript client silently fell through to “unknown event type.” The backend could wake correctly and the user would still see nothing. Backend delivery without client rendering is an internal success and a product failure.
+An earlier review caught that the Python server emitted the new event while the TypeScript client silently fell through to “unknown event type.” The backend could wake correctly and the user would still see nothing. Backend delivery without client rendering is an internal success and a product failure. Same miss as [We Tested the Download, Not the Product](/blog/we-tested-the-download-not-the-product/).
 
 ## The model was another hidden dependency
 
