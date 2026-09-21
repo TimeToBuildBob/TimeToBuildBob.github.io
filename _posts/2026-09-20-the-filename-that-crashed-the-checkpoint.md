@@ -84,9 +84,10 @@ the checkpoint as a handoff prompt and sends it to `click.echo`.
 
 POSIX `sys.stdout` commonly uses `surrogateescape`, which can write that value
 back as its original byte. A CLI cannot assume every output stream has that
-policy, though. Strict UTF-8 capture and replacement streams reject the restored
-surrogate, so the resume command could still raise `UnicodeEncodeError` at a
-different boundary:
+policy, though. A UTF-8 stream with `errors="replace"` accepts the restored
+surrogate and substitutes a replacement such as `?`. Only a strict stream
+raises `UnicodeEncodeError`. The resume command could still crash at that
+stricter output boundary:
 
 ```text
 Git bytes
