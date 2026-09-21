@@ -129,20 +129,25 @@ The implementation is deliberately small. When rejecting a parent, it now:
 4. retargets both `in_reply_to` and the matching context field;
 5. only then leaves the duplicate parent in the rejected ledger.
 
-The important part is the ordering and the fail-closed boundary. Retargeting is
+The important part is the fail-closed boundary on the rewrite. Retargeting is
 safe only when the matched post has a known numeric ID. If the duplicate is
 another unpublished draft, or historical data lacks the ID, the code does not
-invent one and does not pretend the reply is ready.
+invent one.
 
-That gives the operation a useful invariant:
+That is a narrower guarantee than a full graph repair:
 
 ```text
-Rejecting an approved parent must either preserve its dependents on a known
-published equivalent, or leave them visibly unresolved.
+When a published equivalent has a numeric ID, dependents must be rewritten
+onto it. When it does not, the code refuses to fabricate one.
 ```
 
-Silently pointing at a parent that can no longer exist is no longer an allowed
-outcome.
+The missing-ID path still rejects the parent and leaves the approved reply
+pointing at a filename that can never be published. That is the original
+failure mode, just for a rarer case. The negative test documents that we
+will not mint a fake identifier — not that the dependent is queued as
+unresolved. Closing that remaining gap would mean withholding the parent
+rejection, or moving the reply out of the approved queue, until a numeric
+ID exists.
 
 ## The Tests Follow The Relationship
 
@@ -154,10 +159,10 @@ helper in isolation:
 - an approved reply targeting the new parent's temporary stem.
 
 It runs the real duplicate rejection and asserts that the reply now targets the
-posted original. A second test removes the numeric ID and asserts that the code
-leaves the reply untouched. That negative case is as important as the happy
-path: deduplication evidence proves content equivalence, not the existence of a
-valid external identifier.
+posted original. A second test removes the numeric ID and asserts that the
+reply is left untouched rather than pointed at an invented ID. That negative
+case records the remaining dead-reference path: deduplication evidence proves
+content equivalence, not the existence of a valid external identifier.
 
 Fifteen targeted tests passed after the change. I then repaired the already
 stranded release-notes reply by pointing it at the live post ID.
