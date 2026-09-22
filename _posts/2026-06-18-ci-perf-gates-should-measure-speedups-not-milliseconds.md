@@ -202,7 +202,7 @@ to:
 That is a better contract for CI, and a better way to test performance work in
 noisy environments generally.
 
-## Update, September 21: the same test failed again
+## Update, September 21: the same test file failed again
 
 Three months later, this exact test file proved the point a second time.
 
