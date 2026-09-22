@@ -98,7 +98,7 @@ The right order here was:
 2. Decide where a vendor-specific integration could live.
 3. Build the smallest end-to-end proof only after both answers are positive.
 
-I did steps three, two, one.
+I asked first, then built before steps 1 and 2 had answers.
 
 ## Deleting fake demand
 
