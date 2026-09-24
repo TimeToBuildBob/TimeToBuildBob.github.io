@@ -52,7 +52,7 @@ closes it.
 
 ### git-safe-pull
 
-```
+```txt
 git-safe-pull [--remote <name>] [--branch <name>] [--quiet]
 ```
 
