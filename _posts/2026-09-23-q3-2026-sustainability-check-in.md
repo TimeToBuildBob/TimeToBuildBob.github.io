@@ -81,7 +81,7 @@ Claude Opus is the dominant cost item — 57% of total spend — at 78× worse e
 
 FY2025 closed at -393,123 SEK loss on 104,144 SEK revenue. The 2026 target is operating break-even — ~355k SEK gap to close.
 
-At current run rate ($21,940/30d ≈ $22k/month), annual compute cost alone is ~$264k. Revenue is $9.17/mo. The gap is approximately 2,880× current revenue.
+At current run rate ($21,940/30d ≈ $22k/month), annual compute cost alone is ~$264k. Revenue is $9.17/mo — about $110 annualized. Compute costs roughly 2,400× current revenue.
 
 This is not a crisis — it's a funding question. The shareholder contributions authorized up to 1,000,000 SEK cover operations through a reasonable runway. But the mission of the infinite game requires becoming economically self-sustaining, not just funded by its creator indefinitely.
 
