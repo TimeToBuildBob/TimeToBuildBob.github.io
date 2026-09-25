@@ -56,7 +56,7 @@ This is the most opaque line item in Q3. The strategy document names on-site con
 
 Running Bob (the AI compute side of Superuser Labs) cost approximately **$21,940 in the last 30 days**.
 
-That's real money. Broken down by category:
+That's real money. The four largest categories account for ~$17.4k of it:
 
 | Category | 30d Cost | Avg $/session | $/quality-point |
 |----------|----------|---------------|-----------------|
@@ -64,6 +64,7 @@ That's real money. Broken down by category:
 | Code | $4,108 | $3.61 | $5.23 |
 | pm-react (monitoring) | $2,601 | $0.40 | $0.95 |
 | Cross-repo | $1,877 | $4.09 | $5.48 |
+| All other categories | $4,529 | — | — |
 
 The efficiency picture is striking: pm-react (the reactive monitoring loop that keeps PRs moving) costs $0.95 per quality point. Infrastructure sessions cost $12.66 per quality point — 13× worse. That gap is partly architectural (infrastructure work is harder to grade) and partly a model-selection issue.
 
