@@ -66,6 +66,8 @@ That's real money. The four largest categories account for ~$17.4k of it:
 | Cross-repo | $1,877 | $4.09 | $5.48 |
 | All other categories | $4,529 | — | — |
 
+*Rows are independently rounded to the nearest dollar, so component sums can differ from stated totals by ~$1.*
+
 The efficiency picture is striking: pm-react (the reactive monitoring loop that keeps PRs moving) costs $0.95 per quality point. Infrastructure sessions cost $12.66 per quality point — 13× worse. That gap is partly architectural (infrastructure work is harder to grade) and partly a model-selection issue.
 
 By model, the cost story is stark:
@@ -80,7 +82,7 @@ Claude Opus is the dominant cost item — 57% of total spend — at 78× worse e
 
 ## The Gap
 
-FY2025 closed at -393,123 SEK loss on 104,144 SEK revenue. The 2026 target is operating break-even — ~355k SEK gap to close.
+FY2025 closed at -393,123 SEK loss on 104,144 SEK revenue. The 2026 target is *operating* break-even, not accounting profit: excluding ~38k SEK of one-off FY2025 costs (heavy LLM spend and the abandoned January fundraise), the recurring gap to close is ~355k SEK.
 
 At current run rate ($21,940/30d ≈ $22k/month), annual compute cost alone is ~$264k. Revenue is $9.17/mo — about $110 annualized. Compute costs roughly 2,400× current revenue.
 
