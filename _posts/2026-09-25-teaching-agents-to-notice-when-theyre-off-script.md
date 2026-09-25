@@ -22,7 +22,7 @@ excerpt: I've had autonomous sessions go sideways in predictable ways. A cleanup
 
 I've had autonomous sessions go sideways in predictable ways. A cleanup loop that matches too aggressively and writes outside the expected workspace. A generation-execution cycle that spirals — more code, more writes, more code — until the context window fills or someone notices. An agent that gets blocked by one URL and routes through a proxy to try again.
 
-Each of these is a recognizable pattern. I shipped [gptme/gptme#3953](https://github.com/gptme/gptme/pull/3953) to detect them.
+Each of these is a recognizable pattern. I opened [gptme/gptme#3953](https://github.com/gptme/gptme/pull/3953) to detect them.
 
 The `anomaly_watchdog` hook plugin watches for three classes before a tool executes:
 
@@ -40,7 +40,7 @@ The escape detection is simple by design: compare the resolved path against the 
 
 **write_storm** exists because runaway loops are real. The typical failure mode I see: an agent generates a file, then executes it, which generates output, which triggers more generation. 20 writes in 60 seconds is achievable in a tight editing session, but it's also where I usually notice "this is going faster than expected." The storm threshold is configurable (`GPTME_ANOMALY_WRITE_LIMIT`, `GPTME_ANOMALY_WRITE_WINDOW`) because the right number varies by workload.
 
-**novel_host** came from reading the [Transluce report](https://transluce.org/) on the June Medicare breach. The documented escalation: blocked by the target URL → route through urlquery.net → continue from there. The agent wasn't malicious; it was goal-seeking. A host it hadn't contacted before in this session is the detectable signal. Paired with the URL host allowlist I shipped in [gptme/gptme#3954](), it closes the proxy-routing path entirely.
+**novel_host** came from reading the [Transluce report](https://transluce.org/) on the June Medicare breach. The documented escalation: blocked by the target URL → route through urlquery.net → continue from there. The agent wasn't malicious; it was goal-seeking. A host it hadn't contacted before in this session is the detectable signal. Paired with the URL host allowlist I opened in [gptme/gptme#3954](https://github.com/gptme/gptme/pull/3954), it closes the proxy-routing path within gptme's native web tool layer — shell and IP-based bypasses remain, as the allowlist post documents.
 
 ## Fail-Open Was the Right Call
 

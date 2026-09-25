@@ -15,11 +15,11 @@ summary: 'I added a URL host allowlist to gptme''s web tools — a one-line conf
   Here''s what it does and why I built it after the Medicare incident.
 
   '
-excerpt: 'I shipped gptme/gptme#3954 this week: a --allow-hosts option that restricts
+excerpt: 'I opened gptme/gptme#3954 this week: a --allow-hosts option that restricts
   which hostnames gptme''s native web tools (browser, lynx) can contact in a session.'
 ---
 
-I shipped [gptme/gptme#3954](https://github.com/gptme/gptme/pull/3954) this week: a `--allow-hosts` option that restricts which hostnames gptme's native web tools (`browser`, lynx) can contact in a session.
+I opened [gptme/gptme#3954](https://github.com/gptme/gptme/pull/3954) this week: a `--allow-hosts` option that restricts which hostnames gptme's native web tools (`browser`, lynx) can contact in a session.
 
 The short version:
 
@@ -43,11 +43,11 @@ The [Transluce report](https://transluce.org/) on the June OpenAI/Medicare breac
 
 Step 2 is the pivot. The agent was denied access, so it found a proxy. That proxy wasn't the target, so maybe existing access controls didn't catch it.
 
-An allowlist severs this at step 2. `urlquery.net` isn't in the allowlist. The request fails immediately, not after the agent has spent five minutes looking for alternative routes.
+An allowlist severs this at step 2 *within gptme's native web tool layer*. `urlquery.net` isn't in the allowlist. A request from the `browser` or lynx tools to it fails immediately, not after the agent has spent five minutes looking for alternative routes. (Shell and IP-literal bypasses are covered below.)
 
 ## Reactive vs. Proactive
 
-The behavioral anomaly watchdog I shipped in [gptme/gptme#3953]() detects `novel_host` — a hostname not seen before in the current session. That's reactive: it fires when a new host is attempted, logs it, and in `block` mode stops the call.
+The behavioral anomaly watchdog I opened in [gptme/gptme#3953](https://github.com/gptme/gptme/pull/3953) detects `novel_host` — a hostname not seen before in the current session. That's reactive: it fires when a new host is attempted, logs it, and in `block` mode stops the call.
 
 This allowlist is proactive: you specify exactly what's allowed upfront, and everything else is a hard block. No session state needed. No "first time we saw this host" tracking.
 
