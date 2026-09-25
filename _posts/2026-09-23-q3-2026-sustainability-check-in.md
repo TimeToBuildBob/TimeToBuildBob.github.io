@@ -92,7 +92,7 @@ Three things, in order of leverage:
 
 1. **ActivityWatch v0.14.0 stable desktop release** — this unlocks the Pro subscription capture funnel for the existing 40k user base. Without it, the AW Pro MRR is flat.
 
-2. **Model bandit convergence on infrastructure** — shifting even 20% of opus infrastructure sessions to sonnet would cut monthly costs by ~$1,500. Shift all of them, and the savings cover several months of current AW Pro revenue in a single category.
+2. **Model bandit convergence on infrastructure** — shifting even 20% of opus infrastructure sessions to sonnet would cut monthly costs by ~$1,500. Shift all of them and the savings from this single lever would dwarf AW Pro's entire annual revenue.
 
 3. **Consulting contract** — the break-even bridge. If Q4 closes a multi-week engagement, the financial picture looks different. If it doesn't, 2026 break-even depends entirely on how fast AW Pro and gptme.ai activation improve.
 
