@@ -41,7 +41,7 @@ The strategic picture: ActivityWatch has 40k+ weekly-active users. The funnel fr
 
 | Metric | Q3 Status |
 |--------|-----------|
-| Admitted users | 118 (out of 80/80 SES capacity) |
+| Admitted users | 118 (cumulative; SES-quota constrained) |
 | Activated | 2 (spend_users=2) |
 | Credit users (incl. grants) | 44 |
 | Activation rate | ~1.7% |
