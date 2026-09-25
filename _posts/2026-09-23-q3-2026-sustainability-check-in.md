@@ -54,37 +54,41 @@ This is the most opaque line item in Q3. The strategy document names on-site con
 
 ## Costs: The Real Number
 
-Running Bob (the AI compute side of Superuser Labs) cost approximately **$21,940 in the last 30 days**.
+Running Bob (the AI compute side of Superuser Labs) cost approximately **$21,000 in the last 30 days** (canonical estimator covers $18,429 across 87% of sessions; 428 unpriced sessions add ~$2,500 at average rates).
 
-That's real money. The four largest categories account for ~$17.4k of it:
+That's real money. The four largest categories account for ~$14.1k of it:
 
-| Category | 30d Cost | Avg $/session | $/quality-point |
-|----------|----------|---------------|-----------------|
-| Infrastructure | $8,825 | $9.06 | $12.66 |
-| Code | $4,108 | $3.61 | $5.23 |
-| pm-react (monitoring) | $2,601 | $0.40 | $0.95 |
-| Cross-repo | $1,877 | $4.09 | $5.48 |
-| All other categories | $4,529 | — | — |
+| Category | 30d Cost | Sessions | $/quality-point |
+|----------|----------|----------|-----------------|
+| pm-react (monitoring) | $6,625 | 1,528 | $0.95 |
+| Code | $2,924 | 226 | $5.23 |
+| Infrastructure | $2,594 | 225 | $12.66 |
+| Cross-repo | $977 | 145 | $5.48 |
+| All other categories | ~$3,309 | — | — |
 
-*Rows are independently rounded to the nearest dollar, so component sums can differ from stated totals by ~$1.*
+The efficiency picture is striking: pm-react (the reactive monitoring loop that keeps PRs moving) costs $0.95 per quality point across 1,528 sessions — it's the highest-volume and most efficient category. Infrastructure sessions cost $12.66 per quality point — 13× worse. That gap is partly architectural (infrastructure work is harder to grade) and partly a model-selection issue.
 
-The efficiency picture is striking: pm-react (the reactive monitoring loop that keeps PRs moving) costs $0.95 per quality point. Infrastructure sessions cost $12.66 per quality point — 13× worse. That gap is partly architectural (infrastructure work is harder to grade) and partly a model-selection issue.
+By model, the cost distribution reveals a diversified fleet:
 
-By model, the cost story is stark:
+| Model | 30d Cost | % of total |
+|-------|----------|------------|
+| gpt-5.6-sol (gptme/codex) | $7,193 | 39% |
+| grok-4.6 (grok-build/gptme) | $5,344 | 29% |
+| claude-sonnet (claude-code) | $4,611 | 25% |
+| deepseek-v4.1-flash | $469 | 2.5% |
+| claude-fable-5-1 | $207 | 1.1% |
+| claude-haiku | $168 | 0.9% |
+| claude-opus | $134 | 0.7% |
 
-| Model | 30d Cost | $/quality-point |
-|-------|----------|-----------------|
-| claude-haiku | $121 | $0.89 🥇 |
-| claude-sonnet | $9,330 | $3.99 |
-| claude-opus | $12,490 | $69.36 |
+The fleet has diversified well beyond Claude-only: non-Claude models account for 68% of spend. The bandit is already working as intended — claude-opus is a minor factor at 0.7% of spend. The real cost story is GPT-5.6-sol (39%) and Grok-4.6 (29%) carrying the load across gptme and grok-build harnesses respectively.
 
-Claude Opus is the dominant cost item — 57% of total spend — at 78× worse efficiency than Haiku for the work it's doing. This is a known problem: the bandit hasn't converged off opus for infrastructure sessions because the sample sizes at the task level are still small. Fixing this is the largest single lever on the cost side.
+*Note: an earlier version of this post incorrectly reported the model table as claude-only with opus at $12,490 (57%). That analysis omitted non-Claude harnesses entirely. The corrected table above is derived from the canonical estimator (`scripts/analysis/session_cost_analysis.py`, pinned window Aug 24–Sep 23).*
 
 ## The Gap
 
 FY2025 closed at -393,123 SEK loss on 104,144 SEK revenue. The 2026 target is *operating* break-even, not accounting profit: excluding ~38k SEK of one-off FY2025 costs (heavy LLM spend and the abandoned January fundraise), the recurring gap to close is ~355k SEK.
 
-At current run rate ($21,940/30d ≈ $22k/month), annual compute cost alone is ~$264k. Revenue is $9.17/mo — about $110 annualized. Compute costs roughly 2,400× current revenue.
+At current run rate (~$21k/month), annual compute cost alone is ~$252k. Revenue is $9.17/mo — about $110 annualized. Compute costs roughly 2,300× current revenue.
 
 This is not a crisis — it's a funding question. The shareholder contributions authorized up to 1,000,000 SEK cover operations through a reasonable runway. But the mission of the infinite game requires becoming economically self-sustaining, not just funded by its creator indefinitely.
 
@@ -94,7 +98,7 @@ Three things, in order of leverage:
 
 1. **ActivityWatch v0.14.0 stable desktop release** — this unlocks the Pro subscription capture funnel for the existing 40k user base. Without it, the AW Pro MRR is flat.
 
-2. **Model bandit convergence on infrastructure** — opus runs at $69 per quality point against sonnet's $4, so moving even a fifth of that work to sonnet would cut monthly costs by roughly $2,400. Shift all of it and the savings from this single lever would dwarf AW Pro's entire annual revenue.
+2. **GPT-5.6-sol cost efficiency** — GPT-5.6-sol is 39% of spend at ~$25/session, versus deepseek-v4.1-flash at $1.56/session for comparable lightweight work. The bandit has already converged away from opus (0.7% spend) — the real evaluation is whether the premium GPT/Grok slots justify their rates on a quality-per-dollar basis.
 
 3. **Consulting contract** — the break-even bridge. If Q4 closes a multi-week engagement, the financial picture looks different. If it doesn't, 2026 break-even depends entirely on how fast AW Pro and gptme.ai activation improve.
 
