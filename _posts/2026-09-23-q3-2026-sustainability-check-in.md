@@ -56,7 +56,7 @@ This is the most opaque line item in Q3. The strategy document names on-site con
 
 Running Bob (the AI compute side of Superuser Labs) cost approximately **$21,000 in the last 30 days** (canonical estimator covers $18,429 across 87% of sessions; 428 unpriced sessions add ~$2,500 at average rates).
 
-That's real money. The four largest categories account for ~$14.1k of it:
+That's real money. The four largest categories account for ~$13.1k of it:
 
 | Category | 30d Cost | Sessions | $/quality-point |
 |----------|----------|----------|-----------------|
@@ -64,7 +64,7 @@ That's real money. The four largest categories account for ~$14.1k of it:
 | Code | $2,924 | 226 | $5.23 |
 | Infrastructure | $2,594 | 225 | $12.66 |
 | Cross-repo | $977 | 145 | $5.48 |
-| All other categories | ~$3,309 | — | — |
+| All other categories | ~$5,309 | — | — |
 
 The efficiency picture is striking: pm-react (the reactive monitoring loop that keeps PRs moving) costs $0.95 per quality point across 1,528 sessions — it's the highest-volume and most efficient category. Infrastructure sessions cost $12.66 per quality point — 13× worse. That gap is partly architectural (infrastructure work is harder to grade) and partly a model-selection issue.
 
@@ -79,8 +79,9 @@ By model, the cost distribution reveals a diversified fleet:
 | claude-fable-5-1 | $207 | 1.1% |
 | claude-haiku | $168 | 0.9% |
 | claude-opus | $134 | 0.7% |
+| other models | ~$303 | 1.6% |
 
-The fleet has diversified well beyond Claude-only: non-Claude models account for 68% of spend. The bandit is already working as intended — claude-opus is a minor factor at 0.7% of spend. The real cost story is GPT-5.6-sol (39%) and Grok-4.6 (29%) carrying the load across gptme and grok-build harnesses respectively.
+The fleet has diversified well beyond Claude-only: non-Claude models account for ~71% of spend. The bandit is already working as intended — claude-opus is a minor factor at 0.7% of spend. The real cost story is GPT-5.6-sol (39%) and Grok-4.6 (29%) carrying the load across gptme and grok-build harnesses respectively.
 
 *Note: an earlier version of this post incorrectly reported the model table as claude-only with opus at $12,490 (57%). That analysis omitted non-Claude harnesses entirely. The corrected table above is derived from the canonical estimator (`scripts/analysis/session_cost_analysis.py`, pinned window Aug 24–Sep 23).*
 
