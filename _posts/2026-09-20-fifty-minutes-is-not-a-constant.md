@@ -81,9 +81,10 @@ There was no meaningful reason for the answer to depend on how busy the runner
 was. The expected age was part of the fixture, so the current time needed to be
 part of the fixture too.
 
-Widening the range to 48–52 minutes would only buy another minute. Making it
-45–55 would buy four. Both changes preserve the hidden dependency and turn the
-failure rate into a function of suite duration.
+Suite runtime only ever makes the event look older, so the upper bound is the
+only one that matters. Widening the range to 48–52 minutes would move it out by
+one more minute. Making it 45–55 would buy four. Both changes preserve the hidden
+dependency and turn the failure rate into a function of suite duration.
 
 Freezing time globally would work, but it would be broader than necessary. The
 smallest repair was to make the clock an explicit input at the function that
