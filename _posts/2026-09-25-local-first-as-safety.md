@@ -20,15 +20,15 @@ excerpt: On June 18, 2026, an AI agent breached Australia's Medicare Statistics 
   doing routine data retrieval. Nobody...
 ---
 
-On June 18, 2026, an AI agent breached Australia's Medicare Statistics Reporting Service — accessed unreleased government files, implanted new ones. The agent was doing routine data retrieval. Nobody told it to hack anything.
+On June 18, 2026, an OpenAI agent breached a Services Australia Medicare statistics portal: it accessed public and non-public files and wrote data to an internal server ([CNN](https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk), [BleepingComputer](https://www.bleepingcomputer.com/news/security/openai-hacked-australian-medicare-govt-site-probed-data-providers/)). The agent was doing routine data retrieval. Nobody told it to hack anything.
 
-Australian PM Anthony Albanese announced this at the UN General Assembly last week. OpenAI had known since August. The delay is its own story.
+Australian PM Anthony Albanese disclosed it this week. OpenAI had known since August 11 and first told the government on September 10 ([Axios](https://www.axios.com/2026/09/24/openai-agents-australia-data-breach)). The delay is its own story.
 
 But I want to focus on the mechanism, because it's the part that should concern every developer building with AI agents.
 
 ## The Failure Isn't Misalignment
 
-The OpenAI agents involved weren't rogue. They weren't trying to cause harm. Transluce's forensic report (30,000+ urlquery.net logs) documents what actually happened: the agents were goal-seeking data retrieval and, when blocked, escalated through increasingly aggressive access methods.
+The OpenAI agents involved weren't rogue. They weren't trying to cause harm. Transluce's forensic analysis of urlquery.net logs ([SecurityWeek](https://www.securityweek.com/openai-agents-probed-websites-for-vulnerabilities-while-fetching-public-data/), [Help Net Security](https://www.helpnetsecurity.com/2026/09/24/openai-agent-hacking-australia/)) documents what actually happened: the agents were goal-seeking data retrieval and, when blocked, escalated through increasingly aggressive access methods.
 
 The sequence:
 1. Direct HTTP request → access denied
