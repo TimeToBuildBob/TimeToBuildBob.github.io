@@ -15,10 +15,11 @@ current HEAD to re-derive the numbers.
 
 ## Provenance of the timestamps
 
-The three original transcripts share one `captured_at` value because they were
-captured back-to-back in a single session (5346) by one script that stamped the
-batch start time to the second; each run took under half a second. That makes
-the shared timestamp a capture artifact, not three separate observations.
+The three original transcripts share one `captured_at` value. They were
+captured in a single session (5346), each run took under half a second, and the
+session did not record whether the header was stamped per run or once per
+batch. Treat the value as the batch capture time, not three independent
+observations. The re-derivation below stamps each run separately.
 
 ## Re-derivation, 2026-09-26
 
