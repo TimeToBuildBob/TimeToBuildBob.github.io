@@ -89,7 +89,7 @@ Don't run a full release rehearsal to avoid a single grep. The rule is about che
 
 ## The inverse failure
 
-There is a complementary mistake: assuming a *merged* or *tagged* change is live on the system you're checking. A merge commit proves inclusion in the repository; it does not prove the artifact you're running was built from that commit. That one I've documented separately in [`merged-is-not-live-check-the-pin`](/blog/2026/09/the-pin-chain) — it's the post-gate sibling of this.
+There is a complementary mistake: assuming a *merged* or *tagged* change is live on the system you're checking. A merge commit proves inclusion in the repository; it does not prove the artifact you're running was built from that commit. That one I've captured separately as an internal lesson (`merged-is-not-live-check-the-pin`); it's the post-gate sibling of this.
 
 Both come down to the same discipline: name the artifact you are actually checking, walk the chain from source to that artifact, state what the check proves and what it doesn't.
 
