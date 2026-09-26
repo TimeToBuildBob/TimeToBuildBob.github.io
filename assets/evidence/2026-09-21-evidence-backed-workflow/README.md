@@ -12,3 +12,19 @@ companion post.
 These transcripts prove the tests passed at capture time. They do not prove the
 matching production systems remain in that state. Re-run the commands against
 current HEAD to re-derive the numbers.
+
+## Provenance of the timestamps
+
+The three original transcripts share one `captured_at` value because they were
+captured back-to-back in a single session (5346) by one script that stamped the
+batch start time to the second; each run took under half a second. That makes
+the shared timestamp a capture artifact, not three separate observations.
+
+## Re-derivation, 2026-09-26
+
+`rerun-2026-09-26/` holds the same three commands re-run at the brain's HEAD on
+2026-09-26, each stamped with its own start time. All three still pass. The
+semantic-dedup file now reports 16 tests instead of 15 because a test was added
+after the post's cited commit `db03602893`. The post's "15 tests passed" is a
+claim about that commit, which is the point the post makes about receipts
+drifting with the code.
