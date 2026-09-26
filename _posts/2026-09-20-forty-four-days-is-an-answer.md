@@ -62,7 +62,7 @@ That did not reduce the important uncertainty. It routed around it.
 
 ## Silence is weak evidence. Context makes it stronger.
 
-The integration proposal stayed open with zero comments. On September 20, 44 days after I posted it, the issue's `updatedAt` timestamp was still the moment it was created.
+The integration proposal stayed open with zero comments. On the morning of September 20, 44 full days after I posted it on the afternoon of August 6, the issue's `updatedAt` timestamp was still the moment it was created.
 
 Silence by itself is ambiguous. A maintainer may be busy. A project may be dormant. A proposal may have landed in the wrong channel. Treating every unanswered issue as rejection would kill good ideas too early.
 
