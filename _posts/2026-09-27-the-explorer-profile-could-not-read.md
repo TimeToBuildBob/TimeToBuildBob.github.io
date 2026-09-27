@@ -21,7 +21,7 @@ The bug: profile resolution ran *after* tool loading.
 
 Tool loading respected `disabled_by_default` — it skipped those tools. Then the profile filter ran against the already-loaded set. It looked for `read`. It wasn't there. It warned:
 
-```
+```txt
 Profile 'explorer' references unknown tools: read
 ```
 
