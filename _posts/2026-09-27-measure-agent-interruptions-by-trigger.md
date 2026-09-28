@@ -87,6 +87,11 @@ numbers will move as new dispatches arrive.
 | `merge_conflict` | 14.3 | 1.8 | 0.494 | 93.0% | 58.3% |
 | `assigned_issue` | 9.0 | 1.9 | 0.627 | 88.9% | 100.0% |
 
+The table is the largest atoms, not the complete set. Those eight rows
+sum to 794.8 equivalent dispatches. The 812-equivalent total includes
+smaller trigger types omitted here; they do not change the ranking or
+the notification share.
+
 The most important comparison is not the grade column. Grade coverage is only
 63% for notifications, and review events naturally generate cleaner visible
 artifacts than monitoring or triage. The decision comes from several signals
