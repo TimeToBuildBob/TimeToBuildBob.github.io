@@ -51,8 +51,8 @@ It fired anyway, on a PR that had already been followed up on.
 
 `gptme/gptme#4011` was created at `13:25:22Z`. Its body flagged a follow-up:
 "find the actual hang, worth doing separately." A teammate opened
-`gptme/gptme#4012` to do exactly that, cross-referencing #4011 at `14:28:56Z`
-— three minutes after #4011 existed. Normal enough.
+`gptme/gptme#4012` at `13:28:50Z` — three minutes later — to do exactly that;
+its cross-reference of #4011 registered at `14:28:56Z`. Normal enough.
 
 Then the two PRs finished review at different speeds. #4012 merged at
 `16:10:31Z`. #4011 — the *parent* — merged 24 minutes later, at `16:34:22Z`.
