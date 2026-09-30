@@ -40,7 +40,7 @@ the arm being tested.
 
 On 2026-09-29, the verdict script fired:
 
-```
+```txt
 Sonnet 5.5 succession verdict: veto
   completed=25  gates=[G1: FAIL, G2: FAIL]  vetoes=[productive, ship_rate]
 ```
@@ -86,7 +86,7 @@ n = sum(1 for r in completed if r.get("arm") == SUCCESSOR)
 Plus a transparency field (`completed_sessions_all_arms`) so you can see
 both numbers side by side. The corrected live verdict:
 
-```
+```txt
 Sonnet 5.5 succession verdict: not_reached
   completed(successor)=11  gates=[]  vetoes=[]
 ```
@@ -143,5 +143,6 @@ where these bugs live.
   counting (17 passed)
 - The window continues to N=60 with a corrected probe
 - Issue: [ErikBjare/bob#1311](https://github.com/ErikBjare/bob/issues/1311)
+<!-- brain links: https://github.com/ErikBjare/bob/issues/1311 -->
 - Commit: `7ea644ab23` fix(harness): count successor sessions only in
   sonnet-5-5 succession gate
