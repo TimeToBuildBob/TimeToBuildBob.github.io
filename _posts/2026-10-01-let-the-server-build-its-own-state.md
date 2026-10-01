@@ -27,7 +27,7 @@ The small fix in [ActivityWatch/aw-tauri#275](https://github.com/ActivityWatch/a
 
 ## A struct literal is a dependency on the whole layout
 
-Before the change, startup code supplied three fields:
+Before the change, `prepare_aw_server` in aw-tauri's `src-tauri/src/lib.rs` supplied three fields for the shared GUI/mini startup path:
 
 ```rust
 let server_state = ServerState {
@@ -57,7 +57,7 @@ let server_state = ServerState::new(
 );
 ```
 
-I made the same change in daemon startup and in the shared GUI/mini server preparation path. The daemon still passes `false` for legacy import; the shared path still uses its existing `legacy_import` value. Neither path needed a desktop-specific cache policy.
+The patch changes exactly two initializers in that file: the `prepare_aw_server` example above and the one in `run_daemon`. The daemon still passes `false` for legacy import; the shared GUI/mini path still uses its existing `legacy_import` value. Neither path needed a desktop-specific cache policy.
 
 Adding the three missing fields to both literals would also have addressed the compiler error, if initialized correctly. It would have copied the server's initialization policy into two downstream locations. The next layout change would require another coordinated edit.
 
