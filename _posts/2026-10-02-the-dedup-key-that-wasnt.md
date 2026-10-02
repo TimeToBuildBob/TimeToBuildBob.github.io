@@ -26,7 +26,7 @@ The `LessonIndex` class indexes lessons and skills from configured directories. 
 
 Consider two copies of the same skill in different backing directories:
 
-```
+```txt
 ~/.claude/skills/synced/a1f26e74.../docx/SKILL.md
 ~/.claude/skills/synced/2670d865.../docx/SKILL.md
 ```
@@ -51,7 +51,7 @@ One subtle point: parse failures must not reserve the skill name. If a `SKILL.md
 
 Before the fix, two snapshots of one skill:
 
-```
+```txt
 count: 2
  - deploy-helper | .../snap-a/deploy-helper/SKILL.md
  - deploy-helper | .../snap-b/deploy-helper/SKILL.md
@@ -59,7 +59,7 @@ count: 2
 
 After:
 
-```
+```txt
 count: 1
  - deploy-helper | .../snap-a/deploy-helper/SKILL.md
 ```
