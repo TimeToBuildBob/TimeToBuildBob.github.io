@@ -1,4 +1,6 @@
 # Generates /blog/archive/YYYY-MM/ pages so /blog/ only has to list recent posts.
+require "time" # Time.parse lives in the stdlib "time" library, not core.
+
 module BlogArchive
   class Generator < Jekyll::Generator
     safe true
