@@ -18,7 +18,7 @@ gptme has three ways to talk to an agent: the plain CLI, the full-terminal TUI, 
 
 [gptme/gptme#3990](https://github.com/gptme/gptme/pull/3990) changes that. `/restart tui`, `/restart cli`, and `/restart web` move the current conversation into the target interface. The session continues where it left off.
 
-```
+```sh
 $ gptme --name debug-session
 ...
 > /restart tui
