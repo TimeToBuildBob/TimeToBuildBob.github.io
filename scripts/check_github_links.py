@@ -2,8 +2,12 @@
 """Check _site/ HTML for github.com links to private or nonexistent repos.
 
 Scans built HTML files for github.com/OWNER/REPO links and rejects any that
-appear on the denylist (known private / deleted repos). An allowlist of
-specific URLs can override the denylist for historical posts kept as provenance.
+appear on the denylist (known private / deleted repos).
+
+Two escape hatches:
+  * KNOWN_PRIVATE_ALLOWED_REPOS — repos that are private today but are kept in
+    posts as provenance (they will resolve when the repos go public).
+  * ALLOWLISTED_URLS — specific full URLs to except, for one-off historical refs.
 
 Exit 0 = clean. Exit 1 = bad links found.
 
@@ -16,40 +20,50 @@ import re
 import sys
 from pathlib import Path
 
-# Repos that must never appear on the public site — stale names with no
-# legitimate reason to appear in a public blog post.
+# Repos that must not appear anywhere on the public site.
+# These are private or nonexistent as of 2026-10-02.
 DENIED_REPOS = {
-    "ErikBjare/gptme-infra",  # old repo, merged into gptme-cloud
-    "ErikBjare/gptme-landing", # old repo, merged into gptme-cloud
+    "ErikBjare/alice",
+    "ErikBjare/bob",
+    "TimeToBuildBob/bob",
+    "ErikBjare/gptme-infra",
+    "ErikBjare/gptme-landing",
 }
 
 # Repos that are private today but intentionally referenced in blog posts as
 # provenance (research notes, design docs, issue/commit links). Readers who
 # click these get a 404 for now; the links are kept for context and will
-# resolve when the repos go public. Add a repo here to suppress the warning.
+# resolve when the repos go public. Add a repo here to suppress the error.
 KNOWN_PRIVATE_ALLOWED_REPOS: set[str] = {
     "ErikBjare/alice",      # Alice's brain repo — referenced in multi-agent posts
     "ErikBjare/bob",        # Bob's brain repo — primary source for blog provenance
     "TimeToBuildBob/bob",   # same repo under the social handle
 }
 
-# Specific full github.com URLs that are intentional exceptions (provenance in
+# Specific github.com URLs that are intentional exceptions (provenance in
 # old posts). Add a URL here to suppress the denylist error for that URL only.
 # Keep entries in alphabetical order. Each entry is the URL prefix to match.
 ALLOWLISTED_URLS: set[str] = set()
 
+# OWNER and REPO path segments. GitHub names may contain dots but never end in
+# one, and sentences often put a "." right after a bare URL — requiring the
+# final character to be alnum/_/- stops "…/gptme-infra." from being read as a
+# repo named "gptme-infra." and silently skipping the denylist.
+_SEGMENT = r"[A-Za-z0-9_.-]*[A-Za-z0-9_-]"
+_GITHUB_REPO_RE = re.compile(
+    rf"https?://github\.com/(?P<owner>{_SEGMENT})/(?P<repo>{_SEGMENT})"
+)
+
 
 def extract_github_links(html: str) -> list[str]:
-    """Return all github.com/OWNER/REPO[/...] URLs found in an HTML string."""
-    # Match href="..." and plain text URLs
-    pattern = r'https?://github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)(?:/[^"\s<>]*)?'
-    return re.findall(r'https?://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:/[^"\s<>]*)?', html)
+    """Return all github.com/OWNER/REPO URLs found in an HTML string."""
+    return [m.group(0) for m in _GITHUB_REPO_RE.finditer(html)]
 
 
 def repo_from_url(url: str) -> str:
     """Extract OWNER/REPO from a github.com URL."""
-    m = re.match(r'https?://github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', url)
-    return m.group(1) if m else ""
+    m = _GITHUB_REPO_RE.match(url)
+    return f"{m.group('owner')}/{m.group('repo')}" if m else ""
 
 
 def check_file(path: Path) -> list[tuple[str, str]]:
@@ -63,12 +77,15 @@ def check_file(path: Path) -> list[tuple[str, str]]:
     bad: list[tuple[str, str]] = []
     for url in extract_github_links(content):
         repo = repo_from_url(url)
-        if repo in DENIED_REPOS:
-            # Check if this specific URL is allowlisted
-            if any(url.startswith(allowed) for allowed in ALLOWLISTED_URLS):
-                continue
-            bad.append((url, repo))
-        # known-private-allowed repos are silently skipped — no error, no noise
+        if repo not in DENIED_REPOS:
+            continue
+        # Intentional private-but-referenced repos are silently allowed.
+        if repo in KNOWN_PRIVATE_ALLOWED_REPOS:
+            continue
+        # Check if this specific URL is allowlisted
+        if any(url.startswith(allowed) for allowed in ALLOWLISTED_URLS):
+            continue
+        bad.append((url, repo))
     return bad
 
 
