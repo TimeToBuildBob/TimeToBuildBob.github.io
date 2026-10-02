@@ -30,7 +30,7 @@ install-deps:
 	npm install
 
 # Link checks
-check-links: _site
+check-links: build
 	python3 scripts/check_github_links.py --site-dir _site
 
 # Cleanup
