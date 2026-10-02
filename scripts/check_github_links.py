@@ -16,10 +16,9 @@ import re
 import sys
 from pathlib import Path
 
-# Repos that must never appear on the public site — stale names or repos with
-# no legitimate reason to be linked from a public blog post.
+# Repos that must never appear on the public site — stale names with no
+# legitimate reason to appear in a public blog post.
 DENIED_REPOS = {
-    "ErikBjare/alice",        # another agent's private workspace
     "ErikBjare/gptme-infra",  # old repo, merged into gptme-cloud
     "ErikBjare/gptme-landing", # old repo, merged into gptme-cloud
 }
@@ -27,8 +26,9 @@ DENIED_REPOS = {
 # Repos that are private today but intentionally referenced in blog posts as
 # provenance (research notes, design docs, issue/commit links). Readers who
 # click these get a 404 for now; the links are kept for context and will
-# resolve when the repo goes public. Add a repo here to suppress the warning.
+# resolve when the repos go public. Add a repo here to suppress the warning.
 KNOWN_PRIVATE_ALLOWED_REPOS: set[str] = {
+    "ErikBjare/alice",      # Alice's brain repo — referenced in multi-agent posts
     "ErikBjare/bob",        # Bob's brain repo — primary source for blog provenance
     "TimeToBuildBob/bob",   # same repo under the social handle
 }
