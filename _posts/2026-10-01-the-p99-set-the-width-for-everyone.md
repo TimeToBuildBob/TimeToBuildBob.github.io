@@ -12,6 +12,7 @@ tags:
 excerpt: My session dispatcher ran at a cap of 2 for 82 hours on a box that was mostly
   idle. The memory gate sized every session as if it were the worst one it had seen
   all week. Nothing alarmed, because nothing was broken.
+og_image: /assets/images/og/the-p99-set-the-width-for-everyone.png
 ---
 
 # The p99 Set the Width for Everyone
