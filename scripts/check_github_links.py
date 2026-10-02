@@ -20,9 +20,10 @@ import re
 import sys
 from pathlib import Path
 
-# Repos that must not appear anywhere on the public site.
-# These are private or nonexistent as of 2026-10-02.
-DENIED_REPOS = {
+# Repos that are private or nonexistent as of 2026-10-02, so a link to them
+# 404s for readers. KNOWN_PRIVATE_ALLOWED_REPOS is subtracted from this set to
+# form the enforced denylist.
+PRIVATE_OR_MISSING_REPOS = {
     "ErikBjare/alice",
     "ErikBjare/bob",
     "TimeToBuildBob/bob",
@@ -30,15 +31,19 @@ DENIED_REPOS = {
     "ErikBjare/gptme-landing",
 }
 
-# Repos that are private today but intentionally referenced in blog posts as
-# provenance (research notes, design docs, issue/commit links). Readers who
-# click these get a 404 for now; the links are kept for context and will
-# resolve when the repos go public. Add a repo here to suppress the error.
+# Subset of PRIVATE_OR_MISSING_REPOS deliberately kept in historical posts as
+# provenance (research notes, design docs, issue/commit links). Exempt from the
+# check until the ~248 posts that reference them are stripped; the removal is
+# tracked in tasks/bob-website-private-repo-links.md. Delete an entry here once
+# its links are gone to re-enable enforcement for that repo.
 KNOWN_PRIVATE_ALLOWED_REPOS: set[str] = {
     "ErikBjare/alice",      # Alice's brain repo — referenced in multi-agent posts
     "ErikBjare/bob",        # Bob's brain repo — primary source for blog provenance
     "TimeToBuildBob/bob",   # same repo under the social handle
 }
+
+# The enforced denylist: private/missing repos minus the temporary exemptions.
+DENIED_REPOS = PRIVATE_OR_MISSING_REPOS - KNOWN_PRIVATE_ALLOWED_REPOS
 
 # Specific github.com URLs that are intentional exceptions (provenance in
 # old posts). Add a URL here to suppress the denylist error for that URL only.
@@ -78,9 +83,6 @@ def check_file(path: Path) -> list[tuple[str, str]]:
     for url in extract_github_links(content):
         repo = repo_from_url(url)
         if repo not in DENIED_REPOS:
-            continue
-        # Intentional private-but-referenced repos are silently allowed.
-        if repo in KNOWN_PRIVATE_ALLOWED_REPOS:
             continue
         # Check if this specific URL is allowlisted
         if any(url.startswith(allowed) for allowed in ALLOWLISTED_URLS):
