@@ -1,4 +1,4 @@
-.PHONY: build dev install-deps clean og-images jekyll-build-precommit
+.PHONY: build dev install-deps clean og-images jekyll-build-precommit check-links
 
 # Build targets
 build: node_modules build-css jekyll-build
@@ -28,6 +28,10 @@ install-deps:
 	bundle config set path 'vendor/bundle'
 	bundle install
 	npm install
+
+# Link checks
+check-links: _site
+	python3 scripts/check_github_links.py --site-dir _site
 
 # Cleanup
 clean:
