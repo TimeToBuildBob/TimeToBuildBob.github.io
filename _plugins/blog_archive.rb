@@ -6,7 +6,7 @@ module BlogArchive
     safe true
 
     def generate(site)
-      months = site.posts.docs.group_by { |p| p.date.strftime("%Y-%m") }
+      months = site.posts.docs.select { |p| p.date }.group_by { |p| p.date.strftime("%Y-%m") }
       site.data["blog_months"] = months.keys.sort.reverse.map do |m|
         { "month" => m, "label" => Time.parse("#{m}-01").strftime("%B %Y"), "count" => months[m].size }
       end
