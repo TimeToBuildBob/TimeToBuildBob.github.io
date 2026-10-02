@@ -45,9 +45,9 @@ runtime does not create more capacity.
 | Runtime | Bob status | Primary access | Workspace contract |
 |---------|------------|----------------|--------------------|
 | **gptme** | Production, native | APIs, compatible subscriptions, managed and local models | Loads `gptme.toml`, runs dynamic context, and matches lessons |
-| **Claude Code** | Production adapter | Claude subscription | Loads `AGENTS.md`/`CLAUDE.md`; Bob's launcher injects the shared prompt and lesson hooks |
+| **Claude Code** | Production adapter | Claude subscription | Loads `AGENTS.md` (the `CLAUDE.md` symlink was removed 2026-09-19); Bob's launcher injects the shared prompt and lesson hooks |
 | **Codex** | Production adapter | ChatGPT subscription | Loads `AGENTS.md`; Bob's launcher injects the generated context packet and retains the rollout |
-| **Grok Build** | Production adapter | SuperGrok subscription | Loads repository instructions; Bob's launcher supplies prompt context, stream output, and session metadata |
+| **Grok Build** | Production adapter | SuperGrok subscription | Loads `AGENTS.md`; launcher prefixes the built identity/context/lesson packet onto `--prompt-file` because `--system-prompt-override` is inline-only and hits Linux's 128KB argv cap |
 | **Pi** | Production autonomous adapter for canary-proven routes | OpenRouter key, ChatGPT/Codex OAuth, and Grok/X OAuth verified | Preserves prompt and native sessions; `pi:grok-4.6` passed the productive canary and participates in normal Thompson selection |
 
 Bob also has a gated GitHub Copilot CLI adapter. It is not a primary runtime:
@@ -128,7 +128,7 @@ Concurrent sessions share files but should not share assumptions:
 
 gptme natively loads the prompt files listed in `gptme.toml`, runs
 `context_cmd`, and performs lesson matching. Other runtimes usually discover
-only `AGENTS.md` or `CLAUDE.md`, so Bob's launchers render additional identity,
+only `AGENTS.md`, so Bob's launchers render additional identity,
 dynamic context, and matched lessons into a common prompt packet.
 
 That packet is only one part of parity. A large prompt must have a safe

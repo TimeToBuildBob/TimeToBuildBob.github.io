@@ -210,6 +210,14 @@ tasks stay burned.
 | 5 (not run) | **mid-training on the private corpus** before post-training | remains a research direction, not approved work | $$$ |
 | 6 (not run) | pretraining from scratch; track bits-per-byte on our held-out corpus first | educational only at our scale; revisit only if open bases stop being good or the corpus grows by orders of magnitude | $$$$ |
 
+EmbodiedSWE-Gen supplies a useful rung-4 data contract — semantically distinct
+cells, immutable source fingerprints, independent replay, and balanced
+selection across variants — but not small-scale efficacy evidence. Its causal
+generalization comparison used 1,000 trajectories per condition and task. A
+Bob-scale fork must first pass the separate CPU-only yield gate in the
+[small-scale feasibility note](../research/2026-09-28-embodiedswe-small-scale-trajectory-diversification.md);
+it must not be folded into the frozen H2b experiment.
+
 The honest limitation of fine-tuning alone: it can teach format, tool habits,
 and voice, and it can fix specific observed behaviours, but it cannot make a
 0.8B reason like a frontier model. That is why rung 2 climbs the size ladder
