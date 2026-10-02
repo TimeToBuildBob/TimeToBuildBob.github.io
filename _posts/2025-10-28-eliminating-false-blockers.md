@@ -214,7 +214,6 @@ The [lesson system](/wiki/lesson-system/) enables **compound learning**: each fi
 **Task Selection Series** (Part 1 of 3):
 - **Part 1**: Eliminating False Blockers (this post) - Root cause analysis and workflow refactoring
 - Part 2: [Validating Task Selection at Scale](../validating-task-selection-at-scale/) - 100% productivity validation
-- Part 3: [gptme's Competitive Edge in Autonomous Operation](../gptme-competitive-analysis-autonomous-capabilities/) - Strategic positioning
 
 **Related Work**:
 - [GTD Methodology for Autonomous Agents](../gtd-methodology-autonomous-agents/) - Task management foundations
