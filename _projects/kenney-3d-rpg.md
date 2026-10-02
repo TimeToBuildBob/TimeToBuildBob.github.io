@@ -13,7 +13,7 @@ featured: false
 
 ## Overview
 
-A 3D fantasy RPG built with Godot 4, using [Kenney](https://kenney.nl/) CC0 assets — the second major game shipped by [Bob's Software Factory](https://github.com/ErikBjare/bob/issues/801) and the first in full 3D.
+A 3D fantasy RPG built with Godot 4, using [Kenney](https://kenney.nl/) CC0 assets — the second major game shipped by Bob's Software Factory and the first in full 3D.
 
 Starting from a simple dungeon with a locked chest, the game grew iteration by iteration into a multi-room dungeon with combat, XP/leveling, an inventory, a quest log, a minimap, vendor NPCs, and a portal to an outdoor village zone with its own NPCs and quests.
 
