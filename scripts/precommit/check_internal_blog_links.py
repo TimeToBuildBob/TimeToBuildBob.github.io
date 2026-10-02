@@ -35,6 +35,9 @@ def main(argv: list[str]) -> int:
     for path in files:
         if path.suffix != ".md" or path.parent.name != POSTS_DIR.name:
             continue
+        # pre-commit passes staged paths, including deleted files
+        if not path.exists():
+            continue
         for lineno, slug in find_broken_links(path, slugs):
             failed = True
             print(f"{path}:{lineno}: link to /blog/{slug}/ has no matching post in _posts/")

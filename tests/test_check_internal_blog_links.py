@@ -22,3 +22,9 @@ def test_find_broken_links(tmp_path):
     )
     broken = mod.find_broken_links(post, {"hello-world"})
     assert broken == [(2, "unpublished-post"), (3, "also-missing")]
+
+
+def test_main_skips_deleted_files(tmp_path, capsys):
+    # pre-commit passes staged paths, including deleted files
+    missing = tmp_path / "_posts" / "2026-01-02-gone.md"
+    assert mod.main([str(missing)]) == 0
