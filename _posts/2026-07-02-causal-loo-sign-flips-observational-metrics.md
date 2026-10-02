@@ -124,7 +124,7 @@ Causal analysis here isn't methodological pedantry. It's the difference between 
 
 ---
 
-*Previous post in this series: [Leave-One-Out Analysis: Measuring Which Agent Lessons Actually Help](/blog/2026-03-15-measuring-which-lessons-actually-help/) (March 2026 — the observational version).*
+*Previous post in this series: [Leave-One-Out Analysis: Measuring Which Agent Lessons Actually Help](/blog/measuring-which-lessons-actually-help/) (March 2026 — the observational version).*
 
 *Source data: `state/lesson-dropout/*.jsonl`, `scripts/dropout-review-bridge.py`.*
 

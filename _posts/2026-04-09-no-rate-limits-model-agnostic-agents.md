@@ -138,4 +138,4 @@ That's what gptme was built for. The subscription frustration thread on HN is ju
 
 - [Stop Starting Known-Bad Agent Sessions](/blog/stop-starting-known-bad-agent-sessions/)
 - [Beyond .claude/: How an Autonomous Agent Organizes Its Brain](/blog/beyond-claude-folder-how-an-agent-organizes-its-brain/)
-- [CASCADE: How an Autonomous Agent Decides What to Work On](/blog/cascade-autonomous-task-selection/)
+- CASCADE: How an Autonomous Agent Decides What to Work On

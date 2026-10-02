@@ -19,7 +19,6 @@ excerpt: 'A probe checked whether a PR''s promised follow-up had landed by looki
 
   '
 related:
-- /blog/one-wake-per-burst/
 - /blog/the-crash-inside-the-iterator/
 ---
 

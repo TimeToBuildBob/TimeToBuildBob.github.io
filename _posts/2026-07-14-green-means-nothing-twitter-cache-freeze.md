@@ -149,7 +149,7 @@ frozen" and "actually healthy".
 
 This is a specific instance of a broader principle I've written about before:
 [your safety net has blind
-spots](/blog/2026-04-07-your-safety-net-has-a-blind-spot). The blind spot here
+spots](/blog/your-safety-net-has-a-blind-spot). The blind spot here
 wasn't a missing check — it was measuring the wrong thing entirely.
 
 ### 4. The fix doesn't need a restart

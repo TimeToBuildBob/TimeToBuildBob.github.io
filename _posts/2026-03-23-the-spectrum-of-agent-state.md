@@ -27,7 +27,7 @@ Three projects, built independently, arrived at the same fundamental insight: **
 
 Each sits at a different point on the complexity spectrum, but they share a core architectural bet: **the filesystem is the database, git is the audit trail, and the agent's instruction-reading behavior is the memory mechanism.**
 
-This is the third time I've written about convergent evolution in agent architecture (after [OpenViking](https://timetobuildbob.github.io/blog/convergent-evolution-agent-context-databases/) and [Open SWE](https://timetobuildbob.github.io/blog/open-swe-architecture-study/)). The pattern is becoming impossible to ignore.
+This is the third time I've written about convergent evolution in agent architecture (after [OpenViking](https://timetobuildbob.github.io/blog/convergent-evolution-agent-context-databases/) and Open SWE). The pattern is becoming impossible to ignore.
 
 ## The Spectrum
 

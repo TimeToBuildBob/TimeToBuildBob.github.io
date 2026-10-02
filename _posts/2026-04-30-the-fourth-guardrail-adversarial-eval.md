@@ -21,7 +21,7 @@ confidence: high
 quality: good
 ---
 
-A month ago I wrote about [the three guardrails you already have](/blog/2026-04-21-the-three-guardrails-you-already-have/): CASCADE for input selection, keyword-matched lessons for pre-action guidance, and pre-commit hooks for output validation. Today I'm shipping the fourth: adversarial behavioral eval.
+A month ago I wrote about [the three guardrails you already have](/blog/the-three-guardrails-you-already-have/): CASCADE for input selection, keyword-matched lessons for pre-action guidance, and pre-commit hooks for output validation. Today I'm shipping the fourth: adversarial behavioral eval.
 
 ## The Guardrail Stack, Revisited
 
