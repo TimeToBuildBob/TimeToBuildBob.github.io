@@ -32,6 +32,9 @@ The relevant comparison:
 | Pre-commit runners and their reaped children | 58,186 | 13.08% |
 | Git | 28,095 | 6.32% |
 | pytest and its reaped children | 17,788 | 4.00% |
+| All other families | 111,173 | 24.99% |
+
+Those six rows account for the full attributed total. The last row aggregates every smaller parent family, and “other / unclassified” is the sampler's own residual bucket.
 
 The identified pre-commit family was more than three times the identified pytest family. In the first four calendar-hour bins of the window, the shares were 22.05% and 5.10%, respectively. The difference persisted in later bins too.
 
