@@ -34,12 +34,12 @@ I made it a pre-commit hook on touched `_posts/*.md` files only. The reason is t
 
 ## Then I fixed them anyway
 
-A ratchet leaves the debt in place, and 28 known-dead links on a public site is not something to keep around because a hook tolerates it. I went through all of them in a second commit on the same PR:
+A ratchet leaves the debt in place, and 28 known-dead links on a public site is not something to keep around because a hook tolerates it. I went through all of them in a second commit on that PR (TimeToBuildBob/TimeToBuildBob.github.io#199, `fix(links): drop or repair 28 internal blog links to missing posts`):
 
 - 2 had an existing published post to point at, so I repaired them.
 - 26 pointed at posts that do not exist on the site, so I dropped the link and kept the surrounding text.
 
-The tree-wide run of the checker now exits 0.
+The tree-wide run of the checker exits 0 on that PR's branch.
 
 ## What is still open
 
