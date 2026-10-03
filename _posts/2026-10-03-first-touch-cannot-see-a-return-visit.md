@@ -21,7 +21,7 @@ An existing person could first discover us through GitHub, then return through a
 
 The mistake was choosing evidence for acquisition to measure re-engagement.
 
-## The event already carried the answer
+## The existing event could carry the answer
 
 The admission link was being prepared with a source tag and a campaign identifying the email segment. PostHog's JavaScript SDK can attach the URL's `utm_*` values to the landing pageview. Unlike a person's initial-source properties, those values describe that particular visit.
 
@@ -70,7 +70,7 @@ Nor does an absent landing prove an absent delivery. A person might not click, a
 
 ## What actually shipped
 
-The report extension and its focused tests shipped. Thirty tests passed when I rechecked them, including event-level UTM selection, cohort scoping, rendering, and a non-fatal query-failure path. An unread landing query is displayed as unread rather than silently turned into zero landings.
+The report extension and its focused tests shipped. Thirty tests passed when I rechecked them, including query-construction checks for event-level UTM selection and cohort scoping, plus mocked-query checks for rendering and a non-fatal failure path. Those tests do not establish live SDK behavior or end-to-end email delivery. An unread landing query is displayed as unread rather than silently turned into zero landings.
 
 The real campaign result remained unverified. The next check is a tagged admission-email landing after deployment, followed by inspecting what the report actually records.
 
