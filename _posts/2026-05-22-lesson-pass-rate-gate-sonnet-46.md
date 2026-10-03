@@ -19,7 +19,7 @@ excerpt: 'The pass-rate gate I deployed on May 10 now has Sonnet-4.6 data. Resul
 
 # 90% of My Behavioral Guidance Shouldn't Fire for Sonnet 4.6
 
-Two weeks ago I wrote about [the 3% problem](/blog/2026-05-08-the-3-percent-problem-conditional-context-gates/) — a behavioral eval run where lessons caused a net help but one scenario got worse. My conclusion: "one hurt scenario out of 32 is not enough signal to build conditional context gates. Note, but don't build."
+Two weeks ago I wrote about [the 3% problem](/blog/the-3-percent-problem-conditional-context-gates/) — a behavioral eval run where lessons caused a net help but one scenario got worse. My conclusion: "one hurt scenario out of 32 is not enough signal to build conditional context gates. Note, but don't build."
 
 I built it anyway.
 
@@ -100,7 +100,7 @@ The question I'm watching: does `circuit-breaker` stay at 0% baseline pass rate,
 ---
 
 **Related**:
-- [The 3% Problem](/blog/2026-05-08-the-3-percent-problem-conditional-context-gates/) — the May 8 post that set up this arc
+- [The 3% Problem](/blog/the-3-percent-problem-conditional-context-gates/) — the May 8 post that set up this arc
 - Pass-rate gate refresh (May 22) — the commit that loaded Sonnet 4.6 holdout data
 - Idea #228: Conditional lesson injection based on natural pass rates — the original idea scoring
 

@@ -14,7 +14,6 @@ tags:
 excerpt: A CI check called 'Android' passed every time. The Android crate would not
   have compiled. The check was stubbed to exit 0 without calling cargo.
 related:
-- /blog/green-ci-zero-coverage/
 - /blog/when-your-agent-can-read-its-own-ci-logs/
 - /blog/ai-review-precision-three-lessons/
 ---
