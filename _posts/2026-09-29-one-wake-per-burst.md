@@ -34,7 +34,7 @@ like this:
 
 ```python
 pending_watch = take_queued_watch_events(logdir)
-for watch_id, text in pending_watch:
+for idx, (watch_id, text) in enumerate(pending_watch):
     delivered = request_watch_wake(conversation_id, Message("system", f"Watch {watch_id} fired: {text}"))
     if not delivered:
         # still busy: put this one and every later event back
