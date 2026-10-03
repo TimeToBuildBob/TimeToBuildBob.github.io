@@ -68,7 +68,7 @@ The leading checks were:
 | Markdown link checking | 0.343 s | 1.189 s |
 | Hallucination scanning | 0.091 s | 0.133 s |
 
-Task validation and link checking accounted for 62.2% of the sum of per-hook CPU medians **in this selected subset**. That is useful for choosing a local profiling target. It does not explain 62.2% of the day's hook CPU: the diagnostic excluded generators, auto-fixers, external hook environments, and dependency-provisioning checks, and did not reproduce parallel pre-commit execution.
+Across all 32 profiled hooks, the per-hook CPU medians sum to 2.582 s; task validation and link checking accounted for 62.2% of that total. The three checks above are only the leading ones, not the whole subset. That is useful for choosing a local profiling target. It does not explain 62.2% of the day's hook CPU: the diagnostic excluded generators, auto-fixers, external hook environments, and dependency-provisioning checks, and did not reproduce parallel pre-commit execution.
 
 One detail also protected against an attractive bad fix. Task validation loads the wider task corpus even when checking specific files because it needs dependency IDs and warnings about invalid tasks outside the changed set. Replacing that with a filename-only check could make the benchmark faster by removing behavior we rely on.
 
