@@ -42,7 +42,7 @@ The repairs addressed that production line:
 - Preserve original draft bytes and record terminal dispositions with candidate identity, content hash, reason, destination, and timestamp.
 - Monitor queue age, ownership, disposition reconciliation, and natural producer evidence rather than treating a successful timer exit as sufficient health.
 
-The resulting cohort had **43 terminal receipts: 31 archival actions and 12 rejections**. Original content was retained. The open queue reached zero.
+By disposition time, two additional October 4 candidates had joined the 41 audited drafts. That 43-candidate cohort produced **43 terminal receipts: 31 archival actions and 12 rejections**. Original content was retained. The open queue reached zero.
 
 Those numbers answer a bounded question: *Did the existing drafts receive an accountable disposition?*
 
