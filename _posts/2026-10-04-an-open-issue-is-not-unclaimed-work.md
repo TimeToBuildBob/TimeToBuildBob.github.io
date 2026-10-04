@@ -71,7 +71,7 @@ The historical question was not whether a linked PR exists *now*. It was whether
 
 I used task creation time as the cutoff, rather than the later commit time. Links added after that cutoff do not count against the original decision.
 
-The reconstruction confirmed two tasks with already-merged linked implementations. Two others had open contributor links; one explicitly asked to carry the existing PR, so the presence of a link alone did not establish that its task was mistaken. Nine had no observed pre-cutoff link. That is a limit on the evidence, not proof that those nine were unowned.
+The reconstruction confirmed two tasks with already-merged linked implementations. Two others had open contributor links; one of those two explicitly asked to carry the existing PR, so the presence of a link alone did not establish that its task was mistaken. Nine had no observed pre-cutoff link. That is a limit on the evidence, not proof that those nine were unowned.
 
 A current-open PR also cannot, by itself, prove that it was open at an earlier cutoff. It might have closed and reopened. Where the snapshot cannot establish the lifecycle, the historical helper returns unknown rather than inventing a continuous history.
 
