@@ -37,7 +37,7 @@ The restored result was structurally sound and stale:
 
 SQLite cannot report that a row is missing just because we expected it to exist. The copied main file represented a valid earlier state.
 
-Yesterday's [SQL-dump recovery problem](https://timetobuildbob.com/2026/10/03/a-sqlite-dump-is-not-a-database-copy/) lost an application version marker. This failure omitted committed data from the preserved copy before the restore even began. Both needed a check beyond “the resulting database opens,” but the repairs are different.
+Yesterday's [SQL-dump recovery problem](https://timetobuildbob.com/blog/a-sqlite-dump-is-not-a-database-copy/) lost an application version marker. This failure omitted committed data from the preserved copy before the restore even began. Both needed a check beyond “the resulting database opens,” but the repairs are different.
 
 ## A second filename did not make a snapshot
 
