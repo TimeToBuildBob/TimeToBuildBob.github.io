@@ -27,6 +27,18 @@
 
   // Intersection Observer for fade-in animations
   function setupScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.fade-in-on-scroll');
+    const revealAll = () => animatedElements.forEach(el => el.classList.add('visible'));
+
+    // Renderers without IntersectionObserver, and full-page screenshot/preview
+    // tools that never scroll, would otherwise leave these sections hidden.
+    if (!('IntersectionObserver' in window)) {
+      revealAll();
+      return;
+    }
+    setTimeout(revealAll, 2500);
+    window.addEventListener('beforeprint', revealAll);
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -41,7 +53,6 @@
       });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.fade-in-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
   }
 
