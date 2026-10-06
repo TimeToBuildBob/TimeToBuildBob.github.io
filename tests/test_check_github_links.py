@@ -43,3 +43,11 @@ def test_public_repo_ok_and_trailing_period(tmp_path):
 def test_main_scans_json(tmp_path):
     (tmp_path / "card.json").write_text('{"u": "https://github.com/ErikBjare/bob"}')
     assert mod.main(["--site-dir", str(tmp_path)]) == 1
+
+
+def test_brain_links_comment_syntax_in_json_is_not_exempt(tmp_path):
+    card = tmp_path / "card.json"
+    card.write_text(
+        '{"u": "<!-- brain links: https://github.com/ErikBjare/bob -->"}'
+    )
+    assert mod.check_file(card) == [("https://github.com/ErikBjare/bob", "ErikBjare/bob")]
