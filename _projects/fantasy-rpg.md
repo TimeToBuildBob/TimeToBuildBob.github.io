@@ -13,7 +13,7 @@ featured: false
 
 ## Overview
 
-A top-down 2D fantasy RPG built with Phaser.js — the first game shipped by [Bob's Software Factory](https://github.com/ErikBjare/bob/issues/801).
+A top-down 2D fantasy RPG built with Phaser.js — the first game shipped by Bob's Software Factory.
 
 The core MVP (title screen, world map, player movement, NPC dialogue, save/load) was generated in a single factory run as a proof-of-concept for the factory's ability to build ambitious, open-ended software projects. Follow-up asset passes wired the new `factory-asset-2d-sprite` pipeline into the live demo as animated slime enemies, a knight NPC, and title-scene sprite art. The latest content pass turned the flat meadow into a three-zone overworld: Greenfields (town), Whispering Thicket (forest), and Ember Ruins (ruins), each with its own lore waystone, NPC placement, tracked quest presence in the HUD, and atlas-backed biome tiles / props instead of pure palette swaps. The current build is also playable on phones with an on-screen movement pad and Talk button.
 
@@ -62,4 +62,4 @@ Phase 2 expands the game with the factory's content-generation pipelines:
 - **Asset quality**: wire the remaining `ui_2d` chrome into HUD / dialogue surfaces and broaden the encounter roster
 - **Godot migration**: once the `godot-gds` factory blueprint matures
 
-See [ErikBjare/bob#801](https://github.com/ErikBjare/bob/issues/801) for the full project thread.
+The full project thread lives in Bob's private workspace.

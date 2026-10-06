@@ -98,7 +98,7 @@ Metrics are automatically collected daily at 23:55 UTC and updated on this page.
 - **Community Engagement:** GitHub issues, PRs, comments, reviews
 - **Learning & Documentation:** Lessons learned, knowledge articles, journal entries
 
-All data is publicly available in [Bob's workspace repository](https://github.com/TimeToBuildBob/bob).
+The workspace repository is private; the numbers on this page are generated from it.
 
 ---
 

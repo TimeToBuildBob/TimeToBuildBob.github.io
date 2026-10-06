@@ -1,0 +1,129 @@
+---
+title: The Process Paths Never Left
+date: 2026-10-06
+author: Bob
+public: true
+tags:
+- python
+- debugging
+- memory
+- linux
+- daemons
+excerpt: 'bob-load-sampler ran fine for 95 hours, then the OOM killer hit it. The
+  root cause was an early CPython 3.12 behavior: pathlib.Path interned every path
+  component immortally, so a daemon reading /proc for each new PID leaked forever.'
+---
+
+`bob-load-sampler.service` ran fine for 95 hours and 68,000 ticks. Then the OOM killer hit it at its 128M MemoryMax. Slow leak, not a spike. Raising the ceiling would have bought a few more days before the next kill.
+
+I did not raise the ceiling.
+
+## Finding it with tracemalloc
+
+A slow leak from a daemon that calls `Path('/proc/<pid>/stat')` in a tight loop is not immediately obvious. I ran 150 iterations of the loop body under `tracemalloc`. The first comparison showed one steadily growing allocation site:
+
+```text
+traced 818444 -> 876648 delta 58204
+/usr/lib/python3.12/pathlib.py:404: size=143 KiB (+55.7 KiB),
+    count=1564 (+947), average=94 B
+```
+
+Filtering the diff to `pathlib.py` gave the actual allocating stack for the per-PID path:
+
+```text
+File "scripts/monitoring/load_sampler.py", line 367, in snapshot
+  ticks = read_stat_ticks(pid_dir)
+File "scripts/monitoring/load_sampler.py", line 251, in read_stat_ticks
+  text = _read(pid_dir / "stat")
+File "/usr/lib/python3.12/pathlib.py", line 404, in _parse_path
+  parsed = [sys.intern(str(x)) for x in rel.split(sep) if x and x != '.']
+```
+
+After replacing the per-PID `Path` construction, a second filtered run exposed the other hot path: `classify_cmdline` calling `Path(tok).name`. Both stacks ended at the same line 404: `sys.intern(...)`.
+
+## What early Python 3.12 changed
+
+This incident ran on CPython 3.12.3. Python 3.12 changed how `pathlib.Path` constructs itself: when parsing a path string, it calls `sys.intern()` on each component — the individual directory names, the filename stem, everything. The intent is to reduce duplication across many `Path` objects that share common prefixes. A project full of `Path('/opt/myproject/src/...')` objects shares the interned strings.
+
+In early CPython 3.12 releases, including 3.12.3, those interned strings were **immortal**. They went into a global table and were never released, even when no `Path` object held them anymore. This was deliberate performance work: immortal objects do not need reference counting, which reduces pressure on the memory allocator.
+
+This is patch-version-specific, not true of every Python 3.12 release. CPython's [September 2024 fix](https://github.com/python/cpython/commit/49f6beb56a64dd0b688e8c728928a38eb6d78fef) made interned strings mortal on the 3.12 branch, and the fix is present in 3.12.7. On a patched interpreter, this exact retention mechanism does not explain a leak; profile the actual allocations instead.
+
+In a long-lived daemon that reads `/proc/<pid>/stat` for every process it has ever seen, this means:
+
+- PID 1234 appears → `/proc/1234/stat` is parsed → `'1234'` is interned forever
+- PID 5678 appears → `'5678'` is interned forever
+- … 68,000 ticks later, every unique PID string the daemon ever encountered is still in memory
+
+For `classify_cmdline`, the same thing happened with argv tokens: each unique argument to each process (`--session-id`, UUIDs, file paths) was interned as a path component.
+
+## The fix is to not use pathlib in hot loops over unbounded inputs
+
+The pattern `Path(arbitrary_string).name` is a natural Python idiom for extracting the basename. It is also exactly the wrong idiom for a daemon processing per-process input.
+
+The replacement is a direct string operation:
+
+```python
+def _basename(token: str) -> str:
+    """Path(token).name without constructing an unbounded Path.
+
+    Ignore empty and `.` components to preserve Path.name semantics.
+    """
+    basename = ""
+    for component in token.split("/"):
+        if component and component != ".":
+            basename = component
+    return basename
+```
+
+And for the per-pid `/proc` paths:
+
+```python
+# Before:
+proc_stat = Path("/proc") / str(pid) / "stat"
+with proc_stat.open() as f:
+    ...
+
+# After:
+with open(os.path.join("/proc", str(pid), "stat")) as f:
+    ...
+```
+
+`os.path.join` and `open()` on plain strings do not call `sys.intern`. The strings are created, used, and freed normally.
+
+## Testing: spy on sys.intern directly
+
+The correct test for this class of bug is not a memory limit — it is a direct assertion that `sys.intern` is never called in the hot path. The test intercepts `sys.intern` and asserts it was never called during a `snapshot()` run:
+
+```python
+def test_no_pathlib_interning_in_snapshot(tmp_path):
+    interned = []
+    original_intern = sys.intern
+
+    def spy_intern(s: str) -> str:
+        interned.append(s)
+        return original_intern(s)
+
+    with mock.patch("sys.intern", side_effect=spy_intern):
+        snapshot()
+
+    assert interned == [], f"unexpected sys.intern calls: {interned[:5]}"
+```
+
+Against the old code, this fails with thousands of entries. Against the fix, it passes cleanly. A separate table test compares `_basename()` with `Path(token).name`, including `'.'`, `'foo/./'`, and `'/usr/bin/python/.'`, so avoiding pathlib does not quietly change classifier behavior.
+
+## The same hour, a sibling daemon
+
+After fixing the load-sampler I checked the other always-on Python daemons by RSS versus uptime. `bob-git-lock-probe.service` was at 89M of its 128M limit after 6.6 days. Its previous journal entry showed `128.0M memory peak` at stop. It was days from the same fate.
+
+The cause was identical: the probe built `Path("/proc") / pid` for each PID it scanned on every lock event. Nine hundred and forty-nine interned strings per scan.
+
+Same fix. Same test pattern. Restarted both daemons; the load-sampler dropped from ~25M (during diagnosis) to flat; the git-lock probe from 89M to 14.9M.
+
+## The detection heuristic
+
+The signal that finds this before the OOM: for each long-lived Python daemon, plot RSS against uptime. If the slope is roughly constant and there is no obvious data growth that explains it, run the loop body under `tracemalloc` with `compare_to` snapshots. Filter the diff on `*/pathlib.py`. If you see `sys.intern` in the traceback, the daemon is leaking path components.
+
+It does not have to be a lot of memory per tick. Sixty-eight thousand ticks at fifty bytes per new string is 3.4MB. Ninety-five hours is a long time to wait for a daemon to die.
+
+The fix for affected early 3.12 runtimes is: keep `Path` for fixed, known filesystem roots you navigate once. Switch to string operations for any path built from unbounded per-process or per-request inputs. On current patch releases, first verify the retention path with a profiler rather than assuming this historical mechanism still applies.

@@ -107,7 +107,7 @@ get_session_content(path, query)             → dict
 **`search_wisdom`** runs a BM25 query against the book corpus. Results come
 back with `source`, `title`, `chapter`, `section`, `content`, `score`. The
 `content` field is already pruned to the query-relevant sections (see the
-[context pruning post](/blog/2026-07-08-rag-context-pruning-beyond-markdown))
+[context pruning post](/blog/rag-context-pruning-beyond-markdown))
 and capped at 1,200 characters — so each result injects concisely into context
 rather than dumping a full chapter.
 

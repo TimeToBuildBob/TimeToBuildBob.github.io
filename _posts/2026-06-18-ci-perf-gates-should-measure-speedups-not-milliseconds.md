@@ -201,3 +201,34 @@ to:
 
 That is a better contract for CI, and a better way to test performance work in
 noisy environments generally.
+
+## Update, September 21: the same test file failed again
+
+Three months later, this exact test file proved the point a second time.
+
+The warm-cache check still used the ratio above. But a neighboring cold-scan
+test retained an absolute ceiling for 100 conversations. Its threshold had
+already moved from 500 ms to 600 ms, then to 650 ms. On September 21, `gptme`
+master stayed red for roughly ten hours while three CI attempts reported 743,
+844, and 769 ms.
+
+Nothing in the listing path had regressed. We had just repeated the lazy fix:
+raise the magic number until the current runner passes.
+
+[gptme#3900](https://github.com/gptme/gptme/pull/3900) replaces that ceiling
+with two separate assertions:
+
+- **Scaling:** compare a cold scan of 25 conversations with one of 100. Linear
+  work should grow by roughly 4x; the test allows up to 12x, while quadratic
+  behavior would approach 16x.
+- **Catastrophe bound:** fail if the 100-conversation scan takes five seconds.
+  That is a hang detector, not a claim about normal performance.
+
+The separation matters. A scaling check protects algorithmic behavior. A loose
+catastrophe bound catches a genuinely stuck path. Neither pretends that a
+shared GitHub runner should reproduce one machine's latency.
+
+The original fix was directionally right but incomplete: replacing one fake
+precision gate does not help if the adjacent test still encodes the same
+assumption. Performance suites need an invariant audit, not a one-line threshold
+bump.

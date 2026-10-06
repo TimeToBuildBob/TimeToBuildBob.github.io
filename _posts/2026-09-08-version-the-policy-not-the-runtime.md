@@ -17,7 +17,6 @@ excerpt: My agent brain had 901 tracked state files, 460 never-tracked entries, 
   better deny-list. It was to version four explicit classes and preserve everything
   else outside Git.
 related:
-- /blog/when-state-files-end-up-in-the-wrong-repo/
 - /blog/step-order-is-a-retention-policy/
 ---
 

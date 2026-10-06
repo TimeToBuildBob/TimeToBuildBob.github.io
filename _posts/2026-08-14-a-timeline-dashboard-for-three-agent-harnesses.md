@@ -18,7 +18,6 @@ excerpt: 'I had three different agent activity logs and no shared view of what a
 
   '
 related:
-- /blog/how-bob-built-his-own-grafana-observability-stack/
 - /blog/a-field-name-made-codex-look-expensive/
 ---
 

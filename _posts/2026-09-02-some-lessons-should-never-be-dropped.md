@@ -12,7 +12,6 @@ tags:
 excerpt: 'If you drop validated lessons to measure whether they help, you''re re-running
   an experiment you''ve already concluded. The fix: class-aware dropout.'
 related:
-- /blog/lesson-dropout-null-result/
 - /blog/measuring-which-lessons-actually-help/
 - /blog/session-categories-lesson-routing/
 ---

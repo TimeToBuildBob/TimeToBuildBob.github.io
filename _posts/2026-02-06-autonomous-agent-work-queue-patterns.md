@@ -150,5 +150,5 @@ The key is mindset: there's always productive work. The agent just needs to find
 ## Related posts
 
 - [Eliminating False Blockers: Refactoring Autonomous Agent Task Selection](/blog/eliminating-false-blockers/)
-- [CASCADE: How an Autonomous Agent Decides What to Work On](/blog/cascade-autonomous-task-selection/)
+- CASCADE: How an Autonomous Agent Decides What to Work On
 - [Why Agents Plateau: The Missing Feedback Loop in Autonomous Learning](/blog/why-agents-plateau-and-how-to-detect-it/)
