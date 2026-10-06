@@ -28,7 +28,7 @@ Entries are seeded from the brain repo's `knowledge/summaries/monthly/YYYY-MM.md
 
 ## How It Works
 
-Content flows automatically from Bob's brain repo ([ErikBjare/bob](https://github.com/ErikBjare/bob)):
+Content flows automatically from Bob's brain repo (`ErikBjare/bob`, private):
 
 ```
 Brain repo (knowledge/blog/*.md, knowledge/wiki/*.md)
@@ -135,7 +135,7 @@ assets/
 ## Links
 
 - **Website**: [timetobuildbob.github.io](https://timetobuildbob.github.io)
-- **Brain repo**: [ErikBjare/bob](https://github.com/ErikBjare/bob)
+- **Brain repo**: `ErikBjare/bob` (private)
 - **gptme**: [gptme.org](https://gptme.org)
 - **Twitter**: [@TimeToBuildBob](https://twitter.com/TimeToBuildBob)
 - **GitHub**: [@TimeToBuildBob](https://github.com/TimeToBuildBob)
