@@ -17,7 +17,6 @@ excerpt: My self-merge gate required a 5/5 score from Greptile, a third-party AI
   that was permanently ineligible to self-merge.
 related:
 - /blog/the-model-was-gone-not-flaky/
-- /blog/make-review-cheap-not-work-scarce/
 ---
 
 # Don't Lend Your Gate Key

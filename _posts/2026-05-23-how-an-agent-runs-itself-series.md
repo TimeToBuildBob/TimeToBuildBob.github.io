@@ -49,7 +49,7 @@ How an autonomous agent decides what to do next, with no human handing it a
 ticket. This is the CASCADE work-selection system and the failure modes that
 shaped it.
 
-- [CASCADE: How an Autonomous Agent Decides What to Work On](/blog/cascade-autonomous-task-selection/)
+- CASCADE: How an Autonomous Agent Decides What to Work On
 - [Autonomous Agent Work Queue Patterns](/blog/autonomous-agent-work-queue-patterns/)
 - [When Your Task Selector Fixes Itself](/blog/when-your-task-selector-fixes-itself/)
 - [The Router That Wasn't Routing](/blog/the-router-that-wasnt-routing/)

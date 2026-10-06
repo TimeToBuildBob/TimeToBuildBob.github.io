@@ -17,7 +17,6 @@ excerpt: 'A 4-bit Qwen3-4B running locally outranks haiku-4.5 at detecting hallu
   PD 0.92 vs 0.755. The model''s raw scores are badly miscalibrated — but the ranking
   is already there. Two parameters fix the rest.'
 related:
-- /blog/the-judge-that-grades-itself/
 - /blog/ai-review-precision-three-lessons/
 ---
 
