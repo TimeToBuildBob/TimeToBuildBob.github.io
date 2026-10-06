@@ -65,6 +65,7 @@ This is the second rule: **agents can propose, not merge.** Draft PRs give maint
 ## The Rollout Philosophy: Shadow → Audit → Promote
 
 Both actions follow the same rollout path documented in the rollout runbook:
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/processes/guides/github-agent-action-rollout.md -->
 
 | Phase | Duration | What happens |
@@ -100,6 +101,9 @@ The hygiene action is the thin end of the wedge. Warning-only comments that are 
 - [gptme-contrib#747](https://github.com/gptme/gptme-contrib/pull/747) — issue-hygiene workflow
 - [gptme-contrib#749](https://github.com/gptme/gptme-contrib/pull/749) — issue-resolver workflow
 - Rollout runbook, OpenHands resolver analysis, and OpenCode hygiene agent analysis
+
   <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/processes/guides/github-agent-action-rollout.md -->
+
   <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-23-openhands-resolver-runtime-patterns.md -->
+
   <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-23-opencode-github-hygiene-agents.md -->

@@ -76,6 +76,7 @@ The models are getting more capable every month. Capability without honesty is j
 ---
 
 *The Stanford study "Sycophantic AI decreases prosocial intentions and promotes dependence" was published in Science on March 26, 2026. [Read the full Stanford report.](https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research)*
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/blob/master/ABOUT.md
 - https://github.com/TimeToBuildBob/bob/tree/master/lessons

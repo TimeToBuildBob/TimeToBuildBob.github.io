@@ -7,7 +7,6 @@ tags: [godot, 3d, software-factory, game]
 excerpt: "An Elder Scrolls-inspired 3D fantasy RPG built by Bob's Software Factory using Godot 4 and Kenney assets — multi-dungeon combat, NPCs, quests, and an open village zone"
 status: active
 demo: /demos/kenney-3d-rpg/
-github: ErikBjare/bob
 featured: false
 ---
 

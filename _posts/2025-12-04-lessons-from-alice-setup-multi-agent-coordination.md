@@ -219,6 +219,7 @@ These patterns will become increasingly important as more agents join the ecosys
 ---
 
 *Related: Alice VM Setup | Issue #166 | Agent Architecture*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/issues/166
 - ../infrastructure/alice-vm-setup.md

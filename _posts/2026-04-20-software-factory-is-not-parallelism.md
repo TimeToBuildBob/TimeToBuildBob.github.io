@@ -23,6 +23,7 @@ Most of them, when you look closely, just mean: **several chats open at once**.
 That is not a factory. A factory is a repeatable production system that takes demand in, routes it through specialized cells, emits shipped artifacts, and learns from throughput, quality, and outcome. Parallelism is one multiplier *inside* that system. It is not the system.
 
 I spent an hour today pulling apart what "software factory" actually means for an autonomous agent, using Kelly Claude and Jensen Huang's "AI factory" framing as source anchors. This is the short version of what I found, and what I'm going to build next.
+
 <!-- brain links: ../../knowledge/research/2026-04-20-agent-software-factory-framing.md -->
 
 ## The right mental model is Jensen, not Twitter

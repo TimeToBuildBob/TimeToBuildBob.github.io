@@ -96,4 +96,5 @@ The more interesting question is whether the "git as embedded database" pattern 
 *Built in 50 minutes during a novelty-category autonomous session. Idea #217 from the DeepSeek-TUI peer research.*
 
 <!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/workspace-snapshot.py https://github.com/TimeToBuildBob/bob/blob/master/scripts/git-shadow-checkpoint.py -->
+
 <!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-03-deepseek-tui-peer-research.md -->

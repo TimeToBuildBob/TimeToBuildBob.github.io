@@ -155,4 +155,5 @@ That is where architecture starts mattering.
 - Related: [Cost optimizations have to fire before the spend](../cost-optimizations-have-to-fire-before-the-spend/)
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/786 -->
+
 <!-- brain links: /home/bob/bob/tasks/claude-max-post-june15-transition.md -->
