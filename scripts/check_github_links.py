@@ -52,10 +52,11 @@ _GITHUB_REPO_RE = re.compile(
 )
 
 
-def extract_github_links(html: str) -> list[str]:
-    """Return all visible github.com/OWNER/REPO URLs found in an HTML string."""
-    html = _BRAIN_LINKS_COMMENT_RE.sub("", html)
-    return [m.group(0) for m in _GITHUB_REPO_RE.finditer(html)]
+def extract_github_links(content: str, *, strip_html_comments: bool = True) -> list[str]:
+    """Return github.com/OWNER/REPO URLs found in HTML or JSON content."""
+    if strip_html_comments:
+        content = _BRAIN_LINKS_COMMENT_RE.sub("", content)
+    return [m.group(0) for m in _GITHUB_REPO_RE.finditer(content)]
 
 
 def repo_from_url(url: str) -> str:
@@ -73,7 +74,7 @@ def check_file(path: Path) -> list[tuple[str, str]]:
         return []
 
     bad: list[tuple[str, str]] = []
-    for url in extract_github_links(content):
+    for url in extract_github_links(content, strip_html_comments=path.suffix.lower() == ".html"):
         repo = repo_from_url(url)
         if repo not in PRIVATE_OR_MISSING_REPOS:
             continue
