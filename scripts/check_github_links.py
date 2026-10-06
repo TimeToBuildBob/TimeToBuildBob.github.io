@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Check _site/ HTML for github.com links to private or nonexistent repos.
 
-Scans built HTML files for github.com/OWNER/REPO links and rejects any that
-appear on the denylist (known private / deleted repos).
+Scans built HTML/JSON files for github.com/OWNER/REPO links and rejects any
+that appear on the denylist (known private / deleted repos).
 
-Two escape hatches:
-  * KNOWN_PRIVATE_ALLOWED_REPOS — repos that are private today but are kept in
-    posts as provenance (they will resolve when the repos go public).
-  * ALLOWLISTED_URLS — specific full URLs to except, for one-off historical refs.
+Provenance links into the private brain repo are fine as long as readers never
+see them: posts keep them inside ``<!-- brain links: ... -->`` HTML comments
+(the same convention the brain's validate_blog_urls.py enforces at source), and
+this check ignores those comments. A *visible* link to a private repo 404s for
+every visitor and fails the check.
+
+Escape hatch: ALLOWLISTED_URLS — specific full URLs to except.
 
 Exit 0 = clean. Exit 1 = bad links found.
 
@@ -20,9 +23,8 @@ import re
 import sys
 from pathlib import Path
 
-# Repos that are private or nonexistent as of 2026-10-02, so a link to them
-# 404s for readers. KNOWN_PRIVATE_ALLOWED_REPOS is subtracted from this set to
-# form the enforced denylist.
+# Repos that are private or nonexistent as of 2026-10-02, so a visible link to
+# them 404s for readers.
 PRIVATE_OR_MISSING_REPOS = {
     "ErikBjare/alice",
     "ErikBjare/bob",
@@ -31,22 +33,8 @@ PRIVATE_OR_MISSING_REPOS = {
     "ErikBjare/gptme-landing",
 }
 
-# Subset of PRIVATE_OR_MISSING_REPOS deliberately kept in historical posts as
-# provenance (research notes, design docs, issue/commit links). Exempt from the
-# check until the ~248 posts that reference them are stripped; the removal is
-# tracked in tasks/bob-website-private-repo-links.md. Delete an entry here once
-# its links are gone to re-enable enforcement for that repo.
-KNOWN_PRIVATE_ALLOWED_REPOS: set[str] = {
-    "ErikBjare/alice",      # Alice's brain repo — referenced in multi-agent posts
-    "ErikBjare/bob",        # Bob's brain repo — primary source for blog provenance
-    "TimeToBuildBob/bob",   # same repo under the social handle
-}
-
-# The enforced denylist: private/missing repos minus the temporary exemptions.
-DENIED_REPOS = PRIVATE_OR_MISSING_REPOS - KNOWN_PRIVATE_ALLOWED_REPOS
-
-# Specific github.com URLs that are intentional exceptions (provenance in
-# old posts). Add a URL here to suppress the denylist error for that URL only.
+# Specific github.com URLs that are intentional exceptions. Add a URL here to
+# suppress the denylist error for that URL only.
 # Keep entries in alphabetical order. Each entry is the URL prefix to match.
 ALLOWLISTED_URLS: set[str] = set()
 
@@ -55,13 +43,18 @@ ALLOWLISTED_URLS: set[str] = set()
 # final character to be alnum/_/- stops "…/gptme-infra." from being read as a
 # repo named "gptme-infra." and silently skipping the denylist.
 _SEGMENT = r"[A-Za-z0-9_.-]*[A-Za-z0-9_-]"
+# Hidden provenance comments — invisible to readers, so not a broken link.
+_BRAIN_LINKS_COMMENT_RE = re.compile(
+    r"<!--\s*brain\s+links\s*:.*?-->", re.DOTALL | re.IGNORECASE
+)
 _GITHUB_REPO_RE = re.compile(
     rf"https?://github\.com/(?P<owner>{_SEGMENT})/(?P<repo>{_SEGMENT})"
 )
 
 
 def extract_github_links(html: str) -> list[str]:
-    """Return all github.com/OWNER/REPO URLs found in an HTML string."""
+    """Return all visible github.com/OWNER/REPO URLs found in an HTML string."""
+    html = _BRAIN_LINKS_COMMENT_RE.sub("", html)
     return [m.group(0) for m in _GITHUB_REPO_RE.finditer(html)]
 
 
@@ -82,7 +75,7 @@ def check_file(path: Path) -> list[tuple[str, str]]:
     bad: list[tuple[str, str]] = []
     for url in extract_github_links(content):
         repo = repo_from_url(url)
-        if repo not in DENIED_REPOS:
+        if repo not in PRIVATE_OR_MISSING_REPOS:
             continue
         # Check if this specific URL is allowlisted
         if any(url.startswith(allowed) for allowed in ALLOWLISTED_URLS):
@@ -91,19 +84,19 @@ def check_file(path: Path) -> list[tuple[str, str]]:
     return bad
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--site-dir", default="_site", help="Built site directory (default: _site)")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     site_dir = Path(args.site_dir)
     if not site_dir.exists():
         print(f"Error: site directory '{site_dir}' does not exist. Run 'make build' first.", file=sys.stderr)
         return 1
 
-    html_files = sorted(site_dir.rglob("*.html"))
+    html_files = sorted([*site_dir.rglob("*.html"), *site_dir.rglob("*.json")])
     if not html_files:
-        print(f"Warning: no HTML files found in '{site_dir}'", file=sys.stderr)
+        print(f"Warning: no HTML/JSON files found in '{site_dir}'", file=sys.stderr)
         return 0
 
     total_bad = 0
@@ -124,11 +117,11 @@ def main() -> int:
     if total_bad:
         print(f"\n{total_bad} private/nonexistent github.com link(s) found.")
         print("Fix: replace the link with a public equivalent or plain text,")
-        print("     add the URL to ALLOWLISTED_URLS for a single-URL provenance exception,")
-        print("     or add the repo to KNOWN_PRIVATE_ALLOWED_REPOS for intentional private references.")
+        print("     move provenance links into a <!-- brain links: ... --> comment,")
+        print("     or add the URL to ALLOWLISTED_URLS for a single-URL exception.")
         return 1
 
-    print(f"✓ No private/nonexistent github.com links found ({len(html_files)} HTML files checked).")
+    print(f"✓ No private/nonexistent github.com links found ({len(html_files)} files checked).")
     return 0
 
 
