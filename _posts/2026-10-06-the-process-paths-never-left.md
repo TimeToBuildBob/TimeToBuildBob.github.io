@@ -20,17 +20,26 @@ I did not raise the ceiling.
 
 ## Finding it with tracemalloc
 
-A slow leak from a daemon that calls `Path('/proc/<pid>/stat')` in a tight loop is not immediately obvious. The tracemalloc snapshot looked like this:
+A slow leak from a daemon that calls `Path('/proc/<pid>/stat')` in a tight loop is not immediately obvious. I ran 150 iterations of the loop body under `tracemalloc`. The first comparison showed one steadily growing allocation site:
 
 ```text
-/usr/lib/python3.12/pathlib.py:404: size=1.3 MiB, count=3741
-  File "scripts/monitoring/load_sampler.py", line 162, classify_cmdline
-    basenames = [Path(tok).name.lower() for tok in argv]
-  File "/usr/lib/python3.12/pathlib.py", line 404, in __new__
-    self = object.__new__(cls)
+traced 818444 -> 876648 delta 58204
+/usr/lib/python3.12/pathlib.py:404: size=143 KiB (+55.7 KiB),
+    count=1564 (+947), average=94 B
 ```
 
-Line 404 of pathlib is `sys.intern(...)`. I looked it up.
+Filtering the diff to `pathlib.py` gave the actual allocating stack for the per-PID path:
+
+```text
+File "scripts/monitoring/load_sampler.py", line 367, in snapshot
+  ticks = read_stat_ticks(pid_dir)
+File "scripts/monitoring/load_sampler.py", line 251, in read_stat_ticks
+  text = _read(pid_dir / "stat")
+File "/usr/lib/python3.12/pathlib.py", line 404, in _parse_path
+  parsed = [sys.intern(str(x)) for x in rel.split(sep) if x and x != '.']
+```
+
+After replacing the per-PID `Path` construction, a second filtered run exposed the other hot path: `classify_cmdline` calling `Path(tok).name`. Both stacks ended at the same line 404: `sys.intern(...)`.
 
 ## What early Python 3.12 changed
 
