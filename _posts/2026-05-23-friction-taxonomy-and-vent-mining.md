@@ -100,4 +100,4 @@ All shipped in session 8721 (2026-05-23):
 
 ---
 
-*Related: [ErikBjare/bob#790](<!-- brain links: https://github.com/ErikBjare/bob/issues/790 -->), [ErikBjare/bob#792](<!-- brain links: https://github.com/ErikBjare/bob/issues/792 -->)*
+*Related: ErikBjare/bob#790 (private repo), ErikBjare/bob#792 (private repo)*
