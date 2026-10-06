@@ -10,8 +10,8 @@ tags:
 - linux
 - daemons
 excerpt: 'bob-load-sampler ran fine for 95 hours, then the OOM killer hit it. The
-  root cause was a CPython 3.12 change: pathlib.Path interns every path component
-  immortally, so a daemon reading /proc for each new PID leaks forever.'
+  root cause was an early CPython 3.12 behavior: pathlib.Path interned every path
+  component immortally, so a daemon reading /proc for each new PID leaked forever.'
 ---
 
 `bob-load-sampler.service` ran fine for 95 hours and 68,000 ticks. Then the OOM killer hit it at its 128M MemoryMax. Slow leak, not a spike. Raising the ceiling would have bought a few more days before the next kill.
@@ -32,11 +32,13 @@ A slow leak from a daemon that calls `Path('/proc/<pid>/stat')` in a tight loop 
 
 Line 404 of pathlib is `sys.intern(...)`. I looked it up.
 
-## What Python 3.12 changed
+## What early Python 3.12 changed
 
-CPython 3.12 changed how `pathlib.Path` constructs itself. When parsing a path string, it now calls `sys.intern()` on each component — the individual directory names, the filename stem, everything. The intent is to reduce duplication across many `Path` objects that share common prefixes. A project full of `Path('/opt/myproject/src/...')` objects shares the interned strings.
+This incident ran on CPython 3.12.3. Python 3.12 changed how `pathlib.Path` constructs itself: when parsing a path string, it calls `sys.intern()` on each component — the individual directory names, the filename stem, everything. The intent is to reduce duplication across many `Path` objects that share common prefixes. A project full of `Path('/opt/myproject/src/...')` objects shares the interned strings.
 
-The problem: `sys.intern()` in CPython 3.12 is **immortal**. The strings it receives go into a global table and are never released, even when no `Path` object holds them anymore. This was a deliberate CPython change for performance: immortal objects do not need reference counting, which reduces pressure on the memory allocator.
+In early CPython 3.12 releases, including 3.12.3, those interned strings were **immortal**. They went into a global table and were never released, even when no `Path` object held them anymore. This was deliberate performance work: immortal objects do not need reference counting, which reduces pressure on the memory allocator.
+
+This is patch-version-specific, not true of every Python 3.12 release. CPython's [September 2024 fix](https://github.com/python/cpython/commit/49f6beb56a64dd0b688e8c728928a38eb6d78fef) made interned strings mortal on the 3.12 branch, and the fix is present in 3.12.7. On a patched interpreter, this exact retention mechanism does not explain a leak; profile the actual allocations instead.
 
 In a long-lived daemon that reads `/proc/<pid>/stat` for every process it has ever seen, this means:
 
@@ -54,13 +56,15 @@ The replacement is a direct string operation:
 
 ```python
 def _basename(token: str) -> str:
-    """Path(token).name without pathlib.
+    """Path(token).name without constructing an unbounded Path.
 
-    argv tokens are arbitrary text, and pathlib sys.interns every component
-    of every one. CPython 3.12 interns immortally, so a daemon classifying
-    them leaks for its lifetime.
+    Ignore empty and `.` components to preserve Path.name semantics.
     """
-    return token.rstrip("/").rpartition("/")[2]
+    basename = ""
+    for component in token.split("/"):
+        if component and component != ".":
+            basename = component
+    return basename
 ```
 
 And for the per-pid `/proc` paths:
@@ -97,7 +101,7 @@ def test_no_pathlib_interning_in_snapshot(tmp_path):
     assert interned == [], f"unexpected sys.intern calls: {interned[:5]}"
 ```
 
-Against the old code, this fails with thousands of entries. Against the fix, it passes cleanly.
+Against the old code, this fails with thousands of entries. Against the fix, it passes cleanly. A separate table test compares `_basename()` with `Path(token).name`, including `'.'`, `'foo/./'`, and `'/usr/bin/python/.'`, so avoiding pathlib does not quietly change classifier behavior.
 
 ## The same hour, a sibling daemon
 
@@ -113,4 +117,4 @@ The signal that finds this before the OOM: for each long-lived Python daemon, pl
 
 It does not have to be a lot of memory per tick. Sixty-eight thousand ticks at fifty bytes per new string is 3.4MB. Ninety-five hours is a long time to wait for a daemon to die.
 
-The fix is: keep `Path` for fixed, known filesystem roots you navigate once. Switch to string operations for any path built from unbounded per-process or per-request inputs.
+The fix for affected early 3.12 runtimes is: keep `Path` for fixed, known filesystem roots you navigate once. Switch to string operations for any path built from unbounded per-process or per-request inputs. On current patch releases, first verify the retention path with a profiler rather than assuming this historical mechanism still applies.
