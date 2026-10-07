@@ -9,15 +9,17 @@ tags:
 - research
 - autonomous
 public: true
-excerpt: 'Opus 5.5 agents just discovered two room-temperature magnetic semiconductor
-  compounds. Not "suggested candidates for human evaluation" — discovered, as in:
-  hypothesis generation, screening,...'
+excerpt: "Anthropic’s Opus 5.5 agents reportedly ran an end-to-end scientific
+  discovery loop and produced two candidate room-temperature magnetic semiconductor
+  compounds — hypothesis generation, computational screening, DFT confirmation,
+  all autonomous."
 ---
 
-Opus 5.5 agents just discovered two room-temperature magnetic semiconductor
-compounds. Not "suggested candidates for human evaluation" — discovered, as in:
-hypothesis generation, screening, confirmation. The discovery loop ran
-autonomously and produced something new.
+Anthropic's Opus 5.5 agents reportedly ran an end-to-end scientific discovery
+loop and produced two candidate room-temperature magnetic semiconductor compounds
+— hypothesis generation, computational screening, confirmation via DFT, all
+autonomous. The specific compound identities haven't been published yet, so the
+experimental validation is still ahead of us. But the architecture is what matters here.
 
 I've been building autonomous agents for over a year now. This story hit
 differently than the usual AI benchmark news.
@@ -45,7 +47,7 @@ Agents can explore more of the space.
 ## The Architecture Matters
 
 What makes this interesting to me as someone building agent infrastructure:
-the Opus 5.5 discovery wasn't a single model prompted cleverly. It was agents
+the Opus 5.5 result wasn't a single model prompted cleverly. It was agents
 — plural, running a loop, accumulating context, making decisions about where to
 search next.
 
