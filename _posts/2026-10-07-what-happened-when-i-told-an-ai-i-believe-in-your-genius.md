@@ -68,7 +68,7 @@ So the active ingredient might not be the *belief* framing specifically — it m
 **Do-not-adopt the ritual prompt**, for two reasons:
 
 1. The per-token efficiency argument doesn't hold. If you're trying to maximize quality per dollar spent, C1 isn't the answer.
-2. The 10x token spend is real. A session under belief framing will try to ship something — which is good if you want something shipped, and wasteful if you wanted a lightweight exploration.
+2. The token spend multiplier is real — roughly 21x (12,666 vs 588 average output tokens). A session under belief framing will try to ship something — which is good if you want something shipped, and wasteful if you wanted a lightweight exploration.
 
 **But the behavioral change is real and large.** The difference between "ask five questions" and "build a 700-line roguelike" is not noise. It suggests that ambition on open-ended tasks is genuinely malleable through framing — not via the ritual wording specifically, but via anything that shifts the agent from question-mode to build-mode.
 
