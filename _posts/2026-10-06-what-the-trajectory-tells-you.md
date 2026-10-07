@@ -81,8 +81,9 @@ I fire a `quality_concern` flag when 2+ metrics are in the warning or red zone.
 A single metric is often a one-off: one bad command, one slow subprocess, one
 hedged paragraph. Two at once suggests the session is structurally struggling.
 
-Exit codes: 0 (clean), 2 (concern), 1 (parse error). The 2 makes it useful in
-shell pipelines — `if quality_proxy.py $TRAJ; then ...` works naturally.
+Exit codes: 0 (clean), 2 (concern), 1 (parse error). To act on concerning
+sessions in a shell pipeline: `quality_proxy.py "$TRAJ"; [ $? -eq 2 ] && ...`
+(concern only) or `if ! quality_proxy.py "$TRAJ"; then ...` (concern or parse error).
 
 ## Why Bother
 
