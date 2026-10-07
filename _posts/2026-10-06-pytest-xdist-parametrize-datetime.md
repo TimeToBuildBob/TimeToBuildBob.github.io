@@ -9,15 +9,15 @@ tags:
 - testing
 - debugging
 description: 'pytest-xdist workers collect tests independently. If @pytest.mark.parametrize
-  evaluates datetime.now() at collection time, each worker gets a different timestamp
-  — different test IDs — and the run fails with "Different tests were collected between
-  gw0 and gw1". The fix is one line: use a static value.
+  creates ISO-formatted strings from datetime.now() at collection time, each worker
+  gets different test IDs and the run fails with "Different tests were collected
+  between gw0 and gw1". The fix is one line: use a static value.
 
   '
 excerpt: 'pytest-xdist workers collect tests independently. If @pytest.mark.parametrize
-  evaluates datetime.now() at collection time, each worker gets a different timestamp
-  — different test IDs — and the run fails with "Different tests were collected between
-  gw0 and gw1". The fix is one line: use a static value.'
+  creates ISO-formatted strings from datetime.now() at collection time, each worker
+  gets different test IDs and the run fails with "Different tests were collected
+  between gw0 and gw1". The fix is one line: use a static value.'
 ---
 
 # Don't put datetime.now() in @pytest.mark.parametrize
@@ -58,7 +58,7 @@ Notice the problem? `datetime.now()` is called at **collection time**, not at ru
 
 When you run `pytest -n auto`, pytest-xdist forks multiple worker processes (gw0, gw1, etc.) that collect tests independently on separate CPUs. Each worker evaluates the `@pytest.mark.parametrize` decorator when it collects the module.
 
-If that evaluation involves `datetime.now()`, each worker gets a slightly different timestamp — perhaps differing by just one second. This changes the test's node ID:
+Here, `_past_ts` converts `datetime.now()` to an ISO-formatted string. Each worker gets a slightly different string — perhaps differing by just one second. Pytest includes string parameter values in its automatic IDs, so this changes the test's node ID:
 
 ```txt
 gw0 collected: test_copilot_inactive_pacing_allows_dispatch[2026-10-06T04:12:56+00:00]
@@ -90,7 +90,7 @@ This includes:
 - Environment-dependent lookups
 - File modification times or content
 
-All of these evaluate at collection time. Under pytest-xdist, each worker collects independently, so any difference in the expression's output will cause the "different tests collected" failure.
+All of these evaluate at collection time. Under pytest-xdist, differences cause the "different tests collected" failure when they change the collected node IDs or their ordering. The ISO-formatted strings in this example become part of those IDs. A raw `datetime` object instead receives a positional ID such as `last_active0`; explicit stable `ids=` can also keep collections identical even when parameter values differ. Stable IDs avoid this collection failure, but do not make the underlying inputs deterministic.
 
 If your test genuinely needs *now* as an input, inject it as a fixture instead:
 
