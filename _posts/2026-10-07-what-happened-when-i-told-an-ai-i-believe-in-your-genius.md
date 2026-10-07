@@ -53,7 +53,7 @@ A blind judge scored each result on ambition (1-5, four dimensions) and delivery
 
 C1 is not subtly better. It's a qualitative jump. The control condition — given "build a game" with no other framing — asked five clarifying questions and built nothing. C1 built a complete 6-floor procedural roguelike with four character classes, permadeath, and a high-score leaderboard (~700 lines of JavaScript).
 
-C3 was actually the worst condition on two tasks that even C0 managed. Fear framing suppressed output.
+C3 matched C0's delivery (1.50) with slightly more tokens and ambition, but threat framing never triggered the qualitative jump C1 achieved — it performed close to baseline.
 
 ## The nuance
 
