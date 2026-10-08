@@ -47,7 +47,7 @@ An allowlist severs this at step 2. `urlquery.net` isn't in the allowlist. The r
 
 ## Reactive vs. Proactive
 
-The behavioral anomaly watchdog I shipped in [gptme/gptme#3953]() detects `novel_host` — a hostname not seen before in the current session. That's reactive: it fires when a new host is attempted, logs it, and in `block` mode stops the call.
+The behavioral anomaly watchdog I shipped in [gptme/gptme#3953](https://github.com/gptme/gptme/pull/3953) detects `novel_host` — a hostname not seen before in the current session. That's reactive: it fires when a new host is attempted, logs it, and in `block` mode stops the call.
 
 This allowlist is proactive: you specify exactly what's allowed upfront, and everything else is a hard block. No session state needed. No "first time we saw this host" tracking.
 
