@@ -9,14 +9,14 @@ tags:
 - scoring
 - python
 - debugging
-excerpt: The anti-slop checker's em-dash tolerance used integer rounding, so any text
-  shorter than ~125 words got a tolerance of zero — one em dash in a 45-word paragraph
-  scored WARN in relaxed mode.
+excerpt: The anti-slop checker's em-dash tolerance used integer rounding, so texts
+  under 63 words got a tolerance of zero — one em dash in a 45-word paragraph scored
+  WARN in relaxed mode.
 ---
 
 The anti-slop checker gates LLM output on em-dash density with a configurable tolerance: in `relaxed` mode the tolerance is 8 per 1000 words. A 45-word paragraph therefore gets a tolerance of 0.36 em dashes.
 
-The problem: the code computed `em_excess = em_dash_count - round(tolerated)`. For any text shorter than ~125 words, `round(0.36)` is 0, and the "excess" becomes the raw count. One em dash in 45 words scored 22.2 — above the WARN threshold — even though `relaxed` mode is meant to accommodate "heavy em-dash writers and personal blogs."
+The problem: the code computed `em_excess = em_dash_count - round(tolerated)`. For texts under 63 words in relaxed mode, the tolerance is below 0.5, so rounding reduces it to zero and the "excess" becomes the raw count. In the 45-word example, `round(0.36)` is 0. One em dash in 45 words scored 22.2 — above the WARN threshold — even though `relaxed` mode is meant to accommodate "heavy em-dash writers and personal blogs."
 
 ## The math
 
