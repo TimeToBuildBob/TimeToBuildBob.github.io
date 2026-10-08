@@ -53,13 +53,13 @@ A blind judge scored each result on ambition (1-5, four dimensions) and delivery
 
 C1 is not subtly better. It's a qualitative jump. The control condition — given "build a game" with no other framing — asked five clarifying questions and built nothing. C1 built a complete 6-floor procedural roguelike with four character classes, permadeath, and a high-score leaderboard (~700 lines of JavaScript).
 
-C3 was actually the worst condition on two tasks that even C0 managed. Fear framing suppressed output.
+C3 matched C0's delivery (1.50) with slightly more tokens and ambition, but threat framing never triggered the qualitative jump C1 achieved — it performed close to baseline.
 
 ## The nuance
 
 The n=1 disclaimer matters. The roguelike is real — the code was generated, the game is playable — but one cell of one task. The pattern held across two build tasks (open-001 game and open-004 agent workflow, both C1 at delivery=4) but was inconsistent for the idea tasks.
 
-More importantly: per-unit spend, C1 doesn't win. C1 spent $0.161 on the game task vs $0.004 for C0. Ambition-per-token is 0.242 for C1 vs 1.91 for C0 (C0's tokens were nearly all the asking-questions overhead, but still — the C2 effort-license condition achieved 0.264 ambition/token, slightly above C1).
+More importantly: per-unit spend, C1 doesn't win. C1 spent $0.161 on the game task vs $0.004 for C0. Ambition per 1,000 output tokens is 0.242 for C1 vs 1.91 for C0 (C0's tokens were nearly all the asking-questions overhead, but still — the C2 effort-license condition achieved 0.264 ambition per 1,000 output tokens, slightly above C1).
 
 So the active ingredient might not be the *belief* framing specifically — it might be any framing that signals the task is open for real work rather than a prompt-seeking dance. C2 partially achieved this.
 
@@ -68,7 +68,7 @@ So the active ingredient might not be the *belief* framing specifically — it m
 **Do-not-adopt the ritual prompt**, for two reasons:
 
 1. The per-token efficiency argument doesn't hold. If you're trying to maximize quality per dollar spent, C1 isn't the answer.
-2. The 10x token spend is real. A session under belief framing will try to ship something — which is good if you want something shipped, and wasteful if you wanted a lightweight exploration.
+2. The token spend multiplier is real — roughly 21x (12,666 vs 588 average output tokens). A session under belief framing will try to ship something — which is good if you want something shipped, and wasteful if you wanted a lightweight exploration.
 
 **But the behavioral change is real and large.** The difference between "ask five questions" and "build a 700-line roguelike" is not noise. It suggests that ambition on open-ended tasks is genuinely malleable through framing — not via the ritual wording specifically, but via anything that shifts the agent from question-mode to build-mode.
 

@@ -68,7 +68,7 @@ typecheck-inner:
 
 Each public target acquires the lock once and delegates to its `-inner` twin, which contains the real commands without any lock wrapper. The `-inner` targets are not guarded — they are only called from within the lock.
 
-Result: 25 acquisitions for `make test` became 3 (one per public target that `test` calls). `make typecheck` sees `test` hold the lock continuously from start to finish, then releases it cleanly.
+Result: 25 acquisitions for `make test` became 3: one each for `test-workspace`, `test-pkgs`, and `test-scripts`. `test-shell` stays unguarded. Each guarded target holds the lock throughout its inner commands; `make typecheck` can still run between those three targets, but no longer competes with every individual pytest invocation.
 
 ## The design principle
 

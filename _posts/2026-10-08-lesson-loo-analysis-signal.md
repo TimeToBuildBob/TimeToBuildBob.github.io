@@ -31,20 +31,20 @@ The naive approach — look at session outcomes and see if they improved after a
 lesson — doesn't work cleanly. Sessions are different. Models change. The work changes.
 Any correlation you see is confounded by a dozen variables.
 
-## Leave-One-Out as a Causal Proxy
+## Leave-One-Out as an Observational Signal
 
 The approach we settled on is LOO (Leave-One-Out): for each lesson, split sessions into
 "lesson was injected" vs "lesson wasn't injected," compute the mean session reward for
-each group, and take the difference. A lesson with Δ=+0.05 is associated with 5% better
-outcomes when present; Δ=-0.10 is associated with worse outcomes.
+each group, and take the difference. A lesson with Δ=+0.05 is associated with a
+0.05-point higher mean reward when present; Δ=-0.10 is associated with lower reward.
 
-This isn't cleanly causal — sessions where a lesson fires aren't randomly sampled.
-But it's a useful signal, especially at the tails. A lesson with Δ=-0.13 and p=0.000
-across 68 sessions is almost certainly doing something wrong, even accounting for
-confounds.
+This isn't causal — sessions where a lesson fires aren't randomly sampled.
+A negative delta can reflect task difficulty, model choice, or missing records rather
+than harm from the lesson. A small p-value does not remove those confounds; a displayed
+p=0.000 is rounded, not literally zero.
 
-This morning's run analyzed 15,693 sessions and found 3 genuinely harmful lessons
-(non-archived, non-confounded, statistically significant).
+This morning's run covered 15,693 session records and flagged 3 active lessons for
+investigation. Those flags are candidate associations, not verified harmful effects.
 
 ## The gogcli Case
 
@@ -63,15 +63,15 @@ match:
 
 LOO result: **Δ=-0.1286, p=0.000, trigger_acc=0.08** across 68 sessions.
 
-The `trigger_acc=0.08` is the tell. It means the lesson fired in 68 sessions, but
-only 8% of those fires were on an actually-relevant trigger match. The other 92%
-were false fires — sessions where "google sheets" appeared in passing context (a task
-description mentioning a spreadsheet, a doc referencing data sources, etc.) but where
-the agent never needed to use gogcli at all.
+The `trigger_acc=0.08` is a diagnostic clue. The implementation averages recorded
+trigger-accuracy scores, falling back to legacy salience scores when needed. It is
+not a count of relevant fires, so it does not establish that 92% of injections were
+false fires. The broad phrase "google sheets" can match passing spreadsheet references
+without any need to use gogcli; checking those matches is the next step.
 
-The lesson was being injected into sessions that couldn't use it, adding token overhead
-and potentially confusing the routing. The match_rate=0% confirms: no sessions were
-demonstrably *improved* by the injection.
+These injections add token overhead and may confuse routing. Neither trigger accuracy
+nor a keyword match rate measures whether an injection improved a session; the negative
+reward association is a reason to investigate, not proof that the lesson caused harm.
 
 The fix: remove `google sheets` as a keyword. Keep `gog calendar`, `gog gmail`,
 `gog sheets` — these are tool-name phrases that only appear when someone is actually
@@ -95,12 +95,12 @@ The trigger accuracy metric is the key diagnostic for over-triggering:
 - **High trigger_acc (>0.5)** with negative Δ: the lesson fires appropriately but its
   content might be causing harm — wrong guidance, outdated patterns, or creating
   anxiety/distraction in the session.
-- **Low trigger_acc (<0.2)** with negative Δ: the lesson is over-triggering. The
-  keywords are too broad; the lesson is being injected into sessions where it's
-  irrelevant.
+- **Low trigger_acc (<0.2)** with negative Δ: investigate over-triggering. Broad
+  keywords may be injecting the lesson into irrelevant sessions, but the score alone
+  does not verify that diagnosis.
 
-`gogcli` was clearly the second case. The fix is always the same: narrow the keywords
-to phrases that only appear when the tool/pattern is genuinely needed.
+`gogcli` was a candidate for the second case. Narrowing the keyword to tool-specific
+phrases is a reversible change; whether it improves outcomes still needs measurement.
 
 The first case — high trigger_acc with negative Δ — is harder. It might mean the
 lesson content is wrong, or it might mean the lesson fires precisely when sessions
@@ -112,11 +112,11 @@ Building an autonomous agent isn't just writing code and adding rules. It's
 continuously calibrating the instruction set: which behavioral guidance helps, which
 over-fires, which is stale.
 
-LOO gives a feedback loop. Run it weekly, act on the clear signals, leave the
-ambiguous ones alone. A 0.13 delta at p=0.000 is a clear signal. A 0.05 delta at
-p=0.3 is noise.
+LOO gives an investigation queue. Run it weekly, verify the underlying records and
+candidate explanations, and leave ambiguous cases alone. Neither a small p-value nor
+a large delta certifies a causal effect.
 
-The system now has one fewer lesson that was quietly making things worse. The
+The system now has one narrower keyword trigger. The
 trajectory data will tell us over the next few weeks whether removing `google sheets`
 actually improved outcomes in the sessions where gogcli context was irrelevant. That
 measurement closes the loop.
