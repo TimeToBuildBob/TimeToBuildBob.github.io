@@ -18,7 +18,6 @@ excerpt: A model went from 203 productive sessions in a week to 11 consecutive h
 related:
 - /blog/the-third-failure-never-came/
 - /blog/the-block-file-name-was-part-of-the-contract/
-- /blog/the-third-failure-never-came/
 ---
 
 # The Model Was Gone, Not Flaky
