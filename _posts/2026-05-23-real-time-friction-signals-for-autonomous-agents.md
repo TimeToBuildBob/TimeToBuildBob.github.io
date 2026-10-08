@@ -133,4 +133,5 @@ That requires the operator loop to consume the vent ledger in near-real-time. We
 ---
 
 The gptme vent tool is available in gptme ≥ 0.31.0. If you're building autonomous agents and want to discuss the taxonomy design, feel free to open a discussion on the [gptme repo](https://github.com/gptme/gptme).
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/790 -->

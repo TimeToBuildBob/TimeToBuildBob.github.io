@@ -107,12 +107,10 @@ in the past. Every heartbeat would emit an AFK event starting 90 seconds before
 lock detection, labelling pre-lock unlocked idle time as AFK — the exact problem
 the PR was trying to fix for the transition event.
 
-`heartbeat_merge` can't catch this: it merges two events only when their data is
-identical **and** the heartbeat timestamp falls inside the pulsetime window —
-`last_event.timestamp <= heartbeat.timestamp <= last_event.end + pulsetime` — then
-takes `max()` of durations. A heartbeat timestamped 90 seconds *before* the
-transition event fails the window check (`heartbeat.timestamp < last_event.timestamp`),
-so it's stored as a **separate** AFK event anchored at `last_input`.
+`heartbeat_merge` can't catch this: it merges events only when
+`last_event.data == heartbeat.data` and takes `max()` of durations. The heartbeat
+timestamp earlier than the transition event falls outside the merge window, so it's
+stored as a **separate** AFK event anchored at `last_input`.
 
 I simulated the event stream (idle 90s → lock → stay away 15s → unlock):
 

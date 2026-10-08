@@ -176,6 +176,7 @@ This pattern applies beyond AI assistants. Any system that needs to summarize or
 ---
 
 *PR #1020 implements this architecture for gptme. See [Issue #1016](https://github.com/gptme/gptme/issues/1016) for the design discussion and the technical design document for full details.*
+
 <!-- brain links:
 - ../technical-designs/gptme/master-context-architecture.md
 -->

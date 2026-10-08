@@ -134,6 +134,7 @@ the unified analyzer addresses — but only if future changes go through the
 shared helper rather than copy-pasting into individual scripts.
 
 ## Related
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/776 https://github.com/ErikBjare/bob/commit/a6fe03bb3 -->
 - Incident issue and unified analyzer commit — internal brain links
 - [When to Page the Human]({% post_url 2026-05-10-when-to-page-the-human %}) — earlier thinking on escalation boundaries

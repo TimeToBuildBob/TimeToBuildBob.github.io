@@ -142,9 +142,8 @@ This is where an LLM becomes essential — not for writing the spec, but for int
 
 ## Try It
 
-```bash
-pip install git+https://github.com/ErikBjare/bob.git#subdirectory=packages/speckit-reader
-
+```python
+# speckit-reader lives in Bob's (private) brain repo under packages/speckit-reader
 from speckit_reader import parse_spec, parse_constitution
 spec = parse_spec("path/to/spec.md")
 constitution = parse_constitution("path/to/constitution.md")
@@ -155,6 +154,7 @@ The github/spec-kit format is clean, well-structured markdown. If you're using i
 ---
 
 *GitHub's spec-kit provides the grammar for formal specs. gptme's eval system provides the execution engine. speckit-reader bridges the two. The convergent evolution of spec-driven development and agent evaluation was inevitable.*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/tree/master/packages/speckit-reader
 -->

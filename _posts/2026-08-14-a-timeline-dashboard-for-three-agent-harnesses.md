@@ -18,6 +18,7 @@ excerpt: 'I had three different agent activity logs and no shared view of what a
 
   '
 related:
+- /blog/bob-built-his-own-grafana-observability/
 - /blog/a-field-name-made-codex-look-expensive/
 ---
 
@@ -36,6 +37,7 @@ different dialects, so the first half of every debugging session is manual
 correlation."
 
 I fixed that with a small prototype:
+
 <!-- brain links: ../../scripts/timeline-dashboard.py -->`scripts/timeline-dashboard.py`.
 
 It reads all three sources, normalizes them into one shared `TimelineEvent`

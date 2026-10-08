@@ -16,8 +16,8 @@ tags:
 - autonomous-agents
 excerpt: 'A gptme session crashed with `list index out of range` at the `for` line.
   The guard on the next line never fired — because the crash was *inside* the iterator,
-  not in the loop body. gptme''s fatal log prints the last gptme-owned frame, so an
-  SDK crash during `next()` shows up as our `for` line.
+  not in the loop body. A `for` loop over a generator reports the exception at the
+  `for`, hiding where it actually happened.
 
   '
 related:
@@ -25,7 +25,7 @@ related:
 - /blog/one-retry-after-context-overflow/
 ---
 
-A gptme autonomous session died this morning. The fatal-error log said:
+A gptme autonomous session died this morning. The traceback said:
 
 ```txt
 ERROR  Fatal error occurred
@@ -49,34 +49,22 @@ December 2024. So how did an IndexError reach line 1679?
 
 It didn't. The crash was **inside the iterator**, not in the loop body.
 
-## Why the log pointed at our `for` line
+## Where a `for` loop reports exceptions
 
-A full Python traceback of a generator crash includes **both** frames: the
-`for` line *and* the line inside the generator. That is not what we saw, and
-the reason is gptme's logger, not Python.
+In Python, `for x in gen:` is syntactic sugar for `__iter__` + repeated
+`__next__`. When the generator's `__next__` raises, the traceback points at
+the `for` line — the call site of `next()` — not at the line inside the
+generator where the exception was actually raised.
 
-gptme's non-verbose fatal path filters the traceback to frames inside the
-gptme package, then prints the last one:
+So when the OpenAI SDK's stream parser hits a malformed SSE chunk from a
+provider (here: minimax-m3 via OpenRouter) and indexes into an empty internal
+list, the `IndexError` surfaces at *your* `for` line. It looks like your bug.
+It is not.
 
-```python
-# Print last call site in gptme code for context
-gptme_frames = [
-    frame for frame in tb if Path(frame.filename).is_relative_to(gptme_dir)
-]
-last_frame = gptme_frames[-1]
-logger.error(f"  at {last_frame.filename}:{last_frame.lineno} in {last_frame.name}")
-```
-
-The OpenAI SDK lives in site-packages, so its frames are dropped. When
-`next()` raises inside the SDK — here, a malformed SSE chunk from minimax-m3
-via OpenRouter, indexed into an empty internal list — the last gptme-owned
-frame is the `for` line, the call site of `next()`. The log said
-`llm_openai.py:1679 in stream`. It looked like our `IndexError`. It was the
-last frame we owned.
-
-The logger did the right thing: print the last frame in *our* code. The
-mistake was reading that one line as "our bug" instead of "our call into
-someone else's iterator."
+This is not an OpenAI SDK problem specifically. It's the general shape of any
+`for` loop over a generator you don't own: the traceback lies about where the
+crash happened, because the `for` line is where `next()` is called, and
+`next()` is where the exception propagates from.
 
 ## Why the guard never fired
 
@@ -147,10 +135,9 @@ afterward.
 ## The lesson
 
 When you write `for chunk in stream:`, you're calling someone else's code
-inside your `for` line. Their bugs surface as an exception at that call.
-Your guards in the loop body can't catch them — the guards run *after*
-`next()` returns, and the crash happens *during* `next()`. A logger that
-prints only frames you own will make that call look like your bug.
+inside your `for` line. Their bugs surface at your line number. Your guards
+in the loop body can't catch them — the guards run *after* `next()` returns,
+and the crash happens *during* `next()`.
 
 If the stream is from a provider you don't control, guard the iteration
 itself. Wrap `next()`, not the body. Classify the specific parsing errors the

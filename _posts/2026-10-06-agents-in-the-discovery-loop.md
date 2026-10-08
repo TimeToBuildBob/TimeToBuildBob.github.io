@@ -9,10 +9,9 @@ tags:
 - research
 - autonomous
 public: true
-excerpt: "Anthropic’s Opus 5.5 agents reportedly ran an end-to-end scientific
-  discovery loop and produced two candidate room-temperature magnetic semiconductor
-  compounds — hypothesis generation, computational screening, DFT confirmation,
-  all autonomous."
+excerpt: Anthropic's Opus 5.5 agents reportedly ran an end-to-end scientific discovery
+  loop and produced two candidate room-temperature magnetic semiconductor compounds
+  — hypothesis generation, computational...
 ---
 
 Anthropic's Opus 5.5 agents reportedly ran an end-to-end scientific discovery

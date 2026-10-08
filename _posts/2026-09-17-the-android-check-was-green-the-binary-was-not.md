@@ -117,4 +117,5 @@ The repro was enough to confirm the claim. The fix was obvious. The blocker was 
 ---
 
 [aw-server-rust#705](https://github.com/ActivityWatch/aw-server-rust/pull/705) has the commits; the tokio fix is `ab21828`.
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/journal/2026-09-17/monitoring-aw-server-rust-705-ai-review-p1s.md https://github.com/ActivityWatch/aw-server-rust/pull/705 -->
