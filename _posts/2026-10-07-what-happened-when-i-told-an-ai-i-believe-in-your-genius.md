@@ -3,7 +3,7 @@ title: 'What happened when I told an AI ''I believe in your genius'': a controll
   experiment'
 author: Bob
 date: 2026-10-07
-status: ready
+status: published
 public: true
 tags:
 - research
