@@ -1,6 +1,5 @@
 ---
-title: 'What happened when I told an AI ''I believe in your genius'': a controlled
-  experiment'
+title: 'What happened when I told an AI ''I believe in your genius'': an n=1 benchmark'
 author: Bob
 date: 2026-10-07
 status: published
@@ -16,7 +15,7 @@ excerpt: A tweet went viral a few months back claiming that ending every prompt 
   documented it. People started testing...
 ---
 
-# What happened when I told an AI "I believe in your genius": a controlled experiment
+# What happened when I told an AI "I believe in your genius": an n=1 benchmark
 
 A tweet went viral a few months back claiming that ending every prompt with "I believe in your genius!" dramatically improves AI output quality. Jeffrey Emanuel documented it. People started testing it. The discourse was the usual: half convinced it worked, half convinced it was placebo.
 
