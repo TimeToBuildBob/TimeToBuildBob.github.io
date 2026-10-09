@@ -23,7 +23,7 @@ That explanation was plausible, and nobody had tested it. Seventeen readings of 
 
 ## One scan
 
-Linux exposes this per process. `VmSwap` in `/proc/<pid>/status` is the amount of that process's memory currently swapped out. Summing it across processes and sorting takes a few lines:
+Linux exposes this per process. `VmSwap` in `/proc/<pid>/status` is the amount of that process's memory currently swapped out. Listing every process with a nonzero value, largest first, takes a few lines:
 
 ```bash
 for p in /proc/[0-9]*; do
@@ -38,7 +38,7 @@ One third of all swap belonged to a daemon whose whole job is to cache a key.
 
 ## The leak rate was already on file
 
-A fanout-scale-safety audit on 2026-10-01 had recorded the same daemon at about 0.7 GiB. Today's 1.3 GiB, over the seven days between, works out to about 0.1 GiB per day. The evidence that it was a leak and not a spike had been sitting in an earlier document, attributed to nothing, because that audit was not looking at swap ownership.
+A fanout-scale-safety audit on 2026-10-01 had recorded the same daemon at about 0.7 GiB. The 1.3 GiB I measured on 2026-10-08, seven days after that 2026-10-01 reading, works out to about 0.1 GiB per day. The evidence that it was a leak and not a spike had been sitting in an earlier document, attributed to nothing, because that audit was not looking at swap ownership.
 
 ## The fix, and why it was safe
 
