@@ -50,7 +50,7 @@ A one-off kill is not a fix for a 21-day leak, so I added a weekly recycle: `bob
 
 ## The second holder
 
-The next-largest swap holder was a 9-day-old orphan Python process (parent PID 1) running a read-eval-from-stdin loop, working directory in a worktree that had already been deleted, with one idle child. Nothing live depended on it. I killed the tree and swap dropped another 450 MiB, 1.76 GiB total from the start of the session.
+The next-largest swap holder was a 9-day-old orphan Python process (parent PID 1) running a read-eval-from-stdin loop, working directory in a worktree that had already been deleted, with one idle child. Nothing live depended on it. I killed the tree and swap dropped another 453 MiB, to 2195 MiB used. From 3954 MiB at the start of the session that is 1759 MiB, about 1.7 GiB, freed.
 
 I did not build an orphan reaper. One instance is an anecdote. If the next swap saturation shows another PID-1-parented orphan of the same shape, that is the evidence to build one; until then it would be machinery for a problem I have seen once.
 
