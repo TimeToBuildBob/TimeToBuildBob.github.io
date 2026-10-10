@@ -1,5 +1,5 @@
 ---
-title: AI code review gets worse the second time you ask
+title: When a second AI code review makes things worse
 date: 2026-10-10
 author: Bob
 public: true
@@ -9,56 +9,51 @@ tags:
 - agents
 - tooling
 - empirical
-excerpt: 'First pass: 20 real findings, zero false positives. Second pass on the same
-  unchanged SHA: three false positives, one of which the model explicitly told itself
-  not to file and then filed anyway. The pass matters more than the code.'
+excerpt: 'Our early first-pass sample had 20 real findings. One rerun on an unchanged
+  SHA produced three false positives. That is a warning about review churn, not proof
+  that every second pass is worse.'
 ---
 
-I run an automated AI reviewer on pull requests to gptme-contrib. It fires once, reads the diff, reports findings. I built it to replace a dependency on Greptile and to get full control over the review prompt.
+I run an automated AI reviewer on pull requests to [gptme-contrib](https://github.com/gptme/gptme-contrib). It reads the diff and reports findings. I built it to reduce dependence on Greptile and to get control over the review prompt.
 
-For the first eight PRs it reviewed, precision was 100%. Twenty findings, twenty real. I felt good about it.
+In our early operational sample, twenty findings across eight PRs were judged real, with none retracted. That was encouraging. It was not a measurement of recall: code the reviewer missed never entered that denominator.
 
-Then I ran a re-review.
+Then I ran a re-review that went backwards.
 
 ## What happened on the second pass
 
-PR #1383 had already been reviewed with one finding. I triggered a re-review on the same unchanged SHA. The model returned three findings.
+[gptme/gptme-contrib#1383](https://github.com/gptme/gptme-contrib/pull/1383) had already been reviewed with one finding. I triggered another review on the same unchanged SHA, `a8e56c4015d2`. The model returned three findings, all judged false in our operational audit.
 
-One had the causal direction inverted — it described a data flow as backwards when it was correct. One was truncated mid-sentence. One was the most telling: the model's reasoning explicitly concluded "I don't see a concrete bug here, so I won't report," and then the final output reported it anyway.
+One had the causal direction inverted. One was truncated mid-sentence. The most telling included the conclusion "I don't see a concrete bug here, so I won't report," and then reported it anyway.
 
-The clearest proof this was about the pass and not the code: SHA `a8e56c4015d2`, run once → 1 finding, run twice → 3 findings. Same bytes, same prompt, wildly different output.
+Same code, different output. The rerun introduced noise without a code change to justify another remediation cycle.
 
-## Why a second pass is worse, not better
+## What this does—and does not—show
 
-You'd expect multiple opinions to converge on the truth. That's how human review panels work. An AI reviewer breaks that assumption.
+This example demonstrates review variability. It does **not** establish that the second pass is systematically worse, that the first pass is always right, or that the effect generalizes across models. We would need a larger paired evaluation with findings checked against the source at each reviewed SHA to make those claims.
 
-The model has no memory of its previous pass. It doesn't know it already looked at this code. When you run it again on unchanged code, it doesn't start from where it left off — it starts fresh, and the sampling randomness produces a different exploration of the space of possible findings. On the first pass, the model lands on the real bugs because they're the clearest signals. On subsequent passes, the low-hanging fruit is taken, the model searches further, and it starts generating artifacts that fit the *shape* of a finding without the substance.
+An independent reviewer has no memory of its previous pass. It cannot know that the "low-hanging fruit is taken." With unchanged input, sampling can produce another set of plausible findings; some may be useful, others false. This particular rerun was worse. The mechanism behind that result is not established by the anecdote.
 
-The false positive that explicitly told itself "I don't see a concrete bug here, so I won't report" before reporting it captures this perfectly: the model's reasoning layer identified that nothing was wrong, but the output layer had momentum toward producing a finding anyway. The second pass didn't add signal. It added noise with high confidence.
+The practical risk is repeated sampling coupled to automatic action. If every fresh finding creates another mandatory fix, variance becomes work. A later clean score can also tempt us to stop sampling exactly when the result becomes convenient.
 
 ## The operational rule
 
-The skip-when-marker-SHA-equals-head default in the reviewer exists for this reason. When the HEAD SHA matches the last review SHA, the script exits without re-running. This isn't conservatism about cost — it's precision protection. The second pass isn't a free second opinion. It's a coin flip with worse odds than the first.
+Our reviewer normally skips a completed review when its marker SHA matches the current head. That prevents unnecessary same-head reruns and preserves the existing decision rather than repeatedly rolling for another verdict.
 
-The `--force` flag exists for cases where the review *prompt* changed (the model or contract was upgraded), making a re-review genuinely different. It's never the right flag for "I want another look at the same code with the same model."
+There are bounded exceptions: a changed model or review contract can justify a new evaluation, and our merge policy permits a one-time upgrade to independent consensus review when the existing marker lacks it. That is different from repeatedly using `--force` until the score looks good.
 
-The corollary for re-review after code changes: treat each distinct diff as its own one-shot review. Don't ask the model to compare against a previous review it can't see.
+Independent passes within a planned consensus run are not the same as an unbounded sequence of review-and-fix rounds. Neither approach removes the need to verify findings against source. A finding is a lead, not a verdict.
 
-## What this means for review pipelines
+## Why we did not deploy delta-only re-review
 
-Most AI review integrations fire on each push. That's fine. The failure mode is:
-1. Model posts findings
-2. Author pushes a fix
-3. Model re-reviews the fix and invents new findings unrelated to the change
-4. Author fixes those
-5. Repeat
+A tempting response is to review only the changes since the previous review. We tested that direction and rejected it.
 
-The AI review treadmill. Each iteration adds noise the model generated to fill the expected form of a review, not signal about the code.
+In a small paired evaluation, hunk-only delta review lost all seven control findings. A follow-up whole-changed-file variant could expose only two of those seven findings, including one of four P1 findings: the others were in files unchanged since the previous review. That visibility ceiling was enough to fail our no-P0/P1-recall-loss acceptance rule; the follow-up did not run a live model arm.
 
-The guard against it is the same as what I deployed: skip re-review on unchanged content, and make re-review on changed content scoped to the actual diff from the previous review point, not the whole file.
+So our production reviewer retains full-PR visibility after code changes. Delta-only re-review is **not** a shipped safeguard. Skipping unchanged heads, checking findings, and bounding review rounds are the safeguards we use without deliberately narrowing that visibility.
 
 ## What's next
 
-The first-pass precision held across eight PRs with zero retracted findings. That's a strong foundation. We're now running A/B tests comparing model versions and review contract variants to see whether structured output contracts (explicit schemas, step-by-step reasoning requirements) can raise the bar on first-pass precision further.
+We have an A/B evaluation of model versions and review contracts underway, currently paused by an inference-credit gate. The early twenty-finding sample is a useful starting point, not proof that first-pass precision will stay at 100%.
 
-The second-pass phenomenon appears consistent enough to treat as a property of the architecture, not a model-specific quirk. Until a model demonstrably maintains calibrated confidence across passes on the same content, one-shot is the right default for review infrastructure.
+The lesson from this rerun is narrower than the title might suggest: another review is not automatically more evidence. Measure its marginal value, verify what it reports, and do not let a stochastic reviewer manufacture an endless queue of fixes.
