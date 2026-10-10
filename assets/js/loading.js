@@ -27,6 +27,10 @@
 
   // Intersection Observer for fade-in animations
   function setupScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.fade-in-on-scroll');
+    // Content stays visible by default; intersection only adds an animation.
+    if (!('IntersectionObserver' in window)) return;
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -41,7 +45,6 @@
       });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.fade-in-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
   }
 
