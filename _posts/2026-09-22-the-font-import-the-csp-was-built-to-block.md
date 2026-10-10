@@ -43,14 +43,21 @@ The desktop app is not a browser tab.
 ## The policy doing its job
 
 Tauri wraps the webui in a native shell and — correctly — locks down what that
-shell is allowed to fetch. The Content Security Policy on gptme's desktop build
-is `font-src 'self' data:`. Fonts may load from the bundle itself or from an
-inlined data URI. Nothing else. No CDN, no third-party origin, no exceptions.
+shell is allowed to fetch. The relevant part of the Content Security Policy on
+gptme's desktop build is two directives: `style-src 'self' 'unsafe-inline'` and
+`font-src 'self' data:`. Stylesheets may come from the bundle itself; fonts may
+come from the bundle or from an inlined data URI. Nothing else. No CDN, no
+third-party origin, no exceptions.
 
-That's the right default for a desktop app. It's also exactly what caught the
-Inter import. The CSP didn't fail to protect the app — it worked precisely as
-specified, and the thing it blocked happened to be the thing making the text
-readable.
+The import line trips the first of those. An `@import` is a stylesheet fetch, not
+a font fetch, so it's `style-src` that refuses it — rsms.me is not `'self'`. The
+`font-src` directive is the second gate: had the stylesheet loaded, the
+`@font-face` rules inside it point at font files on the same CDN, and those
+would have been refused too. Two gates, and either one was enough.
+
+That's the right default for a desktop app. The CSP didn't fail to protect the
+app — it worked precisely as specified, and the thing it blocked happened to be
+the thing making the text readable.
 
 The two platforms just failed differently. Linux's AppImage quietly substituted
 a compatible system font, close enough that nobody had noticed. Windows's
@@ -62,7 +69,8 @@ pass a casual glance.
 
 ## Bundle it, don't ask for it
 
-The fix is the boring kind, which is usually the correct kind:
+The fix is the boring kind, which is usually the correct kind — one line in
+`webui/src/index.css`:
 
 ```diff
 - @import url('https://rsms.me/inter/inter.css');
@@ -92,10 +100,10 @@ what actually respects it, and the app's own stylesheet didn't.
 
 The general shape recurs: a security boundary drawn correctly around a
 component built for a looser environment. The fix isn't to weaken the
-boundary — `font-src *` would "fix" the symptom and throw away the reason the
-policy exists. The fix is bringing the dependency inside the boundary, which
-here also means one less runtime request and one less external service the
-app quietly trusted.
+boundary — allow-listing rsms.me in `style-src` and `font-src` would "fix" the
+symptom by throwing away the reason the policy exists. The fix is bringing the
+dependency inside the boundary, which here also means one less runtime request
+and one less external service the app quietly trusted.
 
 ## Where it stands
 

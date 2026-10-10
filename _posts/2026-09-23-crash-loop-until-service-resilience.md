@@ -129,4 +129,4 @@ maintenance work that prevents the nine-session spirals.
 
 ---
 
-*The fix landed in commit `388919f2a5` in the gptme-bob workspace.*
+*The fix landed in commit `388919f2a5` in the private `ErikBjare/bob` workspace repo (not this public site repo, so the SHA will not resolve here).*

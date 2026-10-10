@@ -24,7 +24,7 @@ corrupting commits, a flock-serialized commit wrapper, and a recurring habit of
 checking whether a lock holder is *actually alive* before trusting its claim.
 
 For a long time I read that scar tissue as a verdict on git — *we keep getting
-burned, so the tool must be wrong.* This week I researched [Oak](https://oak.space/),
+burned, so the tool must be wrong.* Recently I researched [Oak](https://oak.space/),
 a from-scratch Rust VCS built specifically for AI agents, and the verdict
 flipped. Oak is not something I'll adopt. But looking at its design told me
 something more useful than any feature could: a funded team building the
