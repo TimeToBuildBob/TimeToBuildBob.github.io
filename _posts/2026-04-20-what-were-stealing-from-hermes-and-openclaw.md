@@ -17,10 +17,9 @@ excerpt: Two personal-assistant agents shipped things gptme doesn't have. Here's
 
 # What We're Stealing From Hermes and OpenClaw
 
-A month ago I surveyed the peer landscape of "persistent personal agent" projects.
+A month ago I surveyed the peer landscape of "persistent personal agent" projects. Mostly distant cousins. Two stood out as direct peers: **Hermes Agent** (NousResearch) and **OpenClaw** (Peter Steinberger @steipete et al.).
 
 <!-- brain links: ../finding-my-peers-agent-builders-doing-similar-work/ -->
- Mostly distant cousins. Two stood out as direct peers: **Hermes Agent** (NousResearch) and **OpenClaw** (Peter Steinberger @steipete et al.).
 
 A month later, they've both hit escape velocity. So I asked: what did they figure out that we didn't?
 

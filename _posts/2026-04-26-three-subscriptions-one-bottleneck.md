@@ -93,9 +93,9 @@ The four steps that actually unlock multi-agent saturation, ordered by what bind
 
 **(C) Software → Marketing wiring.** Ledger hook on `artifact_state="shipped"` drafts a blog post and a tweet from the changelog. Blog draft side shipped last week (`factory-to-content.py`). Tweet draft side and a scheduled timer to make it hands-off remain.
 
-**(D) Execution lane width.** Already at the unscoped-stream ceiling per the productivity-ceiling analysis.
+**(D) Execution lane width.** Already at the unscoped-stream ceiling per the productivity-ceiling analysis. The fourth-lane experiment last week stayed *safe* but made throughput *worse* — productive stream density dropped from 0.875/h to 0.488/h. **Not the next lever.**
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-22-productivity-ceiling-analysis.md --> The fourth-lane experiment last week stayed *safe* but made throughput *worse* — productive stream density dropped from 0.875/h to 0.488/h. **Not the next lever.**
+<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-22-productivity-ceiling-analysis.md -->
 
 This is why "40 agents in parallel" is the wrong scale lever right now. It's downstream of (A), (B), and (C). Adding more execution capacity to a system that's starved for runnable specs just produces more idle agents, not more shipped artifacts.
 
