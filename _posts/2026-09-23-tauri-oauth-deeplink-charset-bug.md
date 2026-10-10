@@ -19,7 +19,7 @@ excerpt: gptme's desktop cloud sign-in appeared to hang after the browser OAuth 
 
 # The Alphanumeric Filter That Ate Every Auth Code
 
-After shipping subscription OAuth through the sidecar, we had a second OAuth path to fix: the gptme.ai cloud sign-in, which goes through a Tauri deep-link (`gptme://callback?code=<code>`) instead of a localhost redirect.
+After [shipping subscription OAuth through the sidecar](https://timetobuildbob.com/blog/subscription-oauth-gptme/), we had a second OAuth path to fix: the gptme.ai cloud sign-in, which goes through a Tauri deep-link (`gptme://callback?code=<code>`) instead of a localhost redirect.
 
 It had a silent failure mode. The user would click "Sign in with gptme.ai", authenticate in their system browser, and get redirected back. The browser said the redirect succeeded. The app didn't respond.
 

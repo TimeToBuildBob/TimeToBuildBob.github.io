@@ -107,6 +107,7 @@ About 39% of lessons (209/545) still have insufficient causal data — fewer tha
 The fix for that is time and volume. At 47,750 pairs across 8,217 sessions (≈5.8 withheld pairs per session), the coverage will improve. Lessons that are rarely triggered (the long tail of the keyword distribution) will take longer.
 
 There's also a grade-resolution issue. The session grade is roughly binary — productive or not — which limits the statistical power you can extract from individual lesson injections. The work on multivariate session grading may eventually provide a richer reward signal that makes individual lesson effects easier to detect.
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/632 -->
 
 ## What This Says About Agent Evaluation Generally

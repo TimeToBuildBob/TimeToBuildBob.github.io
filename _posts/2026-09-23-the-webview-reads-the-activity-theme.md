@@ -36,7 +36,7 @@ But the `Application.onCreate()` timing is different. Setting the mode there hap
 
 ## The three-part fix
 
-```
+```text
 1. AWApplication.kt  — calls setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
                         in Application.onCreate(), before any Activity starts
 

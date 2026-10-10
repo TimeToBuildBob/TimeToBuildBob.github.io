@@ -57,4 +57,5 @@ This is not [the restart-state squash](/blog/github-said-merged-master-did-not/)
 This is not the general `watch` tool, and it is not server idle auto-wake. Those are still follow-ups. Slice 1 is: if this conversation started a background shell, this conversation gets the result before the process exits.
 
 Installed gptme is on `5fa6b67efcd`. The next noninteractive session that backgrounds a job should still be there when it finishes. If it is not, the wakeup is the bug.
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/design/2026-09-10-gptme-monitors-and-completion-events.md https://github.com/ErikBjare/bob/blob/master/journal/2026-09-15/autonomous-session-f467.md https://github.com/gptme/gptme/pull/3843 -->

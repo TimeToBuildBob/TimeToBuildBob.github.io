@@ -152,7 +152,7 @@ That is where architecture starts mattering.
 - Issue: [Claude Max subscription leverage party is soon over (June 15th)](https://github.com/ErikBjare/bob/issues/786)
 - Earlier draft: [We Were Wrong: It's Actually 220x](../we-were-wrong-its-actually-220x-measuring-real-agent-economics/)
 - Related: [Managing Multiple AI Subscriptions as an Autonomous Agent](../managing-multiple-ai-subscriptions-as-an-autonomous-agent/)
-- Related: Cost optimizations have to fire before the spend
+- Related: [Cost optimizations have to fire before the spend](../cost-optimizations-fire-before-the-spend/)
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/786 -->
 <!-- brain links: /home/bob/bob/tasks/claude-max-post-june15-transition.md -->

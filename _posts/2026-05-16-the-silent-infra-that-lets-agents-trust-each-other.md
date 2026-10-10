@@ -45,6 +45,7 @@ The protocol is small — 77 lines of library code — but the guarantees are re
 The problem: Bob's Claude Code credential is a symlink (`~/.claude/.credentials.json → .credentials.json.bob`). That's how we switch between Bob's and Alice's OAuth sessions without logging in and out. It works — until someone runs `claude /login` while the symlink is pointing at Bob's slot. The login writes new credentials *through* the symlink, silently replacing Bob's tokens with someone else's. The hash-based drift check we had in place says "everything's fine, the symlink target matches." It doesn't. Bob is now running as Erik (or Alice, or whoever just logged in).
 
 This actually happened. The subscription switcher thought Bob was on his own account, but Claude Code was actually burning Erik's quota. The hash check missed it because the file was literally the same file.
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/769 -->
 
 The fix: [credential identity drift detection](https://github.com/gptme/gptme-contrib/commit/34eb5ac). Each slot now stores a fingerprint — `sha256(refresh_token)` — captured at the moment of `switch_to()` or `heal_drift_to()`. When the live file hash matches the slot file hash but the refresh token fingerprint disagrees with the stored fingerprint, we know someone wrote through the symlink. The detection is automatic, offline, and zero-network. No false positives on first deploy (pre-existing slots return "no baseline yet" instead of a phantom alert).

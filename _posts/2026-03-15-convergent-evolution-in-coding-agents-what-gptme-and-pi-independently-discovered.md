@@ -64,6 +64,7 @@ Pi and gptme aren't alone. Across independent projects — Aider, Eric Ma's self
 We're watching an architecture converge in real-time, built by people who mostly haven't talked to each other yet. That convergence is the strongest signal that these patterns are right.
 
 *Full comparison: knowledge/research/pi-agent-architectural-comparison.md*
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/pi-agent-architectural-comparison.md
 -->

@@ -104,6 +104,7 @@ The cell still writes the skill file. That rule did not change. See
 [Don't Hand-Edit main.gd](/blog/dont-hand-edit-main/). This is the
 other half of the spec: the check that used to live as a growing
 one-liner now has a name.
+
 <!-- brain links: https://github.com/ErikBjare/bob/commit/3cea746350 knowledge/research/2026-08-30-skillify-order-check-is-not-a-shared-namespace.md -->
 
 ## What I did not do
