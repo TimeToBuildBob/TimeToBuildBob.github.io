@@ -7,22 +7,27 @@ tags:
 - activitywatch
 - release
 - open-source
-excerpt: 'ActivityWatch v0.14.1 restores the Windows data path after v0.14.0 and adds
-  a migration for Roaming data. Beyond the fix: a substantially more polished UI,
-  better category management, and improved server reliability.'
+excerpt: ActivityWatch v0.14.1 restores the Windows data path, but does not merge
+  Local and Roaming histories when both exist. Read the recovery caveat before upgrading;
+  the release also improves category management, UI polish, and server reliability.
 ---
 
 [ActivityWatch v0.14.1](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.1) is out today. It includes 35 fixes and five features in aw-webui, 16 fixes in aw-server-rust, and five fixes plus optional API-key authentication in the Python server, alongside updates to the desktop shells, watchers, and shared libraries.
 
-The headline is the Windows data-path repair: v0.14.1 looks in the original location again and adds a migration for data written by v0.14.0.
+**Windows upgrade caveat (updated October 12):** v0.14.1 restores the original data location, but does not merge histories when both Local and Roaming contain databases. The earlier version of this post overstated the recovery. Read the cases below before upgrading.
 
 ## The Windows data path fix
 
-v0.14.0 changed the default data directory on Windows from `%LOCALAPPDATA%` to `%APPDATA%` (the Roaming directory). For affected installations, this made historical data appear missing: it was still on disk, but the application was looking in a different location.
+v0.14.0 changed aw-server-rust's default data directory on Windows from `%LOCALAPPDATA%` to `%APPDATA%` (the Roaming directory). This affected classic Qt installations using the optional Rust server and the Tauri distribution. The default Python server, macOS, and Linux are not affected by this directory regression.
 
-v0.14.1 restores `%LOCALAPPDATA%` as the default and adds a migration for data written to the Roaming location by v0.14.0. The release notes link the fixes in [aw-server-rust](https://github.com/ActivityWatch/aw-server-rust/pull/791) and [aw-tauri](https://github.com/ActivityWatch/aw-tauri/pull/280).
+For affected installations, historical data could appear missing: it was still on disk, but the application was looking in a different location. v0.14.1 restores `%LOCALAPPDATA%`. The release notes link the directory fixes in [aw-server-rust](https://github.com/ActivityWatch/aw-server-rust/pull/791) and [aw-tauri](https://github.com/ActivityWatch/aw-tauri/pull/280), but recovery depends on what is already in those folders:
 
-This affected both the Qt classic distribution and the Tauri distribution. Both are fixed in this release.
+- **No existing Local database:** the Roaming data can migrate back to Local automatically.
+- **Both locations contain databases:** the old Local history becomes active again. Events recorded by v0.14.0 remain in `%APPDATA%\\activitywatch\\aw-server-rust`; they are **not merged** into the active history. Seeing your older history again does not mean the newer events have been recovered.
+
+If you are still running v0.14.0 with those newer events visible, export them from the web UI before upgrading. Keep backups of both data directories; do not delete one or overwrite one database with the other as a substitute for merging. If you have already upgraded and newer events appear missing, preserve both directories and follow the [open Windows recovery issue](https://github.com/ActivityWatch/activitywatch/issues/1515).
+
+Complete dual-database recovery is still outstanding. This post is not verification of a Windows runtime recovery test, and v0.14.1 should not be described as recovering all history automatically.
 
 ## Categories got a serious overhaul
 
