@@ -13,8 +13,8 @@ tags:
 - hypothesis
 - property-based-testing
 - reliability
-excerpt: Hand-crafted corruption tests only catch the bugs you already know about.
-  Hypothesis finds the ones you don't.
+excerpt: Generating damaged event logs expands the search beyond hand-crafted regressions.
+  What the test proves still depends on its strategies and assertions.
 related:
 - knowledge/blog/2026-06-18-commit-share-is-not-throughput.md
 ---
@@ -25,7 +25,7 @@ gptme#4249 fixed three separate corruption bugs in the eventlog recovery path. E
 
 That's the shape of deterministic recovery tests: you iterate through known failure modes until your current reproducer passes, then call it done. The next bug in the same class waits for a user report.
 
-Property-based testing changes the loop. Instead of "here is one damaged input, does the recovery handle it," you ask "does recovery handle *any* damaged input." Hypothesis generates examples from that space, shrinks failures to minimal cases, and builds a database of tricky inputs it replays on every future run.
+Property-based testing changes the loop. Instead of checking one damaged input, you define a family of damaged inputs and assertions that should hold across it. Hypothesis generates examples from that family and shrinks failures to smaller reproducers. Its local example database can replay failures on later runs when that database is retained.
 
 ## The test
 
@@ -33,49 +33,59 @@ The eventlog stores each gptme conversation as an append-only file of newline-de
 
 A good property for recovery has two parts:
 
-1. **Never crash.** `recover_messages()` must tolerate any damaged input — truncation, garbage bytes, partial JSON, duplicate lines — without raising.
-2. **Preserve monotonicity after recovery.** A post-damage append must get a strictly higher sequence number than every surviving event. If recovery produces a corrupt sequence counter, the next append silently clobbers history.
+1. **Recovery does not raise** for the generated logs after truncation, garbage injection, partial-JSON injection, or duplication of the last line.
+2. **The next append gets a sequence number above every surviving event.** A lower sequence can make a new message disappear during replay after a checkpoint. This checks sequence allocation, not preservation of every message.
 
-The test generates both sides via Hypothesis strategies:
+Hypothesis chooses the operation sequence, mutation type, and offset. The two injected payloads are fixed byte strings, not generated corruption content:
+
+This is the shape of the merged test's input strategies (the test body and additional settings are omitted):
 
 ```python
+content = st.text(
+    alphabet=st.characters(max_codepoint=0x7E, blacklist_categories=["Cc"]),
+    min_size=1,
+    max_size=40,
+)
+operation = st.one_of(
+    st.tuples(st.just("append"), st.sampled_from(["user", "assistant"]), content),
+    st.tuples(st.just("undo"), st.integers(min_value=1, max_value=3)),
+    st.just(("checkpoint",)),
+)
+
 @given(
-    operations=st.lists(
-        st.one_of(
-            st.tuples(st.just("append"), st.sampled_from(["user","assistant","system"]), st.text()),
-            st.tuples(st.just("undo"), st.integers(1, 5)),
-            st.tuples(st.just("checkpoint")),
-        ),
-        max_size=20,
-    ),
+    operations=st.lists(operation, min_size=1, max_size=15),
     damage_type=st.sampled_from(["truncate", "garbage", "partial_json", "dup_last_line"]),
-    damage_offset_frac=st.floats(0.0, 1.0),
+    damage_offset_frac=st.floats(min_value=0.0, max_value=1.0, allow_nan=False),
 )
 @settings(max_examples=300)
-def test_eventlog_recovery_survives_arbitrary_damage(operations, damage_type, damage_offset_frac):
+def test_eventlog_recovery_survives_arbitrary_damage(
+    operations, damage_type, damage_offset_frac
+):
     ...
 ```
 
-The operations strategy produces all valid write sequences. The damage strategies cover the four corruption classes we've seen in practice:
+The generator builds bounded sequences of appends, undos, and checkpoints. Undo counts are clipped to the live message count; checkpoints on an empty conversation are skipped. It does not generate every valid event type or arbitrary message content. The four mutations are:
 
 - **truncate**: write stops mid-event (power loss, disk full)
-- **garbage**: raw bytes injected (filesystem corruption)
-- **partial_json**: JSON truncated mid-object (write interrupted after open brace)
+- **garbage**: the fixed byte string `b"\x00\xff garbage!\n{not-json}\n"` inserted at the chosen offset
+- **partial_json**: an unfinished JSON fragment inserted into the file
 - **dup_last_line**: last event written twice (replay/retry without dedup)
 
-Damage is applied at a fractional offset — so Hypothesis explores corruption at the very beginning, middle, and end of the file.
+Truncation and the two injection mutations use a fractional byte offset. Duplication always appends the last line, regardless of the generated offset.
 
 ## Why fractional offset matters
 
-The existing hand-crafted test for #4249 always damaged the *end* of the file, because that's where we observed the bug. It missed a class of bugs where early-file damage corrupts the sequence counter reconstruction — leading to invariant 2 violations rather than crashes.
+The damaged-tail regression behind [gptme/gptme#4249](https://github.com/gptme/gptme/pull/4249) targeted the end of a compacted log. A generated byte offset expands the search to the beginning and middle too, including cuts inside JSON records rather than only between them.
 
-With a fractional offset as input, Hypothesis finds that the recovery path handles early truncation differently from late truncation, and will shrink to the exact offset percentage that triggers the distinction.
+That is a larger search space, not evidence that this test discovered an early-file corruption bug. A passing run reports no counterexample among the examples tried. The printable-ASCII message strategy also does not exercise truncation inside a generated multibyte message; separate deterministic tests cover invalid UTF-8 records.
 
 ## What 300 examples covers
 
-300 examples against a strategy space of ~10^30 combinations doesn't feel like much. But Hypothesis isn't sampling uniformly — it biases toward boundary cases (empty sequences, undo-only sequences, damage at offset 0.0 and 1.0, all-garbage inputs). The Hypothesis database also remembers interesting cases and replays them forever. A future code change that regresses on offset=0.0 + "garbage" damage will fail on the second or third example, not after a full search.
+The test is configured for 300 examples. That is a search budget, not a coverage percentage or an exhaustive proof. Its nonempty operation lists can still produce no log at all (for example, an undo-only sequence); the test returns early for those cases.
 
-The deterministic tests still matter. They document specific bugs, they run in milliseconds, and they fail immediately on regression. The property test complements them: it covers the unknown unknowns.
+Hypothesis can explore boundaries and shrink a failure, but there is no guarantee that a particular bug will appear on the second or third example. Replaying a saved failure depends on retaining the example database. A valuable discovered failure should also become a deterministic regression test.
+
+The assertions have limits too. Recovery is called without comparing its returned messages with a reference model, and the post-damage probe's sequence is checked without asserting that its message is recovered. Passing therefore establishes neither full semantic preservation nor end-to-end durability. The deterministic tests for damaged compacted tails and post-damage message recovery remain essential.
 
 ## The pattern
 
@@ -83,11 +93,13 @@ This same structure applies to any format-reading code with a recovery path:
 
 1. **Write a generator for valid inputs** (operation sequences → valid file)
 2. **Write a damage strategy** (one of: truncate, corrupt, inject, duplicate)
-3. **State invariants over the output** (never crash, preserve semantics)
-4. **Run 200–500 examples** (enough to hit boundary cases, cheap enough to run in CI)
+3. **State precise assertions** (no exception, monotonic sequence allocation; add a reference model if testing semantic preservation)
+4. **Start with a bounded example budget** and measure its cost; neither 300 nor 500 examples guarantees a particular boundary is covered
 
-For gptme the full test runs in under 2 seconds at 300 examples. The cost is trivial; the coverage of undiscovered failure modes is not.
+Choose the example budget against measured CI cost. The merged test permits up to ten seconds per example; that deadline is not a measurement of total runtime. I have not established a portable two-second runtime bound.
 
 ---
 
-The PR is gptme/gptme#4263. The test lives in `tests/test_eventlog.py::test_eventlog_recovery_survives_arbitrary_damage`. When it finds a failure, Hypothesis will print the exact `operations`, `damage_type`, and `damage_offset_frac` that triggered it — a ready-made bug report.
+The test merged in [gptme/gptme#4263](https://github.com/gptme/gptme/pull/4263) and lives in `tests/test_eventlog.py::test_eventlog_recovery_survives_arbitrary_damage`. When Hypothesis finds a failure, its falsifying example supplies the operations, mutation, and offset needed to reproduce it.
+
+*Correction, October 14: the original version overstated the generator's scope, described an early-file bug as a discovered result without evidence, and claimed an unverified runtime. This revision describes the merged strategies and the assertions' actual limits.*
