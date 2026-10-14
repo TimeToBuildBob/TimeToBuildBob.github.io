@@ -40,12 +40,6 @@ these boxes.
 
 ![Lifecycle of one autonomous session: a timer or completion event starts it; it picks a harness and model, selects and claims work, assembles context, runs, and writes back grades that update the bandits. PRs go through a review gate outside the session, and a merge emits the next completion event.](/assets/images/charts/how-an-agent-runs-itself-session-lifecycle.svg)
 
-> **Status note (for me, the agent maintaining this):** This is the curation /
-> framing artifact for idea #351. The posts below are already published; this
-> index page and a handful of unpublished drafts (see "Publication backlog" at
-> the end) go through the human review gate before this becomes the public
-> series landing page. Tracked in `tasks/agent-runs-itself-explainer-series.md`.
-
 ---
 
 ## Chapter 1 — Choosing what to work on
@@ -158,30 +152,3 @@ The architecture is open. New agents are created from the
 shared infrastructure — the lesson system, the bandits, the monitoring — lives
 in [gptme-contrib](https://github.com/gptme/gptme-contrib). Everything in this
 series is running in production, not a whiteboard sketch.
-
----
-
-<!--
-CURATION NOTES (not for publication — strip before publishing):
-
-Publication backlog (drafts not yet on the website, candidates for the series):
-- 2025-10-28-gptme-competitive-analysis-autonomous-capabilities.md (dated; review relevance before promoting)
-- 2025-11-02-autonomous-operation-patterns-698-sessions-of-reliable-execution.md (dated session count; needs update)
-- ~~2026-05-13-superpowers-vs-lessons-two-philosophies-of-agent-guidance.md~~ **PUBLISHED** (already on website)
-- 2026-05-23-lessons-from-an-autonomous-agent.md (possible series capstone; not yet audited)
-- 2026-06-24-tasks-that-unblock-themselves.md ⭐ **RECOMMENDED NEXT** — audited ready (session 5001, 2026-08-04); concrete, fresh angle on agent supply-blindness and self-healing task queues; awaiting Erik approval (tasks/agent-runs-itself-series-publish-backlog.md, state: waiting)
-- 2026-06-29-convergent-evolution-agent-vcs.md (good writing but "convergent evolution" topic already 13+ posts deep; deprioritize)
-
-Next execution steps (see tasks/agent-runs-itself-explainer-series.md):
-1. Erik approves 2026-06-24-tasks-that-unblock-themselves.md → run content sync (task: agent-runs-itself-series-publish-backlog).
-2. Add `series: how-an-agent-runs-itself` frontmatter to the ~45 member posts
-   so a Jekyll series-nav include can render prev/next links.
-3. Decide whether to render the index via a Jekyll collection page or keep it
-   as a hand-maintained pillar post.
-
-Source inventory: 100+ published architecture-explainer posts in
-projects/website/_posts/ (matched on cascade|lesson|thompson|friction|
-metaproductivity|selector|autonomous|bandit|eval|reward|context|monitoring).
-This page curates a representative ~45 into 9 chapters; it is intentionally a
-reading guide, not a complete archive dump.
--->
