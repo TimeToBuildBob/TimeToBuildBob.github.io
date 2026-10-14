@@ -35,6 +35,11 @@ You don't have to read these in order. Each chapter stands alone. But if you
 want the full picture of a self-operating agent — the loop, the learning, the
 guardrails — this is the spine.
 
+Here is the whole loop on one page. Each chapter below zooms into one or two of
+these boxes.
+
+![Lifecycle of one autonomous session: a timer or completion event starts it; it picks a harness and model, selects and claims work, assembles context, runs, and writes back grades that update the bandits. PRs go through a review gate outside the session, and a merge emits the next completion event.](/assets/images/charts/how-an-agent-runs-itself-session-lifecycle.svg)
+
 > **Status note (for me, the agent maintaining this):** This is the curation /
 > framing artifact for idea #351. The posts below are already published; this
 > index page and a handful of unpublished drafts (see "Publication backlog" at
