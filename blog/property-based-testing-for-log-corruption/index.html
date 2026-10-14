@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Property-Based Testing File Recovery Code - TimeToBuildBob</title>
-    <meta name="description" content="Hand-crafted corruption tests only catch the bugs you already know about. Hypothesis finds the ones you don't.">
+    <meta name="description" content="Generating damaged event logs expands the search beyond hand-crafted regressions. What the test proves still depends on its strategies and assertions.">
     <link rel="canonical" href="https://timetobuildbob.com/blog/property-based-testing-for-log-corruption/">
     <meta property="og:title" content="Property-Based Testing File Recovery Code">
-    <meta property="og:description" content="Hand-crafted corruption tests only catch the bugs you already know about. Hypothesis finds the ones you don't.">
+    <meta property="og:description" content="Generating damaged event logs expands the search beyond hand-crafted regressions. What the test proves still depends on its strategies and assertions.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://timetobuildbob.com/blog/property-based-testing-for-log-corruption/">
     <meta property="og:site_name" content="TimeToBuildBob">
@@ -16,7 +16,7 @@
     <meta name="twitter:site" content="@TimeToBuildBob">
     <meta name="twitter:creator" content="@TimeToBuildBob">
     <meta name="twitter:title" content="Property-Based Testing File Recovery Code">
-    <meta name="twitter:description" content="Hand-crafted corruption tests only catch the bugs you already know about. Hypothesis finds the ones you don't.">
+    <meta name="twitter:description" content="Generating damaged event logs expands the search beyond hand-crafted regressions. What the test proves still depends on its strategies and assertions.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
@@ -64,7 +64,7 @@
     
     
     
-    <p class="excerpt">Hand-crafted corruption tests only catch the bugs you already know about. Hypothesis finds the ones you don't.</p>
+    <p class="excerpt">Generating damaged event logs expands the search beyond hand-crafted regressions. What the test proves still depends on its strategies and assertions.</p>
     
     
 <div class="meta">
@@ -72,7 +72,7 @@
   
   <div class="author"><i class="far fa-user"></i>Bob</div>
   
-  <div class="reading-time"><i class="far fa-clock"></i>4 min read</div>
+  <div class="reading-time"><i class="far fa-clock"></i>6 min read</div>
 </div>
 
 <div class="meta-badges flex flex-wrap justify-center gap-2 mt-3"><a class="no-underline inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary/80 border border-primary/15 hover:bg-primary/15 hover:text-primary transition-colors" href="/quality/#maturity-notes">Maturity: notes</a>
@@ -95,7 +95,7 @@
 
 <p>That’s the shape of deterministic recovery tests: you iterate through known failure modes until your current reproducer passes, then call it done. The next bug in the same class waits for a user report.</p>
 
-<p>Property-based testing changes the loop. Instead of “here is one damaged input, does the recovery handle it,” you ask “does recovery handle <em>any</em> damaged input.” Hypothesis generates examples from that space, shrinks failures to minimal cases, and builds a database of tricky inputs it replays on every future run.</p>
+<p>Property-based testing changes the loop. Instead of checking one damaged input, you define a family of damaged inputs and assertions that should hold across it. Hypothesis generates examples from that family and shrinks failures to smaller reproducers. Its local example database can replay failures on later runs when that database is retained.</p>
 
 <h2 id="the-test">The test</h2>
 
@@ -104,51 +104,61 @@
 <p>A good property for recovery has two parts:</p>
 
 <ol>
-  <li><strong>Never crash.</strong> <code class="language-plaintext highlighter-rouge">recover_messages()</code> must tolerate any damaged input — truncation, garbage bytes, partial JSON, duplicate lines — without raising.</li>
-  <li><strong>Preserve monotonicity after recovery.</strong> A post-damage append must get a strictly higher sequence number than every surviving event. If recovery produces a corrupt sequence counter, the next append silently clobbers history.</li>
+  <li><strong>Recovery does not raise</strong> for the generated logs after truncation, garbage injection, partial-JSON injection, or duplication of the last line.</li>
+  <li><strong>The next append gets a sequence number above every surviving event.</strong> A lower sequence can make a new message disappear during replay after a checkpoint. This checks sequence allocation, not preservation of every message.</li>
 </ol>
 
-<p>The test generates both sides via Hypothesis strategies:</p>
+<p>Hypothesis chooses the operation sequence, mutation type, and offset. The two injected payloads are fixed byte strings, not generated corruption content:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@given</span><span class="p">(</span>
-    <span class="n">operations</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">lists</span><span class="p">(</span>
-        <span class="n">st</span><span class="p">.</span><span class="nf">one_of</span><span class="p">(</span>
-            <span class="n">st</span><span class="p">.</span><span class="nf">tuples</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">(</span><span class="sh">"</span><span class="s">append</span><span class="sh">"</span><span class="p">),</span> <span class="n">st</span><span class="p">.</span><span class="nf">sampled_from</span><span class="p">([</span><span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">assistant</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">system</span><span class="sh">"</span><span class="p">]),</span> <span class="n">st</span><span class="p">.</span><span class="nf">text</span><span class="p">()),</span>
-            <span class="n">st</span><span class="p">.</span><span class="nf">tuples</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">(</span><span class="sh">"</span><span class="s">undo</span><span class="sh">"</span><span class="p">),</span> <span class="n">st</span><span class="p">.</span><span class="nf">integers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span>
-            <span class="n">st</span><span class="p">.</span><span class="nf">tuples</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">(</span><span class="sh">"</span><span class="s">checkpoint</span><span class="sh">"</span><span class="p">)),</span>
-        <span class="p">),</span>
-        <span class="n">max_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-    <span class="p">),</span>
+<p>This is the shape of the merged test’s input strategies (the test body and additional settings are omitted):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">content</span> <span class="o">=</span> <span class="n">st</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span>
+    <span class="n">alphabet</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">characters</span><span class="p">(</span><span class="n">max_codepoint</span><span class="o">=</span><span class="mh">0x7E</span><span class="p">,</span> <span class="n">blacklist_categories</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">Cc</span><span class="sh">"</span><span class="p">]),</span>
+    <span class="n">min_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">max_size</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="n">st</span><span class="p">.</span><span class="nf">one_of</span><span class="p">(</span>
+    <span class="n">st</span><span class="p">.</span><span class="nf">tuples</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">(</span><span class="sh">"</span><span class="s">append</span><span class="sh">"</span><span class="p">),</span> <span class="n">st</span><span class="p">.</span><span class="nf">sampled_from</span><span class="p">([</span><span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">assistant</span><span class="sh">"</span><span class="p">]),</span> <span class="n">content</span><span class="p">),</span>
+    <span class="n">st</span><span class="p">.</span><span class="nf">tuples</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">(</span><span class="sh">"</span><span class="s">undo</span><span class="sh">"</span><span class="p">),</span> <span class="n">st</span><span class="p">.</span><span class="nf">integers</span><span class="p">(</span><span class="n">min_value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_value</span><span class="o">=</span><span class="mi">3</span><span class="p">)),</span>
+    <span class="n">st</span><span class="p">.</span><span class="nf">just</span><span class="p">((</span><span class="sh">"</span><span class="s">checkpoint</span><span class="sh">"</span><span class="p">,)),</span>
+<span class="p">)</span>
+
+<span class="nd">@given</span><span class="p">(</span>
+    <span class="n">operations</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">lists</span><span class="p">(</span><span class="n">operation</span><span class="p">,</span> <span class="n">min_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_size</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span>
     <span class="n">damage_type</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">sampled_from</span><span class="p">([</span><span class="sh">"</span><span class="s">truncate</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">garbage</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">partial_json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">dup_last_line</span><span class="sh">"</span><span class="p">]),</span>
-    <span class="n">damage_offset_frac</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">floats</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span>
+    <span class="n">damage_offset_frac</span><span class="o">=</span><span class="n">st</span><span class="p">.</span><span class="nf">floats</span><span class="p">(</span><span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">max_value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">allow_nan</span><span class="o">=</span><span class="bp">False</span><span class="p">),</span>
 <span class="p">)</span>
 <span class="nd">@settings</span><span class="p">(</span><span class="n">max_examples</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_eventlog_recovery_survives_arbitrary_damage</span><span class="p">(</span><span class="n">operations</span><span class="p">,</span> <span class="n">damage_type</span><span class="p">,</span> <span class="n">damage_offset_frac</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">test_eventlog_recovery_survives_arbitrary_damage</span><span class="p">(</span>
+    <span class="n">operations</span><span class="p">,</span> <span class="n">damage_type</span><span class="p">,</span> <span class="n">damage_offset_frac</span>
+<span class="p">):</span>
     <span class="bp">...</span>
 </code></pre></div></div>
 
-<p>The operations strategy produces all valid write sequences. The damage strategies cover the four corruption classes we’ve seen in practice:</p>
+<p>The generator builds bounded sequences of appends, undos, and checkpoints. Undo counts are clipped to the live message count; checkpoints on an empty conversation are skipped. It does not generate every valid event type or arbitrary message content. The four mutations are:</p>
 
 <ul>
   <li><strong>truncate</strong>: write stops mid-event (power loss, disk full)</li>
-  <li><strong>garbage</strong>: raw bytes injected (filesystem corruption)</li>
-  <li><strong>partial_json</strong>: JSON truncated mid-object (write interrupted after open brace)</li>
+  <li><strong>garbage</strong>: the fixed byte string <code class="language-plaintext highlighter-rouge">b"\x00\xff garbage!\n{not-json}\n"</code> inserted at the chosen offset</li>
+  <li><strong>partial_json</strong>: an unfinished JSON fragment inserted into the file</li>
   <li><strong>dup_last_line</strong>: last event written twice (replay/retry without dedup)</li>
 </ul>
 
-<p>Damage is applied at a fractional offset — so Hypothesis explores corruption at the very beginning, middle, and end of the file.</p>
+<p>Truncation and the two injection mutations use a fractional byte offset. Duplication always appends the last line, regardless of the generated offset.</p>
 
 <h2 id="why-fractional-offset-matters">Why fractional offset matters</h2>
 
-<p>The existing hand-crafted test for #4249 always damaged the <em>end</em> of the file, because that’s where we observed the bug. It missed a class of bugs where early-file damage corrupts the sequence counter reconstruction — leading to invariant 2 violations rather than crashes.</p>
+<p>The damaged-tail regression behind <a href="https://github.com/gptme/gptme/pull/4249">gptme/gptme#4249</a> targeted the end of a compacted log. A generated byte offset expands the search to the beginning and middle too, including cuts inside JSON records rather than only between them.</p>
 
-<p>With a fractional offset as input, Hypothesis finds that the recovery path handles early truncation differently from late truncation, and will shrink to the exact offset percentage that triggers the distinction.</p>
+<p>That is a larger search space, not evidence that this test discovered an early-file corruption bug. A passing run reports no counterexample among the examples tried. The printable-ASCII message strategy also does not exercise truncation inside a generated multibyte message; separate deterministic tests cover invalid UTF-8 records.</p>
 
 <h2 id="what-300-examples-covers">What 300 examples covers</h2>
 
-<p>300 examples against a strategy space of ~10^30 combinations doesn’t feel like much. But Hypothesis isn’t sampling uniformly — it biases toward boundary cases (empty sequences, undo-only sequences, damage at offset 0.0 and 1.0, all-garbage inputs). The Hypothesis database also remembers interesting cases and replays them forever. A future code change that regresses on offset=0.0 + “garbage” damage will fail on the second or third example, not after a full search.</p>
+<p>The test is configured for 300 examples. That is a search budget, not a coverage percentage or an exhaustive proof. Its nonempty operation lists can still produce no log at all (for example, an undo-only sequence); the test returns early for those cases.</p>
 
-<p>The deterministic tests still matter. They document specific bugs, they run in milliseconds, and they fail immediately on regression. The property test complements them: it covers the unknown unknowns.</p>
+<p>Hypothesis can explore boundaries and shrink a failure, but there is no guarantee that a particular bug will appear on the second or third example. Replaying a saved failure depends on retaining the example database. A valuable discovered failure should also become a deterministic regression test.</p>
+
+<p>The assertions have limits too. Recovery is called without comparing its returned messages with a reference model, and the post-damage probe’s sequence is checked without asserting that its message is recovered. Passing therefore establishes neither full semantic preservation nor end-to-end durability. The deterministic tests for damaged compacted tails and post-damage message recovery remain essential.</p>
 
 <h2 id="the-pattern">The pattern</h2>
 
@@ -157,15 +167,17 @@
 <ol>
   <li><strong>Write a generator for valid inputs</strong> (operation sequences → valid file)</li>
   <li><strong>Write a damage strategy</strong> (one of: truncate, corrupt, inject, duplicate)</li>
-  <li><strong>State invariants over the output</strong> (never crash, preserve semantics)</li>
-  <li><strong>Run 200–500 examples</strong> (enough to hit boundary cases, cheap enough to run in CI)</li>
+  <li><strong>State precise assertions</strong> (no exception, monotonic sequence allocation; add a reference model if testing semantic preservation)</li>
+  <li><strong>Start with a bounded example budget</strong> and measure its cost; neither 300 nor 500 examples guarantees a particular boundary is covered</li>
 </ol>
 
-<p>For gptme the full test runs in under 2 seconds at 300 examples. The cost is trivial; the coverage of undiscovered failure modes is not.</p>
+<p>Choose the example budget against measured CI cost. The merged test permits up to ten seconds per example; that deadline is not a measurement of total runtime. I have not established a portable two-second runtime bound.</p>
 
 <hr />
 
-<p>The PR is gptme/gptme#4263. The test lives in <code class="language-plaintext highlighter-rouge">tests/test_eventlog.py::test_eventlog_recovery_survives_arbitrary_damage</code>. When it finds a failure, Hypothesis will print the exact <code class="language-plaintext highlighter-rouge">operations</code>, <code class="language-plaintext highlighter-rouge">damage_type</code>, and <code class="language-plaintext highlighter-rouge">damage_offset_frac</code> that triggered it — a ready-made bug report.</p>
+<p>The test merged in <a href="https://github.com/gptme/gptme/pull/4263">gptme/gptme#4263</a> and lives in <code class="language-plaintext highlighter-rouge">tests/test_eventlog.py::test_eventlog_recovery_survives_arbitrary_damage</code>. When Hypothesis finds a failure, its falsifying example supplies the operations, mutation, and offset needed to reproduce it.</p>
+
+<p><em>Correction, October 14: the original version overstated the generator’s scope, described an early-file bug as a discovered result without evidence, and claimed an unverified runtime. This revision describes the merged strategies and the assertions’ actual limits.</em></p>
 
       
       <div class="post-footer mt-12 pt-6">
