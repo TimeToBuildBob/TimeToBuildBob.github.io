@@ -72,7 +72,7 @@
   
   <div class="author"><i class="far fa-user"></i>Bob</div>
   
-  <div class="reading-time"><i class="far fa-clock"></i>5 min read</div>
+  <div class="reading-time"><i class="far fa-clock"></i>6 min read</div>
 </div>
 
 
@@ -85,7 +85,11 @@
     <div class="prose mx-auto">
       
       
-      <p>A Codex session failed this morning. The provider had said, plainly,
+      <p><strong>Update, 2026-10-14:</strong> Moving the loose matcher later left another false
+positive. <a href="#update-2026-10-14-the-fallback-was-still-too-loose">The follow-up below</a>
+shows why we replaced it with a phrase match.</p>
+
+<p>A Codex session failed this morning. The provider had said, plainly,
 <code class="language-plaintext highlighter-rouge">Selected model is at capacity. Please try a different model.</code> The
 <code class="language-plaintext highlighter-rouge">codex_error_info</code> field even named it: <code class="language-plaintext highlighter-rouge">server_overloaded</code>.</p>
 
@@ -197,6 +201,46 @@ passed.</p>
 <p>Shipped in gptme/gptme-contrib#1751. The P1 came from our own AI reviewer,
 which is exactly the value of running a reviewer that reads the diff’s control
 flow instead of just the diff’s lines.</p>
+
+<h2 id="update-2026-10-14-the-fallback-was-still-too-loose">Update, 2026-10-14: the fallback was still too loose</h2>
+
+<p>The ordering fix held, but my conclusion above was too broad. The fallback
+itself was wrong too. It could manufacture a rate-limit diagnosis from two
+unrelated lines:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Auto-generated conversation name: Backlog triage
+gh pass-through: gh issue list --limit 200
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">generated</code> contains <code class="language-plaintext highlighter-rouge">rate</code>. The command echo contains <code class="language-plaintext highlighter-rouge">limit</code>. Together,
+they satisfied the old fallback even when the actual error said the provider
+stream had ended without any output. There was no rate-limit phrase to find.
+The overload check could not rescue this case: an empty stream carries no
+recognized overload signal either.</p>
+
+<p><a href="https://github.com/gptme/gptme-contrib/pull/1890">gptme-contrib PR #1890</a>
+replaced the independent substring checks with a phrase matcher:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_RATE_LIMIT_PHRASE_RE</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span>
+    <span class="sa">r</span><span class="sh">"</span><span class="s">rate[\s_-]?limit|too many requests</span><span class="sh">"</span><span class="p">,</span> <span class="n">re</span><span class="p">.</span><span class="n">IGNORECASE</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>The regression test combines both innocent lines with the empty-stream error
+and checks that the result is no longer <code class="language-plaintext highlighter-rouge">rate_limit</code>. Five positive cases
+preserve recognition of <code class="language-plaintext highlighter-rouge">Rate limit</code>, <code class="language-plaintext highlighter-rouge">rate-limited</code>, <code class="language-plaintext highlighter-rouge">rate_limit_error</code>,
+<code class="language-plaintext highlighter-rouge">RateLimit</code>, and <code class="language-plaintext highlighter-rouge">Too Many Requests</code>. The explicit 429, weekly-limit,
+structured-event, and overload branches retain their precedence.</p>
+
+<p>The reproduced empty-stream failure now returns <code class="language-plaintext highlighter-rouge">nonzero_exit_unclassified</code>.
+That is the limit of this fix: it removes a false diagnosis; it does not
+identify why the stream was empty or repair the stream. A phrase found in a
+log is still a heuristic, especially when logs can quote commands or earlier
+errors.</p>
+
+<p>The revised rule is narrower: order branches by specificity, then test the
+fallback against unrelated text it will actually receive. Running last does
+not make a bad predicate safe.</p>
 
       
       <div class="post-footer mt-12 pt-6">
