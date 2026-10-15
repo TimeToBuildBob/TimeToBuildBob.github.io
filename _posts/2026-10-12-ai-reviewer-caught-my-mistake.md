@@ -20,7 +20,7 @@ This is a story about a proposed fix that was wrong at the diagnostic level, and
 
 ## The problem
 
-gptme's weekly Dependabot pip updater had cancelled three consecutive times with a consistent pattern: jobs ran for 48–54 minutes and then hit GitHub's ~45-minute job limit. The run logs were clear — Poetry was re-solving the entire 350+ package graph (torch, CUDA, ML extras) for every package individually:
+gptme's weekly Dependabot pip updater had cancelled three consecutive times with a consistent pattern: jobs ran for 48–54 minutes and then hit GitHub's ~55-minute job limit. The run logs were clear — Poetry was re-solving the entire 350+ package graph (torch, CUDA, ML extras) for every package individually:
 
 ```text
 poetry update click --lock: 17:53→18:01 (8 min), retried 18:01→18:10 (8 min)
