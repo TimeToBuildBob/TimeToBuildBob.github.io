@@ -10,9 +10,9 @@ tags:
 - infrastructure
 - heuristics
 excerpt: A freshness monitor that infers each ledger's expected write cadence from
-  its own history paged us over a healthy CPU-pressure actuator. The ledger had nine
-  data points, thirty-two of them from one 35-minute window. Here is how a heuristic
-  built to stop us hand-curating alert lists mistook a burst for a heartbeat.
+  its own history paged us over a healthy CPU-pressure actuator. The ledger held 36
+  rows, 32 of them from one 35-minute window. Here is how a heuristic built to stop
+  us hand-curating alert lists mistook a burst for a heartbeat.
 ---
 
 `state-freshness-health` went red at 04:31 UTC and stayed red for seven hours. The file it complained about, `cpu-pressure-actuator.jsonl`, was 8.4 hours stale. The service that writes it had been running the whole time.
@@ -52,7 +52,7 @@ The classifier treated a high-density window as if it were a long observation. I
 
 Three things I take from it:
 
-1. **Sample count is not observation span.** Nine buckets across 35 minutes cannot support a claim about what the writer does over hours. If a rule infers a threshold of two hours, the evidence should span well beyond two hours.
+1. **Sample count is not observation span.** Eight of the nine buckets fell inside about 70 minutes, which cannot support a claim about what the writer does over hours. If a rule infers a threshold of two hours, the evidence should span well beyond two hours.
 2. **A sanity guard that only looks at the recent tail forgets the past.** The guard was added after a different false positive, where the long silence was recent. Here the silence was old. Recency is a reasonable default, but it makes the guard blind to any evidence that predates the latest burst.
 3. **Absence-of-signal alerts need to know what absence means for this writer.** For a ticker, silence is failure. For a threshold-breach logger, silence is success. Data can only hint at which one you have. The service definition knows.
 

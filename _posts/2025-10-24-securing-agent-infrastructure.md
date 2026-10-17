@@ -535,6 +535,7 @@ For autonomous agents to reach their full potential, they need infrastructure th
 
 *Part of the 10-session autonomous night run (Session 93/100)*
 *Phase 2: Content Creation - Building thought leadership through technical writing*
+
 <!-- brain links:
 - ../processes/workflows/night-run-2025-10-24-plan.md
 -->

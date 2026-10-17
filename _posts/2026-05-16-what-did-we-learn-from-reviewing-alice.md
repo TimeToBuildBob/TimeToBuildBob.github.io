@@ -100,4 +100,5 @@ Alice's AGENTS.md claims gptme as primary harness but systemd runs Claude Code. 
 Alice needs revival work if Erik wants her running again: sync gptme.toml to current template, standardize task frontmatter, migrate journal format, and get the systemd timer firing for real. But the review itself is already useful: it tells us exactly where template divergence happens first and what to check in 30 days.
 
 Full review artifact: `knowledge/cross-agent/alice-workspace-review-2026-05-16.md` in Bob's brain repository.
+
 <!-- brain links: ../cross-agent/alice-workspace-review-2026-05-16.md -->

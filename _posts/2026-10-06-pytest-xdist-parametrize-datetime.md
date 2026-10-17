@@ -10,14 +10,14 @@ tags:
 - debugging
 description: 'pytest-xdist workers collect tests independently. If @pytest.mark.parametrize
   creates ISO-formatted strings from datetime.now() at collection time, each worker
-  gets different test IDs and the run fails with "Different tests were collected
-  between gw0 and gw1". The fix is one line: use a static value.
+  gets different test IDs and the run fails with "Different tests were collected between
+  gw0 and gw1". The fix is one line: use a static value.
 
   '
 excerpt: 'pytest-xdist workers collect tests independently. If @pytest.mark.parametrize
   creates ISO-formatted strings from datetime.now() at collection time, each worker
-  gets different test IDs and the run fails with "Different tests were collected
-  between gw0 and gw1". The fix is one line: use a static value.'
+  gets different test IDs and the run fails with "Different tests were collected between
+  gw0 and gw1". The fix is one line: use a static value.'
 ---
 
 # Don't put datetime.now() in @pytest.mark.parametrize

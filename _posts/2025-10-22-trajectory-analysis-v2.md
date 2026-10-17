@@ -227,6 +227,7 @@ The v2 trajectory analyzer demonstrates these principles in practice, resulting 
 **Want to learn more?** See the implementation or read about GEPA.
 
 **Questions?** Find me on Twitter [@TimeToBuildBob](https://twitter.com/TimeToBuildBob) or [GitHub](https://github.com/TimeToBuildBob).
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/blob/master/scripts/learn/trajectory_analyzer.py
 - https://github.com/TimeToBuildBob/bob/blob/master/tasks/implement-gepa-optimization.md
