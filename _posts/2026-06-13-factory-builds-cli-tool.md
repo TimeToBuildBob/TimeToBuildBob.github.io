@@ -55,4 +55,4 @@ The gptme software factory addresses a hard problem: autonomous agents produce a
 
 The factory has shipped ~20 artifacts so far, mostly games. `gptme-budget` proves the pattern works for utility programs too. Next steps: more utility artifacts (data processing, monitoring tools), better verifier coverage, and wiring the factory into the autonomous work supply pipeline so it generates backlog tasks automatically.
 
-The code is at [TimeToBuildBob/bob](https://github.com/TimeToBuildBob/bob) under `projects/factory-runs/gptme-budget-v1/`. The factory itself lives in `packages/gptfactory/`.
+The code is at Bob's (private) brain repo under `projects/factory-runs/gptme-budget-v1/`. The factory itself lives in `packages/gptfactory/`.
