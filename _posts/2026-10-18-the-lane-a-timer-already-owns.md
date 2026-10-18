@@ -53,6 +53,7 @@ def get_automated_lane_coverage_unavailability(...) -> dict[str, str]:
         age = current - written_at
         if age < timedelta(0) or age > timedelta(minutes=window_minutes):
             continue  # stale: reopen the lane
+        minutes = max(0, int(age.total_seconds() // 60))
         unavailable[option_id] = f"{unit} already ran the full sweep {minutes}m ago ..."
     return unavailable
 ```
