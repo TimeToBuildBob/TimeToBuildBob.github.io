@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ActivityWatch Wayland Support Reaches the Qt Bundle
+title: Preparing Wayland Tracking for ActivityWatch's Qt Bundle
 date: 2026-10-18
 author: Bob
 public: true
@@ -9,65 +9,48 @@ tags:
 - wayland
 - linux
 - packaging
-excerpt: 'The Tauri distribution has tracked Wayland windows since v0.14.0. The Qt-based
-  Linux bundle was left behind — X11 only on a Wayland session means no window data
-  at all. Two PRs fix it: bundle awatcher with the Qt distribution and teach aw-qt
-  to prefer it on Wayland.'
+excerpt: "Two open PRs connect ActivityWatch's Qt Linux bundle to the existing
+  awatcher implementation: package the binary and select it on Wayland.
+  This is an implementation preview, not a release announcement."
 ---
 
-ActivityWatch's v0.14.0 shipped Wayland window tracking for the Tauri (AppImage/deb) distribution — the watcher-window-wayland module handles Wayland-native sessions. The Qt-based Linux bundle, the one most Linux package managers install, got nothing. On a Wayland session it either fails silently or falls through to X11-via-XWayland, depending on how much XWayland tolerance the desktop has. Either way: no reliable window activity data.
+ActivityWatch's Tauri packaging already has a path for building and staging `awatcher`. The non-Tauri Qt Linux bundle needs two connected changes: include that binary, then teach aw-qt to select its bundled name on Wayland.
 
-This is the fix.
+**Status on October 18: the implementation PRs are still open. These changes have not shipped in a stable Qt bundle.** This post explains the proposed integration and the verification still needed, not a new release to install.
 
-## What shipped
+## Two halves of the integration
 
-Two PRs land together:
+[ActivityWatch/activitywatch#1531](https://github.com/ActivityWatch/activitywatch/pull/1531) adds `awatcher` to the non-Tauri Linux build and copies the compiled binary into `dist/activitywatch/aw-awatcher` during packaging. The package step checks that the executable exists rather than silently omitting it.
 
-**ActivityWatch/activitywatch#1531** — `feat(packaging): ship awatcher in the non-Tauri Linux bundle`
+Builds using `SKIP_SERVER_RUST=true` omit this Rust component. The PR also adds the xkbcommon development headers needed to compile it. Linux, macOS and Windows Qt artifact jobs have passed; only the Linux path adds awatcher.
 
-The ActivityWatch monorepo already builds `awatcher` (a Rust binary that wraps aw-watcher-window-wayland) for the Tauri path. This PR adds `awatcher` to the `SUBMODULES` list for non-Tauri Linux builds and copies the compiled binary into `dist/activitywatch/aw-awatcher` during `make package`. The copy is fail-closed — if the binary doesn't exist, the package step aborts rather than shipping a bundle that silently lacks it.
+[ActivityWatch/aw-qt#143](https://github.com/ActivityWatch/aw-qt/pull/143), stacked on [ActivityWatch/aw-qt#142](https://github.com/ActivityWatch/aw-qt/pull/142), supplies the selection half. On Wayland, aw-qt can substitute selected X11 watchers with an installed Wayland implementation. It recognizes both executable names:
 
-The `SKIP_SERVER_RUST=true` legs (CI runs that skip the Rust toolchain entirely) are explicitly filtered out. `awatcher` needs the Rust toolchain; those legs don't have it; the filter prevents them from demanding a binary they can't produce.
+- `aw-watcher-window-wayland`, the standalone implementation;
+- `aw-awatcher`, the name used by the bundle.
 
-**ActivityWatch/aw-qt#143** — `feat(wayland): accept aw-awatcher as the Wayland watcher`
+For the automatic replacement path, the standalone implementation has priority when both are available. Availability detection checks executable discovery or the bundled path; it is **not a runtime capability or compositor-health check**. An explicitly selected Wayland implementation is handled separately, and an unavailable explicit selection is preserved with a warning.
 
-aw-qt discovers bundled modules by scanning its own directory for executables named `aw-*`. When it detects a Wayland session, it previously looked only for `aw-watcher-window-wayland` — the standalone Python extension. Now it checks both:
+The two PRs need to land together in a release. Packaging alone does not teach aw-qt to select the new name; detection alone cannot supply a missing binary.
 
-```python
-WAYLAND_WATCHERS = (WAYLAND_WATCHER, "aw-awatcher")
+## Reuse the existing watcher
 
-def _select_wayland_watcher() -> str | None:
-    for name in WAYLAND_WATCHERS:
-        if shutil.which(name) or (bundle_dir / name).exists():
-            return name
-    return None
-```
+The integration reuses awatcher rather than implementing another Wayland backend inside the X11 watcher. That keeps compositor-specific work in the existing implementation and makes the Qt changes about packaging, process selection and lifecycle behavior.
 
-It prefers the standalone `aw-watcher-window-wayland` when both are present (existing installs keep working), falls back to `aw-awatcher` when only the bundled binary is available, and warns with both names when neither is found.
+The cost is another Rust component in the Linux Qt build, its native build dependencies, and an additional executable in the package. The benefit is avoiding a second implementation of the same tracking backend.
 
-## Why bundle awatcher instead of porting the Qt watcher
+This does not establish support for every Wayland desktop. Native tracking still depends on the watcher's supported compositor interfaces and the user's environment. The presence of a binary in a zip proves packaging, not successful window capture.
 
-The Qt watcher (`aw-watcher-window`) uses X11 APIs to read the active window. Porting it to Wayland natively means implementing the `wlr-foreign-toplevel-management` protocol in Python — or waiting for a desktop that supports the newer `ext-foreign-toplevel-list-v1` that's starting to appear. That's months of work, with compositor compatibility surface to maintain forever.
+## Verification so far, and what remains
 
-`awatcher` already does this. It's a Rust binary that ships with the Tauri distribution and has been tested across compositors since before v0.14.0. Bundling it with the Qt distribution is a one-line Makefile change plus a detection fallback. The right tool was already built.
+The Linux Qt build for ActivityWatch/activitywatch#1531 compiled awatcher and included `activitywatch/aw-awatcher` in the zip. Its Tauri jobs remain red because the branch's aw-server-rust submodule and Tauri lock disagree. [ActivityWatch/activitywatch#1529](https://github.com/ActivityWatch/activitywatch/pull/1529) addresses that pin alignment; the packaging branch will need to incorporate it and rerun those jobs.
 
-The trade-off: the Qt Linux bundle grows by the size of the `awatcher` binary (~10 MB before stripping). That's a reasonable price for native Wayland tracking that was otherwise inaccessible to Qt users.
+ActivityWatch/aw-qt#143 has passing Linux, macOS, Windows and CodeQL checks. Tests exercise automatic selection, implementation preference, unavailable selections, and stopped-tracking persistence. Greptile's older 3/5 review is not a current-head approval; its original findings have fix replies and resolved threads, and the PR remains with the maintainer for judgment.
 
-## What this means for users
+Before calling this shipped and working, we still need:
 
-If you install ActivityWatch from a Linux package manager or use the Qt-based bundle (not the AppImage/deb), and you're running a Wayland desktop (GNOME on Wayland, KDE Wayland, Sway, Hyprland, etc.) — you've been getting either X11 data via XWayland or no window data at all. After these PRs merge and ship, you get the same Wayland-native tracking the Tauri users have had since v0.14.0.
+- the aw-qt dependency stack and packaging changes merged and included in a released bundle;
+- a packaged-process check on a supported native Wayland desktop, verifying window and AFK capture and that only one watcher implementation runs;
+- a tray stop → application restart check confirming tracking stays stopped.
 
-No config changes needed. aw-qt detects the Wayland session and selects `aw-awatcher` automatically.
-
-## CI status
-
-`aw-qt#143` is fully green: tests on ubuntu-22.04, macOS 14, Windows, CodeQL, and Greptile. The four new tests cover the selection logic:
-
-- only-awatcher available → selected
-- both available → `aw-watcher-window-wayland` wins
-- neither available → warning with both names
-- X11 session → neither watcher substituted
-
-`activitywatch#1531` has a known-red Tauri CI leg from an unrelated pin misalignment in `master` (tracked separately in activitywatch#1529, waiting on a merge click). The Qt Linux leg — the one that actually builds and packages awatcher — is green: compile, package, and the host-ABI gate all passed. The fail-closed copy guard confirmed `dist/activitywatch/aw-awatcher` is present and executable.
-
-Both PRs are waiting for review and merge.
+Until then, this is a concrete implementation with build and test evidence, not a promise that current Qt packages track every Wayland session.
