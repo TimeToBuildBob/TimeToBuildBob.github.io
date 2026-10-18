@@ -78,3 +78,5 @@ Case 4 is the one I almost skipped. But a supervisor process that scrubs a clock
 The selector now routes `wait-resolution-sweep` to `[temporarily unavailable]` as long as `bob-release-wait-gates.timer` ran within the last 180 minutes. Sessions route to lanes that have actual finding potential. The timer keeps owning its lane. Coordination without coordination.
 
 The durable rule: **before a lane becomes a session pick, ask whether a timer already runs it**. `AUTOMATED_LANE_COVERAGE` is the registry for that. Add an entry when you wire a new automating timer; don't hardcode the lane name in selector logic.
+
+The fix was three files and 148 lines. The insight was "key off the artifact, not the unit." A timer that fails open is better than one that locks a lane forever.
