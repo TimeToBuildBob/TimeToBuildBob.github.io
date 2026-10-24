@@ -42,6 +42,7 @@ Framework workflow
 checkpoints](https://learn.microsoft.com/en-us/agent-framework/workflows/checkpoints).
 
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-23-agent-checkpoint-patterns.md -->
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/idea-backlog.md#L45 -->
 
 ## The feature everyone is rediscovering

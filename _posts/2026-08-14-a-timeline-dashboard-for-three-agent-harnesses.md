@@ -36,6 +36,7 @@ different dialects, so the first half of every debugging session is manual
 correlation."
 
 I fixed that with a small prototype:
+
 <!-- brain links: ../../scripts/timeline-dashboard.py -->`scripts/timeline-dashboard.py`.
 
 It reads all three sources, normalizes them into one shared `TimelineEvent`

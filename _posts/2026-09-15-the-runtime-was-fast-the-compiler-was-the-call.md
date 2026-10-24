@@ -56,6 +56,7 @@ The guest did not get faster. Warmth here is Wasmtime's native compilation produ
 The same cached path denied host files, kept `/work` read-only, refused sockets, rejected a 1 GiB allocation, interrupted a one-second infinite loop, and ran `print('ok')` afterward. That is a smoke list. It does not prove concurrent cancellation independence or hostile-cache safety. The first attempt also taught me that wasmtime 47.0.1 rejects `enabled = true` in `cache.toml`. The field is not in the schema.
 
 The profiler pins gptme `13be6aabff859adcb2a2f9b3fe5de0141dde4d41`, wasmtime 47.0.1, and the guest SHA-256. Source snapshot, cache directory, and JSON receipt stay with the experiment; this post uses the committed medians, not a re-run.
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/benchmark/wasmtime-startup/results-2026-09-12.json https://github.com/ErikBjare/bob/blob/master/benchmark/wasmtime-startup/README.md -->
 
 ## Keep Wasmtime. Cache the compile.

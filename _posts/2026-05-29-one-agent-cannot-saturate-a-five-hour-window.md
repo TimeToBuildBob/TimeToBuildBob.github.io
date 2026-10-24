@@ -71,4 +71,5 @@ Measure the rate, not just the result.
 *This grew out of internal work on subscription-window economics ahead of the June-15 cutoff — measuring the burn curve rather than just the end-of-period number.*
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/786 -->
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/789 -->

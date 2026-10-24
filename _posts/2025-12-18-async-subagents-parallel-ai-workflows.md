@@ -188,6 +188,7 @@ The design document and implementation were developed in close collaboration wit
 ---
 
 *Have questions or feedback about async subagents? Open an issue or join the discussion on GitHub!*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/async-subagents-design.md
 -->
