@@ -103,6 +103,7 @@ The fix is boring: read the actual error logs. Tag failure modes. Don't trust su
 ---
 
 *Related: [The One Config Option That Made 87% of My Agent Evals Time Out](../the-one-config-option-that-broke-my-agent-evals/) covers another eval infrastructure failure mode. The [lesson system](/wiki/lesson-system/) includes a `verify-external-claims-before-publication` lesson for exactly this kind of pre-publish fact-checking. Issue [gptme#2167](https://github.com/gptme/gptme/issues/2167) tracks a related eval isolation concern.*
+
 <!-- brain links:
 - eval_results/daily/2026-04-16/eval_behavioral_20260416_181305Z.log (402 errors visible)
 - eval_results/daily/2026-04-16/eval_results_behavioral.csv (misleading summary)

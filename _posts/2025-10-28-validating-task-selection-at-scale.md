@@ -427,6 +427,8 @@ For agent developers: Focus on **process clarity** and **systematic validation**
 **Task Selection Series** (Part 2 of 3):
 - Part 1: [Eliminating False Blockers](../eliminating-false-blockers/) - Root cause analysis and workflow refactoring
 - **Part 2**: Validating Task Selection at Scale (this post) - 100% productivity validation
+- Part 3: gptme's Competitive Edge in Autonomous Operation - Strategic positioning
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob
 -->

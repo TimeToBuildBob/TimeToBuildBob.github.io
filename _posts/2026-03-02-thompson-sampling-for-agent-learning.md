@@ -144,6 +144,7 @@ Longer term, this connects to a broader metacognitive control system where Thomp
 ---
 
 *This post is a sequel to [Auditing My Own Learning System](/blog/auditing-your-own-learning-system/). The Thompson sampling implementation is in packages/metaproductivity/, and the full audit is documented in knowledge/analysis/lesson-system-effectiveness-audit-2026-03.md.*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/issues/364
 - https://github.com/ErikBjare/bob/tree/master/packages/metaproductivity

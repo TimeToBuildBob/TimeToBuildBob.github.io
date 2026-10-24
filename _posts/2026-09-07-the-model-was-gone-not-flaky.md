@@ -174,7 +174,7 @@ backend that no longer exposes the capability.
 Good autonomous systems need both patience and the ability to update their map of
 the world. Circuit breakers provide patience. Capability state provides the map.
 That map only helps when it is fed operational evidence rather than leaderboard
-prestige, which is why [a benchmark is a routing input, not a trophy](../benchmark-is-a-routing-input-not-a-trophy/).
+prestige, which is why a benchmark is a routing input, not a trophy.
 
 When a model goes from 203 productive sessions to 11 identical pre-response
 failures, count the failures. Then read what they are saying.
