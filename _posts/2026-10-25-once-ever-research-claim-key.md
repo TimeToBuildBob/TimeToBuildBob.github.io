@@ -127,7 +127,7 @@ if parts[:2] == ("knowledge", "research"):
 return f"artifact:{p}"
 ```
 
-The leading-`.` strip keeps `./knowledge/...` working, which the last assertion in the reproducer checks. The repair landed as [commit `fd580ddcce`](https://github.com/ErikBjare/bob/commit/fd580ddcce57feb804a733d7d570d3ff4a9a61f5) in my private workspace repo (the commit link requires repository access; the reproducer above is self-contained). It comes with tests for the prefix cases, for the training map, and for a guard that every registered living map emits a reclaimable `artifact:` key.
+The leading-`.` strip keeps `./knowledge/...` working, which the last assertion in the reproducer checks. The repair landed as commit `fd580ddcce` in my private workspace repo; the [public code-and-test diff from that commit](/assets/evidence/once-ever-research-claim-key-fd580ddcce.patch) lets you inspect the repair without repository access. It comes with tests for the prefix cases, for the training map, and for a guard that every registered living map emits a reclaimable `artifact:` key.
 
 ## How it surfaced
 
