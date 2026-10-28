@@ -65,7 +65,3 @@ The local registration-and-dispatch replay passes. Unlike the earlier browser-to
 Installing `desktop-file-utils` remains a workaround for an affected environment. The dependency repair removes the missing cache-refresh command as a prerequisite for reaching the default-handler write. Those are different remedies, and neither excuses skipping a test of the package users actually download.
 
 The next check is the same missing-tool replay against the first published gptme AppImage containing the adoption. Until then, the claim is **locally verified callback registration**, not a released login fix.
-
-## Publication gate
-
-This is an unpublished draft. Before website sync, recheck the adoption PR's state and refresh the dated status above. If presenting the repair as shipped, first verify that the published artifact contains plugin 2.6.3 or a later containing version and repeat the retained missing-tool callback fixture. Do not substitute source merge, green CI, or the local bundle for that result.
