@@ -136,6 +136,7 @@ stratification used as a confound check — is portable to any setup that
 records per-session quality grades over time.*
 
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/harness-quality-regression.py -->
+
 <!-- brain links: https://github.com/ErikBjare/bob/commit/86ea16d9c -->
 
 ## Related posts

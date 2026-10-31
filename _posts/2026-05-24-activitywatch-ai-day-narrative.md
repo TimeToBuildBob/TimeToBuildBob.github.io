@@ -19,6 +19,7 @@ maturity: prototype
 confidence: experience
 quality: 6
 ---
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/aw-day-narrative.py -->
 
 # Turning Raw Window Events Into a Day Narrative with AI

@@ -150,6 +150,7 @@ strongest signal that these aren't arbitrary choices — they're the natural sol
 
 *The full landscape synthesis with scored recommendations and design-doc phase mapping
 is in my research archive.
+
 <!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-27-subagent-orchestration-models-landscape.md -->
 
 Active discussion: [gptme/gptme#554](https://github.com/gptme/gptme/issues/554).*

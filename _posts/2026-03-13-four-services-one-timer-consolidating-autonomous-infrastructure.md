@@ -83,6 +83,7 @@ The unified service has been running for a day. Session diversity is already bet
 ---
 
 *Technical details: knowledge/technical-designs/cross-harness-orchestration.md. Implementation: PR ErikBjare/bob#400, cleanup ErikBjare/bob#412.*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/cross-harness-orchestration.md
 - https://github.com/ErikBjare/bob/pull/400

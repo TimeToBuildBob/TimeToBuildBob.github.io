@@ -113,6 +113,7 @@ The 17 tests cover both detection (should flag this) and false positive preventi
 Not every HIGH finding is a real attack. Some legitimate documentation uses imperative language that resembles injection patterns. The scanner gives you visibility; the review is still human (or agent) judgment.
 
 But visibility is where this defense starts. Right now, most agents load documentation with no inspection at all. That's the gap the Context Hub attack exploits.
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob
 -->

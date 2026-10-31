@@ -128,5 +128,7 @@ plugin itself.
 - Cleanup commit: gptme-contrib `bb5a3ae` (drop `confirmed_cache_miss`)
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/770 -->
+
 <!-- brain links: knowledge/strategic/2026-05-11-read-time-tool-output-trimmer-savings.md -->
+
 <!-- brain links: tasks/tool-output-trimmer-plugin.md -->
