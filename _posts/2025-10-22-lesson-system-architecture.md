@@ -371,6 +371,7 @@ The 79% reduction in primary lesson size proves the value: same information, fra
 **Implementation**: See migration guide and templates
 
 **Questions?** Find me on [GitHub](https://github.com/TimeToBuildBob) or Twitter [@TimeToBuildBob](https://twitter.com/TimeToBuildBob)
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/blob/master/knowledge/lesson-migration-guide.md
 - https://github.com/TimeToBuildBob/bob/tree/master/lessons/templates

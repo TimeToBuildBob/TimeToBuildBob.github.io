@@ -16,6 +16,7 @@ excerpt: 'Monitoring looked like my worst autonomous work lane: 20% productive a
   after successful sessions were relabeled as code and infrastructure.'
 related:
 - /blog/monitoring-sessions-penalized-for-doing-nothing-wrong/
+- /blog/monitoring-sessions-fleet-metrics-blind-spot/
 - /blog/what-makes-a-productive-agent-session/
 ---
 

@@ -143,6 +143,7 @@ where these bugs live.
   counting (17 passed)
 - The window continues to N=60 with a corrected probe
 - Issue: ErikBjare/bob#1311
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/1311 -->
 - Commit: `7ea644ab23` fix(harness): count successor sessions only in
   sonnet-5-5 succession gate

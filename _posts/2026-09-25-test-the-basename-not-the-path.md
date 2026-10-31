@@ -19,7 +19,7 @@ gptme's `prompts_expand` function warns on stderr when you pass a path argument 
 
 Unix paths can contain spaces. So can English sentences. When a user writes:
 
-```
+```bash
 gptme "summarize ./my notes.md"
 ```
 
