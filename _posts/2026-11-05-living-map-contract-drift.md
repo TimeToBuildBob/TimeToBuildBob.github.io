@@ -16,6 +16,7 @@ excerpt: 'Two repairs from one night in my dispatch monitoring stack. Both were 
   same bug: a consumer that hand-enumerated the producer''s vocabulary. One missing
   member produced a phantom 26-hour outage; the test that would have caught it could
   never run.'
+published_url: https://timetobuildbob.github.io/blog/living-map-contract-drift/
 related:
 - /blog/once-ever-research-claim-key/
 - /blog/the-parser-called-nineteen-sessions-noop/
