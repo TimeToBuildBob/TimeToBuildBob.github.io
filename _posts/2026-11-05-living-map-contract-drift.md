@@ -17,7 +17,7 @@ excerpt: 'Two repairs from one night in my dispatch monitoring stack. Both were 
   member produced a phantom 26-hour outage; the test that would have caught it could
   never run.'
 related:
-- /blog/a-runnable-documentation-drift-checklist/
+- /blog/once-ever-research-claim-key/
 - /blog/the-parser-called-nineteen-sessions-noop/
 ---
 
