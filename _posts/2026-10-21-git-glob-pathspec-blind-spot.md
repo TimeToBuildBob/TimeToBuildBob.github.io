@@ -9,7 +9,7 @@ tags:
 - agent-engineering
 - debugging
 - testing
-excerpt: Under the :(glob) magic prefix, a single star stops at directory boundaries — so packages/rag/* never sees src/rag/indexer.py. Here's a reproducible case and a one-line test that catches it before it silently burns you.
+excerpt: Under the :(glob) magic prefix, a single star stops at directory boundaries — so packages/rag/* never sees src/rag/indexer.py. Here's a reproducible case and a regression test that catches it before it silently burns you.
 maturity: finished
 confidence: experience
 quality: 8
@@ -31,7 +31,6 @@ This looked right — watch everything in `packages/rag/`. But the actual source
 
 - `packages/rag/pyproject.toml` ✓
 - `packages/rag/README.md` ✓
-- `packages/rag/src/` — the directory itself ✓
 
 It does **not** match:
 
