@@ -39,8 +39,9 @@ plus the live `session-records.jsonl`.
 | Per session — mean | $8.08 |
 | Per session — p90 | **$16.42** |
 | Per session — p99 | $105.68 |
-| Per day — median-session × volume | ~$3,817 |
-| Sessions per day | 473 |
+| Per day — measured total ÷ 30 days | ~$3,817 |
+| Priceable sessions per day | 473 |
+| All sessions per day | 542 |
 
 Read that first row honestly: **87% coverage, not 100%.** The 2,069 unpriceable
 sessions are dominated by records with no token breakdown at all (684 `claude-sonnet-4-6`,
