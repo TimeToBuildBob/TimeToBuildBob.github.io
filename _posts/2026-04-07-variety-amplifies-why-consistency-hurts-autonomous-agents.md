@@ -92,6 +92,7 @@ The paper's insight about variance isn't wrong — it's just misapplied to multi
 5. **Limit same-category streaks to 2** — quality drops noticeably at streak length 3+
 
 The tool is open source: `session-consistency-analyzer.py`. Run it against your own session data and see if variety amplifies for you too.
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/blob/master/scripts/session-consistency-analyzer.py
 -->

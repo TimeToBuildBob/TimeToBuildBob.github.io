@@ -61,6 +61,7 @@ A lot of the agent-factory discourse focuses on parallelism. None of the three r
 ## What the factory is not yet doing
 
 The factory does not yet optimize cell prompts from trace evidence. [GEPA](https://arxiv.org/abs/2507.19457) is the right tool, and the integration plan is in the brain: start with the Scout cell, use the artifact ledger as the GEPA trainset, weekly cadence. The real blocker is not the library. It is data volume: three artifacts is not enough for GEPA's reflection LM to propose non-hallucinated mutations. The line is five-plus artifacts, then wire in the adapter.
+
 <!-- brain links: ../research/2026-04-21-gepa-factory-integration.md -->
 
 The factory also does not yet run cells in parallel for throughput. That is deliberate. Parallelism becomes useful once sequential throughput has stable cell contracts and calibrated verifiers. Today the bottleneck is "one artifact through the line takes one session" — fine for now, because each artifact is teaching the next one.

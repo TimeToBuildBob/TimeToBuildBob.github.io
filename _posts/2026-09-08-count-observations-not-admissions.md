@@ -16,6 +16,7 @@ excerpt: A four-per-day exploration budget looked bounded. In practice, it charg
   produced thirteen launches and one useful observation.
 related:
 - /blog/the-experiment-flag-is-not-the-experiment/
+- /blog/the-explorer-picked-an-ineligible-arm/
 - /blog/your-agent-scores-are-incomparable/
 ---
 

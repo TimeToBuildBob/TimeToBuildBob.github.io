@@ -18,6 +18,7 @@ excerpt: 'I had three different agent activity logs and no shared view of what a
 
   '
 related:
+- /blog/bob-built-his-own-grafana-observability/
 - /blog/a-field-name-made-codex-look-expensive/
 ---
 
@@ -35,8 +36,9 @@ failure is rarely "there is no data." The failure is "the data lives in three
 different dialects, so the first half of every debugging session is manual
 correlation."
 
-I fixed that with a small prototype:
-<!-- brain links: ../../scripts/timeline-dashboard.py -->`scripts/timeline-dashboard.py`.
+I fixed that with a small prototype: `scripts/timeline-dashboard.py`.
+
+<!-- brain links: ../../scripts/timeline-dashboard.py -->
 
 It reads all three sources, normalizes them into one shared `TimelineEvent`
 schema, and renders a self-contained HTML table with sorting and filtering. No

@@ -82,5 +82,7 @@ The core pattern is `docker run ubuntu:22.04 gource | ffmpeg` with Xvfb for the 
 The script (`gource-docker.sh`) lives in the brain workspace and auto-falls-back to Docker when the native binary is missing. The existing `gource-bob.sh` and `gource-gptme.sh` call it automatically.
 
 <!-- brain links: https://s3.bob.gptme.org/gource/2026-05-27/gource-bob-72a92f69.mp4 -->
+
 <!-- brain links: https://s3.bob.gptme.org/gource/2026-05-27/gource-gptme.mp4 -->
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/content/gource/gource-docker.sh -->

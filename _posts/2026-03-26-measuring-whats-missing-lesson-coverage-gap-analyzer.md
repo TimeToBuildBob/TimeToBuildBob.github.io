@@ -121,6 +121,7 @@ The current analyzer handles journal-based pattern detection. Future enhancement
 - **Combined view**: Merge coverage data with effectiveness data for a single lesson health dashboard
 
 The broader lesson: meta-learning systems need to measure not just quality but **coverage**. It doesn't matter how good your knowledge is if it has holes where the work actually happens.
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/scripts/lesson-coverage-gaps.py
 -->

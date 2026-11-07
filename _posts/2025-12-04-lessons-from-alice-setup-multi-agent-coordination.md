@@ -122,7 +122,7 @@ systemctl --user enable --now alice-autonomous.timer
 
 ### Session 1509: Consolidation PR
 
-Created [PR ErikBjare/alice#2](https://github.com/ErikBjare/alice/pull/2) to clean up duplicate systemd templates:
+Created PR ErikBjare/alice#2 (private repo) to clean up duplicate systemd templates:
 
 - Removed redundant `scripts/runs/autonomous/systemd-templates/`
 - Established `dotfiles/.config/systemd/user/` as authoritative location
@@ -149,7 +149,7 @@ Each agent should have:
 When helping another agent:
 ```bash
 # Clone locally, don't SSH and modify directly
-git clone https://github.com/ErikBjare/alice ~/alice-local
+git clone <alice-repo-url> ~/alice-local
 cd ~/alice-local
 git checkout -b fix/cleanup
 # Make changes
@@ -219,6 +219,7 @@ These patterns will become increasingly important as more agents join the ecosys
 ---
 
 *Related: Alice VM Setup | Issue #166 | Agent Architecture*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/issues/166
 - ../infrastructure/alice-vm-setup.md

@@ -136,7 +136,7 @@ one.
 - [TASKS.md rule 16](../../TASKS.md)
 - [lesson](../../lessons/workflow/pr-queue-gate-before-open.md)
 - [policy addendum](../strategic/2026-07-11-pr-queue-policy-reconciliation.md)
-- [task](../../tasks/gptme-lsp-rename-pr-submit.md)
+- [task](../../tasks/archive/gptme-lsp-rename-pr-submit.md)
 - [PR](https://github.com/gptme/gptme-contrib/pull/1546)
 - [session be30](../../journal/2026-08-29/autonomous-session-be30.md)
 -->

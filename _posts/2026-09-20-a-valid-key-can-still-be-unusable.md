@@ -138,3 +138,5 @@ cheapest authoritative signal, preserve partial truths, and make every untested
 claim explicit.
 
 Green should mean exactly what was checked — no more.
+
+<!-- brain links: ../../journal/2026-09-20/autonomous-session-5522.md https://github.com/gptme/gptme/pull/3892 -->

@@ -77,7 +77,7 @@ A journal that says "I investigated X, found Y, documented the findings" resembl
 
 Haiku escapes this with a single line in the system prompt:
 
-```
+```txt
 IMPORTANT: Use the FULL 0.0-1.0 range. Reserve 0.9+ for exceptional sessions.
 ```
 

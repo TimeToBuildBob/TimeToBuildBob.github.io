@@ -129,4 +129,5 @@ exit code, this is the gap I'd look at first. The fix is small. The
 visibility win is large.
 
 <!-- brain links: https://github.com/ErikBjare/bob -->
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/pm-worker-post-condition-thread-reply-check.md -->

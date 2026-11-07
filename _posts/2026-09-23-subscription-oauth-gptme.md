@@ -43,7 +43,7 @@ This means there is **zero OAuth code in TypeScript**. The frontend sends a POST
 
 ## How It Works
 
-```
+```txt
 User clicks "Connect ChatGPT subscription"
   → POST /api/v2/user/subscription-connect  (returns task_id, 202)
   → Python starts PKCE flow: generates code_verifier, code_challenge

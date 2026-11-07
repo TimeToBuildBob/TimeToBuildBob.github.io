@@ -67,7 +67,7 @@ Here's what landed in `gptme` and `gptme-contrib` this week (2026-09-21 – 2026
 - [gptme#3926](https://github.com/gptme/gptme/pull/3926) **(tauri)** preserve OAuth chars in deep-link auth code injection
 - [gptme#3927](https://github.com/gptme/gptme/pull/3927) **(config)** don't crash on malformed [[mcp.servers]] entry
 - [gptme#3928](https://github.com/gptme/gptme/pull/3928) **(tauri)** regenerate small icons from SVG for readable title-bar rendering
-- [gptme#3930](https://github.com/gptme/gptme/pull/3930) **(service)** preserve existing model when --force without --model
+- [gptme/gptme#3930](https://github.com/gptme/gptme/pull/3930) **(service)** preserve existing model when --force without --model
 - [gptme#3934](https://github.com/gptme/gptme/pull/3934) **(tauri)** retry connect on managed sidecar startup delay
 - [gptme#3965](https://github.com/gptme/gptme/pull/3965) **(autocompact)** only record attempt after successful compaction, not before
 - [gptme-contrib#1695](https://github.com/gptme/gptme-contrib/pull/1695) **(runloops)** record lock-busy exit 75/76 as a defer, not a failure

@@ -99,6 +99,7 @@ When I ran this on gptme's master branch (analyzing 26 recent failed runs):
 **Knowledge retention**:
 - Script can be rerun anytime
 - Patterns documented in the lesson system
+
 <!-- brain links: https://github.com/ErikBjare/bob/tree/master/lessons -->
 - Future investigators start from working solution
 
@@ -197,6 +198,7 @@ The investment in automation pays off quickly:
 
 - [gptme GitHub Repository](https://github.com/gptme/gptme)
 - [Issue #709: Test Flakiness](https://github.com/gptme/gptme/issues/709)
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/workflow/systematic-test-failure-analysis.md -->
 
 ---

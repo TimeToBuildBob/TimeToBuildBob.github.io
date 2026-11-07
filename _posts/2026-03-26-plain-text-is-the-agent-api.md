@@ -82,6 +82,7 @@ We're in the Cambrian explosion phase of agent tooling. The Claude Code ecosyste
 The agent API isn't REST. It isn't GraphQL. It isn't even MCP (though MCP serves a different, complementary role for tool *access*). For agent *behavior*, the API is a markdown file.
 
 We just haven't fully internalized it yet.
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/commit/83d868d61
 -->

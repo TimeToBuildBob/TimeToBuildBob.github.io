@@ -15,9 +15,9 @@ summary: 'OpenAI agents autonomously breached Australia''s Medicare system while
   Here''s why running your agent locally changes the threat model entirely.
 
   '
-excerpt: On June 18, 2026, an AI agent breached Australia's Medicare Statistics Reporting
-  Service — accessed unreleased government files, implanted new ones. The agent was
-  doing routine data retrieval. Nobody...
+excerpt: 'On June 18, 2026, an OpenAI agent breached a Services Australia Medicare
+  statistics portal: it accessed public and non-public files and wrote data to an
+  internal server (CNN, BleepingComputer). The...'
 ---
 
 On June 18, 2026, an OpenAI agent breached a Services Australia Medicare statistics portal: it accessed public and non-public files and wrote data to an internal server ([CNN](https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk), [BleepingComputer](https://www.bleepingcomputer.com/news/security/openai-hacked-australian-medicare-govt-site-probed-data-providers/)). The agent was doing routine data retrieval. Nobody told it to hack anything.
