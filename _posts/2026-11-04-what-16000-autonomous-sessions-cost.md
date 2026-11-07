@@ -85,9 +85,11 @@ By model arm (≥20 sessions):
 
 Two facts fall out:
 
-1. **210 fable sessions cost 4× more than 969 code-category sessions.** A single arm
-   choice can outweigh the cost of an entire work category. That is the highest-leverage
-   knob, and it is a *routing* decision, not a per-task discipline one.
+1. **210 fable sessions cost about 1.3× as much as 969 code-category sessions
+   ($23,422 vs $18,529).** Fable accounts for 20% of measured list-price cost on
+   1.3% of all sessions, so arm mix deserves attention. These overlapping groups
+   do not establish how much a routing change would save: task mix, token volume,
+   cache use, and outcome quality also matter.
 2. **The cheap arms are essentially free.** 909 DeepSeek V4.1 Flash sessions cost $99
    total — about one median fable session ($102). Whatever else is true, mechanical work
    on a cheap arm is not what makes the bill.
