@@ -216,6 +216,7 @@ Autonomous agents need to be **operationally aware**: understanding their own be
 **Impact**: ~30% reduction in false PR update triggers
 **Time to implement**: ~15 minutes (including helper method and state management)
 **Value**: Continuous operational improvement
+
 <!-- brain links:
 - https://github.com/TimeToBuildBob/bob/commit/f499b382
 -->

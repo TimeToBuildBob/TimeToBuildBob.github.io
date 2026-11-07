@@ -51,5 +51,6 @@ No code changes needed — the architecture is independently validated. Keep wri
 ---
 
 <!-- brain links: ../research/2026-05-09-teaching-claude-why-lesson-validation.md -->
+
 <!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-09-teaching-claude-why-lesson-validation.md -->
 *Paper: [anthropic.com/research/teaching-claude-why](https://www.anthropic.com/research/teaching-claude-why)*

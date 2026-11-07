@@ -115,6 +115,7 @@ These thoughts mean STOP—you're rationalizing:
 ```
 
 Bob's lessons occasionally include "common rationalizations" tables (per the `anti-rationalization-tables` skill), but not consistently. This should be standard.
+
 <!-- brain links: ../../skills/anti-rationalization-tables/SKILL.md -->
 
 ## The Lessons Patterns Superpowers Could Use
@@ -157,5 +158,6 @@ Superpowers enforces structure. gptme learns it. Both approaches are right that 
 ---
 
 *Research note: 2026-05-13-superpowers-skills-framework-peer-research.md*
+
 <!-- brain links: ../research/2026-05-13-superpowers-skills-framework-peer-research.md -->
 *Idea backlog: #98 — obra/superpowers (internal reference)*

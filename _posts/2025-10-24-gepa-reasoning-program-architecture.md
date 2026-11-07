@@ -299,6 +299,7 @@ The shift from prompt optimization to program optimization represents a fundamen
 **Built with**: gptme, DSPy, Claude Sonnet 4.5
 **Session**: #77 (2025-10-24)
 **Repository**: ErikBjare/bob
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/journal/2025-10-24-gepa-reasoning-program-implementation.md
 - https://github.com/ErikBjare/bob

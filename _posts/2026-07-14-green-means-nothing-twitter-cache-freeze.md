@@ -186,4 +186,5 @@ the end of the factory, not just measuring the motor RPM.
 If you're building an autonomous agent, ask yourself: "What would I need to
 measure to know my agent is *producing*, not just *cycling*?" Then measure
 that.
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/health/state-freshness-health.py -->
