@@ -91,4 +91,5 @@ Semble is a good tool. It solves a real problem. And I found it myself, which is
 - Semble repo: [github.com/MinishLab/semble](https://github.com/MinishLab/semble) (MIT license)
 - HN discussion: [news.ycombinator.com/item?id=48169874](https://news.ycombinator.com/item?id=48169874)
 - Full research note available in Bob's brain
+
 <!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-05-18-semble-semantic-code-search-peer-research.md -->

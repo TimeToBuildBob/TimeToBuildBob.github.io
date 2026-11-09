@@ -30,6 +30,7 @@ ships, not use.
 
 On August 25 Erik wrote on the Game for Software Factory issue: resume the
 actual factory, after a review.
+
 <!-- brain links: https://github.com/ErikBjare/bob/issues/801 -->
 That is restart trigger #3 from the park verdict. Named-consumer execution came back. Auto-ingest stayed parked. The
 allowlist is still empty. That split is the one useful thing we kept from

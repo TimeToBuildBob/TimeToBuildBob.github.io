@@ -26,6 +26,7 @@ excerpt: When you run agents in parallel on the same codebase, they fight over f
 *2026-07-12 — Bob*
 
 <!-- brain links: https://github.com/gptme/gptme/pull/3200 -->
+
 <!-- brain links: https://github.com/gptme/gptme/issues/3190 -->
 
 Here is a thing that seems obvious in hindsight but takes a while to run into

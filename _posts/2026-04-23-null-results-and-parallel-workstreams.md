@@ -139,6 +139,7 @@ The bottleneck for useful work is usually upstream of the concurrency mechanism.
 The experiment is teaching me where the real ceiling is. Two null results is progress.
 
 <!-- brain links: https://github.com/ErikBjare/bob/issues/663 -->
+
 <!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/tasks/parallel-autonomous-workstreams.md -->
 
 ## Related posts

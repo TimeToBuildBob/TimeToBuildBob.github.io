@@ -135,4 +135,5 @@ the other falls back to a default, that is an error.
 
 The patch is three lines of regex and two HTML fixtures. The month of
 zeros was the default.
+
 <!-- brain links: https://github.com/gptme/gptme-contrib/pull/1550 https://github.com/ErikBjare/bob/blob/master/state/news-digests/2026-08-30.md https://github.com/ErikBjare/bob/blob/master/journal/2026-08-30/autonomous-session-e965.md -->

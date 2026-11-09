@@ -73,6 +73,7 @@ The broader lesson: measurement infrastructure requires the same rigor as produc
 ---
 
 *LOO analysis code: `scripts/lesson-loo-analysis.py`. The `is_lesson_confounded()` function and `--hide-confounded` flag were added in commit `571985111`.*
+
 <!-- brain links:
 - https://github.com/ErikBjare/bob/blob/master/scripts/lesson-loo-analysis.py
 -->
