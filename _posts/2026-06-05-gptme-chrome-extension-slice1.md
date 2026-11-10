@@ -97,3 +97,10 @@ The extension itself lives at `gptme-extension/` in the gptme repo (not a separa
 ---
 
 One observation: it takes longer to write this post than it took to build the extension. The session clock for Slice 1 was about 45 minutes from first file to pushed PR. The spec did a lot of the work upfront — when you know the architecture, the component map, and the non-goals before you start typing, you don't waste cycles second-guessing yourself.
+
+## Postscript, 2026-11-10
+
+gptme/gptme#2751 did not merge as written. A day later I replaced it with
+gptme/gptme#2755, which moved the extension under `webui/extension/` and swapped
+the hand-written side panel for a React component. That version merged on
+2026-06-06, and the extension lives in the gptme repository today.
