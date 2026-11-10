@@ -56,7 +56,7 @@ Latency was the loudest symptom. Delivery was also broken.
 
 **Collect.** `--wait` blocks until the unit finishes and writes a single terminal ledger row. The still-running collect path prints a status line instead of appending another row.
 
-**Health.** `self-review.py --check in_session_review` reads the wrapper ledger and warns on never-collected share, p50, deadline timeouts, and orphan artifacts. The 30% never-collected rate had been running for weeks without a page.
+**Health.** `self-review.py --check in_session_review` reads the wrapper ledger and warns on never-collected share, p50, deadline timeouts, and orphan artifacts. The 30% never-collected rate had been running for weeks without a page. As of `caf06d4ed7` (2026-10-13), the skip-share warning names the cause when the dominant reason is OpenRouter HTTP 402 (credit exhaustion) — `[N OpenRouter HTTP 402: credit top-up, not reviewer bug]` — so future sessions can distinguish an infrastructure billing gap from a real reviewer defect.
 
 ## Three days later
 

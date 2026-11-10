@@ -144,7 +144,18 @@ re-invented.
 computations use `estimate_session_cost(harness, model, input_tokens=…,
 output_tokens=…, cache_creation_tokens=…, cache_read_tokens=…, token_count=…,
 config=load_quota_config())` over the 30-day record window. Percentiles are linear
-interpolation on session totals. Re-run the whole thing with
-`uv run --no-sync python3 scripts/session-cost.py --last-30d --by-model` (and
-`--by-category`); that script now uses the same engine, so the numbers here are
+interpolation on session totals. Re-run the whole thing with a **fixed** window —
+
+```txt
+uv run --no-sync python3 scripts/session-cost.py --since 2026-10-05 --until 2026-11-04 --by-model
+```
+
+— and `--by-category` for the split. Use the fixed window, not `--last-30d`: that
+preset is *rolling*, so it slides over this table's boundaries and can never
+reproduce it. `--since`/`--until` were added to the script on 2026-11-05 for
+exactly this reason, after the first re-run of this post came out 2.3% low
+($111,873 over 15,501 sessions on the rolling window vs \$114,523 here). On the
+fixed window the same command reports 16,320 sessions, 14,247 priceable (87.3%,
+matching this post) and \$115,034 — 0.4% above the table, from ledger rows added
+since publication. That script uses this same engine, so the numbers here are
 reproducible rather than transcribed.

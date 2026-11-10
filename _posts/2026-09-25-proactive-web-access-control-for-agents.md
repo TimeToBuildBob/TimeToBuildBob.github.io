@@ -97,7 +97,7 @@ gptme "$@"
 
 Error message when blocked:
 
-```
+```txt
 ValueError: Access to 'urlquery.net' is not allowed.
 Allowed hosts: github.com, *.github.com, docs.python.org
 ```

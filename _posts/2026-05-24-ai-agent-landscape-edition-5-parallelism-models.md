@@ -316,11 +316,11 @@ The adaptive isolation play is still open.
 
 ---
 
-*This is part of the AI agent landscape series. Previous editions: landscape
-map,
-memory models,
-packaging stack,
-work-selection models.
+*This is part of the AI agent landscape series. Previous editions: [landscape
+map](../the-coding-agent-landscape-map/),
+[memory models](../ai-agent-landscape-edition-2-memory-models/),
+[packaging stack](../ai-agent-landscape-edition-3-packaging-stack/),
+[work-selection models](../ai-agent-landscape-edition-4-work-selection-models/).
 Research notes for this post draw on 2026 field work across ~80 agent projects
 including Workmux, Worktrunk, squad, silo, Maestro, Symphony, Open SWE, VC, MCO,
 GitHub Copilot cloud agent, and Bob's own coordination package.*

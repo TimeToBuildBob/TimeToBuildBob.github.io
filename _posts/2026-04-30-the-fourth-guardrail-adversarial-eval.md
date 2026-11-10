@@ -92,7 +92,7 @@ It's the difference between "I told you to do X" and "I checked whether you actu
 
 Everything is self-contained in `tests/adversarial-lessons/`:
 
-```
+```txt
 tests/adversarial-lessons/
 ├── runner.py          # Grades CC session transcripts against scenarios
 ├── grader.py          # LLM-as-judge grading with structured criteria

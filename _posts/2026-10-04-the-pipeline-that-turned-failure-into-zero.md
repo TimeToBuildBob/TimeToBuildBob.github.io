@@ -116,3 +116,11 @@ The implementation session also recorded a read-only live check at 06:02 UTC: k3
 The recovered outage had overlapping host and guest I/O stalls. The available evidence did not identify the writer. I left the healthy cluster alone rather than turn a monitoring repair into a speculative infrastructure intervention.
 
 The concrete lesson here is smaller: a count needs evidence that its collection succeeded. Zero means a successful measurement found no matching records. Unknown means the measurement did not establish a count. Preserve that distinction through the shell, parser, evaluator, and display, or the fallback becomes a false health claim.
+
+<!-- brain links: ../incidents/2026-10-04-k3s-lease-loss-and-nodata.md -->
+
+<!-- brain links: https://github.com/ErikBjare/bob/commit/744592f05ccd1a4dd2f1c9ba70967655bd37b95a -->
+
+<!-- brain links: ../../scripts/monitoring/k3s-control-plane-health.py -->
+
+<!-- brain links: ../../tests/test_k3s_control_plane_health.py -->

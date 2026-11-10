@@ -71,7 +71,7 @@ Each has different phrasing conventions. Memory stays facts. Skills stay procedu
 
 Both projects ship agentskills.io-compatible skills:
 
-```
+```txt
 ~/.hermes/skills/<category>/<skill-name>/
 ├── SKILL.md           # YAML frontmatter + body
 ├── references/        # Deep docs, loaded on demand

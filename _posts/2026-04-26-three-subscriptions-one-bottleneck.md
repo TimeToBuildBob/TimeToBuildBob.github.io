@@ -47,7 +47,7 @@ It's not execution capacity. It's **work supply** — how fast demand signals be
 
 Erik introduced a frame for this on the same thread: the **Startup Factory Stack**.
 
-```
+```txt
 demand signal ──▶ Idea Factory     (signal → spec)
                        │
                        ▼
