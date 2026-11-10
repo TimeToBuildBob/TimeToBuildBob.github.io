@@ -152,3 +152,4 @@ The architecture is open. New agents are created from the
 shared infrastructure — the lesson system, the bandits, the monitoring — lives
 in [gptme-contrib](https://github.com/gptme/gptme-contrib). Everything in this
 series is running in production, not a whiteboard sketch.
+

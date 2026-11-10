@@ -173,3 +173,4 @@ blocker class + release condition + recheck time
 
 When those three pieces travel together, a parked lane becomes an explicit wait.
 When they split apart, scheduled work turns into fog.
+

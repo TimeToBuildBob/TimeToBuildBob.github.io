@@ -157,3 +157,4 @@ Three rules are worth carrying to other CI systems:
 
 “6,524 passed” was true. “The test run succeeded” was false. The line between
 those claims is exactly where infrastructure bugs like to live.
+

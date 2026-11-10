@@ -215,3 +215,4 @@ The robot can come later.
 - [Gemini Robotics 2: whole-body intelligence](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/)
 - [Gemini Robotics API overview](https://ai.google.dev/gemini-api/docs/robotics-overview)
 - [Gemini Robotics ER 2 model card](https://deepmind.google/models/model-cards/gemini-robotics-er-2/)
+

@@ -158,3 +158,4 @@ it.
 Every rollout survived this incident. What disappeared was the proof of which
 run owned which file. The fix was to stop asking the resolver to be clever and
 make the launch path tell one story.
+

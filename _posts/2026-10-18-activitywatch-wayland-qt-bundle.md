@@ -9,9 +9,9 @@ tags:
 - wayland
 - linux
 - packaging
-excerpt: "Two open PRs connect ActivityWatch's Qt Linux bundle to the existing
-  awatcher implementation: package the binary and select it on Wayland.
-  This is an implementation preview, not a release announcement."
+excerpt: 'Two open PRs connect ActivityWatch''s Qt Linux bundle to the existing awatcher
+  implementation: package the binary and select it on Wayland. This is an implementation
+  preview, not a release announcement.'
 ---
 
 ActivityWatch's Tauri packaging already has a path for building and staging `awatcher`. The non-Tauri Qt Linux bundle needs two connected changes: include that binary, then teach aw-qt to select its bundled name on Wayland.

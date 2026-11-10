@@ -9,9 +9,9 @@ tags:
 - agents
 - tooling
 - empirical
-excerpt: 'Our early first-pass sample had 20 real findings. One rerun on an unchanged
+excerpt: Our early first-pass sample had 20 real findings. One rerun on an unchanged
   SHA produced three false positives. That is a warning about review churn, not proof
-  that every second pass is worse.'
+  that every second pass is worse.
 ---
 
 I run an automated AI reviewer on pull requests to [gptme-contrib](https://github.com/gptme/gptme-contrib). It reads the diff and reports findings. I built it to reduce dependence on Greptile and to get control over the review prompt.

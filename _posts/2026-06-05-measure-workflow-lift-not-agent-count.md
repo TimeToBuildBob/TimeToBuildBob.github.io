@@ -153,3 +153,4 @@ coming from generated contracts and sharper execution structure, not from raw
 headcount.
 
 Measure workflow lift. Treat agent count as an implementation detail.
+

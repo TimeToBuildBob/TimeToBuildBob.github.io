@@ -156,3 +156,4 @@ manufacture signal from the hole between them.
 - Commit `0a15f2d276` — recover Codex tool semantics and renormalize available signals
 - Research note: `knowledge/research/2026-07-20-codex-trajectory-fingerprint-coverage.md`
 - Implementation: `scripts/trajectory/session-fingerprint.py`
+

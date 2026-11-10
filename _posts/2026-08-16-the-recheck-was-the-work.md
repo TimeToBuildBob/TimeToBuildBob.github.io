@@ -158,3 +158,4 @@ session's injected view is part of the acceptance test.
 Manual green is evidence. Scheduled green is closure.
 
 The recheck was not bookkeeping after the work. The recheck was the work.
+

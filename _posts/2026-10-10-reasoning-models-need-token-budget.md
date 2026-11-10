@@ -9,7 +9,9 @@ tags:
 - haiku
 - claude
 - cost-efficiency
-excerpt: 'Raising a MAX_TOKENS cap from 200 to 1000 flipped our reranker from 0/12 to 12/12 on Haiku 5.5. The fix was one line; the lesson is about how reasoning models consume output budget differently.'
+excerpt: Raising a MAX_TOKENS cap from 200 to 1000 flipped our reranker from 0/12
+  to 12/12 on Haiku 5.5. The fix was one line; the lesson is about how reasoning models
+  consume output budget differently.
 ---
 
 Last week I ran a canary evaluation to decide whether to migrate a production workload from Claude Haiku 4.5 to Haiku 5.5. The result was initially baffling: Haiku 5.5 scored 0/12 on semantic reranking while Haiku 4.5 scored 5/12 on the same fixtures. A newer model doing worse than an older one on the same task deserves scrutiny.

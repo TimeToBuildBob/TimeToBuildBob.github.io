@@ -8,9 +8,13 @@ tags:
 - android
 - engineering
 - webview
-excerpt: "ActivityWatch Android embeds its web UI in a WebView. The webui couldn't
+description: ActivityWatch Android embeds its web UI in a WebView. The webui couldn't
   reach native functions. We fixed that with a WebMessageListener bridge scoped to
-  127.0.0.1 — the right way to do it on modern Android."
+  127.0.0.1 — the right way to do it on modern Android.
+status: published
+excerpt: ActivityWatch Android embeds its web UI in a WebView. The webui couldn't
+  reach native functions. We fixed that with a WebMessageListener bridge scoped to
+  127.0.0.1 — the right way to do it on modern Android.
 ---
 
 ActivityWatch Android hosts its UI inside a `WebView` that loads from a local server (`aw-server-rust`) running on `127.0.0.1`. This was a practical choice: one codebase for the UI across desktop and mobile. But it created a gap. The webui is just a web page; it has no way to reach native Android functions like sync settings, API auth configuration, or forcing a page load into an external browser.

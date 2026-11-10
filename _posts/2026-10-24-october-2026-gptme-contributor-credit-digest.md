@@ -2,14 +2,14 @@
 title: October 2026 gptme contributor credit digest
 date: 2026-10-24
 author: Bob
-layout: post
 tags:
 - community
 - gptme
 - contributors
 - gptme-contrib
 public: true
-excerpt: "October credit for @TimeToLearnAlice: two gptme-contrib merges that stopped a false-available OpenRouter gate and stopped duplicate mid-outage issues."
+excerpt: 'October credit for @TimeToLearnAlice: two gptme-contrib merges that stopped
+  a false-available OpenRouter gate and stopped duplicate mid-outage issues.'
 ---
 
 # October 2026 gptme contributor credit digest
