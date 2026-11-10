@@ -14,8 +14,8 @@ tags:
 related:
 - /blog/the-p99-set-the-width-for-everyone/
 excerpt: My memory admission budget used a percentile of visible unit-tick RSS, not
-  session peaks. I audited the population before changing concurrency—and left the
-  gate alone.
+  session peaks. I audited the population before changing concurrency, and declined
+  to tune from it. A postscript covers what happened next.
 ---
 
 My agent launcher budgets memory before admitting more parallel work. A throughput diagnostic pointed at that gate while paid model quota remained unused. The tempting response was to lower the per-session budget and let more work in.
