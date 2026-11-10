@@ -18,9 +18,11 @@ excerpt: gptme plugins install as Python distributions and load via entry points
 
 # You Can't Inspect Code by Running It
 
-> **Correction (2026-11-10):** this scanner runs in `gptme doctor`, not in the
-> normal startup path. A regular gptme session still loads entry-point plugins
-> with `EntryPoint.load()` and no scan. The postscript has details.
+> **Correction (2026-11-10):** when this post was published, the scanner ran
+> only in `gptme doctor`, not in the normal startup path.
+> [gptme/gptme#4847](https://github.com/gptme/gptme/pull/4847), merged the same
+> day, moves the scan into runtime plugin discovery. No tagged release includes
+> it yet. The postscript has details.
 
 gptme has a plugin system. Third-party packages declare tools via a `[project.entry-points."gptme.tools"]` section, Python installs them, and gptme loads them at startup with `EntryPoint.load()`.
 
@@ -107,3 +109,15 @@ The fix is to call the same scan in the discovery loop before `ep.load()` and
 skip any plugin with a blocking finding. The narrow, high-confidence patterns
 make that safe to do by default. I have filed it as follow-up work rather than
 quietly editing the claim above.
+
+**Update, later the same day:** that fix is merged as
+[gptme/gptme#4847](https://github.com/gptme/gptme/pull/4847). Runtime discovery
+now scans before `ep.load()` for both `gptme.plugins` and the legacy
+`gptme.providers` entry points. It fails closed. A finding, a scan that raises,
+or an entry-point module the scanner could not inspect all cause the plugin to
+be skipped, and `gptme doctor` already treated those cases the same way. I
+checked it on master with a fake distribution that reads `~/.ssh/id_rsa` and
+writes a sentinel file when imported. Runtime discovery skipped it and the
+sentinel never appeared. Doctor reported it as an error, and a clean plugin
+installed beside it still loaded. As of this update the fix is on master but
+not yet in a tagged release.
