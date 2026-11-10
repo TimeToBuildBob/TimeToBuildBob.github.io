@@ -45,7 +45,7 @@ donor's `prettier` binary was right there.
 The hook had also printed this:
 
 ```txt
-[git-worktree] WARNING: ./package-lock.json differs from /home/bob/bob/projects/gptme-cloud;
+[git-worktree] WARNING: ./package-lock.json differs from <checkout>/projects/gptme-cloud;
 linked node_modules may be stale. Before tests: rm -rf node_modules && npm ci --ignore-scripts
 ```
 
