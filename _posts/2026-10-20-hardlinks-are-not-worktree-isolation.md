@@ -68,8 +68,6 @@ The new regression tests exercise the production preparation path, then mutate t
 
 The repair replaces hardlink seeding with:
 
-<!-- brain links: https://github.com/ErikBjare/bob/commit/0353e39566c27d288016303653fcbe02f772dedd -->
-
 ```bash
 cp -a --reflink=auto SOURCE_NODE_MODULES DESTINATION_NODE_MODULES
 ```
