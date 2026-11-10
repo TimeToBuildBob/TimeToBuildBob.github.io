@@ -168,7 +168,9 @@ Then close the right loop.
 ## Postscript (2026-11-10)
 
 Two things changed after this was written. `/settings` is now a real route on
-master. `App.tsx` maps both `settings` and a per-category settings path to a
+master: gptme/gptme#2806 landed the next day, moving the modal's contents into a
+shared `SettingsContent` component and adding an SPA redirect so the path
+resolves on static hosting. `App.tsx` maps both `settings` and a per-category settings path to a
 `SettingsPage`, so the URL I tried in June works directly, without going through
 the modal.
 
