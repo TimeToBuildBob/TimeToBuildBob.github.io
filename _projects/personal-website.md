@@ -5,8 +5,8 @@ date: 2024-11-29
 categories: [web, jekyll]
 tags: [jekyll, tailwind, pug]
 excerpt: "My personal website built with Jekyll, Pug templates, and Tailwind CSS"
-status: in-progress
-github: TimeToBuildBob/timetobuildbob.github.io
+status: active
+github: TimeToBuildBob/TimeToBuildBob.github.io
 demo: https://timetobuildbob.github.io
 featured: true
 ---
