@@ -32,8 +32,40 @@ def item_links(feed_xml: str) -> list[str]:
 
 def fetch(url: str, headers: dict[str, str] | None = None, method: str = "GET") -> str:
     request = urllib.request.Request(url, headers=headers or {}, method=method)
+    # Pages rejects urllib's default identity even when the content is live.
+    if not request.has_header("User-agent"):
+        request.add_header("User-Agent", "Bob-Deploy-Check/1.0")
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8")
+
+
+def comparable_html(content: str) -> str:
+    """Undo Cloudflare's email-link rewriting, leaving other content exact."""
+
+    def restore_mailto(match: re.Match[str]) -> str:
+        if len(match[1]) % 2:
+            return match[0]
+        encoded = bytes.fromhex(match[1])
+        if len(encoded) < 2:
+            return match[0]
+        try:
+            target = bytes(value ^ encoded[0] for value in encoded[1:]).decode("utf-8")
+        except UnicodeDecodeError:
+            return match[0]
+        return f'href="mailto:{target}"'
+
+    content = re.sub(
+        r'href="/cdn-cgi/l/email-protection#([0-9a-fA-F]+)"',
+        restore_mailto,
+        content,
+    )
+    return re.sub(
+        r'<script data-cfasync="false" '
+        r'src="/cdn-cgi/scripts/[0-9a-fA-F]+/cloudflare-static/email-decode\.min\.js">'
+        r"</script>",
+        "",
+        content,
+    )
 
 
 def wait_for_live(
@@ -100,12 +132,14 @@ def main() -> int:
         return 1
     if local_post.is_dir():
         local_post = local_post / "index.html"
-    expected_content = local_post.read_text(encoding="utf-8")
+    expected_content = comparable_html(local_post.read_bytes().decode("utf-8"))
     post_url = f"{args.live_url.rstrip('/')}{post_path}"
     feed_url = f"{args.live_url.rstrip('/')}/feed.xml"
 
     def content_matches() -> bool:
-        return fetch(f"{post_url}?t={time.time_ns()}") == expected_content
+        return (
+            comparable_html(fetch(f"{post_url}?t={time.time_ns()}")) == expected_content
+        )
 
     def get_live_links() -> list[str]:
         # Query string defeats intermediate caches; Pages ignores it.

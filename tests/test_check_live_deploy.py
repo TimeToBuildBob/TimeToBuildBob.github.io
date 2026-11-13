@@ -18,6 +18,48 @@ FEED = """<rss><channel><link>https://x/</link>
 </channel></rss>"""
 
 
+@pytest.mark.parametrize(
+    "headers, method",
+    [
+        (None, "GET"),
+        ({"Authorization": "Bearer test", "Accept": "application/json"}, "POST"),
+    ],
+)
+def test_fetch_identifies_deploy_checker_without_dropping_headers(
+    monkeypatch, headers, method
+) -> None:
+    from io import BytesIO
+
+    requests = []
+
+    def urlopen(request, timeout):
+        requests.append(request)
+        assert timeout == 30
+        return BytesIO(b"response")
+
+    monkeypatch.setattr(live.urllib.request, "urlopen", urlopen)
+    assert live.fetch("https://example.com/feed.xml", headers, method) == "response"
+    request = requests[0]
+    assert request.get_header("User-agent") == "Bob-Deploy-Check/1.0"
+    assert request.get_method() == method
+    for name, value in (headers or {}).items():
+        assert request.get_header(name.capitalize()) == value
+
+
+def test_fetch_preserves_explicit_user_agent(monkeypatch) -> None:
+    from io import BytesIO
+
+    def urlopen(request, timeout):
+        assert request.get_header("User-agent") == "Custom-Checker/2.0"
+        return BytesIO(b"response")
+
+    monkeypatch.setattr(live.urllib.request, "urlopen", urlopen)
+    assert (
+        live.fetch("https://example.com/feed.xml", {"User-Agent": "Custom-Checker/2.0"})
+        == "response"
+    )
+
+
 class FakeClock:
     def __init__(self) -> None:
         self.now = 0.0
@@ -105,8 +147,10 @@ def test_transient_page_error_is_retried() -> None:
 
 
 @pytest.mark.parametrize("current", [False, True])
+@pytest.mark.parametrize("newline", ["\n", "\r\n"])
+@pytest.mark.parametrize("email_obfuscated", [False, True])
 def test_same_permalink_requires_current_rendered_content(
-    tmp_path, monkeypatch, current
+    tmp_path, monkeypatch, current, newline, email_obfuscated
 ) -> None:
     """A published URL alone cannot prove that this build reached readers."""
     import sys
@@ -114,7 +158,9 @@ def test_same_permalink_requires_current_rendered_content(
     (tmp_path / "feed.xml").write_text(FEED, encoding="utf-8")
     post = tmp_path / "blog" / "b" / "index.html"
     post.parent.mkdir(parents=True)
-    post.write_text("<article>Edited post</article>", encoding="utf-8")
+    email_link = "mailto:?subject=Share&amp;body=Read this"
+    content = f'<article>Edited post</article><a href="{email_link}">Email</a>{newline}'
+    post.write_bytes(content.encode("utf-8"))
     requests = []
 
     def fetch(url, headers=None, method="GET"):
@@ -123,11 +169,20 @@ def test_same_permalink_requires_current_rendered_content(
             return "{}"
         if "/feed.xml" in url:
             return FEED
-        return (
-            "<article>Edited post</article>"
-            if current
-            else "<article>Previous post</article>"
-        )
+        result = content if current else content.replace("Edited post", "Previous post")
+        if email_obfuscated:
+            # Cloudflare rewrites mailto links and inserts this decoding script.
+            key = 0x93
+            encoded = bytes([key] + [ord(c) ^ key for c in email_link[7:]]).hex()
+            result = result.replace(
+                email_link, f"/cdn-cgi/l/email-protection#{encoded}"
+            )
+            result += (
+                '<script data-cfasync="false" '
+                'src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">'
+                "</script>"
+            )
+        return result
 
     monkeypatch.setattr(live, "fetch", fetch)
     monkeypatch.setattr(
