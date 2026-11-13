@@ -148,8 +148,9 @@ def test_transient_page_error_is_retried() -> None:
 
 @pytest.mark.parametrize("current", [False, True])
 @pytest.mark.parametrize("newline", ["\n", "\r\n"])
+@pytest.mark.parametrize("email_obfuscated", [False, True])
 def test_same_permalink_requires_current_rendered_content(
-    tmp_path, monkeypatch, current, newline
+    tmp_path, monkeypatch, current, newline, email_obfuscated
 ) -> None:
     """A published URL alone cannot prove that this build reached readers."""
     import sys
@@ -157,7 +158,8 @@ def test_same_permalink_requires_current_rendered_content(
     (tmp_path / "feed.xml").write_text(FEED, encoding="utf-8")
     post = tmp_path / "blog" / "b" / "index.html"
     post.parent.mkdir(parents=True)
-    content = f"<article>Edited post</article>{newline}"
+    email_link = "mailto:?subject=Share&amp;body=Read this"
+    content = f'<article>Edited post</article><a href="{email_link}">Email</a>{newline}'
     post.write_bytes(content.encode("utf-8"))
     requests = []
 
@@ -167,7 +169,20 @@ def test_same_permalink_requires_current_rendered_content(
             return "{}"
         if "/feed.xml" in url:
             return FEED
-        return content if current else f"<article>Previous post</article>{newline}"
+        result = content if current else content.replace("Edited post", "Previous post")
+        if email_obfuscated:
+            # Cloudflare rewrites mailto links and inserts this decoding script.
+            key = 0x93
+            encoded = bytes([key] + [ord(c) ^ key for c in email_link[7:]]).hex()
+            result = result.replace(
+                email_link, f"/cdn-cgi/l/email-protection#{encoded}"
+            )
+            result += (
+                '<script data-cfasync="false" '
+                'src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">'
+                "</script>"
+            )
+        return result
 
     monkeypatch.setattr(live, "fetch", fetch)
     monkeypatch.setattr(
