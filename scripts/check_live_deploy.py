@@ -6,9 +6,17 @@ Pages builder then publishes asynchronously and can fail on its own
 (2026-11-07: the 03:06Z and 18:04Z builds errored while the workflow was green,
 so the site served stale content for ~15 hours). This check takes the first
 ``<item><link>`` of the local ``_site/feed.xml`` and requires it to appear in the
-live feed with its rendered page matching the local build. A permalink alone
-cannot detect stale content after an edit. Poll while Pages catches up, and
-ask Pages to rebuild once if it does not.
+live feed, and verifies the rendered post content against the ``gh-pages``
+branch via the GitHub API. A permalink alone cannot detect stale content after
+an edit. Poll while Pages catches up, and ask Pages to rebuild once if it does
+not.
+
+The CDN (Fastly, max-age=600) ignores client cache-bypass headers such as
+``Cache-Control: no-cache`` and ``?t=`` query-string variations — it caches
+responses regardless. Live-URL content polling is therefore unreliable right
+after a deploy. The feed check still uses the live URL (to detect Pages
+build failures), while the content comparison bypasses the CDN via the
+GitHub API.
 """
 
 from __future__ import annotations
@@ -133,16 +141,28 @@ def main() -> int:
     if local_post.is_dir():
         local_post = local_post / "index.html"
     expected_content = comparable_html(local_post.read_bytes().decode("utf-8"))
-    post_url = f"{args.live_url.rstrip('/')}{post_path}"
     feed_url = f"{args.live_url.rstrip('/')}/feed.xml"
 
+    # Relative path of the post inside the deployed site root (== gh-pages root).
+    gh_post_path = str(local_post.relative_to(site_dir))
+
     def content_matches() -> bool:
-        return (
-            comparable_html(fetch(f"{post_url}?t={time.time_ns()}")) == expected_content
+        # Bypass the CDN: compare against gh-pages via GitHub API.
+        raw = fetch(
+            f"https://api.github.com/repos/{args.repository}/contents/{gh_post_path}?ref=gh-pages",
+            headers={
+                "Accept": "application/vnd.github.v3.raw",
+                "Authorization": f"Bearer {args.token}",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
         )
+        return comparable_html(raw) == expected_content
 
     def get_live_links() -> list[str]:
-        # Query string defeats intermediate caches; Pages ignores it.
+        # Use the live CDN feed to detect Pages build failures: if Pages does
+        # not publish the new content, this URL stays absent from the live feed.
+        # The CDN ignores ?t= cache-busters, but the feed URL itself is
+        # sufficient to detect whether Pages rebuilt successfully.
         return item_links(fetch(f"{feed_url}?t={int(time.time())}"))
 
     def rebuild() -> None:
