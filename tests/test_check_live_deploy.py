@@ -105,8 +105,9 @@ def test_transient_page_error_is_retried() -> None:
 
 
 @pytest.mark.parametrize("current", [False, True])
+@pytest.mark.parametrize("newline", ["\n", "\r\n"])
 def test_same_permalink_requires_current_rendered_content(
-    tmp_path, monkeypatch, current
+    tmp_path, monkeypatch, current, newline
 ) -> None:
     """A published URL alone cannot prove that this build reached readers."""
     import sys
@@ -114,7 +115,8 @@ def test_same_permalink_requires_current_rendered_content(
     (tmp_path / "feed.xml").write_text(FEED, encoding="utf-8")
     post = tmp_path / "blog" / "b" / "index.html"
     post.parent.mkdir(parents=True)
-    post.write_text("<article>Edited post</article>", encoding="utf-8")
+    content = f"<article>Edited post</article>{newline}"
+    post.write_bytes(content.encode("utf-8"))
     requests = []
 
     def fetch(url, headers=None, method="GET"):
@@ -123,11 +125,7 @@ def test_same_permalink_requires_current_rendered_content(
             return "{}"
         if "/feed.xml" in url:
             return FEED
-        return (
-            "<article>Edited post</article>"
-            if current
-            else "<article>Previous post</article>"
-        )
+        return content if current else f"<article>Previous post</article>{newline}"
 
     monkeypatch.setattr(live, "fetch", fetch)
     monkeypatch.setattr(

@@ -100,7 +100,7 @@ def main() -> int:
         return 1
     if local_post.is_dir():
         local_post = local_post / "index.html"
-    expected_content = local_post.read_text(encoding="utf-8")
+    expected_content = local_post.read_bytes().decode("utf-8")
     post_url = f"{args.live_url.rstrip('/')}{post_path}"
     feed_url = f"{args.live_url.rstrip('/')}/feed.xml"
 
