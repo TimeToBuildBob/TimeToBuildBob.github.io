@@ -6,8 +6,9 @@ Pages builder then publishes asynchronously and can fail on its own
 (2026-11-07: the 03:06Z and 18:04Z builds errored while the workflow was green,
 so the site served stale content for ~15 hours). This check takes the first
 ``<item><link>`` of the local ``_site/feed.xml`` and requires it to appear in the
-live feed (a newer deploy may already have superseded it), polls while Pages
-catches up, and asks Pages to rebuild once if it does not.
+live feed with its rendered page matching the local build. A permalink alone
+cannot detect stale content after an edit. Poll while Pages catches up, and
+ask Pages to rebuild once if it does not.
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ import time
 import urllib.request
 from collections.abc import Callable
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ITEM_LINK = re.compile(r"<item>.*?<link>([^<]+)</link>", re.DOTALL)
 
@@ -39,26 +41,29 @@ def wait_for_live(
     get_live_links: Callable[[], list[str]],
     rebuild: Callable[[], None],
     *,
+    content_matches: Callable[[], bool],
     timeout: float,
     interval: float,
     rebuild_after: float,
     clock: Callable[[], float] = time.monotonic,
     sleep: Callable[[float], None] = time.sleep,
 ) -> bool:
-    """Poll until ``expected`` is in the live feed; request one rebuild."""
+    """Require both feed presence and current rendered content; rebuild once."""
     start = clock()
     rebuilt = False
     while True:
+        live = []
         try:
             live = get_live_links()
+            if expected in live and content_matches():
+                return True
         except OSError as error:
-            live = []
-            print(f"live feed unreachable: {error}")
-        if expected in live:
-            return True
+            print(f"live site unreachable: {error}")
         elapsed = clock() - start
         if elapsed >= timeout:
-            print(f"live newest post is {live[:1]!r}; expected {expected!r}")
+            print(
+                f"live post missing or content stale: {expected!r}; feed: {live[:1]!r}"
+            )
             return False
         if not rebuilt and elapsed >= rebuild_after:
             rebuilt = True
@@ -87,7 +92,20 @@ def main() -> int:
         return 1
     expected = built[0]
 
+    post_path = urlsplit(expected).path
+    site_dir = args.site_dir.resolve()
+    local_post = (site_dir / unquote(post_path).lstrip("/")).resolve()
+    if not local_post.is_relative_to(site_dir):
+        print(f"post URL escapes site directory: {expected}")
+        return 1
+    if local_post.is_dir():
+        local_post = local_post / "index.html"
+    expected_content = local_post.read_text(encoding="utf-8")
+    post_url = f"{args.live_url.rstrip('/')}{post_path}"
     feed_url = f"{args.live_url.rstrip('/')}/feed.xml"
+
+    def content_matches() -> bool:
+        return fetch(f"{post_url}?t={time.time_ns()}") == expected_content
 
     def get_live_links() -> list[str]:
         # Query string defeats intermediate caches; Pages ignores it.
@@ -108,6 +126,7 @@ def main() -> int:
         expected,
         get_live_links,
         rebuild,
+        content_matches=content_matches,
         timeout=args.timeout,
         interval=args.interval,
         rebuild_after=args.rebuild_after,

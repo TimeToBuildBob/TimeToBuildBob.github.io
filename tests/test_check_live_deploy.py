@@ -3,6 +3,8 @@ from __future__ import annotations
 import importlib.util
 from pathlib import Path
 
+import pytest
+
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "check_live_deploy.py"
 spec = importlib.util.spec_from_file_location("check_live_deploy", MODULE_PATH)
@@ -42,6 +44,7 @@ def run(responses: list, **kwargs) -> tuple[bool, int]:
         "https://x/blog/b/",
         get_live_links,
         lambda: rebuilds.append(1),
+        content_matches=kwargs.get("content_matches", lambda: True),
         timeout=kwargs.get("timeout", 100),
         interval=10,
         rebuild_after=kwargs.get("rebuild_after", 30),
@@ -75,3 +78,74 @@ def test_fails_after_timeout_with_a_single_rebuild() -> None:
 
 def test_transient_network_error_is_retried() -> None:
     assert run([OSError("boom"), ["https://x/blog/b/"]]) == (True, 0)
+
+
+def test_stale_content_requests_one_rebuild_and_times_out() -> None:
+    assert run([["https://x/blog/b/"]], content_matches=lambda: False) == (False, 1)
+
+
+def test_content_catches_up_after_rebuild() -> None:
+    matches = iter([False] * 5 + [True])
+    assert run([["https://x/blog/b/"]], content_matches=lambda: next(matches)) == (
+        True,
+        1,
+    )
+
+
+def test_transient_page_error_is_retried() -> None:
+    matches = iter([OSError("page unavailable"), True])
+
+    def content_matches():
+        result = next(matches)
+        if isinstance(result, Exception):
+            raise result
+        return result
+
+    assert run([["https://x/blog/b/"]], content_matches=content_matches) == (True, 0)
+
+
+@pytest.mark.parametrize("current", [False, True])
+def test_same_permalink_requires_current_rendered_content(
+    tmp_path, monkeypatch, current
+) -> None:
+    """A published URL alone cannot prove that this build reached readers."""
+    import sys
+
+    (tmp_path / "feed.xml").write_text(FEED, encoding="utf-8")
+    post = tmp_path / "blog" / "b" / "index.html"
+    post.parent.mkdir(parents=True)
+    post.write_text("<article>Edited post</article>", encoding="utf-8")
+    requests = []
+
+    def fetch(url, headers=None, method="GET"):
+        requests.append((url, method))
+        if "/pages/builds" in url:
+            return "{}"
+        if "/feed.xml" in url:
+            return FEED
+        return (
+            "<article>Edited post</article>"
+            if current
+            else "<article>Previous post</article>"
+        )
+
+    monkeypatch.setattr(live, "fetch", fetch)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "check_live_deploy.py",
+            "--site-dir",
+            str(tmp_path),
+            "--live-url",
+            "https://x",
+            "--repository",
+            "owner/site",
+            "--token",
+            "test",
+            "--timeout",
+            "0",
+        ],
+    )
+    assert live.main() == (0 if current else 1)
+    assert any("/blog/b/?t=" in url for url, _ in requests)
