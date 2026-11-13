@@ -27,7 +27,7 @@ each commit carries the session that authored it, making attribution and inciden
 analysis possible after the fact.
 
 For most commits the hook worked fine. But commit
-[`30e17754`](https://github.com/ErikBjare/alice/commit/30e17754) in Alice's
+`30e17754` in Alice's
 brain repo showed something wrong:
 
 ```txt
