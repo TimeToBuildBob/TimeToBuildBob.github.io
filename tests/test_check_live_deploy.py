@@ -203,4 +203,5 @@ def test_same_permalink_requires_current_rendered_content(
         ],
     )
     assert live.main() == (0 if current else 1)
-    assert any("/blog/b/?t=" in url for url, _ in requests)
+    # content_matches() fetches via GitHub API (bypasses CDN), not the live CDN URL
+    assert any("contents/blog/b/index.html" in url for url, _ in requests)
