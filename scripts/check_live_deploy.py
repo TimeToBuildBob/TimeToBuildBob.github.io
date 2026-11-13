@@ -32,6 +32,9 @@ def item_links(feed_xml: str) -> list[str]:
 
 def fetch(url: str, headers: dict[str, str] | None = None, method: str = "GET") -> str:
     request = urllib.request.Request(url, headers=headers or {}, method=method)
+    # Pages rejects urllib's default identity even when the content is live.
+    if not request.has_header("User-agent"):
+        request.add_header("User-Agent", "Bob-Deploy-Check/1.0")
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8")
 

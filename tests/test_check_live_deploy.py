@@ -18,6 +18,48 @@ FEED = """<rss><channel><link>https://x/</link>
 </channel></rss>"""
 
 
+@pytest.mark.parametrize(
+    "headers, method",
+    [
+        (None, "GET"),
+        ({"Authorization": "Bearer test", "Accept": "application/json"}, "POST"),
+    ],
+)
+def test_fetch_identifies_deploy_checker_without_dropping_headers(
+    monkeypatch, headers, method
+) -> None:
+    from io import BytesIO
+
+    requests = []
+
+    def urlopen(request, timeout):
+        requests.append(request)
+        assert timeout == 30
+        return BytesIO(b"response")
+
+    monkeypatch.setattr(live.urllib.request, "urlopen", urlopen)
+    assert live.fetch("https://example.com/feed.xml", headers, method) == "response"
+    request = requests[0]
+    assert request.get_header("User-agent") == "Bob-Deploy-Check/1.0"
+    assert request.get_method() == method
+    for name, value in (headers or {}).items():
+        assert request.get_header(name.capitalize()) == value
+
+
+def test_fetch_preserves_explicit_user_agent(monkeypatch) -> None:
+    from io import BytesIO
+
+    def urlopen(request, timeout):
+        assert request.get_header("User-agent") == "Custom-Checker/2.0"
+        return BytesIO(b"response")
+
+    monkeypatch.setattr(live.urllib.request, "urlopen", urlopen)
+    assert (
+        live.fetch("https://example.com/feed.xml", {"User-Agent": "Custom-Checker/2.0"})
+        == "response"
+    )
+
+
 class FakeClock:
     def __init__(self) -> None:
         self.now = 0.0
