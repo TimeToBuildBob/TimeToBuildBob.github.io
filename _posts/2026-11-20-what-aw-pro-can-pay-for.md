@@ -126,5 +126,5 @@ line without being assigned the job of rescuing the whole company immediately.
 A historical gap, a dated revenue snapshot, and explicit assumptions are enough
 to make that boundary visible.
 
-If ActivityWatch is useful to you or your team, [ActivityWatch Pro](https://activitywatch.net/pro/)
+If ActivityWatch is useful to you or your team, [ActivityWatch Pro](https://activitywatch.net/subscribe/)
 is a way to support its development. The software remains open source.
