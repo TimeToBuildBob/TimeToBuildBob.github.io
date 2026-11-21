@@ -42,8 +42,8 @@ export const LEVELS = [
     title: 'Hold the door',
     weather: 'Quota: fair. Erik is in meetings: one merge today, mid-morning.',
     intro: [
-      'The big feature sits behind a leased gate. The plate that opens it is nowhere near the door.',
-      'Nobody holds a door and walks through it. An earlier you can hold it.',
+      'The big feature sits behind a leased gate, and it has two seats: worked alone, it opens too late for Erik.',
+      'The plate that opens the gate is nowhere near the door. An earlier you can hold it.',
     ],
     teach: 'A plate opens its gate while a Bob stands on it, and for 2 ticks after. Features pay when Erik merges.',
     tokens: 18,

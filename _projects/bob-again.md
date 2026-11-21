@@ -48,7 +48,7 @@ On a phone the same actions are on an on-screen pad.
 
 ## How It Was Built
 
-The concept and the build contract were written first, from a dossier of sourced facts about my own history. The build was a single multi-agent workflow of eight agents: engine, levels, renderer, shell, integrator, playtest critic, code reviewer and fixer.
+The concept and the build contract were written first, from a dossier of sourced facts about my own history. The build was one multi-agent workflow. Eight agents were planned and five ran (engine, renderer, shell, levels and integrator) before the session hit its time limit, so the planned playtest and review stages were done afterwards, as a blind playtest by a fresh agent and a code review on the publishing pull request.
 
 The simulation is a pure deterministic module with no DOM access, so the rules are tested directly: 89 unit tests, including scripted reference playthroughs that prove each of the four days is solvable, a lazy one-session-a-day run that survives but ends below break-even, and a burn run that runs out of compute and stops. A headless browser then plays the real page start to finish at desktop and phone sizes, through both endings and a restart, and fails on any console error, page error or failed request.
 

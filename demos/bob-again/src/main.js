@@ -202,10 +202,12 @@ function setScreen(name) {
   guardUntil = now() + GUARD_MS;
 }
 
-// Steps from (x, y) to the terminal, treating closed gates as walls.
-function stepsHome(lvl, state, x, y) {
+// Steps from (x, y) to the terminal, treating closed gates as walls. With
+// `throughGates` it answers "how far once a plate opens the way": a shut gate
+// is a wait, not a dead end, and the two must not read the same to the player.
+function stepsHome(lvl, state, x, y, throughGates = false) {
   const { width: w, height: h } = lvl;
-  const shut = new Set(state.gates.filter((g) => !g.open).map((g) => g.y * w + g.x));
+  const shut = new Set(throughGates ? [] : state.gates.filter((g) => !g.open).map((g) => g.y * w + g.x));
   const dist = new Int16Array(w * h).fill(-1);
   const todo = [[x, y]];
   dist[y * w + x] = 0;
@@ -793,7 +795,10 @@ function updateHud() {
   let pips = '';
   if (me) {
     const left = Math.max(0, me.tokensLeft);
-    const home = me.status === 'active' ? stepsHome(lvl, s, me.x, me.y) : Infinity;
+    const direct = me.status === 'active' ? stepsHome(lvl, s, me.x, me.y) : Infinity;
+    const gated = direct === Infinity && me.status === 'active' ? stepsHome(lvl, s, me.x, me.y, true) : Infinity;
+    const waitsOnGate = direct === Infinity && gated + 1 <= left;
+    const home = waitsOnGate ? gated : direct;
     const need = home + 1;
     const short = need > left;
     for (let i = 0; i < budget; i++) {
@@ -803,7 +808,9 @@ function updateHud() {
     }
     el.tokcount.innerHTML = short
       ? `${left} left · terminal out of reach`
-      : `${left} left · ${need} to get home<span class="wide"> and write</span>`;
+      : waitsOnGate
+        ? `${left} left · ${need} to get home<span class="wide"> once the gate opens</span>`
+        : `${left} left · ${need} to get home<span class="wide"> and write</span>`;
     el.tokcount.className = `sub ${short ? 'bad' : ''}`;
   } else {
     for (let i = 0; i < budget; i++) pips += '<i class="idle"></i>';
@@ -847,19 +854,38 @@ function promptFor() {
   const n = live.actions.length;
   const t = me.tokensLeft;
   const onJ = onTerminal(lvl, me);
-  const home = stepsHome(lvl, s, me.x, me.y);
+  // A shut gate on the way home is a wait, not a dead end, as long as the
+  // route through it still fits the tokens left.
+  const direct = stepsHome(lvl, s, me.x, me.y);
+  const gated = direct === Infinity ? stepsHome(lvl, s, me.x, me.y, true) : Infinity;
+  const behindGate = direct === Infinity && gated + 1 <= t;
+  const home = behindGate ? gated : direct;
   const need = home + 1;
   const bench = s.benches.find((b) => b.x === me.x && b.y === me.y);
   const plate = s.plates.find((p) => p.x === me.x && p.y === me.y);
   const firstEver = C.day === 0 && C.sessions.length === 0 && C.sessionsStarted === 1;
+  // Pairing counts: the PR is credited to whichever Bob finished it, but a
+  // Bob who worked a task that shipped did ship.
+  const shippedIds = new Set(
+    s.benches.filter((b) => ['landed', 'helped', 'queued', 'merged'].includes(b.status)).map((b) => b.id),
+  );
   const shipped = s.events.some(
-    (e) => e.bob === live.index && (e.type === 'landed' || e.type === 'pr_opened' || e.type === 'helped'),
+    (e) =>
+      e.bob === live.index &&
+      (e.type === 'landed' || e.type === 'pr_opened' || e.type === 'helped' || (e.type === 'work' && shippedIds.has(e.benchId))),
   );
 
   if (!onJ && need > t) {
-    return home === Infinity
-      ? [`The way back is behind a closed gate, and you have ${plural(t, 'token')}. Undo a step.`, 'bad']
-      : [`Too far. The terminal is ${plural(home, 'step')} away, the entry costs one more, you have ${t}. Undo a step.`, 'bad'];
+    if (home === Infinity) {
+      return [`The way back is behind a closed gate, and you have ${plural(t, 'token')}. Undo a step.`, 'bad'];
+    }
+    return [`Too far. The terminal is ${plural(home, 'step')} away, the entry costs one more, you have ${t}. Undo a step.`, 'bad'];
+  }
+  if (!onJ && behindGate && need + 2 >= t) {
+    return [
+      `${plural(t, 'token')} left and the gate behind you is shut. It is ${plural(home, 'step')} home once a Bob stands on a plate, and that can be you.`,
+      'warn',
+    ];
   }
   if (!onJ && need === t) {
     return [`Go now. ${plural(home, 'step')} to the terminal and one to write: exactly your ${t} tokens.`, 'warn'];
@@ -892,6 +918,9 @@ function promptFor() {
   if (me.lastEvent === 'bump') {
     const d = MOVES[live.actions[n - 1]];
     const gate = d && s.gates.find((g) => g.x === me.x + d[0] && g.y === me.y + d[1]);
+    if (gate && gate.open) {
+      return ['One tick early. The lease started as you reached the gate, and it is open now: step again.', 'warn'];
+    }
     if (gate) {
       return [
         `Gate closed. It opens while a Bob stands on its plate, plus ${plural(lvl.leaseTtl ?? 0, 'tick')}. That Bob does not have to be this session.`,
@@ -917,7 +946,7 @@ function promptFor() {
         const two = bench.seats > 1 ? ` ${bench.seats} seats: a second Bob halves the time.` : '';
         return [`${key} works it: ${left} to go.${two} Then it waits in Erik's queue.`, 'coach'];
       }
-      return [`${key} works it: ${left} to go. A fix pays the moment it lands.`, 'coach'];
+      return [`${key} works it: ${left} to go. A fix counts the moment it lands.`, 'coach'];
     }
     const mine = s.events.some(
       (e) => e.bob === live.index && e.benchId === bench.id && (e.type === 'landed' || e.type === 'pr_opened' || e.type === 'helped'),
@@ -946,7 +975,7 @@ function promptFor() {
   if (firstEver) {
     return shipped
       ? [`Shipped. Now get back to the green terminal and ${touchUI() ? 'tap JOURNAL' : 'press E'} before the context runs out.`, 'coach']
-      : [`Walk onto a teal ring and work it with ${workKey()}. A fix pays the moment it lands.`, 'coach'];
+      : [`Walk onto a teal ring and work it with ${workKey()}. A fix counts the moment it lands.`, 'coach'];
   }
   if (shipped) return [`Shipped. Spend what is left, or head back to the terminal. ${workKey()} also waits a tick.`, 'dim'];
   return [lvl.teach || `${workKey()} also waits a tick, if you need a ghost to catch up.`, 'dim'];
@@ -1154,6 +1183,7 @@ function verdict(r) {
   if (r.helpsMissed > 0) return 'Someone asked for help and nobody came. That gets remembered.';
   if (r.net < 0) return 'Things shipped. Not enough of them to cover the compute.';
   if (r.net >= 15) return 'Outcome beat motion today. That is the whole job.';
+  if (r.fixes + r.merged + r.helps >= level().benches.length) return 'Everything on the board shipped. It paid for itself, and tomorrow is bigger.';
   return 'It paid for itself. Thin, but it counts.';
 }
 
