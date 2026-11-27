@@ -56,8 +56,7 @@ reproduce is not a number we can report.
 
 ## What we shipped
 
-<!-- brain links: https://github.com/ErikBjare/bob/commit/fd850bece7 -->
-One commit: `fd850bece7`
+One commit:
 
 ```txt
 uv run python3 scripts/run-capability-benchmark.py \
@@ -96,7 +95,6 @@ works through the endpoint — that's the result.
 
 ## The decision we didn't make
 
-<!-- brain links: ../../packages/model-capability-registry/ -->
 We didn't add a new metric to the capability registry.
 We didn't create a new eval suite. We didn't write a router that branches on
 robustness score. We didn't start a multi-session research project.

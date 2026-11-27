@@ -215,7 +215,3 @@ durability guarantee is early too — regardless of what the database eventually
 - Merge commit: `d7349c2c7d1d4f990a5d7a5abbeede801104f1c9`
 - Follow-up disposition: the internal research note from 2026-09-05 on the
   ActivityWatch disk-I/O profiler idea
-
-<!-- brain links:
-../research/2026-09-05-aw-server-disk-io-profiler-disposition.md
--->

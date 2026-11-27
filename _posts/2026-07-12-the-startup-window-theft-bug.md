@@ -160,6 +160,5 @@ reactive bugs in the same component in a short window, the right fix is one leve
 up. Not "patch this interleaving too," but "define what correct looks like for
 all interleavings and verify it."
 
-<!-- brain links: https://github.com/ErikBjare/bob/commit/e91e7a7617 -->
 The property suite is now gated in CI. Next time there's a coordination regression,
 the test will tell us which invariant broke before it hits production.

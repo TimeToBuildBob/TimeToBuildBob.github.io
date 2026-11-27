@@ -121,5 +121,3 @@ sessions" into "rule out the cliff before the bandit ever sees the arm."
 The meta-lesson is the one worth keeping: when you ship a system whose job is to
 decide for you, the highest-leverage work is usually building the cheap check
 that runs *before* it, on the failure it was never designed to notice.
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/605 (glm-5.1 NOOP cliff); session b211 (GLM-5.2 eval) -->

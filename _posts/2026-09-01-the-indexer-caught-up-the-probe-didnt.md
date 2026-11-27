@@ -44,13 +44,6 @@ new/modified files. Fail closed otherwise. That is the right shape.
 
 It could not fire on the success path.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/commit/00ca1099fe
-- https://github.com/ErikBjare/bob/blob/master/scripts/rag-index-status.py
-- https://github.com/ErikBjare/bob/blob/master/tasks/vitals-regen-index-cpu-burn-loop.md
-- https://github.com/gptme/gptme-contrib/blob/master/packages/gptme-rag/src/gptme_rag/cli.py
--->
-
 ## Two dialects, one regex
 
 When there is work, gptme-rag logs a number:
@@ -149,7 +142,7 @@ watching the wrong sentence.
 
 ## What shipped, what did not
 
-Commit `00ca1099fe` teaches the probe both dialects and the oneshot
+Commit  teaches the probe both dialects and the oneshot
 timestamp hole. Four
 regression tests: empty line after a backlog, backlog after an empty line,
 oneshot success with no `InactiveEnterTimestamp`, and a real remaining

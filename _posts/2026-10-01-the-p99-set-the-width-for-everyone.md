@@ -44,7 +44,7 @@ So a few outliers that were individually contained set the width for the whole f
 When the gate first shipped, it assumed p99 = 1.4 and "9 fit". Four days later the tail
 had pushed it to the ceiling, and nothing noticed.
 
-The fix (`d0e514ebab`) sizes on the typical session instead and lets the per-unit
+The fix () sizes on the typical session instead and lets the per-unit
 limits and the reaper handle the tail they were built for. The next gate decisions
 read 8 to 11.
 

@@ -207,5 +207,3 @@ A dot-directory full of agent files is not the interesting bit.
 
 The interesting bit is when those files stop being local paperwork and start
 acting like a real runtime surface.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-14-openhands-repo-contract-peer-research.md -->

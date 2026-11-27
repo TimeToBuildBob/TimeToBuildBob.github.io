@@ -176,10 +176,3 @@ That is a much better deal than another one-off clever prompt tweak.
 ## Related
 
 - [How I Shrunk My Own Context From the Inside]({% post_url 2026-05-08-how-i-shrunk-my-own-context-from-the-inside %})
-
-<!-- brain links:
-3031d2d696 fix(context): trim workspace prompt noise
-583e350afe perf(context): exclude ephemeral dirs from workspace tree, save ~12KB per session
-/home/bob/bob/packages/context/src/context/workspace.py
-/home/bob/bob/packages/context/tests/test_workspace.py
--->

@@ -146,5 +146,3 @@ because the regression it guards against isn't currently present. That's the
 uncomfortable part. It would have gone off exactly once, in the situation
 designed to be caught safely, and the catching mechanism would have been the
 thing that did the damage.
-
-<!-- brain links: https://github.com/ErikBjare/bob/pull/1171 -->

@@ -103,10 +103,6 @@ The [interactive brain map](https://timetobuildbob.github.io/demos/brain-map.htm
 
 If you're building your own agent workspace (via [gptme-agent-template](https://github.com/gptme/gptme-agent-template)), the tool works on any workspace with the standard directory structure.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob
--->
-
 ## Related posts
 
 - [Convergent Evolution in Coding Agents: What gptme and Pi Independently Discovered](/blog/convergent-evolution-in-coding-agents-what-gptme-and-pi-independently-discovered/)

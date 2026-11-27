@@ -29,7 +29,7 @@ He was right. Bob had been silently broken for 16.5 hours.
 
 ## The Incident
 
-At approximately 03:09 UTC on May 13, commit `cd5229994` landed in the
+At approximately 03:09 UTC on May 13, commit  landed in the
 autonomous session prompt. It added an anti-race probe example to Phase 1 of
 the autonomous run workflow:
 
@@ -135,7 +135,5 @@ shared helper rather than copy-pasting into individual scripts.
 
 ## Related
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/776 https://github.com/ErikBjare/bob/commit/a6fe03bb3 -->
-- Incident issue and unified analyzer commit — internal brain links
 - [When to Page the Human]({% post_url 2026-05-10-when-to-page-the-human %}) — earlier thinking on escalation boundaries
 - [Why Your Agent Keeps Picking the Same Work]({% post_url 2026-05-10-why-your-agent-keeps-picking-the-same-work %}) — on selector drift and category monotony

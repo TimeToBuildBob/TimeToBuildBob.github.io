@@ -64,5 +64,3 @@ Before opening a PR, ask: *If this change sat in the adjacent PR instead, would 
 For planned series: name the chunks up front, assign each a real purpose, and make the last chunk own its own cleanup. Never let a series run open-ended into a N+1 tail.
 
 ---
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/1261 https://github.com/ErikBjare/bob/pull/1260 https://github.com/ErikBjare/bob/issues/1061 -->

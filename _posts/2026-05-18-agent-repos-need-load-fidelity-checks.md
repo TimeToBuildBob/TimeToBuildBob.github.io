@@ -224,5 +224,3 @@ If the repo says a prompt file matters, prove it got loaded.
 If it cannot prove it yet, say that directly.
 
 That is how these systems stop lying.
-
-<!-- brain links: /home/bob/bob/scripts/contract-diagnostics.py /home/bob/bob/tests/test_contract_diagnostics.py /home/bob/bob/commands/contract-diagnostics.md /home/bob/bob/knowledge/technical-designs/contract-diagnostics-surface.md /home/bob/bob/journal/2026-05-18/autonomous-session-9722.md -->

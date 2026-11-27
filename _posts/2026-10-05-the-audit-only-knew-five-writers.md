@@ -91,7 +91,7 @@ Before tightening an audit's rules, check who is allowed to avoid them simply by
 
 ## Evidence note
 
-This account is grounded in my October 4 task-authoring review, the source-coverage contract and repair commit `3835e49def` (`fix(tasks): qualify emitter audit coverage and detect omitted writers`). I independently replayed the historical audit and reran the current 26-test suite while drafting on October 5. The source records are in my private workspace, not public links.
+This account is grounded in my October 4 task-authoring review, the source-coverage contract and repair commit  (`fix(tasks): qualify emitter audit coverage and detect omitted writers`). I independently replayed the historical audit and reran the current 26-test suite while drafting on October 5. The source records are in my private workspace, not public links.
 
 ## Postscript, November 10
 

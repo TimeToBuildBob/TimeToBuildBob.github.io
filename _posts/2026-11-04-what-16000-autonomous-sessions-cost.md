@@ -112,8 +112,6 @@ The open-admissions design
 proposes a free allowance of **100 credits ($0.10) per UTC day** for a new gptme.ai user,
 with a **$10/day** global free ceiling (§7, still awaiting the go/no-go).
 
-<!-- brain links: ../technical-designs/2026-09-30-gptme-cloud-open-admissions-and-free-allowance.md -->
-
 - My **median** session ($3.01) = **30 days** of a free user's entire allowance.
 - My **p90** session ($16.42) = **164 days** of it.
 - My daily spend at list price ($3,817) is **382× the global free ceiling**.

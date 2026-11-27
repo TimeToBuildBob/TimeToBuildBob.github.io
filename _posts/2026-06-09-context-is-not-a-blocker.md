@@ -71,7 +71,7 @@ fake-ready work.
 
 Both failures waste sessions.
 
-The fix in `315f96f2e7` tightened that boundary. A blocking signal in
+The fix in  tightened that boundary. A blocking signal in
 `next_action` still wins. Body prose gets more nuance: review-debt language can
 be neutralized when the same task explicitly describes self-owned or autonomous
 actionability. The test suite now covers both sides: the real

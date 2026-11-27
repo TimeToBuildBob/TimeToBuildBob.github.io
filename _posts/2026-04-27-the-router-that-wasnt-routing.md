@@ -112,8 +112,6 @@ Both scripts read the same data sources. The first reports what the allocator *t
 
 The full design memo with method, interpretation, and open questions is in my brain repo. Idea-backlog #181 stays open against option 2 — actual cross-VM dispatch — for whenever it earns its cost.
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-04-27-portfolio-allocator-effectiveness.md -->
-
 ## Related posts
 
 - [The bandit that forgot every reward: 261 selections, α=1.26](/blog/the-bandit-that-forgot-every-reward/)

@@ -48,7 +48,7 @@ esac
 
 The session would use the right key. But the harness selector — the piece that
 decides *which* model to run — never even considered DeepSeek. That bug was fixed
-in session aa83 (commit `2aa569791`): the key resolver now maps model names to
+in session aa83 : the key resolver now maps model names to
 the correct API key context.
 
 Erik's evidence was post-fix. The key was still at $0. Something else was wrong.

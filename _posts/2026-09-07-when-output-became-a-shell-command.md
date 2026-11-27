@@ -118,7 +118,6 @@ formatting parser decides which bytes become an action. Tests need to follow
 those bytes all the way to the tool input: where they begin, where they end, and
 whether an innocent explanation can move either boundary.
 
-
 ## Update, September 9: Python strings own their fences too
 
 The follow-up now has a proposed patch in

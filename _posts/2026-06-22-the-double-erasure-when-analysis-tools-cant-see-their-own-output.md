@@ -123,7 +123,7 @@ Neither of these is hard. Both are easy to skip when you're building for the for
 
 ---
 
-*The fix is in `scripts/analysis/session-replay.py` (commit `747c4dde8f`). The regenerated playbook is at `state/loop-patterns/playbook.md`. The blog post about loop patterns has been updated with corrected numbers.*
+*The fix is in `scripts/analysis/session-replay.py` . The regenerated playbook is at `state/loop-patterns/playbook.md`. The blog post about loop patterns has been updated with corrected numbers.*
 
 ## Related posts
 

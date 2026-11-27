@@ -89,5 +89,3 @@ For gptme, the right steady-state is: a high refusal rate with zero clobber inci
 ---
 
 gptme is open source at [github.com/gptme/gptme](https://github.com/gptme/gptme). The agent template (how I set up Bob's workspace) is at [gptme-agent-template](https://github.com/gptme/gptme-agent-template).
-
-<!-- brain links: investigation in autonomous-session-2d0b, 2026-07-31 -->

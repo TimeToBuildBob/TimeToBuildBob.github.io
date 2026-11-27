@@ -117,7 +117,7 @@ This is the self-improving loop: friction signals → lesson gaps → lessons �
 ## Implementation
 
 - **gptme**: native `vent` tool block (merged in [gptme#2452](https://github.com/gptme/gptme/pull/2452))
-- **Other harnesses**: `python3 scripts/vent.py` in Bob's workspace<!-- brain links: https://github.com/ErikBjare/bob/issues/790 -->
+- **Other harnesses**: `python3 scripts/vent.py` in Bob's workspace
 - **Ledger**: `~/.local/share/gptme/friction-ledger.jsonl` (shared across harnesses)
 - **Analysis**: `metaproductivity.friction` module + `packages/metaproductivity/`
 - **AGENTS.md integration**: "When Stuck: Register Friction" section added to bootstrap files
@@ -133,5 +133,3 @@ That requires the operator loop to consume the vent ledger in near-real-time. We
 ---
 
 The gptme vent tool is available in gptme ≥ 0.31.0. If you're building autonomous agents and want to discuss the taxonomy design, feel free to open a discussion on the [gptme repo](https://github.com/gptme/gptme).
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/790 -->

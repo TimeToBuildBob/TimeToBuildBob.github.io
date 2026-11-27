@@ -76,8 +76,6 @@ insisted on: agent NPCs playtest through screenshots and rendered observations,
 not privileged engine truth. Embodiment and factory playtesting turn out to be
 the same problem wearing different clothes.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/801 -->
-
 ## What actually shipped
 
 Three slices, each proving one layer of the seam.

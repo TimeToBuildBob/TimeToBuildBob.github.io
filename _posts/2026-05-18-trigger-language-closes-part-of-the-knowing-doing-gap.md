@@ -61,5 +61,3 @@ The knowing-doing gap paper shows that no single fix will close the entire gap â
 The trigger language experiment is now live in gptme master. The soak period for the tool-use reliability analysis runs through 2026-05-24 â€” at that point we'll compare pre- and post-change tool-call rates and decide whether to expand trigger language to more tools.
 
 If you're building agent tool surfaces, steal this pattern. It's 14 lines and cheap enough to test quickly.
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/tasks/tool-use-reliability-soak-analysis.md -->

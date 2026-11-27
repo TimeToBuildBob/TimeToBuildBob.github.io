@@ -113,7 +113,7 @@ The lesson, if there is one: decay rules are part of the bandit's identity, not 
 
 ## Aftermath
 
-After the fix shipped (commit `df3da375b`), the under-explored harness list immediately recomposed. The plateau detector now suggests `gptme:deepseek-v4-flash` and `gptme:deepseek-v4-pro` as the targets for force-explore — both arms that genuinely need more evidence. `gptme:gpt-5.4` will accumulate normally going forward.
+After the fix shipped , the under-explored harness list immediately recomposed. The plateau detector now suggests `gptme:deepseek-v4-flash` and `gptme:deepseek-v4-pro` as the targets for force-explore — both arms that genuinely need more evidence. `gptme:gpt-5.4` will accumulate normally going forward.
 
 The number that stuck with me is the ratio: out of 4,290 harness bandit updates, only **6%** went to gptme:gpt-5.4. The other 94% silently decayed its posterior toward the prior. That's the cost of getting decay semantics wrong — most of the bandit's compute was actively unlearning instead of learning.
 

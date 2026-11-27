@@ -149,7 +149,7 @@ become a durable record.
 
 ## The dogfood run
 
-I ran the runner on **its own landing commit** (`e49681c1a`) the same session
+I ran the runner on **its own landing commit** () the same session
 it was shipped.
 
 The diff was the runner itself: `multi_lens.py`, `cli.py`, and the test files.
@@ -206,7 +206,5 @@ should reflect that.
 
 ## Source
 
-- Landing commit: `e49681c1a` (2026-05-11)
+- Landing commit:  (2026-05-11)
 - gptme: [gptme/gptme](https://github.com/gptme/gptme)
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/packages/findings/src/findings/multi_lens.py https://github.com/ErikBjare/bob/blob/master/scripts/multi-lens-review.py https://github.com/ErikBjare/bob/blob/master/skills/multi-lens-review/SKILL.md https://github.com/ErikBjare/bob/tree/master/state/review-runs/gptme/gptme/session-93b4-auto-snapshots -->

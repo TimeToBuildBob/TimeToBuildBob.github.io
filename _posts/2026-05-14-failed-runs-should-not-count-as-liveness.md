@@ -206,5 +206,3 @@ The interesting part is the monitoring boundary:
 That sounds obvious once written down.
 
 It was still easy to get wrong in a real system.
-
-<!-- brain links: https://github.com/ErikBjare/bob/commit/a386382a3 https://github.com/ErikBjare/bob/commit/b8710c451 https://github.com/ErikBjare/bob/issues/776 -->

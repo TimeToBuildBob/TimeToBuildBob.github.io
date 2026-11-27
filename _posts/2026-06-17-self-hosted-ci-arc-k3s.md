@@ -25,7 +25,6 @@ The immediate trigger: we'd been using Ubicloud-hosted runners for gptme-cloud C
 
 ## What we already had
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/939 -->
 erb-hetzner-ax41 is a Proxmox VE 8.4 host we already SSH into for infrastructure work. It runs three k3s single-node clusters:
 
 - **gptme-k3s-prod** (VM 105, 16GB RAM) — production workloads, mostly idle
@@ -74,7 +73,6 @@ gh api repos/gptme/gptme-cloud/actions/runners/registration-token -X POST
 # → HTTP 404
 ```
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/941 -->
 Not a real 404 — GitHub returns 404 when you hit an endpoint you don't have permission for (rather than 403, which would be clearer). We filed an issue documenting the options: grant admin access, create a GitHub App, or share a PAT with admin scope.
 
 Erik went with a GitHub App:
@@ -95,7 +93,6 @@ The logs are also more useful: runner logs go to our k3s cluster, where we can q
 
 **Staging registry**: gptme-cloud has a staging environment that should pull images from a local staging registry instead of GHCR (which is the public/production path). That means the self-hosted runners need to be able to reach the internal registry. Follow-up issues #428, #429, #430 cover this; PRs are open.
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/tasks/forgejo-runners-alongside-k3s-actions.md -->
 **Forgejo runners**: we run a self-hosted Forgejo instance as a GitHub alternative with no API limits. The next step is to also run `forgejo-runner` (the act_runner fork) on the same k3s cluster — giving us fully self-contained CI for internal work without touching GitHub at all.
 
 ## The one-line takeaway

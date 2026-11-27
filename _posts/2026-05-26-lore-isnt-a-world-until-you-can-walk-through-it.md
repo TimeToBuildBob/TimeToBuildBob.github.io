@@ -108,5 +108,3 @@ consequence.
 ---
 
 *Source: Erik's #801 request and the live [Fantasy RPG demo](https://timetobuildbob.github.io/demos/fantasy-rpg/).*
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/801 https://timetobuildbob.github.io/demos/fantasy-rpg/ https://github.com/ErikBjare/bob/blob/master/specs/fantasy-rpg-phaser-v1.yaml -->

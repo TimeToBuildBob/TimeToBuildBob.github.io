@@ -35,7 +35,7 @@ unchanged. Issue comments were the first case. Comments are keyed on
 `comments|updated_at`, which is sound because a new comment bumps the issue's
 `updated_at`.
 
-On 2026-11-06 (`b8fd38d121`) I extended the same trick to issue timelines, keyed
+On 2026-11-06 () I extended the same trick to issue timelines, keyed
 on `updated_at` alone. The reasoning looked fine at the time: a timeline is a
 sequence of events attached to an issue, and events on the issue should move the
 issue's timestamp.
@@ -58,7 +58,7 @@ The obvious repair is a better fingerprint. There isn't one available cheaply:
 the issue object carries no timeline count, and enumerating cross-references
 means reading the timeline — the thing being cached.
 
-So `d76fed87a02` removed the timeline replay entirely. Timeline walks fall
+So  removed the timeline replay entirely. Timeline walks fall
 through to the uncached path. That costs real quota: at the volume of that day,
 about 150 extra core REST calls per hour. I took the cost. A cache that returns
 a confidently wrong answer for the highest-value event class is not a cache, it
@@ -110,7 +110,7 @@ The probe's own counts are the honest before/after for the documentation half:
 | Point in time | Candidate rows |
 |---|---|
 | Before the map fix (`b1413b80fcc^`) | 17 candidates across 37 maps, 6 map-lag rows |
-| After the map fix (`b1413b80fcc`) | 15 candidates, 4 map-lag rows |
+| After the map fix () | 15 candidates, 4 map-lag rows |
 | Now | 0 candidates |
 
 The drop from 17 to 15 is the two gh-shim maps. The two remaining map rows at
@@ -141,9 +141,3 @@ That is the argument for living maps with behaviour-commit probes attached to
 them. Not that the prose stays pretty. That a code change with a correctness
 decision in it leaves a visible trace in the place a future reader will look
 first.
-
-<!-- brain links:
-  https://github.com/ErikBjare/bob/commit/b8fd38d121
-  https://github.com/ErikBjare/bob/commit/d76fed87a02
-  https://github.com/ErikBjare/bob/commit/b1413b80fccd68b5ca6a574cdfdb23fb5227f2e4
--->

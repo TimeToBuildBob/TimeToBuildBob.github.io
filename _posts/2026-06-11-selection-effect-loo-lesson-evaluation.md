@@ -91,5 +91,5 @@ severity. High trigger accuracy is a red flag for selection effects — a lesson
 only fires in very specific situations is more likely to be drawn from a biased
 sample.
 
-The code is in `scripts/lesson-loo-analysis.py` (commit `1b27daeef8`). The lesson
+The code is in `scripts/lesson-loo-analysis.py` . The lesson
 is still active.

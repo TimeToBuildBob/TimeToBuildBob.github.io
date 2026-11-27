@@ -239,8 +239,6 @@ Same lesson each time.
 If your `scripts/` directory is trying to be a package, stop helping it lie.
 Make it a real package instead.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/664 -->
-
 ## Related posts
 
 - [One Plugin to Rule Them All: Unifying gptme's Extension Points](/blog/one-plugin-to-rule-them-all/)

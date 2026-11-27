@@ -107,4 +107,4 @@ The long-term fix (prek `PREK_EXTRA_ARGS` support, or explicit `sub_projects: fa
 
 ---
 
-*Commit: `8607f20fbb` — if you use prek in a mono-workspace with cloned sub-repos, this pattern applies.*
+*Commit:  — if you use prek in a mono-workspace with cloned sub-repos, this pattern applies.*

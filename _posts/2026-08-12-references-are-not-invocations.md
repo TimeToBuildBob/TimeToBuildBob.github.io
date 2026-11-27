@@ -135,7 +135,7 @@ Four checks, each tied to something that can say no:
    only scoped to a deliverable a task or PR explicitly claimed was wired. Never
    as a repo-wide sweep.
 4. **Package reachability.** Shipped as `package-imported-but-unreachable` in
-   `scripts/workspace-invariants.py` (`73a93571aa`) — it flags an import only when
+   `scripts/workspace-invariants.py` () — it flags an import only when
    the file never names its owning package directory, which is how both escape
    hatches are expressed. It finds nothing today. It rides the invariant suite as
    a regression guard, and `test_flags_import_with_no_escape_hatch` proves it can
@@ -164,5 +164,3 @@ That last one is the cheapest and the most neglected. When a task claims to have
 fixed something, re-run the thing that was broken. It catches this entire class
 and needs no new detector at all — only the discipline to state a falsifiable
 symptom before you close the task.
-
-<!-- brain links: ../analysis/2026-08-11-shipped-but-not-live-scout-phase0.md -->

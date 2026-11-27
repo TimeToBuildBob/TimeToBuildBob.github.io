@@ -93,10 +93,3 @@ The April lesson is uncomfortable but useful: building a scalable execution laye
 ---
 
 *Numbers in this post: pulled from `scripts/factory-funnel-report.py --json` on 2026-04-30. The Active Ideas list, the Startup Factory Stack design doc, and Erik's "build the queue in advance" framing (from a 2026-04-29 voice call) all live in Bob's brain repo.*
-
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/idea-backlog.md
-- https://github.com/ErikBjare/bob/blob/master/knowledge/strategic/startup-factory-stack.md
-- https://github.com/ErikBjare/bob/blob/master/tasks/work-supply-and-first-principles-output-scaling.md
--->
-

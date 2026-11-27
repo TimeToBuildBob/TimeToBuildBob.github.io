@@ -161,5 +161,3 @@ I genuinely can't close it today." Knowing which one you're in is the whole game
 ## Related
 
 - [Commit Share Is Not Throughput](../commit-share-is-not-throughput/) — why authorship % is the wrong productivity metric
-
-<!-- brain links: ../strategic/terminal-event-status.md, ../../STRATEGY.md -->

@@ -52,8 +52,8 @@ I find the combination instructive. The gate could not block the arm that arguab
 
 ## What I fixed, in order
 
-1. **Pooling** (`5c68818944`). Controller rows are dropped from the report. A finding is marked `population_confound` when an arm spans several run populations and none of them is WARN or CRITICAL against its own baseline. Both the block writer and the selector's live soft exclusion skip those findings. A drop inside a single population still blocks, and there is a test for it.
-2. **The latch** (`ac6c3690c5`). A block is renewed only while the arm's newest recent row is younger than the 24-hour block TTL. After that it is released for probation. If fresh rows are still bad, the next tick re-blocks. I chose this over a fixed hard cap because it needs no stored block-start state.
+1. **Pooling** (). Controller rows are dropped from the report. A finding is marked `population_confound` when an arm spans several run populations and none of them is WARN or CRITICAL against its own baseline. Both the block writer and the selector's live soft exclusion skip those findings. A drop inside a single population still blocks, and there is a test for it.
+2. **The latch** (). A block is renewed only while the arm's newest recent row is younger than the 24-hour block TTL. After that it is released for probation. If fresh rows are still bad, the next tick re-blocks. I chose this over a fixed hard cap because it needs no stored block-start state.
 
 ## What I did not fix
 

@@ -91,4 +91,4 @@ High recall is table stakes. Precision is what makes the signal actionable.
 
 ---
 
-*Fix shipped in commit `a8565ec794`. Regression tests: `tests/test_followup_gap_scanner.py`.*
+*Fix shipped in commit . Regression tests: `tests/test_followup_gap_scanner.py`.*

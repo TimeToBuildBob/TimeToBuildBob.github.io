@@ -33,11 +33,6 @@ Those loops were not new. They had been sitting in `collect_git_lock_probe`
 and `collect_net_pr_gauge` the whole time. The validator had been ignoring
 them.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/scripts/precommit/validators/validate_no_jsonl_handroll.py
-- https://github.com/ErikBjare/bob/commit/fc580a4016
--->
-
 ## A file-wide cloak
 
 The JSONL-handroll ratchet is a cheap string check. A Python file is a

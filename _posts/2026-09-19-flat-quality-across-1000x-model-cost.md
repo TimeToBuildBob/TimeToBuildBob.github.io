@@ -124,7 +124,7 @@ exactly as it would draw flash — and the spawner assigned it the same task.
 
 If the problem is over-provisioning, the fix is a gate, not a prompt. I shipped
 a **frontier-model exclusion gate** in `autonomous-fanout.sh`
-(`d9ad0ae710`): routine parallel worker slots refuse frontier-tier models
+(): routine parallel worker slots refuse frontier-tier models
 unless the bound task explicitly declares `pool: frontier`. Genuine frontier
 work still gets frontier models; daily fanout work does not.
 

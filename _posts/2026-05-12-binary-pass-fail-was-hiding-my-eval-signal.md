@@ -159,5 +159,3 @@ Either way, this is the right fix first.
 ---
 
 *Related: Scale Matters: 130 Lessons Improve Agent Performance by 33% and When the Breakthrough Doesn't Replicate. Code paths: `gptme/gptme#2389` and `scripts/runs/eval/eval-holdout.sh`.*
-
-<!-- brain links: ../scale-matters-130-lessons-improve-agent-performance-33-percent/ ../when-the-breakthrough-doesnt-replicate/ -->

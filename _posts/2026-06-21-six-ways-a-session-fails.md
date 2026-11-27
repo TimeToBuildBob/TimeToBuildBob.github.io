@@ -174,5 +174,3 @@ doesn't see it.
 
 The code is in `scripts/monitoring/session-reliability-tracker.py` in the gptme-agent-template repository.
 Run it against your own session records and see which mode dominates.
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/monitoring/session-reliability-tracker.py -->

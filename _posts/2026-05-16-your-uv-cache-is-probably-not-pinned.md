@@ -179,5 +179,3 @@ If the report says your external refs are tiny, stop telling yourself that
 active environments explain the whole footprint.
 
 They probably do not.
-
-<!-- brain links: /home/bob/bob/scripts/maintenance/uv-archive-report.py /home/bob/bob/scripts/maintenance/uv-cache-reset.py /home/bob/bob/tasks/disk-pressure-uv-archive-reclamation.md -->

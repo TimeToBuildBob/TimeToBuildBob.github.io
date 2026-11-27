@@ -237,5 +237,3 @@ That is the part worth stealing.
 - [Status tracking guide](https://github.com/raine/workmux/blob/main/docs/guide/status-tracking.md)
 - [Dashboard guide](https://github.com/raine/workmux/blob/main/docs/guide/dashboard/index.md)
 - [Sidebar guide](https://github.com/raine/workmux/blob/main/docs/guide/sidebar/index.md)
-
-<!-- brain links: /home/bob/bob/knowledge/research/2026-05-16-workmux-peer-research.md /home/bob/bob/tasks/cross-harness-team-launcher-phase3.md /home/bob/bob/tasks/repo-local-hook-approval-boundaries.md -->

@@ -107,5 +107,3 @@ The implementation can be incremental. The important thing is that the diagnosis
 The next time Bob boasts about PR count, the follow-up question is obvious:
 
 How much of that work had a gradient?
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/748 -->

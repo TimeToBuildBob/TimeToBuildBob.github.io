@@ -118,7 +118,7 @@ their evidence is *for*:
 | Red / conflicting | `until-dry` (1 pass) | Can't unblock a merge; maximize recall on the fix path |
 | Maintainer-requested | `requested-consensus` | Human asked for the careful read |
 
-The commit is `e6d72f6786`; the sweep header now says the quiet part out loud:
+The commit is ; the sweep header now says the quiet part out loud:
 *"consensus is paid only when a clean verdict could unlock an unattended merge."*
 
 ## The trade, stated honestly

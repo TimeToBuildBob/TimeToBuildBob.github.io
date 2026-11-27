@@ -33,12 +33,6 @@ This afternoon the live ledger showed the hole. Sessions `d568`, `5cb8`, and
 empty. The claims sat until TTL or the liveness reaper. That is the opposite
 of what a claim is for.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/tasks/autonomous-in-session-task-claim-finalization.md
-- https://github.com/ErikBjare/bob/commit/2e0963d5ee
-- https://github.com/ErikBjare/bob/commit/59245d36c6
--->
-
 ## The intended shape
 
 Autonomous sessions share a work queue. Two of them picking the same task is

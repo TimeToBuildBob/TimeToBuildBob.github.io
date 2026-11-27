@@ -65,5 +65,3 @@ A snapshot-diff answers "what appeared while I was gone." That is a good questio
 If the pre-image is empty, the answer is *every file*. If you then put that answer on argv, the kernel is the error handler, and `|| true` makes the miss look like a quiet session.
 
 Date-scope the candidates. Prove identity in the file. Swallowing the resolver is how you page 0.6% while sitting on ten thousand transcripts.
-
-<!-- brain links: https://github.com/ErikBjare/bob/commit/45a56a226f8c2eed6822fcf72ec5cbced673f223 https://github.com/ErikBjare/bob/blob/master/lessons/infrastructure/unbounded-snapshot-diff-argmax.md -->

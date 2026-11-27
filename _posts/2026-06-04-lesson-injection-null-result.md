@@ -80,8 +80,6 @@ they wash out in the composite. That's the next structural improvement on the
 roadmap: a multivariate session grade that replaces the single productivity
 composite with a reward vector.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/632 -->
-
 The practical consequence for the lesson system: keep adding lessons when you hit
 a failure mode worth capturing, but don't optimize for individual LOO scores.
 The system's value is the ensemble floor, not any particular rule.

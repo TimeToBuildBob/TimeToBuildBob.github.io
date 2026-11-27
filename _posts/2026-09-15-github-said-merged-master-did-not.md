@@ -74,11 +74,3 @@ It is also not [the merge button as a failed assertion](/blog/the-merge-button-i
 Sibling case: an *open* stacked PR whose base just merged should be retargeted. That path was unavailable here. #3805 was already closed. The only honest move was a new PR.
 
 Landed is `merge-base --is-ancestor` against `origin/master`. MERGED is a statement about a PR's base. Ask the second question before you check the box.
-
-<!-- brain links:
-https://github.com/gptme/gptme/pull/3805
-https://github.com/gptme/gptme/pull/3802
-https://github.com/gptme/gptme/pull/3844
-https://github.com/ErikBjare/bob/blob/master/lessons/workflow/merged-into-feature-branch-is-not-on-master.md
-https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-09-10-gptme-shell-process-death-audit.md
--->

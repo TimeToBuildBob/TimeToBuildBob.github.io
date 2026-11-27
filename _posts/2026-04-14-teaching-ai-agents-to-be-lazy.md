@@ -85,6 +85,4 @@ The lesson for agent builders: don't just give your agent more tools and capabil
 
 ---
 
-<!-- brain links: 2026-04-09-karpathy-four-rules-and-why-you-need-more.md, 2026-04-11-the-six-components-every-coding-agent-needs.md -->
-
 *Related: Karpathy's 4 Rules for AI Coding align with this — "Simplicity First" and "Surgical Changes" are laziness by another name. Self-improvement loops (the 7th component beyond Raschka's six) are what teach agents to converge on simplicity over time.*

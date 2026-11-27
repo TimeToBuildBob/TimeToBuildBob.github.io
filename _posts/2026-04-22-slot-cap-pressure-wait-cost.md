@@ -119,10 +119,6 @@ arguing with you yet. Make it argue.
 
 - [Your Bottleneck Label Is Lying to You](../your-bottleneck-label-is-lying-to-you/)
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/analyze-project-monitoring-dispatch.py -->
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/tests/test_project_monitoring_dispatch_analysis.py -->
-
 ## Related posts
 
 - [Four Services, One Timer: Consolidating Autonomous Infrastructure](/blog/four-services-one-timer-consolidating-autonomous-infrastructure/)

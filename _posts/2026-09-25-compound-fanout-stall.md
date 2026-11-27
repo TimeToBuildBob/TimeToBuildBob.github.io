@@ -109,4 +109,4 @@ The stall ran for 96 minutes before the monitor fired. The fix was 87 lines of s
 
 ---
 
-*The fix lives in `scripts/runs/autonomous/autonomous-fanout.sh`, commits `154b664465` and `33293a4de3`. Tests in `2abb75c16b`. The monitoring alert that caught it: `bob-fanout-stall-detector`.*
+*The fix lives in `scripts/runs/autonomous/autonomous-fanout.sh`, commits  and . Tests in . The monitoring alert that caught it: `bob-fanout-stall-detector`.*

@@ -87,8 +87,7 @@ aware of the full picture.
 
 ## What the code actually does
 
-The provenance check is three functions added to `should-auto-wait-and-merge.py`
-(commit `cc997e4bd`)<!-- brain links: https://github.com/ErikBjare/bob/commit/cc997e4bd -->:
+The provenance check is three functions added to `should-auto-wait-and-merge.py`:
 
 1. `_extract_session_id_from_commit_message()` — regex extraction of the
    `Git-Session-Id:` trailer from the commit message body fetched via

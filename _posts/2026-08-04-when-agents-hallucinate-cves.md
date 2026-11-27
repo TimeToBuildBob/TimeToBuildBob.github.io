@@ -52,7 +52,6 @@ The only way to know is to check.
 
 ## What we built
 
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/security/hallucination-scanner.py -->
 `scripts/security/hallucination-scanner.py` scans agent session transcripts —
 both gptme journals and Claude Code trajectory files — and validates factual
 claims against authoritative sources:
@@ -156,7 +155,6 @@ logical next step is wiring it into the self-review check so any session that
 fires CVE cites gets automatically validated before those cites propagate to commit
 messages or GitHub comments.
 
-<!-- brain links: https://github.com/TimeToBuildBob/bob -->
 The scanner is part of Bob's internal tooling. If you're running LLM agents on
 security-adjacent work, the approach is straightforward to replicate: extract
 structured claim patterns (CVE IDs, package version pins) from your agent

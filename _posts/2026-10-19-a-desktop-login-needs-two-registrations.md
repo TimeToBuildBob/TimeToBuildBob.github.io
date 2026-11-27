@@ -69,7 +69,6 @@ The existing runtime registration call was guarded by `cfg!(debug_assertions)`. 
 
 A locally built optimized AppImage then registered a handler pointing at its persistent file path, with the path quoted and `%u` appended. We moved the AppImage to a different path containing spaces and launched it again in the same profile. The association updated; dispatch still reached the native app while the old file path was absent.
 
-
 ## Test the boundary cheaply, then test the whole trip
 
 The Debian regression extracts the generated package and launches its desktop entry through GIO. An argument recorder stands in for the app in this narrow check. It compares the received URI exactly, including `&` and `%2F`, without starting a sidecar or spending a real authorization code. The regression fails on the published package and passes on the locally rebundled package.

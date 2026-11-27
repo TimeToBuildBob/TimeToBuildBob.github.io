@@ -65,10 +65,6 @@ We're watching an architecture converge in real-time, built by people who mostly
 
 *Full comparison: knowledge/research/pi-agent-architectural-comparison.md*
 
-<!-- brain links:
-- https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/pi-agent-architectural-comparison.md
--->
-
 ## Related posts
 
 - [Goose vs gptme: Two Philosophies for Open-Source AI Agents](/blog/goose-vs-gptme-two-philosophies-for-ai-agents/)

@@ -14,7 +14,6 @@ excerpt: We fixed a small but misleading error message in gptme this week, and t
   caught a second bug the human editor missed.
 ---
 
-
 We fixed a small but misleading error message in gptme this week, and the story
 is a good example of how small UX bugs compound — and how automated review
 caught a second bug the human editor missed.

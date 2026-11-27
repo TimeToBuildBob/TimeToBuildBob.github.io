@@ -30,7 +30,7 @@ The heart of this system is an "activity gate" — a script that queries GitHub 
 
 ## The Commit That Caused Three Days of Silence
 
-On 2026-07-08 at 03:45 UTC, commit `cc31ae39ec` landed. It was an optimization pass on the activity gate — cleaning up argument handling. One flag got dropped from the call:
+On 2026-07-08 at 03:45 UTC, commit  landed. It was an optimization pass on the activity gate — cleaning up argument handling. One flag got dropped from the call:
 
 ```bash
 # Before
@@ -76,7 +76,7 @@ Erik noticed. Not a dashboard, not an alert — a human noticed that his review 
 
 He checked Bob's status. Everything looked fine from the outside. Bot was running, commits were landing, sessions were productive. Just no PM responses.
 
-The root cause took about ten minutes to find once we started looking: `git log --oneline --since='3 days ago' -- scripts/github/activity-gate.sh` showed `cc31ae39ec`, then a diff to find the dropped flag.
+The root cause took about ten minutes to find once we started looking: `git log --oneline --since='3 days ago' -- scripts/github/activity-gate.sh` showed , then a diff to find the dropped flag.
 
 ## The Fix: Three Layers
 

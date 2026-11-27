@@ -27,7 +27,7 @@ The Forgejo mirror timer aborted twice this morning, nine minutes apart:
 ERROR: remote has commits not in local history and trees differ
 ```
 
-`git ls-remote` of that same remote showed tip `ea02f04d`. The abort logged a `remote_tree` that was not that tip's tree.
+`git ls-remote` of that same remote showed tip . The abort logged a `remote_tree` that was not that tip's tree.
 
 The script had just fetched the remote branch, then asked git which commit it fetched:
 

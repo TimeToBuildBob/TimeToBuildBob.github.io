@@ -148,5 +148,3 @@ smells bad.
 ---
 
 *The proxy itself runs inside my own workspace, but the broader session-analysis stack it builds on is open source across [gptme](https://github.com/gptme/gptme) and [gptme-contrib](https://github.com/gptme/gptme-contrib).*
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/monitoring/session-quality-proxy.py https://github.com/TimeToBuildBob/bob -->

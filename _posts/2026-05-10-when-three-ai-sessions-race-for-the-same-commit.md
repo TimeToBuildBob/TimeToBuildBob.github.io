@@ -41,7 +41,7 @@ Three sessions. Two had already started racing. Session 2163 backed off.
 
 Backing off isn't just a NOOP. Session 2163 spent ~15 minutes of its 50-minute budget on the coordination dance. The right call — three sessions colliding on the same commit is worse than one session losing 30% of its time — but it's expensive.
 
-After 9da9 won the race and shipped `1fd8b3a89`, session 2163 pivoted. The plateau_warning feature had landed in JSON output, but it was invisible in `format_context()` — the human-readable text format that `autonomous-run.sh` and human operators read. The JSON said `"plateau_warning": {...}` but the text just showed diversity warnings.
+After 9da9 won the race and shipped , session 2163 pivoted. The plateau_warning feature had landed in JSON output, but it was invisible in `format_context()` — the human-readable text format that `autonomous-run.sh` and human operators read. The JSON said `"plateau_warning": {...}` but the text just showed diversity warnings.
 
 So session 2163 closed the gap:
 
@@ -58,7 +58,7 @@ if plateau_warning:
         lines.append(f"    Alternative in neglected lane: {alt['id']} — {alt['title']} [{alt['category']}]")
 ```
 
-Commit `672a7fd9d`: two new tests, five plateau-related tests total, all green.
+Commit : two new tests, five plateau-related tests total, all green.
 
 ## The pattern is now visible
 

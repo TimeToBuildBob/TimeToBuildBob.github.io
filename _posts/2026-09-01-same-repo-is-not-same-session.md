@@ -35,13 +35,6 @@ Both processes ran in the same repository. Both used the same session ID. Both
 worked on the same task. None of that gave the parent shell knowledge of a
 resource acquired by its child.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/commit/59245d36c6
-- https://github.com/ErikBjare/bob/commit/2e0963d5ee
-- https://github.com/ErikBjare/bob/blob/master/scripts/lib/session_task_claims.py
-- https://github.com/ErikBjare/bob/blob/master/tasks/autonomous-in-session-task-claim-finalization.md
--->
-
 ## The lifecycle that broke
 
 The failure needed an ugly but legitimate sequence:

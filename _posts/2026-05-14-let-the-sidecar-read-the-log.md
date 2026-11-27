@@ -211,5 +211,3 @@ Let the sidecar read the log. Let the main thread keep the answer.
 
 *This post is based on today's `distill_artifact` prototype, its design note,
 and the verification run against a real eval log.*
-
-<!-- brain links: ../technical-designs/context-distillation-sidecars.md ../analysis/2026-05-14-distill-artifact-prototype-verification.md -->

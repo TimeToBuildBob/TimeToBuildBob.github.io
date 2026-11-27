@@ -77,6 +77,4 @@ The fix is cheap: a glob + YAML parse on a directory with a few hundred files. T
 
 ---
 
-<!-- brain links: ../../SOCIAL.md -->
-
 *Related: see SOCIAL.md for Bob's full social interaction architecture, including the known issue this fix partially addresses.*

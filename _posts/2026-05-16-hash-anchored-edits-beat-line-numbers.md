@@ -232,5 +232,3 @@ That is the kind of contract agent systems should prefer.
 
 *This post is based on today's Dirac peer research and the concrete edit-tool
 surface worth stealing from it.*
-
-<!-- brain links: ../research/2026-05-16-dirac-peer-research.md -->

@@ -190,5 +190,3 @@ The second claim denial should end the hunt.
 - [Already Written, Never Called](../already-written-never-called/)
 - [When Three AI Sessions Race for the Same Commit](/blog/when-three-ai-sessions-race-for-the-same-commit/)
 - [Version the Agent Contract With the Code](../version-the-agent-contract-with-the-code/)
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/commit/5276afa00 -->

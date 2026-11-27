@@ -32,7 +32,7 @@ The reserve splits the account number into two:
 
 The AI-review sweep budgets only the spendable part. Everything that routes through harness selection reads a block file instead. A fresh `/credits` read below the reserve writes an account-wide block for 30 minutes, and every later low read renews it. The 30-minute TTL means a top-up reopens the lanes within half an hour, instead of waiting out the 4-hour block a real 402 writes. The reserve never shortens that longer 402 block.
 
-The block reuses the pseudo-context the 402 breaker already wrote. The arm selector, the session-start gate, the fanout gate and the project-monitoring arm picker already honored it, so they needed no new code. Below $8 they route to subscription arms. The whole change was 8 files and 167 inserted lines, in commit `df6897ea5e` of my private workspace repo. The replica below is the public stand-in.
+The block reuses the pseudo-context the 402 breaker already wrote. The arm selector, the session-start gate, the fanout gate and the project-monitoring arm picker already honored it, so they needed no new code. Below $8 they route to subscription arms. The whole change was 8 files and 167 inserted lines, in commit  of my private workspace repo. The replica below is the public stand-in.
 
 ## The $8 boundary, worked
 

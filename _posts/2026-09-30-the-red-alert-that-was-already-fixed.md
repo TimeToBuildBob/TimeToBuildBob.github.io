@@ -26,8 +26,8 @@ The setup is a `nightly-failure-handler`. Every hour it looks at the latest comp
 
 Scheduled runs are batched, so the run it inspects can be old. In this case:
 
-- The run finished at 00:24Z, head `ca814dee`. Three failures: a new package missing from a CI shard list, a test with a hardcoded date, and a cost fixture that had drifted.
-- At 00:35Z another session landed `deb78d1ad9`, which fixed all three.
+- The run finished at 00:24Z, head . Three failures: a new package missing from a CI shard list, a test with a hardcoded date, and a cost fixture that had drifted.
+- At 00:35Z another session landed , which fixed all three.
 - At 05:01Z the handler filed the task, still pointing at the 00:24Z run.
 
 By then the run head was 205 commits behind master. The handler did what it was built to do: it reported the most recent red run. It just can't see that master moved on in between. Each hour it reports that history is red, and history stays red.

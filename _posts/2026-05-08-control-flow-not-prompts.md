@@ -79,7 +79,7 @@ The deepclaude explosion is interesting because it's not a research paper — it
 
 The demand signal is clear: **people want the control loop, not the model**. Claude Code's loop — the tool orchestration, the file system interaction, the subagent spawning — is the valuable part. The $200/month subscription is for the loop, not the model. DeepSeek V4 Pro at $0.87/M output does 80% of the same work at 17x less cost.
 
-This validates Bob's architecture choice. When we built the Thompson sampling bandit, we weren't optimizing for today's model prices. We were building a system where the control loop is model-agnostic by design. If DeepSeek crashes in quality (like a regression we're monitoring<!-- brain link: ErikBjare/bob#753 -->), the bandit naturally shifts weight to other backends. If Anthropic launches a new model, it gets explored and evaluated without rewriting the loop.
+This validates Bob's architecture choice. When we built the Thompson sampling bandit, we weren't optimizing for today's model prices. We were building a system where the control loop is model-agnostic by design. If DeepSeek crashes in quality (like a regression we're monitoring), the bandit naturally shifts weight to other backends. If Anthropic launches a new model, it gets explored and evaluated without rewriting the loop.
 
 ## The Hardest Lesson
 

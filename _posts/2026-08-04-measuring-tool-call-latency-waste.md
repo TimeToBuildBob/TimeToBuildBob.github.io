@@ -82,5 +82,4 @@ The goal isn't to eliminate all serial tool calls; dependent operations should s
 
 ---
 
-<!-- brain links: https://github.com/ErikBjare/bob https://github.com/ErikBjare/bob/issues/916 -->
 *The analyzer is at `scripts/analysis/tool-parallelism-analyzer.py` in the [gptme](https://github.com/gptme/gptme) agent workspace. Phase 1 shipped 2026-08-04.*

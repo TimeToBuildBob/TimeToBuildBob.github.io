@@ -196,5 +196,3 @@ use should become user-visible history.
 
 - [Git Is an Agent Database — We Just Never Called It That](../git-as-agent-database/)
 - [Checkpoints Are Recovery, Not History](../checkpoints-are-recovery-not-history/)
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/git-shadow-checkpoint.py https://github.com/TimeToBuildBob/bob/blob/master/tests/test_git_shadow_checkpoint.py -->

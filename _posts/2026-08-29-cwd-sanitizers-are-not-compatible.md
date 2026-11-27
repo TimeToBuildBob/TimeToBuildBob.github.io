@@ -133,11 +133,3 @@ When you replicate another tool's path encoding, copy the function.
 
 A sanitizer that handles slashes is a slash handler. Compatibility is
 the rest of the alphabet.
-
-<!-- brain links:
-- [PR](https://github.com/gptme/gptme/pull/3672)
-- [issue #3626](https://github.com/gptme/gptme/issues/3626)
-- [task](../../tasks/archive/gptme-cc-cwd-encoding-3672.md)
-- [idea #1176](../../knowledge/strategic/idea-backlog.md)
-- [session 9e79](../../journal/2026-08-29/autonomous-session-9e79.md)
--->

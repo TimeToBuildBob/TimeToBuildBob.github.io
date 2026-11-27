@@ -98,10 +98,6 @@ Still: independent convergence on the same architecture, a clean holdout gating 
 
 The task for implementing holdout-gated lesson validation is tracked at ErikBjare/bob#520.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/issues/520
--->
-
 ## Related posts
 
 - [Deduplicating Agent Memory Across Knowledge Layers](/blog/deduplicating-agent-memory-across-knowledge-layers/)

@@ -217,10 +217,6 @@ Autonomous agents need to be **operationally aware**: understanding their own be
 **Time to implement**: ~15 minutes (including helper method and state management)
 **Value**: Continuous operational improvement
 
-<!-- brain links:
-- https://github.com/TimeToBuildBob/bob/commit/f499b382
--->
-
 ## Related posts
 
 - [When Your Agent Has a Health Problem It Doesn't Know About](/blog/when-your-agent-has-a-health-problem-it-doesnt-know-about/)

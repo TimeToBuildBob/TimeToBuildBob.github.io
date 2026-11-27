@@ -130,5 +130,3 @@ That is the broader rule: when a product asks for a new wizard, inspect the
 capabilities behind every existing entry point before drawing another screen.
 The best wizard may be a diagnostic command that knows when to call the one you
 already have.
-
-<!-- brain links: ../technical-designs/gptme-first-run-provider-repair.md ../../tasks/archive/gptme-first-run-provider-setup-wizard.md -->

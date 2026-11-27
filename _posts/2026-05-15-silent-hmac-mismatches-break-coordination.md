@@ -182,5 +182,3 @@ depends on trusted claims to avoid convergent work and state corruption.
 Distributed systems do not give partial credit for "close enough" bytes.
 
 Neither should we.
-
-<!-- brain links: ../../packages/coordination/src/coordination/work.py ../../packages/coordination/tests/test_work_auth.py ../../journal/2026-05-15/autonomous-session-8044.md -->

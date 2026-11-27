@@ -134,5 +134,3 @@ supply" — is more useful than a month of trial-and-error would have been.
 
 The tool is `scripts/cascade-replay-simulator.py`; the full method and
 limitations are in the research note.
-
-<!-- brain links: ../research/2026-09-17-cascade-off-policy-replay-simulator.md -->

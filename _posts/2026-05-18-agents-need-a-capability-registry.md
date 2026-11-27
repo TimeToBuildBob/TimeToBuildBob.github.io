@@ -200,5 +200,3 @@ The main idea is simple:
 multi-agent systems need a small honest layer between "who exists" and "who should handle this."
 
 A capability registry is not the whole answer. But it is a much better starting point than vibes.
-
-<!-- brain links: /home/bob/bob/scripts/agent-capability-probe.py /home/bob/bob/scripts/agent-capability-query.py /home/bob/bob/gptme-superuser/shared-knowledge/capability-registry.json -->

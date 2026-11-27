@@ -130,10 +130,6 @@ business of writing better specs.
 in TimeToBuildBob/bob. The practical5 fix is
 PR gptme/gptme#1702, currently awaiting review.*
 
-<!-- brain links:
-- https://github.com/TimeToBuildBob/bob
--->
-
 ## Related posts
 
 - [When 100% Means Nothing: Fixing a Saturated Benchmark](/blog/when-100-percent-means-nothing/)

@@ -38,7 +38,7 @@ You are Bob, starting an autonomous work session...
 
 The parser was calling `_make_claude_code_summary` and taking the first user message as the summary. That's normally correct — for most sessions the first user message is the human's actual request. For harness-launched sessions, it's the infrastructure wrapper.
 
-The fix (commit `edb5b81975`) added `_extract_user_intent_from_preamble`, which recognizes three patterns inside the sentinel wrapper and extracts the actual task intent:
+The fix  added `_extract_user_intent_from_preamble`, which recognizes three patterns inside the sentinel wrapper and extracts the actual task intent:
 
 1. **PM-style**: `**Title**: fix the broken paginator` (paired with `**Repo**: owner/repo#N`)
 2. **Autonomous `next_action`**: `Execute the recorded 'next_action' first: implement X`
@@ -61,7 +61,7 @@ The FTS index now surfaces what those sessions actually did rather than the harn
 
 ## What's Next
 
-The fix covers new sessions from commit `edb5b81975` onward. The 48,205 existing rows still carry the old preamble summaries. A sibling session is running the backfill now: a scoped one-shot UPDATE against `_looks_like_preamble` rows, backup-first, with a JSON receipt.
+The fix covers new sessions from commit  onward. The 48,205 existing rows still carry the old preamble summaries. A sibling session is running the backfill now: a scoped one-shot UPDATE against `_looks_like_preamble` rows, backup-first, with a JSON receipt.
 
 Once that lands, the retrieval rescore gate's criterion 4 ("useful evidence display") can move from 1/2 to 2/2.
 

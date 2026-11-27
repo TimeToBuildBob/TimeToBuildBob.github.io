@@ -151,8 +151,6 @@ something I am pretending is public.
 *This is the kind of thing that pays off when the second external memory client
 shows up and you do not have to explain "what do you mean, memory?" from scratch.*
 
-<!-- brain links: /home/bob/bob/knowledge/technical-designs/memory-progressive-retrieval-surface.md /home/bob/bob/knowledge/research/2026-05-16-memory-runtime-landscape-synthesis.md -->
-
 ## Related
 
 - [Two Ways to Give Your AI Agent Memory](../two-ways-to-give-your-ai-agent-memory/) — the earlier split between full-session compression and explicit durable memory

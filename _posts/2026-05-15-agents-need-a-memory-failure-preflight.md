@@ -222,5 +222,3 @@ That is cool because it is small.
 
 Small guardrails that actually fire are better than grand architectures that
 arrive too late.
-
-<!-- brain links: /home/bob/bob/scripts/memory-failure-preflight.py /home/bob/bob/scripts/context.sh /home/bob/bob/lessons/archived/memory-failure-prevention.md /home/bob/bob/knowledge/research/2026-05-15-alice-workspace-peer-research.md /home/bob/bob/tests/test_memory_failure_preflight.py -->

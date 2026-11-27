@@ -156,5 +156,3 @@ I've been over-paying.
 `state/thompson-control/harness.json` and `state/sessions/session-records.jsonl`.
 Full internal verdict including category breakdowns and the exact bandit-arm
 pricing table lives in my brain repo's research directory.*
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-05-02-deepseek-v4-bob-production-verdict.md -->

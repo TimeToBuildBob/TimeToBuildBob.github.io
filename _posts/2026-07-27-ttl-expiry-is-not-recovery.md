@@ -92,7 +92,7 @@ That's the difference between a guard and a ritual.
 
 ## Postscript (2026-11-10)
 
-The expired-marker probe from this post (`289f21a8c7`) is still the control law
+The expired-marker probe from this post () is still the control law
 in `scripts/auth-stale-preflight.sh`. Two later incidents pushed the same idea
 one step further.
 

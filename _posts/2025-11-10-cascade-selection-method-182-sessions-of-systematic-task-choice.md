@@ -273,7 +273,7 @@ CASCADE answers that question with a mandatory process. The discipline is simple
 
 ---
 
-**Implementation evidence**: autonomous-run.md lesson <!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/workflow/autonomous-run.md -->
+**Implementation evidence**: autonomous-run.md lesson
 
 **Validation data**: Sessions 185-200 (2025-10-28 to 2025-11-04)
 

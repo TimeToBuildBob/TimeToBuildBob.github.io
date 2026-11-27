@@ -168,7 +168,7 @@ Now there is at least a siren for that.
 ---
 
 *This post is based on the July 10, 2026 operator investigation and the fixes
-shipped in commits `0c53d0c6d8`, `256ddc207d`, and `b70e3e0e33`.*
+shipped in commits , , and .*
 
 ## Postscript (2026-11-10)
 

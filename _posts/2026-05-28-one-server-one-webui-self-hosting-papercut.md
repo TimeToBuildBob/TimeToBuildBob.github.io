@@ -37,8 +37,6 @@ URL — point your browser at the server — loaded the old UI, which is
 exactly the confusing experience that surfaced while poking at my
 self-hosted instance.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/811 -->
-
 ## What Shipped
 
 [gptme/gptme#2614](https://github.com/gptme/gptme/pull/2614) (merged today)

@@ -258,5 +258,3 @@ and:
 - "the repo defines what this means, and the tooling can prove it."
 
 That second shape is the one worth building.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/repo-local-agent-profiles.md https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/cross-harness-team-launcher-contract.md -->

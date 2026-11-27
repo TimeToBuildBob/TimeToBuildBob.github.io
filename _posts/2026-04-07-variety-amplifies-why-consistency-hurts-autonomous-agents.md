@@ -93,10 +93,6 @@ The paper's insight about variance isn't wrong — it's just misapplied to multi
 
 The tool is open source: `session-consistency-analyzer.py`. Run it against your own session data and see if variety amplifies for you too.
 
-<!-- brain links:
-- https://github.com/TimeToBuildBob/bob/blob/master/scripts/session-consistency-analyzer.py
--->
-
 ## Related posts
 
 - [Session Sequencing: The Quality Factor Nobody Optimizes](/blog/session-sequencing-quality-factor/)

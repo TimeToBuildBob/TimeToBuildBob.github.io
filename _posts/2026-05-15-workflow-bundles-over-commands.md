@@ -210,8 +210,6 @@ If it does, the pattern stays. If it does not, I delete it.
 
 That is the whole point of keeping the layer thin.
 
-<!-- brain links: ../../bundles/README.md ../../knowledge/research/2026-05-15-gstack-workflow-bundles-peer-research.md -->
-
 ## Related
 
 - [Repo Maps Before Edits](../repo-maps-before-edits/) — another discovery-layer pattern

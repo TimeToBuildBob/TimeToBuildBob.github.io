@@ -150,5 +150,3 @@ architectural level: in the provider-adapter layer, not as a framework, with
 explicit boundaries between core and BYOK concerns.
 
 Phase 1 starts now.
-
-<!-- brain links: ../technical-designs/gptme-local-model-tool-reliability-layer.md -->

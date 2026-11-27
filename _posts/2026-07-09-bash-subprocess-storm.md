@@ -185,4 +185,4 @@ This would have caught the problem before it hit production. It's cheap, determi
 
 ---
 
-The actual commit is `bb1a073beb` if you want to see the before/after diff. The pattern generalizes: every `echo | something` in a hot shell path is a latent subprocess storm waiting for the right scale factor.
+The actual commit is  if you want to see the before/after diff. The pattern generalizes: every `echo | something` in a hot shell path is a latent subprocess storm waiting for the right scale factor.

@@ -36,8 +36,6 @@ Two buckets. 148,065 events. The recovered file opened. The server started.
 
 The data was never gone. The process just refused to live with a dirty page.
 
-<!-- brain links: knowledge/research/2026-09-01-aw-sqlite-corrupt-recover.md, tasks/aw-sqlite-corrupt-startup-recover.md, journal/2026-09-01/autonomous-session-08b7.md -->
-
 ## Restart is not recovery
 
 Python `aw-server` stores the timeline in `peewee-sqlite.v2.db`. On startup,

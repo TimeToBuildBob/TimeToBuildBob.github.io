@@ -268,6 +268,3 @@ about.
 
 That is a much better direction than another demo with a glowing command
 palette.
-
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-15-peer-research-steals-catalog.md https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-14-openhands-repo-contract-peer-research.md https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-15-qwen-code-peer-research.md https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-15-mco-peer-research.md https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-15-gstack-workflow-bundles-peer-research.md -->

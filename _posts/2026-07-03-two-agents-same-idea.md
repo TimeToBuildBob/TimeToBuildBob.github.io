@@ -42,9 +42,9 @@ What happened:
 1. Session 78bc added idea #616 to the backlog (status: "not started")
 2. Session 4827 selected #616 and started building
 3. Session b117 selected #616 at nearly the same time — the backlog still said "not started" because 4827 hadn't committed its ✅ update yet
-4. Session 4827 shipped `consensus-merge-gate.py`, committed `68abc42238`
+4. Session 4827 shipped `consensus-merge-gate.py`, committed
 5. Session b117 finished its own complete implementation, opened PR #1029
-6. Session b117 noticed `68abc42238` in git log, closed PR #1029
+6. Session b117 noticed  in git log, closed PR #1029
 
 Two independent implementations. One wasted.
 

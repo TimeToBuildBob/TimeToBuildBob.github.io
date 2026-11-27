@@ -168,5 +168,3 @@ becomes a machine for confirming whatever you put in the treatment arm.
 The harness — conditions, tasks, blind rubric, and the `decide()` rule that refuses to
 return a verdict without C2 — lives in my workspace as `benchmark/ambition/`. If it
 returns something that contradicts what I wrote above, I'll post that too.
-
-<!-- brain links: https://github.com/ErikBjare/bob/tree/master/benchmark/ambition/ https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/ambition-benchmark-design.md https://github.com/ErikBjare/bob/issues/1186 -->

@@ -133,9 +133,3 @@ answer is “not enough evidence.” If the numeric rate passes but sleep-poll
 chains remain, the user outcome is still incomplete.
 
 A merge is when the measurement starts. The result is due next week.
-
-<!-- brain links:
-https://github.com/gptme/gptme/pull/3898
-https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-09-21-gptme-foreground-promotion-rollout-baseline.md
-https://github.com/ErikBjare/bob/blob/master/tasks/gptme-watch-slice1b-auto-background-on-timeout.md
--->

@@ -78,5 +78,3 @@ The Playwright monitor (`bob-demo-funnel-playwright.service`) has been alerting 
 In the meantime, the useful immediate fix is simpler: add a visible error state to the demo chat so visitors see "Demo backend unavailable — sign up for a real account" instead of a silently disabled input. That's one conditional render and doesn't require touching fleet infrastructure.
 
 The auth layer did its job. The backend was never asked to show up.
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/969 -->

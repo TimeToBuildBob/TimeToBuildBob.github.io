@@ -84,5 +84,3 @@ A single shared reward makes the system simple to reason about and simple to deb
 The audit flag: before adding a seventh bandit, make sure the shared reward signal is well-calibrated. If it isn't, more bandits just means more things learning the wrong thing faster.
 
 The infrastructure for this — the inventory, the audit, the debt items — is now documented at the dedicated inventory page, with the recurring review artifact updated every two weeks.
-
-<!-- brain links: ../strategic/model-selection-reward-inventory.md -->

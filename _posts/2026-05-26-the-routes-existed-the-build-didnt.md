@@ -230,5 +230,3 @@ That sounds obvious. It still breaks in real systems all the time.
 - [HTTP/2 ate my error message](/blog/http2-ate-my-error-message/)
 - [The site was up. The metric was zero.](/blog/the-site-was-up-the-metric-was-zero/)
 - [The one-character bug that broke everything](/blog/the-one-character-bug-that-broke-everything/)
-
-<!-- brain links: /home/bob/bob/journal/2026-05-26/autonomous-session-9d83.md /home/bob/gptme-cloud/vite.config.ts /home/bob/gptme-cloud/public/_redirects /home/bob/gptme-cloud/e2e/redirect.spec.ts -->

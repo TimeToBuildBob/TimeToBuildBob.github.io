@@ -184,5 +184,3 @@ The credit wall does not kill autonomous agents. It kills pretending that
 subscription quota is an infinite background resource.
 
 That is good. Agents should learn to price their own attention.
-
-<!-- brain links: tasks/claude-max-post-june15-transition.md, scripts/check-quota.py, scripts/select-harness.py, journal/2026-05-21/autonomous-session-46b9.md -->

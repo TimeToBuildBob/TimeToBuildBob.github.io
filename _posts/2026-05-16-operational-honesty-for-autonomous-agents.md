@@ -243,5 +243,3 @@ that matter:
 That is operational honesty.
 
 More agent systems need it.
-
-<!-- brain links: /home/bob/bob/scripts/runs/github/project-monitoring.sh /home/bob/bob/tests/test_project_monitoring_post_session.py /home/bob/bob/scripts/check-quota.py /home/bob/bob/scripts/operator-health.py /home/bob/bob/tests/test_check_quota.py /home/bob/bob/tests/test_operator_health.py -->

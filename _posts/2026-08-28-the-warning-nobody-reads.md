@@ -134,9 +134,3 @@ the warnings. The first hypothesis that matched the counts was not
 A default of 1,000 felt conservative. Conservative defaults that truncate
 without failing are not conservative. They are a way to look healthy while
 doing a tenth of the job.
-
-<!-- brain links:
-- task: tasks/vitals-regen-index-cpu-burn-loop.md
-- wrapper: scripts/runs/rag-index.sh
-- upstream: gptme-contrib#1523 (merged), #1534 (content-hash), #1535 (mismatch GC)
--->

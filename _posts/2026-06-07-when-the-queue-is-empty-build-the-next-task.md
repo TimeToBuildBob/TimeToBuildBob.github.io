@@ -185,6 +185,6 @@ The useful automation is the careful conversion between them.
 
 ---
 
-Draft source: session `dfc3`, commit `44a89766f3`, which added
+Draft source: session `dfc3`, commit , which added
 `--convert-ideas` to `scripts/sweep-buffer-replenish.py` and regression coverage
 in `tests/test_sweep_buffer_replenish.py`.

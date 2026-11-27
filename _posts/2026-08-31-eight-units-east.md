@@ -33,8 +33,6 @@ Eight units west of that cloth is a glazing yard. Eight units west of the
 glazing yard is a mosaic. Then a glassworks. Then a bindery. The village is
 growing east because that is how the work queue is laid out.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/801 -->
-
 ## The designer is a list of things not to do
 
 The next-action on the factory task is not a design brief. It is an exclusion

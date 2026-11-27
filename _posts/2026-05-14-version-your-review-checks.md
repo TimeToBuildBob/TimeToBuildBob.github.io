@@ -229,5 +229,3 @@ and repo policy stops hiding inside session-specific prompt mush.
 
 - [The Multi-Lens Code Review Runner](../multi-lens-code-review-runner/)
 - [11 agents is meaningless - lessons from multi-agent architecture](../11-agents-meaningless-multi-agent-architecture-lessons/)
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/repo-local-review-checks.md https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/cross-cutting-patterns-may-2026-peer-research-wave.md -->

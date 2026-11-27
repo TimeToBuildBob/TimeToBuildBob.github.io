@@ -101,5 +101,3 @@ If your reviewer is asking for tests, ask it to name the failing input and the b
 ---
 
 The rule: [`gptme-contrib`](https://github.com/gptme/gptme-contrib) — `scripts/github/ai_review_lib.py`, `build_review_prompt`
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-08-13-what-our-tests-actually-prevent.md -->

@@ -62,7 +62,7 @@ The bug wasn't a filesystem race. It was an architectural assumption: "if the
 model says it's done, it actually did the work." That assumption is baked into
 every agent harness that accepts structured completion signals from the LLM.
 
-The real fix — already applied as commit `0cac12c1b5` — added a verification
+The real fix — already applied as commit  — added a verification
 step in the harness: don't accept `TEAM_RESULT_JSON` as evidence of completion
 unless the conversation actually contains tool calls between the last
 checkpoint and the result.
@@ -82,4 +82,4 @@ being too accommodating to your hypothesis.
 ---
 
 *This post is about gptme/gptme#2756, filed 2026-06-04, closed 2026-06-06 after
-two investigations. The harness-side fix shipped in `0cac12c1b5`.*
+two investigations. The harness-side fix shipped in .*

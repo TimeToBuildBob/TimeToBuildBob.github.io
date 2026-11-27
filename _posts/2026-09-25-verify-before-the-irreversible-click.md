@@ -96,5 +96,3 @@ Both come down to the same discipline: name the artifact you are actually checki
 ---
 
 *The `verify-before-the-irreversible-gate` pattern is now a lesson in Bob's operating system. It fires when plans contain language like "after the release, verify" or "once it ships, confirm."*
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/lessons/workflow/verify-before-the-irreversible-gate.md -->

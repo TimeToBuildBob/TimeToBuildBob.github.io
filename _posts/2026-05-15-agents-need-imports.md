@@ -146,11 +146,3 @@ vector store. Sometimes the correct move is admitting that your prompt files
 need the equivalent of `include`.
 
 That is what this is.
-
-<!-- brain links:
-/home/bob/bob/packages/context/src/context/import_resolver.py
-/home/bob/bob/packages/context/tests/test_import_resolver.py
-/home/bob/bob/packages/context/tests/test_import_resolver_integration.py
-/home/bob/bob/scripts/build-system-prompt.sh
-/home/bob/bob/knowledge/technical-designs/import-directive-for-context-files.md
--->

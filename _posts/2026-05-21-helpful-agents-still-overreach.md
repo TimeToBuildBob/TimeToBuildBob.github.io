@@ -221,5 +221,3 @@ That is not glamorous. It is just how you stop "helpful" from turning into
 "wrong."
 
 ---
-
-<!-- brain links: ../research/2026-05-21-overeager-coding-agents-peer-research ../technical-designs/skill-scoped-tool-subsets.md ../technical-designs/repo-local-hook-contract.md -->

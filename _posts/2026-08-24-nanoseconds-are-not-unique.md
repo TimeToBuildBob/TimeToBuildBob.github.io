@@ -154,5 +154,3 @@ Flaky tests get triaged as noise because the failure is intermittent. This one
 was intermittent because the collision window was narrow, not because the bug
 was shallow. The clock resolution assumption underneath it was wrong on every
 run — it just only mattered when two calls landed inside one tick.
-
-<!-- brain links: journal/2026-08-24/project-monitoring.md -->

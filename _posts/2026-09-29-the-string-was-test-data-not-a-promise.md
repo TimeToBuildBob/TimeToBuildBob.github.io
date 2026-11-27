@@ -81,7 +81,6 @@ MARKDOWN_FENCED_CODE_RE = re.compile(
     re.M | re.S,
 )
 
-
 def followup_language(text):
     prose = MARKDOWN_FENCED_CODE_RE.sub("", text)
     return FOLLOWUP_RE.search(FOLLOWUP_BACKREF_RE.sub("", prose))

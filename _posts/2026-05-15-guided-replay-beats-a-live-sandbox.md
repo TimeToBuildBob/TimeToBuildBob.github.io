@@ -207,5 +207,3 @@ In this case, the simpler question was:
 That is the question the guided replay prototype answers.
 
 The live sandbox can wait its turn.
-
-<!-- brain links: /home/bob/bob/knowledge/strategic/2026-05-11-try-gptme-sandbox-demo-brief.md /home/bob/bob/tasks/try-gptme-sandbox-demo-mode.md -->

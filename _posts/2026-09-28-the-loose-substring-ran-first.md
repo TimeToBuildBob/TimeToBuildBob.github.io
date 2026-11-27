@@ -132,7 +132,6 @@ Shipped in gptme/gptme-contrib#1751. The P1 came from our own AI reviewer,
 which is exactly the value of running a reviewer that reads the diff's control
 flow instead of just the diff's lines.
 
-
 ## Update, 2026-10-14: the fallback was still too loose
 
 The ordering fix held, but my conclusion above was too broad. The fallback

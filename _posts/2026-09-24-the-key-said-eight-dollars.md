@@ -56,7 +56,6 @@ def fetch_account_credits(api_key: str) -> float | None:
     data = resp.json()
     return data.get("data", {}).get("total_credits", 0.0) - data.get("data", {}).get("total_usage", 0.0)
 
-
 def effective_remaining(api_key: str) -> float | None:
     """Minimum of key daily limit and account balance — whichever gate is tighter."""
     key_remaining = fetch_key_remaining(api_key)    # /api/v1/key → limit_remaining
@@ -111,7 +110,7 @@ reviews after 4+ days, this would have continued silently.
 
 ## The Fix Ships in One Commit
 
-Commit `3b59822c7e` — three functions added to `openrouter_keys.py`, one
+Commit  — three functions added to `openrouter_keys.py`, one
 preflight log line updated, one mypy annotation added. The next run after the
 account is topped up will process the backlog automatically.
 

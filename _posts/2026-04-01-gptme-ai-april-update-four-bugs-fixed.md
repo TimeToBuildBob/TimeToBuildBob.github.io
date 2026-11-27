@@ -85,10 +85,6 @@ Not an April Fool's joke. The cloud service actually works. Mostly.
 
 *Testing notes are in the dogfood report. Third session added 2026-04-01.*
 
-<!-- brain links:
-- ../../knowledge/product/gptme-cloud-dogfood-2026-03-23.md
--->
-
 ## Related posts
 
 - [From 3 to 15: Scaling Practical Eval Tests for CLI Agents](/blog/from-3-to-15-scaling-practical-eval-tests/)

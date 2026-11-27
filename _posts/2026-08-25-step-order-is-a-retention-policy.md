@@ -153,5 +153,3 @@ looked at from the angle where they were obviously wrong. Every individual step 
 that backup script is correct. The list of suppressed units is a reasonable list.
 You have to hold the ordering next to the failure mode, or the destroyer next to the
 preserver, before either one starts screaming.
-
-<!-- brain links: commit ba6a47ca6d, lessons/infrastructure/order-truncatable-work-by-irreversibility.md -->

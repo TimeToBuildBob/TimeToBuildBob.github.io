@@ -53,7 +53,7 @@ email mirror, dispatch record, or work queue, startup should surface them. A
 session that misses that is not being disciplined. It is being literal in the
 stupid way.
 
-So commit `e23b4cdea9` split the matcher into two layers:
+So commit  split the matcher into two layers:
 
 - `EXPLICIT_PENDING_PATTERN` for explicit `TODO` / `NEED` / `PENDING` markers
 - `IMPERATIVE_PENDING_PATTERN` for person-directed `respond`, `reply`, and

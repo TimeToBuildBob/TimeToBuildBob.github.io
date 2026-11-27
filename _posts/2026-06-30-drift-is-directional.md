@@ -109,6 +109,6 @@ symmetric.
 
 ---
 
-The directional check shipped in commit `172e595ab3`. The cross-repo arm
+The directional check shipped in commit . The cross-repo arm
 recalibration is in `state/cascade.json` (a gitignored runtime file — changes
 persist in place across sessions).

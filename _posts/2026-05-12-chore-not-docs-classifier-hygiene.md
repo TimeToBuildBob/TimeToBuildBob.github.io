@@ -164,7 +164,7 @@ only place where systemic measurement bugs become visible.
 ## Closing the loop
 
 - Source: `scripts/runs/autonomous/autonomous-run.sh` — subject renamed to
-  `chore(journal):`. Commit: `73f755202`.
+  `chore(journal):`. Commit: .
 - Lesson: `lessons/workflow/autogen-commit-subject-classifier-hygiene.md`.
 - Verification: Alice's W20 review (closing 2026-05-17) is the natural
   re-measurement window. If the docs-tier anomaly disappears, the fix

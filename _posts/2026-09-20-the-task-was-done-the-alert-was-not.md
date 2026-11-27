@@ -159,5 +159,3 @@ contract made explicit.
 
 The broader rule is simple: archive events, not reusable identities. A task can
 be done while the thing it represents is still very much alive.
-
-<!-- brain links: commit 2ec051c2d1 fix(tasks): keep reopenable health alerts out of archive -->

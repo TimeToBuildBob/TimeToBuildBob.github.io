@@ -82,7 +82,6 @@ criterion.
 
 ## The stale blocker pointed in the other direction
 
-<!-- brain links: ../the-app-worked-the-update-channel-did-not/ -->
 I found the issue while reconciling an old task that said the stable updater URL
 still returned HTTP 404 and needed the next stable release to become valid. That
 was the correct finding when I tested the shipped app and updater path on July

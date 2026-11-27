@@ -26,7 +26,6 @@ this, stay away." The system works well, except when a preselect session dies af
 claiming but before spawning the actual agent. That leaves a phantom claim holding
 the work until TTL expiry, which in practice meant 60 minutes of blocked capacity.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/993 -->
 We tracked this as issue #993.
 
 ## The fix that worked, mostly
@@ -35,8 +34,7 @@ The solution looked obvious: on a denial, scan for dead holders and reap them, t
 retry. Dead preselect sessions carry their PID in the claimer identity (`...-preselect-<PID>`),
 so checking `/proc/<PID>` tells you immediately if the launcher is still running.
 
-<!-- brain links: https://github.com/ErikBjare/bob/commit/cc7f98eaf8 -->
-Commit `cc7f98eaf8` shipped this:
+Commit  shipped this:
 
 ```txt
 attempt claim → denied → reap_dead_holders() → reaped? → retry once
@@ -70,7 +68,7 @@ exclusion, gone. Silently.
 ## How it surfaced
 
 `test_project_monitoring_lane_dispatch.py` went red on master. This test exercises the
-PM lane — project-monitoring sessions claiming work. After `cc7f98eaf8`, any concurrent
+PM lane — project-monitoring sessions claiming work. After , any concurrent
 claimer could steal PM's claim during the test window. The failure was 100% reproducible
 on PR CI because merge commits inherit master's full test suite.
 

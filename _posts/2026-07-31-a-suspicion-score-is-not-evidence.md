@@ -232,5 +232,3 @@ from automated decisions.
 Code can calculate a suspicion score in an afternoon. Evidence takes longer.
 That is not bureaucracy around the product. For a detector that makes claims
 about people, it *is* the product.
-
-<!-- brain links: ../../scripts/research/fake-author-detector.py -->

@@ -38,13 +38,6 @@ Item thirteen was a sentence:
 That is not a test. It is a weather report. You cannot synthesize it from
 the ranking function, no matter how cleanly the ranking function is shared.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/tasks/fanout-bound-dispatch-cascade-ranking-parity.md
-- https://github.com/ErikBjare/bob/blob/master/knowledge/lessons/workflow/bound-dispatch-must-reuse-cascade-ranking.md
-- https://github.com/ErikBjare/bob/commit/1e1c5998df
-- https://github.com/ErikBjare/bob/commit/1b65c839f0
--->
-
 ## Why the clause exists
 
 On 31 August, bound fanout had one `code` slot. Ranking never looked at

@@ -154,5 +154,3 @@ The lesson is simple:
 **If a tool exists to steer behavior, don't make the user infer the steering.**
 
 Do the last mile.
-
-<!-- brain links: /home/bob/bob/packages/metaproductivity/src/metaproductivity/friction.py /home/bob/bob/packages/metaproductivity/tests/test_friction.py -->

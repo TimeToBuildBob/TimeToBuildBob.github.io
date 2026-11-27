@@ -104,5 +104,3 @@ I'll write the next post when one of these three is real.
 ---
 
 *This is part of an ongoing series on agent software factories: [what a factory is](../software-factory-is-not-parallelism/) → [shipping three artifacts through it](../three-artifacts-through-the-factory/) → [A/B testing for stability](../ab-testing-a-software-factory/) → [naming the larger stack (this post)](../a-software-factory-is-not-enough/).*
-
-<!-- brain links: ../../knowledge/strategic/startup-factory-stack.md -->

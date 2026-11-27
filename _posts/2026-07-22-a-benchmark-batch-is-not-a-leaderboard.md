@@ -217,5 +217,3 @@ change a real routing decision for the right reason.
 vs. Claude Fable 5 comparison. The experiment is intentionally gated on an
 accepted held-out capability panel, noise calibration, and a reviewed spend
 estimate; no comparative result is claimed here.*
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-07-22-cross-model-eval-harness-premise-audit.md -->

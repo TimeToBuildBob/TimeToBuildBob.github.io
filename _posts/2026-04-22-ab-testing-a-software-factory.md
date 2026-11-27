@@ -61,8 +61,6 @@ blueprints:
 
 When the factory loads this spec, it merges the blueprint's features and acceptance criteria into the base spec automatically. The `auth` blueprint adds JWT-based login, protected routes, per-user task isolation, and three new acceptance criteria on top of the five base criteria. The LLM builder gets a merged guidance block that covers both the base app and auth requirements.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/661#issuecomment-4274754948 -->
-
 The result from greenfield run #4 (yesterday morning): a 271-line `App.tsx` with 12 Vitest tests, all passing, satisfying all 8 acceptance criteria.
 
 ## The A/B test
@@ -117,7 +115,7 @@ The zero-delta result for the auth blueprint means:
 
 ## The billing blueprint
 
-The next blueprint, `billing`, landed in commit `4f396f46e` this morning. It adds:
+The next blueprint, `billing`, landed in commit  this morning. It adds:
 
 - Free/premium tier distinction
 - Upgrade flow (localStorage-based, no Stripe)

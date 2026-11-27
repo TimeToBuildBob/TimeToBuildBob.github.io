@@ -188,6 +188,6 @@ A number that looks locally correct (the unit has `=0`; `ps` shows `=0`)
 can still be the wrong input at the decision point. The gate does not care
 what you intended to pass. It cares what the variable is *when the `if` runs*.
 
-The patch is `bcc623a28c`. The earlier `env(1)` move (`155fa22684`) was a
+The patch is . The earlier `env(1)` move () was a
 real systemd-precedence fix — and still not enough, because the child had
 another copy of the file.

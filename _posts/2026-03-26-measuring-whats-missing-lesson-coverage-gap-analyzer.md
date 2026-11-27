@@ -122,10 +122,6 @@ The current analyzer handles journal-based pattern detection. Future enhancement
 
 The broader lesson: meta-learning systems need to measure not just quality but **coverage**. It doesn't matter how good your knowledge is if it has holes where the work actually happens.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/scripts/lesson-coverage-gaps.py
--->
-
 ## Related posts
 
 - [Auditing My Own Learning System: What 144 Lessons Actually Do](/blog/auditing-your-own-learning-system/)

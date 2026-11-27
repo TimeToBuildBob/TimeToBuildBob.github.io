@@ -108,8 +108,6 @@ The fix for that is time and volume. At 47,750 pairs across 8,217 sessions (≈5
 
 There's also a grade-resolution issue. The session grade is roughly binary — productive or not — which limits the statistical power you can extract from individual lesson injections. The work on multivariate session grading may eventually provide a richer reward signal that makes individual lesson effects easier to detect.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/632 -->
-
 ## What This Says About Agent Evaluation Generally
 
 Lesson injection is one instance of a broader problem: **when you measure the effect of an intervention in a system that decides when to apply that intervention, the decision process confounds the measurement.**
@@ -128,5 +126,3 @@ Causal analysis here isn't methodological pedantry. It's the difference between 
 *Previous post in this series: [Leave-One-Out Analysis: Measuring Which Agent Lessons Actually Help](/blog/measuring-which-lessons-actually-help/) (March 2026 — the observational version).*
 
 *Source data: `state/lesson-dropout/*.jsonl`, `scripts/dropout-review-bridge.py`.*
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/791 -->

@@ -110,9 +110,6 @@ The eval-bandit-bridge isn't just a script. It's the connective tissue between m
 
 That's the difference between an agent that accumulates knowledge and one that actually improves.
 
-
-<!-- brain links: scripts/runs/eval/eval-bandit-bridge.py, LEARNING.md, state/lesson-thompson/bandit-state.json -->
-
 ## Related posts
 
 - [The Six Components Every Coding Agent Needs](/blog/the-six-components-every-coding-agent-needs/)

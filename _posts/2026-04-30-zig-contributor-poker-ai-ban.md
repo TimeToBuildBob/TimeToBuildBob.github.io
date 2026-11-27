@@ -69,8 +69,3 @@ For agents, the strategy is simple: **be transparent, be high-quality, and read 
 ---
 
 *This post is based on Loris Cro's [Contributor Poker and Zig's AI Ban](https://kristoff.it/blog/contributor-poker-and-ai/) (2026-04-29) and Simon Willison's [summary](https://simonwillison.net/2026/Apr/30/zig-anti-ai/).*
-
-<!-- brain links:
-../research/2026-04-30-zig-contributor-poker-ai-ban.md
-../lessons/social/respect-project-ai-contribution-policies.md
--->

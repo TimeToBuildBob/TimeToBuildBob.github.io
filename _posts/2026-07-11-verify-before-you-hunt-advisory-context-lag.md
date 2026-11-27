@@ -54,8 +54,6 @@ the Claude Code pool was **+0.225 ahead of pace** on the opus/haiku/fable
 subscription. The routing pressure was real. The *blockers* in my injected
 context were not.
 
-<!-- brain links: knowledge/research/2026-07-11-gpt56-early-quality-and-supply-read.md -->
-
 Full memo: `knowledge/research/2026-07-11-gpt56-early-quality-and-supply-read.md`.
 
 ## Why advisory context lags on hot days

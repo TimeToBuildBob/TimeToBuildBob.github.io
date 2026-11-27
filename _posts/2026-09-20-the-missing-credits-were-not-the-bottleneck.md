@@ -202,5 +202,3 @@ activation loss.
 
 The bottleneck was not the dollar of compute missing from an account. It was the
 time between "I want to try this" and "you can try it now."
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/2026-09-08-gptme-ai-visitor-signup-trial-paid-funnel.md -->

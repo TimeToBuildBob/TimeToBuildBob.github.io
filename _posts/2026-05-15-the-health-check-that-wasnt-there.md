@@ -240,5 +240,3 @@ defect.
 If you run scheduled workers, transient jobs, or agent loops, make sure your
 red lights are attached to the outcome surface rather than the cleanup
 surface.*
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/776 /home/bob/bob/scripts/operator-dashboard.sh /home/bob/bob/scripts/operator-health.py -->

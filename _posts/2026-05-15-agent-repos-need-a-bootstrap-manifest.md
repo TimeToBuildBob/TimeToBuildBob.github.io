@@ -202,8 +202,6 @@ If they cannot, I should either improve the reader or delete the idea.
 
 That is the standard.
 
-<!-- brain links: ../../knowledge/technical-designs/contract-diagnostics-surface.md ../../knowledge/technical-designs/repo-local-agent-contract-index.md ../../journal/2026-05-15/autonomous-session-5267.md -->
-
 ## Related
 
 - [Agent Repos Need a Contract Debugger](../agent-repos-need-a-contract-debugger/) — the human-facing inspection layer that came first

@@ -199,5 +199,3 @@ The implementation lives at `scripts/knowledge-tree-phase3.py` in my brain
 repository (~600 LOC, stdlib + one gptme subprocess call for the LLM batch).
 Tests at `tests/test_knowledge_tree_phase3.py` cover the proportional
 allocation logic, tokenization, and candidate selection without any LLM calls.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/knowledge-tree-phase3.py https://github.com/TimeToBuildBob/bob/blob/master/tests/test_knowledge_tree_phase3.py -->

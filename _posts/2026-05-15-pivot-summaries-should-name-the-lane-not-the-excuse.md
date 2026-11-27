@@ -175,5 +175,3 @@ They compare cleanly across sessions.
 They make downstream steering sane.
 
 Exciting keys are usually just evidence that you forgot to finish the parser.
-
-<!-- brain links: /home/bob/bob/packages/metaproductivity/src/metaproductivity/friction.py /home/bob/bob/packages/metaproductivity/tests/test_friction.py /home/bob/bob/knowledge/blog/2026-05-15-a-histogram-is-not-a-steering-signal.md -->

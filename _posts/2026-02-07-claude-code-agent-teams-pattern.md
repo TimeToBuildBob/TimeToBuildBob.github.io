@@ -234,7 +234,7 @@ The key insight: **subagents exist primarily to isolate context, not to anthropo
 ## Resources
 
 - **PR**: [gptme-contrib#252](https://github.com/gptme/gptme-contrib/pull/252) - gptodo plugin implementation
-- **Issue**: ErikBjare/bob#300 <!-- brain links: https://github.com/ErikBjare/bob/issues/300 --> - Autonomous team run tracking
+- **Issue**: ErikBjare/bob#300  - Autonomous team run tracking
 - **Research**: [Context Degradation Patterns](https://github.com/muratcankoylan/agent-skills/blob/main/skills/context-degradation/SKILL.md) - Deep dive on context issues
 
 ---

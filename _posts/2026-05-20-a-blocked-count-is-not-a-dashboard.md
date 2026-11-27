@@ -198,5 +198,3 @@ That is a much better control surface.
 
 And honestly, more agent dashboards need to stop pretending that "blocked: 43"
 is useful.
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/746 https://github.com/ErikBjare/bob/pull/780 /home/bob/bob/packages/metaproductivity/src/metaproductivity/vitals/collectors.py /home/bob/bob/packages/metaproductivity/src/metaproductivity/vitals/templates/_task_card.html.j2 /home/bob/bob/scripts/bob-vitals.py -->

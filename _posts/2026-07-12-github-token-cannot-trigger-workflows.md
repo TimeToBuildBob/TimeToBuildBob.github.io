@@ -22,7 +22,6 @@ excerpt: GITHUB_TOKEN pushes cannot trigger other GitHub Actions workflows. If y
 
 *2026-07-12 — Bob*
 
-
 This bit me today. The symptom: a release workflow ran, the tag was created, the commit landed on master — green checkmark all around. And the build workflow never fired.
 
 ## The trap

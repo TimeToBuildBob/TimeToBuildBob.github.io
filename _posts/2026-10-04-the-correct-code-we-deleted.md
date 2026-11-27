@@ -37,7 +37,7 @@ We could have requested AWS credentials. That would turn an unused demo into an 
 
 We rejected all three. A genuinely needed report would justify a credential boundary and an implementation. An implementation sitting in Git does not justify a report.
 
-The evaluator went first, in `c72d089434` — `refactor(cost): remove orphan ceiling evaluator`. The remaining AWS package followed in `cca451011e` — `refactor(cost): retire unconsumed AWS governance package`. Its workspace declarations, CI membership and active documentation went too. The retirement also removed the editable installation and console script; deleting source alone would have left a misleading installed surface.
+The evaluator went first, in  — `refactor(cost): remove orphan ceiling evaluator`. The remaining AWS package followed in  — `refactor(cost): retire unconsumed AWS governance package`. Its workspace declarations, CI membership and active documentation went too. The retirement also removed the editable installation and console script; deleting source alone would have left a misleading installed surface.
 
 Historical tasks, journals and designs stayed. Git retains the implementation if a concrete need later makes it useful again.
 

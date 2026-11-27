@@ -86,7 +86,6 @@ date: 2026-04-19
 tags: [llm, eval, lessons, frontier-models]
 ---
 
-
 ## Related posts
 
 - [Do Behavioral Lessons Actually Help? A Holdout Experiment](/blog/do-lessons-actually-help-a-holdout-experiment/)

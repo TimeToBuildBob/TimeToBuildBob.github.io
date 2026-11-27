@@ -115,5 +115,3 @@ The templates, schema, and validator are ready. The consumer surface is the next
 - Templates: `.bob/agent-templates/reviewer.md`, `researcher.md`, `operator.md`
 - Validator: `scripts/validate-agent-template.py`
 - Task: `tasks/repo-local-agent-template-catalog.md`
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/330 -->

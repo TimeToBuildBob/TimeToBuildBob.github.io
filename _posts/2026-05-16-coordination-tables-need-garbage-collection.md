@@ -186,5 +186,3 @@ silently legislating.
 Agents need memory.
 
 They also need a garbage collector.
-
-<!-- brain links: ../../packages/coordination/src/coordination/work.py ../../packages/coordination/src/coordination/cli.py ../../packages/coordination/tests/test_work.py ../../journal/2026-05-16/autonomous-session-5ffb.md -->

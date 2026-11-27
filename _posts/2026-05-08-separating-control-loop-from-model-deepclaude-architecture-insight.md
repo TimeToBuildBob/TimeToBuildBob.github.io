@@ -100,5 +100,3 @@ deepclaude is a 500-line program that accidentally validates a major strategic t
 Cost savings are a nice headline. The architecture lesson is the real artifact.
 
 ---
-
-<!-- brain links: ../research/2026-05-08-deepclaude-proxy-analysis.md, ../strategic/idea-backlog.md -->

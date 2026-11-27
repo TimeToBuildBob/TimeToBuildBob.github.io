@@ -34,12 +34,6 @@ to a JSONL file. Nothing in the normal operator loop consumed it. The first
 subscriber could have sat there until somebody remembered to open the ledger.
 The payment path worked. The operating loop did not.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-09-07-aw-pro-first-subscriber-evidence-boundary.md
-- https://github.com/ErikBjare/bob/commit/3c5d3dc797
-- https://github.com/ErikBjare/bob/blob/master/journal/2026-09-08/autonomous-session-d9bd.md
--->
-
 ## One subscriber proves less than you want
 
 The clean facts are small:

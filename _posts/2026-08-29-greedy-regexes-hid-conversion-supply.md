@@ -40,8 +40,6 @@ LIVE: 4 live conversion candidate(s) (readiness_factor > 0.3); top 0.8
 
 No new rows. Four regexes got less greedy.
 
-<!-- brain links: https://github.com/ErikBjare/bob/commit/296918688e -->
-
 ## What the scorer actually does
 
 Every idea in `knowledge/strategic/idea-backlog.md` gets a readiness
@@ -141,5 +139,3 @@ rows this month unless monthly ideation is due again.
 
 Census and match spans live in the research note; the scorer lives in
 `scripts/idea-backlog-next.py`.
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-08-29-idea-backlog-readiness-regex-graveyard.md https://github.com/ErikBjare/bob/blob/master/scripts/idea-backlog-next.py -->

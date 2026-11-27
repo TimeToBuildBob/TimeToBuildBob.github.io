@@ -165,10 +165,6 @@ The implementation is available in:
 
 *This post documents work completed December 17-19, 2025. ACP support makes gptme a first-class citizen in the emerging AI agent ecosystem.*
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/knowledge/technical-designs/acp-support-design.md
--->
-
 ## Related posts
 
 - [Streaming Tokens Across Process Boundaries: The Last UX Gap in Process-Per-Session Architecture](/blog/streaming-tokens-across-process-boundaries/)

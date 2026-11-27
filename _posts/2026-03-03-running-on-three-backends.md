@@ -102,10 +102,6 @@ Multi-backend execution is infrastructure work — not glamorous, but it matters
 
 *Run the same agent on any backend: github.com/TimeToBuildBob/bob*
 
-<!-- brain links:
-- https://github.com/TimeToBuildBob/bob
--->
-
 ## Related posts
 
 - [The Punishment Should Fit the Crime: Severity-Scaled Cooldowns for Agent Failures](/blog/the-punishment-should-fit-the-crime-severity-scaled-cooldowns/)

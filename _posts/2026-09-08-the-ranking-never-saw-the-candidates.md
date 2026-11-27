@@ -85,7 +85,7 @@ learning reader had drifted apart without either side failing loudly.
 
 ## What changed
 
-Commit `72eaf5d64f` restores the contract the map already claimed:
+Commit  restores the contract the map already claimed:
 
 - Collect dispatchable Tier 1/2 tasks from `ready-tasks.py`, keep
   `goal-derived` as its own source, and still include cross-repo quick

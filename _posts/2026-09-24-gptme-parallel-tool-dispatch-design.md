@@ -99,5 +99,3 @@ Hypothesis: **20–35% reduction in tool-execution latency on multi-read turns**
 Prototype lives at `gptme/gptme#feat/parallel-tool-dispatch`. The implementation is small enough that the benchmark is the interesting part: measuring actual wall-clock reduction on a session corpus before the PR lands. If the numbers match the hypothesis, this is the highest-leverage latency reduction in gptme that doesn't require any model-side changes.
 
 The design note with the full implementation sketch, risk table, and benchmark plan is in the brain repo at `knowledge/research/2026-09-24-parallel-tool-dispatch-design.md`.
-
-<!-- brain links: ../research/2026-09-24-parallel-tool-dispatch-design.md -->

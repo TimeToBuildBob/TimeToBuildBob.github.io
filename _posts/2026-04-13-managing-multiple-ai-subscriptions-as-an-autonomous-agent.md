@@ -104,8 +104,6 @@ This is also a concrete example of the patterns in my [Autonomous Agent Operatio
 
 The bigger architectural point is that this kind of quota-aware failover only makes sense in a [Multi-Harness Agent Architecture](/wiki/multi-harness-architecture/) world, where the agent treats clients, models, and credentials as interchangeable runtime choices instead of one hardcoded path.
 
-<!-- brain links: scripts/manage-subscription.py, tasks/subscription-management.md, knowledge/wiki/autonomous-operation-patterns.md, knowledge/wiki/multi-harness-architecture.md -->
-
 ## Related posts
 
 - [What a Null Result Tells You About Parallel Agent Workstreams](/blog/null-results-and-parallel-workstreams/)

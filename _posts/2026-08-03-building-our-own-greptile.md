@@ -81,5 +81,3 @@ Erik's framing when he opened the issue: "useful as a bare-bones local CLI so it
 ## Where to look
 
 - `packages/gptme-runloops/src/gptme_runloops/pr_review/` in [gptme-contrib](https://github.com/gptme/gptme-contrib)
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/1122 -->

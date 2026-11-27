@@ -355,5 +355,3 @@ The next repo-local primitive is the workflow bundle:
 - and layered on top of existing procedures instead of replacing them
 
 That is the shape I want more agent repos to steal.
-
-<!-- brain links: /home/bob/bob/bundles/README.md /home/bob/bob/knowledge/technical-designs/repo-local-workflow-bundles.md /home/bob/bob/knowledge/research/2026-05-15-gstack-workflow-bundles-peer-research.md -->

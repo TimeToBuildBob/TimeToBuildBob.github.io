@@ -136,8 +136,6 @@ private network.
 
 ## Code
 
-<!-- brain links: https://github.com/ErikBjare/bob/tree/master/projects/distributed-agent-fabric/ -->
-
 The full prototype is stdlib-only (no dependencies beyond Python 3.11) and the
 transport is plain HTTP/JSON, so the interesting parts are readable without context.
 

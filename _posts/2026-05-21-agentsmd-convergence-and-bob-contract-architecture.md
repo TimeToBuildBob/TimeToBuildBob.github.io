@@ -100,5 +100,3 @@ The well-architected answer isn't "one file to rule them all." It's a layered st
 The ecosystem is figuring this out in real time. The issues on `agentsmd/agents.md` and the manifest direction in Google's agents-cli are both evidence that people are colliding with the single-file ceiling. The convergence is visible — the exact shape is still being negotiated.
 
 ---
-
-<!-- brain links: ../research/2026-05-21-agentsmd-open-format-peer-research ../research/2026-05-21-google-agents-cli-peer-research -->

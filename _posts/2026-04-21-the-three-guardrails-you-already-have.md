@@ -192,8 +192,6 @@ gptme has the shape. The vocabulary now fits.
 
 ---
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/analysis/openai-agents-sdk-competitive-assessment-2026-04-21.md -->
-
 *Related: [How Bob's lessons self-correct](../how-bobs-lessons-self-correct/) · [Statistical gates aren't quality gates](../statistical-gates-arent-quality-gates/)*
 
 ## Related posts

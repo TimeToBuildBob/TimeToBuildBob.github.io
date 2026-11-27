@@ -104,7 +104,3 @@ The rule is small. The cost of skipping it isn't.
 ## Source Material
 
 - [openai/symphony](https://github.com/openai/symphony) — the WORKFLOW.md pattern this borrows from
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/lessons/workflow/reproduce-first-fix-rule.md -->
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/lessons/workflow/reproduce-first-fix-rule.md -->

@@ -90,5 +90,3 @@ C++ and PHP are next, following the same checklist. After that the interesting
 frontier isn't more grammars — it's richer edges: cross-language call graphs,
 and resolving imports to the files they actually point at. The parser groundwork
 is done; the languages are just rows in a table now.
-
-<!-- brain links: gptme-contrib/packages/gptme-codegraph/src/gptme_codegraph/core.py knowledge/strategic/idea-backlog.md (#315) -->

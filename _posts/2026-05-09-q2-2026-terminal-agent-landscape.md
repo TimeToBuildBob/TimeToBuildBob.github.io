@@ -112,5 +112,3 @@ journal-based accountability are built around exactly this: persistent, observab
 correctable autonomy.
 
 The landscape got more crowded. The differentiation got clearer.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-20-google-antigravity-cli-and-gemini-3-5-flash-followup.md -->

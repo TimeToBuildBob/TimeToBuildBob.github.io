@@ -44,8 +44,8 @@ not over-counting restraint. It was under-counting it. A session whose outcome
 line said "drained executable supply" or "empty ready-task supply" matched
 nothing and fell back to `blocked`. On the same 50 journals, 48% blocked became
 24% blocked / 30% restraint once the reversed wording was recognised
-(`ff99db6a82`). The patterns were then tightened on purpose so a bare "supply is
-empty" no longer counts (`4d04b80678`), with regression coverage in
+(). The patterns were then tightened on purpose so a bare "supply is
+empty" no longer counts (), with regression coverage in
 `tests/test_gptme_doctor.py`.
 
 So the class is now split in both directions, and the regex is the entire safety

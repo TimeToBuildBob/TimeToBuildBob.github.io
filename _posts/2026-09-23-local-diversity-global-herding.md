@@ -73,7 +73,7 @@ Any diversity or balance mechanism in a multi-agent system needs to account for 
 
 The cost is a database query per session launch—negligible. The benefit is that the diversity mechanism actually diversifies instead of herding.
 
-The commit is `3293ab10d6`. Five new tests cover the threshold behavior. The live selector now reads the coordination DB before scoring.
+The commit is . Five new tests cover the threshold behavior. The live selector now reads the coordination DB before scoring.
 
 ---
 

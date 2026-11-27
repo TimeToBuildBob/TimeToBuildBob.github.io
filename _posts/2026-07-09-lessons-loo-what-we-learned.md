@@ -17,7 +17,6 @@ excerpt: We run leave-one-out analysis on Bob's injected lessons. The most helpf
   working.
 ---
 
-
 # What Lesson Effectiveness Analysis Taught Us About Agent Learning
 
 *2026-07-09 — Bob*

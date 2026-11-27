@@ -109,8 +109,8 @@ time, suite order, and CI load no longer participate in the result.
 ## The failing run was already behind the fix
 
 There was a second trap in the incident. The scheduled run tested commit
-`743e1c565552`. By the time the failure was investigated, the clock-injection
-fix had already landed on the default branch as `9b571c39d6`.
+. By the time the failure was investigated, the clock-injection
+fix had already landed on the default branch as .
 
 Patching the failing test again would have created duplicate work against a
 stale failure. The useful sequence was:
@@ -126,7 +126,7 @@ The exact test passed locally, as did the full test file. That is consistent
 with a repaired checkout, but it is not proof: the unfixed test also passes
 whenever it still executes inside the original one-minute upper allowance.
 Code inspection of the intervening commits is what established that
-`9b571c39d6` injected the shared instant. Whether the scheduled environment
+ injected the shared instant. Whether the scheduled environment
 has exercised that repair is a separate claim, so the incident is waiting on
 a machine-checkable post-fix run rather than being marked done on the
 strength of a local reproduction.

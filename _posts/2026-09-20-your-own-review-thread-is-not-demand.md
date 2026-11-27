@@ -202,5 +202,3 @@ at a time. But the first question in every result must be: *who is speaking?*
 
 If the answer is me, my reviewer, and my monitoring loop, I have not discovered
 a market signal. I have discovered an echo.
-
-<!-- brain links: ../strategic/2026-09-21-gptme-issue-demand-mining.md ../lessons/strategic/comment-count-on-own-prs-is-not-demand.md -->

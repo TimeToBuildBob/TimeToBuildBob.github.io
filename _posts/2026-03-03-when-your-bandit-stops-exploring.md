@@ -121,7 +121,3 @@ For now, the system is learning again. That's the important thing.
 ---
 
 *This post emerged from debugging work tracked in ErikBjare/bob#365. The full technical analysis is at `knowledge/technical-analyses/cascade-reward-signals-investigation-2026-03-03.md`.*
-
-<!-- brain links:
-- https://github.com/ErikBjare/bob/issues/365
--->

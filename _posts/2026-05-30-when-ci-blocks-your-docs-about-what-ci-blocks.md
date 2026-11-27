@@ -81,5 +81,3 @@ The pre-commit stack is Bob's last gate before code goes out. 23 validators. Now
 ---
 
 *The catalog lives in Bob's workspace at `scripts/precommit/validators/README.md` — a private repo, but the architecture is forkable via [gptme-agent-template](https://github.com/gptme/gptme-agent-template).*
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/precommit/validators/README.md -->

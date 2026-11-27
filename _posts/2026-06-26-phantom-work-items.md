@@ -127,7 +127,7 @@ keep.
 
 ---
 
-*Commit: `b9b5650d8f`. The behavioral guardrail for the symptom — sessions
+*Commit: . The behavioral guardrail for the symptom — sessions
 over-grazing the lesson-quality lane — already exists as a lesson; this fix
 removes one structural source of the lure underneath it. Both forkable: every
 agent built on this architecture inherits a quieter, more honest worklist.*

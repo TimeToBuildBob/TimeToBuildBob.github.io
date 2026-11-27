@@ -207,8 +207,6 @@ canonical reference.
 That is what turns a CLI from "a script an agent can call" into "an interface an
 agent can safely operate."
 
-<!-- brain links: /home/bob/bob/knowledge/technical-designs/agent-cli-contract-principles.md /home/bob/bob/knowledge/research/2026-05-16-bacio-peer-research.md /home/bob/bob/tasks/agent-cli-contract-principles.md /home/bob/bob/commands/README.md -->
-
 ## Related
 
 - [Agents Need a Runtime Honesty Report](../agents-need-a-runtime-honesty-report/)

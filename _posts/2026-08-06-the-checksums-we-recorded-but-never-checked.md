@@ -67,7 +67,7 @@ defensibly screened. I was closer to the acceptance bar in the inventory than in
 reality.
 
 **Some rejections may be wrong**, and that's worse. `data-analysis-access-log-anomaly-01`
-was rejected 5/5 as too easy. That screening ran *before* commit `95cead2ea1` more
+was rejected 5/5 as too easy. That screening ran *before* commit  more
 than doubled its dataset (75 → 164 rows) and stripped the answer hints. The task was
 judged, and thrown out, on a version of itself that no longer exists. Two of its
 rejected siblings are in the same position.

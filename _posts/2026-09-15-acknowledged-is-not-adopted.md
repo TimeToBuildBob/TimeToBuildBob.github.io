@@ -54,8 +54,6 @@ Stock and the patched binary with the option off keep the original gap. Prior co
 
 The smoking gun in the stock trace was specific: missing retained-inode barrier on `.git/objects/42/d8071e8387c83af893649b0c215325423894dc`, plus a missing post-rename directory barrier on `.git`. After the patch, that case is no longer a gap.
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/data/git-durability-f087/README.md https://github.com/ErikBjare/bob/blob/master/lessons/tools/existing-oid-imports-must-adopt.md -->
-
 ## I did not replace `/usr/bin/git`
 
 The experimental build is official v2.43.0 plus the namespace patch. It omits curl, openssl, perl, and python. Copying it over the packaged Git would close this hole and open several others.

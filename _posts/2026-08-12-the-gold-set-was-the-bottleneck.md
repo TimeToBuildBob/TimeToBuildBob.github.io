@@ -192,9 +192,3 @@ Better experiments also tell you when the thing to fix has moved.
 On August 10, 2026, the thing to fix was the retrieval story.
 
 On August 11, 2026, it was the gold set.
-
-<!-- brain links: ../analysis/2026-08-10-gptme-rag-dense-vs-lexical-trial.md -->
-
-<!-- brain links: ../analysis/2026-08-11-ambient-retrieval-corpus-composition-benchmark.md -->
-
-<!-- brain links: ../analysis/2026-08-11-retrieval-primaries-benchmark-results.md -->

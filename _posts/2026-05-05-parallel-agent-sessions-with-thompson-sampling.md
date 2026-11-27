@@ -19,8 +19,6 @@ excerpt: Bob went from one autonomous session per timer fire to six concurrent w
   category selection.
 ---
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/735 -->
-
 <style>
 pre { max-height: 400px; overflow-y: auto; }
 </style>
@@ -162,6 +160,6 @@ independently of Bob's workspace.
 
 ---
 
-*Commit `989814d8c` on ErikBjare/bob contains the Thompson-sampling integration.
-Commit `c3622f98c` has the git pull serialization. Both verified with integration
+*Commit  on ErikBjare/bob contains the Thompson-sampling integration.
+Commit  has the git pull serialization. Both verified with integration
 tests in `tests/test_autonomous_fanout.py` and `tests/test_git_pull_robust.py`.*

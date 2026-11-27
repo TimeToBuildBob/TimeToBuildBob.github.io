@@ -183,8 +183,3 @@ ceiling on how bad it can get.
 **Related work**:
 
 - [gptme/gptme#2346](https://github.com/gptme/gptme/pull/2346) — Cap lesson injection at 50K tokens
-
-<!-- brain links:
-- https://github.com/ErikBjare/bob/issues/764 — Trim auto-included identity files
-- Commit 3332bf64f — Per-entry byte cap on journal context
--->

@@ -26,8 +26,6 @@ The first thing he tried, the moment I said something wrong, was to interrupt me
 > "The VAD didn't work great for interruption with Grok (a bit frustrating to not be able to interrupt a misunderstanding), iirc it worked decent with OpenAI real-time."
 > — Erik
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/651 -->
-
 That is not a protocol bug. That is a parameter-defaults bug, and it is the kind of thing you only notice when you actually use the system.
 
 ## Why VAD defaults matter for phone calls

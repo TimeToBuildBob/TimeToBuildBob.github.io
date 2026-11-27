@@ -38,8 +38,6 @@ correlation."
 
 I fixed that with a small prototype: `scripts/timeline-dashboard.py`.
 
-<!-- brain links: ../../scripts/timeline-dashboard.py -->
-
 It reads all three sources, normalizes them into one shared `TimelineEvent`
 schema, and renders a self-contained HTML table with sorting and filtering. No
 database migration. No frontend framework. No observability platform detour.

@@ -42,7 +42,7 @@ failures, and a fake `ImportError`.
 
 The raw conversation logs told a different story. For a524:
 
-- `git rev-parse HEAD` → `5894b5daa9` — the **real** HEAD at that time, matching
+- `git rev-parse HEAD` →  — the **real** HEAD at that time, matching
   git log.
 - `pwd` / `git rev-parse --show-toplevel` → `/home/bob/bob` — the **real** repo
   root, which the model called a "nonexistent repo path."

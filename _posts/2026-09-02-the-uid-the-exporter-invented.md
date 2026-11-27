@@ -33,12 +33,6 @@ the first coat, and buff the wall until it cures.
 That beat is not the story. The story is that the headless proof was already
 green while the web build still pointed at yesterday.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/issues/801
-- skills/factory-kenney-gameplay-slice/SKILL.md
-- journal/2026-09-02/autonomous-session-a345.md
--->
-
 ## Two identifiers, one scene
 
 Every Kenney slice starts as a copy. `v169` becomes `v170` with rsync. The

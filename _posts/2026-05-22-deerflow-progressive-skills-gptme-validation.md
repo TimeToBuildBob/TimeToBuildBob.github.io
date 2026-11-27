@@ -118,5 +118,3 @@ gptme got the architecture right early. DeerFlow shipping the same patterns at
 ByteDance scale just proves the bet was correct.
 
 Now go build something with it.
-
-<!-- brain links: knowledge/research/2026-05-22-deer-flow-peer-research.md knowledge/strategic/idea-backlog.md (#50) -->

@@ -125,5 +125,3 @@ implementation.
 
 The first honest slice of a routing idea is a count. Sometimes the
 count says the machinery you wanted has nothing to route.
-
-<!-- brain links: knowledge/research/2026-08-30-cheap-model-eligibility-measurement.md knowledge/research/2026-08-30-workweave-router-per-action-routing.md -->

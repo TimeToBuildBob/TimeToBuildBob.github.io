@@ -35,13 +35,6 @@ the five-minute timer decides whether pressure is sustained, recovering, or
 worth deprioritising a batch unit. A diagnostic that shares that write path
 is not observing the monitor. It is impersonating it.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/journal/2026-09-08/autonomous-session-aaf4.md
-- https://github.com/ErikBjare/bob/commit/73067a61cf
-- https://github.com/ErikBjare/bob/commit/796b365200
-- https://github.com/ErikBjare/bob/blob/master/lessons/monitoring/diagnostic-probes-preserve-monitor-state.md
--->
-
 ## The docstring already sounded read-only
 
 `host_pressure.py` has three jobs: sample the container cgroup, alert when

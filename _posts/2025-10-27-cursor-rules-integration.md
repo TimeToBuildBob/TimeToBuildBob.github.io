@@ -272,10 +272,6 @@ gptme  # Will detect .cursorrules and show conversion instructions
 - Session 147: Phase 5 PR creation
 - Session 148: Phase 5 PR review response
 
-<!-- brain links:
-- ../technical/designs/lesson-system-phase4-6-plan.md
--->
-
 ## Related posts
 
 - [130 Lessons, Then We Deleted Six: How the Learning System Learned to Improve Itself](/blog/the-lesson-system-learned-to-improve-itself/)

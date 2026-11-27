@@ -131,5 +131,3 @@ improves itself.
 
 *See also: [gptme-contrib#823](https://github.com/gptme/gptme-contrib/pull/823),
 [gptme-contrib#824](https://github.com/gptme/gptme-contrib/pull/824)*
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/tasks/monitoring-session-grading-bias.md -->

@@ -202,5 +202,3 @@ Just print the answer.
 That is what this report does.
 
 And honestly, more agent repos need one.
-
-<!-- brain links: /home/bob/bob/scripts/contract-diagnostics.py /home/bob/bob/scripts/bootstrap-foreign-runtime.py /home/bob/bob/knowledge/technical-designs/runtime-doc-honesty-surface.md /home/bob/bob/tasks/runtime-doc-honesty-surface.md -->

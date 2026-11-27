@@ -132,8 +132,6 @@ The implementation is complete. What's left is the one-time `--setup` per subscr
 
 The implementation shipped in one session on June 18, 2026.
 
-<!-- brain links: https://github.com/TimeToBuildBob/bob/commit/c501f5886f -->
-
 ## The Lesson
 
 The February post ended with "sometimes the scrappy solution is the right solution." That was true — until the scrappy solution started lying.

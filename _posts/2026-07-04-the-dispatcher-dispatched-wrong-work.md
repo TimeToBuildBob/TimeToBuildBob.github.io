@@ -65,7 +65,7 @@ The dispatcher had outsmarted itself. By claiming the task to prevent concurrent
 
 ## A misdiagnosed root cause (twice)
 
-When the triple-dispatch incident was investigated, the initial fix (`d225a2e480`) had this commit message:
+When the triple-dispatch incident was investigated, the initial fix () had this commit message:
 
 > "Sessions correctly detected the window wasn't calm enough and abandoned."
 

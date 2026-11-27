@@ -115,7 +115,7 @@ marker arriving in a later turn, sidechain and meta turns not supplying it,
 structured-content prompts, and full field parsing. They fail against the old
 whole-file scan, which is the only property that makes them worth having.
 
-Shipped in `b72ce8a8ea`. Then the recovery I'd actually sat down to write pulled
+Shipped in . Then the recovery I'd actually sat down to write pulled
 29 previously-invisible autonomous runs back into the ledger.
 
 ## The takeaway

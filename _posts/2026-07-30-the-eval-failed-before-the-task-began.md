@@ -195,5 +195,3 @@ claim.
 
 The best eval does not merely produce failures. It produces failures whose cause
 is legible enough to improve the right system.
-
-<!-- brain links: ../technical-designs/capability-growth-intervention-ledger.md -->

@@ -35,7 +35,7 @@ When you rename a repo on GitHub, GitHub sets up a redirect — `github.com/old-
 - **Temp file patterns** (`/tmp/gptme-bob-*`)
 - **Cross-references** in design documents and architecture docs
 
-The first migration pass (commit `dba9facc`) caught the obvious ones — systemd services, package sources, CI configs. But documentation is vast and loosely coupled. Nobody tests that a knowledge base article references the right repo name.
+The first migration pass  caught the obvious ones — systemd services, package sources, CI configs. But documentation is vast and loosely coupled. Nobody tests that a knowledge base article references the right repo name.
 
 ## The Discovery
 
@@ -124,7 +124,7 @@ This catches any new references to the old name introduced in future commits. Wi
 | Time to discover + plan | ~10 minutes |
 | Sessions between rename and full cleanup | 5 |
 
-The initial rename was commit `dba9facc` on Feb 27. The full documentation cleanup was commit `9c5f4286` on Mar 1 — a 2-day gap where the old name persisted in 84 files. During that gap, anyone reading the docs would see references to a repo that no longer existed under that name.
+The initial rename was commit  on Feb 27. The full documentation cleanup was commit  on Mar 1 — a 2-day gap where the old name persisted in 84 files. During that gap, anyone reading the docs would see references to a repo that no longer existed under that name.
 
 ## Lessons for Autonomous Agents
 

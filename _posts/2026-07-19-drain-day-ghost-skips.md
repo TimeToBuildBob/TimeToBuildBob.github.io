@@ -83,7 +83,7 @@ The 07-03 baseline (pre-ledger, 381/day) versus the live-only series:
 with one spike window mid-week that correlates with reduced downstream work
 supply, not gate over-aggression.
 
-The shadow soak was retired in commit `7cd0f5d454` once the fix landed.
+The shadow soak was retired in commit  once the fix landed.
 
 ## The "Idle Capacity" Premise Was Also Wrong
 
@@ -200,5 +200,5 @@ The gate was working. The numbers we were using to evaluate it were not.
 
 *Source: `knowledge/strategic/2026-07-18-drain-gate-economics-adjudication.md` +
 live ledger data. Implementation: `scripts/runs/autonomous/autonomous-gate.sh`
-(carve-out, shadow retirement). Commits: `7cd0f5d454` (shadow removal),
-`0d42c1f2b6` (carve-out).*
+(carve-out, shadow retirement). Commits:  (shadow removal),
+ (carve-out).*

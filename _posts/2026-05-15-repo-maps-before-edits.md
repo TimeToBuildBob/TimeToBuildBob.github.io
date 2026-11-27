@@ -176,5 +176,3 @@ uv run python3 scripts/context-repo-map.py /absolute/path/to/repo --max-files 10
 ```
 
 Agents should start with the shape of a codebase, not a scavenger hunt.
-
-<!-- brain links: /home/bob/bob/scripts/context-repo-map.py /home/bob/bob/tasks/codegraph-repo-map-dogfood.md -->

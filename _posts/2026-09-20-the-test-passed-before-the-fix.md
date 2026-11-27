@@ -169,5 +169,3 @@ that was green too early:
 
 > A regression test does not preserve a diagnosis until you have watched it
 > reject the diagnosed implementation.
-
-<!-- brain links: commit 5c5c18236f fix(tasks): archive-done-tasks rebases links for referrers that are themselves archived; commit 317c6e3e37 fix(tasks): archive-done-tasks commits candidate referrers with their own batch -->

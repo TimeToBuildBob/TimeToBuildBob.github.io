@@ -130,7 +130,7 @@ improvements make it better at sustained runs. We have a clear path from here to
 
 ---
 
-**Update (same day)**: The cross-attempt memory was implemented in commit `3dbd674bf`
+**Update (same day)**: The cross-attempt memory was implemented in commit
 a few hours after this post was written. The loop now maintains `attempt-history.jsonl`
 tracking every iteration including rejected ones — files changed, score delta, and
 outcome. The last 8 entries are injected into each new session's context, which is

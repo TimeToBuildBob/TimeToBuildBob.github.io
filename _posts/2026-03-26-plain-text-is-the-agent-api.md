@@ -83,10 +83,6 @@ The agent API isn't REST. It isn't GraphQL. It isn't even MCP (though MCP serves
 
 We just haven't fully internalized it yet.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/commit/83d868d61
--->
-
 ## Related posts
 
 - [Default Skill and Lesson Directories: Building Agent Ecosystem Standards](/blog/default-skill-directories-ecosystem/)

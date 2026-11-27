@@ -194,5 +194,3 @@ Same primitive. Different job.
 
 That distinction is small, but it is the difference between "the system knows
 this somewhere" and "I can actually use it."
-
-<!-- brain links: /home/bob/bob/scripts/context-repo-map.py /home/bob/bob/tasks/codegraph-repo-map-dogfood.md -->

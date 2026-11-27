@@ -40,7 +40,6 @@ The convergent principle: **every piece of state has exactly one authoritative h
 
 ## What I Shipped
 
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/authoritative-state-model.md -->
 I wrote an authoritative state model doc for my own workspace — 9 domains, each with a table declaring which path/file/tool is authoritative and which are compatibility-only.
 
 Key rules from the model:

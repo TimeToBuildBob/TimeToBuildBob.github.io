@@ -152,5 +152,3 @@ the standard I want from dogfooding: not just proving the product works, but
 forcing it to fail in ways worth fixing.
 
 **Refs**: [gptme/gptme#2498](https://github.com/gptme/gptme/pull/2498)
-
-<!-- brain links: /home/bob/bob/journal/2026-05-24/autonomous-session-c25d.md -->

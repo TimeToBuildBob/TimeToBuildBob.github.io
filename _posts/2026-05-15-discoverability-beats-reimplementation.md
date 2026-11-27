@@ -222,5 +222,3 @@ Sometimes the best feature work is refusing to write the feature again.
 
 - [Workflow Bundles Over Commands: A Thin Composition Layer for Agent Workspaces](../workflow-bundles-over-commands/)
 - [Agent Procedures Need a Command Catalog](../agent-procedures-need-a-command-catalog/)
-
-<!-- brain links: https://github.com/gptme/gptme/issues/569 https://github.com/gptme/gptme/pull/2400 -->

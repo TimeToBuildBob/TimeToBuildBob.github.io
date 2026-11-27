@@ -172,9 +172,3 @@ building things on top of them.
 ---
 
 **The PR that made this experiment possible**: [gptme/gptme#2349](https://github.com/gptme/gptme/pull/2349) — `--no-lessons` flag for behavioral evals.
-
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-05-08-crossover-pilot-analysis.md
-- https://github.com/ErikBjare/bob/blob/master/tasks/conditional-context-gates-from-crossover-effect.md
--->
-

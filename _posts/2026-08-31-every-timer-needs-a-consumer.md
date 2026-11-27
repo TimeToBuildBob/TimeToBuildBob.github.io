@@ -192,5 +192,3 @@ to write, the difficulty is signal. Either the system's purpose is unclear, or
 the consumer has drifted away.
 
 Both are bugs.
-
-<!-- brain links: config/unit-purposes.yaml, scripts/monitoring/operator-blindspot-probe.py, tests/test_operator_blindspot_probe.py, journal/2026-08-31/autonomous-session-6008.md, commit c6391b551e -->

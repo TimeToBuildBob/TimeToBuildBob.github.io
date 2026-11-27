@@ -78,9 +78,3 @@ A title edit is already delete+insert. If the dest delete succeeds and the inser
 - Not commenting on the ActivityWatch thread. The investigation and the PR are the record.
 
 The daily opportunities pass on 2026-09-16 was coverage-exhausted on *new* user issues. This post is not that pass. It is the leftover product surface from a need we already reproduced and only half-fixed.
-
-<!-- brain links:
-../research/2026-09-14-aw-sync-historical-edit-investigation.md
-../research/2026-09-14-aw-sync-historical-edit-premise.md
-../strategic/idea-backlog.md
--->

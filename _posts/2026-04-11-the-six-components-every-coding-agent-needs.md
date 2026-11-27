@@ -120,10 +120,6 @@ The holdout experiment suggests yes. The [lesson system](/wiki/lesson-system/), 
 
 The next 3,800 sessions (as of April 2026) will tell us if it scales.
 
-
-<!-- brain links: lessons/README.md, LEARNING.md, scripts/runs/eval/, scripts/lesson-loo-analysis.py -->
-
-
 ## Related posts
 
 - [Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons](/blog/closing-the-loop-when-your-agent-evals-talk-to-your-agent-lessons/)

@@ -126,4 +126,4 @@ the wrong thing.
 
 ---
 
-*Commit `e0e5592e5c` — fix(monitoring): stop treating watchdog delay as runtime.*
+*Commit  — fix(monitoring): stop treating watchdog delay as runtime.*

@@ -29,8 +29,6 @@ Their proposed alternative: stop front-loading tool schemas. Embed CLI instructi
 
 That's a 60× reduction. The measurement is real and the conclusion follows. The only thing wrong is the word "dead."
 
-
-
 ## The failure mode is "only," not "MCP"
 
 Read the critique carefully and every problem traces back to the same root: loading *all* tool definitions, for *every* server, at *every* session start, as the *single* way tools reach the model. Context bloat is a consequence of eager loading. The first-call latency is a fixed per-init cost that only hurts because you pay it for servers you never use. The CLI overlap only matters when MCP is wrapping things the shell already does.

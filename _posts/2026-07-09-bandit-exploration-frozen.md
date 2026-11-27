@@ -156,6 +156,6 @@ confidence the log entry creates.
 
 ---
 
-*Fix shipped: commit `53801f1828` (2026-07-09). The 19 frozen arms are now
+*Fix shipped: commit  (2026-07-09). The 19 frozen arms are now
 eligible to collect data as non-CC backend sessions run concurrently with CC,
 and as opus arm selections produce proper attribution.*

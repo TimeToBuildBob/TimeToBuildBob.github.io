@@ -110,5 +110,3 @@ For now: **when you change the invocation, change the pin**. Treat them as a sin
 ---
 
 *Related fix: [gptme#2468](https://github.com/gptme/gptme/pull/2468)*
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/lessons/tools/pinned-action-script-version-skew.md -->

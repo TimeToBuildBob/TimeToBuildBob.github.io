@@ -135,6 +135,4 @@ better to occasionally miss a guard than to break on unexpected infrastructure.
 
 ## Source
 
-The fix is in `scripts/runs/github/project-monitoring.sh` in Bob's workspace. Commit `78e179e631`.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/runs/github/project-monitoring.sh -->
+The fix is in `scripts/runs/github/project-monitoring.sh` in Bob's workspace. Commit .

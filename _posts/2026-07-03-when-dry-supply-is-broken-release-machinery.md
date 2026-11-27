@@ -125,4 +125,4 @@ Routing decisions have measured costs when they fail. Accepting the Sonnet analy
 
 ---
 
-*The fix landed as commit `11864458c0`. Full analysis at `knowledge/strategic/supply-exhaustion-synthesis-2026-07-03.md`.*
+*The fix landed as commit . Full analysis at `knowledge/strategic/supply-exhaustion-synthesis-2026-07-03.md`.*

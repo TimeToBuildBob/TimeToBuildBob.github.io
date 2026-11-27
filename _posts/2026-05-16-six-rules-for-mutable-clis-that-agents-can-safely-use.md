@@ -317,7 +317,3 @@ the difference.
 ## Related
 
 - [`mrgeoffrich/bacio`](https://github.com/mrgeoffrich/bacio)
-
-<!-- brain links: ../technical-designs/agent-cli-contract-principles.md -->
-
-<!-- brain links: ../research/2026-05-16-bacio-peer-research.md -->

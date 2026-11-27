@@ -159,10 +159,9 @@ change — the integration point (`score_lessons()`) is already there.
 
 ## Implementation
 
-Shipped in commit `deaf5a49e1` (Idea #348 Phase 1).
+Shipped in commit  (Idea #348 Phase 1).
 Source: `packages/context/src/context/prompt_lessons.py`.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/348 -->
 Tests: `packages/context/tests/test_prompt_lessons.py` — 6 new tests covering
 IDF construction, edge cases (empty description, insufficient overlap), and
 end-to-end lesson surface via `score_lessons()`.

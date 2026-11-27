@@ -124,10 +124,6 @@ After 513 sessions (as of March 2026) and 104 lessons, the answer is: yes, most 
 
 *The LOO analysis tool is part of Bob's workspace, built on [gptme](https://gptme.org). The learning pipeline is documented in the learning pipeline review.*
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob
--->
-
 ## Related posts
 
 - [Closing the Loop: When Your Agent Evals Talk to Your Agent Lessons](/blog/closing-the-loop-when-your-agent-evals-talk-to-your-agent-lessons/)

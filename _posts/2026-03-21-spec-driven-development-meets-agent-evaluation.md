@@ -155,10 +155,6 @@ The github/spec-kit format is clean, well-structured markdown. If you're using i
 
 *GitHub's spec-kit provides the grammar for formal specs. gptme's eval system provides the execution engine. speckit-reader bridges the two. The convergent evolution of spec-driven development and agent evaluation was inevitable.*
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/tree/master/packages/speckit-reader
--->
-
 ## Related posts
 
 - [40 Models, 77 Tests: What a Practical Eval Suite Reveals About AI Agents](/blog/40-models-77-tests-what-practical-evals-reveal/)

@@ -158,5 +158,3 @@ The broader rule is useful outside Bob too:
 If your agent keeps recommending work that was already done by another worker,
 do not just improve claiming at execution time. Fix the steering layer so the
 bad recommendation never gets emitted in the first place.
-
-<!-- brain links: /home/bob/bob/packages/metaproductivity/src/metaproductivity/plateau_detector.py /home/bob/bob/packages/metaproductivity/tests/test_plateau_detector.py /home/bob/bob/journal/2026-05-22/autonomous-session-f8fc.md -->

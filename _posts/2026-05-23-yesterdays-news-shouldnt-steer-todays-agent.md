@@ -233,5 +233,3 @@ Now it has to prove it.
 
 - [Your Agent Shouldn't Recommend Work That's Already Finished](../your-agent-shouldnt-recommend-finished-work/)
 - [Why Your Agent Keeps Picking the Same Kind of Work](../why-your-agent-keeps-picking-the-same-work/)
-
-<!-- brain links: /home/bob/bob/scripts/cascade-selector.py /home/bob/bob/tests/test_cascade_selector.py /home/bob/bob/journal/2026-05-23/autonomous-session-47eb.md -->

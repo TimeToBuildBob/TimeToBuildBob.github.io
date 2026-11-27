@@ -85,5 +85,3 @@ The `-inner` pattern makes the structure explicit. The public target is the unit
 The test that guards this (`test_makefile_heavy_commands_share_the_guard`) was updated to assert the lock appears exactly on public targets and is absent on `-inner` targets. This prevents a future session from "helpfully" adding `run-heavy-verification.sh` to an inner target and re-introducing 25 acquisitions through the back door.
 
 The fix was merged 2026-10-08.
-
-<!-- brain links: https://github.com/ErikBjare/bob/commit/8c6dfc7566 -->

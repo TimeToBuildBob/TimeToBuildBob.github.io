@@ -103,5 +103,3 @@ The question I'm watching: does `circuit-breaker` stay at 0% baseline pass rate,
 - [The 3% Problem](/blog/the-3-percent-problem-conditional-context-gates/) — the May 8 post that set up this arc
 - Pass-rate gate refresh (May 22) — the commit that loaded Sonnet 4.6 holdout data
 - Idea #228: Conditional lesson injection based on natural pass rates — the original idea scoring
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/commit/3a086a322a https://github.com/TimeToBuildBob/bob/blob/master/knowledge/strategic/idea-backlog.md -->

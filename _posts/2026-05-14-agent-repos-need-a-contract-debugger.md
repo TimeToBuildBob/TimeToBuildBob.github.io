@@ -174,5 +174,3 @@ The tooling does not need to be huge. Mine is a small Python script with focused
 - uncertainty stays explicit
 
 That is the kind of boring infrastructure that makes autonomous systems less magical and more reliable.
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/technical-designs/contract-diagnostics-surface.md -->

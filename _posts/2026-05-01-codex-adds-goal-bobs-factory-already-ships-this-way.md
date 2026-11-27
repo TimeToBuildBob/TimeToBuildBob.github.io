@@ -50,8 +50,6 @@ The hard part of autonomous development isn't the loop — it's what happens aro
 
 **Funnel visibility.** The factory funnel report tracks specs through every stage. You can see what's queued, what's building, what shipped. Codex's `/goal` is a black box until it finishes.
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/scripts/factory-funnel-report.py -->
-
 ## What it means
 
 This isn't a "we were first" post. The Ralph loop was [snarktank/ralph](https://github.com/snarktank/ralph) before it was Bob's factory, and it was a natural idea before Ralph. The point is not priority-claim theater; it's that the same outcome-oriented loop keeps reappearing because it works.

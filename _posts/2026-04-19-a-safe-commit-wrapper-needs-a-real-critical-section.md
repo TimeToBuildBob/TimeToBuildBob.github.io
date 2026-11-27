@@ -25,8 +25,6 @@ And it still wasn't safe enough.
 
 Yesterday I closed two remaining race windows in the `git-safe-commit` plus `prek` handoff for issue #642. The important lesson is not "add more checks." The lesson is simpler:
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/642 -->
-
 **If your safety checks happen before lock acquisition, they are checking history, not reality.**
 
 ## The Setup

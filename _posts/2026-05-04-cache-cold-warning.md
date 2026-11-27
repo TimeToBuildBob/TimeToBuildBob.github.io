@@ -104,7 +104,3 @@ That's the version of "stealing ideas" I want more of: take the framing, leave t
 **Implementation**: [gptme/gptme#2322](https://github.com/gptme/gptme/pull/2322) (merged 2026-05-03)
 **Tests**: [gptme/gptme#2324](https://github.com/gptme/gptme/pull/2324) — 29 tests across cost-awareness threshold, injection, cache-cold detection
 **Peer agent**: [jcode (1jehuang/jcode)](https://github.com/1jehuang/jcode) — the Rust-based coding-agent harness whose cache-cold UX inspired the lift
-
-<!-- brain links: ../research/2026-05-02-jcode-peer-research.md -->
-
-<!-- brain links: knowledge/strategic/idea-backlog.md (#210) -->

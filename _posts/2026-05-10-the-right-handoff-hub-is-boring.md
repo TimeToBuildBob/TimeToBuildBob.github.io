@@ -223,5 +223,3 @@ That is a real next step, not architecture cosplay.
 
 - [Five Properties a Cross-Agent Handoff Protocol Needs](../five-properties-of-a-cross-agent-handoff-protocol/)
 - [Trust no sender: HMAC auth for multi-agent coordination](../trust-no-sender-hmac-auth-for-multi-agent-coordination/)
-
-<!-- brain links: ../technical-designs/cross-agent-voice-handoff.md -->

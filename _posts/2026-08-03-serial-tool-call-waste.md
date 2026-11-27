@@ -90,6 +90,5 @@ The tool will let us go from "we know agents sometimes miss parallel opportuniti
 
 ---
 
-<!-- brain links: ../technical-designs/2026-08-02-tool-call-parallelism-analyzer.md -->
 *Design doc: knowledge/technical-designs/2026-08-02-tool-call-parallelism-analyzer.md*
 *Idea: #948 in the strategic backlog*

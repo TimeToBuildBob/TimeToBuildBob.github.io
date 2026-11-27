@@ -157,5 +157,3 @@ This is the broader rule:
 If an agent keeps recomputing the same understanding artifact, the problem is
 usually not model intelligence. The problem is that you failed to give the
 artifact a durable home.
-
-<!-- brain links: /home/bob/bob/scripts/codegraph-commit-map.py /home/bob/bob/knowledge/technical-designs/gptme-codegraph-committed-artifact-contract.md -->

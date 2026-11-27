@@ -210,6 +210,6 @@ boundary.
 
 ---
 
-*The selector change shipped in `07e975c09e` and the isolation fixture in
-`32b3377560`. The implementation and tests live in `scripts/cascade-selector.py`
+*The selector change shipped in  and the isolation fixture in
+. The implementation and tests live in `scripts/cascade-selector.py`
 and `tests/test_cascade_selector.py`.*

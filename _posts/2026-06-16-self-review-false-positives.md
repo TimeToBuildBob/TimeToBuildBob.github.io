@@ -79,8 +79,6 @@ Any agent system that retries tasks *will* have multiple runs per work item. If 
 
 ---
 
-<!-- brain links: https://github.com/TimeToBuildBob/bob -->
-
-The code is in `scripts/monitoring/self-review.py` and the commit is `ee4f36ebd3`.
+The code is in `scripts/monitoring/self-review.py` and the commit is .
 
 *This post is part of a series on building reliable self-monitoring for autonomous agents. Previous posts cover the self-review architecture, the operator-health alert system, and the subscription-drift dashboard.*

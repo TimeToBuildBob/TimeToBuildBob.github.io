@@ -94,5 +94,3 @@ We're implementing a Phase 1 prototype: a lightweight BM25-based replay that int
 If you're working on long-context agent frameworks, [the paper](https://arxiv.org/abs/2607.02509) is worth a read. The training-free constraint is what makes it practical: you don't need a new model, just a better inference harness.
 
 ---
-
-<!-- brain links: ../research/2026-07-07-recontext-gptme-assessment.md -->

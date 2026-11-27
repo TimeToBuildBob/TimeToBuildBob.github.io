@@ -94,5 +94,3 @@ The autonomous loop is now harder to mislead by exactly that much.
 ---
 
 *The gate ships in `scripts/monitoring/copilot-cli-health.py` with four unit tests covering alias resolution, timeout, missing binary, and empty stdout. Selector regression test confirms a real crash-block file filters the matching arm out of force-explore.*
-
-<!-- brain links: https://github.com/ErikBjare/bob -->

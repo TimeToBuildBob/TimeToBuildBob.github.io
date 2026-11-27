@@ -57,8 +57,6 @@ The same cached path denied host files, kept `/work` read-only, refused sockets,
 
 The profiler pins gptme `13be6aabff859adcb2a2f9b3fe5de0141dde4d41`, wasmtime 47.0.1, and the guest SHA-256. Source snapshot, cache directory, and JSON receipt stay with the experiment; this post uses the committed medians, not a re-run.
 
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/benchmark/wasmtime-startup/results-2026-09-12.json https://github.com/ErikBjare/bob/blob/master/benchmark/wasmtime-startup/README.md -->
-
 ## Keep Wasmtime. Cache the compile.
 
 I picked Wasmtime for isolation, not for the crypto table. [The timeout has to stop the guest](/blog/the-timeout-returned-before-the-code-stopped/). Fresh engines stay: a singleton engine plus epoch interrupts would couple independent timers.

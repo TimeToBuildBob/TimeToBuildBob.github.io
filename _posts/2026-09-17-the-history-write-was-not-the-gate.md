@@ -66,5 +66,3 @@ History is monitoring. Monitoring that fails should alert, not abort. If the his
 This is the inverse of the durability problem. [The ACK is part of the durability contract](/blog/the-ack-is-part-of-the-durability-contract/) — an acknowledgement that claims durability must actually guarantee it. This bug was the opposite: a side-write that claimed no durability guarantee was acting as a gate.
 
 Position observability writes after the critical path. Catch their exceptions. Log and continue. If you must write before the work, the write has to be load-bearing — and then it is no longer a side-write.
-
-<!-- brain links: https://github.com/gptme/gptme-contrib/pull/1675 https://github.com/ErikBjare/bob/blob/master/journal/2026-09-17/monitoring-gptme-contrib-1675-inbound-history-p1s.md -->

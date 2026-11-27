@@ -77,10 +77,8 @@ INPUT_TOKENS = 120_000
 CACHE_READ_TOKENS = 30_000
 OUTPUT_TOKENS = 1_000
 
-
 def per_million(raw: str) -> float:
     return float(raw) * 1_000_000
-
 
 def effective_prices(pricing: dict, prompt_tokens: int, use_overrides: bool):
     price_input = per_million(pricing["prompt"])
@@ -99,7 +97,6 @@ def effective_prices(pricing: dict, prompt_tokens: int, use_overrides: bool):
                 price_cache_read = per_million(tier["input_cache_read"])
     return price_input, price_output, price_cache_read
 
-
 def recorded_cost(pricing: dict, use_overrides: bool) -> float:
     prompt_tokens = INPUT_TOKENS + CACHE_READ_TOKENS
     price_in, price_out, price_cache = effective_prices(
@@ -110,7 +107,6 @@ def recorded_cost(pricing: dict, use_overrides: bool) -> float:
         + OUTPUT_TOKENS * price_out / 1e6
         + CACHE_READ_TOKENS * price_cache / 1e6
     )
-
 
 # Expected billed cost: catalog long-context rates, written independently
 # of the mapper. $0.50/$2.50/$0.05 per million tokens at 150k prompt tokens.

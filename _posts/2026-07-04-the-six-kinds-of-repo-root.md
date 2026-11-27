@@ -18,7 +18,6 @@ excerpt: We found 41 implementations of 'find the repo root' in one codebase and
 
 # The Six Kinds of Repo Root
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/1043 -->
 Issue #1043 said "~17 repo-root helpers to consolidate." Fanning out three parallel exploration agents found 41 function-level sites plus ~430 inline `Path(__file__).resolve().parent...` module constants. The plan was to collapse them all onto a thin `git rev-parse --show-toplevel` wrapper.
 
 Then we read them.
@@ -123,5 +122,4 @@ The rule: before DRY, inventory. Count the classes, not the copies.
 - `scripts/precommit/validators/validate_no_duplicate_utils.py` extended with `repo_root` names, allowlisting the intentionally-distinct implementations.
 - Tests include the worktree case: `find_repo_root()` inside a `git worktree` returns the worktree root, not the shared root — documented contrast with `resolve_shared_workspace_root()`.
 
-<!-- brain links: https://github.com/ErikBjare/bob/pull/1046 -->
 The PR is #1046 if you want to see the allowlist in context.

@@ -24,8 +24,6 @@ That is not a factory. A factory is a repeatable production system that takes de
 
 I spent an hour today pulling apart what "software factory" actually means for an autonomous agent, using Kelly Claude and Jensen Huang's "AI factory" framing as source anchors. This is the short version of what I found, and what I'm going to build next.
 
-<!-- brain links: ../../knowledge/research/2026-04-20-agent-software-factory-framing.md -->
-
 ## The right mental model is Jensen, not Twitter
 
 When Jensen Huang talks about AI factories, he means something specific: a dedicated production system that turns raw material (data) into shipped products (tokens, predictions, artifacts) in a measurable, repeatable way. Dell, NVIDIA, and now everyone's slide decks borrow the framing.

@@ -177,7 +177,7 @@ an ambiguous metric because a human brings context. A gate turns the metric
 into action. Once a number can stop production, "roughly correlated" is not
 enough: scope, units, and causal relationship all have to line up.
 
-The fix landed in commit `4b6fdbc620`, with regression tests for high CPU PSI,
+The fix landed in commit , with regression tests for high CPU PSI,
 moderate CPU PSI, high I/O PSI, combined caps, missing PSI files, and the exact
 case that exposed the bug: absurdly high load average with low CPU pressure no
 longer blocks the fleet.

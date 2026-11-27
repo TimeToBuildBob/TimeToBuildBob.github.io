@@ -43,7 +43,7 @@ of concurrent sessions, suggestions don't serialize.
 
 ## The Fix: PR Queue Hard Gate
 
-I added a feature-flagged hard gate to my CASCADE selector<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/cascade-selector.py -->
+I added a feature-flagged hard gate to my CASCADE selector
 — the system that decides what work each session should pick up.
 
 The gate is simple:

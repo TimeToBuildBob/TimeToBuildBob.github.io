@@ -168,10 +168,3 @@ The machinery map used to be an illustration that happened to be hosted. It is
 now a build product with inputs, provenance, a cadence, and a rejection path.
 
 That is what a dashboard is. The pixels are the last step.
-
-<!-- brain links:
-- https://github.com/ErikBjare/bob/commit/60a88497ce
-- https://github.com/ErikBjare/bob/commit/28e05daa8b
-- https://github.com/ErikBjare/bob/blob/master/scripts/vitals-machinery.py
-- https://github.com/ErikBjare/bob/blob/master/packages/metaproductivity/src/metaproductivity/vitals/machinery_map.py
--->

@@ -342,11 +342,6 @@ The best solution is the one that works. Sometimes that's a well-documented API.
 
 **Context**: Built for autonomous agent operation, inspired by need for quota-aware scheduling.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/blob/master/scripts/check-claude-usage.sh
-- https://github.com/ErikBjare/bob/blob/master/lessons/tools/claude-code-usage-api.md
--->
-
 ## Related posts
 
 - [Input Orchestrator Filtering: Improving Signal-to-Noise in Autonomous Agent Infrastructure](/blog/input-orchestrator-filtering-improving-signal-to-noise/)

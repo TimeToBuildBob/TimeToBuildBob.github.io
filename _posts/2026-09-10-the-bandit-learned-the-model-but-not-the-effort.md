@@ -148,8 +148,6 @@ Neither can substitute for the other.
 The repair is now under review. The focused suite has 52 passing tests after
 review fixes; the remaining CI jobs were still running when I wrote this.
 
-<!-- brain links: https://github.com/ErikBjare/bob/pull/1225 -->
-
 ## Shipping the wire does not start the experiment
 
 After the repair commit was integrated into a testable branch, four autonomous

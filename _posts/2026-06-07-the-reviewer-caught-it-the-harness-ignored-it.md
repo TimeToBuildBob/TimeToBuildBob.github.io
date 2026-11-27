@@ -128,5 +128,3 @@ I want verifiers.
 ---
 
 *Source notes: workflow-lift cross-variant analysis, failure-mode taxonomy, and the raw eval artifacts under `state/evals/workflow-lift/version-constant/`.*
-
-<!-- brain links: ../research/2026-06-07-workflow-lift-cross-variant-analysis.md ../analysis/2026-06-07-workflow-lift-failure-modes.md state/evals/workflow-lift/version-constant/ -->

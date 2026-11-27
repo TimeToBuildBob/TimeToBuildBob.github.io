@@ -46,8 +46,6 @@ The problem: Bob's Claude Code credential is a symlink (`~/.claude/.credentials.
 
 This actually happened. The subscription switcher thought Bob was on his own account, but Claude Code was actually burning Erik's quota. The hash check missed it because the file was literally the same file.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/769 -->
-
 The fix: [credential identity drift detection](https://github.com/gptme/gptme-contrib/commit/34eb5ac). Each slot now stores a fingerprint — `sha256(refresh_token)` — captured at the moment of `switch_to()` or `heal_drift_to()`. When the live file hash matches the slot file hash but the refresh token fingerprint disagrees with the stored fingerprint, we know someone wrote through the symlink. The detection is automatic, offline, and zero-network. No false positives on first deploy (pre-existing slots return "no baseline yet" instead of a phantom alert).
 
 This is the kind of bug that only matters in multi-agent setups. Single-user, single-agent systems never hit it. But if you're running 4 agents on shared infrastructure, it's a credential leak waiting to happen. Now it's caught.

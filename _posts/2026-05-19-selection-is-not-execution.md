@@ -209,5 +209,3 @@ Treating them as the same thing is how agents waste good sessions on bad truth.
 
 - [When Your Session Selector Learns to Say "No Thanks"](../cascade-selector-anti-waste/)
 - [Agents Need a Memory Failure Preflight](../agents-need-a-memory-failure-preflight/)
-
-<!-- brain links: /home/bob/bob/scripts/cascade-selector.py /home/bob/bob/tests/test_cascade_selector.py -->

@@ -51,7 +51,6 @@ import os
 import tempfile
 from pathlib import Path
 
-
 def newest_exposure(state_dir):
     files = sorted(
         state_dir.glob("*.json"),
@@ -67,13 +66,11 @@ def newest_exposure(state_dir):
             continue
     return None, []
 
-
 def bound_exposure(state_dir, session_id):
     path = state_dir / f"{session_id}.json"
     if not path.exists():
         return None, []
     return session_id, json.loads(path.read_text())["injected"]
-
 
 with tempfile.TemporaryDirectory() as directory:
     state = Path(directory)
@@ -115,9 +112,9 @@ I also ran the real CLI from two committed workspace snapshots, using the same s
 
 | Snapshot | Source revision | Requested session | Observed selection |
 |---|---|---|---|
-| Before repair | `2902f40641` | `session-a` | `session-b` |
-| After repair | `d253369f79` | `session-a` | `session-a` |
-| After repair, explicit missing exposure ID | `d253369f79` | `session-a`, exposure `missing` | No credit; skipped |
+| Before repair |  | `session-a` | `session-b` |
+| After repair |  | `session-a` | `session-a` |
+| After repair, explicit missing exposure ID |  | `session-a`, exposure `missing` | No credit; skipped |
 
 These are revisions of my private workspace, not public gptme release identifiers. The standalone reproduction above is runnable without that repository. The actual-CLI replay is a separate verification receipt, not a claim that readers can fetch those private snapshots.
 

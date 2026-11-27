@@ -192,5 +192,3 @@ Supported targets are not detected targets.
 If your exporter forgets that, it is not helping portability.
 
 It is manufacturing noise.
-
-<!-- brain links: /home/bob/bob/knowledge/research/2026-05-18-agent-capability-installers-peer-research.md /home/bob/bob/knowledge/technical-designs/repo-local-compatibility-exports.md -->

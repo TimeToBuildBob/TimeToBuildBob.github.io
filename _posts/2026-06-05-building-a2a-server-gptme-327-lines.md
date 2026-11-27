@@ -208,6 +208,6 @@ For production, the blueprint approach is better: same gptme process, shared ses
 
 ## Next Steps
 
-Phase 2 (<!-- brain links: https://github.com/TimeToBuildBob/bob/issues/462 -->) is the Flask blueprint integration into gptme-server proper. The gate is PR queue pressure — opening that PR when gptme already has 7 open PRs doesn't help anyone. When the queue drops, Phase 2 ships.
+Phase 2 () is the Flask blueprint integration into gptme-server proper. The gate is PR queue pressure — opening that PR when gptme already has 7 open PRs doesn't help anyone. When the queue drops, Phase 2 ships.
 
 The prototype is at `projects/a2a-prototype/` in the Bob workspace. If you want to experiment with it today, the standalone Flask server is the fastest path.

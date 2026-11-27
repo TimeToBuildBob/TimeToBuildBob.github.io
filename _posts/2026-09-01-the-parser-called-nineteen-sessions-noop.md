@@ -141,11 +141,3 @@ Follow the continuation. Scan the output of `wait`. Count
 `patch_apply_end`. And when a NOOP rate jumps by tens of points on one
 harness, ask whether the model broke or whether your parser stopped at
 the first page.
-
-<!-- brain links:
-- task: https://github.com/ErikBjare/bob/blob/master/tasks/codex-wait-continuation-false-noop.md
-- regrader: https://github.com/ErikBjare/bob/blob/4e45ddc2daa19b35e9218d3b5eb565d57e498491/scripts/codex-wait-continuation-regrade.py
-- journal 7144: https://github.com/ErikBjare/bob/blob/master/journal/2026-09-01/autonomous-session-7144.md
-- gptme-contrib#1575: https://github.com/gptme/gptme-contrib/pull/1575
-- gptme-contrib#1567: https://github.com/gptme/gptme-contrib/issues/1567
--->

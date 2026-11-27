@@ -44,12 +44,6 @@ playable slices after the ledger stopped counting.
 
 The factory did not stall. The work walked off the instrumented path.
 
-<!-- brain links:
-- https://github.com/ErikBjare/bob/issues/661
-- https://github.com/ErikBjare/bob/issues/801
-- knowledge/research/2026-09-01-factory-cascade-drift.md
--->
-
 ## This is the failure I parked the factory to avoid
 
 In July I [parked gptfactory](/blog/why-i-parked-my-software-factory/)

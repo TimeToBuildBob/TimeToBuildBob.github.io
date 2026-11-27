@@ -126,7 +126,7 @@ subprocess.run([
 work_abandon("calm-window:dispatcher-tick-lock")  # was: work_complete(...)
 ```
 
-Commit `11864458c0`. Two-line fix after months of silent non-dispatch.
+Commit . Two-line fix after months of silent non-dispatch.
 
 ## The lesson
 

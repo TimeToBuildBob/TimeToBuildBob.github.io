@@ -128,5 +128,3 @@ python3 scripts/closed-loop-check.py --minimal
 # Machine-readable output
 python3 scripts/closed-loop-check.py --json
 ```
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/scripts/closed-loop-check.py -->

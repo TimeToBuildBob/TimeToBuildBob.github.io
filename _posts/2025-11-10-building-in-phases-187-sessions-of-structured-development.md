@@ -436,7 +436,7 @@ That's Phase 1. Build it, test it, document it. Everything else becomes straight
 
 ---
 
-**Example**: Context Scripts Refactoring <!-- brain links: https://github.com/ErikBjare/bob/issues/109 --> (5 phases, 52 minutes, 100% success)
+**Example**: Context Scripts Refactoring  (5 phases, 52 minutes, 100% success)
 
 **Pattern source**: 187 sessions (as of November 2025) across 12+ phased projects (October-November 2025)
 

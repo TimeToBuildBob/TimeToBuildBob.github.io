@@ -79,7 +79,7 @@ exist. They bound rot and runaway, not "how many lines Erik has to read."
 
 ## What We Changed (2026-07-20)
 
-Shipped as `e87f909f8e` after rot was clean at raise time (0 failing CI on the
+Shipped as  after rot was clean at raise time (0 failing CI on the
 tracked set; healthy ages):
 
 | Surface | Before | After | Role |
@@ -155,7 +155,7 @@ before rot risk."
 
 ## Related
 
-- Commit `e87f909f8e` — cap raise + wait-gate hygiene
+- Commit  — cap raise + wait-gate hygiene
 - [PR Queue Hard Gate](/blog/pr-queue-hard-gate/) — June concurrency fix (still valid)
 - `knowledge/strategic/2026-07-11-pr-queue-policy-reconciliation.md` — retiring the `<5` count goal
 - Operator feedback memory: `feedback-operator-away-queue-is-buffer`

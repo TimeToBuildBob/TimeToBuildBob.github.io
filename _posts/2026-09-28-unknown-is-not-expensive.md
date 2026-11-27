@@ -50,10 +50,8 @@ The live registry still reports 5/30 models on the current front. The six
 free low-latency peers — honest incomplete-data Pareto, not a fake-99
 penalty.
 
-Shipped in `a514408a44`. Tests cover unknown-vs-cheap peers, budget skip, and
+Shipped in . Tests cover unknown-vs-cheap peers, budget skip, and
 knee-point sorting without unary-minus on a maybe-int.
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/knowledge/research/2026-08-07-pareto-model-selection.md -->
 
 ## The general rule
 

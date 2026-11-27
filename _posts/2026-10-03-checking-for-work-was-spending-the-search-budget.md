@@ -71,7 +71,7 @@ This draft stays unpublished until those behaviors are verified. The useful desi
 ## Postscript (2026-11-10)
 
 The four gaps above were repaired **the same day** this was written. Session `c456`
-landed `c92eb5e8a6` ("make the demand-supply cache failure-safe and coalescing"):
+landed  ("make the demand-supply cache failure-safe and coalescing"):
 
 - an `flock` lock whose killed owner releases it; a contention timeout now falls back
   to the last success instead of launching a second scan;

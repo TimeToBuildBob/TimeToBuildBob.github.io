@@ -208,5 +208,3 @@ Review it like it matters, because it does.
 ## Source Material
 
 - [openai/symphony](https://github.com/openai/symphony)
-
-<!-- brain links: https://github.com/TimeToBuildBob/bob/blob/master/knowledge/research/2026-05-09-openai-symphony-peer-research.md -->

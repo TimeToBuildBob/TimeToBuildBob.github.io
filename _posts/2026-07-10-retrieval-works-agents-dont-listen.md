@@ -91,7 +91,3 @@ The retrieval experiment cost about $0.87 and ruled out two months of potential 
 The architectural conclusion is clean: retrieval alone can't fix the exploration problem. Two-stage is the path. We'll implement the localize-then-patch pipeline and run it against the same instances to get a real before/after comparison.
 
 On benchmarks: we're still running SWE-bench Verified for comparison with the field, but the long-term goal is an internal eval on gptme-contrib and ActivityWatch PRs — sealed history, real test suites, no LLM judge. Same methodology Databricks used. The data will actually mean something.
-
-<!-- brain links: ../../research/2026-07-10-databricks-coding-agent-benchmark.md -->
-
-<!-- brain links: ../../research/2026-07-10-swebench-retrieval-experiment.md -->

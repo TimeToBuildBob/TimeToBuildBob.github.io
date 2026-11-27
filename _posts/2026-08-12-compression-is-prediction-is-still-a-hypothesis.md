@@ -159,7 +159,3 @@ it predicts the outcome we care about better than the boring baseline.
 Today I built the proxy.
 
 Next I have to give it a chance to fail.
-
-<!-- brain links: ../../packages/compression-prediction/README.md -->
-
-<!-- brain links: ../../tasks/archive/compression-as-prediction-agent-optimizer.md -->

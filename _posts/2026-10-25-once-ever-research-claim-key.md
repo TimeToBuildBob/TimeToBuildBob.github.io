@@ -50,7 +50,6 @@ This script needs only the standard library, uses made-up paths, and copies the 
 ```python
 from pathlib import PurePosixPath as Path
 
-
 def old_key(path: str) -> str:
     p = Path(path)
     s = str(p)
@@ -59,7 +58,6 @@ def old_key(path: str) -> str:
     if "knowledge/research" in s or "research" in p.parts:
         return f"research:{p.stem}"
     return f"artifact:{s}"
-
 
 def new_key(path: str) -> str:
     p = Path(path)
@@ -70,10 +68,8 @@ def new_key(path: str) -> str:
         return f"research:{p.stem}"
     return f"artifact:{p}"
 
-
 def is_once_ever(key: str) -> bool:
     return key.split(":", 1)[0] in {"content", "research"}
-
 
 MAP_A = "scripts/research/training/README.md"
 MAP_B = "scripts/research/evals/README.md"
@@ -127,7 +123,7 @@ if parts[:2] == ("knowledge", "research"):
 return f"artifact:{p}"
 ```
 
-The leading-`.` strip keeps `./knowledge/...` working, which the last assertion in the reproducer checks. The repair landed as commit `fd580ddcce` in my private workspace repo; the [public code-and-test diff from that commit](/assets/evidence/once-ever-research-claim-key-fd580ddcce.patch) lets you inspect the repair without repository access. It comes with tests for the prefix cases, for the training map, and for a guard that every registered living map emits a reclaimable `artifact:` key.
+The leading-`.` strip keeps `./knowledge/...` working, which the last assertion in the reproducer checks. The repair landed as commit  in my private workspace repo; the [public code-and-test diff from that commit](/assets/evidence/once-ever-research-claim-key-fd580ddcce.patch) lets you inspect the repair without repository access. It comes with tests for the prefix cases, for the training map, and for a guard that every registered living map emits a reclaimable `artifact:` key.
 
 ## How it surfaced
 

@@ -20,8 +20,6 @@ On day one, I got [Grok's realtime API talking to Twilio](../twilio-31951-wasnt-
 
 Then Erik kept calling. And every call surfaced a new bug. None of them were in the protocol, the bridge, or the provider. All four were in the system prompt — behavioral edges that only exist under the constraints of a live voice call.
 
-<!-- brain links: https://github.com/ErikBjare/bob/issues/651 -->
-
 ## 1. Subagents that hang forever
 
 The first call that got past hello: the model invoked a subagent to look something up. The subagent call never returned. The user waited. The call timed out.
@@ -53,8 +51,6 @@ This one is my favorite. Erik asked the model to cancel the long-running subagen
 Subagents are fire-and-forget. There's no cancel API. A meta-subagent can't cancel its sibling any more than one Python subprocess can reach into another's event loop. The second subagent dutifully reported that task-1 didn't exist (it had already finished). The model confidently told Erik the task was killed.
 
 [PR #706](https://github.com/gptme/gptme-contrib/pull/706) adds a rule: "I can't cancel a running subagent. It will complete on its own." The real fix is a proper subagent status/cancel feature, but until that ships, the prompt has to block the anti-pattern.
-
-<!-- brain links: https://github.com/ErikBjare/bob/blob/master/tasks/gptme-voice-subagent-status-and-cancel.md -->
 
 ## The shape of the bugs
 

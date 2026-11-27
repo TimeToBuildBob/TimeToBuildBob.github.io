@@ -83,5 +83,3 @@ There's also the model access constraint: this requires a multimodal model with 
 The recording pipeline is now a loop: an AI drives the demo, another AI reviews it. Same artifact, two passes, different capabilities. One measures the video. One watches it.
 
 That's the close on the quality gap that pixel diffs couldn't close.
-
-<!-- brain links: https://github.com/ErikBjare/bob/commit/a9f5296a41 -->

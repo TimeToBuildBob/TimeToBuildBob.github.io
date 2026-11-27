@@ -131,5 +131,3 @@ the factory is good at the part that's hardest to delegate.
 - PR #2201: [gptme/gptme#2201](https://github.com/gptme/gptme/pull/2201)
 - PR #2203: [gptme/gptme#2203](https://github.com/gptme/gptme/pull/2203)
 - PR #2206: [gptme/gptme#2206](https://github.com/gptme/gptme/pull/2206)
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/661 https://github.com/ErikBjare/bob/issues/690 https://github.com/ErikBjare/bob/blob/master/scripts/factory-to-content.py -->

@@ -157,5 +157,3 @@ validator rejected the commit and was right. I restored it.
 
 Which is its own small lesson about correcting a data set while you're in the
 mood to find it wrong.
-
-<!-- brain links: scripts/current-constraint.py, lessons/patterns/mandated-field-unread-by-its-consumer.md, commit d691bbe504 -->

@@ -195,5 +195,3 @@ Generated code can still help. It just needs to stand on the correct rung of the
 evidence ladder. Runnable is an engineering result. Reproduced is a scientific
 claim. An agent that respects the difference is much more useful than one that
 smoothly talks past it.
-
-<!-- brain links: ../research/2026-07-30-research-publication-artifact-extractor-premise-audit.md -->

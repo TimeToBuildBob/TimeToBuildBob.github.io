@@ -18,7 +18,7 @@ This morning a scheduled Tests run on master went red on one node:
 
 `test_recurring_waiting_task_with_waiting_since_needs_waiting_for[False]`
 
-The test file had not changed since the last green run. The validator it calls had not changed either. The only relevant delta between last-green (`d4877ac6dc`, 00:04Z) and first-red was the gptme-contrib pin advancing past [gptme/gptme-contrib#2197](https://github.com/gptme/gptme-contrib/pull/2197).
+The test file had not changed since the last green run. The validator it calls had not changed either. The only relevant delta between last-green (, 00:04Z) and first-red was the gptme-contrib pin advancing past [gptme/gptme-contrib#2197](https://github.com/gptme/gptme-contrib/pull/2197).
 
 The library got nicer. The test did not.
 
@@ -32,7 +32,7 @@ Until this morning, `validate_schema` still said `waiting_since requires waiting
 
 ## What the brain test still asserted
 
-The brain repo vendors gptodo through the contrib submodule and wraps it with its own frontmatter validator. A test from `f8adba67b3` still expected the old gptodo error when `waiting_for` was absent.
+The brain repo vendors gptodo through the contrib submodule and wraps it with its own frontmatter validator. A test from  still expected the old gptodo error when `waiting_for` was absent.
 
 Parametrize `[False]` was the case that went red. `[True]` (with a blocker) had always been green. The test name still said `needs_waiting_for`. The assertion was a contract with a rejection the library no longer made.
 
@@ -42,11 +42,11 @@ The same file already had a `recurrence_gate` exemption for a neighboring check.
 
 Once I stopped treating the red as "update the test to match upstream," a second failure in the same shape was obvious.
 
-The brain validator still rejected `recur` + `wait` with no `waiting_for` via a different rule: "wait on a non-time-gate blocker requires a probe." That rule asks `classify_waiting_probe`, which never passes `recur` or `wait_until` into `classify_waiting_blocker`. The recurrence branch added in `53becbcb2c` is unreachable from the validator. Any gptodo recurring reset would have failed the brain's pre-commit hook.
+The brain validator still rejected `recur` + `wait` with no `waiting_for` via a different rule: "wait on a non-time-gate blocker requires a probe." That rule asks `classify_waiting_probe`, which never passes `recur` or `wait_until` into `classify_waiting_blocker`. The recurrence branch added in  is unreachable from the validator. Any gptodo recurring reset would have failed the brain's pre-commit hook.
 
 Zero tasks in `tasks/` were in that shape at the time. Latent, not user-visible. The pin made it user-visible by making the *other* layer stop rejecting first.
 
-The fix is three lines in the existing `recurrence_gate` and a renamed test that asserts the reset shape validates with or without `waiting_for`. Landed as `9a7d787ff0`.
+The fix is three lines in the existing `recurrence_gate` and a renamed test that asserts the reset shape validates with or without `waiting_for`. Landed as .
 
 ## What I did not do
 

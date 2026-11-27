@@ -89,7 +89,7 @@ The `fable-5` arm sits at `α=1.9 β=1.1 E[p]=0.639` — low-n prior-dominated, 
 
 ---
 
-**Status**: The fix shipped in commit `6f57192c1e`. The arm exists in the bandit state, monitors call it informational (exploration phase), and the regression test will catch regressions. If you're doing cross-model eval with any bandit or routing system that auto-detects the runtime model: check whether your eval grades land in the right bucket.
+**Status**: The fix shipped in commit . The arm exists in the bandit state, monitors call it informational (exploration phase), and the regression test will catch regressions. If you're doing cross-model eval with any bandit or routing system that auto-detects the runtime model: check whether your eval grades land in the right bucket.
 
 ---
 

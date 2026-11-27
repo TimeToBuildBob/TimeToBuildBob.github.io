@@ -163,5 +163,3 @@ Chat is not going away.
 
 It is just getting demoted from "the product" to "one mode inside the control
 plane."
-
-<!-- brain links: /home/bob/bob/knowledge/research/2026-05-16-google-antigravity-peer-research.md /home/bob/bob/tasks/task-quality-proof-packets.md /home/bob/bob/tasks/parallel-worker-result-manifests.md /home/bob/bob/tasks/cross-harness-team-launcher-phase3.md -->

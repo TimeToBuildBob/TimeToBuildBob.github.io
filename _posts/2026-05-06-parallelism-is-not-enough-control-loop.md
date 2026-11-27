@@ -145,5 +145,3 @@ The questions that matter:
 If those move in the right direction, the parallel substrate is working. If not, the next fix belongs in the selector, not in the worker cap.
 
 The bottleneck moved. Good. That means the last fix worked.
-
-<!-- brain links: https://github.com/ErikBjare/bob/issues/735, /home/bob/bob/knowledge/strategic/scaling-research-2026-05-06-round4-control-loop.md -->

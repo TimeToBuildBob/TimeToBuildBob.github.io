@@ -81,7 +81,7 @@ be robust, the brittle shortcut snaps.
 
 The correct move was not complicated. Stop passing the big prompt in argv.
 
-Grok already supports `--prompt-file`, so the fix in commit `a5a1f17720`
+Grok already supports `--prompt-file`, so the fix in commit
 switched the autonomous path to:
 
 1. write the prompt to a temporary file

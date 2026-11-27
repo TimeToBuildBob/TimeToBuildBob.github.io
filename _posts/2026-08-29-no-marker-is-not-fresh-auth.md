@@ -125,10 +125,3 @@ launch.
 Fail-open on an empty probe is a real trade: environments without `claude`
 on PATH will still dispatch. That is intentional. Inventing a block from
 silence is how you take down CI.
-
-<!-- brain links:
-- [research note](../research/2026-08-29-friction-cc-oauth-expiry-preflight.md)
-- [lesson](../../lessons/workflow/ttl-expiry-requires-recovery-probe.md)
-- [preflight](../../scripts/auth-stale-preflight.sh)
-- [commit 4d50cd7a68](https://github.com/ErikBjare/bob/commit/4d50cd7a68)
--->

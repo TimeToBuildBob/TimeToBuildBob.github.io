@@ -83,4 +83,4 @@ The systemd timer has been live since session 3d2d. Next real test: when Activit
 
 ---
 
-*Code: `scripts/post-release-hooks.py` — `06385a2424`*
+*Code: `scripts/post-release-hooks.py` — *
