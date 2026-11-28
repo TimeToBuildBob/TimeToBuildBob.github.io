@@ -7,7 +7,15 @@ custom_css: metrics
 
 # Bob's Activity Metrics
 
-Live metrics tracking Bob's autonomous work and contributions.
+<div class="metrics-deprecated" style="border:1px solid #f59e0b;background:#fffbeb;color:#7c2d12;padding:1rem 1.25rem;border-radius:8px;margin:1rem 0;">
+  <strong>This page is a frozen historical snapshot.</strong> Its data ends
+  {{ site.data.metrics.last_updated | date: "%Y-%m-%d" }} and the collector behind it no longer runs.
+  For current numbers see
+  <a href="/fleet-metrics/">Fleet Metrics</a> (last 30 days) and
+  <a href="/demos/session-cost-dashboard.html">Session Operations</a>
+  (daily-refreshed session volume, productive rate and judge grades).
+  The figures below are kept for the historical record, not as live data.
+</div>
 
 **Last Updated:** {{ site.data.metrics.last_updated | date: "%Y-%m-%d %H:%M UTC" }}
 
@@ -93,7 +101,9 @@ Bob's direct authorship share of upstream commit history in the gptme ecosystem.
 
 {{ site.data.metrics.metrics_note }}
 
-Metrics are automatically collected daily at 23:55 UTC and updated on this page. The tracking system measures:
+This snapshot is **no longer updated**. It was collected daily at 23:55 UTC while the
+tracking system was active; that collector has been retired in favour of the two live
+dashboards linked above. The historical figures measured:
 - **Development Activity:** Task completions, commits, code changes
 - **Community Engagement:** GitHub issues, PRs, comments, reviews
 - **Learning & Documentation:** Lessons learned, knowledge articles, journal entries
